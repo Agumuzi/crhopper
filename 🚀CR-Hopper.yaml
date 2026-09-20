@@ -1,0 +1,315 @@
+# 🚀CR-Hopper
+# Public Mihomo / Clash-compatible feed.
+
+mode: rule
+log-level: warning
+ipv6: false
+
+proxies:
+  - name: "🌐XX-129M-[bb03cf/328bee]"
+    type: "hysteria2"
+    server: "91.240.86.70"
+    port: 22443
+    password: "3f63c86c-ac4a-4900-85cf-4fedf93c2ca5"
+    udp: true
+    sni: "itsallproxy.quattro-tech.ru"
+
+  - name: "🌐XX-280M-[0c20df/dc8e80]"
+    type: "vless"
+    server: "185.141.33.2"
+    port: 443
+    uuid: "ddf09ad0-02dc-485b-9048-1038de5bebf0"
+    udp: true
+    encryption: "none"
+    servername: "nl.node-edge09.com"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "S6t9-gOX2mxWKNGvGSJ8NxDdlJy78d4gN2-wv2d0hFw"
+      short-id: "8319913f2e5f5711"
+    network: "grpc"
+    grpc-opts:
+      grpc-service-name: "grpc"
+
+  - name: "🌐XX-270M-[02d53f/eea30e]"
+    type: "vless"
+    server: "nl.node-edge09.com"
+    port: 443
+    uuid: "ddf09ad0-02dc-485b-9048-1038de5bebf0"
+    udp: true
+    encryption: "none"
+    servername: "nl.node-edge09.com"
+    client-fingerprint: "safari"
+    skip-cert-verify: true
+    tls: true
+    reality-opts:
+      public-key: "S6t9-gOX2mxWKNGvGSJ8NxDdlJy78d4gN2-wv2d0hFw"
+      short-id: "8319913f2e5f5711"
+    network: "grpc"
+    grpc-opts:
+      grpc-service-name: "grpc"
+
+  - name: "🇬🇧GB-314M-[ea830a/90ee60]"
+    type: "vless"
+    server: "66.90.105.210"
+    port: 2083
+    uuid: "cd3bb7d9-7df3-4644-ac05-c260990ac277"
+    udp: true
+    encryption: "none"
+    tls: false
+    network: "grpc"
+    grpc-opts:
+      grpc-service-name: "vless"
+
+  - name: "🇺🇸US-139M-[6182bd/5abe0b]"
+    type: "vless"
+    server: "104.143.223.50"
+    port: 2089
+    uuid: "d144d943-46bd-41ce-af2c-06358c845616"
+    udp: true
+    encryption: "none"
+    tls: false
+    network: "grpc"
+    grpc-opts:
+      grpc-service-name: "vless"
+
+  - name: "🇬🇧GB-243M-[d9477d/87feb3]"
+    type: "vless"
+    server: "66.90.104.42"
+    port: 2083
+    uuid: "cd3bb7d9-7df3-4644-ac05-c260990ac277"
+    udp: true
+    encryption: "none"
+    alpn:
+      - "v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus"
+    tls: false
+    network: "grpc"
+    grpc-opts:
+      grpc-service-name: "vless"
+
+  - name: "🇷🇺RU-161M-[4b6882/c3ea57]"
+    type: "ss"
+    server: "194.87.196.13"
+    port: 10081
+    cipher: "aes-256-gcm"
+    password: "4938e975724d0ed1"
+    udp: true
+
+  - name: "🇵🇱PL-246M-[3b8067/ff0546]"
+    type: "vless"
+    server: "2.59.253.251"
+    port: 443
+    uuid: "adc11f30-e4cb-4985-bf5e-f9ded69c019f"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "nvidia.com"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI"
+      short-id: "db04ce8bdb8900f1"
+    network: "tcp"
+
+  - name: "🇷🇺RU-179M-[d5acd3/fd4156]"
+    type: "ss"
+    server: "185.22.155.203"
+    port: 10900
+    cipher: "aes-256-gcm"
+    password: "895b4b796a357570"
+    udp: true
+
+  - name: "🇳🇱NL-72M-[9ab841/2968d4]"
+    type: "vless"
+    server: "nl-xh02.tcp-reset-club.net"
+    port: 8443
+    uuid: "721bacfe-ff09-4e63-a735-686015bc1351"
+    udp: true
+    encryption: "none"
+    servername: "s3.netavex.com"
+    client-fingerprint: "chrome"
+    tls: true
+    reality-opts:
+      public-key: "Gu_QdtOX6E8pZcYvDWgHKA5dxcit7hrpU27sizCEWXg"
+      short-id: "e0"
+    network: "xhttp"
+    xhttp-opts:
+      path: "/assets/v2/pkg"
+      mode: "stream-one"
+      reuse-settings:
+        max-concurrency: "16-32"
+
+  - name: "🇩🇪DE-282M-[391aa4/bf26d6]"
+    type: "vless"
+    server: "dvxeg.childofarya.ir"
+    port: 2900
+    uuid: "0de1047d-fadd-4075-a08e-2223c5dadd0a"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "www.numpy.org"
+    client-fingerprint: "chrome"
+    skip-cert-verify: true
+    tls: true
+    reality-opts:
+      public-key: "t6ZD1BAopEpgPCz0KoCpZlahTg6otStYBgU6iJ-kOkc"
+      short-id: "171ef978859d26c6"
+    network: "tcp"
+
+  - name: "🇫🇮FI-302M-[eabd7b/10dd5d]"
+    type: "ss"
+    server: "87.58.148.70"
+    port: 443
+    cipher: "aes-256-gcm"
+    password: "rg0g3xp9rk9nk9o0"
+    udp: true
+
+  - name: "🇱🇻LV-141M-[39463f/04e38f]"
+    type: "hysteria2"
+    server: "91.240.86.70"
+    port: 24443
+    password: "3f63c86c-ac4a-4900-85cf-4fedf93c2ca5"
+    udp: true
+    sni: "hy.quattro-tech.ru"
+
+  - name: "🇨🇿CZ-64M-[e786ce/f49998]"
+    type: "vless"
+    server: "153.76.185.179"
+    port: 3090
+    uuid: "a536ca9e-53b2-459b-ba25-654e62b3b326"
+    udp: true
+    encryption: "none"
+    tls: false
+    network: "grpc"
+    grpc-opts:
+      grpc-service-name: "vless"
+
+  - name: "🇨🇿CZ-69M-[207928/0b3ef6]"
+    type: "vless"
+    server: "153.76.185.144"
+    port: 3090
+    uuid: "a9a813b7-13ea-45f4-b8de-922b9bdd2db2"
+    udp: true
+    encryption: "none"
+    tls: false
+    network: "grpc"
+    grpc-opts:
+      grpc-service-name: "vless"
+
+  - name: "🇳🇱NL-293M-[8031f1/d9e813]"
+    type: "vless"
+    server: "199.232.237.79"
+    port: 443
+    uuid: "turboo-server"
+    udp: true
+    encryption: "none"
+    servername: "turboo-server-telegram.com"
+    client-fingerprint: "chrome"
+    skip-cert-verify: true
+    alpn:
+      - "h3"
+      - "h2"
+      - "http/1.1"
+    tls: true
+    network: "ws"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "turboo-server-telegram.com"
+
+  - name: "🇨🇦CA-71M-[3fadd6/47f759]"
+    type: "hysteria2"
+    server: "docs.fastline-labs.com"
+    port: 443
+    password: "334f25ef-3fb7-44a0-8ab7-79527d613281"
+    udp: true
+    sni: "docs.fastline-labs.com"
+
+  - name: "🇩🇪DE-152M-[040ff9/5b834a]"
+    type: "vless"
+    server: "46.224.125.89"
+    port: 443
+    uuid: "4530ee2a-8294-48ec-a75c-6dbaf7336a85"
+    udp: true
+    encryption: "none"
+    servername: "www.wikipedia.org"
+    client-fingerprint: "chrome"
+    tls: true
+    reality-opts:
+      public-key: "Qm52KRyb3r94YeyOLDuTjSlMHVsPZCvO_DQZgsfrXhs"
+      short-id: "0ccbc7bb11e7ce55"
+    network: "xhttp"
+    xhttp-opts:
+      path: "/hndr"
+
+  - name: "🌐XX-358M-[576245/ba560b]"
+    type: "vless"
+    server: "ch.cache-4d8a.com"
+    port: 443
+    uuid: "ddf09ad0-02dc-485b-9048-1038de5bebf0"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "ch.cache-4d8a.com"
+    client-fingerprint: "chrome"
+    skip-cert-verify: true
+    tls: true
+    reality-opts:
+      public-key: "lYVz8iVZI2XjTCw_XS9wi08P1DLXO0c7jQo-_xyw2xY"
+      short-id: "9d84de9d9f7b85e9"
+    network: "tcp"
+
+  - name: "🌐XX-420M-[9dd16f/6135fd]"
+    type: "vless"
+    server: "179.43.162.252"
+    port: 443
+    uuid: "ddf09ad0-02dc-485b-9048-1038de5bebf0"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "ch.cache-4d8a.com"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "lYVz8iVZI2XjTCw_XS9wi08P1DLXO0c7jQo-_xyw2xY"
+      short-id: "9d84de9d9f7b85e9"
+    network: "tcp"
+
+proxy-groups:
+  - name: "GLOBAL"
+    type: select
+    proxies:
+      - "AUTO"
+
+  - name: "AUTO"
+    type: select
+    proxies:
+      - "🌐XX-129M-[bb03cf/328bee]"
+      - "🌐XX-280M-[0c20df/dc8e80]"
+      - "🌐XX-270M-[02d53f/eea30e]"
+      - "🇬🇧GB-314M-[ea830a/90ee60]"
+      - "🇺🇸US-139M-[6182bd/5abe0b]"
+      - "🇬🇧GB-243M-[d9477d/87feb3]"
+      - "🇷🇺RU-161M-[4b6882/c3ea57]"
+      - "🇵🇱PL-246M-[3b8067/ff0546]"
+      - "🇷🇺RU-179M-[d5acd3/fd4156]"
+      - "🇳🇱NL-72M-[9ab841/2968d4]"
+      - "🇩🇪DE-282M-[391aa4/bf26d6]"
+      - "🇫🇮FI-302M-[eabd7b/10dd5d]"
+      - "🇱🇻LV-141M-[39463f/04e38f]"
+      - "🇨🇿CZ-64M-[e786ce/f49998]"
+      - "🇨🇿CZ-69M-[207928/0b3ef6]"
+      - "🇳🇱NL-293M-[8031f1/d9e813]"
+      - "🇨🇦CA-71M-[3fadd6/47f759]"
+      - "🇩🇪DE-152M-[040ff9/5b834a]"
+      - "🌐XX-358M-[576245/ba560b]"
+      - "🌐XX-420M-[9dd16f/6135fd]"
+
+rules:
+  - "DOMAIN,smtp.gmail.com,DIRECT"
+  - "DOMAIN,smtp.googlemail.com,DIRECT"
+  - "DOMAIN-SUFFIX,ru,DIRECT"
+  - "DOMAIN-SUFFIX,xn--p1ai,DIRECT"
+  - "GEOIP,RU,DIRECT"
+  - "GEOIP,CN,DIRECT"
+  - "MATCH,GLOBAL"
