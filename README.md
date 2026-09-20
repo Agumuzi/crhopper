@@ -32,6 +32,8 @@ https://raw.githubusercontent.com/Agumuzi/crhopper/main/CR-Hopper.yaml
 
 CR-Hopper publishes a compact set of proxy nodes that have already passed upstream qualification and runtime preparation before publication.
 
+All upstream proxy candidates processed by CR-Hopper come from sources that are already publicly available on the Internet. CR-Hopper does not create, host or operate those upstream nodes; it only collects, screens, validates and republishes a filtered subset in client-ready formats.
+
 The public feed may contain multiple protocols, including VLESS, Hysteria2 and Shadowsocks. The exact node count and protocol mix can change between updates.
 
 ## Recommended clients
