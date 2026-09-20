@@ -4,7 +4,7 @@
 
 **Curated public proxy subscription feeds for Hiddify, Mihomo and Clash-compatible clients.**
 
-[English](./README.md) · [简体中文](./README.zh-CN.md) · [Русский](./README.ru.md)
+[English](./README.md) · [简体中文](./README.zh-CN.md) · [Русский](./README.ru.md) · [فارسی](./README.fa.md)
 
 </div>
 
