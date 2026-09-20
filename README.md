@@ -1,38 +1,32 @@
-# crhopper
+# 🚀CR-Hopper
 
-**Qualified Top 100 Servers**
+A lightweight public proxy feed published from an already-qualified runtime candidate set.
 
-A public proxy subscription feed generated from a continuously maintained pool of qualified servers.
+## Public files
 
-## Subscription formats
+- `🚀CR-Hopper.yaml` — Mihomo / Clash-compatible configuration.
+- `🚀CR-Hopper.txt` — URI subscription for Hiddify and other compatible clients.
 
-This repository is intended to publish two synchronized subscription formats:
+Both public files represent the same current candidate set. The published node count is whatever the upstream qualified runtime file contains at that refresh; no fixed count is imposed here.
 
-- `mihomo.yaml` — for Mihomo / Clash Mi and other Clash-compatible clients.
-- `subscription.txt` — URI subscription feed for Hiddify and other compatible clients.
+## Publishing model
 
-Both files are generated from the same qualified server pool and are intended to represent the same set of published nodes.
+The publisher does not perform additional screening, ranking, Geo lookup, speed testing, or node-quality decisions.
 
-## Update model
+It only:
 
-Planned publishing cadence:
+1. reads the latest already-qualified runtime configuration;
+2. removes private/internal-only metadata from the public copy;
+3. publishes the YAML form;
+4. converts the same proxy definitions into URI subscription form;
+5. updates the two public files.
 
-- refresh the qualified server pool using the existing screening system;
-- after each successful foreground refresh, render the current pool into YAML and URI subscription formats;
-- publish the latest snapshot to this repository;
-- target cadence: approximately every **2 hours**.
+## Privacy boundary
 
-The publishing layer does **not** perform additional node testing, ranking, or filtering. It only converts the already-qualified current pool into standard subscription formats.
+Public outputs must not expose internal device names, internal project codenames, private filesystem paths, personal identifiers, or user-specific operational comments.
 
-## Current status
+Node connection credentials are necessarily present in a public proxy feed and should be treated as public once published.
 
-**Initial setup / testing**
+## Status
 
-The repository has been created and the publishing workflow is being prepared. Subscription files may not be available until the first test snapshot is published.
-
-## Notes
-
-- The published feed contains connection information only.
-- Internal screening history, detailed test records, source attribution, and qualification evidence are not published.
-- Individual proxy servers can become unavailable at any time.
-- This project is intended primarily as a convenient personal and shared subscription source across phones, computers, and compatible routers.
+Testing / integration in progress.
