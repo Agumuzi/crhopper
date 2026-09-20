@@ -32,6 +32,8 @@ https://raw.githubusercontent.com/Agumuzi/crhopper/main/CR-Hopper.yaml
 
 CR-Hopper 发布一组在公开前已经完成上游筛选与运行时准备的代理节点。
 
+CR-Hopper 处理的上游代理候选均来自互联网上已经公开可获取的来源。本项目不创建、不托管、也不运营这些上游节点；CR-Hopper 只负责对公开节点进行收集、筛选、验证，并将通过筛选的子集整理为客户端可直接使用的订阅格式后重新发布。
+
 公开订阅可能包含 VLESS、Hysteria2、Shadowsocks 等多种协议。每次更新后的节点数量和协议构成都可能变化。
 
 ## 推荐客户端
