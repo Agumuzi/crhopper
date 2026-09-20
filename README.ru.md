@@ -17,7 +17,7 @@
 Скопируйте ссылку ниже и добавьте её как удалённый профиль в Hiddify или другом клиенте с поддержкой URI-подписок.
 
 ```text
-https://raw.githubusercontent.com/Agumuzi/crhopper/main/🚀CR-Hopper.txt
+https://raw.githubusercontent.com/Agumuzi/crhopper/main/CR-Hopper.txt
 ```
 
 ### Mihomo / Clash YAML
@@ -25,7 +25,7 @@ https://raw.githubusercontent.com/Agumuzi/crhopper/main/🚀CR-Hopper.txt
 Скопируйте ссылку ниже и используйте её как удалённый YAML-профиль в Mihomo или Clash-совместимом клиенте.
 
 ```text
-https://raw.githubusercontent.com/Agumuzi/crhopper/main/🚀CR-Hopper.yaml
+https://raw.githubusercontent.com/Agumuzi/crhopper/main/CR-Hopper.yaml
 ```
 
 ## Что такое CR-Hopper?
@@ -36,15 +36,14 @@ CR-Hopper публикует компактный набор прокси-узл
 
 ## Рекомендуемые клиенты
 
-- **Hiddify:** используйте `🚀CR-Hopper.txt`
-- **Mihomo / Clash-совместимые клиенты:** используйте `🚀CR-Hopper.yaml`
+- **Hiddify:** используйте `CR-Hopper.txt`
+- **Mihomo / Clash-совместимые клиенты:** используйте `CR-Hopper.yaml`
 
 ## Примечания
 
 - Публичные прокси-узлы могут перестать работать в любой момент. При проблемах с подключением сначала обновите подписку.
 - Геолокация, которую показывает клиент, определяется самим клиентом и может отличаться от метки в имени узла.
 - TXT и YAML содержат один и тот же опубликованный набор узлов в разных форматах.
-- Если Hiddify показывает URL-код вместо значка 🚀, локальный профиль можно вручную переименовать в **🚀CR-Hopper**.
 
 ## Отказ от гарантий
 
