@@ -4,7 +4,7 @@
 
 **Отобранные публичные подписки прокси для Hiddify, Mihomo и Clash-совместимых клиентов.**
 
-[English](./README.md) · [简体中文](./README.zh-CN.md) · [Русский](./README.ru.md)
+[English](./README.md) · [简体中文](./README.zh-CN.md) · [Русский](./README.ru.md) · [فارسی](./README.fa.md)
 
 </div>
 
