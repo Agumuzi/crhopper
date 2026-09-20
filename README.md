@@ -17,7 +17,7 @@
 Copy the link below and add it as a remote profile in Hiddify or another URI-subscription client.
 
 ```text
-https://raw.githubusercontent.com/Agumuzi/crhopper/main/🚀CR-Hopper.txt
+https://raw.githubusercontent.com/Agumuzi/crhopper/main/CR-Hopper.txt
 ```
 
 ### Mihomo / Clash YAML
@@ -25,7 +25,7 @@ https://raw.githubusercontent.com/Agumuzi/crhopper/main/🚀CR-Hopper.txt
 Copy the link below and use it as a remote YAML profile in Mihomo / Clash-compatible clients.
 
 ```text
-https://raw.githubusercontent.com/Agumuzi/crhopper/main/🚀CR-Hopper.yaml
+https://raw.githubusercontent.com/Agumuzi/crhopper/main/CR-Hopper.yaml
 ```
 
 ## What is CR-Hopper?
@@ -36,15 +36,14 @@ The public feed may contain multiple protocols, including VLESS, Hysteria2 and S
 
 ## Recommended clients
 
-- **Hiddify:** use `🚀CR-Hopper.txt`
-- **Mihomo / Clash-compatible clients:** use `🚀CR-Hopper.yaml`
+- **Hiddify:** use `CR-Hopper.txt`
+- **Mihomo / Clash-compatible clients:** use `CR-Hopper.yaml`
 
 ## Notes
 
 - Public proxy nodes can become unavailable at any time. Refresh the subscription when connectivity changes.
 - Geo information shown by a client is determined by the client and may differ from the node label.
 - The TXT and YAML feeds represent the same published candidate set in different formats.
-- If Hiddify displays the percent-encoded filename instead of the rocket emoji, you can rename the local profile to **🚀CR-Hopper**.
 
 ## Disclaimer
 
