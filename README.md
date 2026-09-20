@@ -47,4 +47,12 @@ The public feed may contain multiple protocols, including VLESS, Hysteria2 and S
 
 ## Disclaimer
 
-This repository provides public proxy subscription data for testing and personal network use. Availability, speed and geographic routing are not guaranteed.
+CR-Hopper is provided for testing, research and personal network use only.
+
+Users are solely responsible for ensuring that their use of this repository, its subscription feeds and any third-party proxy nodes complies with all laws, regulations, contractual obligations and service terms applicable in their country or jurisdiction. **Do not use CR-Hopper in any manner that is prohibited by local law or regulation.**
+
+The repository maintainers do not operate, control or guarantee the third-party proxy nodes contained in the public feeds. Node availability, speed, security, privacy, reliability, geographic routing and continued operation are not guaranteed.
+
+The project is provided **"as is"** and **"as available"**, without warranties of any kind. Users assume all risks arising from their use of the project and are responsible for their own network activity, data, accounts, devices and compliance obligations.
+
+To the fullest extent permitted by applicable law, the developers and maintainers shall not be responsible or liable for misuse of the project, unlawful activity by users, service interruptions, account restrictions, data loss or exposure, security incidents, financial loss, legal consequences, or any other direct or indirect damages arising from the use of, or inability to use, CR-Hopper.
