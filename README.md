@@ -1,6 +1,6 @@
 # crhopper
 
-**Qualified Top 1000 Servers**
+**Qualified Top 100 Servers**
 
 A public proxy subscription feed generated from a continuously maintained pool of qualified servers.
 
