@@ -1,39 +1,51 @@
-# 🚀CR-Hopper
+<div align="center">
 
-A lightweight public proxy feed mirrored from an already-qualified runtime candidate set.
+# 🚀 CR-Hopper
 
-## Public files
+**Curated public proxy subscription feeds for Hiddify, Mihomo and Clash-compatible clients.**
 
-- `🚀CR-Hopper.yaml` — Mihomo / Clash-compatible configuration.
-- `🚀CR-Hopper.txt` — URI subscription for Hiddify and other URI-subscription clients.
+[English](./README.md) · [简体中文](./README.zh-CN.md) · [Русский](./README.ru.md)
 
-Both public files represent the same current candidate set. The published node count is whatever the upstream qualified runtime file contains at that refresh; no fixed count is imposed here.
+</div>
 
-## Naming
+---
 
-- The subscription / profile name is **🚀CR-Hopper**.
-- Individual node names are preserved exactly from the already-generated runtime YAML.
-- CR-Hopper does not rewrite node Geo labels, speed labels, or node display names.
-- Client-side Geo UI may display a country different from the embedded node label; CR-Hopper does not attempt to reconcile them.
+## Subscription links
 
-## Publishing model
+### Hiddify / URI subscription
 
-The publisher does not perform additional screening, ranking, Geo lookup, speed testing, or node-quality decisions.
+Copy the link below and add it as a remote profile in Hiddify or another URI-subscription client.
 
-It only:
+```text
+https://raw.githubusercontent.com/Agumuzi/crhopper/main/🚀CR-Hopper.txt
+```
 
-1. reads the latest already-qualified runtime YAML;
-2. removes internal/private-only metadata from the public copy;
-3. publishes the YAML form unchanged at the node/configuration level;
-4. converts the same proxy definitions into URI subscription form for Hiddify;
-5. updates the two public files.
+### Mihomo / Clash YAML
 
-## Privacy boundary
+Copy the link below and use it as a remote YAML profile in Mihomo / Clash-compatible clients.
 
-Public outputs must not expose internal device names, internal project codenames, private filesystem paths, personal identifiers, or user-specific operational comments.
+```text
+https://raw.githubusercontent.com/Agumuzi/crhopper/main/🚀CR-Hopper.yaml
+```
 
-Node connection credentials are necessarily present in a public proxy feed and should be treated as public once published.
+## What is CR-Hopper?
 
-## Status
+CR-Hopper publishes a compact set of proxy nodes that have already passed upstream qualification and runtime preparation before publication.
 
-Testing / integration in progress.
+The public feed may contain multiple protocols, including VLESS, Hysteria2 and Shadowsocks. The exact node count and protocol mix can change between updates.
+
+## Recommended clients
+
+- **Hiddify:** use `🚀CR-Hopper.txt`
+- **Mihomo / Clash-compatible clients:** use `🚀CR-Hopper.yaml`
+
+## Notes
+
+- Public proxy nodes can become unavailable at any time. Refresh the subscription when connectivity changes.
+- Geo information shown by a client is determined by the client and may differ from the node label.
+- The TXT and YAML feeds represent the same published candidate set in different formats.
+- If Hiddify displays the percent-encoded filename instead of the rocket emoji, you can rename the local profile to **🚀CR-Hopper**.
+
+## Disclaimer
+
+This repository provides public proxy subscription data for testing and personal network use. Availability, speed and geographic routing are not guaranteed.
