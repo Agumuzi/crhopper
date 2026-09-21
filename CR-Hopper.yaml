@@ -6,7 +6,7 @@ log-level: warning
 ipv6: false
 
 proxies:
-  - name: "🌐XX-82M-[bb03cf/289275]"
+  - name: "🌐XX-97M-[bb03cf/289275]"
     type: "hysteria2"
     server: "91.240.86.70"
     port: 22443
@@ -14,88 +14,13 @@ proxies:
     udp: true
     sni: "hy.quattro-tech.ru"
 
-  - name: "🇱🇻LV-140M-[39463f/04e38f]"
+  - name: "🇱🇻LV-96M-[39463f/04e38f]"
     type: "hysteria2"
     server: "91.240.86.70"
     port: 24443
     password: "3f63c86c-ac4a-4900-85cf-4fedf93c2ca5"
     udp: true
     sni: "hy.quattro-tech.ru"
-
-  - name: "🌐XX-304M-[5e4dcc/bbb119]"
-    type: "vless"
-    server: "cf2.466688.xyz"
-    port: 8880
-    uuid: "1a5e2e63-64e2-4737-95b6-c2ee60c979a1"
-    udp: true
-    encryption: "none"
-    packet-encoding: "xudp"
-    tls: false
-    network: "ws"
-    ws-opts:
-      path: "/pyip=ProxyIP.JP.CMLiussss.net@https://t.me/QiangLieTuiJian"
-      headers:
-        Host: "wild-mode-4ca6.234-8f6.workers.dev"
-
-  - name: "🇨🇿CZ-68M-[1ebc8c/6c844e]"
-    type: "vless"
-    server: "153.76.185.85"
-    port: 3090
-    uuid: "6ee61b52-b3c3-4553-aea8-7afbdf15f607"
-    udp: true
-    encryption: "none"
-    tls: false
-    network: "grpc"
-    grpc-opts:
-      grpc-service-name: "vless"
-
-  - name: "🇹🇷TR-134M-[26ebc6/63e2f2]"
-    type: "vless"
-    server: "93.190.9.13"
-    port: 3090
-    uuid: "6ee61b52-b3c3-4553-aea8-7afbdf15f607"
-    udp: true
-    encryption: "none"
-    tls: false
-    network: "grpc"
-    grpc-opts:
-      grpc-service-name: "vless"
-
-  - name: "🇹🇷TR-186M-[a06c18/fea1a2]"
-    type: "vless"
-    server: "93.190.9.37"
-    port: 3090
-    uuid: "6ee61b52-b3c3-4553-aea8-7afbdf15f607"
-    udp: true
-    encryption: "none"
-    tls: false
-    network: "grpc"
-    grpc-opts:
-      grpc-service-name: "vless"
-
-  - name: "🇫🇮FI-249M-[eabd7b/10dd5d]"
-    type: "ss"
-    server: "87.58.148.70"
-    port: 443
-    cipher: "aes-256-gcm"
-    password: "rg0g3xp9rk9nk9o0"
-    udp: true
-
-  - name: "🇺🇸US-120M-[6edf96/593556]"
-    type: "vless"
-    server: "138.124.60.146"
-    port: 443
-    uuid: "bbfd1f68-ec64-452f-8404-9e2bcf1df951"
-    udp: true
-    encryption: "none"
-    flow: "xtls-rprx-vision"
-    servername: "usa.oblaco.bet"
-    client-fingerprint: "chrome"
-    tls: true
-    reality-opts:
-      public-key: "mJ-0fJDvKp0rhuyUvs1bw4RasRRM-BEOAl9iAZ8gXy0"
-      short-id: ""
-    network: "tcp"
 
 proxy-groups:
   - name: "GLOBAL"
@@ -106,14 +31,8 @@ proxy-groups:
   - name: "AUTO"
     type: select
     proxies:
-      - "🌐XX-82M-[bb03cf/289275]"
-      - "🇱🇻LV-140M-[39463f/04e38f]"
-      - "🌐XX-304M-[5e4dcc/bbb119]"
-      - "🇨🇿CZ-68M-[1ebc8c/6c844e]"
-      - "🇹🇷TR-134M-[26ebc6/63e2f2]"
-      - "🇹🇷TR-186M-[a06c18/fea1a2]"
-      - "🇫🇮FI-249M-[eabd7b/10dd5d]"
-      - "🇺🇸US-120M-[6edf96/593556]"
+      - "🌐XX-97M-[bb03cf/289275]"
+      - "🇱🇻LV-96M-[39463f/04e38f]"
 
 rules:
   - "DOMAIN,smtp.gmail.com,DIRECT"
