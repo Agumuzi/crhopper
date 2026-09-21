@@ -6,7 +6,7 @@ log-level: warning
 ipv6: false
 
 proxies:
-  - name: "🌐XX-97M-[bb03cf/289275]"
+  - name: "🌐XX-93M-[bb03cf/289275]"
     type: "hysteria2"
     server: "91.240.86.70"
     port: 22443
@@ -14,13 +14,25 @@ proxies:
     udp: true
     sni: "hy.quattro-tech.ru"
 
-  - name: "🇱🇻LV-96M-[39463f/04e38f]"
+  - name: "🇱🇻LV-56M-[39463f/04e38f]"
     type: "hysteria2"
     server: "91.240.86.70"
     port: 24443
     password: "3f63c86c-ac4a-4900-85cf-4fedf93c2ca5"
     udp: true
     sni: "hy.quattro-tech.ru"
+
+  - name: "🇹🇷TR-24M-[a6edb8/3308e8]"
+    type: "vless"
+    server: "93.190.8.24"
+    port: 3090
+    uuid: "1b15e87b-f7ff-4b56-bbdb-f3a16db6ab99"
+    udp: true
+    encryption: "none"
+    tls: false
+    network: "grpc"
+    grpc-opts:
+      grpc-service-name: "vless"
 
 proxy-groups:
   - name: "GLOBAL"
@@ -31,8 +43,9 @@ proxy-groups:
   - name: "AUTO"
     type: select
     proxies:
-      - "🌐XX-97M-[bb03cf/289275]"
-      - "🇱🇻LV-96M-[39463f/04e38f]"
+      - "🌐XX-93M-[bb03cf/289275]"
+      - "🇱🇻LV-56M-[39463f/04e38f]"
+      - "🇹🇷TR-24M-[a6edb8/3308e8]"
 
 rules:
   - "DOMAIN,smtp.gmail.com,DIRECT"
