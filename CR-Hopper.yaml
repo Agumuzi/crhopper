@@ -6,7 +6,7 @@ log-level: warning
 ipv6: false
 
 proxies:
-  - name: "🇱🇻LV-160M-[39463f/04e38f]"
+  - name: "🇱🇻LV-166M-[39463f/04e38f]"
     type: "hysteria2"
     server: "91.240.86.70"
     port: 24443
@@ -14,7 +14,15 @@ proxies:
     udp: true
     sni: "hy.quattro-tech.ru"
 
-  - name: "🇬🇧GB-345M-[dba7c6/db83a4]"
+  - name: "🇫🇮FI-253M-[eabd7b/10dd5d]"
+    type: "ss"
+    server: "87.58.148.70"
+    port: 443
+    cipher: "aes-256-gcm"
+    password: "rg0g3xp9rk9nk9o0"
+    udp: true
+
+  - name: "🇬🇧GB-385M-[dba7c6/db83a4]"
     type: "hysteria2"
     server: "95.133.242.213"
     port: 30443
@@ -22,31 +30,25 @@ proxies:
     udp: true
     sni: "filesconvert.org"
 
-  - name: "🇪🇪EE-419M-[a2ed16/2a40e7]"
-    type: "vless"
-    server: "132.243.65.161"
-    port: 443
-    uuid: "4d08aa81-f729-4857-a2e9-06e48b8b9556"
+  - name: "🇷🇺RU-147M-[bb03cf/289275]"
+    type: "hysteria2"
+    server: "91.240.86.70"
+    port: 22443
+    password: "3f63c86c-ac4a-4900-85cf-4fedf93c2ca5"
     udp: true
-    encryption: "none"
-    flow: "xtls-rprx-vision"
-    servername: "ee.global-cdn.org"
-    client-fingerprint: "chrome"
-    tls: true
-    reality-opts:
-      public-key: "RO5YMxxtJmZo2w370qG-seJ41toowHPbz6i2uXJ2gG0"
-      short-id: "7a3f9e2b1c8d4f6a"
+    sni: "hy.quattro-tech.ru"
+
+  - name: "🇩🇰DK-273M-[9331ec/662f80]"
+    type: "vless"
+    server: "87.58.159.20"
+    port: 443
+    uuid: "2471e7da-5dcd-5da4-983a-3ef758abb17c"
+    udp: true
+    encryption: "mlkem768x25519plus.native.0rtt.CCIZgZeeCX8na60UXi9II-iduj3OFxtj-fuh_4AWiUU"
+    tls: false
     network: "tcp"
 
-  - name: "🇳🇱NL-363M-[fea9f0/dcd039]"
-    type: "hysteria2"
-    server: "nl2.pleiades.codes"
-    port: 8443
-    password: "0dca2cfe-98eb-4f9d-9a47-cf87510c558b"
-    udp: true
-    sni: "nl2.pleiades.codes"
-
-  - name: "🇳🇱NL-376M-[9ab841/2968d4]"
+  - name: "🇳🇱NL-229M-[9ab841/2968d4]"
     type: "vless"
     server: "nl-xh02.tcp-reset-club.net"
     port: 8443
@@ -66,83 +68,128 @@ proxies:
       reuse-settings:
         max-concurrency: "16-32"
 
-  - name: "🇩🇰DK-262M-[9331ec/662f80]"
+  - name: "🇸🇪SE-76M-[cd4b52/a068fb]"
     type: "vless"
-    server: "87.58.159.20"
+    server: "5.157.10.147"
     port: 443
-    uuid: "2471e7da-5dcd-5da4-983a-3ef758abb17c"
+    uuid: "4bdeee92-97e8-414d-bef6-ec1d5e2ab73b"
     udp: true
-    encryption: "mlkem768x25519plus.native.0rtt.CCIZgZeeCX8na60UXi9II-iduj3OFxtj-fuh_4AWiUU"
-    tls: false
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "svvedko.nxxzxaw.beer"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "x6p656szvu_3CKLsJ4NtkooRvdTVGx7IoPca_p58_jA"
+      short-id: "fb442438e2223836"
     network: "tcp"
 
-  - name: "🇩🇪DE-161M-[e5fa63/57ebb9]"
+  - name: "🇪🇪EE-232M-[a2ed16/32b8de]"
     type: "vless"
-    server: "185.255.179.11"
-    port: 9443
-    uuid: "d9d0f208-d582-41d5-bb7b-742671402810"
+    server: "132.243.65.161"
+    port: 443
+    uuid: "4d08aa81-f729-4857-a2e9-06e48b8b9556"
     udp: true
     encryption: "none"
-    servername: "hub-de-05.hanvpn.cc"
+    flow: "xtls-rprx-vision"
+    servername: "ee.global-cdn.org"
+    client-fingerprint: "firefox"
     tls: true
+    reality-opts:
+      public-key: "RO5YMxxtJmZo2w370qG-seJ41toowHPbz6i2uXJ2gG0"
+      short-id: "7a3f9e2b1c8d4f6a"
+    network: "tcp"
+
+  - name: "🇬🇧GB-214M-[92e28c/aa1adb]"
+    type: "vless"
+    server: "57.128.177.218"
+    port: 30963
+    uuid: "aabcb69e-9f17-44bd-aaac-552dd23e9691"
+    udp: true
+    encryption: "none"
+    servername: "us.vrzn.download.nvidia.com"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "XxNAqnYJDizM_4_ycJxyaa9xbx29hpDfwAtCv1Wga1M"
+      short-id: "c776352067"
     network: "grpc"
     grpc-opts:
-      grpc-service-name: "de05-grpc-8e47a"
+      grpc-service-name: "grpc_common1"
 
-  - name: "🌐XX-139M-[6309e9/2f6485]"
+  - name: "🇬🇧GB-263M-[ea830a/ab68d8]"
     type: "vless"
-    server: "141.193.213.30"
-    port: 8880
-    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    server: "66.90.105.210"
+    port: 2083
+    uuid: "cd3bb7d9-7df3-4644-ac05-c260990ac277"
     udp: true
     encryption: "none"
+    alpn:
+      - "v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus"
+    tls: false
+    network: "grpc"
+    grpc-opts:
+      grpc-service-name: "vless"
+
+  - name: "🇺🇸US-80M-[98c8e8/da6e97]"
+    type: "vless"
+    server: "172.64.80.1"
+    port: 8880
+    uuid: "70c16ec7-13f7-473b-b97d-06399f1481e3"
+    udp: true
+    encryption: "none"
+    servername: "mute-surf-0003.209.workers.dev"
     tls: false
     network: "ws"
     ws-opts:
-      path: "/"
+      path: "/pyip=ProxyIP.US.CMLiussss.net"
       headers:
-        Host: "vms.lifetime23.workers.dev"
+        Host: "mute-surf-0003.209.workers.dev"
 
-  - name: "🇩🇪DE-61M-[db676c/284f6b]"
+  - name: "🌐XX-195M-[630554/bc4fcf]"
     type: "vless"
-    server: "77.110.101.97"
-    port: 56834
-    uuid: "daf65e17-1ed5-42be-a34d-20a156ddedbc"
-    udp: true
-    encryption: "none"
-    tls: false
-    network: "tcp"
-
-  - name: "🌐XX-124M-[f9aeac/b30ebc]"
-    type: "vless"
-    server: "cf5.466688.xyz"
+    server: "89.116.46.50"
     port: 8880
-    uuid: "9c772ed7-2843-4554-9a96-4a88f827de58"
+    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
     udp: true
     encryption: "none"
     packet-encoding: "xudp"
     tls: false
     network: "ws"
     ws-opts:
-      path: "/pyip=ProxyIP.KR.CMLiussss.net@https://t.me/QiangLieTuiJian"
+      path: "/?ed"
       headers:
-        Host: "nameless-tree-08b8.352.workers.dev"
+        Host: "vms.lifetime07.workers.dev"
 
-  - name: "🌐XX-297M-[f28809/ebcae4]"
+  - name: "🌐XX-127M-[d9477d/87feb3]"
     type: "vless"
-    server: "159.246.55.30"
-    port: 8880
-    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    server: "66.90.104.42"
+    port: 2083
+    uuid: "cd3bb7d9-7df3-4644-ac05-c260990ac277"
     udp: true
     encryption: "none"
+    alpn:
+      - "v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus"
     tls: false
-    network: "ws"
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "vms.lifetime59.workers.dev"
+    network: "grpc"
+    grpc-opts:
+      grpc-service-name: "vless"
 
-  - name: "🇩🇪DE-334M-[b46b8b/cc20fd]"
+  - name: "🇳🇱NL-412M-[05b9b0/61c64e]"
+    type: "vless"
+    server: "50.7.120.202"
+    port: 443
+    uuid: "cd3bb7d9-7df3-4644-ac05-c260990ac277"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "nl-dedic-mori-2.failspace.top"
+    client-fingerprint: "firefox"
+    skip-cert-verify: true
+    tls: true
+    network: "tcp"
+
+  - name: "🌐XX-295M-[b46b8b/cc20fd]"
     type: "trojan"
     server: "172.64.80.1"
     port: 443
@@ -158,45 +205,31 @@ proxies:
       headers:
         Host: "to6r63-kkchighqm2.vxz0dduq7to7su0cdqf.workers.dev"
 
-  - name: "🌐XX-199M-[d93c15/822ac0]"
+  - name: "🇩🇪DE-189M-[e5fa63/57ebb9]"
     type: "vless"
-    server: "time.is"
-    port: 443
-    uuid: "d195909a-eff4-489d-a261-955b904894cb"
+    server: "185.255.179.11"
+    port: 9443
+    uuid: "d9d0f208-d582-41d5-bb7b-742671402810"
     udp: true
     encryption: "none"
-    servername: "fREE.sERVer6PeeKCOnFIG.wOrkErs.dEv."
-    client-fingerprint: "chrome"
-    alpn:
-      - "h3"
-      - "h2"
-      - "http/1.1"
+    servername: "hub-de-05.hanvpn.cc"
     tls: true
-    network: "ws"
-    ws-opts:
-      path: "/eyJqdW5rIjoieUhYMWhoZEVEIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcmVmaXgiLCJwYW5lbElQcyI6WyJbMmEwMjo4OTg6MTQ2OjY0OjpdIl19?ed=2560"
-      headers:
-        Host: "free.server6peekconfig.workers.dev."
+    network: "grpc"
+    grpc-opts:
+      grpc-service-name: "de05-grpc-8e47a"
 
-  - name: "🇫🇷FR-476M-[5c5513/efb307]"
-    type: "vless"
-    server: "171.22.129.27"
-    port: 443
-    uuid: "f07d9192-9d39-49fc-ba70-610fcb7fb176"
+  - name: "🇷🇴RO-62M-[659cb1/df63e3]"
+    type: "hysteria2"
+    server: "85.204.107.187"
+    port: 8443
+    password: "Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0"
     udp: true
-    encryption: "none"
-    flow: "xtls-rprx-vision"
-    servername: "siennacedarantler.tealbutton.one"
-    client-fingerprint: "firefox"
-    tls: true
-    reality-opts:
-      public-key: "VE90NqtKCg1Kqc8XCYjLIFmcpOnQDtbMIjtBHbtfHwQ"
-      short-id: "9c4a1ec4ae97eb29"
-    network: "tcp"
+    sni: "hopp-romania-new.roxa.org"
+    skip-cert-verify: true
 
-  - name: "🌐XX-306M-[003107/e89907]"
+  - name: "🇷🇺RU-323M-[6309e9/2f6485]"
     type: "vless"
-    server: "185.148.107.30"
+    server: "141.193.213.30"
     port: 8880
     uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
     udp: true
@@ -206,76 +239,38 @@ proxies:
     ws-opts:
       path: "/"
       headers:
-        Host: "vms.lifetime55.workers.dev"
+        Host: "vms.lifetime23.workers.dev"
 
-  - name: "🇫🇷FR-395M-[c98d45/80a4f5]"
+  - name: "🇸🇪SE-385M-[2014c1/be0062]"
     type: "vless"
-    server: "siennacedarantler.tealbutton.one"
+    server: "144.31.217.95"
     port: 443
-    uuid: "f07d9192-9d39-49fc-ba70-610fcb7fb176"
+    uuid: "c18b978e-1c4e-415c-8bea-07942b563a64"
     udp: true
     encryption: "none"
-    flow: "xtls-rprx-vision"
-    servername: "siennacedarantler.tealbutton.one"
-    client-fingerprint: "firefox"
-    tls: true
-    reality-opts:
-      public-key: "VE90NqtKCg1Kqc8XCYjLIFmcpOnQDtbMIjtBHbtfHwQ"
-      short-id: "9c4a1ec4ae97eb29"
-    network: "tcp"
-
-  - name: "🇩🇪DE-138M-[25f4a5/46e5ee]"
-    type: "vless"
-    server: "194.156.26.45"
-    port: 443
-    uuid: "6bef6685-e989-467c-8fea-7fa1c6a0af2c"
-    udp: true
-    encryption: "none"
-    servername: "LZc2j8i5PteXj5I7Aq0hFxQadvZcq.wF99sAF201Sfs9.wOrKers.dev"
-    client-fingerprint: "firefox"
+    servername: "shuma.ccwu.cc"
+    client-fingerprint: "chrome"
     tls: true
     network: "ws"
     ws-opts:
-      path: "/vl/BBj8crirrHMxntD7H3o3z"
+      path: "/"
       headers:
-        Host: "LZc2j8i5PteXj5I7Aq0hFxQadvZcq.wF99sAF201Sfs9.wOrKers.dev"
+        Host: "shuma.ccwu.cc"
 
-  - name: "🇷🇺RU-135M-[bb03cf/328bee]"
-    type: "hysteria2"
-    server: "91.240.86.70"
-    port: 22443
-    password: "3f63c86c-ac4a-4900-85cf-4fedf93c2ca5"
-    udp: true
-    sni: "itsallproxy.quattro-tech.ru"
-
-  - name: "🇳🇱NL-456M-[05b9b0/61c64e]"
+  - name: "🇳🇱NL-372M-[f01167/f3509d]"
     type: "vless"
-    server: "50.7.120.202"
+    server: "45.141.235.191"
     port: 443
-    uuid: "cd3bb7d9-7df3-4644-ac05-c260990ac277"
+    uuid: "6db6b948-655f-4f68-a9e7-865050e05b31"
     udp: true
     encryption: "none"
     flow: "xtls-rprx-vision"
-    servername: "nl-dedic-mori-2.failspace.top"
+    servername: "cats-n-dogs.rumainco.cl"
     client-fingerprint: "firefox"
-    skip-cert-verify: true
-    tls: true
-    network: "tcp"
-
-  - name: "🇩🇪DE-308M-[dd2151/af2416]"
-    type: "vless"
-    server: "88.216.70.86"
-    port: 443
-    uuid: "43d63a8f-c27e-467c-9405-7bbce8e06b55"
-    udp: true
-    encryption: "none"
-    flow: "xtls-rprx-vision"
-    servername: "main.abyssettle.net"
-    client-fingerprint: "chrome"
     tls: true
     reality-opts:
-      public-key: "C6nh6hqFTbtizgSH8vGmw2XUxsQAbAW3jPylpgGvfl4"
-      short-id: "7c4b9a2e8d5f3c1b"
+      public-key: "mGPCrFElfsioK3y3nOyW66ahpIocDnnyzfUnoN7ULFc"
+      short-id: "c2cdd5"
     network: "tcp"
 
 proxy-groups:
@@ -287,26 +282,26 @@ proxy-groups:
   - name: "AUTO"
     type: select
     proxies:
-      - "🇱🇻LV-160M-[39463f/04e38f]"
-      - "🇬🇧GB-345M-[dba7c6/db83a4]"
-      - "🇪🇪EE-419M-[a2ed16/2a40e7]"
-      - "🇳🇱NL-363M-[fea9f0/dcd039]"
-      - "🇳🇱NL-376M-[9ab841/2968d4]"
-      - "🇩🇰DK-262M-[9331ec/662f80]"
-      - "🇩🇪DE-161M-[e5fa63/57ebb9]"
-      - "🌐XX-139M-[6309e9/2f6485]"
-      - "🇩🇪DE-61M-[db676c/284f6b]"
-      - "🌐XX-124M-[f9aeac/b30ebc]"
-      - "🌐XX-297M-[f28809/ebcae4]"
-      - "🇩🇪DE-334M-[b46b8b/cc20fd]"
-      - "🌐XX-199M-[d93c15/822ac0]"
-      - "🇫🇷FR-476M-[5c5513/efb307]"
-      - "🌐XX-306M-[003107/e89907]"
-      - "🇫🇷FR-395M-[c98d45/80a4f5]"
-      - "🇩🇪DE-138M-[25f4a5/46e5ee]"
-      - "🇷🇺RU-135M-[bb03cf/328bee]"
-      - "🇳🇱NL-456M-[05b9b0/61c64e]"
-      - "🇩🇪DE-308M-[dd2151/af2416]"
+      - "🇱🇻LV-166M-[39463f/04e38f]"
+      - "🇫🇮FI-253M-[eabd7b/10dd5d]"
+      - "🇬🇧GB-385M-[dba7c6/db83a4]"
+      - "🇷🇺RU-147M-[bb03cf/289275]"
+      - "🇩🇰DK-273M-[9331ec/662f80]"
+      - "🇳🇱NL-229M-[9ab841/2968d4]"
+      - "🇸🇪SE-76M-[cd4b52/a068fb]"
+      - "🇪🇪EE-232M-[a2ed16/32b8de]"
+      - "🇬🇧GB-214M-[92e28c/aa1adb]"
+      - "🇬🇧GB-263M-[ea830a/ab68d8]"
+      - "🇺🇸US-80M-[98c8e8/da6e97]"
+      - "🌐XX-195M-[630554/bc4fcf]"
+      - "🌐XX-127M-[d9477d/87feb3]"
+      - "🇳🇱NL-412M-[05b9b0/61c64e]"
+      - "🌐XX-295M-[b46b8b/cc20fd]"
+      - "🇩🇪DE-189M-[e5fa63/57ebb9]"
+      - "🇷🇴RO-62M-[659cb1/df63e3]"
+      - "🇷🇺RU-323M-[6309e9/2f6485]"
+      - "🇸🇪SE-385M-[2014c1/be0062]"
+      - "🇳🇱NL-372M-[f01167/f3509d]"
 
 rules:
   - "DOMAIN,smtp.gmail.com,DIRECT"
