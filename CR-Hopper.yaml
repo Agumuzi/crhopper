@@ -6,15 +6,15 @@ log-level: warning
 ipv6: false
 
 proxies:
-  - name: "🌐XX-93M-[bb03cf/289275]"
-    type: "hysteria2"
-    server: "91.240.86.70"
-    port: 22443
-    password: "3f63c86c-ac4a-4900-85cf-4fedf93c2ca5"
+  - name: "🇫🇮FI-243M-[eabd7b/10dd5d]"
+    type: "ss"
+    server: "87.58.148.70"
+    port: 443
+    cipher: "aes-256-gcm"
+    password: "rg0g3xp9rk9nk9o0"
     udp: true
-    sni: "hy.quattro-tech.ru"
 
-  - name: "🇱🇻LV-56M-[39463f/04e38f]"
+  - name: "🇱🇻LV-68M-[39463f/04e38f]"
     type: "hysteria2"
     server: "91.240.86.70"
     port: 24443
@@ -22,17 +22,43 @@ proxies:
     udp: true
     sni: "hy.quattro-tech.ru"
 
-  - name: "🇹🇷TR-24M-[a6edb8/3308e8]"
+  - name: "🇬🇧GB-463M-[48fe4e/1e5b1c]"
     type: "vless"
-    server: "93.190.8.24"
-    port: 3090
-    uuid: "1b15e87b-f7ff-4b56-bbdb-f3a16db6ab99"
+    server: "uk-mori-new.failspace.top"
+    port: 443
+    uuid: "cd3bb7d9-7df3-4644-ac05-c260990ac277"
     udp: true
     encryption: "none"
-    tls: false
-    network: "grpc"
-    grpc-opts:
-      grpc-service-name: "vless"
+    flow: "xtls-rprx-vision"
+    servername: "uk-mori-new.failspace.top"
+    client-fingerprint: "firefox"
+    alpn:
+      - "h2"
+    tls: true
+    network: "tcp"
+
+  - name: "🇦🇹AT-500M-[14f3aa/62de51]"
+    type: "vless"
+    server: "austria-dedic1.failspace.top"
+    port: 443
+    uuid: "cd3bb7d9-7df3-4644-ac05-c260990ac277"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "austria-dedic1.failspace.top"
+    client-fingerprint: "firefox"
+    alpn:
+      - "h2"
+    tls: true
+    network: "tcp"
+
+  - name: "🌐XX-34M-[bb03cf/289275]"
+    type: "hysteria2"
+    server: "91.240.86.70"
+    port: 22443
+    password: "3f63c86c-ac4a-4900-85cf-4fedf93c2ca5"
+    udp: true
+    sni: "hy.quattro-tech.ru"
 
 proxy-groups:
   - name: "GLOBAL"
@@ -43,9 +69,11 @@ proxy-groups:
   - name: "AUTO"
     type: select
     proxies:
-      - "🌐XX-93M-[bb03cf/289275]"
-      - "🇱🇻LV-56M-[39463f/04e38f]"
-      - "🇹🇷TR-24M-[a6edb8/3308e8]"
+      - "🇫🇮FI-243M-[eabd7b/10dd5d]"
+      - "🇱🇻LV-68M-[39463f/04e38f]"
+      - "🇬🇧GB-463M-[48fe4e/1e5b1c]"
+      - "🇦🇹AT-500M-[14f3aa/62de51]"
+      - "🌐XX-34M-[bb03cf/289275]"
 
 rules:
   - "DOMAIN,smtp.gmail.com,DIRECT"
