@@ -6,33 +6,7 @@ log-level: warning
 ipv6: false
 
 proxies:
-  - name: "🌐XX-37M-[bb03cf/63d9ba]"
-    type: "hysteria2"
-    server: "91.240.86.70"
-    port: 22443
-    password: "3f63c86c-ac4a-4900-85cf-4fedf93c2ca5"
-    udp: true
-    skip-cert-verify: true
-
-  - name: "🇩🇪DE-158M-[05275b/bd7102]"
-    type: "vless"
-    server: "199.232.79.166"
-    port: 443
-    uuid: "4a5fa7d0-3409-4f5d-905f-79521675113a"
-    udp: true
-    encryption: "mlkem768x25519plus.native.0rtt.EvqGmJhHfNsRhxENFhkBpY3TDQZfpIeaet93vsXSaUU"
-    flow: "xtls-rprx-vision"
-    servername: "cdn.fastly.com"
-    client-fingerprint: "chrome"
-    tls: true
-    network: "xhttp"
-    xhttp-opts:
-      path: "/@UonVPN--@UonVPN-*-@UonVPN--*-@UonVPN--**-@UonVPN---@UonVPN---@UonVPN---@UonVPN---@UonVPN---@UonVPN---@UonVPN---@UonVPN---@UonVPN---@UonVPN---@UonVPN-*--@UonVPN"
-      host: "telegram-uonvpn.global.ssl.fastly.net"
-      mode: "auto"
-      x-padding-bytes: "100-1000"
-
-  - name: "🇱🇻LV-52M-[39463f/04e38f]"
+  - name: "🇱🇻LV-162M-[39463f/04e38f]"
     type: "hysteria2"
     server: "91.240.86.70"
     port: 24443
@@ -40,7 +14,7 @@ proxies:
     udp: true
     sni: "hy.quattro-tech.ru"
 
-  - name: "🌐XX-111M-[bb03cf/328bee]"
+  - name: "🌐XX-146M-[bb03cf/328bee]"
     type: "hysteria2"
     server: "91.240.86.70"
     port: 22443
@@ -48,7 +22,15 @@ proxies:
     udp: true
     sni: "itsallproxy.quattro-tech.ru"
 
-  - name: "🌐XX-142M-[4924d0/a2e922]"
+  - name: "🇷🇺RU-343M-[4355c0/1b9e8d]"
+    type: "ss"
+    server: "46.29.163.78"
+    port: 10090
+    cipher: "aes-256-gcm"
+    password: "6b39ae3234dfd68b"
+    udp: true
+
+  - name: "🇩🇪DE-170M-[4924d0/a2e922]"
     type: "vmess"
     server: "31.77.8.97"
     port: 110
@@ -57,6 +39,100 @@ proxies:
     cipher: "auto"
     udp: true
     network: "tcp"
+
+  - name: "🇩🇪DE-407M-[f8d049/bfade6]"
+    type: "vless"
+    server: "134.255.227.145"
+    port: 25809
+    uuid: "5535c74b-3c4c-4de3-a70e-f25c7946e52a"
+    udp: true
+    encryption: "none"
+    servername: "gang.gayvibe.dpdns.org"
+    client-fingerprint: "firefox"
+    tls: true
+    network: "ws"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "gang.gayvibe.dpdns.org"
+
+  - name: "🇵🇱PL-292M-[bb8539/fdfadb]"
+    type: "vless"
+    server: "132.243.229.6"
+    port: 443
+    uuid: "b1e75472-99b6-4d0b-9cc1-9cfac7e4405a"
+    udp: true
+    encryption: "none"
+    servername: "aliusfilms.ru"
+    client-fingerprint: "safari"
+    skip-cert-verify: true
+    tls: true
+    reality-opts:
+      public-key: "cynncQk7kKzEQaExg-FN7pMqFaZPSXEi_Ggy7AXXmVg"
+      short-id: "3f8ad1"
+    network: "xhttp"
+    xhttp-opts:
+      path: "/GunService"
+
+  - name: "🇺🇸US-268M-[08a8e4/c6d7da]"
+    type: "vless"
+    server: "179.254.111.0"
+    port: 8443
+    uuid: "94006a20-6cd6-4751-a14d-c5a0bacb68bb"
+    udp: true
+    encryption: "none"
+    servername: "yandex.ru"
+    client-fingerprint: "chrome"
+    skip-cert-verify: true
+    tls: true
+    reality-opts:
+      public-key: "dBvFkg2zny545Ws6H_LXKEohOYV2MW_zACRrRQE1IUg"
+      short-id: "992e5a9a"
+    network: "xhttp"
+    xhttp-opts:
+      path: "/upd8svpn-xhttp"
+      host: "yandex.ru"
+
+  - name: "🇭🇰HK-84M-[9e41f6/f5fd71]"
+    type: "ss"
+    server: "103.136.150.119"
+    port: 10090
+    cipher: "aes-256-gcm"
+    password: "72553320ae6bcc8f"
+    udp: true
+
+  - name: "🇷🇺RU-49M-[f38f7e/2ca4a7]"
+    type: "vless"
+    server: "dismissaltree.net"
+    port: 2053
+    uuid: "2c634977-584e-4e1f-b501-1b70c77a6743"
+    udp: true
+    encryption: "none"
+    packet-encoding: "xudp"
+    servername: "dismissaltree.net"
+    client-fingerprint: "chrome"
+    alpn:
+      - "h2"
+      - "http/1.1"
+    tls: true
+    network: "xhttp"
+    xhttp-opts:
+      path: "/api/v1/upload"
+      host: "dismissaltree.net"
+      mode: "auto"
+      reuse-settings:
+        c-max-reuse-times: "64-128"
+        max-concurrency: "16-32"
+        max-connections: "0"
+      x-padding-bytes: "100-1000"
+
+  - name: "🌐XX-37M-[bb03cf/63d9ba]"
+    type: "hysteria2"
+    server: "91.240.86.70"
+    port: 22443
+    password: "3f63c86c-ac4a-4900-85cf-4fedf93c2ca5"
+    udp: true
+    skip-cert-verify: true
 
   - name: "🇳🇱NL-274M-[9ab841/c8f764]"
     type: "vless"
@@ -109,22 +185,6 @@ proxies:
       reuse-settings:
         max-concurrency: "16-32"
 
-  - name: "🇳🇱NL-26M-[53856b/0cb865]"
-    type: "vless"
-    server: "138.124.113.61"
-    port: 443
-    uuid: "eec2f6a7-c10f-43b0-b133-61f9bf9bbc27"
-    udp: true
-    encryption: "none"
-    flow: "xtls-rprx-vision"
-    servername: "amazon.de"
-    client-fingerprint: "chrome"
-    tls: true
-    reality-opts:
-      public-key: "G8SING6Ibc_igZ5vI5578fXCT_mBMRuq_o8_Ymnj2SQ"
-      short-id: "eba1498e012ef580"
-    network: "tcp"
-
   - name: "🌐XX-112M-[bb03cf/289275]"
     type: "hysteria2"
     server: "91.240.86.70"
@@ -132,22 +192,6 @@ proxies:
     password: "3f63c86c-ac4a-4900-85cf-4fedf93c2ca5"
     udp: true
     sni: "hy.quattro-tech.ru"
-
-  - name: "🇳🇱NL-328M-[53856b/33cc00]"
-    type: "vless"
-    server: "138.124.113.61"
-    port: 443
-    uuid: "eec2f6a7-c10f-43b0-b133-61f9bf9bbc27"
-    udp: true
-    encryption: "none"
-    flow: "xtls-rprx-vision"
-    servername: "amazon.de"
-    client-fingerprint: "firefox"
-    tls: true
-    reality-opts:
-      public-key: "G8SING6Ibc_igZ5vI5578fXCT_mBMRuq_o8_Ymnj2SQ"
-      short-id: "eba1498e012ef580"
-    network: "tcp"
 
 proxy-groups:
   - name: "GLOBAL"
@@ -158,17 +202,20 @@ proxy-groups:
   - name: "AUTO"
     type: select
     proxies:
+      - "🇱🇻LV-162M-[39463f/04e38f]"
+      - "🌐XX-146M-[bb03cf/328bee]"
+      - "🇷🇺RU-343M-[4355c0/1b9e8d]"
+      - "🇩🇪DE-170M-[4924d0/a2e922]"
+      - "🇩🇪DE-407M-[f8d049/bfade6]"
+      - "🇵🇱PL-292M-[bb8539/fdfadb]"
+      - "🇺🇸US-268M-[08a8e4/c6d7da]"
+      - "🇭🇰HK-84M-[9e41f6/f5fd71]"
+      - "🇷🇺RU-49M-[f38f7e/2ca4a7]"
       - "🌐XX-37M-[bb03cf/63d9ba]"
-      - "🇩🇪DE-158M-[05275b/bd7102]"
-      - "🇱🇻LV-52M-[39463f/04e38f]"
-      - "🌐XX-111M-[bb03cf/328bee]"
-      - "🌐XX-142M-[4924d0/a2e922]"
       - "🇳🇱NL-274M-[9ab841/c8f764]"
       - "🇺🇸US-242M-[554d98/faf728]"
       - "🇳🇱NL-432M-[9ab841/2968d4]"
-      - "🇳🇱NL-26M-[53856b/0cb865]"
       - "🌐XX-112M-[bb03cf/289275]"
-      - "🇳🇱NL-328M-[53856b/33cc00]"
 
 rules:
   - "DOMAIN,smtp.gmail.com,DIRECT"
