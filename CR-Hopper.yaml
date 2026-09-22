@@ -6,7 +6,7 @@ log-level: warning
 ipv6: false
 
 proxies:
-  - name: "🇱🇻LV-77M-[39463f/04e38f]"
+  - name: "🇱🇻LV-52M-[39463f/04e38f]"
     type: "hysteria2"
     server: "91.240.86.70"
     port: 24443
@@ -14,13 +14,49 @@ proxies:
     udp: true
     sni: "hy.quattro-tech.ru"
 
-  - name: "🌐XX-72M-[bb03cf/63d9ba]"
+  - name: "🌐XX-119M-[bb03cf/63d9ba]"
     type: "hysteria2"
     server: "91.240.86.70"
     port: 22443
     password: "3f63c86c-ac4a-4900-85cf-4fedf93c2ca5"
     udp: true
     skip-cert-verify: true
+
+  - name: "🇳🇱NL-84M-[9ab841/c8f764]"
+    type: "vless"
+    server: "nl-xh02.tcp-reset-club.net"
+    port: 8443
+    uuid: "721bacfe-ff09-4e63-a735-686015bc1351"
+    udp: true
+    encryption: "none"
+    servername: "s3.netavex.com"
+    client-fingerprint: "chrome"
+    tls: true
+    reality-opts:
+      public-key: "Gu_QdtOX6E8pZcYvDWgHKA5dxcit7hrpU27sizCEWXg"
+      short-id: "e0"
+    network: "xhttp"
+    xhttp-opts:
+      path: "/assets/v2/pkg"
+      mode: "stream-one"
+      reuse-settings:
+        max-concurrency: "16-32"
+
+  - name: "🇩🇪DE-269M-[ba270e/ba3f5c]"
+    type: "vless"
+    server: "213.165.56.169"
+    port: 443
+    uuid: "974f2c7e-a292-4207-8315-ef4151bdca41"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "fl-api.bachidze.com"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "LMcNHcOzPISa2fmZWt2JraL6_a_IObpS2znQW70gyDo"
+      short-id: ""
+    network: "tcp"
 
   - name: "🇳🇱NL-432M-[9ab841/2968d4]"
     type: "vless"
@@ -42,54 +78,6 @@ proxies:
       reuse-settings:
         max-concurrency: "16-32"
 
-  - name: "🇯🇵JP-215M-[98c8e8/643f83]"
-    type: "vless"
-    server: "172.64.80.1"
-    port: 8880
-    uuid: "6d613d5f-1d65-48ca-b2e8-d83a2c3a17d9"
-    udp: true
-    encryption: "none"
-    packet-encoding: "xudp"
-    client-fingerprint: "chrome"
-    tls: false
-    network: "ws"
-    ws-opts:
-      path: "/pyip=ProxyIP.JP.CMLiussss.net"
-      headers:
-        Host: "tight-star-08eb.331-729.workers.dev"
-
-  - name: "🌐XX-216M-[5e4dcc/4d87eb]"
-    type: "vless"
-    server: "cf2.466688.xyz"
-    port: 8880
-    uuid: "1a5e2e63-64e2-4737-95b6-c2ee60c979a1"
-    udp: true
-    encryption: "none"
-    packet-encoding: "xudp"
-    servername: "cf2.466688.xyz"
-    tls: false
-    network: "ws"
-    ws-opts:
-      path: "/pyip=ProxyIP.JP.CMLiussss.net@https://t.me/QiangLieTuiJian"
-      headers:
-        Host: "wild-mode-4ca6.234-8f6.workers.dev"
-
-  - name: "🇩🇪DE-375M-[ba270e/ba3f5c]"
-    type: "vless"
-    server: "213.165.56.169"
-    port: 443
-    uuid: "974f2c7e-a292-4207-8315-ef4151bdca41"
-    udp: true
-    encryption: "none"
-    flow: "xtls-rprx-vision"
-    servername: "fl-api.bachidze.com"
-    client-fingerprint: "firefox"
-    tls: true
-    reality-opts:
-      public-key: "LMcNHcOzPISa2fmZWt2JraL6_a_IObpS2znQW70gyDo"
-      short-id: ""
-    network: "tcp"
-
   - name: "🇸🇬SG-115M-[51b504/d884d5]"
     type: "vless"
     server: "5.223.74.174"
@@ -105,35 +93,6 @@ proxies:
       public-key: "pIkxGlcFFawk7e0T-2VcdFXOc9LsjoBhl47vl8EuRgg"
       short-id: "36151c48e28cfb65"
     network: "tcp"
-
-  - name: "🇯🇵JP-163M-[98c8e8/c0f052]"
-    type: "vless"
-    server: "172.64.80.1"
-    port: 8880
-    uuid: "6d613d5f-1d65-48ca-b2e8-d83a2c3a17d9"
-    udp: true
-    encryption: "none"
-    tls: false
-    network: "ws"
-    ws-opts:
-      path: "/pyip=ProxyIP.JP.CMLiussss.net"
-      headers:
-        Host: "tight-star-08eb.331-729.workers.dev"
-
-  - name: "🌐XX-335M-[5e4dcc/bbb119]"
-    type: "vless"
-    server: "cf2.466688.xyz"
-    port: 8880
-    uuid: "1a5e2e63-64e2-4737-95b6-c2ee60c979a1"
-    udp: true
-    encryption: "none"
-    packet-encoding: "xudp"
-    tls: false
-    network: "ws"
-    ws-opts:
-      path: "/pyip=ProxyIP.JP.CMLiussss.net@https://t.me/QiangLieTuiJian"
-      headers:
-        Host: "wild-mode-4ca6.234-8f6.workers.dev"
 
   - name: "🌐XX-32M-[bb03cf/328bee]"
     type: "hysteria2"
@@ -208,15 +167,12 @@ proxy-groups:
   - name: "AUTO"
     type: select
     proxies:
-      - "🇱🇻LV-77M-[39463f/04e38f]"
-      - "🌐XX-72M-[bb03cf/63d9ba]"
+      - "🇱🇻LV-52M-[39463f/04e38f]"
+      - "🌐XX-119M-[bb03cf/63d9ba]"
+      - "🇳🇱NL-84M-[9ab841/c8f764]"
+      - "🇩🇪DE-269M-[ba270e/ba3f5c]"
       - "🇳🇱NL-432M-[9ab841/2968d4]"
-      - "🇯🇵JP-215M-[98c8e8/643f83]"
-      - "🌐XX-216M-[5e4dcc/4d87eb]"
-      - "🇩🇪DE-375M-[ba270e/ba3f5c]"
       - "🇸🇬SG-115M-[51b504/d884d5]"
-      - "🇯🇵JP-163M-[98c8e8/c0f052]"
-      - "🌐XX-335M-[5e4dcc/bbb119]"
       - "🌐XX-32M-[bb03cf/328bee]"
       - "🇳🇱NL-26M-[53856b/0cb865]"
       - "🇭🇰HK-22M-[71faf6/57bef6]"
