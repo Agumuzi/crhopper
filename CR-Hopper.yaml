@@ -6,6 +6,32 @@ log-level: warning
 ipv6: false
 
 proxies:
+  - name: "🌐XX-37M-[bb03cf/63d9ba]"
+    type: "hysteria2"
+    server: "91.240.86.70"
+    port: 22443
+    password: "3f63c86c-ac4a-4900-85cf-4fedf93c2ca5"
+    udp: true
+    skip-cert-verify: true
+
+  - name: "🇩🇪DE-158M-[05275b/bd7102]"
+    type: "vless"
+    server: "199.232.79.166"
+    port: 443
+    uuid: "4a5fa7d0-3409-4f5d-905f-79521675113a"
+    udp: true
+    encryption: "mlkem768x25519plus.native.0rtt.EvqGmJhHfNsRhxENFhkBpY3TDQZfpIeaet93vsXSaUU"
+    flow: "xtls-rprx-vision"
+    servername: "cdn.fastly.com"
+    client-fingerprint: "chrome"
+    tls: true
+    network: "xhttp"
+    xhttp-opts:
+      path: "/@UonVPN--@UonVPN-*-@UonVPN--*-@UonVPN--**-@UonVPN---@UonVPN---@UonVPN---@UonVPN---@UonVPN---@UonVPN---@UonVPN---@UonVPN---@UonVPN---@UonVPN---@UonVPN-*--@UonVPN"
+      host: "telegram-uonvpn.global.ssl.fastly.net"
+      mode: "auto"
+      x-padding-bytes: "100-1000"
+
   - name: "🇱🇻LV-52M-[39463f/04e38f]"
     type: "hysteria2"
     server: "91.240.86.70"
@@ -61,43 +87,6 @@ proxies:
     sni: "t.me%2fripaojiedian"
     client-fingerprint: "iOS"
     skip-cert-verify: true
-    network: "tcp"
-
-  - name: "🇫🇷FR-21M-[beccb7/347bb5]"
-    type: "vless"
-    server: "194.124.251.198"
-    port: 443
-    uuid: "1c8244b3-3865-4cc9-a7ab-dc22bf9c48d5"
-    udp: true
-    encryption: "none"
-    flow: "xtls-rprx-vision"
-    servername: "fr3.fishing-tackle.net"
-    client-fingerprint: "edge"
-    tls: true
-    network: "tcp"
-
-  - name: "🌐XX-119M-[bb03cf/63d9ba]"
-    type: "hysteria2"
-    server: "91.240.86.70"
-    port: 22443
-    password: "3f63c86c-ac4a-4900-85cf-4fedf93c2ca5"
-    udp: true
-    skip-cert-verify: true
-
-  - name: "🇩🇪DE-269M-[ba270e/ba3f5c]"
-    type: "vless"
-    server: "213.165.56.169"
-    port: 443
-    uuid: "974f2c7e-a292-4207-8315-ef4151bdca41"
-    udp: true
-    encryption: "none"
-    flow: "xtls-rprx-vision"
-    servername: "fl-api.bachidze.com"
-    client-fingerprint: "firefox"
-    tls: true
-    reality-opts:
-      public-key: "LMcNHcOzPISa2fmZWt2JraL6_a_IObpS2znQW70gyDo"
-      short-id: ""
     network: "tcp"
 
   - name: "🇳🇱NL-432M-[9ab841/2968d4]"
@@ -169,14 +158,13 @@ proxy-groups:
   - name: "AUTO"
     type: select
     proxies:
+      - "🌐XX-37M-[bb03cf/63d9ba]"
+      - "🇩🇪DE-158M-[05275b/bd7102]"
       - "🇱🇻LV-52M-[39463f/04e38f]"
       - "🌐XX-111M-[bb03cf/328bee]"
       - "🌐XX-142M-[4924d0/a2e922]"
       - "🇳🇱NL-274M-[9ab841/c8f764]"
       - "🇺🇸US-242M-[554d98/faf728]"
-      - "🇫🇷FR-21M-[beccb7/347bb5]"
-      - "🌐XX-119M-[bb03cf/63d9ba]"
-      - "🇩🇪DE-269M-[ba270e/ba3f5c]"
       - "🇳🇱NL-432M-[9ab841/2968d4]"
       - "🇳🇱NL-26M-[53856b/0cb865]"
       - "🌐XX-112M-[bb03cf/289275]"
