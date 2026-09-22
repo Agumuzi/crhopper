@@ -6,7 +6,7 @@ log-level: warning
 ipv6: false
 
 proxies:
-  - name: "🇱🇻LV-93M-[39463f/04e38f]"
+  - name: "🇱🇻LV-77M-[39463f/04e38f]"
     type: "hysteria2"
     server: "91.240.86.70"
     port: 24443
@@ -14,7 +14,15 @@ proxies:
     udp: true
     sni: "hy.quattro-tech.ru"
 
-  - name: "🇳🇱NL-316M-[9ab841/2968d4]"
+  - name: "🌐XX-72M-[bb03cf/63d9ba]"
+    type: "hysteria2"
+    server: "91.240.86.70"
+    port: 22443
+    password: "3f63c86c-ac4a-4900-85cf-4fedf93c2ca5"
+    udp: true
+    skip-cert-verify: true
+
+  - name: "🇳🇱NL-432M-[9ab841/2968d4]"
     type: "vless"
     server: "nl-xh02.tcp-reset-club.net"
     port: 8443
@@ -33,6 +41,70 @@ proxies:
       mode: "stream-one"
       reuse-settings:
         max-concurrency: "16-32"
+
+  - name: "🇯🇵JP-215M-[98c8e8/643f83]"
+    type: "vless"
+    server: "172.64.80.1"
+    port: 8880
+    uuid: "6d613d5f-1d65-48ca-b2e8-d83a2c3a17d9"
+    udp: true
+    encryption: "none"
+    packet-encoding: "xudp"
+    client-fingerprint: "chrome"
+    tls: false
+    network: "ws"
+    ws-opts:
+      path: "/pyip=ProxyIP.JP.CMLiussss.net"
+      headers:
+        Host: "tight-star-08eb.331-729.workers.dev"
+
+  - name: "🌐XX-216M-[5e4dcc/4d87eb]"
+    type: "vless"
+    server: "cf2.466688.xyz"
+    port: 8880
+    uuid: "1a5e2e63-64e2-4737-95b6-c2ee60c979a1"
+    udp: true
+    encryption: "none"
+    packet-encoding: "xudp"
+    servername: "cf2.466688.xyz"
+    tls: false
+    network: "ws"
+    ws-opts:
+      path: "/pyip=ProxyIP.JP.CMLiussss.net@https://t.me/QiangLieTuiJian"
+      headers:
+        Host: "wild-mode-4ca6.234-8f6.workers.dev"
+
+  - name: "🇩🇪DE-375M-[ba270e/ba3f5c]"
+    type: "vless"
+    server: "213.165.56.169"
+    port: 443
+    uuid: "974f2c7e-a292-4207-8315-ef4151bdca41"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "fl-api.bachidze.com"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "LMcNHcOzPISa2fmZWt2JraL6_a_IObpS2znQW70gyDo"
+      short-id: ""
+    network: "tcp"
+
+  - name: "🇸🇬SG-115M-[51b504/d884d5]"
+    type: "vless"
+    server: "5.223.74.174"
+    port: 2053
+    uuid: "29b81e1a-1989-4778-b0cb-a7223730f59d"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "5.223.74.174"
+    client-fingerprint: "chrome"
+    tls: true
+    reality-opts:
+      public-key: "pIkxGlcFFawk7e0T-2VcdFXOc9LsjoBhl47vl8EuRgg"
+      short-id: "36151c48e28cfb65"
+    network: "tcp"
 
   - name: "🇯🇵JP-163M-[98c8e8/c0f052]"
     type: "vless"
@@ -62,176 +134,6 @@ proxies:
       path: "/pyip=ProxyIP.JP.CMLiussss.net@https://t.me/QiangLieTuiJian"
       headers:
         Host: "wild-mode-4ca6.234-8f6.workers.dev"
-
-  - name: "🇫🇮FI-178M-[3afefc/006a27]"
-    type: "vless"
-    server: "2.27.253.108"
-    port: 443
-    uuid: "496a2c7a-c963-4275-b317-4d4a68901456"
-    udp: true
-    encryption: "none"
-    servername: "dl.google.com"
-    client-fingerprint: "chrome"
-    tls: true
-    reality-opts:
-      public-key: "6Pxm0xa9v8y8uRuqwS0oGcMQooWTDj96cpup9Y6A92Y"
-      short-id: "62ed3109d661a62a"
-    network: "xhttp"
-    xhttp-opts:
-      path: "/alterra-t2"
-      mode: "packet-up"
-
-  - name: "🇺🇸US-161M-[f35da1/56665f]"
-    type: "vless"
-    server: "179.255.98.66"
-    port: 8443
-    uuid: "47fcef29-ab4e-4aa6-932b-d95a18f28a4e"
-    udp: true
-    encryption: "none"
-    servername: "e34bq.oa9r.zl3.hh.vavava.kdns.fr"
-    tls: true
-    network: "ws"
-    ws-opts:
-      path: "/?ed=2560"
-      headers:
-        Host: "e34bq.oa9r.zl3.hh.vavava.kdns.fr"
-
-  - name: "🇺🇸US-123M-[17106e/f53a35]"
-    type: "vless"
-    server: "179.253.246.55"
-    port: 443
-    uuid: "47fcef29-ab4e-4aa6-932b-d95a18f28a4e"
-    udp: true
-    encryption: "none"
-    servername: "e34bq.oa9r.zl3.hh.vavava.kdns.fr"
-    tls: true
-    network: "ws"
-    ws-opts:
-      path: "/?ed=2560"
-      headers:
-        Host: "e34bq.oa9r.zl3.hh.vavava.kdns.fr"
-
-  - name: "🇺🇸US-161M-[662272/00f963]"
-    type: "vless"
-    server: "179.253.229.129"
-    port: 8443
-    uuid: "47fcef29-ab4e-4aa6-932b-d95a18f28a4e"
-    udp: true
-    encryption: "none"
-    servername: "e34bq.oa9r.zl3.hh.vavava.kdns.fr"
-    tls: true
-    network: "ws"
-    ws-opts:
-      path: "/?ed=2560"
-      headers:
-        Host: "e34bq.oa9r.zl3.hh.vavava.kdns.fr"
-
-  - name: "🇺🇸US-137M-[235998/876c8c]"
-    type: "vless"
-    server: "179.255.144.153"
-    port: 443
-    uuid: "47fcef29-ab4e-4aa6-932b-d95a18f28a4e"
-    udp: true
-    encryption: "none"
-    servername: "e34bq.oa9r.zl3.hh.vavava.kdns.fr"
-    tls: true
-    network: "ws"
-    ws-opts:
-      path: "/?ed=2560"
-      headers:
-        Host: "e34bq.oa9r.zl3.hh.vavava.kdns.fr"
-
-  - name: "🇺🇸US-136M-[33e883/ac64c2]"
-    type: "vless"
-    server: "179.253.233.55"
-    port: 8443
-    uuid: "47fcef29-ab4e-4aa6-932b-d95a18f28a4e"
-    udp: true
-    encryption: "none"
-    servername: "e34bq.oa9r.zl3.hh.vavava.kdns.fr"
-    tls: true
-    network: "ws"
-    ws-opts:
-      path: "/?ed=2560"
-      headers:
-        Host: "e34bq.oa9r.zl3.hh.vavava.kdns.fr"
-
-  - name: "🇺🇸US-118M-[4d2931/549dea]"
-    type: "vless"
-    server: "23.80.82.151"
-    port: 51595
-    uuid: "d9826bd9-1023-4a3b-895e-3ba9d64061f2"
-    udp: true
-    encryption: "none"
-    flow: "xtls-rprx-vision"
-    servername: "ads.aparat.com"
-    client-fingerprint: "firefox"
-    tls: true
-    reality-opts:
-      public-key: "2r94D7GhoZK4inffwafDlMW23Rqj1YVR5871e8EHADs"
-      short-id: "31956c5c9d7997e3"
-    network: "tcp"
-
-  - name: "🇺🇸US-124M-[54768d/d330a3]"
-    type: "vless"
-    server: "ase2ds.selqora.ir"
-    port: 51595
-    uuid: "d9826bd9-1023-4a3b-895e-3ba9d64061f2"
-    udp: true
-    encryption: "none"
-    flow: "xtls-rprx-vision"
-    servername: "ads.aparat.com"
-    client-fingerprint: "chrome"
-    tls: true
-    reality-opts:
-      public-key: "2r94D7GhoZK4inffwafDlMW23Rqj1YVR5871e8EHADs"
-      short-id: "31956c5c9d7997e3"
-    network: "tcp"
-
-  - name: "🇸🇬SG-61M-[5d411c/ef86be]"
-    type: "vless"
-    server: "47.82.155.79"
-    port: 443
-    uuid: "47fcef29-ab4e-4aa6-932b-d95a18f28a4e"
-    udp: true
-    encryption: "none"
-    servername: "e34bq.oa9r.zl3.hh.vavava.kdns.fr"
-    tls: true
-    network: "ws"
-    ws-opts:
-      path: "/?ed=2560"
-      headers:
-        Host: "e34bq.oa9r.zl3.hh.vavava.kdns.fr"
-
-  - name: "🇯🇵JP-88M-[49ca21/7bc340]"
-    type: "vless"
-    server: "83.147.12.20"
-    port: 443
-    uuid: "47fcef29-ab4e-4aa6-932b-d95a18f28a4e"
-    udp: true
-    encryption: "none"
-    servername: "e34bq.oa9r.zl3.hh.vavava.kdns.fr"
-    tls: true
-    network: "ws"
-    ws-opts:
-      path: "/?ed=2560"
-      headers:
-        Host: "e34bq.oa9r.zl3.hh.vavava.kdns.fr"
-
-  - name: "🇸🇬SG-73M-[fba028/18ce43]"
-    type: "vless"
-    server: "45.192.247.199"
-    port: 443
-    uuid: "47fcef29-ab4e-4aa6-932b-d95a18f28a4e"
-    udp: true
-    encryption: "none"
-    servername: "e34bq.oa9r.zl3.hh.vavava.kdns.fr"
-    tls: true
-    network: "ws"
-    ws-opts:
-      path: "/?ed=2560"
-      headers:
-        Host: "e34bq.oa9r.zl3.hh.vavava.kdns.fr"
 
   - name: "🌐XX-32M-[bb03cf/328bee]"
     type: "hysteria2"
@@ -273,24 +175,6 @@ proxies:
       headers:
         Host: "dee2309db4944c248b6d4372c6641e7b.oylfmxz.cn"
 
-  - name: "🇵🇱PL-24M-[e2e3cb/2c01dc]"
-    type: "vless"
-    server: "148.253.212.152"
-    port: 443
-    uuid: "496a2c7a-c963-4275-b317-4d4a68901456"
-    udp: true
-    encryption: "none"
-    servername: "unpkg.com"
-    client-fingerprint: "chrome"
-    tls: true
-    reality-opts:
-      public-key: "HD5mxrtWzbs_OvSz9VpAg0K7I5kQOtkjlz_w-vWx_Ck"
-      short-id: "e3f4582bf5866d50"
-    network: "xhttp"
-    xhttp-opts:
-      path: "/alterra-t2"
-      mode: "packet-up"
-
   - name: "🌐XX-112M-[bb03cf/289275]"
     type: "hysteria2"
     server: "91.240.86.70"
@@ -298,53 +182,6 @@ proxies:
     password: "3f63c86c-ac4a-4900-85cf-4fedf93c2ca5"
     udp: true
     sni: "hy.quattro-tech.ru"
-
-  - name: "🇳🇱NL-465M-[3ee86c/0047b7]"
-    type: "vless"
-    server: "165.231.99.44"
-    port: 8443
-    uuid: "e50b801c-6d59-43fc-af0f-aadc8bf70247"
-    udp: true
-    encryption: "none"
-    flow: "xtls-rprx-vision"
-    servername: "file-6ab17d2e.adhil.uk"
-    client-fingerprint: "safari"
-    alpn:
-      - "h2"
-    tls: true
-    network: "tcp"
-
-  - name: "🇫🇷FR-261M-[f6b0af/b9458f]"
-    type: "vless"
-    server: "fra.accessgate.link"
-    port: 8080
-    uuid: "38eb3e71-4349-4bd6-9baf-9740e1896495"
-    udp: true
-    encryption: "none"
-    flow: "xtls-rprx-vision"
-    servername: "unpkg.com"
-    client-fingerprint: "edge"
-    tls: true
-    reality-opts:
-      public-key: "CQBmePak1QN5SsSmK_KTOSLjsCTaiaM4Jtxt7jLheko"
-      short-id: "b0d8c9a285c70f6f"
-    network: "tcp"
-
-  - name: "🇫🇷FR-108M-[5f929c/c455d1]"
-    type: "vless"
-    server: "45.131.4.45"
-    port: 443
-    uuid: "50414e45-4c5f-5a45-5553-56a63c8d27cf"
-    udp: true
-    encryption: "none"
-    servername: "z-e-u-s-panel-h28k80.amipeito.workers.dev"
-    client-fingerprint: "unsafe"
-    tls: true
-    network: "ws"
-    ws-opts:
-      path: "/stream/PANEL_ZEUS/56a63c8d27cf"
-      headers:
-        Host: "z-e-u-s-panel-h28k80.amipeito.workers.dev"
 
   - name: "🇳🇱NL-328M-[53856b/33cc00]"
     type: "vless"
@@ -362,36 +199,6 @@ proxies:
       short-id: "eba1498e012ef580"
     network: "tcp"
 
-  - name: "🇺🇸US-151M-[18846c/85cc0b]"
-    type: "vless"
-    server: "179.255.106.66"
-    port: 8443
-    uuid: "47fcef29-ab4e-4aa6-932b-d95a18f28a4e"
-    udp: true
-    encryption: "none"
-    servername: "e34bq.oa9r.zl3.hh.vavava.kdns.fr"
-    tls: true
-    network: "ws"
-    ws-opts:
-      path: "/?ed=2560"
-      headers:
-        Host: "e34bq.oa9r.zl3.hh.vavava.kdns.fr"
-
-  - name: "🇺🇸US-168M-[d4fba8/c598fc]"
-    type: "vless"
-    server: "179.253.242.15"
-    port: 8443
-    uuid: "47fcef29-ab4e-4aa6-932b-d95a18f28a4e"
-    udp: true
-    encryption: "none"
-    servername: "e34bq.oa9r.zl3.hh.vavava.kdns.fr"
-    tls: true
-    network: "ws"
-    ws-opts:
-      path: "/?ed=2560"
-      headers:
-        Host: "e34bq.oa9r.zl3.hh.vavava.kdns.fr"
-
 proxy-groups:
   - name: "GLOBAL"
     type: select
@@ -401,32 +208,20 @@ proxy-groups:
   - name: "AUTO"
     type: select
     proxies:
-      - "🇱🇻LV-93M-[39463f/04e38f]"
-      - "🇳🇱NL-316M-[9ab841/2968d4]"
+      - "🇱🇻LV-77M-[39463f/04e38f]"
+      - "🌐XX-72M-[bb03cf/63d9ba]"
+      - "🇳🇱NL-432M-[9ab841/2968d4]"
+      - "🇯🇵JP-215M-[98c8e8/643f83]"
+      - "🌐XX-216M-[5e4dcc/4d87eb]"
+      - "🇩🇪DE-375M-[ba270e/ba3f5c]"
+      - "🇸🇬SG-115M-[51b504/d884d5]"
       - "🇯🇵JP-163M-[98c8e8/c0f052]"
       - "🌐XX-335M-[5e4dcc/bbb119]"
-      - "🇫🇮FI-178M-[3afefc/006a27]"
-      - "🇺🇸US-161M-[f35da1/56665f]"
-      - "🇺🇸US-123M-[17106e/f53a35]"
-      - "🇺🇸US-161M-[662272/00f963]"
-      - "🇺🇸US-137M-[235998/876c8c]"
-      - "🇺🇸US-136M-[33e883/ac64c2]"
-      - "🇺🇸US-118M-[4d2931/549dea]"
-      - "🇺🇸US-124M-[54768d/d330a3]"
-      - "🇸🇬SG-61M-[5d411c/ef86be]"
-      - "🇯🇵JP-88M-[49ca21/7bc340]"
-      - "🇸🇬SG-73M-[fba028/18ce43]"
       - "🌐XX-32M-[bb03cf/328bee]"
       - "🇳🇱NL-26M-[53856b/0cb865]"
       - "🇭🇰HK-22M-[71faf6/57bef6]"
-      - "🇵🇱PL-24M-[e2e3cb/2c01dc]"
       - "🌐XX-112M-[bb03cf/289275]"
-      - "🇳🇱NL-465M-[3ee86c/0047b7]"
-      - "🇫🇷FR-261M-[f6b0af/b9458f]"
-      - "🇫🇷FR-108M-[5f929c/c455d1]"
       - "🇳🇱NL-328M-[53856b/33cc00]"
-      - "🇺🇸US-151M-[18846c/85cc0b]"
-      - "🇺🇸US-168M-[d4fba8/c598fc]"
 
 rules:
   - "DOMAIN,smtp.gmail.com,DIRECT"
