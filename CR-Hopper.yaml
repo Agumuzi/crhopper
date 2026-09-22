@@ -14,15 +14,25 @@ proxies:
     udp: true
     sni: "hy.quattro-tech.ru"
 
-  - name: "🌐XX-119M-[bb03cf/63d9ba]"
+  - name: "🌐XX-111M-[bb03cf/328bee]"
     type: "hysteria2"
     server: "91.240.86.70"
     port: 22443
     password: "3f63c86c-ac4a-4900-85cf-4fedf93c2ca5"
     udp: true
-    skip-cert-verify: true
+    sni: "itsallproxy.quattro-tech.ru"
 
-  - name: "🇳🇱NL-84M-[9ab841/c8f764]"
+  - name: "🌐XX-142M-[4924d0/a2e922]"
+    type: "vmess"
+    server: "31.77.8.97"
+    port: 110
+    uuid: "e8758bf0-c234-4809-89f7-25fd868316d0"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    network: "tcp"
+
+  - name: "🇳🇱NL-274M-[9ab841/c8f764]"
     type: "vless"
     server: "nl-xh02.tcp-reset-club.net"
     port: 8443
@@ -41,6 +51,38 @@ proxies:
       mode: "stream-one"
       reuse-settings:
         max-concurrency: "16-32"
+
+  - name: "🇺🇸US-242M-[554d98/faf728]"
+    type: "trojan"
+    server: "100.42.228.109"
+    port: 443
+    password: "BxceQaOe"
+    udp: true
+    sni: "t.me%2fripaojiedian"
+    client-fingerprint: "iOS"
+    skip-cert-verify: true
+    network: "tcp"
+
+  - name: "🇫🇷FR-21M-[beccb7/347bb5]"
+    type: "vless"
+    server: "194.124.251.198"
+    port: 443
+    uuid: "1c8244b3-3865-4cc9-a7ab-dc22bf9c48d5"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "fr3.fishing-tackle.net"
+    client-fingerprint: "edge"
+    tls: true
+    network: "tcp"
+
+  - name: "🌐XX-119M-[bb03cf/63d9ba]"
+    type: "hysteria2"
+    server: "91.240.86.70"
+    port: 22443
+    password: "3f63c86c-ac4a-4900-85cf-4fedf93c2ca5"
+    udp: true
+    skip-cert-verify: true
 
   - name: "🇩🇪DE-269M-[ba270e/ba3f5c]"
     type: "vless"
@@ -78,30 +120,6 @@ proxies:
       reuse-settings:
         max-concurrency: "16-32"
 
-  - name: "🇸🇬SG-115M-[51b504/d884d5]"
-    type: "vless"
-    server: "5.223.74.174"
-    port: 2053
-    uuid: "29b81e1a-1989-4778-b0cb-a7223730f59d"
-    udp: true
-    encryption: "none"
-    flow: "xtls-rprx-vision"
-    servername: "5.223.74.174"
-    client-fingerprint: "chrome"
-    tls: true
-    reality-opts:
-      public-key: "pIkxGlcFFawk7e0T-2VcdFXOc9LsjoBhl47vl8EuRgg"
-      short-id: "36151c48e28cfb65"
-    network: "tcp"
-
-  - name: "🌐XX-32M-[bb03cf/328bee]"
-    type: "hysteria2"
-    server: "91.240.86.70"
-    port: 22443
-    password: "3f63c86c-ac4a-4900-85cf-4fedf93c2ca5"
-    udp: true
-    sni: "itsallproxy.quattro-tech.ru"
-
   - name: "🇳🇱NL-26M-[53856b/0cb865]"
     type: "vless"
     server: "138.124.113.61"
@@ -117,22 +135,6 @@ proxies:
       public-key: "G8SING6Ibc_igZ5vI5578fXCT_mBMRuq_o8_Ymnj2SQ"
       short-id: "eba1498e012ef580"
     network: "tcp"
-
-  - name: "🇭🇰HK-22M-[71faf6/57bef6]"
-    type: "vmess"
-    server: "dee2309db4944c248b6d4372c6641e7b.oylfmxz.cn"
-    port: 443
-    uuid: "d90e4077-bc7e-414d-a650-70bf1baae4d6"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-    tls: true
-    servername: "dee2309db4944c248b6d4372c6641e7b.oylfmxz.cn"
-    network: "ws"
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "dee2309db4944c248b6d4372c6641e7b.oylfmxz.cn"
 
   - name: "🌐XX-112M-[bb03cf/289275]"
     type: "hysteria2"
@@ -168,14 +170,15 @@ proxy-groups:
     type: select
     proxies:
       - "🇱🇻LV-52M-[39463f/04e38f]"
+      - "🌐XX-111M-[bb03cf/328bee]"
+      - "🌐XX-142M-[4924d0/a2e922]"
+      - "🇳🇱NL-274M-[9ab841/c8f764]"
+      - "🇺🇸US-242M-[554d98/faf728]"
+      - "🇫🇷FR-21M-[beccb7/347bb5]"
       - "🌐XX-119M-[bb03cf/63d9ba]"
-      - "🇳🇱NL-84M-[9ab841/c8f764]"
       - "🇩🇪DE-269M-[ba270e/ba3f5c]"
       - "🇳🇱NL-432M-[9ab841/2968d4]"
-      - "🇸🇬SG-115M-[51b504/d884d5]"
-      - "🌐XX-32M-[bb03cf/328bee]"
       - "🇳🇱NL-26M-[53856b/0cb865]"
-      - "🇭🇰HK-22M-[71faf6/57bef6]"
       - "🌐XX-112M-[bb03cf/289275]"
       - "🇳🇱NL-328M-[53856b/33cc00]"
 
