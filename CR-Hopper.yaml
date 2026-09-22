@@ -14,23 +14,140 @@ proxies:
     udp: true
     sni: "hy.quattro-tech.ru"
 
-  - name: "🌐XX-146M-[bb03cf/328bee]"
+  - name: "🌐XX-114M-[bb03cf/63d9ba]"
     type: "hysteria2"
     server: "91.240.86.70"
     port: 22443
     password: "3f63c86c-ac4a-4900-85cf-4fedf93c2ca5"
     udp: true
-    sni: "itsallproxy.quattro-tech.ru"
+    skip-cert-verify: true
 
-  - name: "🇷🇺RU-343M-[4355c0/1b9e8d]"
-    type: "ss"
-    server: "46.29.163.78"
-    port: 10090
-    cipher: "aes-256-gcm"
-    password: "6b39ae3234dfd68b"
+  - name: "🇳🇱NL-323M-[9ab841/c8f764]"
+    type: "vless"
+    server: "nl-xh02.tcp-reset-club.net"
+    port: 8443
+    uuid: "721bacfe-ff09-4e63-a735-686015bc1351"
     udp: true
+    encryption: "none"
+    servername: "s3.netavex.com"
+    client-fingerprint: "chrome"
+    tls: true
+    reality-opts:
+      public-key: "Gu_QdtOX6E8pZcYvDWgHKA5dxcit7hrpU27sizCEWXg"
+      short-id: "e0"
+    network: "xhttp"
+    xhttp-opts:
+      path: "/assets/v2/pkg"
+      mode: "stream-one"
+      reuse-settings:
+        max-concurrency: "16-32"
 
-  - name: "🇩🇪DE-170M-[4924d0/a2e922]"
+  - name: "🇸🇪SE-186M-[c5b6d6/1b4001]"
+    type: "vless"
+    server: "143.246.194.213"
+    port: 443
+    uuid: "dc9e93bc-b53a-11f1-91d3-52540030ba36"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "www.ikea.com"
+    client-fingerprint: "chrome"
+    tls: true
+    reality-opts:
+      public-key: "wSjV1yR_rhDUdoNbM9zIXNGLASLp9RorComnyoayo2c"
+      short-id: ""
+    network: "tcp"
+
+  - name: "🇩🇪DE-283M-[5e766c/bdb485]"
+    type: "vmess"
+    server: "191.96.94.50"
+    port: 27501
+    uuid: "93842911-bc7f-47e9-a036-904d205b3d11"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    skip-cert-verify: true
+    network: "http"
+    http-opts:
+      path:
+        - "/"
+      headers:
+        Host:
+          - "play-apps-features.googleusercontent.com"
+
+  - name: "🇷🇺RU-261M-[f38f7e/eb1e94]"
+    type: "vless"
+    server: "dismissaltree.net"
+    port: 2053
+    uuid: "2c634977-584e-4e1f-b501-1b70c77a6743"
+    udp: true
+    encryption: "none"
+    client-fingerprint: "chrome"
+    alpn:
+      - "h2"
+      - "http/1.1"
+    tls: true
+    network: "xhttp"
+    xhttp-opts:
+      path: "/api/v1/upload"
+      mode: "auto"
+      reuse-settings:
+        c-max-reuse-times: "64-128"
+        max-concurrency: "16-32"
+        max-connections: "0"
+      sc-max-each-post-bytes: "1000000"
+      sc-min-posts-interval-ms: "30"
+      x-padding-bytes: "100-1000"
+
+  - name: "🇵🇱PL-158M-[b6170f/fd8b41]"
+    type: "vless"
+    server: "2.56.172.228"
+    port: 8443
+    uuid: "5b754a1a-11aa-4df9-a8ba-44af9a579fe1"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "poland.b2ai.top"
+    client-fingerprint: "chrome"
+    tls: true
+    reality-opts:
+      public-key: "MjRaYQ5TjfU2rfHxVQ2Sa4nXRHHvsMvi3DW-x09n8Ts"
+      short-id: ""
+    network: "tcp"
+
+  - name: "🇫🇮FI-110M-[37bf6a/0a8c7d]"
+    type: "vless"
+    server: "62.60.229.124"
+    port: 8443
+    uuid: "5b754a1a-11aa-4df9-a8ba-44af9a579fe1"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "finland.b2ai.top"
+    client-fingerprint: "chrome"
+    tls: true
+    reality-opts:
+      public-key: "MjRaYQ5TjfU2rfHxVQ2Sa4nXRHHvsMvi3DW-x09n8Ts"
+      short-id: ""
+    network: "tcp"
+
+  - name: "🇺🇸US-220M-[2dc7b0/0a7156]"
+    type: "vless"
+    server: "47.251.108.158"
+    port: 443
+    uuid: "975fc322-6e38-434b-a53c-d39fed49b9a9"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "www.cloudflare.com"
+    client-fingerprint: "chrome"
+    tls: true
+    reality-opts:
+      public-key: "SmgYcFIvvFXW3xh4gvGhIJuQsaZvWkAylcjB6TEddEs"
+      short-id: "896f52ba2cfca903"
+    network: "tcp"
+
+  - name: "🇩🇪DE-245M-[4924d0/a2e922]"
     type: "vmess"
     server: "31.77.8.97"
     port: 110
@@ -40,58 +157,47 @@ proxies:
     udp: true
     network: "tcp"
 
-  - name: "🇩🇪DE-407M-[f8d049/bfade6]"
-    type: "vless"
-    server: "134.255.227.145"
-    port: 25809
-    uuid: "5535c74b-3c4c-4de3-a70e-f25c7946e52a"
+  - name: "🇷🇺RU-46M-[6e54cb/1a3e19]"
+    type: "ss"
+    server: "194.87.196.13"
+    port: 10090
+    cipher: "aes-256-gcm"
+    password: "4938e975724d0ed1"
     udp: true
-    encryption: "none"
-    servername: "gang.gayvibe.dpdns.org"
-    client-fingerprint: "firefox"
-    tls: true
-    network: "ws"
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "gang.gayvibe.dpdns.org"
 
-  - name: "🇵🇱PL-292M-[bb8539/fdfadb]"
+  - name: "🇺🇸US-36M-[b5aba2/e3ee28]"
     type: "vless"
-    server: "132.243.229.6"
-    port: 443
-    uuid: "b1e75472-99b6-4d0b-9cc1-9cfac7e4405a"
-    udp: true
-    encryption: "none"
-    servername: "aliusfilms.ru"
-    client-fingerprint: "safari"
-    skip-cert-verify: true
-    tls: true
-    reality-opts:
-      public-key: "cynncQk7kKzEQaExg-FN7pMqFaZPSXEi_Ggy7AXXmVg"
-      short-id: "3f8ad1"
-    network: "xhttp"
-    xhttp-opts:
-      path: "/GunService"
-
-  - name: "🇺🇸US-268M-[08a8e4/c6d7da]"
-    type: "vless"
-    server: "179.254.111.0"
+    server: "2.56.122.52"
     port: 8443
-    uuid: "94006a20-6cd6-4751-a14d-c5a0bacb68bb"
+    uuid: "5b754a1a-11aa-4df9-a8ba-44af9a579fe1"
     udp: true
     encryption: "none"
-    servername: "yandex.ru"
+    flow: "xtls-rprx-vision"
+    servername: "usa.b2ai.top"
     client-fingerprint: "chrome"
-    skip-cert-verify: true
     tls: true
     reality-opts:
-      public-key: "dBvFkg2zny545Ws6H_LXKEohOYV2MW_zACRrRQE1IUg"
-      short-id: "992e5a9a"
-    network: "xhttp"
-    xhttp-opts:
-      path: "/upd8svpn-xhttp"
-      host: "yandex.ru"
+      public-key: "upiiUpzV7q4L6pUmbgzB5r3zL957r17FuFDng3ip7R8"
+      short-id: ""
+    network: "tcp"
+
+  - name: "🇺🇸US-45M-[554d98/50750c]"
+    type: "trojan"
+    server: "100.42.228.109"
+    port: 443
+    password: "BxceQaOe"
+    udp: true
+    sni: "t.me/ripaojiedian"
+    skip-cert-verify: true
+    network: "tcp"
+
+  - name: "🌐XX-146M-[bb03cf/328bee]"
+    type: "hysteria2"
+    server: "91.240.86.70"
+    port: 22443
+    password: "3f63c86c-ac4a-4900-85cf-4fedf93c2ca5"
+    udp: true
+    sni: "itsallproxy.quattro-tech.ru"
 
   - name: "🇭🇰HK-84M-[9e41f6/f5fd71]"
     type: "ss"
@@ -125,34 +231,6 @@ proxies:
         max-concurrency: "16-32"
         max-connections: "0"
       x-padding-bytes: "100-1000"
-
-  - name: "🌐XX-37M-[bb03cf/63d9ba]"
-    type: "hysteria2"
-    server: "91.240.86.70"
-    port: 22443
-    password: "3f63c86c-ac4a-4900-85cf-4fedf93c2ca5"
-    udp: true
-    skip-cert-verify: true
-
-  - name: "🇳🇱NL-274M-[9ab841/c8f764]"
-    type: "vless"
-    server: "nl-xh02.tcp-reset-club.net"
-    port: 8443
-    uuid: "721bacfe-ff09-4e63-a735-686015bc1351"
-    udp: true
-    encryption: "none"
-    servername: "s3.netavex.com"
-    client-fingerprint: "chrome"
-    tls: true
-    reality-opts:
-      public-key: "Gu_QdtOX6E8pZcYvDWgHKA5dxcit7hrpU27sizCEWXg"
-      short-id: "e0"
-    network: "xhttp"
-    xhttp-opts:
-      path: "/assets/v2/pkg"
-      mode: "stream-one"
-      reuse-settings:
-        max-concurrency: "16-32"
 
   - name: "🇺🇸US-242M-[554d98/faf728]"
     type: "trojan"
@@ -203,16 +281,21 @@ proxy-groups:
     type: select
     proxies:
       - "🇱🇻LV-162M-[39463f/04e38f]"
+      - "🌐XX-114M-[bb03cf/63d9ba]"
+      - "🇳🇱NL-323M-[9ab841/c8f764]"
+      - "🇸🇪SE-186M-[c5b6d6/1b4001]"
+      - "🇩🇪DE-283M-[5e766c/bdb485]"
+      - "🇷🇺RU-261M-[f38f7e/eb1e94]"
+      - "🇵🇱PL-158M-[b6170f/fd8b41]"
+      - "🇫🇮FI-110M-[37bf6a/0a8c7d]"
+      - "🇺🇸US-220M-[2dc7b0/0a7156]"
+      - "🇩🇪DE-245M-[4924d0/a2e922]"
+      - "🇷🇺RU-46M-[6e54cb/1a3e19]"
+      - "🇺🇸US-36M-[b5aba2/e3ee28]"
+      - "🇺🇸US-45M-[554d98/50750c]"
       - "🌐XX-146M-[bb03cf/328bee]"
-      - "🇷🇺RU-343M-[4355c0/1b9e8d]"
-      - "🇩🇪DE-170M-[4924d0/a2e922]"
-      - "🇩🇪DE-407M-[f8d049/bfade6]"
-      - "🇵🇱PL-292M-[bb8539/fdfadb]"
-      - "🇺🇸US-268M-[08a8e4/c6d7da]"
       - "🇭🇰HK-84M-[9e41f6/f5fd71]"
       - "🇷🇺RU-49M-[f38f7e/2ca4a7]"
-      - "🌐XX-37M-[bb03cf/63d9ba]"
-      - "🇳🇱NL-274M-[9ab841/c8f764]"
       - "🇺🇸US-242M-[554d98/faf728]"
       - "🇳🇱NL-432M-[9ab841/2968d4]"
       - "🌐XX-112M-[bb03cf/289275]"
