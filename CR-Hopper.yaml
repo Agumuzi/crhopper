@@ -6,13 +6,77 @@ log-level: warning
 ipv6: false
 
 proxies:
-  - name: "🇱🇻LV-52M-[39463f/04e38f]"
+  - name: "🇱🇻LV-39M-[39463f/04e38f]"
     type: "hysteria2"
     server: "91.240.86.70"
     port: 24443
     password: "3f63c86c-ac4a-4900-85cf-4fedf93c2ca5"
     udp: true
     sni: "hy.quattro-tech.ru"
+
+  - name: "🇸🇪SE-62M-[c60923/8de739]"
+    type: "vless"
+    server: "surstreming.vvzzkontaktezzvv.garden"
+    port: 443
+    uuid: "4bdeee92-97e8-414d-bef6-ec1d5e2ab73b"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "surstreming.vvzzkontaktezzvv.garden"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "x6p656szvu_3CKLsJ4NtkooRvdTVGx7IoPca_p58_jA"
+      short-id: "fb442438e2223836"
+    network: "tcp"
+
+  - name: "🇮🇹IT-276M-[9e5a0f/ef80d9]"
+    type: "vless"
+    server: "sikol.mervi.icu"
+    port: 443
+    uuid: "9bbd487f-8f84-4ad7-b897-681c3f7d95dc"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "sikol.mervi.icu"
+    client-fingerprint: "chrome"
+    tls: true
+    reality-opts:
+      public-key: "41vd1YgLU_ZNBBKjjeoH7_0hvgFHzJUAySnIOrY_PlM"
+      short-id: "42223b402fc5d62d"
+    network: "tcp"
+
+  - name: "🇩🇪DE-87M-[2a9251/d86e00]"
+    type: "vless"
+    server: "gerwai1488.vvzzkontaktezzvv.garden"
+    port: 443
+    uuid: "4bdeee92-97e8-414d-bef6-ec1d5e2ab73b"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "gerwai1488.vvzzkontaktezzvv.garden"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "EYfpgja4VjpLUnWHtDJQ1XZk6xL5j4rXwf80Sw6keV0"
+      short-id: "0c13e8822e7f58aa"
+    network: "tcp"
+
+  - name: "🇳🇱NL-160M-[020a48/4aaa01]"
+    type: "vless"
+    server: "sujik.mervi.icu"
+    port: 443
+    uuid: "9bbd487f-8f84-4ad7-b897-681c3f7d95dc"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "sujik.mervi.icu"
+    client-fingerprint: "chrome"
+    tls: true
+    reality-opts:
+      public-key: "GhOEyam40TU9q00D24U_Psl4bPGTheUMOG5U8UR72A4"
+      short-id: "e07d62c8ec5de3ca"
+    network: "tcp"
 
   - name: "🇷🇺RU-24M-[bb03cf/63d9ba]"
     type: "hysteria2"
@@ -80,46 +144,6 @@ proxies:
     network: "grpc"
     grpc-opts:
       grpc-service-name: "your-custom-path"
-
-  - name: "🇳🇱NL-154M-[9ab841/c8f764]"
-    type: "vless"
-    server: "nl-xh02.tcp-reset-club.net"
-    port: 8443
-    uuid: "721bacfe-ff09-4e63-a735-686015bc1351"
-    udp: true
-    encryption: "none"
-    servername: "s3.netavex.com"
-    client-fingerprint: "chrome"
-    tls: true
-    reality-opts:
-      public-key: "Gu_QdtOX6E8pZcYvDWgHKA5dxcit7hrpU27sizCEWXg"
-      short-id: "e0"
-    network: "xhttp"
-    xhttp-opts:
-      path: "/assets/v2/pkg"
-      mode: "stream-one"
-      reuse-settings:
-        max-concurrency: "16-32"
-
-  - name: "🇳🇱NL-337M-[9ab841/2968d4]"
-    type: "vless"
-    server: "nl-xh02.tcp-reset-club.net"
-    port: 8443
-    uuid: "721bacfe-ff09-4e63-a735-686015bc1351"
-    udp: true
-    encryption: "none"
-    servername: "s3.netavex.com"
-    client-fingerprint: "chrome"
-    tls: true
-    reality-opts:
-      public-key: "Gu_QdtOX6E8pZcYvDWgHKA5dxcit7hrpU27sizCEWXg"
-      short-id: "e0"
-    network: "xhttp"
-    xhttp-opts:
-      path: "/assets/v2/pkg"
-      mode: "stream-one"
-      reuse-settings:
-        max-concurrency: "16-32"
 
   - name: "🇷🇺RU-123M-[bb03cf/328bee]"
     type: "hysteria2"
@@ -210,14 +234,16 @@ proxy-groups:
   - name: "AUTO"
     type: select
     proxies:
-      - "🇱🇻LV-52M-[39463f/04e38f]"
+      - "🇱🇻LV-39M-[39463f/04e38f]"
+      - "🇸🇪SE-62M-[c60923/8de739]"
+      - "🇮🇹IT-276M-[9e5a0f/ef80d9]"
+      - "🇩🇪DE-87M-[2a9251/d86e00]"
+      - "🇳🇱NL-160M-[020a48/4aaa01]"
       - "🇷🇺RU-24M-[bb03cf/63d9ba]"
       - "🇷🇺RU-21M-[f58d58/a92232]"
       - "🇫🇷FR-25M-[59f72e/91c224]"
       - "🇷🇺RU-79M-[bb03cf/289275]"
       - "🇫🇷FR-97M-[59f72e/04c47b]"
-      - "🇳🇱NL-154M-[9ab841/c8f764]"
-      - "🇳🇱NL-337M-[9ab841/2968d4]"
       - "🇷🇺RU-123M-[bb03cf/328bee]"
       - "🇷🇺RU-62M-[f38f7e/2ca4a7]"
       - "🇷🇺RU-290M-[f58d58/979333]"
