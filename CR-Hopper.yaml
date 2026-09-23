@@ -6,23 +6,13 @@ log-level: warning
 ipv6: false
 
 proxies:
-  - name: "🇱🇻LV-46M-[39463f/04e38f]"
+  - name: "🇱🇻LV-52M-[39463f/04e38f]"
     type: "hysteria2"
     server: "91.240.86.70"
     port: 24443
     password: "3f63c86c-ac4a-4900-85cf-4fedf93c2ca5"
     udp: true
     sni: "hy.quattro-tech.ru"
-
-  - name: "🌐XX-71M-[4924d0/a2e922]"
-    type: "vmess"
-    server: "31.77.8.97"
-    port: 110
-    uuid: "e8758bf0-c234-4809-89f7-25fd868316d0"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-    network: "tcp"
 
   - name: "🇷🇺RU-24M-[bb03cf/63d9ba]"
     type: "hysteria2"
@@ -110,23 +100,6 @@ proxies:
       mode: "stream-one"
       reuse-settings:
         max-concurrency: "16-32"
-
-  - name: "🇩🇪DE-213M-[5e766c/bdb485]"
-    type: "vmess"
-    server: "191.96.94.50"
-    port: 27501
-    uuid: "93842911-bc7f-47e9-a036-904d205b3d11"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-    skip-cert-verify: true
-    network: "http"
-    http-opts:
-      path:
-        - "/"
-      headers:
-        Host:
-          - "play-apps-features.googleusercontent.com"
 
   - name: "🇳🇱NL-337M-[9ab841/2968d4]"
     type: "vless"
@@ -237,15 +210,13 @@ proxy-groups:
   - name: "AUTO"
     type: select
     proxies:
-      - "🇱🇻LV-46M-[39463f/04e38f]"
-      - "🌐XX-71M-[4924d0/a2e922]"
+      - "🇱🇻LV-52M-[39463f/04e38f]"
       - "🇷🇺RU-24M-[bb03cf/63d9ba]"
       - "🇷🇺RU-21M-[f58d58/a92232]"
       - "🇫🇷FR-25M-[59f72e/91c224]"
       - "🇷🇺RU-79M-[bb03cf/289275]"
       - "🇫🇷FR-97M-[59f72e/04c47b]"
       - "🇳🇱NL-154M-[9ab841/c8f764]"
-      - "🇩🇪DE-213M-[5e766c/bdb485]"
       - "🇳🇱NL-337M-[9ab841/2968d4]"
       - "🇷🇺RU-123M-[bb03cf/328bee]"
       - "🇷🇺RU-62M-[f38f7e/2ca4a7]"
