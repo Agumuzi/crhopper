@@ -6,7 +6,7 @@ log-level: warning
 ipv6: false
 
 proxies:
-  - name: "🇱🇻LV-161M-[39463f/04e38f]"
+  - name: "🇱🇻LV-141M-[39463f/04e38f]"
     type: "hysteria2"
     server: "91.240.86.70"
     port: 24443
@@ -14,7 +14,91 @@ proxies:
     udp: true
     sni: "hy.quattro-tech.ru"
 
-  - name: "🌐XX-405M-[9f7292/9e532d]"
+  - name: "🇷🇺RU-79M-[bb03cf/289275]"
+    type: "hysteria2"
+    server: "91.240.86.70"
+    port: 22443
+    password: "3f63c86c-ac4a-4900-85cf-4fedf93c2ca5"
+    udp: true
+    sni: "hy.quattro-tech.ru"
+
+  - name: "🇫🇷FR-97M-[59f72e/04c47b]"
+    type: "vless"
+    server: "77.110.104.125"
+    port: 8443
+    uuid: "e0b9fb0f-1bbd-478b-9580-c2294778338b"
+    udp: true
+    encryption: "none"
+    servername: "maps.apple.com"
+    client-fingerprint: "chrome"
+    tls: true
+    reality-opts:
+      public-key: "OMlQAFrCMZ3DX0xlnbEZiByLBFzpUE8XJHJsrBzLdlY"
+      short-id: "2da4299da566b7"
+    network: "grpc"
+    grpc-opts:
+      grpc-service-name: "your-custom-path"
+
+  - name: "🌐XX-148M-[98c8e8/da6e97]"
+    type: "vless"
+    server: "172.64.80.1"
+    port: 8880
+    uuid: "70c16ec7-13f7-473b-b97d-06399f1481e3"
+    udp: true
+    encryption: "none"
+    servername: "mute-surf-0003.209.workers.dev"
+    tls: false
+    network: "ws"
+    ws-opts:
+      path: "/pyip=ProxyIP.US.CMLiussss.net"
+      headers:
+        Host: "mute-surf-0003.209.workers.dev"
+
+  - name: "🌐XX-140M-[4924d0/a2e922]"
+    type: "vmess"
+    server: "31.77.8.97"
+    port: 110
+    uuid: "e8758bf0-c234-4809-89f7-25fd868316d0"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    network: "tcp"
+
+  - name: "🇳🇱NL-154M-[9ab841/c8f764]"
+    type: "vless"
+    server: "nl-xh02.tcp-reset-club.net"
+    port: 8443
+    uuid: "721bacfe-ff09-4e63-a735-686015bc1351"
+    udp: true
+    encryption: "none"
+    servername: "s3.netavex.com"
+    client-fingerprint: "chrome"
+    tls: true
+    reality-opts:
+      public-key: "Gu_QdtOX6E8pZcYvDWgHKA5dxcit7hrpU27sizCEWXg"
+      short-id: "e0"
+    network: "xhttp"
+    xhttp-opts:
+      path: "/assets/v2/pkg"
+      mode: "stream-one"
+      reuse-settings:
+        max-concurrency: "16-32"
+
+  - name: "🌐XX-95M-[14c2b3/e5a526]"
+    type: "vless"
+    server: "www.iplocation.net"
+    port: 8880
+    uuid: "565326ee-c588-4843-9472-a051578ab1ae"
+    udp: true
+    encryption: "none"
+    tls: false
+    network: "ws"
+    ws-opts:
+      path: "/pyip=ProxyIP.KR.CMLiussss.net"
+      headers:
+        Host: "lucky-cell-e8c5.490-f12.workers.dev"
+
+  - name: "🌐XX-379M-[9f7292/9e532d]"
     type: "vless"
     server: "www.iplocation.net"
     port: 8080
@@ -28,19 +112,70 @@ proxies:
       headers:
         Host: "n23odi-jolly-sound-f784.mbkl61es.workers.dev"
 
-  - name: "🇩🇪DE-75M-[3dfa81/f14826]"
+  - name: "🇺🇸US-148M-[b5aba2/e3ee28]"
     type: "vless"
-    server: "193.8.215.96"
-    port: 9443
-    uuid: "d9d0f208-d582-41d5-bb7b-742671402810"
+    server: "2.56.122.52"
+    port: 8443
+    uuid: "5b754a1a-11aa-4df9-a8ba-44af9a579fe1"
     udp: true
     encryption: "none"
-    servername: "hub-de-05.hanvpn.cc"
-    client-fingerprint: "qq"
+    flow: "xtls-rprx-vision"
+    servername: "usa.b2ai.top"
+    client-fingerprint: "chrome"
     tls: true
-    network: "grpc"
-    grpc-opts:
-      grpc-service-name: "de05-grpc-8e47a"
+    reality-opts:
+      public-key: "upiiUpzV7q4L6pUmbgzB5r3zL957r17FuFDng3ip7R8"
+      short-id: ""
+    network: "tcp"
+
+  - name: "🌐XX-178M-[f9aeac/b30ebc]"
+    type: "vless"
+    server: "cf5.466688.xyz"
+    port: 8880
+    uuid: "9c772ed7-2843-4554-9a96-4a88f827de58"
+    udp: true
+    encryption: "none"
+    packet-encoding: "xudp"
+    tls: false
+    network: "ws"
+    ws-opts:
+      path: "/pyip=ProxyIP.KR.CMLiussss.net@https://t.me/QiangLieTuiJian"
+      headers:
+        Host: "nameless-tree-08b8.352.workers.dev"
+
+  - name: "🇰🇷KR-235M-[e9a4f3/f16e64]"
+    type: "vless"
+    server: "codecanyon.net"
+    port: 8880
+    uuid: "f3d7ebbc-03a1-40f9-a911-ae8628d3927a"
+    udp: true
+    encryption: "none"
+    tls: false
+    network: "ws"
+    ws-opts:
+      path: "/pyip=ProxyIP.KR.CMLiussss.net"
+      headers:
+        Host: "dawn-waterfall-6052.360-001.workers.dev"
+
+  - name: "🌐XX-103M-[d93c15/822ac0]"
+    type: "vless"
+    server: "time.is"
+    port: 443
+    uuid: "d195909a-eff4-489d-a261-955b904894cb"
+    udp: true
+    encryption: "none"
+    servername: "fREE.sERVer6PeeKCOnFIG.wOrkErs.dEv."
+    client-fingerprint: "chrome"
+    alpn:
+      - "h3"
+      - "h2"
+      - "http/1.1"
+    tls: true
+    network: "ws"
+    ws-opts:
+      path: "/eyJqdW5rIjoieUhYMWhoZEVEIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcmVmaXgiLCJwYW5lbElQcyI6WyJbMmEwMjo4OTg6MTQ2OjY0OjpdIl19?ed=2560"
+      headers:
+        Host: "free.server6peekconfig.workers.dev."
 
   - name: "🇫🇷FR-122M-[59f72e/91c224]"
     type: "vless"
@@ -67,52 +202,6 @@ proxies:
     password: "3f63c86c-ac4a-4900-85cf-4fedf93c2ca5"
     udp: true
     skip-cert-verify: true
-
-  - name: "🇵🇱PL-263M-[b6170f/fd8b41]"
-    type: "vless"
-    server: "2.56.172.228"
-    port: 8443
-    uuid: "5b754a1a-11aa-4df9-a8ba-44af9a579fe1"
-    udp: true
-    encryption: "none"
-    flow: "xtls-rprx-vision"
-    servername: "poland.b2ai.top"
-    client-fingerprint: "chrome"
-    tls: true
-    reality-opts:
-      public-key: "MjRaYQ5TjfU2rfHxVQ2Sa4nXRHHvsMvi3DW-x09n8Ts"
-      short-id: ""
-    network: "tcp"
-
-  - name: "🌐XX-241M-[d93c15/822ac0]"
-    type: "vless"
-    server: "time.is"
-    port: 443
-    uuid: "d195909a-eff4-489d-a261-955b904894cb"
-    udp: true
-    encryption: "none"
-    servername: "fREE.sERVer6PeeKCOnFIG.wOrkErs.dEv."
-    client-fingerprint: "chrome"
-    alpn:
-      - "h3"
-      - "h2"
-      - "http/1.1"
-    tls: true
-    network: "ws"
-    ws-opts:
-      path: "/eyJqdW5rIjoieUhYMWhoZEVEIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcmVmaXgiLCJwYW5lbElQcyI6WyJbMmEwMjo4OTg6MTQ2OjY0OjpdIl19?ed=2560"
-      headers:
-        Host: "free.server6peekconfig.workers.dev."
-
-  - name: "🇩🇪DE-238M-[4924d0/a2e922]"
-    type: "vmess"
-    server: "31.77.8.97"
-    port: 110
-    uuid: "e8758bf0-c234-4809-89f7-25fd868316d0"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-    network: "tcp"
 
   - name: "🇩🇪DE-268M-[072891/07dc85]"
     type: "vless"
@@ -147,36 +236,6 @@ proxies:
         Host:
           - "play-apps-features.googleusercontent.com"
 
-  - name: "🇰🇷KR-147M-[e9a4f3/f16e64]"
-    type: "vless"
-    server: "codecanyon.net"
-    port: 8880
-    uuid: "f3d7ebbc-03a1-40f9-a911-ae8628d3927a"
-    udp: true
-    encryption: "none"
-    tls: false
-    network: "ws"
-    ws-opts:
-      path: "/pyip=ProxyIP.KR.CMLiussss.net"
-      headers:
-        Host: "dawn-waterfall-6052.360-001.workers.dev"
-
-  - name: "🇸🇪SE-283M-[c5b6d6/1b4001]"
-    type: "vless"
-    server: "143.246.194.213"
-    port: 443
-    uuid: "dc9e93bc-b53a-11f1-91d3-52540030ba36"
-    udp: true
-    encryption: "none"
-    flow: "xtls-rprx-vision"
-    servername: "www.ikea.com"
-    client-fingerprint: "chrome"
-    tls: true
-    reality-opts:
-      public-key: "wSjV1yR_rhDUdoNbM9zIXNGLASLp9RorComnyoayo2c"
-      short-id: ""
-    network: "tcp"
-
   - name: "🇳🇱NL-337M-[9ab841/2968d4]"
     type: "vless"
     server: "nl-xh02.tcp-reset-club.net"
@@ -197,63 +256,6 @@ proxies:
       reuse-settings:
         max-concurrency: "16-32"
 
-  - name: "🇺🇸US-183M-[1e82f2/0bcc46]"
-    type: "vmess"
-    server: "47.85.188.30"
-    port: 12004
-    uuid: "8b5552bd-4cc7-4cac-af08-81c21686fd4f"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-    network: "tcp"
-
-  - name: "🇺🇸US-124M-[b5aba2/e3ee28]"
-    type: "vless"
-    server: "2.56.122.52"
-    port: 8443
-    uuid: "5b754a1a-11aa-4df9-a8ba-44af9a579fe1"
-    udp: true
-    encryption: "none"
-    flow: "xtls-rprx-vision"
-    servername: "usa.b2ai.top"
-    client-fingerprint: "chrome"
-    tls: true
-    reality-opts:
-      public-key: "upiiUpzV7q4L6pUmbgzB5r3zL957r17FuFDng3ip7R8"
-      short-id: ""
-    network: "tcp"
-
-  - name: "🌐XX-25M-[f9aeac/b30ebc]"
-    type: "vless"
-    server: "cf5.466688.xyz"
-    port: 8880
-    uuid: "9c772ed7-2843-4554-9a96-4a88f827de58"
-    udp: true
-    encryption: "none"
-    packet-encoding: "xudp"
-    tls: false
-    network: "ws"
-    ws-opts:
-      path: "/pyip=ProxyIP.KR.CMLiussss.net@https://t.me/QiangLieTuiJian"
-      headers:
-        Host: "nameless-tree-08b8.352.workers.dev"
-
-  - name: "🇷🇺RU-34M-[9cff6c/57f9d1]"
-    type: "ss"
-    server: "195.58.48.137"
-    port: 10081
-    cipher: "aes-256-gcm"
-    password: "8ad9d72a5571df86"
-    udp: true
-
-  - name: "🇷🇺RU-38M-[6e54cb/1a3e19]"
-    type: "ss"
-    server: "194.87.196.13"
-    port: 10090
-    cipher: "aes-256-gcm"
-    password: "4938e975724d0ed1"
-    udp: true
-
   - name: "🇰🇷KR-52M-[787412/27286c]"
     type: "vless"
     server: "anydesk.com"
@@ -267,21 +269,6 @@ proxies:
       path: "/pyip=ProxyIP.KR.CMLiussss.net"
       headers:
         Host: "icy-hat-20f3.328-99f.workers.dev"
-
-  - name: "🇰🇷KR-22M-[14c2b3/a643bc]"
-    type: "vless"
-    server: "www.iplocation.net"
-    port: 8880
-    uuid: "565326ee-c588-4843-9472-a051578ab1ae"
-    udp: true
-    encryption: "none"
-    servername: "www.iplocation.net"
-    tls: false
-    network: "ws"
-    ws-opts:
-      path: "/pyip=ProxyIP.KR.CMLiussss.net"
-      headers:
-        Host: "lucky-cell-e8c5.490-f12.workers.dev"
 
   - name: "🇷🇺RU-123M-[bb03cf/328bee]"
     type: "hysteria2"
@@ -316,36 +303,6 @@ proxies:
         max-connections: "0"
       x-padding-bytes: "100-1000"
 
-  - name: "🇰🇷KR-123M-[14c2b3/e5a526]"
-    type: "vless"
-    server: "www.iplocation.net"
-    port: 8880
-    uuid: "565326ee-c588-4843-9472-a051578ab1ae"
-    udp: true
-    encryption: "none"
-    tls: false
-    network: "ws"
-    ws-opts:
-      path: "/pyip=ProxyIP.KR.CMLiussss.net"
-      headers:
-        Host: "lucky-cell-e8c5.490-f12.workers.dev"
-
-  - name: "🇫🇮FI-140M-[37bf6a/0a8c7d]"
-    type: "vless"
-    server: "62.60.229.124"
-    port: 8443
-    uuid: "5b754a1a-11aa-4df9-a8ba-44af9a579fe1"
-    udp: true
-    encryption: "none"
-    flow: "xtls-rprx-vision"
-    servername: "finland.b2ai.top"
-    client-fingerprint: "chrome"
-    tls: true
-    reality-opts:
-      public-key: "MjRaYQ5TjfU2rfHxVQ2Sa4nXRHHvsMvi3DW-x09n8Ts"
-      short-id: ""
-    network: "tcp"
-
   - name: "🌐XX-167M-[5e4dcc/bbb119]"
     type: "vless"
     server: "cf2.466688.xyz"
@@ -377,16 +334,6 @@ proxies:
       host: "dismissaltree.net"
       mode: "auto"
 
-  - name: "🇺🇸US-230M-[554d98/50750c]"
-    type: "trojan"
-    server: "100.42.228.109"
-    port: 443
-    password: "BxceQaOe"
-    udp: true
-    sni: "t.me/ripaojiedian"
-    skip-cert-verify: true
-    network: "tcp"
-
   - name: "🌐XX-179M-[d93c15/2a33f5]"
     type: "vless"
     server: "time.is"
@@ -407,21 +354,6 @@ proxies:
       path: "/eyJqdW5rIjoieUhYMWhoZEVEIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcmVmaXgiLCJwYW5lbElQcyI6WyJbMmEwMjo4OTg6MTQ2OjY0OjpdIl19?ed=2560"
       headers:
         Host: "free.server6peekconfig.workers.dev."
-
-  - name: "🇺🇸US-159M-[98c8e8/da6e97]"
-    type: "vless"
-    server: "172.64.80.1"
-    port: 8880
-    uuid: "70c16ec7-13f7-473b-b97d-06399f1481e3"
-    udp: true
-    encryption: "none"
-    servername: "mute-surf-0003.209.workers.dev"
-    tls: false
-    network: "ws"
-    ws-opts:
-      path: "/pyip=ProxyIP.US.CMLiussss.net"
-      headers:
-        Host: "mute-surf-0003.209.workers.dev"
 
   - name: "🇷🇺RU-290M-[f58d58/979333]"
     type: "vless"
@@ -445,26 +377,6 @@ proxies:
       sc-max-each-post-bytes: "1000000"
       sc-min-posts-interval-ms: "30"
       x-padding-bytes: "100-1000"
-
-  - name: "🇳🇱NL-323M-[9ab841/c8f764]"
-    type: "vless"
-    server: "nl-xh02.tcp-reset-club.net"
-    port: 8443
-    uuid: "721bacfe-ff09-4e63-a735-686015bc1351"
-    udp: true
-    encryption: "none"
-    servername: "s3.netavex.com"
-    client-fingerprint: "chrome"
-    tls: true
-    reality-opts:
-      public-key: "Gu_QdtOX6E8pZcYvDWgHKA5dxcit7hrpU27sizCEWXg"
-      short-id: "e0"
-    network: "xhttp"
-    xhttp-opts:
-      path: "/assets/v2/pkg"
-      mode: "stream-one"
-      reuse-settings:
-        max-concurrency: "16-32"
 
   - name: "🇷🇺RU-261M-[f38f7e/eb1e94]"
     type: "vless"
@@ -498,25 +410,6 @@ proxies:
     password: "72553320ae6bcc8f"
     udp: true
 
-  - name: "🇺🇸US-242M-[554d98/faf728]"
-    type: "trojan"
-    server: "100.42.228.109"
-    port: 443
-    password: "BxceQaOe"
-    udp: true
-    sni: "t.me%2fripaojiedian"
-    client-fingerprint: "iOS"
-    skip-cert-verify: true
-    network: "tcp"
-
-  - name: "🌐XX-112M-[bb03cf/289275]"
-    type: "hysteria2"
-    server: "91.240.86.70"
-    port: 22443
-    password: "3f63c86c-ac4a-4900-85cf-4fedf93c2ca5"
-    udp: true
-    sni: "hy.quattro-tech.ru"
-
 proxy-groups:
   - name: "GLOBAL"
     type: select
@@ -526,41 +419,32 @@ proxy-groups:
   - name: "AUTO"
     type: select
     proxies:
-      - "🇱🇻LV-161M-[39463f/04e38f]"
-      - "🌐XX-405M-[9f7292/9e532d]"
-      - "🇩🇪DE-75M-[3dfa81/f14826]"
+      - "🇱🇻LV-141M-[39463f/04e38f]"
+      - "🇷🇺RU-79M-[bb03cf/289275]"
+      - "🇫🇷FR-97M-[59f72e/04c47b]"
+      - "🌐XX-148M-[98c8e8/da6e97]"
+      - "🌐XX-140M-[4924d0/a2e922]"
+      - "🇳🇱NL-154M-[9ab841/c8f764]"
+      - "🌐XX-95M-[14c2b3/e5a526]"
+      - "🌐XX-379M-[9f7292/9e532d]"
+      - "🇺🇸US-148M-[b5aba2/e3ee28]"
+      - "🌐XX-178M-[f9aeac/b30ebc]"
+      - "🇰🇷KR-235M-[e9a4f3/f16e64]"
+      - "🌐XX-103M-[d93c15/822ac0]"
       - "🇫🇷FR-122M-[59f72e/91c224]"
       - "🇷🇺RU-161M-[bb03cf/63d9ba]"
-      - "🇵🇱PL-263M-[b6170f/fd8b41]"
-      - "🌐XX-241M-[d93c15/822ac0]"
-      - "🇩🇪DE-238M-[4924d0/a2e922]"
       - "🇩🇪DE-268M-[072891/07dc85]"
       - "🇩🇪DE-213M-[5e766c/bdb485]"
-      - "🇰🇷KR-147M-[e9a4f3/f16e64]"
-      - "🇸🇪SE-283M-[c5b6d6/1b4001]"
       - "🇳🇱NL-337M-[9ab841/2968d4]"
-      - "🇺🇸US-183M-[1e82f2/0bcc46]"
-      - "🇺🇸US-124M-[b5aba2/e3ee28]"
-      - "🌐XX-25M-[f9aeac/b30ebc]"
-      - "🇷🇺RU-34M-[9cff6c/57f9d1]"
-      - "🇷🇺RU-38M-[6e54cb/1a3e19]"
       - "🇰🇷KR-52M-[787412/27286c]"
-      - "🇰🇷KR-22M-[14c2b3/a643bc]"
       - "🇷🇺RU-123M-[bb03cf/328bee]"
       - "🇷🇺RU-62M-[f38f7e/2ca4a7]"
-      - "🇰🇷KR-123M-[14c2b3/e5a526]"
-      - "🇫🇮FI-140M-[37bf6a/0a8c7d]"
       - "🌐XX-167M-[5e4dcc/bbb119]"
       - "🇷🇺RU-132M-[f58d58/a92232]"
-      - "🇺🇸US-230M-[554d98/50750c]"
       - "🌐XX-179M-[d93c15/2a33f5]"
-      - "🇺🇸US-159M-[98c8e8/da6e97]"
       - "🇷🇺RU-290M-[f58d58/979333]"
-      - "🇳🇱NL-323M-[9ab841/c8f764]"
       - "🇷🇺RU-261M-[f38f7e/eb1e94]"
       - "🇭🇰HK-84M-[9e41f6/f5fd71]"
-      - "🇺🇸US-242M-[554d98/faf728]"
-      - "🌐XX-112M-[bb03cf/289275]"
 
 rules:
   - "DOMAIN,smtp.gmail.com,DIRECT"
