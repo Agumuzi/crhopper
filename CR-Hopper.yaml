@@ -14,6 +14,26 @@ proxies:
     udp: true
     sni: "hy.quattro-tech.ru"
 
+  - name: "🇩🇪DE-202M-[a44b41/c6be9e]"
+    type: "vless"
+    server: "hot.vortexservice.ir"
+    port: 443
+    uuid: "b9ce7e35-a0b1-4a1e-9553-bb2ee32f4a5f"
+    udp: true
+    encryption: "none"
+    servername: "hot.vortexservice.ir"
+    client-fingerprint: "chrome"
+    alpn:
+      - "h2"
+      - "http/1.1"
+      - "h3"
+    tls: true
+    network: "ws"
+    ws-opts:
+      path: "/home/?ed"
+      headers:
+        Host: "hot.vortexservice.ir"
+
   - name: "🇸🇪SE-62M-[c60923/8de739]"
     type: "vless"
     server: "surstreming.vvzzkontaktezzvv.garden"
@@ -30,22 +50,6 @@ proxies:
       short-id: "fb442438e2223836"
     network: "tcp"
 
-  - name: "🇮🇹IT-276M-[9e5a0f/ef80d9]"
-    type: "vless"
-    server: "sikol.mervi.icu"
-    port: 443
-    uuid: "9bbd487f-8f84-4ad7-b897-681c3f7d95dc"
-    udp: true
-    encryption: "none"
-    flow: "xtls-rprx-vision"
-    servername: "sikol.mervi.icu"
-    client-fingerprint: "chrome"
-    tls: true
-    reality-opts:
-      public-key: "41vd1YgLU_ZNBBKjjeoH7_0hvgFHzJUAySnIOrY_PlM"
-      short-id: "42223b402fc5d62d"
-    network: "tcp"
-
   - name: "🇩🇪DE-87M-[2a9251/d86e00]"
     type: "vless"
     server: "gerwai1488.vvzzkontaktezzvv.garden"
@@ -60,22 +64,6 @@ proxies:
     reality-opts:
       public-key: "EYfpgja4VjpLUnWHtDJQ1XZk6xL5j4rXwf80Sw6keV0"
       short-id: "0c13e8822e7f58aa"
-    network: "tcp"
-
-  - name: "🇳🇱NL-160M-[020a48/4aaa01]"
-    type: "vless"
-    server: "sujik.mervi.icu"
-    port: 443
-    uuid: "9bbd487f-8f84-4ad7-b897-681c3f7d95dc"
-    udp: true
-    encryption: "none"
-    flow: "xtls-rprx-vision"
-    servername: "sujik.mervi.icu"
-    client-fingerprint: "chrome"
-    tls: true
-    reality-opts:
-      public-key: "GhOEyam40TU9q00D24U_Psl4bPGTheUMOG5U8UR72A4"
-      short-id: "e07d62c8ec5de3ca"
     network: "tcp"
 
   - name: "🇷🇺RU-24M-[bb03cf/63d9ba]"
@@ -102,24 +90,6 @@ proxies:
       host: "dismissaltree.net"
       mode: "auto"
 
-  - name: "🇫🇷FR-25M-[59f72e/91c224]"
-    type: "vless"
-    server: "77.110.104.125"
-    port: 8443
-    uuid: "e0b9fb0f-1bbd-478b-9580-c2294778338b"
-    udp: true
-    encryption: "none"
-    packet-encoding: "xudp"
-    servername: "maps.apple.com"
-    client-fingerprint: "chrome"
-    tls: true
-    reality-opts:
-      public-key: "OMlQAFrCMZ3DX0xlnbEZiByLBFzpUE8XJHJsrBzLdlY"
-      short-id: "2da4299da566b7"
-    network: "grpc"
-    grpc-opts:
-      grpc-service-name: "your-custom-path"
-
   - name: "🇷🇺RU-79M-[bb03cf/289275]"
     type: "hysteria2"
     server: "91.240.86.70"
@@ -127,23 +97,6 @@ proxies:
     password: "3f63c86c-ac4a-4900-85cf-4fedf93c2ca5"
     udp: true
     sni: "hy.quattro-tech.ru"
-
-  - name: "🇫🇷FR-97M-[59f72e/04c47b]"
-    type: "vless"
-    server: "77.110.104.125"
-    port: 8443
-    uuid: "e0b9fb0f-1bbd-478b-9580-c2294778338b"
-    udp: true
-    encryption: "none"
-    servername: "maps.apple.com"
-    client-fingerprint: "chrome"
-    tls: true
-    reality-opts:
-      public-key: "OMlQAFrCMZ3DX0xlnbEZiByLBFzpUE8XJHJsrBzLdlY"
-      short-id: "2da4299da566b7"
-    network: "grpc"
-    grpc-opts:
-      grpc-service-name: "your-custom-path"
 
   - name: "🇷🇺RU-123M-[bb03cf/328bee]"
     type: "hysteria2"
@@ -235,15 +188,12 @@ proxy-groups:
     type: select
     proxies:
       - "🇱🇻LV-39M-[39463f/04e38f]"
+      - "🇩🇪DE-202M-[a44b41/c6be9e]"
       - "🇸🇪SE-62M-[c60923/8de739]"
-      - "🇮🇹IT-276M-[9e5a0f/ef80d9]"
       - "🇩🇪DE-87M-[2a9251/d86e00]"
-      - "🇳🇱NL-160M-[020a48/4aaa01]"
       - "🇷🇺RU-24M-[bb03cf/63d9ba]"
       - "🇷🇺RU-21M-[f58d58/a92232]"
-      - "🇫🇷FR-25M-[59f72e/91c224]"
       - "🇷🇺RU-79M-[bb03cf/289275]"
-      - "🇫🇷FR-97M-[59f72e/04c47b]"
       - "🇷🇺RU-123M-[bb03cf/328bee]"
       - "🇷🇺RU-62M-[f38f7e/2ca4a7]"
       - "🇷🇺RU-290M-[f58d58/979333]"
