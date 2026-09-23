@@ -6,27 +6,40 @@ log-level: warning
 ipv6: false
 
 proxies:
-  - name: "🇩🇪DE-93M-[a44b41/c6be9e]"
+  - name: "🇱🇻LV-162M-[39463f/04e38f]"
+    type: "hysteria2"
+    server: "91.240.86.70"
+    port: 24443
+    password: "3f63c86c-ac4a-4900-85cf-4fedf93c2ca5"
+    udp: true
+    sni: "hy.quattro-tech.ru"
+
+  - name: "🇷🇺RU-156M-[bb03cf/328bee]"
+    type: "hysteria2"
+    server: "91.240.86.70"
+    port: 22443
+    password: "3f63c86c-ac4a-4900-85cf-4fedf93c2ca5"
+    udp: true
+    sni: "itsallproxy.quattro-tech.ru"
+
+  - name: "🇫🇷FR-225M-[59f72e/04c47b]"
     type: "vless"
-    server: "hot.vortexservice.ir"
-    port: 443
-    uuid: "b9ce7e35-a0b1-4a1e-9553-bb2ee32f4a5f"
+    server: "77.110.104.125"
+    port: 8443
+    uuid: "e0b9fb0f-1bbd-478b-9580-c2294778338b"
     udp: true
     encryption: "none"
-    servername: "hot.vortexservice.ir"
+    servername: "maps.apple.com"
     client-fingerprint: "chrome"
-    alpn:
-      - "h2"
-      - "http/1.1"
-      - "h3"
     tls: true
-    network: "ws"
-    ws-opts:
-      path: "/home/?ed"
-      headers:
-        Host: "hot.vortexservice.ir"
+    reality-opts:
+      public-key: "OMlQAFrCMZ3DX0xlnbEZiByLBFzpUE8XJHJsrBzLdlY"
+      short-id: "2da4299da566b7"
+    network: "grpc"
+    grpc-opts:
+      grpc-service-name: "your-custom-path"
 
-  - name: "🇷🇺RU-169M-[ad6317/c56630]"
+  - name: "🇷🇺RU-155M-[ad6317/c56630]"
     type: "ss"
     server: "195.133.23.200"
     port: 10081
@@ -34,13 +47,146 @@ proxies:
     password: "81a20429165df87e"
     udp: true
 
-  - name: "🇷🇺RU-104M-[bb03cf/328bee]"
-    type: "hysteria2"
-    server: "91.240.86.70"
-    port: 22443
-    password: "3f63c86c-ac4a-4900-85cf-4fedf93c2ca5"
+  - name: "🌐XX-306M-[14f8bc/abedbe]"
+    type: "ss"
+    server: "62.113.41.165"
+    port: 888
+    cipher: "chacha20-ietf-poly1305"
+    password: "hF-qqin2wYhP7zS47SyR0Q"
     udp: true
-    sni: "itsallproxy.quattro-tech.ru"
+
+  - name: "🇬🇧GB-291M-[8d6672/4c99d6]"
+    type: "vless"
+    server: "138.124.121.233"
+    port: 443
+    uuid: "8e826a69-63f6-0001-a67d-4a1958e8b2d2"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "amd.com"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "WWeAHWUVD-phmnjNJ823cer0c4CMIbEs08AhsuEZmDc"
+      short-id: "a696de84963656de"
+    network: "tcp"
+
+  - name: "🇫🇮FI-88M-[fd57fb/f44e82]"
+    type: "vless"
+    server: "217.144.188.131"
+    port: 443
+    uuid: "ce230b9c-0531-40da-bc3f-f27a8e059db1"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "admin.vkroom-it-service.xyz"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "RoZB6zAaInm8X5feCKpL0_wMZRQYxQHWsirP0SYum2g"
+      short-id: "f3a9c21e8b6d4571"
+    network: "tcp"
+
+  - name: "🇨🇭CH-393M-[82e03e/875e42]"
+    type: "vless"
+    server: "179.237.85.86"
+    port: 443
+    uuid: "375f2c62-bae4-44ca-9ed1-dcf691be8e79"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "gl0fbrnce5x.edgepop.lol"
+    client-fingerprint: "chrome"
+    tls: true
+    reality-opts:
+      public-key: "fJnm6-PhJGSwHaAdJOzXkYOfCPPCWSlaZrtfm1XsqhA"
+      short-id: ""
+    network: "tcp"
+
+  - name: "🇺🇸US-145M-[1e82f2/0bcc46]"
+    type: "vmess"
+    server: "47.85.188.30"
+    port: 12004
+    uuid: "8b5552bd-4cc7-4cac-af08-81c21686fd4f"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    network: "tcp"
+
+  - name: "🇫🇮FI-261M-[96c44b/725cd5]"
+    type: "vless"
+    server: "122.8.44.7"
+    port: 443
+    uuid: "2cd2540a-d790-50a5-7add-df9ade346dbd"
+    udp: true
+    encryption: "none"
+    servername: "download.nvidia.com"
+    client-fingerprint: "edge"
+    tls: true
+    reality-opts:
+      public-key: "D2SXHZRRYM0WcFChGWd57XB-U73aIsGfMpe2-Gq5XSs"
+      short-id: ""
+    network: "xhttp"
+    xhttp-opts:
+      path: "/"
+      mode: "auto"
+
+  - name: "🇺🇸US-211M-[554d98/a20e19]"
+    type: "trojan"
+    server: "100.42.228.109"
+    port: 443
+    password: "BxceQaOe"
+    udp: true
+    sni: "100.42.228.109"
+    client-fingerprint: "edge"
+    skip-cert-verify: true
+    network: "tcp"
+
+  - name: "🇺🇸US-65M-[88d434/c5aa5b]"
+    type: "vless"
+    server: "144.34.183.80"
+    port: 443
+    uuid: "2e11313c-5cef-470e-99a5-e4cf2b4bb5a5"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "www.apple.com"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "u2xj5VE8_y0ziMVdQNMBCfuOOl_t_jddfIcG-dI5dxg"
+      short-id: "01041646a3fee44e"
+    network: "tcp"
+
+  - name: "🇱🇰LK-73M-[64733d/a33ef3]"
+    type: "vless"
+    server: "support.zoom.us"
+    port: 80
+    uuid: "684f9a2e-4f96-497f-bfd9-ff1e34637952"
+    udp: true
+    encryption: "none"
+    servername: "support.zoom.us"
+    tls: false
+    network: "ws"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "free.sahanwickramasinghe.me"
+
+  - name: "🇹🇷TR-31M-[396f26/9b8704]"
+    type: "vless"
+    server: "185.71.219.128"
+    port: 2052
+    uuid: "f4ade6db-3c64-4939-9f32-788b87a9392f"
+    udp: true
+    encryption: "none"
+    servername: "185.71.219.128"
+    client-fingerprint: "iOS"
+    alpn:
+      - "h2"
+      - "http/1.1"
+    tls: true
+    network: "tcp"
 
   - name: "🇫🇷FR-197M-[59f72e/91c224]"
     type: "vless"
@@ -59,14 +205,6 @@ proxies:
     network: "grpc"
     grpc-opts:
       grpc-service-name: "your-custom-path"
-
-  - name: "🇱🇻LV-71M-[39463f/04e38f]"
-    type: "hysteria2"
-    server: "91.240.86.70"
-    port: 24443
-    password: "3f63c86c-ac4a-4900-85cf-4fedf93c2ca5"
-    udp: true
-    sni: "hy.quattro-tech.ru"
 
   - name: "🇷🇺RU-64M-[f38f7e/eb1e94]"
     type: "vless"
@@ -102,21 +240,6 @@ proxies:
     udp: true
     skip-cert-verify: true
     network: "tcp"
-
-  - name: "🇱🇰LK-75M-[64733d/a33ef3]"
-    type: "vless"
-    server: "support.zoom.us"
-    port: 80
-    uuid: "684f9a2e-4f96-497f-bfd9-ff1e34637952"
-    udp: true
-    encryption: "none"
-    servername: "support.zoom.us"
-    tls: false
-    network: "ws"
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "free.sahanwickramasinghe.me"
 
   - name: "🌐XX-193M-[f58d58/a92232]"
     type: "vless"
@@ -250,14 +373,23 @@ proxy-groups:
   - name: "AUTO"
     type: select
     proxies:
-      - "🇩🇪DE-93M-[a44b41/c6be9e]"
-      - "🇷🇺RU-169M-[ad6317/c56630]"
-      - "🇷🇺RU-104M-[bb03cf/328bee]"
+      - "🇱🇻LV-162M-[39463f/04e38f]"
+      - "🇷🇺RU-156M-[bb03cf/328bee]"
+      - "🇫🇷FR-225M-[59f72e/04c47b]"
+      - "🇷🇺RU-155M-[ad6317/c56630]"
+      - "🌐XX-306M-[14f8bc/abedbe]"
+      - "🇬🇧GB-291M-[8d6672/4c99d6]"
+      - "🇫🇮FI-88M-[fd57fb/f44e82]"
+      - "🇨🇭CH-393M-[82e03e/875e42]"
+      - "🇺🇸US-145M-[1e82f2/0bcc46]"
+      - "🇫🇮FI-261M-[96c44b/725cd5]"
+      - "🇺🇸US-211M-[554d98/a20e19]"
+      - "🇺🇸US-65M-[88d434/c5aa5b]"
+      - "🇱🇰LK-73M-[64733d/a33ef3]"
+      - "🇹🇷TR-31M-[396f26/9b8704]"
       - "🇫🇷FR-197M-[59f72e/91c224]"
-      - "🇱🇻LV-71M-[39463f/04e38f]"
       - "🇷🇺RU-64M-[f38f7e/eb1e94]"
       - "🇺🇸US-138M-[1e82f2/fa08ac]"
-      - "🇱🇰LK-75M-[64733d/a33ef3]"
       - "🌐XX-193M-[f58d58/a92232]"
       - "🇺🇸US-53M-[554d98/eecb59]"
       - "🇸🇪SE-62M-[c60923/8de739]"
