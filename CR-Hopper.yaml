@@ -6,15 +6,7 @@ log-level: warning
 ipv6: false
 
 proxies:
-  - name: "🇱🇻LV-39M-[39463f/04e38f]"
-    type: "hysteria2"
-    server: "91.240.86.70"
-    port: 24443
-    password: "3f63c86c-ac4a-4900-85cf-4fedf93c2ca5"
-    udp: true
-    sni: "hy.quattro-tech.ru"
-
-  - name: "🇩🇪DE-202M-[a44b41/c6be9e]"
+  - name: "🇩🇪DE-93M-[a44b41/c6be9e]"
     type: "vless"
     server: "hot.vortexservice.ir"
     port: 443
@@ -33,6 +25,125 @@ proxies:
       path: "/home/?ed"
       headers:
         Host: "hot.vortexservice.ir"
+
+  - name: "🇷🇺RU-169M-[ad6317/c56630]"
+    type: "ss"
+    server: "195.133.23.200"
+    port: 10081
+    cipher: "aes-256-gcm"
+    password: "81a20429165df87e"
+    udp: true
+
+  - name: "🇷🇺RU-104M-[bb03cf/328bee]"
+    type: "hysteria2"
+    server: "91.240.86.70"
+    port: 22443
+    password: "3f63c86c-ac4a-4900-85cf-4fedf93c2ca5"
+    udp: true
+    sni: "itsallproxy.quattro-tech.ru"
+
+  - name: "🇫🇷FR-197M-[59f72e/91c224]"
+    type: "vless"
+    server: "77.110.104.125"
+    port: 8443
+    uuid: "e0b9fb0f-1bbd-478b-9580-c2294778338b"
+    udp: true
+    encryption: "none"
+    packet-encoding: "xudp"
+    servername: "maps.apple.com"
+    client-fingerprint: "chrome"
+    tls: true
+    reality-opts:
+      public-key: "OMlQAFrCMZ3DX0xlnbEZiByLBFzpUE8XJHJsrBzLdlY"
+      short-id: "2da4299da566b7"
+    network: "grpc"
+    grpc-opts:
+      grpc-service-name: "your-custom-path"
+
+  - name: "🇱🇻LV-71M-[39463f/04e38f]"
+    type: "hysteria2"
+    server: "91.240.86.70"
+    port: 24443
+    password: "3f63c86c-ac4a-4900-85cf-4fedf93c2ca5"
+    udp: true
+    sni: "hy.quattro-tech.ru"
+
+  - name: "🇷🇺RU-64M-[f38f7e/eb1e94]"
+    type: "vless"
+    server: "dismissaltree.net"
+    port: 2053
+    uuid: "2c634977-584e-4e1f-b501-1b70c77a6743"
+    udp: true
+    encryption: "none"
+    client-fingerprint: "chrome"
+    alpn:
+      - "h2"
+      - "http/1.1"
+    tls: true
+    network: "xhttp"
+    xhttp-opts:
+      path: "/api/v1/upload"
+      mode: "auto"
+      reuse-settings:
+        c-max-reuse-times: "64-128"
+        max-concurrency: "16-32"
+        max-connections: "0"
+      sc-max-each-post-bytes: "1000000"
+      sc-min-posts-interval-ms: "30"
+      x-padding-bytes: "100-1000"
+
+  - name: "🇺🇸US-138M-[1e82f2/fa08ac]"
+    type: "vmess"
+    server: "47.85.188.30"
+    port: 12004
+    uuid: "8b5552bd-4cc7-4cac-af08-81c21686fd4f"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    skip-cert-verify: true
+    network: "tcp"
+
+  - name: "🇱🇰LK-75M-[64733d/a33ef3]"
+    type: "vless"
+    server: "support.zoom.us"
+    port: 80
+    uuid: "684f9a2e-4f96-497f-bfd9-ff1e34637952"
+    udp: true
+    encryption: "none"
+    servername: "support.zoom.us"
+    tls: false
+    network: "ws"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "free.sahanwickramasinghe.me"
+
+  - name: "🌐XX-193M-[f58d58/a92232]"
+    type: "vless"
+    server: "185.141.227.180"
+    port: 2053
+    uuid: "2c634977-584e-4e1f-b501-1b70c77a6743"
+    udp: true
+    encryption: "none"
+    servername: "dismissaltree.net"
+    client-fingerprint: "random"
+    tls: true
+    network: "xhttp"
+    xhttp-opts:
+      path: "/api/v1/upload"
+      host: "dismissaltree.net"
+      mode: "auto"
+
+  - name: "🇺🇸US-53M-[554d98/eecb59]"
+    type: "trojan"
+    server: "100.42.228.109"
+    port: 443
+    password: "BxceQaOe"
+    udp: true
+    sni: "t.me%2fripaojiedian"
+    client-fingerprint: "safari"
+    skip-cert-verify: true
+    network: "tcp"
 
   - name: "🇸🇪SE-62M-[c60923/8de739]"
     type: "vless"
@@ -74,22 +185,6 @@ proxies:
     udp: true
     skip-cert-verify: true
 
-  - name: "🇷🇺RU-21M-[f58d58/a92232]"
-    type: "vless"
-    server: "185.141.227.180"
-    port: 2053
-    uuid: "2c634977-584e-4e1f-b501-1b70c77a6743"
-    udp: true
-    encryption: "none"
-    servername: "dismissaltree.net"
-    client-fingerprint: "random"
-    tls: true
-    network: "xhttp"
-    xhttp-opts:
-      path: "/api/v1/upload"
-      host: "dismissaltree.net"
-      mode: "auto"
-
   - name: "🇷🇺RU-79M-[bb03cf/289275]"
     type: "hysteria2"
     server: "91.240.86.70"
@@ -97,14 +192,6 @@ proxies:
     password: "3f63c86c-ac4a-4900-85cf-4fedf93c2ca5"
     udp: true
     sni: "hy.quattro-tech.ru"
-
-  - name: "🇷🇺RU-123M-[bb03cf/328bee]"
-    type: "hysteria2"
-    server: "91.240.86.70"
-    port: 22443
-    password: "3f63c86c-ac4a-4900-85cf-4fedf93c2ca5"
-    udp: true
-    sni: "itsallproxy.quattro-tech.ru"
 
   - name: "🇷🇺RU-62M-[f38f7e/2ca4a7]"
     type: "vless"
@@ -154,30 +241,6 @@ proxies:
       sc-min-posts-interval-ms: "30"
       x-padding-bytes: "100-1000"
 
-  - name: "🇷🇺RU-261M-[f38f7e/eb1e94]"
-    type: "vless"
-    server: "dismissaltree.net"
-    port: 2053
-    uuid: "2c634977-584e-4e1f-b501-1b70c77a6743"
-    udp: true
-    encryption: "none"
-    client-fingerprint: "chrome"
-    alpn:
-      - "h2"
-      - "http/1.1"
-    tls: true
-    network: "xhttp"
-    xhttp-opts:
-      path: "/api/v1/upload"
-      mode: "auto"
-      reuse-settings:
-        c-max-reuse-times: "64-128"
-        max-concurrency: "16-32"
-        max-connections: "0"
-      sc-max-each-post-bytes: "1000000"
-      sc-min-posts-interval-ms: "30"
-      x-padding-bytes: "100-1000"
-
 proxy-groups:
   - name: "GLOBAL"
     type: select
@@ -187,17 +250,22 @@ proxy-groups:
   - name: "AUTO"
     type: select
     proxies:
-      - "🇱🇻LV-39M-[39463f/04e38f]"
-      - "🇩🇪DE-202M-[a44b41/c6be9e]"
+      - "🇩🇪DE-93M-[a44b41/c6be9e]"
+      - "🇷🇺RU-169M-[ad6317/c56630]"
+      - "🇷🇺RU-104M-[bb03cf/328bee]"
+      - "🇫🇷FR-197M-[59f72e/91c224]"
+      - "🇱🇻LV-71M-[39463f/04e38f]"
+      - "🇷🇺RU-64M-[f38f7e/eb1e94]"
+      - "🇺🇸US-138M-[1e82f2/fa08ac]"
+      - "🇱🇰LK-75M-[64733d/a33ef3]"
+      - "🌐XX-193M-[f58d58/a92232]"
+      - "🇺🇸US-53M-[554d98/eecb59]"
       - "🇸🇪SE-62M-[c60923/8de739]"
       - "🇩🇪DE-87M-[2a9251/d86e00]"
       - "🇷🇺RU-24M-[bb03cf/63d9ba]"
-      - "🇷🇺RU-21M-[f58d58/a92232]"
       - "🇷🇺RU-79M-[bb03cf/289275]"
-      - "🇷🇺RU-123M-[bb03cf/328bee]"
       - "🇷🇺RU-62M-[f38f7e/2ca4a7]"
       - "🇷🇺RU-290M-[f58d58/979333]"
-      - "🇷🇺RU-261M-[f38f7e/eb1e94]"
 
 rules:
   - "DOMAIN,smtp.gmail.com,DIRECT"
