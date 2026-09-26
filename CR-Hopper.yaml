@@ -18,6 +18,75 @@ proxies:
     grpc-opts:
       grpc-service-name: "vless"
 
+  - name: "🇫🇮FI-271M-[ee3cf8/16b2ac]"
+    type: "vless"
+    server: "122.8.45.2"
+    port: 8443
+    uuid: "3ae00194-1bc0-0bf4-9564-3c55b1c6d485"
+    udp: true
+    encryption: "none"
+    servername: "www.hp.com"
+    client-fingerprint: "chrome"
+    tls: true
+    reality-opts:
+      public-key: "QzFNQqkvBnDKIyjXUHJQe9jruaw9G5AV44vDC-qvnlo"
+      short-id: ""
+    network: "grpc"
+    grpc-opts:
+      grpc-service-name: "TunService"
+
+  - name: "🌐XX-250M-[3c6723/a80459]"
+    type: "vless"
+    server: "66.90.105.211"
+    port: 2083
+    uuid: "cd3bb7d9-7df3-4644-ac05-c260990ac277"
+    udp: true
+    encryption: "none"
+    packet-encoding: "xudp"
+    tls: false
+    network: "grpc"
+    grpc-opts:
+      grpc-service-name: "vless"
+
+  - name: "🇱🇻LV-89M-[39463f/04e38f]"
+    type: "hysteria2"
+    server: "91.240.86.70"
+    port: 24443
+    password: "3f63c86c-ac4a-4900-85cf-4fedf93c2ca5"
+    udp: true
+    sni: "hy.quattro-tech.ru"
+
+  - name: "🇺🇸US-69M-[e786ce/effcab]"
+    type: "vless"
+    server: "153.76.185.179"
+    port: 3090
+    uuid: "71e27437-b48e-44e7-a3ef-9922cf483cad"
+    udp: true
+    encryption: "none"
+    tls: false
+    network: "grpc"
+    grpc-opts:
+      grpc-service-name: "vless"
+
+  - name: "🇺🇸US-138M-[95bb57/d9926f]"
+    type: "ss"
+    server: "us1.auronvpn.site"
+    port: 8388
+    cipher: "chacha20-ietf-poly1305"
+    password: "ZTJkN"
+    udp: true
+
+  - name: "🇺🇸US-183M-[554d98/62e27f]"
+    type: "trojan"
+    server: "100.42.228.109"
+    port: 443
+    password: "BxceQaOe"
+    udp: true
+    sni: "t.me%2fripaojiedian"
+    client-fingerprint: "firefox"
+    skip-cert-verify: true
+    network: "tcp"
+
   - name: "🇬🇧GB-290M-[3c6723/724b12]"
     type: "vless"
     server: "66.90.105.211"
@@ -42,23 +111,6 @@ proxies:
     grpc-opts:
       grpc-service-name: "vless"
 
-  - name: "🇫🇮FI-324M-[ee3cf8/16b2ac]"
-    type: "vless"
-    server: "122.8.45.2"
-    port: 8443
-    uuid: "3ae00194-1bc0-0bf4-9564-3c55b1c6d485"
-    udp: true
-    encryption: "none"
-    servername: "www.hp.com"
-    client-fingerprint: "chrome"
-    tls: true
-    reality-opts:
-      public-key: "QzFNQqkvBnDKIyjXUHJQe9jruaw9G5AV44vDC-qvnlo"
-      short-id: ""
-    network: "grpc"
-    grpc-opts:
-      grpc-service-name: "TunService"
-
   - name: "🌐XX-130M-[bb03cf/328bee]"
     type: "hysteria2"
     server: "91.240.86.70"
@@ -66,218 +118,6 @@ proxies:
     password: "3f63c86c-ac4a-4900-85cf-4fedf93c2ca5"
     udp: true
     sni: "itsallproxy.quattro-tech.ru"
-
-  - name: "🇫🇮FI-410M-[246a1f/6792f8]"
-    type: "vless"
-    server: "45.149.147.109"
-    port: 8443
-    uuid: "440f3c08-7599-406e-8ba3-7dbc6324c5ed"
-    udp: true
-    encryption: "none"
-    servername: "api.vkimages.io"
-    client-fingerprint: "firefox"
-    tls: true
-    reality-opts:
-      public-key: "sgFFdQvfeujBKh6g7N7klU_u0mKYlr800MFbko5FzUg"
-      short-id: "844352756c1fabba"
-    network: "grpc"
-    grpc-opts:
-      grpc-service-name: "grpc-yandex"
-
-  - name: "🇱🇻LV-84M-[39463f/04e38f]"
-    type: "hysteria2"
-    server: "91.240.86.70"
-    port: 24443
-    password: "3f63c86c-ac4a-4900-85cf-4fedf93c2ca5"
-    udp: true
-    sni: "hy.quattro-tech.ru"
-
-  - name: "🇫🇮FI-386M-[541e76/fbfe63]"
-    type: "vless"
-    server: "45.149.147.124"
-    port: 8443
-    uuid: "440f3c08-7599-406e-8ba3-7dbc6324c5ed"
-    udp: true
-    encryption: "none"
-    servername: "api.vkimages.io"
-    client-fingerprint: "firefox"
-    tls: true
-    reality-opts:
-      public-key: "sgFFdQvfeujBKh6g7N7klU_u0mKYlr800MFbko5FzUg"
-      short-id: "844352756c1fabba"
-    network: "grpc"
-    grpc-opts:
-      grpc-service-name: "grpc-yandex"
-
-  - name: "🇫🇮FI-376M-[a36477/441029]"
-    type: "vless"
-    server: "45.149.147.95"
-    port: 8443
-    uuid: "440f3c08-7599-406e-8ba3-7dbc6324c5ed"
-    udp: true
-    encryption: "none"
-    servername: "api.vkimages.io"
-    client-fingerprint: "firefox"
-    tls: true
-    reality-opts:
-      public-key: "sgFFdQvfeujBKh6g7N7klU_u0mKYlr800MFbko5FzUg"
-      short-id: "844352756c1fabba"
-    network: "grpc"
-    grpc-opts:
-      grpc-service-name: "grpc-yandex"
-
-  - name: "🇫🇮FI-391M-[d03a46/e4cef0]"
-    type: "vless"
-    server: "45.149.147.137"
-    port: 8443
-    uuid: "440f3c08-7599-406e-8ba3-7dbc6324c5ed"
-    udp: true
-    encryption: "none"
-    servername: "api.vkimages.io"
-    client-fingerprint: "firefox"
-    tls: true
-    reality-opts:
-      public-key: "sgFFdQvfeujBKh6g7N7klU_u0mKYlr800MFbko5FzUg"
-      short-id: "844352756c1fabba"
-    network: "grpc"
-    grpc-opts:
-      grpc-service-name: "grpc-yandex"
-
-  - name: "🇫🇮FI-365M-[83430d/256169]"
-    type: "vless"
-    server: "45.149.147.113"
-    port: 8443
-    uuid: "440f3c08-7599-406e-8ba3-7dbc6324c5ed"
-    udp: true
-    encryption: "none"
-    servername: "api.vkimages.io"
-    client-fingerprint: "firefox"
-    tls: true
-    reality-opts:
-      public-key: "sgFFdQvfeujBKh6g7N7klU_u0mKYlr800MFbko5FzUg"
-      short-id: "844352756c1fabba"
-    network: "grpc"
-    grpc-opts:
-      grpc-service-name: "grpc-yandex"
-
-  - name: "🇫🇮FI-305M-[e3285f/3decbd]"
-    type: "vless"
-    server: "45.149.147.101"
-    port: 8443
-    uuid: "440f3c08-7599-406e-8ba3-7dbc6324c5ed"
-    udp: true
-    encryption: "none"
-    servername: "api.vkimages.io"
-    client-fingerprint: "firefox"
-    tls: true
-    reality-opts:
-      public-key: "sgFFdQvfeujBKh6g7N7klU_u0mKYlr800MFbko5FzUg"
-      short-id: "844352756c1fabba"
-    network: "grpc"
-    grpc-opts:
-      grpc-service-name: "grpc-yandex"
-
-  - name: "🇫🇮FI-376M-[385b28/529e84]"
-    type: "vless"
-    server: "45.149.147.128"
-    port: 8443
-    uuid: "440f3c08-7599-406e-8ba3-7dbc6324c5ed"
-    udp: true
-    encryption: "none"
-    servername: "api.vkimages.io"
-    client-fingerprint: "firefox"
-    tls: true
-    reality-opts:
-      public-key: "sgFFdQvfeujBKh6g7N7klU_u0mKYlr800MFbko5FzUg"
-      short-id: "844352756c1fabba"
-    network: "grpc"
-    grpc-opts:
-      grpc-service-name: "grpc-yandex"
-
-  - name: "🇫🇮FI-308M-[590d62/a00627]"
-    type: "vless"
-    server: "45.149.147.72"
-    port: 8443
-    uuid: "440f3c08-7599-406e-8ba3-7dbc6324c5ed"
-    udp: true
-    encryption: "none"
-    servername: "api.vkimages.io"
-    client-fingerprint: "firefox"
-    tls: true
-    reality-opts:
-      public-key: "sgFFdQvfeujBKh6g7N7klU_u0mKYlr800MFbko5FzUg"
-      short-id: "844352756c1fabba"
-    network: "grpc"
-    grpc-opts:
-      grpc-service-name: "grpc-yandex"
-
-  - name: "🇫🇮FI-383M-[f3e814/0f1076]"
-    type: "vless"
-    server: "45.149.147.118"
-    port: 8443
-    uuid: "440f3c08-7599-406e-8ba3-7dbc6324c5ed"
-    udp: true
-    encryption: "none"
-    servername: "api.vkimages.io"
-    client-fingerprint: "firefox"
-    tls: true
-    reality-opts:
-      public-key: "sgFFdQvfeujBKh6g7N7klU_u0mKYlr800MFbko5FzUg"
-      short-id: "844352756c1fabba"
-    network: "grpc"
-    grpc-opts:
-      grpc-service-name: "grpc-yandex"
-
-  - name: "🇫🇮FI-355M-[85ee9f/59d899]"
-    type: "vless"
-    server: "45.149.147.90"
-    port: 8443
-    uuid: "440f3c08-7599-406e-8ba3-7dbc6324c5ed"
-    udp: true
-    encryption: "none"
-    servername: "api.vkimages.io"
-    client-fingerprint: "firefox"
-    tls: true
-    reality-opts:
-      public-key: "sgFFdQvfeujBKh6g7N7klU_u0mKYlr800MFbko5FzUg"
-      short-id: "844352756c1fabba"
-    network: "grpc"
-    grpc-opts:
-      grpc-service-name: "grpc-yandex"
-
-  - name: "🇫🇮FI-390M-[0713e6/bf8791]"
-    type: "vless"
-    server: "45.149.147.139"
-    port: 8443
-    uuid: "440f3c08-7599-406e-8ba3-7dbc6324c5ed"
-    udp: true
-    encryption: "none"
-    servername: "api.vkimages.io"
-    client-fingerprint: "firefox"
-    tls: true
-    reality-opts:
-      public-key: "sgFFdQvfeujBKh6g7N7klU_u0mKYlr800MFbko5FzUg"
-      short-id: "844352756c1fabba"
-    network: "grpc"
-    grpc-opts:
-      grpc-service-name: "grpc-yandex"
-
-  - name: "🇫🇮FI-391M-[0459b1/169acb]"
-    type: "vless"
-    server: "45.149.147.189"
-    port: 8443
-    uuid: "440f3c08-7599-406e-8ba3-7dbc6324c5ed"
-    udp: true
-    encryption: "none"
-    servername: "api.vkimages.io"
-    client-fingerprint: "firefox"
-    tls: true
-    reality-opts:
-      public-key: "sgFFdQvfeujBKh6g7N7klU_u0mKYlr800MFbko5FzUg"
-      short-id: "844352756c1fabba"
-    network: "grpc"
-    grpc-opts:
-      grpc-service-name: "grpc-yandex"
 
   - name: "🇫🇮FI-507M-[46e979/d612a0]"
     type: "vless"
@@ -296,22 +136,6 @@ proxies:
     xhttp-opts:
       path: "/"
       mode: "auto"
-
-  - name: "🇪🇪EE-142M-[2015ae/47d064]"
-    type: "vless"
-    server: "xnod22x.artemida.live"
-    port: 8443
-    uuid: "d9ca156c-8b6d-4ca6-8be1-4eee64c93c36"
-    udp: true
-    encryption: "none"
-    flow: "xtls-rprx-vision"
-    servername: "xnod22x.artemida.live"
-    client-fingerprint: "firefox"
-    tls: true
-    reality-opts:
-      public-key: "ZRTNgwFRP8viY4SQOgPTfWlLWJCwY3dr0aawA7vHwhU"
-      short-id: "a1b2c3d4e5f6a7b8"
-    network: "tcp"
 
   - name: "🇺🇸US-129M-[554d98/c24e10]"
     type: "trojan"
@@ -382,37 +206,6 @@ proxies:
     tls: true
     network: "tcp"
 
-  - name: "🇬🇧GB-162M-[dc439d/2cce5f]"
-    type: "vless"
-    server: "194.62.249.27"
-    port: 8118
-    uuid: "eea1c59d-70fd-4829-8ed7-21ddfe55a0da"
-    udp: true
-    encryption: "none"
-    servername: "play.googleapis.com"
-    client-fingerprint: "firefox"
-    tls: true
-    reality-opts:
-      public-key: "LjAkLizwkZf35ObrUMFZ22UHXTEJzpgcTvHk9AuzcUM"
-      short-id: ""
-    network: "tcp"
-
-  - name: "🇸🇪SE-217M-[18089b/0aff78]"
-    type: "vless"
-    server: "13.140.8.179"
-    port: 443
-    uuid: "d0f0a880-0df1-48c9-bdf1-5669fb9483ce"
-    udp: true
-    encryption: "none"
-    flow: "xtls-rprx-vision"
-    servername: "condrve.ggisopi.su"
-    client-fingerprint: "firefox"
-    tls: true
-    reality-opts:
-      public-key: "SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I"
-      short-id: ""
-    network: "tcp"
-
   - name: "🇳🇱NL-30M-[92c41f/d45eb8]"
     type: "hysteria2"
     server: "77.74.123.100"
@@ -428,18 +221,6 @@ proxies:
     password: "Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0"
     udp: true
     sni: "hopp-romania-new.roxa.org"
-
-  - name: "🇬🇧GB-244M-[3c6723/2f0b28]"
-    type: "vless"
-    server: "66.90.105.211"
-    port: 2083
-    uuid: "cd3bb7d9-7df3-4644-ac05-c260990ac277"
-    udp: true
-    encryption: "none"
-    tls: false
-    network: "grpc"
-    grpc-opts:
-      grpc-service-name: "vless"
 
   - name: "🇺🇸US-169M-[554d98/eecb59]"
     type: "trojan"
@@ -459,19 +240,6 @@ proxies:
     password: "3f63c86c-ac4a-4900-85cf-4fedf93c2ca5"
     udp: true
     skip-cert-verify: true
-
-  - name: "🇬🇧GB-303M-[3c6723/a80459]"
-    type: "vless"
-    server: "66.90.105.211"
-    port: 2083
-    uuid: "cd3bb7d9-7df3-4644-ac05-c260990ac277"
-    udp: true
-    encryption: "none"
-    packet-encoding: "xudp"
-    tls: false
-    network: "grpc"
-    grpc-opts:
-      grpc-service-name: "vless"
 
   - name: "🇩🇪DE-249M-[b8b84a/f43ef8]"
     type: "vless"
@@ -570,39 +338,26 @@ proxy-groups:
     type: select
     proxies:
       - "🇬🇧GB-294M-[151f13/a9ce07]"
+      - "🇫🇮FI-271M-[ee3cf8/16b2ac]"
+      - "🌐XX-250M-[3c6723/a80459]"
+      - "🇱🇻LV-89M-[39463f/04e38f]"
+      - "🇺🇸US-69M-[e786ce/effcab]"
+      - "🇺🇸US-138M-[95bb57/d9926f]"
+      - "🇺🇸US-183M-[554d98/62e27f]"
       - "🇬🇧GB-290M-[3c6723/724b12]"
       - "🇬🇧GB-282M-[151f13/eea858]"
-      - "🇫🇮FI-324M-[ee3cf8/16b2ac]"
       - "🌐XX-130M-[bb03cf/328bee]"
-      - "🇫🇮FI-410M-[246a1f/6792f8]"
-      - "🇱🇻LV-84M-[39463f/04e38f]"
-      - "🇫🇮FI-386M-[541e76/fbfe63]"
-      - "🇫🇮FI-376M-[a36477/441029]"
-      - "🇫🇮FI-391M-[d03a46/e4cef0]"
-      - "🇫🇮FI-365M-[83430d/256169]"
-      - "🇫🇮FI-305M-[e3285f/3decbd]"
-      - "🇫🇮FI-376M-[385b28/529e84]"
-      - "🇫🇮FI-308M-[590d62/a00627]"
-      - "🇫🇮FI-383M-[f3e814/0f1076]"
-      - "🇫🇮FI-355M-[85ee9f/59d899]"
-      - "🇫🇮FI-390M-[0713e6/bf8791]"
-      - "🇫🇮FI-391M-[0459b1/169acb]"
       - "🇫🇮FI-507M-[46e979/d612a0]"
-      - "🇪🇪EE-142M-[2015ae/47d064]"
       - "🇺🇸US-129M-[554d98/c24e10]"
       - "🇬🇧GB-243M-[151f13/5c099d]"
       - "🇬🇧GB-150M-[3c6723/21b728]"
       - "🇷🇺RU-119M-[bb03cf/5e4a81]"
       - "🇺🇸US-215M-[554d98/a20e19]"
       - "🇳🇱NL-525M-[4bec32/14c501]"
-      - "🇬🇧GB-162M-[dc439d/2cce5f]"
-      - "🇸🇪SE-217M-[18089b/0aff78]"
       - "🇳🇱NL-30M-[92c41f/d45eb8]"
       - "🇷🇴RO-58M-[39b0b6/364984]"
-      - "🇬🇧GB-244M-[3c6723/2f0b28]"
       - "🇺🇸US-169M-[554d98/eecb59]"
       - "🌐XX-159M-[bb03cf/63d9ba]"
-      - "🇬🇧GB-303M-[3c6723/a80459]"
       - "🇩🇪DE-249M-[b8b84a/f43ef8]"
       - "🇳🇱NL-539M-[fd0037/36a223]"
       - "🇺🇸US-168M-[554d98/c3e202]"
