@@ -6,9 +6,9 @@ log-level: warning
 ipv6: false
 
 proxies:
-  - name: "🇬🇧GB-149M-[151f13/eea858]"
+  - name: "🇬🇧GB-170M-[3c6723/2f0b28]"
     type: "vless"
-    server: "66.90.104.43"
+    server: "66.90.105.211"
     port: 2083
     uuid: "cd3bb7d9-7df3-4644-ac05-c260990ac277"
     udp: true
@@ -18,7 +18,47 @@ proxies:
     grpc-opts:
       grpc-service-name: "vless"
 
-  - name: "🇸🇪SE-389M-[ad3567/8b55e3]"
+  - name: "🇷🇺RU-123M-[bb03cf/328bee]"
+    type: "hysteria2"
+    server: "91.240.86.70"
+    port: 22443
+    password: "3f63c86c-ac4a-4900-85cf-4fedf93c2ca5"
+    udp: true
+    sni: "itsallproxy.quattro-tech.ru"
+
+  - name: "🇳🇱NL-406M-[7b9486/d1c00d]"
+    type: "vless"
+    server: "ga2gqv6u8.dendiboss.org"
+    port: 443
+    uuid: "8d2341a3-13b8-4e5e-84e1-da1c4923149a"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "ga2gqv6u8.dendiboss.org"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "tEjpJHMrZU8Lx9935ubHem8HoKTx636RBiG3Cnwx8mM"
+      short-id: "11a4389e0f"
+    network: "tcp"
+
+  - name: "🇩🇪DE-335M-[5e4475/d43b19]"
+    type: "vless"
+    server: "l72brnp.denditop.site"
+    port: 443
+    uuid: "8d2341a3-13b8-4e5e-84e1-da1c4923149a"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "l72brnp.denditop.site"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "VJw5gKAj1oRwz7T1o1_nRzpxWnTH-7mjV3mMvgsrt1M"
+      short-id: "89d5fe"
+    network: "tcp"
+
+  - name: "🇸🇪SE-291M-[ad3567/8b55e3]"
     type: "vless"
     server: "dte3ma8o.denditop.site"
     port: 443
@@ -34,64 +74,7 @@ proxies:
       short-id: "3f6347b7"
     network: "tcp"
 
-  - name: "🇷🇺RU-107M-[bb03cf/5e4a81]"
-    type: "hysteria2"
-    server: "91.240.86.70"
-    port: 22443
-    password: "3f63c86c-ac4a-4900-85cf-4fedf93c2ca5"
-    udp: true
-    sni: "off"
-    skip-cert-verify: true
-
-  - name: "🇩🇪DE-372M-[124cd8/bb60df]"
-    type: "vless"
-    server: "yw0ein72.denditop.site"
-    port: 443
-    uuid: "8d2341a3-13b8-4e5e-84e1-da1c4923149a"
-    udp: true
-    encryption: "none"
-    flow: "xtls-rprx-vision"
-    servername: "yw0ein72.denditop.site"
-    client-fingerprint: "firefox"
-    tls: true
-    reality-opts:
-      public-key: "UpOOm5-gcSp3fLuCzWl2HJnnqtUHpnbyOWU2yUCcsRI"
-      short-id: "0492eabdb9"
-    network: "tcp"
-
-  - name: "🇳🇱NL-137M-[a9ebb2/271727]"
-    type: "vless"
-    server: "acnl1.astro-wall.online"
-    port: 443
-    uuid: "06d05a0a-f298-4be9-8fab-3de32e3fb770"
-    udp: true
-    encryption: "none"
-    flow: "xtls-rprx-vision"
-    servername: "acnl1.astro-wall.online"
-    client-fingerprint: "firefox"
-    tls: true
-    reality-opts:
-      public-key: "RMjWKm3Jj09ytfHD-90J0c3qdpQtjqJ4muUSAuF2eXQ"
-      short-id: "79b4"
-    network: "tcp"
-
-  - name: "🇱🇹LT-389M-[323dd2/efc3ad]"
-    type: "vless"
-    server: "lt.denditop.site"
-    port: 443
-    uuid: "8d2341a3-13b8-4e5e-84e1-da1c4923149a"
-    udp: true
-    encryption: "none"
-    flow: "xtls-rprx-vision"
-    servername: "lt.denditop.site"
-    client-fingerprint: "firefox"
-    tls: true
-    reality-opts:
-      public-key: "wgoLhL4pRP0y6fu6He4qW_ElohCM_ANWJF3HEoUhNz4"
-      short-id: "9c2378562188c3cb"
-    network: "tcp"
-
-  - name: "🌐XX-272M-[b557b3/969b63]"
+  - name: "🇩🇪DE-289M-[b557b3/258a23]"
     type: "vless"
     server: "109.122.198.83"
     port: 8443
@@ -107,10 +90,243 @@ proxies:
       headers:
         Host: "shephe.dpdns.org"
 
-  - name: "🇩🇪DE-308M-[e4e0bf/75bd01]"
+  - name: "🇩🇪DE-295M-[257ffd/2771ec]"
+    type: "vless"
+    server: "138.124.36.78"
+    port: 9443
+    uuid: "8d2341a3-13b8-4e5e-84e1-da1c4923149a"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "j638lm50.denditop.site"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "0kemMVJtXt0c2HhvxjqEWLLJQvvJALYyzjB-ftii0UA"
+      short-id: "3944"
+    network: "tcp"
+
+  - name: "🇬🇧GB-380M-[684eb0/67460c]"
+    type: "vless"
+    server: "discard.denditop.site"
+    port: 443
+    uuid: "8d2341a3-13b8-4e5e-84e1-da1c4923149a"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "discard.denditop.site"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "u75rw8LKDTUdcmVPFVVTKV0TxvH39Fl0WJ8crbjegxk"
+      short-id: "bc609efa3b2d052f"
+    network: "tcp"
+
+  - name: "🇩🇪DE-463M-[124cd8/bb60df]"
+    type: "vless"
+    server: "yw0ein72.denditop.site"
+    port: 443
+    uuid: "8d2341a3-13b8-4e5e-84e1-da1c4923149a"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "yw0ein72.denditop.site"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "UpOOm5-gcSp3fLuCzWl2HJnnqtUHpnbyOWU2yUCcsRI"
+      short-id: "0492eabdb9"
+    network: "tcp"
+
+  - name: "🇱🇹LT-307M-[323dd2/efc3ad]"
+    type: "vless"
+    server: "lt.denditop.site"
+    port: 443
+    uuid: "8d2341a3-13b8-4e5e-84e1-da1c4923149a"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "lt.denditop.site"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "wgoLhL4pRP0y6fu6He4qW_ElohCM_ANWJF3HEoUhNz4"
+      short-id: "9c2378562188c3cb"
+    network: "tcp"
+
+  - name: "🇩🇪DE-144M-[e4e0bf/75bd01]"
     type: "vless"
     server: "64.188.118.137"
     port: 443
+    uuid: "9e3132b8-b595-444a-833a-2de44789f9d7"
+    udp: true
+    encryption: "none"
+    servername: "shephe.dpdns.org"
+    client-fingerprint: "chrome"
+    tls: true
+    network: "ws"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "shephe.dpdns.org"
+
+  - name: "🇵🇱PL-471M-[f033cf/4431bb]"
+    type: "vless"
+    server: "polka-dot.failspace.top"
+    port: 443
+    uuid: "cd3bb7d9-7df3-4644-ac05-c260990ac277"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    tls: true
+    network: "tcp"
+
+  - name: "🇵🇱PL-398M-[c312cf/210921]"
+    type: "vless"
+    server: "poland-ded-new-one.failspace.top"
+    port: 443
+    uuid: "cd3bb7d9-7df3-4644-ac05-c260990ac277"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    tls: true
+    network: "tcp"
+
+  - name: "🇦🇹AT-257M-[79064e/bff346]"
+    type: "vless"
+    server: "132.243.203.214"
+    port: 8443
+    uuid: "9e3132b8-b595-444a-833a-2de44789f9d7"
+    udp: true
+    encryption: "none"
+    servername: "shephe.dpdns.org"
+    client-fingerprint: "chrome"
+    tls: true
+    network: "ws"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "shephe.dpdns.org"
+
+  - name: "🇸🇪SE-147M-[92d38c/e538e6]"
+    type: "vless"
+    server: "2.26.17.128"
+    port: 443
+    uuid: "9e3132b8-b595-444a-833a-2de44789f9d7"
+    udp: true
+    encryption: "none"
+    servername: "shephe.dpdns.org"
+    client-fingerprint: "chrome"
+    tls: true
+    network: "ws"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "shephe.dpdns.org"
+
+  - name: "🇫🇷FR-77M-[cef817/1e866e]"
+    type: "vless"
+    server: "217.60.63.5"
+    port: 443
+    uuid: "9e3132b8-b595-444a-833a-2de44789f9d7"
+    udp: true
+    encryption: "none"
+    servername: "shephe.dpdns.org"
+    client-fingerprint: "chrome"
+    tls: true
+    network: "ws"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "shephe.dpdns.org"
+
+  - name: "🇳🇱NL-424M-[ac6d27/3d45e5]"
+    type: "vless"
+    server: "victoryprovpn-production-e95a.up.railway.app"
+    port: 443
+    uuid: "b4a433b0-6661-c68d-ad79-1b0b439df694"
+    udp: true
+    encryption: "none"
+    servername: "victoryprovpn-production-e95a.up.railway.app"
+    client-fingerprint: "iOS"
+    alpn:
+      - "http/1.1"
+    tls: true
+    network: "ws"
+    ws-opts:
+      path: "/ws/b4a433b0-6661-c68d-ad79-1b0b439df694"
+      headers:
+        Host: "victoryprovpn-production-e95a.up.railway.app"
+
+  - name: "🇺🇸US-225M-[36de98/1fafcb]"
+    type: "vless"
+    server: "84.32.61.143"
+    port: 443
+    uuid: "8d2341a3-13b8-4e5e-84e1-da1c4923149a"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "uss.denditop.site"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "ycjPT1HxLy0b9oRp6tW4LBT6RZ6bAk-OkNqBNyhOyEw"
+      short-id: "fd197bbaca6415b0"
+    network: "tcp"
+
+  - name: "🇺🇸US-161M-[12bd99/1ba672]"
+    type: "vless"
+    server: "173.249.207.28"
+    port: 32692
+    uuid: "0590ab38-cb22-41d3-8312-6f396a5cec58"
+    udp: true
+    encryption: "none"
+    servername: "www.microsoft.com"
+    skip-cert-verify: true
+    tls: true
+    network: "tcp"
+
+  - name: "🇭🇰HK-135M-[236396/af8d3a]"
+    type: "vless"
+    server: "62.60.232.238"
+    port: 443
+    uuid: "8d2341a3-13b8-4e5e-84e1-da1c4923149a"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "hk.dendiboss.org"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "lK305DpoHGgXocbC3HwUcAGnVtmJjsFACgJMbAJrUVw"
+      short-id: "fd6a3a70c2350e51"
+    network: "tcp"
+
+  - name: "🇬🇧GB-149M-[151f13/eea858]"
+    type: "vless"
+    server: "66.90.104.43"
+    port: 2083
+    uuid: "cd3bb7d9-7df3-4644-ac05-c260990ac277"
+    udp: true
+    encryption: "none"
+    tls: false
+    network: "grpc"
+    grpc-opts:
+      grpc-service-name: "vless"
+
+  - name: "🇷🇺RU-107M-[bb03cf/5e4a81]"
+    type: "hysteria2"
+    server: "91.240.86.70"
+    port: 22443
+    password: "3f63c86c-ac4a-4900-85cf-4fedf93c2ca5"
+    udp: true
+    sni: "off"
+    skip-cert-verify: true
+
+  - name: "🌐XX-272M-[b557b3/969b63]"
+    type: "vless"
+    server: "109.122.198.83"
+    port: 8443
     uuid: "9e3132b8-b595-444a-833a-2de44789f9d7"
     udp: true
     encryption: "none"
@@ -155,60 +371,6 @@ proxies:
       short-id: "9c2378562188c3cb"
     network: "tcp"
 
-  - name: "🇬🇧GB-265M-[684eb0/67460c]"
-    type: "vless"
-    server: "discard.denditop.site"
-    port: 443
-    uuid: "8d2341a3-13b8-4e5e-84e1-da1c4923149a"
-    udp: true
-    encryption: "none"
-    flow: "xtls-rprx-vision"
-    servername: "discard.denditop.site"
-    client-fingerprint: "firefox"
-    tls: true
-    reality-opts:
-      public-key: "u75rw8LKDTUdcmVPFVVTKV0TxvH39Fl0WJ8crbjegxk"
-      short-id: "bc609efa3b2d052f"
-    network: "tcp"
-
-  - name: "🇵🇱PL-366M-[f033cf/4431bb]"
-    type: "vless"
-    server: "polka-dot.failspace.top"
-    port: 443
-    uuid: "cd3bb7d9-7df3-4644-ac05-c260990ac277"
-    udp: true
-    encryption: "none"
-    flow: "xtls-rprx-vision"
-    tls: true
-    network: "tcp"
-
-  - name: "🇵🇱PL-432M-[c312cf/210921]"
-    type: "vless"
-    server: "poland-ded-new-one.failspace.top"
-    port: 443
-    uuid: "cd3bb7d9-7df3-4644-ac05-c260990ac277"
-    udp: true
-    encryption: "none"
-    flow: "xtls-rprx-vision"
-    tls: true
-    network: "tcp"
-
-  - name: "🇫🇷FR-122M-[cef817/1e866e]"
-    type: "vless"
-    server: "217.60.63.5"
-    port: 443
-    uuid: "9e3132b8-b595-444a-833a-2de44789f9d7"
-    udp: true
-    encryption: "none"
-    servername: "shephe.dpdns.org"
-    client-fingerprint: "chrome"
-    tls: true
-    network: "ws"
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "shephe.dpdns.org"
-
   - name: "🇸🇪SE-170M-[92d38c/92c2a4]"
     type: "vless"
     server: "2.26.17.128"
@@ -225,50 +387,6 @@ proxies:
       headers:
         Host: "shephe.dpdns.org"
 
-  - name: "🇺🇸US-292M-[36de98/1fafcb]"
-    type: "vless"
-    server: "84.32.61.143"
-    port: 443
-    uuid: "8d2341a3-13b8-4e5e-84e1-da1c4923149a"
-    udp: true
-    encryption: "none"
-    flow: "xtls-rprx-vision"
-    servername: "uss.denditop.site"
-    client-fingerprint: "firefox"
-    tls: true
-    reality-opts:
-      public-key: "ycjPT1HxLy0b9oRp6tW4LBT6RZ6bAk-OkNqBNyhOyEw"
-      short-id: "fd197bbaca6415b0"
-    network: "tcp"
-
-  - name: "🇺🇸US-129M-[12bd99/1ba672]"
-    type: "vless"
-    server: "173.249.207.28"
-    port: 32692
-    uuid: "0590ab38-cb22-41d3-8312-6f396a5cec58"
-    udp: true
-    encryption: "none"
-    servername: "www.microsoft.com"
-    skip-cert-verify: true
-    tls: true
-    network: "tcp"
-
-  - name: "🇭🇰HK-94M-[236396/af8d3a]"
-    type: "vless"
-    server: "62.60.232.238"
-    port: 443
-    uuid: "8d2341a3-13b8-4e5e-84e1-da1c4923149a"
-    udp: true
-    encryption: "none"
-    flow: "xtls-rprx-vision"
-    servername: "hk.dendiboss.org"
-    client-fingerprint: "firefox"
-    tls: true
-    reality-opts:
-      public-key: "lK305DpoHGgXocbC3HwUcAGnVtmJjsFACgJMbAJrUVw"
-      short-id: "fd6a3a70c2350e51"
-    network: "tcp"
-
   - name: "🇩🇪DE-342M-[b9e588/8f07b7]"
     type: "vless"
     server: "91.132.160.209"
@@ -283,22 +401,6 @@ proxies:
     reality-opts:
       public-key: "9XSdNkmBhBszLYoODqMrm7r_JRur2PRbzF9T1Uf2AV0"
       short-id: "f1004027e382c2fa"
-    network: "tcp"
-
-  - name: "🇳🇱NL-347M-[7b9486/d1c00d]"
-    type: "vless"
-    server: "ga2gqv6u8.dendiboss.org"
-    port: 443
-    uuid: "8d2341a3-13b8-4e5e-84e1-da1c4923149a"
-    udp: true
-    encryption: "none"
-    flow: "xtls-rprx-vision"
-    servername: "ga2gqv6u8.dendiboss.org"
-    client-fingerprint: "firefox"
-    tls: true
-    reality-opts:
-      public-key: "tEjpJHMrZU8Lx9935ubHem8HoKTx636RBiG3Cnwx8mM"
-      short-id: "11a4389e0f"
     network: "tcp"
 
   - name: "🇬🇧GB-222M-[151f13/5c099d]"
@@ -350,41 +452,6 @@ proxies:
     http-opts:
       path:
         - "/"
-
-  - name: "🇳🇱NL-464M-[07746f/0594ef]"
-    type: "vless"
-    server: "victoryprovpn-production-c6dc.up.railway.app"
-    port: 443
-    uuid: "736062c3-e976-838c-8624-a977e95ee324"
-    udp: true
-    encryption: "none"
-    servername: "victoryprovpn-production-c6dc.up.railway.app"
-    client-fingerprint: "iOS"
-    alpn:
-      - "http/1.1"
-    tls: true
-    network: "ws"
-    ws-opts:
-      path: "/ws/736062c3-e976-838c-8624-a977e95ee324"
-      headers:
-        Host: "victoryprovpn-production-c6dc.up.railway.app"
-
-  - name: "🇮🇱IL-138M-[fc494a/da87cb]"
-    type: "vless"
-    server: "193.169.229.145"
-    port: 443
-    uuid: "46b3a70b-b99f-4c6e-aa83-df6d842bb954"
-    udp: true
-    encryption: "none"
-    flow: "xtls-rprx-vision"
-    servername: "isr.vpnskyline.com"
-    client-fingerprint: "chrome"
-    skip-cert-verify: true
-    tls: true
-    reality-opts:
-      public-key: "2CwgJn1lc23uxQjAdGphQl4SSRmd1amunSpYXxgCgCM"
-      short-id: "7e13fde9"
-    network: "tcp"
 
   - name: "🇩🇪DE-345M-[490d39/7b4db2]"
     type: "vless"
@@ -452,18 +519,6 @@ proxies:
     udp: true
     skip-cert-verify: true
 
-  - name: "🇬🇧GB-216M-[3c6723/2f0b28]"
-    type: "vless"
-    server: "66.90.105.211"
-    port: 2083
-    uuid: "cd3bb7d9-7df3-4644-ac05-c260990ac277"
-    udp: true
-    encryption: "none"
-    tls: false
-    network: "grpc"
-    grpc-opts:
-      grpc-service-name: "vless"
-
   - name: "🇱🇻LV-117M-[39463f/04e38f]"
     type: "hysteria2"
     server: "91.240.86.70"
@@ -512,14 +567,6 @@ proxies:
       sc-min-posts-interval-ms: "30"
       x-padding-bytes: "100-1000"
 
-  - name: "🌐XX-134M-[bb03cf/328bee]"
-    type: "hysteria2"
-    server: "91.240.86.70"
-    port: 22443
-    password: "3f63c86c-ac4a-4900-85cf-4fedf93c2ca5"
-    udp: true
-    sni: "itsallproxy.quattro-tech.ru"
-
   - name: "🇬🇧GB-280M-[3c6723/a80459]"
     type: "vless"
     server: "66.90.105.211"
@@ -542,42 +589,45 @@ proxy-groups:
   - name: "AUTO"
     type: select
     proxies:
+      - "🇬🇧GB-170M-[3c6723/2f0b28]"
+      - "🇷🇺RU-123M-[bb03cf/328bee]"
+      - "🇳🇱NL-406M-[7b9486/d1c00d]"
+      - "🇩🇪DE-335M-[5e4475/d43b19]"
+      - "🇸🇪SE-291M-[ad3567/8b55e3]"
+      - "🇩🇪DE-289M-[b557b3/258a23]"
+      - "🇩🇪DE-295M-[257ffd/2771ec]"
+      - "🇬🇧GB-380M-[684eb0/67460c]"
+      - "🇩🇪DE-463M-[124cd8/bb60df]"
+      - "🇱🇹LT-307M-[323dd2/efc3ad]"
+      - "🇩🇪DE-144M-[e4e0bf/75bd01]"
+      - "🇵🇱PL-471M-[f033cf/4431bb]"
+      - "🇵🇱PL-398M-[c312cf/210921]"
+      - "🇦🇹AT-257M-[79064e/bff346]"
+      - "🇸🇪SE-147M-[92d38c/e538e6]"
+      - "🇫🇷FR-77M-[cef817/1e866e]"
+      - "🇳🇱NL-424M-[ac6d27/3d45e5]"
+      - "🇺🇸US-225M-[36de98/1fafcb]"
+      - "🇺🇸US-161M-[12bd99/1ba672]"
+      - "🇭🇰HK-135M-[236396/af8d3a]"
       - "🇬🇧GB-149M-[151f13/eea858]"
-      - "🇸🇪SE-389M-[ad3567/8b55e3]"
       - "🇷🇺RU-107M-[bb03cf/5e4a81]"
-      - "🇩🇪DE-372M-[124cd8/bb60df]"
-      - "🇳🇱NL-137M-[a9ebb2/271727]"
-      - "🇱🇹LT-389M-[323dd2/efc3ad]"
       - "🌐XX-272M-[b557b3/969b63]"
-      - "🇩🇪DE-308M-[e4e0bf/75bd01]"
       - "🇲🇩MD-233M-[b7b277/a07157]"
       - "🇫🇮FI-140M-[6901cf/c9a4da]"
-      - "🇬🇧GB-265M-[684eb0/67460c]"
-      - "🇵🇱PL-366M-[f033cf/4431bb]"
-      - "🇵🇱PL-432M-[c312cf/210921]"
-      - "🇫🇷FR-122M-[cef817/1e866e]"
       - "🇸🇪SE-170M-[92d38c/92c2a4]"
-      - "🇺🇸US-292M-[36de98/1fafcb]"
-      - "🇺🇸US-129M-[12bd99/1ba672]"
-      - "🇭🇰HK-94M-[236396/af8d3a]"
       - "🇩🇪DE-342M-[b9e588/8f07b7]"
-      - "🇳🇱NL-347M-[7b9486/d1c00d]"
       - "🇬🇧GB-222M-[151f13/5c099d]"
       - "🇬🇧GB-224M-[3c6723/724b12]"
       - "🇬🇧GB-106M-[151f13/a9ce07]"
       - "🇩🇪DE-62M-[2ca360/b1e7e4]"
-      - "🇳🇱NL-464M-[07746f/0594ef]"
-      - "🇮🇱IL-138M-[fc494a/da87cb]"
       - "🇩🇪DE-345M-[490d39/7b4db2]"
       - "🇵🇱PL-35M-[73e58f/9c4d5c]"
       - "🇷🇺RU-64M-[f58d58/a92232]"
       - "🇷🇺RU-133M-[bb03cf/63d9ba]"
-      - "🇬🇧GB-216M-[3c6723/2f0b28]"
       - "🇱🇻LV-117M-[39463f/04e38f]"
       - "🇷🇺RU-119M-[bb03cf/289275]"
       - "🇦🇱AL-25M-[acdd13/47889c]"
       - "🌐XX-34M-[f38f7e/eb1e94]"
-      - "🌐XX-134M-[bb03cf/328bee]"
       - "🇬🇧GB-280M-[3c6723/a80459]"
 
 rules:
