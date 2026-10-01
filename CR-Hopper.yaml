@@ -18,17 +18,151 @@ proxies:
     grpc-opts:
       grpc-service-name: "vless"
 
-  - name: "🇩🇪DE-210M-[a47e9b/5c6343]"
+  - name: "🇬🇧GB-276M-[3c6723/724b12]"
     type: "vless"
-    server: "93.190.9.228"
-    port: 3090
-    uuid: "edc7ca73-c066-4421-9d01-0863ab411ce5"
+    server: "66.90.105.211"
+    port: 2083
+    uuid: "cd3bb7d9-7df3-4644-ac05-c260990ac277"
     udp: true
     encryption: "none"
     tls: false
     network: "grpc"
     grpc-opts:
       grpc-service-name: "vless"
+
+  - name: "🇸🇬SG-464M-[dcc66b/ceeb32]"
+    type: "vless"
+    server: "103.177.249.40"
+    port: 2083
+    uuid: "26524cce-d514-4014-a426-365fb266a14d"
+    udp: true
+    encryption: "none"
+    servername: "qcswhj2.edge-cache.danfeng4.xyz"
+    client-fingerprint: "chrome"
+    tls: true
+    network: "ws"
+    ws-opts:
+      path: "/danfeng-pw8lj2-nzliwt-h23l-978coeve?ed=2560"
+      headers:
+        Host: "qcswhj2.edge-cache.danfeng4.xyz"
+
+  - name: "🇵🇹PT-263M-[d5c7d6/a42dd3]"
+    type: "ss"
+    server: "185.231.233.91"
+    port: 17167
+    cipher: "aes-128-gcm"
+    password: "ca438054771821250089399a2f33275e"
+    udp: true
+
+  - name: "🇫🇮FI-85M-[078f20/d978e4]"
+    type: "vless"
+    server: "cdn.bulkavpn.top"
+    port: 443
+    uuid: "91d734be-a3d0-4d50-83ab-74cf7b6966fa"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "cdn.bulkavpn.top"
+    client-fingerprint: "chrome"
+    tls: true
+    reality-opts:
+      public-key: "bQZcMViJWXus9rMSTOa-ZAaUJC0mIlPx7XmzrLp8GQU"
+      short-id: "94f32cfc"
+    network: "tcp"
+
+  - name: "🇫🇮FI-146M-[596c24/c021a5]"
+    type: "vless"
+    server: "185.166.154.111"
+    port: 443
+    uuid: "91d734be-a3d0-4d50-83ab-74cf7b6966fa"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "cdn.bulkavpn.top"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "bQZcMViJWXus9rMSTOa-ZAaUJC0mIlPx7XmzrLp8GQU"
+      short-id: "94f32cfc"
+    network: "tcp"
+
+  - name: "🇦🇹AT-516M-[d50cc3/96f1e6]"
+    type: "vless"
+    server: "50.7.36.29"
+    port: 443
+    uuid: "cd3bb7d9-7df3-4644-ac05-c260990ac277"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "ekb.eg"
+    client-fingerprint: "firefox"
+    skip-cert-verify: true
+    tls: true
+    network: "tcp"
+
+  - name: "🇳🇱NL-375M-[a69f76/b9b560]"
+    type: "vless"
+    server: "212.46.33.5"
+    port: 443
+    uuid: "d4cae7df-50a1-428c-bd62-881c8f3bbd90"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "slowkd.sadiepinki.com"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "z37XIezsPyfMgmdXyFd9qT4C4maDAs1OcRt-wfyrXVo"
+      short-id: "9c2378562188c3cb"
+    network: "tcp"
+
+  - name: "🇱🇻LV-45M-[39463f/04e38f]"
+    type: "hysteria2"
+    server: "91.240.86.70"
+    port: 24443
+    password: "3f63c86c-ac4a-4900-85cf-4fedf93c2ca5"
+    udp: true
+    sni: "hy.quattro-tech.ru"
+
+  - name: "🇫🇮FI-28M-[0bb137/aea6a0]"
+    type: "vless"
+    server: "144.31.249.204"
+    port: 443
+    uuid: "f0a52dd3-4377-4402-a450-210bc81bcf25"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "sh-fi-01.mintrocket.org"
+    client-fingerprint: "chrome"
+    tls: true
+    reality-opts:
+      public-key: "WHb-QaDcaJMJ0S8Jtw83C_AdCK2anMZvTd3YCdcNanc"
+      short-id: "e4d61fb3192a14a3"
+    network: "tcp"
+
+  - name: "🇸🇬SG-60M-[16b363/a15baf]"
+    type: "vless"
+    server: "5.223.18.177"
+    port: 80
+    uuid: "717d03fa-4678-47a0-b27a-dff61a08ef83"
+    udp: true
+    encryption: "none"
+    tls: false
+    network: "ws"
+    ws-opts:
+      path: "/"
+
+  - name: "🇸🇬SG-41M-[1fe5af/8078dd]"
+    type: "vless"
+    server: "5.223.41.95"
+    port: 80
+    uuid: "f29e9fce-1f37-4a83-9e6c-05a997123dfb"
+    udp: true
+    encryption: "none"
+    tls: false
+    network: "ws"
+    ws-opts:
+      path: "/"
 
   - name: "🇳🇱NL-473M-[a69f76/801a42]"
     type: "vless"
@@ -45,30 +179,6 @@ proxies:
       public-key: "z37XIezsPyfMgmdXyFd9qT4C4maDAs1OcRt-wfyrXVo"
       short-id: "9c2378562188c3cb"
     network: "tcp"
-
-  - name: "🇬🇪GE-195M-[245f84/9ea916]"
-    type: "vless"
-    server: "93.190.9.109"
-    port: 3090
-    uuid: "29af4c23-f998-4301-ae03-e174fd9075a7"
-    udp: true
-    encryption: "none"
-    tls: false
-    network: "grpc"
-    grpc-opts:
-      grpc-service-name: "vless"
-
-  - name: "🇩🇪DE-68M-[dd8f78/048c03]"
-    type: "vless"
-    server: "104.143.223.220"
-    port: 2085
-    uuid: "29af4c23-f998-4301-ae03-e174fd9075a7"
-    udp: true
-    encryption: "none"
-    tls: false
-    network: "grpc"
-    grpc-opts:
-      grpc-service-name: "vless"
 
   - name: "🇬🇧GB-202M-[df9c22/7d781b]"
     type: "vless"
@@ -115,20 +225,6 @@ proxies:
       short-id: "9c2378562188c3cb"
     network: "tcp"
 
-  - name: "🇦🇹AT-515M-[d50cc3/96f1e6]"
-    type: "vless"
-    server: "50.7.36.29"
-    port: 443
-    uuid: "cd3bb7d9-7df3-4644-ac05-c260990ac277"
-    udp: true
-    encryption: "none"
-    flow: "xtls-rprx-vision"
-    servername: "ekb.eg"
-    client-fingerprint: "firefox"
-    skip-cert-verify: true
-    tls: true
-    network: "tcp"
-
   - name: "🇸🇬SG-64M-[3e977a/f476a4]"
     type: "vless"
     server: "31.56.197.149"
@@ -138,54 +234,6 @@ proxies:
     encryption: "none"
     servername: "qcswhj2.edge-cache.danfeng4.xyz"
     client-fingerprint: "iOS"
-    tls: true
-    network: "ws"
-    ws-opts:
-      path: "/danfeng-pw8lj2-nzliwt-h23l-978coeve"
-      headers:
-        Host: "qcswhj2.edge-cache.danfeng4.xyz"
-
-  - name: "🇸🇬SG-68M-[34272e/ed2c0e]"
-    type: "vless"
-    server: "218.102.64.147"
-    port: 9302
-    uuid: "26524cce-d514-4014-a426-365fb266a14d"
-    udp: true
-    encryption: "none"
-    servername: "qcswhj2.edge-cache.danfeng4.xyz"
-    client-fingerprint: "firefox"
-    tls: true
-    network: "ws"
-    ws-opts:
-      path: "/danfeng-pw8lj2-nzliwt-h23l-978coeve"
-      headers:
-        Host: "qcswhj2.edge-cache.danfeng4.xyz"
-
-  - name: "🇸🇬SG-64M-[53cd49/f88f65]"
-    type: "vless"
-    server: "218.102.64.147"
-    port: 4842
-    uuid: "26524cce-d514-4014-a426-365fb266a14d"
-    udp: true
-    encryption: "none"
-    servername: "qcswhj2.edge-cache.danfeng4.xyz"
-    client-fingerprint: "firefox"
-    tls: true
-    network: "ws"
-    ws-opts:
-      path: "/danfeng-pw8lj2-nzliwt-h23l-978coeve"
-      headers:
-        Host: "qcswhj2.edge-cache.danfeng4.xyz"
-
-  - name: "🇸🇬SG-72M-[ab0a23/8c271b]"
-    type: "vless"
-    server: "218.102.64.147"
-    port: 5357
-    uuid: "26524cce-d514-4014-a426-365fb266a14d"
-    udp: true
-    encryption: "none"
-    servername: "qcswhj2.edge-cache.danfeng4.xyz"
-    client-fingerprint: "firefox"
     tls: true
     network: "ws"
     ws-opts:
@@ -204,22 +252,6 @@ proxies:
     network: "grpc"
     grpc-opts:
       grpc-service-name: "vless"
-
-  - name: "🇩🇪DE-88M-[ba7a61/b482a2]"
-    type: "vless"
-    server: "cdn-de.bulkavpn.top"
-    port: 443
-    uuid: "91d734be-a3d0-4d50-83ab-74cf7b6966fa"
-    udp: true
-    encryption: "none"
-    flow: "xtls-rprx-vision"
-    servername: "cdn-de.bulkavpn.top"
-    client-fingerprint: "qq"
-    tls: true
-    reality-opts:
-      public-key: "LEoyslGYLVf2XWq9Bkq8Hod-EsB3ZoTlvR5AKK3rciQ"
-      short-id: "c885e8f8"
-    network: "tcp"
 
   - name: "🇺🇸US-39M-[e26cd5/656726]"
     type: "ss"
@@ -259,22 +291,6 @@ proxies:
       public-key: "z37XIezsPyfMgmdXyFd9qT4C4maDAs1OcRt-wfyrXVo"
       short-id: "9c2378562188c3cb"
     network: "tcp"
-
-  - name: "🇵🇹PT-287M-[d5c7d6/a42dd3]"
-    type: "ss"
-    server: "185.231.233.91"
-    port: 17167
-    cipher: "aes-128-gcm"
-    password: "ca438054771821250089399a2f33275e"
-    udp: true
-
-  - name: "🇱🇻LV-48M-[39463f/04e38f]"
-    type: "hysteria2"
-    server: "91.240.86.70"
-    port: 24443
-    password: "3f63c86c-ac4a-4900-85cf-4fedf93c2ca5"
-    udp: true
-    sni: "hy.quattro-tech.ru"
 
   - name: "🇺🇸US-25M-[46caae/e466f2]"
     type: "ss"
@@ -349,22 +365,6 @@ proxies:
     udp: true
     sni: "off"
     skip-cert-verify: true
-
-  - name: "🇳🇱NL-405M-[a69f76/b9b560]"
-    type: "vless"
-    server: "212.46.33.5"
-    port: 443
-    uuid: "d4cae7df-50a1-428c-bd62-881c8f3bbd90"
-    udp: true
-    encryption: "none"
-    flow: "xtls-rprx-vision"
-    servername: "slowkd.sadiepinki.com"
-    client-fingerprint: "firefox"
-    tls: true
-    reality-opts:
-      public-key: "z37XIezsPyfMgmdXyFd9qT4C4maDAs1OcRt-wfyrXVo"
-      short-id: "9c2378562188c3cb"
-    network: "tcp"
 
   - name: "🇬🇧GB-244M-[3c6723/a80459]"
     type: "vless"
@@ -454,32 +454,32 @@ proxy-groups:
     type: select
     proxies:
       - "🇬🇧GB-265M-[3c6723/2f0b28]"
-      - "🇩🇪DE-210M-[a47e9b/5c6343]"
+      - "🇬🇧GB-276M-[3c6723/724b12]"
+      - "🇸🇬SG-464M-[dcc66b/ceeb32]"
+      - "🇵🇹PT-263M-[d5c7d6/a42dd3]"
+      - "🇫🇮FI-85M-[078f20/d978e4]"
+      - "🇫🇮FI-146M-[596c24/c021a5]"
+      - "🇦🇹AT-516M-[d50cc3/96f1e6]"
+      - "🇳🇱NL-375M-[a69f76/b9b560]"
+      - "🇱🇻LV-45M-[39463f/04e38f]"
+      - "🇫🇮FI-28M-[0bb137/aea6a0]"
+      - "🇸🇬SG-60M-[16b363/a15baf]"
+      - "🇸🇬SG-41M-[1fe5af/8078dd]"
       - "🇳🇱NL-473M-[a69f76/801a42]"
-      - "🇬🇪GE-195M-[245f84/9ea916]"
-      - "🇩🇪DE-68M-[dd8f78/048c03]"
       - "🇬🇧GB-202M-[df9c22/7d781b]"
       - "🇳🇱NL-488M-[32fdbd/c96921]"
       - "🇳🇱NL-457M-[991373/854fd0]"
-      - "🇦🇹AT-515M-[d50cc3/96f1e6]"
       - "🇸🇬SG-64M-[3e977a/f476a4]"
-      - "🇸🇬SG-68M-[34272e/ed2c0e]"
-      - "🇸🇬SG-64M-[53cd49/f88f65]"
-      - "🇸🇬SG-72M-[ab0a23/8c271b]"
       - "🇬🇧GB-295M-[151f13/eea858]"
-      - "🇩🇪DE-88M-[ba7a61/b482a2]"
       - "🇺🇸US-39M-[e26cd5/656726]"
       - "🇬🇧GB-252M-[151f13/a9ce07]"
       - "🇳🇱NL-484M-[32fdbd/0b63f2]"
-      - "🇵🇹PT-287M-[d5c7d6/a42dd3]"
-      - "🇱🇻LV-48M-[39463f/04e38f]"
       - "🇺🇸US-25M-[46caae/e466f2]"
       - "🇷🇺RU-95M-[bb03cf/63d9ba]"
       - "🇳🇱NL-471M-[991373/941a3e]"
       - "🇬🇧GB-296M-[3c6723/b9d670]"
       - "🇳🇱NL-505M-[991373/fdb6c8]"
       - "🇷🇺RU-140M-[bb03cf/5e4a81]"
-      - "🇳🇱NL-405M-[a69f76/b9b560]"
       - "🇬🇧GB-244M-[3c6723/a80459]"
       - "🇬🇧GB-295M-[151f13/5c099d]"
       - "🇦🇱AL-61M-[acdd13/347918]"
