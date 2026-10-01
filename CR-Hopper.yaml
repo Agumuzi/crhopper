@@ -18,6 +18,286 @@ proxies:
     grpc-opts:
       grpc-service-name: "vless"
 
+  - name: "🇱🇻LV-95M-[39463f/04e38f]"
+    type: "hysteria2"
+    server: "91.240.86.70"
+    port: 24443
+    password: "3f63c86c-ac4a-4900-85cf-4fedf93c2ca5"
+    udp: true
+    sni: "hy.quattro-tech.ru"
+
+  - name: "🇩🇪DE-168M-[c192ae/28a05e]"
+    type: "vless"
+    server: "104.143.223.231"
+    port: 2085
+    uuid: "a641fd38-0ad7-40bf-9a56-6715c1787be3"
+    udp: true
+    encryption: "none"
+    tls: false
+    network: "grpc"
+    grpc-opts:
+      grpc-service-name: "vless"
+
+  - name: "🇵🇱PL-257M-[73e58f/9d4697]"
+    type: "vless"
+    server: "shprcdn.homes"
+    port: 7443
+    uuid: "65cd649c-f2f5-49c4-8f57-94d9b706e846"
+    udp: true
+    encryption: "none"
+    servername: "shprcdn.homes"
+    client-fingerprint: "chrome"
+    tls: true
+    reality-opts:
+      public-key: "ypzgxQ7VhTlTqjT0pAzWBIyotcG7SYqMpErwMBDci0g"
+      short-id: ""
+    network: "xhttp"
+    xhttp-opts:
+      path: "/content/dash/segments/"
+      mode: "stream-one"
+      reuse-settings:
+        c-max-reuse-times: "256-512"
+        h-keep-alive-period: 0
+        h-max-reusable-secs: "900-1500"
+        max-concurrency: "16-32"
+        max-connections: 0
+      x-padding-bytes: "50-150"
+
+  - name: "🇫🇮FI-554M-[00dfd6/26aa93]"
+    type: "vless"
+    server: "node5.boomvpn.ru"
+    port: 443
+    uuid: "30dab345-4de9-4b70-ad9f-8ebd5c66686f"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "cdn.jsdelivr.net"
+    client-fingerprint: "chrome"
+    tls: true
+    reality-opts:
+      public-key: "GRxGFwibgoUjG9OL5Dl1OLyK56yw8WaG5BdFP8ifVgQ"
+      short-id: "26f7082dd0e36ca1"
+    network: "tcp"
+
+  - name: "🌐XX-188M-[4924d0/248f2f]"
+    type: "vmess"
+    server: "31.77.8.97"
+    port: 110
+    uuid: "d2d8601b-c14b-42c6-b8ea-33889bce152a"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    network: "tcp"
+
+  - name: "🇷🇺RU-144M-[bb03cf/63d9ba]"
+    type: "hysteria2"
+    server: "91.240.86.70"
+    port: 22443
+    password: "3f63c86c-ac4a-4900-85cf-4fedf93c2ca5"
+    udp: true
+    skip-cert-verify: true
+
+  - name: "🇩🇪DE-337M-[d324f0/521512]"
+    type: "vless"
+    server: "45.157.235.217"
+    port: 9090
+    uuid: "c9cb26c9-f1ea-464e-b150-d1f805759d19"
+    udp: true
+    encryption: "none"
+    tls: false
+    network: "http"
+    http-opts:
+      path:
+        - "/@TurboConfigs---@TurboConfigs---@TurboConfigs--@TurboConfigs---@TurboConfigs---@TurboConfigs---@TurboConfigs---@TurboConfigs---@TurboConfigs--@TurboConfigs---@TurboConfigs---@TurboConfigs---@TurboConfigs---@TurboConfigs---@TurboConfigs--@TurboConfigs---@TurboConfigs---@TurboConfigs---"
+      headers:
+        Host:
+          - "ssh.webdade.com"
+
+  - name: "🌐XX-318M-[d93c15/2a33f5]"
+    type: "vless"
+    server: "time.is"
+    port: 443
+    uuid: "d195909a-eff4-489d-a261-955b904894cb"
+    udp: true
+    encryption: "none"
+    packet-encoding: "xudp"
+    servername: "fREE.sERVer6PeeKCOnFIG.wOrkErs.dEv."
+    client-fingerprint: "chrome"
+    alpn:
+      - "h3"
+      - "h2"
+      - "http/1.1"
+    tls: true
+    network: "ws"
+    ws-opts:
+      path: "/eyJqdW5rIjoieUhYMWhoZEVEIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcmVmaXgiLCJwYW5lbElQcyI6WyJbMmEwMjo4OTg6MTQ2OjY0OjpdIl19?ed=2560"
+      headers:
+        Host: "free.server6peekconfig.workers.dev."
+
+  - name: "🇳🇱NL-467M-[991373/fdb6c8]"
+    type: "vless"
+    server: "212.46.33.90"
+    port: 443
+    uuid: "d4cae7df-50a1-428c-bd62-881c8f3bbd90"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "slowkd.sadiepinki.com"
+    client-fingerprint: "chrome"
+    tls: true
+    reality-opts:
+      public-key: "z37XIezsPyfMgmdXyFd9qT4C4maDAs1OcRt-wfyrXVo"
+      short-id: "9c2378562188c3cb"
+    network: "tcp"
+
+  - name: "🌐XX-174M-[b46b8b/cc20fd]"
+    type: "trojan"
+    server: "172.64.80.1"
+    port: 443
+    password: "Telegram_healer_config"
+    udp: true
+    sni: "to6r63-kkchighqm2.vxz0dduq7to7su0cdqf.workers.dev"
+    client-fingerprint: "chrome"
+    alpn:
+      - "http/1.1"
+    network: "ws"
+    ws-opts:
+      path: "/tr/xwtrOUcg21SS0Ega?ed=2560"
+      headers:
+        Host: "to6r63-kkchighqm2.vxz0dduq7to7su0cdqf.workers.dev"
+
+  - name: "🇳🇱NL-497M-[32fdbd/23b48e]"
+    type: "vless"
+    server: "slowkd.sadiepinki.com"
+    port: 443
+    uuid: "d4cae7df-50a1-428c-bd62-881c8f3bbd90"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "slowkd.sadiepinki.com"
+    client-fingerprint: "chrome"
+    tls: true
+    reality-opts:
+      public-key: "z37XIezsPyfMgmdXyFd9qT4C4maDAs1OcRt-wfyrXVo"
+      short-id: "9c2378562188c3cb"
+    network: "tcp"
+
+  - name: "🇳🇱NL-461M-[a69f76/801a42]"
+    type: "vless"
+    server: "212.46.33.5"
+    port: 443
+    uuid: "d4cae7df-50a1-428c-bd62-881c8f3bbd90"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "slowkd.sadiepinki.com"
+    client-fingerprint: "chrome"
+    tls: true
+    reality-opts:
+      public-key: "z37XIezsPyfMgmdXyFd9qT4C4maDAs1OcRt-wfyrXVo"
+      short-id: "9c2378562188c3cb"
+    network: "tcp"
+
+  - name: "🇩🇪DE-211M-[5eec33/c724b7]"
+    type: "vless"
+    server: "93.190.8.117"
+    port: 3090
+    uuid: "6d5e5e29-0cc1-433c-bd3f-03821db54e5c"
+    udp: true
+    encryption: "none"
+    tls: false
+    network: "grpc"
+    grpc-opts:
+      grpc-service-name: "vless"
+
+  - name: "🇩🇪DE-163M-[676d97/22ccaa]"
+    type: "vless"
+    server: "93.190.9.10"
+    port: 3090
+    uuid: "ddceeb62-b629-4163-b4fb-a6fab21054b4"
+    udp: true
+    encryption: "none"
+    tls: false
+    network: "grpc"
+    grpc-opts:
+      grpc-service-name: "vless"
+
+  - name: "🇩🇪DE-238M-[c29f12/2f100e]"
+    type: "vless"
+    server: "93.190.8.148"
+    port: 3090
+    uuid: "ddceeb62-b629-4163-b4fb-a6fab21054b4"
+    udp: true
+    encryption: "none"
+    tls: false
+    network: "grpc"
+    grpc-opts:
+      grpc-service-name: "vless"
+
+  - name: "🇧🇪BE-536M-[a02bdc/a7d066]"
+    type: "vless"
+    server: "35.233.43.229"
+    port: 443
+    uuid: "e3fb56fe-bdbc-4f0e-b1ed-de2f7c85f254"
+    udp: true
+    encryption: "none"
+    servername: "www.cloudflare.com"
+    client-fingerprint: "chrome"
+    tls: true
+    reality-opts:
+      public-key: "i_UbRo65YEpOFuKkNVa0GEMl7xLDx9B1nmeyeNWyJQs"
+      short-id: "68e97022627fa882"
+    network: "tcp"
+
+  - name: "🇳🇱NL-219M-[bd38c2/a31470]"
+    type: "vless"
+    server: "node-nl.shtormvpn.shop"
+    port: 443
+    uuid: "cc4d63e2-3a86-49b3-9598-328bbe93e56c"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "google.com"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "yI6maXxTQ8zRHg39X8YMQtKW-IVfNIn0_OCUIQKmcXw"
+      short-id: ""
+    network: "tcp"
+
+  - name: "🇳🇱NL-530M-[d1cf0e/76558f]"
+    type: "vless"
+    server: "nl-ded.gamma-kvn.com"
+    port: 443
+    uuid: "e37b223d-c602-4be9-8ce0-eca27841ec8b"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    tls: true
+    network: "tcp"
+
+  - name: "🇳🇱NL-516M-[bf39fc/c999f5]"
+    type: "vless"
+    server: "nl-ded2.gamma-kvn.com"
+    port: 443
+    uuid: "e37b223d-c602-4be9-8ce0-eca27841ec8b"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    tls: true
+    network: "tcp"
+
+  - name: "🇳🇱NL-460M-[4bed07/cd9a86]"
+    type: "vless"
+    server: "nl-ded3.gamma-kvn.com"
+    port: 443
+    uuid: "e37b223d-c602-4be9-8ce0-eca27841ec8b"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    tls: true
+    network: "tcp"
+
   - name: "🇫🇮FI-205M-[3b495d/b90d33]"
     type: "hysteria2"
     server: "144.31.232.216"
@@ -43,38 +323,6 @@ proxies:
     grpc-opts:
       grpc-service-name: "grpc-tunnel"
 
-  - name: "🇩🇪DE-175M-[678f51/b11259]"
-    type: "vless"
-    server: "93.190.8.91"
-    port: 3090
-    uuid: "eb95d26f-2200-4780-9986-cc4960c665f2"
-    udp: true
-    encryption: "none"
-    tls: false
-    network: "grpc"
-    grpc-opts:
-      grpc-service-name: "vless"
-
-  - name: "🇩🇪DE-204M-[5a31c9/7fa78d]"
-    type: "vless"
-    server: "93.190.9.25"
-    port: 3090
-    uuid: "eb95d26f-2200-4780-9986-cc4960c665f2"
-    udp: true
-    encryption: "none"
-    tls: false
-    network: "grpc"
-    grpc-opts:
-      grpc-service-name: "vless"
-
-  - name: "🇱🇻LV-154M-[39463f/04e38f]"
-    type: "hysteria2"
-    server: "91.240.86.70"
-    port: 24443
-    password: "3f63c86c-ac4a-4900-85cf-4fedf93c2ca5"
-    udp: true
-    sni: "hy.quattro-tech.ru"
-
   - name: "🇳🇱NL-440M-[be7279/477c2d]"
     type: "hysteria2"
     server: "77.74.123.103"
@@ -82,61 +330,6 @@ proxies:
     password: "s0_sdK93x9wer_D02Lz9cvK3_Sa014Oakl_C2z"
     udp: true
     sni: "grape-test-italy.dynuddns.net"
-
-  - name: "🇩🇪DE-135M-[1c7dc7/158a04]"
-    type: "vless"
-    server: "93.190.9.35"
-    port: 3090
-    uuid: "eb95d26f-2200-4780-9986-cc4960c665f2"
-    udp: true
-    encryption: "none"
-    tls: false
-    network: "grpc"
-    grpc-opts:
-      grpc-service-name: "vless"
-
-  - name: "🇵🇱PL-310M-[73e58f/9d4697]"
-    type: "vless"
-    server: "shprcdn.homes"
-    port: 7443
-    uuid: "65cd649c-f2f5-49c4-8f57-94d9b706e846"
-    udp: true
-    encryption: "none"
-    servername: "shprcdn.homes"
-    client-fingerprint: "chrome"
-    tls: true
-    reality-opts:
-      public-key: "ypzgxQ7VhTlTqjT0pAzWBIyotcG7SYqMpErwMBDci0g"
-      short-id: ""
-    network: "xhttp"
-    xhttp-opts:
-      path: "/content/dash/segments/"
-      mode: "stream-one"
-      reuse-settings:
-        c-max-reuse-times: "256-512"
-        h-keep-alive-period: 0
-        h-max-reusable-secs: "900-1500"
-        max-concurrency: "16-32"
-        max-connections: 0
-      x-padding-bytes: "50-150"
-
-  - name: "🇩🇪DE-76M-[1d92eb/90d8e1]"
-    type: "hysteria2"
-    server: "64.188.98.171"
-    port: 443
-    password: "mkL3AfdSZIpTWRB9TcWPn9vywPGN89MRHg3ToRDj"
-    udp: true
-    sni: "germany3.h2corp.local"
-    skip-cert-verify: true
-
-  - name: "🇩🇪DE-63M-[cd8e01/c03bb8]"
-    type: "hysteria2"
-    server: "de.1.23.h2corp.org"
-    port: 443
-    password: "mkL3AfdSZIpTWRB9TcWPn9vywPGN89MRHg3ToRDj"
-    udp: true
-    sni: "germany3.h2corp.local"
-    skip-cert-verify: true
 
   - name: "🇩🇪DE-125M-[b74ac3/9c4da8]"
     type: "vless"
@@ -154,37 +347,6 @@ proxies:
     network: "grpc"
     grpc-opts:
       grpc-service-name: "grpc-tunnel"
-
-  - name: "🇳🇱NL-356M-[4cb2dd/4aa1c5]"
-    type: "vless"
-    server: "212.46.33.17"
-    port: 443
-    uuid: "6be9f5e4-2634-4c24-819c-40644874daac"
-    udp: true
-    encryption: "none"
-    servername: "open.dynamicway-cluster.com"
-    client-fingerprint: "firefox"
-    tls: true
-    reality-opts:
-      public-key: "C6nh6hqFTbtizgSH8vGmw2XUxsQAbAW3jPylpgGvfl4"
-      short-id: "4a7d3e9f2b8c6a1d"
-    network: "grpc"
-    grpc-opts:
-      grpc-service-name: "moktana.net.v1.StreamService"
-
-  - name: "🌐XX-219M-[6309e9/2f6485]"
-    type: "vless"
-    server: "141.193.213.30"
-    port: 8880
-    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
-    udp: true
-    encryption: "none"
-    tls: false
-    network: "ws"
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "vms.lifetime23.workers.dev"
 
   - name: "🇬🇧GB-316M-[151f13/5c099d]"
     type: "vless"
@@ -233,22 +395,6 @@ proxies:
     grpc-opts:
       grpc-service-name: "grpc-tunnel"
 
-  - name: "🇩🇪DE-190M-[d324f0/521512]"
-    type: "vless"
-    server: "45.157.235.217"
-    port: 9090
-    uuid: "c9cb26c9-f1ea-464e-b150-d1f805759d19"
-    udp: true
-    encryption: "none"
-    tls: false
-    network: "http"
-    http-opts:
-      path:
-        - "/@TurboConfigs---@TurboConfigs---@TurboConfigs--@TurboConfigs---@TurboConfigs---@TurboConfigs---@TurboConfigs---@TurboConfigs---@TurboConfigs--@TurboConfigs---@TurboConfigs---@TurboConfigs---@TurboConfigs---@TurboConfigs---@TurboConfigs--@TurboConfigs---@TurboConfigs---@TurboConfigs---"
-      headers:
-        Host:
-          - "ssh.webdade.com"
-
   - name: "🇳🇱NL-471M-[991373/61eb1d]"
     type: "vless"
     server: "212.46.33.90"
@@ -264,26 +410,6 @@ proxies:
       public-key: "z37XIezsPyfMgmdXyFd9qT4C4maDAs1OcRt-wfyrXVo"
       short-id: "9c2378562188c3cb"
     network: "tcp"
-
-  - name: "🇩🇪DE-148M-[c192ae/28a05e]"
-    type: "vless"
-    server: "104.143.223.231"
-    port: 2085
-    uuid: "a641fd38-0ad7-40bf-9a56-6715c1787be3"
-    udp: true
-    encryption: "none"
-    tls: false
-    network: "grpc"
-    grpc-opts:
-      grpc-service-name: "vless"
-
-  - name: "🇷🇺RU-137M-[bb03cf/63d9ba]"
-    type: "hysteria2"
-    server: "91.240.86.70"
-    port: 22443
-    password: "3f63c86c-ac4a-4900-85cf-4fedf93c2ca5"
-    udp: true
-    skip-cert-verify: true
 
   - name: "🇷🇺RU-461M-[cbc0de/ff9e9b]"
     type: "ss"
@@ -310,35 +436,6 @@ proxies:
     grpc-opts:
       grpc-service-name: "grpc-tunnel"
 
-  - name: "🇳🇱NL-311M-[4cb2dd/94f752]"
-    type: "vless"
-    server: "212.46.33.17"
-    port: 443
-    uuid: "6be9f5e4-2634-4c24-819c-40644874daac"
-    udp: true
-    encryption: "none"
-    servername: "open.dynamicway-cluster.com"
-    client-fingerprint: "chrome"
-    tls: true
-    reality-opts:
-      public-key: "C6nh6hqFTbtizgSH8vGmw2XUxsQAbAW3jPylpgGvfl4"
-      short-id: "4a7d3e9f2b8c6a1d"
-    network: "grpc"
-    grpc-opts:
-      grpc-service-name: "moktana.net.v1.StreamService"
-
-  - name: "🇩🇪DE-244M-[5eec33/c724b7]"
-    type: "vless"
-    server: "93.190.8.117"
-    port: 3090
-    uuid: "6d5e5e29-0cc1-433c-bd3f-03821db54e5c"
-    udp: true
-    encryption: "none"
-    tls: false
-    network: "grpc"
-    grpc-opts:
-      grpc-service-name: "vless"
-
   - name: "🇩🇪DE-310M-[34cea6/f3d021]"
     type: "ss"
     server: "94.249.187.46"
@@ -358,14 +455,6 @@ proxies:
     network: "grpc"
     grpc-opts:
       grpc-service-name: "vless"
-
-  - name: "🇷🇺RU-161M-[83218a/032cc4]"
-    type: "ss"
-    server: "195.58.48.137"
-    port: 20999
-    cipher: "aes-256-gcm"
-    password: "8ad9d72a5571df86"
-    udp: true
 
   - name: "🇩🇪DE-155M-[b74ac3/d76a52]"
     type: "vless"
@@ -458,22 +547,6 @@ proxies:
       sc-min-posts-interval-ms: "30"
       x-padding-bytes: "100-1000"
 
-  - name: "🇳🇱NL-485M-[a69f76/801a42]"
-    type: "vless"
-    server: "212.46.33.5"
-    port: 443
-    uuid: "d4cae7df-50a1-428c-bd62-881c8f3bbd90"
-    udp: true
-    encryption: "none"
-    flow: "xtls-rprx-vision"
-    servername: "slowkd.sadiepinki.com"
-    client-fingerprint: "chrome"
-    tls: true
-    reality-opts:
-      public-key: "z37XIezsPyfMgmdXyFd9qT4C4maDAs1OcRt-wfyrXVo"
-      short-id: "9c2378562188c3cb"
-    network: "tcp"
-
   - name: "🇩🇪DE-386M-[a9a976/da5781]"
     type: "vless"
     server: "45.132.176.161"
@@ -490,18 +563,6 @@ proxies:
     network: "grpc"
     grpc-opts:
       grpc-service-name: "grpc-tunnel"
-
-  - name: "🇬🇧GB-299M-[3c6723/724b12]"
-    type: "vless"
-    server: "66.90.105.211"
-    port: 2083
-    uuid: "cd3bb7d9-7df3-4644-ac05-c260990ac277"
-    udp: true
-    encryption: "none"
-    tls: false
-    network: "grpc"
-    grpc-opts:
-      grpc-service-name: "vless"
 
   - name: "🇳🇱NL-509M-[32fdbd/c96921]"
     type: "vless"
@@ -560,16 +621,6 @@ proxies:
     network: "grpc"
     grpc-opts:
       grpc-service-name: "grpc-tunnel"
-
-  - name: "🌐XX-195M-[4924d0/248f2f]"
-    type: "vmess"
-    server: "31.77.8.97"
-    port: 110
-    uuid: "d2d8601b-c14b-42c6-b8ea-33889bce152a"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-    network: "tcp"
 
   - name: "🇺🇸US-71M-[a46f3f/4d94ac]"
     type: "vless"
@@ -658,29 +709,6 @@ proxies:
     password: "ca438054771821250089399a2f33275e"
     udp: true
 
-  - name: "🇪🇸ES-384M-[232433/bbe956]"
-    type: "vless"
-    server: "34.175.19.8"
-    port: 443
-    uuid: "0b4b1548-c7ca-45a5-9096-6c3cc4b1c43b"
-    udp: true
-    encryption: "none"
-    servername: "www.cloudflare.com"
-    client-fingerprint: "chrome"
-    tls: true
-    reality-opts:
-      public-key: "iI9J--AfPKCXbVle3Om-WMn_g-3bO3SsVzUCNtwUkU0"
-      short-id: "fe85cb6a5c84e64c"
-    network: "tcp"
-
-  - name: "🇺🇸US-422M-[cef1bb/e7f5cd]"
-    type: "ss"
-    server: "161.129.71.149"
-    port: 17915
-    cipher: "aes-128-gcm"
-    password: "f8e5c6741fbbc00504f41af1ab878402"
-    udp: true
-
 proxy-groups:
   - name: "GLOBAL"
     type: select
@@ -691,46 +719,48 @@ proxy-groups:
     type: select
     proxies:
       - "🇬🇧GB-306M-[3c6723/2f0b28]"
+      - "🇱🇻LV-95M-[39463f/04e38f]"
+      - "🇩🇪DE-168M-[c192ae/28a05e]"
+      - "🇵🇱PL-257M-[73e58f/9d4697]"
+      - "🇫🇮FI-554M-[00dfd6/26aa93]"
+      - "🌐XX-188M-[4924d0/248f2f]"
+      - "🇷🇺RU-144M-[bb03cf/63d9ba]"
+      - "🇩🇪DE-337M-[d324f0/521512]"
+      - "🌐XX-318M-[d93c15/2a33f5]"
+      - "🇳🇱NL-467M-[991373/fdb6c8]"
+      - "🌐XX-174M-[b46b8b/cc20fd]"
+      - "🇳🇱NL-497M-[32fdbd/23b48e]"
+      - "🇳🇱NL-461M-[a69f76/801a42]"
+      - "🇩🇪DE-211M-[5eec33/c724b7]"
+      - "🇩🇪DE-163M-[676d97/22ccaa]"
+      - "🇩🇪DE-238M-[c29f12/2f100e]"
+      - "🇧🇪BE-536M-[a02bdc/a7d066]"
+      - "🇳🇱NL-219M-[bd38c2/a31470]"
+      - "🇳🇱NL-530M-[d1cf0e/76558f]"
+      - "🇳🇱NL-516M-[bf39fc/c999f5]"
+      - "🇳🇱NL-460M-[4bed07/cd9a86]"
       - "🇫🇮FI-205M-[3b495d/b90d33]"
       - "🇪🇪EE-227M-[6c325f/8e789c]"
-      - "🇩🇪DE-175M-[678f51/b11259]"
-      - "🇩🇪DE-204M-[5a31c9/7fa78d]"
-      - "🇱🇻LV-154M-[39463f/04e38f]"
       - "🇳🇱NL-440M-[be7279/477c2d]"
-      - "🇩🇪DE-135M-[1c7dc7/158a04]"
-      - "🇵🇱PL-310M-[73e58f/9d4697]"
-      - "🇩🇪DE-76M-[1d92eb/90d8e1]"
-      - "🇩🇪DE-63M-[cd8e01/c03bb8]"
       - "🇩🇪DE-125M-[b74ac3/9c4da8]"
-      - "🇳🇱NL-356M-[4cb2dd/4aa1c5]"
-      - "🌐XX-219M-[6309e9/2f6485]"
       - "🇬🇧GB-316M-[151f13/5c099d]"
       - "🇩🇪DE-143M-[8809f8/6dc180]"
       - "🇩🇪DE-177M-[bae262/c9895f]"
-      - "🇩🇪DE-190M-[d324f0/521512]"
       - "🇳🇱NL-471M-[991373/61eb1d]"
-      - "🇩🇪DE-148M-[c192ae/28a05e]"
-      - "🇷🇺RU-137M-[bb03cf/63d9ba]"
       - "🇷🇺RU-461M-[cbc0de/ff9e9b]"
       - "🇩🇪DE-276M-[b74ac3/7ae74e]"
-      - "🇳🇱NL-311M-[4cb2dd/94f752]"
-      - "🇩🇪DE-244M-[5eec33/c724b7]"
       - "🇩🇪DE-310M-[34cea6/f3d021]"
       - "🇬🇧GB-304M-[3c6723/21b728]"
-      - "🇷🇺RU-161M-[83218a/032cc4]"
       - "🇩🇪DE-155M-[b74ac3/d76a52]"
       - "🇵🇱PL-554M-[0117ac/e16e5e]"
       - "🇩🇪DE-409M-[c4c73d/cdf3b7]"
       - "🇩🇪DE-154M-[8809f8/9f9a29]"
       - "🇷🇺RU-384M-[f38f7e/eb1e94]"
-      - "🇳🇱NL-485M-[a69f76/801a42]"
       - "🇩🇪DE-386M-[a9a976/da5781]"
-      - "🇬🇧GB-299M-[3c6723/724b12]"
       - "🇳🇱NL-509M-[32fdbd/c96921]"
       - "🇷🇺RU-160M-[bb03cf/5e4a81]"
       - "🇳🇱NL-484M-[991373/854fd0]"
       - "🇷🇸RS-415M-[34cc53/7f06b1]"
-      - "🌐XX-195M-[4924d0/248f2f]"
       - "🇺🇸US-71M-[a46f3f/4d94ac]"
       - "🇬🇪GE-81M-[884835/134dd7]"
       - "🇩🇪DE-66M-[94368b/ea7014]"
@@ -738,8 +768,6 @@ proxy-groups:
       - "🇪🇪EE-142M-[bf15b8/ffd925]"
       - "🇳🇱NL-491M-[32fdbd/0b63f2]"
       - "🇵🇹PT-425M-[d5c7d6/a42dd3]"
-      - "🇪🇸ES-384M-[232433/bbe956]"
-      - "🇺🇸US-422M-[cef1bb/e7f5cd]"
 
 rules:
   - "DOMAIN,smtp.gmail.com,DIRECT"
