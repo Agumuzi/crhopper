@@ -18,53 +18,99 @@ proxies:
     grpc-opts:
       grpc-service-name: "vless"
 
-  - name: "🇬🇧GB-297M-[3c6723/b9d670]"
+  - name: "🇱🇹LT-406M-[ecb3f1/eb2b03]"
     type: "vless"
-    server: "66.90.105.211"
-    port: 2083
-    uuid: "cd3bb7d9-7df3-4644-ac05-c260990ac277"
-    udp: true
-    encryption: "none"
-    packet-encoding: "xudp"
-    tls: false
-    network: "grpc"
-    grpc-opts:
-      grpc-service-name: "vless"
-
-  - name: "🇵🇱PL-157M-[146a45/16a8e5]"
-    type: "vless"
-    server: "185.91.53.86"
-    port: 8444
-    uuid: "0f4081e7-612b-425f-8def-eebf144aedba"
-    udp: true
-    encryption: "none"
-    servername: "ads.x5.ru"
-    client-fingerprint: "chrome"
-    tls: true
-    reality-opts:
-      public-key: "ITd6cmCxudmTvGcwnAzpd0VRe8jS9KJAQ1tmtVN3mCM"
-      short-id: "9e15546f267baa64"
-    network: "grpc"
-    grpc-opts:
-      grpc-service-name: "grpc-reality"
-
-  - name: "🇪🇪EE-400M-[b00120/fdbd05]"
-    type: "vless"
-    server: "n48.himoy.space"
+    server: "litva1.ali-bard.online"
     port: 443
-    uuid: "21d0929a-ba27-4822-9b50-bda9ee54a494"
+    uuid: "4643976f-85fa-40cf-9e58-ea28b50f253b"
     udp: true
     encryption: "none"
     flow: "xtls-rprx-vision"
-    servername: "n48.himoy.space"
-    client-fingerprint: "chrome"
+    servername: "litva1.ali-bard.online"
+    client-fingerprint: "firefox"
     tls: true
     reality-opts:
-      public-key: "Pb37t99NiJqm-lsTi4tucPFqRXIsek-5G5dqjIqVfxE"
-      short-id: "15c87d0b99c0d132"
+      public-key: "SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I"
+      short-id: ""
     network: "tcp"
 
-  - name: "🇦🇹AT-481M-[d50cc3/96f1e6]"
+  - name: "🇩🇪DE-304M-[502e7d/8a7091]"
+    type: "vless"
+    server: "de.monkora.org"
+    port: 443
+    uuid: "454431fc-71e2-42b1-b375-5b55dd06666a"
+    udp: true
+    encryption: "none"
+    servername: "example.org"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "aUdvs6o4PHN6jmdkIKBA2rHsN_7l8W2SaDfNgzn-BwU"
+      short-id: ""
+    network: "tcp"
+
+  - name: "🇵🇱PL-347M-[f46483/1f1581]"
+    type: "vless"
+    server: "polo.ali-bard.online"
+    port: 443
+    uuid: "4643976f-85fa-40cf-9e58-ea28b50f253b"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "polo.ali-bard.online"
+    client-fingerprint: "edge"
+    tls: true
+    reality-opts:
+      public-key: "SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I"
+      short-id: ""
+    network: "tcp"
+
+  - name: "🇨🇿CZ-452M-[490943/0f2ec9]"
+    type: "vless"
+    server: "cz.monkora.org"
+    port: 443
+    uuid: "454431fc-71e2-42b1-b375-5b55dd06666a"
+    udp: true
+    encryption: "none"
+    servername: "example.org"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "aUdvs6o4PHN6jmdkIKBA2rHsN_7l8W2SaDfNgzn-BwU"
+      short-id: ""
+    network: "tcp"
+
+  - name: "🇩🇪DE-159M-[6ded99/58daed]"
+    type: "vless"
+    server: "62.192.153.132"
+    port: 443
+    uuid: "454431fc-71e2-42b1-b375-5b55dd06666a"
+    udp: true
+    encryption: "none"
+    servername: "example.org"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "aUdvs6o4PHN6jmdkIKBA2rHsN_7l8W2SaDfNgzn-BwU"
+      short-id: ""
+    network: "tcp"
+
+  - name: "🇸🇪SE-89M-[0083ba/b79e31]"
+    type: "vless"
+    server: "se.monkora.org"
+    port: 443
+    uuid: "454431fc-71e2-42b1-b375-5b55dd06666a"
+    udp: true
+    encryption: "none"
+    servername: "example.org"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "aUdvs6o4PHN6jmdkIKBA2rHsN_7l8W2SaDfNgzn-BwU"
+      short-id: ""
+    network: "tcp"
+
+  - name: "🇦🇹AT-506M-[d50cc3/96f1e6]"
     type: "vless"
     server: "50.7.36.29"
     port: 443
@@ -78,7 +124,23 @@ proxies:
     tls: true
     network: "tcp"
 
-  - name: "🇦🇹AT-139M-[54f6fa/6b4ea6]"
+  - name: "🌐XX-304M-[964d2c/0984ff]"
+    type: "vless"
+    server: "188.132.192.145"
+    port: 2087
+    uuid: "b1c31d36-c6b5-414b-88d2-9e24e7bfcca3"
+    udp: true
+    encryption: "none"
+    servername: "www.nihaoyun.top"
+    client-fingerprint: "firefox"
+    tls: true
+    network: "ws"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "www.nihaoyun.top"
+
+  - name: "🇦🇹AT-145M-[54f6fa/6b4ea6]"
     type: "vless"
     server: "109.172.8.73"
     port: 443
@@ -94,10 +156,40 @@ proxies:
       headers:
         Host: "www.nihaoyun.top"
 
-  - name: "🌐XX-320M-[964d2c/487f3e]"
+  - name: "🇨🇦CA-347M-[3a58ad/efa4f8]"
     type: "vless"
-    server: "188.132.192.145"
-    port: 2087
+    server: "ca.monkora.org"
+    port: 443
+    uuid: "454431fc-71e2-42b1-b375-5b55dd06666a"
+    udp: true
+    encryption: "none"
+    servername: "ca.monkora.org"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "aUdvs6o4PHN6jmdkIKBA2rHsN_7l8W2SaDfNgzn-BwU"
+      short-id: ""
+    network: "tcp"
+
+  - name: "🇸🇬SG-73M-[d154dc/ef32e4]"
+    type: "vless"
+    server: "sg.monkora.org"
+    port: 443
+    uuid: "454431fc-71e2-42b1-b375-5b55dd06666a"
+    udp: true
+    encryption: "none"
+    servername: "sg.monkora.org"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "aUdvs6o4PHN6jmdkIKBA2rHsN_7l8W2SaDfNgzn-BwU"
+      short-id: ""
+    network: "tcp"
+
+  - name: "🌐XX-139M-[fdceac/0fdd3b]"
+    type: "vless"
+    server: "185.146.234.242"
+    port: 443
     uuid: "b1c31d36-c6b5-414b-88d2-9e24e7bfcca3"
     udp: true
     encryption: "none"
@@ -110,10 +202,93 @@ proxies:
       headers:
         Host: "www.nihaoyun.top"
 
-  - name: "🇮🇪IE-66M-[fdceac/0fdd3b]"
+  - name: "🇬🇧GB-289M-[3c6723/724b12]"
     type: "vless"
-    server: "185.146.234.242"
+    server: "66.90.105.211"
+    port: 2083
+    uuid: "cd3bb7d9-7df3-4644-ac05-c260990ac277"
+    udp: true
+    encryption: "none"
+    tls: false
+    network: "grpc"
+    grpc-opts:
+      grpc-service-name: "vless"
+
+  - name: "🇷🇺RU-44M-[bb03cf/9f76a9]"
+    type: "hysteria2"
+    server: "91.240.86.70"
+    port: 22443
+    password: "3f63c86c-ac4a-4900-85cf-4fedf93c2ca5"
+    udp: true
+    sni: "91.240.86.70"
+    skip-cert-verify: true
+
+  - name: "🇩🇪DE-21M-[b7a6ae/010ec2]"
+    type: "vless"
+    server: "5.45.107.150"
+    port: 8443
+    uuid: "b1c31d36-c6b5-414b-88d2-9e24e7bfcca3"
+    udp: true
+    encryption: "none"
+    servername: "www.nihaoyun.top"
+    client-fingerprint: "safari"
+    tls: true
+    network: "ws"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "www.nihaoyun.top"
+
+  - name: "🇬🇧GB-25M-[fbb257/26bf04]"
+    type: "vless"
+    server: "finl11.ali-bard.online"
     port: 443
+    uuid: "4643976f-85fa-40cf-9e58-ea28b50f253b"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "finl11.ali-bard.online"
+    client-fingerprint: "qq"
+    tls: true
+    reality-opts:
+      public-key: "SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I"
+      short-id: ""
+    network: "tcp"
+
+  - name: "🇱🇻LV-48M-[39463f/8d9ad8]"
+    type: "hysteria2"
+    server: "91.240.86.70"
+    port: 24443
+    password: "3f63c86c-ac4a-4900-85cf-4fedf93c2ca5"
+    udp: true
+    sni: "hy.quattro-tech.ru"
+    skip-cert-verify: true
+
+  - name: "🇨🇴CO-37M-[9b467b/fcb037]"
+    type: "ss"
+    server: "149.104.107.41"
+    port: 8090
+    cipher: "aes-256-gcm"
+    password: "PCnnH6SQSnfoS27"
+    udp: true
+
+  - name: "🇬🇧GB-297M-[3c6723/b9d670]"
+    type: "vless"
+    server: "66.90.105.211"
+    port: 2083
+    uuid: "cd3bb7d9-7df3-4644-ac05-c260990ac277"
+    udp: true
+    encryption: "none"
+    packet-encoding: "xudp"
+    tls: false
+    network: "grpc"
+    grpc-opts:
+      grpc-service-name: "vless"
+
+  - name: "🌐XX-320M-[964d2c/487f3e]"
+    type: "vless"
+    server: "188.132.192.145"
+    port: 2087
     uuid: "b1c31d36-c6b5-414b-88d2-9e24e7bfcca3"
     udp: true
     encryption: "none"
@@ -139,54 +314,6 @@ proxies:
     grpc-opts:
       grpc-service-name: "vless"
 
-  - name: "🇷🇺RU-59M-[bb03cf/9f76a9]"
-    type: "hysteria2"
-    server: "91.240.86.70"
-    port: 22443
-    password: "3f63c86c-ac4a-4900-85cf-4fedf93c2ca5"
-    udp: true
-    sni: "91.240.86.70"
-    skip-cert-verify: true
-
-  - name: "🇩🇪DE-55M-[4924d0/248f2f]"
-    type: "vmess"
-    server: "31.77.8.97"
-    port: 110
-    uuid: "d2d8601b-c14b-42c6-b8ea-33889bce152a"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-    network: "tcp"
-
-  - name: "🇱🇻LV-25M-[39463f/8d9ad8]"
-    type: "hysteria2"
-    server: "91.240.86.70"
-    port: 24443
-    password: "3f63c86c-ac4a-4900-85cf-4fedf93c2ca5"
-    udp: true
-    sni: "hy.quattro-tech.ru"
-    skip-cert-verify: true
-
-  - name: "🇨🇴CO-38M-[9b467b/fcb037]"
-    type: "ss"
-    server: "149.104.107.41"
-    port: 8090
-    cipher: "aes-256-gcm"
-    password: "PCnnH6SQSnfoS27"
-    udp: true
-
-  - name: "🇬🇧GB-248M-[3c6723/724b12]"
-    type: "vless"
-    server: "66.90.105.211"
-    port: 2083
-    uuid: "cd3bb7d9-7df3-4644-ac05-c260990ac277"
-    udp: true
-    encryption: "none"
-    tls: false
-    network: "grpc"
-    grpc-opts:
-      grpc-service-name: "vless"
-
   - name: "🇩🇪DE-233M-[64c554/93843e]"
     type: "vless"
     server: "139.162.149.105"
@@ -198,32 +325,6 @@ proxies:
     network: "ws"
     ws-opts:
       path: "/"
-
-  - name: "🇬🇧GB-379M-[98923b/6d837f]"
-    type: "hysteria2"
-    server: "uk-002.xiaoxiaobujidao.xyz"
-    port: 19443
-    password: "8b60d570-cbce-4791-b3e8-bcb80dd12ac0"
-    udp: true
-    sni: "uk-002.xiaoxiaobujidao.xyz"
-    up: "100 Mbps"
-    down: "200 Mbps"
-
-  - name: "🇩🇪DE-39M-[db1405/bf89fa]"
-    type: "vless"
-    server: "177.1.186.44"
-    port: 443
-    uuid: "55ccbeb5-0bf4-4e4d-afcb-23c038e73e00"
-    udp: true
-    encryption: "none"
-    flow: "xtls-rprx-vision"
-    servername: "mcde.67resserv67.info"
-    client-fingerprint: "chrome"
-    tls: true
-    reality-opts:
-      public-key: "4hvjCaGIMlFeWxMYoAWTNHQOaZkGvGQREOjB3Unn7iE"
-      short-id: "29455a3a790acbd0"
-    network: "tcp"
 
   - name: "🇬🇧GB-265M-[3c6723/2f0b28]"
     type: "vless"
@@ -434,22 +535,28 @@ proxy-groups:
     type: select
     proxies:
       - "🇬🇧GB-286M-[151f13/eea858]"
+      - "🇱🇹LT-406M-[ecb3f1/eb2b03]"
+      - "🇩🇪DE-304M-[502e7d/8a7091]"
+      - "🇵🇱PL-347M-[f46483/1f1581]"
+      - "🇨🇿CZ-452M-[490943/0f2ec9]"
+      - "🇩🇪DE-159M-[6ded99/58daed]"
+      - "🇸🇪SE-89M-[0083ba/b79e31]"
+      - "🇦🇹AT-506M-[d50cc3/96f1e6]"
+      - "🌐XX-304M-[964d2c/0984ff]"
+      - "🇦🇹AT-145M-[54f6fa/6b4ea6]"
+      - "🇨🇦CA-347M-[3a58ad/efa4f8]"
+      - "🇸🇬SG-73M-[d154dc/ef32e4]"
+      - "🌐XX-139M-[fdceac/0fdd3b]"
+      - "🇬🇧GB-289M-[3c6723/724b12]"
+      - "🇷🇺RU-44M-[bb03cf/9f76a9]"
+      - "🇩🇪DE-21M-[b7a6ae/010ec2]"
+      - "🇬🇧GB-25M-[fbb257/26bf04]"
+      - "🇱🇻LV-48M-[39463f/8d9ad8]"
+      - "🇨🇴CO-37M-[9b467b/fcb037]"
       - "🇬🇧GB-297M-[3c6723/b9d670]"
-      - "🇵🇱PL-157M-[146a45/16a8e5]"
-      - "🇪🇪EE-400M-[b00120/fdbd05]"
-      - "🇦🇹AT-481M-[d50cc3/96f1e6]"
-      - "🇦🇹AT-139M-[54f6fa/6b4ea6]"
       - "🌐XX-320M-[964d2c/487f3e]"
-      - "🇮🇪IE-66M-[fdceac/0fdd3b]"
       - "🇬🇧GB-263M-[151f13/5c099d]"
-      - "🇷🇺RU-59M-[bb03cf/9f76a9]"
-      - "🇩🇪DE-55M-[4924d0/248f2f]"
-      - "🇱🇻LV-25M-[39463f/8d9ad8]"
-      - "🇨🇴CO-38M-[9b467b/fcb037]"
-      - "🇬🇧GB-248M-[3c6723/724b12]"
       - "🇩🇪DE-233M-[64c554/93843e]"
-      - "🇬🇧GB-379M-[98923b/6d837f]"
-      - "🇩🇪DE-39M-[db1405/bf89fa]"
       - "🇬🇧GB-265M-[3c6723/2f0b28]"
       - "🇬🇧GB-282M-[151f13/a9ce07]"
       - "🇬🇧GB-266M-[3c6723/a80459]"
