@@ -6,19 +6,7 @@ log-level: warning
 ipv6: false
 
 proxies:
-  - name: "🇬🇧GB-274M-[151f13/eea858]"
-    type: "vless"
-    server: "66.90.104.43"
-    port: 2083
-    uuid: "cd3bb7d9-7df3-4644-ac05-c260990ac277"
-    udp: true
-    encryption: "none"
-    tls: false
-    network: "grpc"
-    grpc-opts:
-      grpc-service-name: "vless"
-
-  - name: "🇬🇧GB-305M-[3c6723/b9d670]"
+  - name: "🇬🇧GB-296M-[3c6723/b9d670]"
     type: "vless"
     server: "66.90.105.211"
     port: 2083
@@ -26,6 +14,105 @@ proxies:
     udp: true
     encryption: "none"
     packet-encoding: "xudp"
+    tls: false
+    network: "grpc"
+    grpc-opts:
+      grpc-service-name: "vless"
+
+  - name: "🇳🇱NL-520M-[25ea09/3c88d5]"
+    type: "vless"
+    server: "50.7.160.250"
+    port: 443
+    uuid: "cd3bb7d9-7df3-4644-ac05-c260990ac277"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "chubby0.failspace.top"
+    client-fingerprint: "firefox"
+    tls: true
+    network: "tcp"
+
+  - name: "🇦🇹AT-509M-[d50cc3/96f1e6]"
+    type: "vless"
+    server: "50.7.36.29"
+    port: 443
+    uuid: "cd3bb7d9-7df3-4644-ac05-c260990ac277"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "ekb.eg"
+    client-fingerprint: "firefox"
+    skip-cert-verify: true
+    tls: true
+    network: "tcp"
+
+  - name: "🇩🇪DE-231M-[d25f3a/b75d80]"
+    type: "vless"
+    server: "dc5.cdnx.ddns.ge"
+    port: 443
+    uuid: "00000000-0000-4000-8000-000000000000"
+    udp: true
+    encryption: "none"
+    servername: "lunar-eclipse-celestial-nova-interstellar-darkstal.up.railway.app"
+    client-fingerprint: "iOS"
+    alpn:
+      - "http/1.1"
+    tls: true
+    network: "ws"
+    ws-opts:
+      path: "/ws/00000000-0000-4000-8000-000000000000?ed=4096"
+      headers:
+        Host: "lunar-eclipse-celestial-nova-interstellar-darkstal.up.railway.app"
+
+  - name: "🇲🇾MY-77M-[add344/dc967b]"
+    type: "trojan"
+    server: "47.250.84.25"
+    port: 443
+    password: "5931134d1cde66bf83a54acdfebe7ab2"
+    udp: true
+    client-fingerprint: "iOS"
+    skip-cert-verify: true
+    network: "tcp"
+
+  - name: "🇷🇺RU-34M-[263ba0/331e37]"
+    type: "vless"
+    server: "201.51.11.117"
+    port: 443
+    uuid: "5d0e5029-061f-4d75-ac97-718dbf827957"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "www.samsung.com"
+    client-fingerprint: "chrome"
+    tls: true
+    reality-opts:
+      public-key: "9eiEOSjRUJfWtjR5_h6qYOIIC7oihvCNtyFFvtu7MEM"
+      short-id: "ed07a0272e0123e0"
+    network: "tcp"
+
+  - name: "🇮🇹IT-43M-[5f7b88/691a87]"
+    type: "vless"
+    server: "82.118.16.245"
+    port: 443
+    uuid: "d6bd3ec0-84f5-4df3-bd5a-ef69469ce642"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "mxc.mtmajestic.space"
+    client-fingerprint: "chrome"
+    tls: true
+    reality-opts:
+      public-key: "aHFq0S4UJBSUr5it5_mw4JN4sPG6lnHjdYXsWJVVdXk"
+      short-id: ""
+    network: "tcp"
+
+  - name: "🇬🇧GB-274M-[151f13/eea858]"
+    type: "vless"
+    server: "66.90.104.43"
+    port: 2083
+    uuid: "cd3bb7d9-7df3-4644-ac05-c260990ac277"
+    udp: true
+    encryption: "none"
     tls: false
     network: "grpc"
     grpc-opts:
@@ -56,20 +143,6 @@ proxies:
       path: "/"
       headers:
         Host: "shayanbear.global.ssl.fastly.net"
-
-  - name: "🇦🇹AT-480M-[d50cc3/96f1e6]"
-    type: "vless"
-    server: "50.7.36.29"
-    port: 443
-    uuid: "cd3bb7d9-7df3-4644-ac05-c260990ac277"
-    udp: true
-    encryption: "none"
-    flow: "xtls-rprx-vision"
-    servername: "ekb.eg"
-    client-fingerprint: "firefox"
-    skip-cert-verify: true
-    tls: true
-    network: "tcp"
 
   - name: "🇸🇬SG-119M-[ad4ec4/68c573]"
     type: "vless"
@@ -302,29 +375,6 @@ proxies:
         max-connections: 0
       x-padding-bytes: "50-150"
 
-  - name: "🇷🇺RU-318M-[f58d58/2f5374]"
-    type: "vless"
-    server: "185.141.227.180"
-    port: 2053
-    uuid: "2c634977-584e-4e1f-b501-1b70c77a6743"
-    udp: true
-    encryption: "none"
-    servername: "dismissaltree.net"
-    client-fingerprint: "random"
-    tls: true
-    network: "xhttp"
-    xhttp-opts:
-      path: "/api/v1/upload"
-      host: "dismissaltree.net"
-      mode: "auto"
-      reuse-settings:
-        c-max-reuse-times: "64-128"
-        max-concurrency: "16-32"
-        max-connections: "0"
-      sc-max-each-post-bytes: "1000000"
-      sc-min-posts-interval-ms: "30"
-      x-padding-bytes: "100-1000"
-
   - name: "🇷🇺RU-78M-[a663a0/749dff]"
     type: "hysteria2"
     server: "els.mangshe.xyz"
@@ -359,11 +409,16 @@ proxy-groups:
   - name: "AUTO"
     type: select
     proxies:
+      - "🇬🇧GB-296M-[3c6723/b9d670]"
+      - "🇳🇱NL-520M-[25ea09/3c88d5]"
+      - "🇦🇹AT-509M-[d50cc3/96f1e6]"
+      - "🇩🇪DE-231M-[d25f3a/b75d80]"
+      - "🇲🇾MY-77M-[add344/dc967b]"
+      - "🇷🇺RU-34M-[263ba0/331e37]"
+      - "🇮🇹IT-43M-[5f7b88/691a87]"
       - "🇬🇧GB-274M-[151f13/eea858]"
-      - "🇬🇧GB-305M-[3c6723/b9d670]"
       - "🇬🇧GB-317M-[151f13/a9ce07]"
       - "🇫🇷FR-88M-[ed132f/3a2792]"
-      - "🇦🇹AT-480M-[d50cc3/96f1e6]"
       - "🇸🇬SG-119M-[ad4ec4/68c573]"
       - "🇺🇸US-36M-[5380c5/c7d439]"
       - "🇬🇧GB-286M-[3c6723/724b12]"
@@ -379,7 +434,6 @@ proxy-groups:
       - "🇬🇧GB-318M-[151f13/5c099d]"
       - "🇳🇱NL-337M-[eaa429/6a6629]"
       - "🇵🇱PL-342M-[73e58f/9d4697]"
-      - "🇷🇺RU-318M-[f58d58/2f5374]"
       - "🇷🇺RU-78M-[a663a0/749dff]"
       - "🇳🇱NL-349M-[eaa429/e69e59]"
 
