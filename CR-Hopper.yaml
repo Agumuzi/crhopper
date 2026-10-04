@@ -18,7 +18,34 @@ proxies:
     grpc-opts:
       grpc-service-name: "vless"
 
-  - name: "🌐XX-309M-[a504a9/90ae93]"
+  - name: "🇸🇪SE-464M-[b68a79/80bd88]"
+    type: "vless"
+    server: "172.232.153.125"
+    port: 31501
+    uuid: "31161f40-e430-4c20-8988-b82752551220"
+    udp: true
+    encryption: "none"
+    servername: "docs.ansible.com"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "5VLj9gwK5wU-QGgYrGzWIc4-M7CBZH61Xp8V2NnQMxw"
+      short-id: "23432c47f8ef367b"
+    network: "tcp"
+
+  - name: "🇬🇧GB-302M-[151f13/a9ce07]"
+    type: "vless"
+    server: "66.90.104.43"
+    port: 2083
+    uuid: "cd3bb7d9-7df3-4644-ac05-c260990ac277"
+    udp: true
+    encryption: "none"
+    tls: false
+    network: "grpc"
+    grpc-opts:
+      grpc-service-name: "vless"
+
+  - name: "🌐XX-496M-[a504a9/90ae93]"
     type: "vless"
     server: "2.26.225.89"
     port: 8443
@@ -29,6 +56,199 @@ proxies:
     client-fingerprint: "firefox"
     tls: true
     network: "tcp"
+
+  - name: "🇳🇱NL-481M-[b68305/cce259]"
+    type: "vless"
+    server: "cool-place.failspace.top"
+    port: 443
+    uuid: "cd3bb7d9-7df3-4644-ac05-c260990ac277"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "cool-place.failspace.top"
+    client-fingerprint: "firefox"
+    alpn:
+      - "h2"
+    tls: true
+    network: "tcp"
+
+  - name: "🇵🇱PL-436M-[1b1b8d/2de623]"
+    type: "vless"
+    server: "pl-2070d4dca0.shamanapp.online"
+    port: 33740
+    uuid: "d666e16b-2b64-4499-bb32-896c26dc2e3d"
+    udp: true
+    encryption: "none"
+    servername: "pl-2070d4dca0.shamanapp.online"
+    client-fingerprint: "chrome"
+    alpn:
+      - "h2"
+      - "http/1.1"
+    tls: true
+    network: "xhttp"
+    xhttp-opts:
+      path: "/ShamanXHTTP2026"
+      host: "pl-2070d4dca0.shamanapp.online"
+      mode: "stream-up"
+
+  - name: "🇳🇱NL-268M-[f8ce11/95cfc1]"
+    type: "vless"
+    server: "72.56.85.221"
+    port: 443
+    uuid: "ca990a85-cb33-44af-bb17-61b30b43d51e"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "apple.com"
+    client-fingerprint: "chrome"
+    tls: true
+    reality-opts:
+      public-key: "uTOxHZkQuw_YnO3GEIV0jDkVNOsOPQrTIPdRb2Rk8DQ"
+      short-id: "00353c"
+    network: "tcp"
+
+  - name: "🇵🇱PL-489M-[52470a/1afc48]"
+    type: "vless"
+    server: "50.7.249.98"
+    port: 443
+    uuid: "cd3bb7d9-7df3-4644-ac05-c260990ac277"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "pol-pol-poland.failspace.top"
+    client-fingerprint: "firefox"
+    skip-cert-verify: true
+    tls: true
+    network: "tcp"
+
+  - name: "🇵🇱PL-516M-[bcd68f/65f8ee]"
+    type: "vless"
+    server: "50.7.249.138"
+    port: 443
+    uuid: "cd3bb7d9-7df3-4644-ac05-c260990ac277"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "polkadotnewone.failspace.top"
+    client-fingerprint: "firefox"
+    skip-cert-verify: true
+    tls: true
+    network: "tcp"
+
+  - name: "🇺🇸US-273M-[92851f/d5b651]"
+    type: "ss"
+    server: "66.23.202.50"
+    port: 13623
+    cipher: "aes-128-gcm"
+    password: "50ce2ac177d8d8cdad6b4a68739e2ea0"
+    udp: true
+
+  - name: "🇵🇱PL-519M-[da093d/93a59f]"
+    type: "vless"
+    server: "50.7.249.155"
+    port: 443
+    uuid: "cd3bb7d9-7df3-4644-ac05-c260990ac277"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "poland-good.failspace.top"
+    client-fingerprint: "firefox"
+    tls: true
+    network: "tcp"
+
+  - name: "🇦🇹AT-544M-[d50cc3/96f1e6]"
+    type: "vless"
+    server: "50.7.36.29"
+    port: 443
+    uuid: "cd3bb7d9-7df3-4644-ac05-c260990ac277"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "ekb.eg"
+    client-fingerprint: "firefox"
+    skip-cert-verify: true
+    tls: true
+    network: "tcp"
+
+  - name: "🇵🇱PL-529M-[7c8ea4/ab6865]"
+    type: "vless"
+    server: "poland-good.failspace.top"
+    port: 443
+    uuid: "cd3bb7d9-7df3-4644-ac05-c260990ac277"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "poland-good.failspace.top"
+    client-fingerprint: "firefox"
+    alpn:
+      - "h2"
+    tls: true
+    network: "tcp"
+
+  - name: "🇵🇱PL-511M-[7391bd/cc65f4]"
+    type: "vless"
+    server: "polkadotnewone.failspace.top"
+    port: 443
+    uuid: "cd3bb7d9-7df3-4644-ac05-c260990ac277"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "polkadotnewone.failspace.top"
+    client-fingerprint: "firefox"
+    alpn:
+      - "h2"
+    tls: true
+    network: "tcp"
+
+  - name: "🇬🇧GB-56M-[3c6723/c9f576]"
+    type: "vless"
+    server: "66.90.105.211"
+    port: 2083
+    uuid: "cd3bb7d9-7df3-4644-ac05-c260990ac277"
+    udp: true
+    encryption: "none"
+    tls: false
+    network: "grpc"
+    grpc-opts:
+      grpc-service-name: "vless"
+
+  - name: "🌐XX-40M-[4924d0/d1577f]"
+    type: "vmess"
+    server: "31.77.8.97"
+    port: 110
+    uuid: "d2d8601b-c14b-42c6-b8ea-33889bce152a"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    skip-cert-verify: true
+    network: "tcp"
+
+  - name: "🇲🇾MY-44M-[add344/dc967b]"
+    type: "trojan"
+    server: "47.250.84.25"
+    port: 443
+    password: "5931134d1cde66bf83a54acdfebe7ab2"
+    udp: true
+    client-fingerprint: "iOS"
+    skip-cert-verify: true
+    network: "tcp"
+
+  - name: "🇫🇮FI-35M-[1099f2/f0f48b]"
+    type: "vless"
+    server: "122.8.45.4"
+    port: 443
+    uuid: "2d24e797-ec6c-0808-dd31-9cd22b5dfdc7"
+    udp: true
+    encryption: "none"
+    servername: "www.canon.com"
+    client-fingerprint: "chrome"
+    tls: true
+    reality-opts:
+      public-key: "iVDh09Vm2DqZMNQoUdf-LCZ6TqVGb9mLXnClAK2LRj4"
+      short-id: ""
+    network: "xhttp"
+    xhttp-opts:
+      path: "/"
 
   - name: "🇬🇧GB-314M-[3c6723/a80459]"
     type: "vless"
@@ -56,49 +276,6 @@ proxies:
     grpc-opts:
       grpc-service-name: "vless"
 
-  - name: "🇵🇱PL-414M-[52470a/1afc48]"
-    type: "vless"
-    server: "50.7.249.98"
-    port: 443
-    uuid: "cd3bb7d9-7df3-4644-ac05-c260990ac277"
-    udp: true
-    encryption: "none"
-    flow: "xtls-rprx-vision"
-    servername: "pol-pol-poland.failspace.top"
-    client-fingerprint: "firefox"
-    skip-cert-verify: true
-    tls: true
-    network: "tcp"
-
-  - name: "🇦🇹AT-535M-[d50cc3/96f1e6]"
-    type: "vless"
-    server: "50.7.36.29"
-    port: 443
-    uuid: "cd3bb7d9-7df3-4644-ac05-c260990ac277"
-    udp: true
-    encryption: "none"
-    flow: "xtls-rprx-vision"
-    servername: "ekb.eg"
-    client-fingerprint: "firefox"
-    skip-cert-verify: true
-    tls: true
-    network: "tcp"
-
-  - name: "🇵🇱PL-538M-[7391bd/cc65f4]"
-    type: "vless"
-    server: "polkadotnewone.failspace.top"
-    port: 443
-    uuid: "cd3bb7d9-7df3-4644-ac05-c260990ac277"
-    udp: true
-    encryption: "none"
-    flow: "xtls-rprx-vision"
-    servername: "polkadotnewone.failspace.top"
-    client-fingerprint: "firefox"
-    alpn:
-      - "h2"
-    tls: true
-    network: "tcp"
-
   - name: "🇵🇱PL-273M-[901d92/c53caa]"
     type: "vless"
     server: "pol-pol-poland.failspace.top"
@@ -113,41 +290,6 @@ proxies:
       - "h2"
     tls: true
     network: "tcp"
-
-  - name: "🇵🇱PL-520M-[da093d/93a59f]"
-    type: "vless"
-    server: "50.7.249.155"
-    port: 443
-    uuid: "cd3bb7d9-7df3-4644-ac05-c260990ac277"
-    udp: true
-    encryption: "none"
-    flow: "xtls-rprx-vision"
-    servername: "poland-good.failspace.top"
-    client-fingerprint: "firefox"
-    tls: true
-    network: "tcp"
-
-  - name: "🇵🇱PL-477M-[bcd68f/65f8ee]"
-    type: "vless"
-    server: "50.7.249.138"
-    port: 443
-    uuid: "cd3bb7d9-7df3-4644-ac05-c260990ac277"
-    udp: true
-    encryption: "none"
-    flow: "xtls-rprx-vision"
-    servername: "polkadotnewone.failspace.top"
-    client-fingerprint: "firefox"
-    skip-cert-verify: true
-    tls: true
-    network: "tcp"
-
-  - name: "🇺🇸US-107M-[92851f/d5b651]"
-    type: "ss"
-    server: "66.23.202.50"
-    port: 13623
-    cipher: "aes-128-gcm"
-    password: "50ce2ac177d8d8cdad6b4a68739e2ea0"
-    udp: true
 
   - name: "🇷🇺RU-249M-[664987/65a492]"
     type: "vless"
@@ -164,39 +306,6 @@ proxies:
       path: "/api/v1/upload"
       host: "randomquaint.net"
       mode: "auto"
-
-  - name: "🇫🇮FI-30M-[1099f2/f0f48b]"
-    type: "vless"
-    server: "122.8.45.4"
-    port: 443
-    uuid: "2d24e797-ec6c-0808-dd31-9cd22b5dfdc7"
-    udp: true
-    encryption: "none"
-    servername: "www.canon.com"
-    client-fingerprint: "chrome"
-    tls: true
-    reality-opts:
-      public-key: "iVDh09Vm2DqZMNQoUdf-LCZ6TqVGb9mLXnClAK2LRj4"
-      short-id: ""
-    network: "xhttp"
-    xhttp-opts:
-      path: "/"
-
-  - name: "🇳🇱NL-41M-[f8ce11/95cfc1]"
-    type: "vless"
-    server: "72.56.85.221"
-    port: 443
-    uuid: "ca990a85-cb33-44af-bb17-61b30b43d51e"
-    udp: true
-    encryption: "none"
-    flow: "xtls-rprx-vision"
-    servername: "apple.com"
-    client-fingerprint: "chrome"
-    tls: true
-    reality-opts:
-      public-key: "uTOxHZkQuw_YnO3GEIV0jDkVNOsOPQrTIPdRb2Rk8DQ"
-      short-id: "00353c"
-    network: "tcp"
 
   - name: "🇺🇸US-23M-[3432b3/f9b038]"
     type: "ss"
@@ -236,21 +345,6 @@ proxies:
     tls: true
     network: "tcp"
 
-  - name: "🇺🇸US-217M-[688e06/040a9d]"
-    type: "vless"
-    server: "z09wov.gomqiro.ir"
-    port: 8443
-    uuid: "83db8840-0d41-4a23-9ec3-682380924eb5"
-    udp: true
-    encryption: "none"
-    servername: "play.googleapis.com"
-    client-fingerprint: "chrome"
-    tls: true
-    reality-opts:
-      public-key: "gNJZix6GHGuB246_yD6n0EQQY-6Vb1zXg3ipjnubawE"
-      short-id: "0f50c85e30690254"
-    network: "tcp"
-
   - name: "🇫🇮FI-510M-[1099f2/c25d92]"
     type: "vless"
     server: "122.8.45.4"
@@ -267,21 +361,6 @@ proxies:
     network: "xhttp"
     xhttp-opts:
       path: "/"
-
-  - name: "🇵🇱PL-515M-[7c8ea4/ab6865]"
-    type: "vless"
-    server: "poland-good.failspace.top"
-    port: 443
-    uuid: "cd3bb7d9-7df3-4644-ac05-c260990ac277"
-    udp: true
-    encryption: "none"
-    flow: "xtls-rprx-vision"
-    servername: "poland-good.failspace.top"
-    client-fingerprint: "firefox"
-    alpn:
-      - "h2"
-    tls: true
-    network: "tcp"
 
   - name: "🇫🇮FI-94M-[e9b8ab/1e712a]"
     type: "vless"
@@ -365,18 +444,6 @@ proxies:
     xhttp-opts:
       path: "/assets"
 
-  - name: "🇬🇧GB-259M-[151f13/a9ce07]"
-    type: "vless"
-    server: "66.90.104.43"
-    port: 2083
-    uuid: "cd3bb7d9-7df3-4644-ac05-c260990ac277"
-    udp: true
-    encryption: "none"
-    tls: false
-    network: "grpc"
-    grpc-opts:
-      grpc-service-name: "vless"
-
   - name: "🇬🇧GB-323M-[151f13/eea858]"
     type: "vless"
     server: "66.90.104.43"
@@ -447,32 +514,37 @@ proxy-groups:
     type: select
     proxies:
       - "🇬🇧GB-286M-[3c6723/724b12]"
-      - "🌐XX-309M-[a504a9/90ae93]"
+      - "🇸🇪SE-464M-[b68a79/80bd88]"
+      - "🇬🇧GB-302M-[151f13/a9ce07]"
+      - "🌐XX-496M-[a504a9/90ae93]"
+      - "🇳🇱NL-481M-[b68305/cce259]"
+      - "🇵🇱PL-436M-[1b1b8d/2de623]"
+      - "🇳🇱NL-268M-[f8ce11/95cfc1]"
+      - "🇵🇱PL-489M-[52470a/1afc48]"
+      - "🇵🇱PL-516M-[bcd68f/65f8ee]"
+      - "🇺🇸US-273M-[92851f/d5b651]"
+      - "🇵🇱PL-519M-[da093d/93a59f]"
+      - "🇦🇹AT-544M-[d50cc3/96f1e6]"
+      - "🇵🇱PL-529M-[7c8ea4/ab6865]"
+      - "🇵🇱PL-511M-[7391bd/cc65f4]"
+      - "🇬🇧GB-56M-[3c6723/c9f576]"
+      - "🌐XX-40M-[4924d0/d1577f]"
+      - "🇲🇾MY-44M-[add344/dc967b]"
+      - "🇫🇮FI-35M-[1099f2/f0f48b]"
       - "🇬🇧GB-314M-[3c6723/a80459]"
       - "🇬🇧GB-295M-[151f13/5c099d]"
-      - "🇵🇱PL-414M-[52470a/1afc48]"
-      - "🇦🇹AT-535M-[d50cc3/96f1e6]"
-      - "🇵🇱PL-538M-[7391bd/cc65f4]"
       - "🇵🇱PL-273M-[901d92/c53caa]"
-      - "🇵🇱PL-520M-[da093d/93a59f]"
-      - "🇵🇱PL-477M-[bcd68f/65f8ee]"
-      - "🇺🇸US-107M-[92851f/d5b651]"
       - "🇷🇺RU-249M-[664987/65a492]"
-      - "🇫🇮FI-30M-[1099f2/f0f48b]"
-      - "🇳🇱NL-41M-[f8ce11/95cfc1]"
       - "🇺🇸US-23M-[3432b3/f9b038]"
       - "🇵🇱PL-438M-[bcd68f/8fa31d]"
       - "🇵🇱PL-509M-[52470a/e0c718]"
-      - "🇺🇸US-217M-[688e06/040a9d]"
       - "🇫🇮FI-510M-[1099f2/c25d92]"
-      - "🇵🇱PL-515M-[7c8ea4/ab6865]"
       - "🇫🇮FI-94M-[e9b8ab/1e712a]"
       - "🇷🇺RU-115M-[e4db96/e21b14]"
       - "🇬🇧GB-234M-[3c6723/b9d670]"
       - "🇳🇱NL-432M-[2f01cb/6a2ab3]"
       - "🇦🇱AL-157M-[acdd13/40ac5b]"
       - "🇸🇪SE-350M-[f95aec/a7a1d2]"
-      - "🇬🇧GB-259M-[151f13/a9ce07]"
       - "🇬🇧GB-323M-[151f13/eea858]"
       - "🇬🇧GB-273M-[3c6723/21b728]"
       - "🇺🇸US-118M-[e26cd5/656726]"
