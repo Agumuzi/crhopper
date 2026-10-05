@@ -6,12 +6,50 @@ log-level: warning
 ipv6: false
 
 proxies:
-  - name: "🇳🇱NL-503M-[664ba6/9628a3]"
+  - name: "🇳🇱NL-426M-[664ba6/9628a3]"
     type: "ss"
     server: "82.38.31.171"
     port: 8080
     cipher: "chacha20-ietf-poly1305"
     password: "oZIoA69Q8yhcQV8ka3Pa3A"
+    udp: true
+
+  - name: "🇩🇪DE-406M-[d7b806/418153]"
+    type: "vless"
+    server: "94.156.170.235"
+    port: 443
+    uuid: "27407f1d-fe61-469b-a5a9-0aef7ee7476d"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "qw.pashalloh.org"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "pLapXzPp5-UcWeB4SLUZgN0TdJzHiFF7U03ia0Wcv0Y"
+      short-id: "da4d87fa"
+    network: "tcp"
+
+  - name: "🇦🇹AT-535M-[d50cc3/96f1e6]"
+    type: "vless"
+    server: "50.7.36.29"
+    port: 443
+    uuid: "cd3bb7d9-7df3-4644-ac05-c260990ac277"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "ekb.eg"
+    client-fingerprint: "firefox"
+    skip-cert-verify: true
+    tls: true
+    network: "tcp"
+
+  - name: "🇦🇱AL-54M-[acdd13/40ac5b]"
+    type: "ss"
+    server: "130.49.189.158"
+    port: 43558
+    cipher: "chacha20-ietf-poly1305"
+    password: "mhXYDvaSfHzHZXBswC/zo/o8VqdU3XSBpwWx050Y6MU="
     udp: true
 
   - name: "🇦🇹AT-444M-[d72d43/e07fc3]"
@@ -61,28 +99,6 @@ proxies:
     reality-opts:
       public-key: "PK5kinwngrsb3QKJwwpeMcL4Iqj4r-ck7EwZDl62Sng"
       short-id: "7d286a1f"
-    network: "tcp"
-
-  - name: "🇦🇱AL-239M-[acdd13/40ac5b]"
-    type: "ss"
-    server: "130.49.189.158"
-    port: 43558
-    cipher: "chacha20-ietf-poly1305"
-    password: "mhXYDvaSfHzHZXBswC/zo/o8VqdU3XSBpwWx050Y6MU="
-    udp: true
-
-  - name: "🇦🇹AT-539M-[d50cc3/96f1e6]"
-    type: "vless"
-    server: "50.7.36.29"
-    port: 443
-    uuid: "cd3bb7d9-7df3-4644-ac05-c260990ac277"
-    udp: true
-    encryption: "none"
-    flow: "xtls-rprx-vision"
-    servername: "ekb.eg"
-    client-fingerprint: "firefox"
-    skip-cert-verify: true
-    tls: true
     network: "tcp"
 
   - name: "🇭🇰HK-24M-[e884da/b0400e]"
@@ -172,12 +188,13 @@ proxy-groups:
   - name: "AUTO"
     type: select
     proxies:
-      - "🇳🇱NL-503M-[664ba6/9628a3]"
+      - "🇳🇱NL-426M-[664ba6/9628a3]"
+      - "🇩🇪DE-406M-[d7b806/418153]"
+      - "🇦🇹AT-535M-[d50cc3/96f1e6]"
+      - "🇦🇱AL-54M-[acdd13/40ac5b]"
       - "🇦🇹AT-444M-[d72d43/e07fc3]"
       - "🇩🇪DE-524M-[bc3eab/cd5bc3]"
       - "🇩🇪DE-433M-[c34bc6/b55a96]"
-      - "🇦🇱AL-239M-[acdd13/40ac5b]"
-      - "🇦🇹AT-539M-[d50cc3/96f1e6]"
       - "🇭🇰HK-24M-[e884da/b0400e]"
       - "🇺🇸US-21M-[e26cd5/656726]"
       - "🇷🇺RU-85M-[a663a0/749dff]"
