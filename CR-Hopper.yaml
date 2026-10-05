@@ -6,7 +6,7 @@ log-level: warning
 ipv6: false
 
 proxies:
-  - name: "🇳🇱NL-501M-[664ba6/9628a3]"
+  - name: "🇳🇱NL-503M-[664ba6/9628a3]"
     type: "ss"
     server: "82.38.31.171"
     port: 8080
@@ -14,34 +14,23 @@ proxies:
     password: "oZIoA69Q8yhcQV8ka3Pa3A"
     udp: true
 
-  - name: "🌐XX-125M-[4924d0/d1577f]"
+  - name: "🇦🇹AT-444M-[d72d43/e07fc3]"
     type: "vmess"
-    server: "31.77.8.97"
-    port: 110
-    uuid: "d2d8601b-c14b-42c6-b8ea-33889bce152a"
+    server: "94.177.9.66"
+    port: 29825
+    uuid: "1933a425-2842-4d2b-8589-9ca2242d7415"
     alterId: 0
     cipher: "auto"
     udp: true
-    skip-cert-verify: true
-    network: "tcp"
-
-  - name: "🇰🇷KR-193M-[98c8e8/25aa7a]"
-    type: "vless"
-    server: "172.64.80.1"
-    port: 8880
-    uuid: "38135fde-7044-4407-8faf-e1ab08e47402"
-    udp: true
-    encryption: "none"
-    alpn:
-      - "http/1.1"
-    tls: false
-    network: "ws"
-    ws-opts:
-      path: "/pyip=ProxyIP.KR.CMLiussss.net"
+    network: "http"
+    http-opts:
+      path:
+        - "/"
       headers:
-        Host: "white-bush-712e.498-f8f.workers.dev"
+        Host:
+          - "tms.dingtalk.com"
 
-  - name: "🇩🇪DE-408M-[bc3eab/cd5bc3]"
+  - name: "🇩🇪DE-524M-[bc3eab/cd5bc3]"
     type: "vless"
     server: "50.7.157.235"
     port: 443
@@ -58,73 +47,7 @@ proxies:
       short-id: "ba4b2afa9e7193ea"
     network: "tcp"
 
-  - name: "🇦🇹AT-276M-[d72d43/e07fc3]"
-    type: "vmess"
-    server: "94.177.9.66"
-    port: 29825
-    uuid: "1933a425-2842-4d2b-8589-9ca2242d7415"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-    network: "http"
-    http-opts:
-      path:
-        - "/"
-      headers:
-        Host:
-          - "tms.dingtalk.com"
-
-  - name: "🇹🇷TR-158M-[525212/d09c0f]"
-    type: "vless"
-    server: "turkeycewqiwcck214clk12clkjalsfcjalksdjclkqwjcl4k12jckleqwr.soft355.ir"
-    port: 32210
-    uuid: "14203978-7699-4404-bc06-b245ad7132a5"
-    udp: true
-    encryption: "mlkem768x25519plus.native.0rtt.ZdJDuC0NAeRdPHNVOGwd5G25eEDVSzhJLAnKdAecfzg"
-    tls: false
-    network: "tcp"
-
-  - name: "🇦🇹AT-526M-[d50cc3/96f1e6]"
-    type: "vless"
-    server: "50.7.36.29"
-    port: 443
-    uuid: "cd3bb7d9-7df3-4644-ac05-c260990ac277"
-    udp: true
-    encryption: "none"
-    flow: "xtls-rprx-vision"
-    servername: "ekb.eg"
-    client-fingerprint: "firefox"
-    skip-cert-verify: true
-    tls: true
-    network: "tcp"
-
-  - name: "🇭🇰HK-72M-[e884da/b0400e]"
-    type: "hysteria2"
-    server: "xg1.mangshe.xyz"
-    port: 2060
-    password: "5d0a6445-a30d-4522-bb1f-94f1d3ad63be"
-    udp: true
-    sni: "xg1.mangshe.xyz"
-    skip-cert-verify: true
-
-  - name: "🇵🇱PL-122M-[5a2783/d03654]"
-    type: "vless"
-    server: "2.26.54.13"
-    port: 2083
-    uuid: "95909398-3902-495b-9670-63f1b13becde"
-    udp: true
-    encryption: "none"
-    flow: "xtls-rprx-vision"
-    servername: "files.meridian-labs.net"
-    client-fingerprint: "chrome"
-    skip-cert-verify: true
-    tls: true
-    reality-opts:
-      public-key: "dBvFkg2zny545Ws6H_LXKEohOYV2MW_zACRrRQE1IUg"
-      short-id: "f9d89d4a"
-    network: "tcp"
-
-  - name: "🌐XX-39M-[c34bc6/b55a96]"
+  - name: "🇩🇪DE-433M-[c34bc6/b55a96]"
     type: "vless"
     server: "150.241.64.105"
     port: 443
@@ -140,13 +63,36 @@ proxies:
       short-id: "7d286a1f"
     network: "tcp"
 
-  - name: "🇦🇱AL-21M-[acdd13/40ac5b]"
+  - name: "🇦🇱AL-239M-[acdd13/40ac5b]"
     type: "ss"
     server: "130.49.189.158"
     port: 43558
     cipher: "chacha20-ietf-poly1305"
     password: "mhXYDvaSfHzHZXBswC/zo/o8VqdU3XSBpwWx050Y6MU="
     udp: true
+
+  - name: "🇦🇹AT-539M-[d50cc3/96f1e6]"
+    type: "vless"
+    server: "50.7.36.29"
+    port: 443
+    uuid: "cd3bb7d9-7df3-4644-ac05-c260990ac277"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "ekb.eg"
+    client-fingerprint: "firefox"
+    skip-cert-verify: true
+    tls: true
+    network: "tcp"
+
+  - name: "🇭🇰HK-24M-[e884da/b0400e]"
+    type: "hysteria2"
+    server: "xg1.mangshe.xyz"
+    port: 2060
+    password: "5d0a6445-a30d-4522-bb1f-94f1d3ad63be"
+    udp: true
+    sni: "xg1.mangshe.xyz"
+    skip-cert-verify: true
 
   - name: "🇺🇸US-21M-[e26cd5/656726]"
     type: "ss"
@@ -160,18 +106,6 @@ proxies:
       host: "(Telegram🇨🇳 @VPNine1)9f6b1e7:141612"
       mode: "tls"
 
-  - name: "🇬🇧GB-316M-[3c6723/724b12]"
-    type: "vless"
-    server: "66.90.105.211"
-    port: 2083
-    uuid: "cd3bb7d9-7df3-4644-ac05-c260990ac277"
-    udp: true
-    encryption: "none"
-    tls: false
-    network: "grpc"
-    grpc-opts:
-      grpc-service-name: "vless"
-
   - name: "🇷🇺RU-85M-[a663a0/749dff]"
     type: "hysteria2"
     server: "els.mangshe.xyz"
@@ -180,44 +114,6 @@ proxies:
     udp: true
     sni: "els.mangshe.xyz"
     skip-cert-verify: true
-
-  - name: "🇬🇧GB-246M-[3c6723/2f0b28]"
-    type: "vless"
-    server: "66.90.105.211"
-    port: 2083
-    uuid: "cd3bb7d9-7df3-4644-ac05-c260990ac277"
-    udp: true
-    encryption: "none"
-    tls: false
-    network: "grpc"
-    grpc-opts:
-      grpc-service-name: "vless"
-
-  - name: "🇳🇱NL-82M-[590d17/69f6ca]"
-    type: "vless"
-    server: "usartbyb43bt4vt43b5t34cv5b53c53b53v3.soft355.ir"
-    port: 32210
-    uuid: "14203978-7699-4404-bc06-b245ad7132a5"
-    udp: true
-    encryption: "mlkem768x25519plus.native.0rtt.ZdJDuC0NAeRdPHNVOGwd5G25eEDVSzhJLAnKdAecfzg"
-    tls: false
-    network: "tcp"
-
-  - name: "🇺🇸US-399M-[1525bb/720732]"
-    type: "vless"
-    server: "103.24.207.36"
-    port: 443
-    uuid: "c51b9c8c-2507-4c38-be5f-b769dede9b79"
-    udp: true
-    encryption: "none"
-    flow: "xtls-rprx-vision"
-    servername: "promo-digital.wb.ru"
-    client-fingerprint: "firefox"
-    tls: true
-    reality-opts:
-      public-key: "XqDFAqo3BBi_qmTzK2Kb7ZENPHQaC_aRiHRiJ6_YQxM"
-      short-id: "bc3160135a28cd97"
-    network: "tcp"
 
   - name: "🇺🇸US-55M-[46caae/e466f2]"
     type: "ss"
@@ -242,52 +138,6 @@ proxies:
     plugin-opts:
       host: "(Telegram🇨🇳 @VPNine1)fa03bb5:137563"
       mode: "tls"
-
-  - name: "🇬🇧GB-345M-[151f13/5c099d]"
-    type: "vless"
-    server: "66.90.104.43"
-    port: 2083
-    uuid: "cd3bb7d9-7df3-4644-ac05-c260990ac277"
-    udp: true
-    encryption: "none"
-    packet-encoding: "xudp"
-    tls: false
-    network: "grpc"
-    grpc-opts:
-      grpc-service-name: "vless"
-
-  - name: "🇩🇪DE-98M-[138c3d/ebb566]"
-    type: "hysteria2"
-    server: "162.249.127.154"
-    port: 8443
-    password: "9Me_Jx935gnHx13_Nx45M_NYXe037js_Be4z"
-    udp: true
-    sni: "hop-germany-september.dynuddns.com"
-
-  - name: "🇬🇧GB-321M-[3c6723/21b728]"
-    type: "vless"
-    server: "66.90.105.211"
-    port: 2083
-    uuid: "cd3bb7d9-7df3-4644-ac05-c260990ac277"
-    udp: true
-    encryption: "none"
-    tls: false
-    network: "grpc"
-    grpc-opts:
-      grpc-service-name: "vless"
-
-  - name: "🇬🇧GB-324M-[3c6723/a80459]"
-    type: "vless"
-    server: "66.90.105.211"
-    port: 2083
-    uuid: "cd3bb7d9-7df3-4644-ac05-c260990ac277"
-    udp: true
-    encryption: "none"
-    packet-encoding: "xudp"
-    tls: false
-    network: "grpc"
-    grpc-opts:
-      grpc-service-name: "vless"
 
   - name: "🇷🇺RU-66M-[f38f7e/eb1e94]"
     type: "vless"
@@ -322,29 +172,17 @@ proxy-groups:
   - name: "AUTO"
     type: select
     proxies:
-      - "🇳🇱NL-501M-[664ba6/9628a3]"
-      - "🌐XX-125M-[4924d0/d1577f]"
-      - "🇰🇷KR-193M-[98c8e8/25aa7a]"
-      - "🇩🇪DE-408M-[bc3eab/cd5bc3]"
-      - "🇦🇹AT-276M-[d72d43/e07fc3]"
-      - "🇹🇷TR-158M-[525212/d09c0f]"
-      - "🇦🇹AT-526M-[d50cc3/96f1e6]"
-      - "🇭🇰HK-72M-[e884da/b0400e]"
-      - "🇵🇱PL-122M-[5a2783/d03654]"
-      - "🌐XX-39M-[c34bc6/b55a96]"
-      - "🇦🇱AL-21M-[acdd13/40ac5b]"
+      - "🇳🇱NL-503M-[664ba6/9628a3]"
+      - "🇦🇹AT-444M-[d72d43/e07fc3]"
+      - "🇩🇪DE-524M-[bc3eab/cd5bc3]"
+      - "🇩🇪DE-433M-[c34bc6/b55a96]"
+      - "🇦🇱AL-239M-[acdd13/40ac5b]"
+      - "🇦🇹AT-539M-[d50cc3/96f1e6]"
+      - "🇭🇰HK-24M-[e884da/b0400e]"
       - "🇺🇸US-21M-[e26cd5/656726]"
-      - "🇬🇧GB-316M-[3c6723/724b12]"
       - "🇷🇺RU-85M-[a663a0/749dff]"
-      - "🇬🇧GB-246M-[3c6723/2f0b28]"
-      - "🇳🇱NL-82M-[590d17/69f6ca]"
-      - "🇺🇸US-399M-[1525bb/720732]"
       - "🇺🇸US-55M-[46caae/e466f2]"
       - "🇺🇸US-24M-[3432b3/f9b038]"
-      - "🇬🇧GB-345M-[151f13/5c099d]"
-      - "🇩🇪DE-98M-[138c3d/ebb566]"
-      - "🇬🇧GB-321M-[3c6723/21b728]"
-      - "🇬🇧GB-324M-[3c6723/a80459]"
       - "🇷🇺RU-66M-[f38f7e/eb1e94]"
 
 rules:
