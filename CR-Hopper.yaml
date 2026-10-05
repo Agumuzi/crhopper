@@ -6,12 +6,62 @@ log-level: warning
 ipv6: false
 
 proxies:
-  - name: "🇳🇱NL-486M-[664ba6/9628a3]"
+  - name: "🇳🇱NL-496M-[664ba6/9628a3]"
     type: "ss"
     server: "82.38.31.171"
     port: 8080
     cipher: "chacha20-ietf-poly1305"
     password: "oZIoA69Q8yhcQV8ka3Pa3A"
+    udp: true
+
+  - name: "🇩🇪DE-170M-[4924d0/248f2f]"
+    type: "vmess"
+    server: "31.77.8.97"
+    port: 110
+    uuid: "d2d8601b-c14b-42c6-b8ea-33889bce152a"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    network: "tcp"
+
+  - name: "🌐XX-361M-[c34bc6/b55a96]"
+    type: "vless"
+    server: "150.241.64.105"
+    port: 443
+    uuid: "9a1b2785-6baf-455c-9f75-80157ee7f7c5"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "conv.unit-digital.com"
+    client-fingerprint: "chrome"
+    tls: true
+    reality-opts:
+      public-key: "PK5kinwngrsb3QKJwwpeMcL4Iqj4r-ck7EwZDl62Sng"
+      short-id: "7d286a1f"
+    network: "tcp"
+
+  - name: "🇫🇮FI-159M-[4d7f59/da2f6b]"
+    type: "vless"
+    server: "13.143.129.45"
+    port: 443
+    uuid: "df53b6c2-8005-475c-9eb9-74e1be785dc8"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "addons.mozilla.org"
+    client-fingerprint: "randomized"
+    tls: true
+    reality-opts:
+      public-key: "CsoM3VUYii1XxgxnrT4VEe-EALgn60k6BaKMJVP9qAM"
+      short-id: "7dd08043"
+    network: "tcp"
+
+  - name: "🇦🇱AL-226M-[acdd13/40ac5b]"
+    type: "ss"
+    server: "130.49.189.158"
+    port: 43558
+    cipher: "chacha20-ietf-poly1305"
+    password: "mhXYDvaSfHzHZXBswC/zo/o8VqdU3XSBpwWx050Y6MU="
     udp: true
 
   - name: "🇦🇹AT-397M-[d72d43/e07fc3]"
@@ -29,30 +79,6 @@ proxies:
       headers:
         Host:
           - "tms.dingtalk.com"
-
-  - name: "🇦🇱AL-144M-[acdd13/40ac5b]"
-    type: "ss"
-    server: "130.49.189.158"
-    port: 43558
-    cipher: "chacha20-ietf-poly1305"
-    password: "mhXYDvaSfHzHZXBswC/zo/o8VqdU3XSBpwWx050Y6MU="
-    udp: true
-
-  - name: "🇩🇪DE-433M-[c34bc6/b55a96]"
-    type: "vless"
-    server: "150.241.64.105"
-    port: 443
-    uuid: "9a1b2785-6baf-455c-9f75-80157ee7f7c5"
-    udp: true
-    encryption: "none"
-    flow: "xtls-rprx-vision"
-    servername: "conv.unit-digital.com"
-    client-fingerprint: "chrome"
-    tls: true
-    reality-opts:
-      public-key: "PK5kinwngrsb3QKJwwpeMcL4Iqj4r-ck7EwZDl62Sng"
-      short-id: "7d286a1f"
-    network: "tcp"
 
   - name: "🇭🇰HK-24M-[e884da/b0400e]"
     type: "hysteria2"
@@ -141,10 +167,12 @@ proxy-groups:
   - name: "AUTO"
     type: select
     proxies:
-      - "🇳🇱NL-486M-[664ba6/9628a3]"
+      - "🇳🇱NL-496M-[664ba6/9628a3]"
+      - "🇩🇪DE-170M-[4924d0/248f2f]"
+      - "🌐XX-361M-[c34bc6/b55a96]"
+      - "🇫🇮FI-159M-[4d7f59/da2f6b]"
+      - "🇦🇱AL-226M-[acdd13/40ac5b]"
       - "🇦🇹AT-397M-[d72d43/e07fc3]"
-      - "🇦🇱AL-144M-[acdd13/40ac5b]"
-      - "🇩🇪DE-433M-[c34bc6/b55a96]"
       - "🇭🇰HK-24M-[e884da/b0400e]"
       - "🇺🇸US-21M-[e26cd5/656726]"
       - "🇷🇺RU-85M-[a663a0/749dff]"
