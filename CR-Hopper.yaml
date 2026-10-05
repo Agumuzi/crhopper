@@ -6,13 +6,81 @@ log-level: warning
 ipv6: false
 
 proxies:
-  - name: "🇳🇱NL-496M-[664ba6/9628a3]"
+  - name: "🇳🇱NL-276M-[664ba6/9628a3]"
     type: "ss"
     server: "82.38.31.171"
     port: 8080
     cipher: "chacha20-ietf-poly1305"
     password: "oZIoA69Q8yhcQV8ka3Pa3A"
     udp: true
+
+  - name: "🇩🇪DE-276M-[ed1eaa/7bc9e5]"
+    type: "vless"
+    server: "2.27.35.55"
+    port: 443
+    uuid: "df53b6c2-8005-475c-9eb9-74e1be785dc8"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "addons.mozilla.org"
+    client-fingerprint: "randomized"
+    tls: true
+    reality-opts:
+      public-key: "RTG-xTU5UuKTRrkk8_COe04GiUWrqrSdt9mqSak_XEc"
+      short-id: "e696e744"
+    network: "tcp"
+
+  - name: "🇩🇪DE-114M-[439fdd/8d3be5]"
+    type: "vless"
+    server: "2.27.35.74"
+    port: 443
+    uuid: "df53b6c2-8005-475c-9eb9-74e1be785dc8"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "addons.mozilla.org"
+    client-fingerprint: "randomized"
+    tls: true
+    reality-opts:
+      public-key: "zAmNLsLPizp96b55zNe2kJ3zXBdpuNY0olnRaOpluks"
+      short-id: "34e797af"
+    network: "tcp"
+
+  - name: "🇩🇪DE-210M-[ba09b4/0ad28b]"
+    type: "vless"
+    server: "2.27.69.117"
+    port: 443
+    uuid: "df53b6c2-8005-475c-9eb9-74e1be785dc8"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "addons.mozilla.org"
+    client-fingerprint: "randomized"
+    tls: true
+    reality-opts:
+      public-key: "-bn-69fLm8-ZIN4AWcFJTvliohVXnevdOK6E0HJF90Y"
+      short-id: "123c2bff"
+    network: "tcp"
+
+  - name: "🌐XX-40M-[32d206/4c0584]"
+    type: "hysteria2"
+    server: "132.243.66.59"
+    port: 443
+    password: "4ffc5c57-3242-4422-88de-25fb0f7e97bc"
+    udp: true
+    sni: "waves.pantera-radio.ru"
+
+  - name: "🇺🇸US-29M-[46caae/e466f2]"
+    type: "ss"
+    server: "134.195.101.119"
+    port: 2377
+    cipher: "chacha20-ietf-poly1305"
+    password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv"
+    udp: true
+    plugin: "obfs"
+    plugin-opts:
+      host: "(Telegram🇨🇳 @VPNine1)fa03bb5:137563"
+      mode: "tls"
 
   - name: "🇩🇪DE-170M-[4924d0/248f2f]"
     type: "vmess"
@@ -56,14 +124,6 @@ proxies:
       short-id: "7dd08043"
     network: "tcp"
 
-  - name: "🇦🇱AL-226M-[acdd13/40ac5b]"
-    type: "ss"
-    server: "130.49.189.158"
-    port: 43558
-    cipher: "chacha20-ietf-poly1305"
-    password: "mhXYDvaSfHzHZXBswC/zo/o8VqdU3XSBpwWx050Y6MU="
-    udp: true
-
   - name: "🇦🇹AT-397M-[d72d43/e07fc3]"
     type: "vmess"
     server: "94.177.9.66"
@@ -80,15 +140,6 @@ proxies:
         Host:
           - "tms.dingtalk.com"
 
-  - name: "🇭🇰HK-24M-[e884da/b0400e]"
-    type: "hysteria2"
-    server: "xg1.mangshe.xyz"
-    port: 2060
-    password: "5d0a6445-a30d-4522-bb1f-94f1d3ad63be"
-    udp: true
-    sni: "xg1.mangshe.xyz"
-    skip-cert-verify: true
-
   - name: "🇺🇸US-21M-[e26cd5/656726]"
     type: "ss"
     server: "134.195.101.118"
@@ -99,27 +150,6 @@ proxies:
     plugin: "obfs"
     plugin-opts:
       host: "(Telegram🇨🇳 @VPNine1)9f6b1e7:141612"
-      mode: "tls"
-
-  - name: "🇷🇺RU-85M-[a663a0/749dff]"
-    type: "hysteria2"
-    server: "els.mangshe.xyz"
-    port: 2060
-    password: "5d0a6445-a30d-4522-bb1f-94f1d3ad63be"
-    udp: true
-    sni: "els.mangshe.xyz"
-    skip-cert-verify: true
-
-  - name: "🇺🇸US-55M-[46caae/e466f2]"
-    type: "ss"
-    server: "134.195.101.119"
-    port: 2377
-    cipher: "chacha20-ietf-poly1305"
-    password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv"
-    udp: true
-    plugin: "obfs"
-    plugin-opts:
-      host: "(Telegram🇨🇳 @VPNine1)fa03bb5:137563"
       mode: "tls"
 
   - name: "🇺🇸US-24M-[3432b3/f9b038]"
@@ -167,16 +197,17 @@ proxy-groups:
   - name: "AUTO"
     type: select
     proxies:
-      - "🇳🇱NL-496M-[664ba6/9628a3]"
+      - "🇳🇱NL-276M-[664ba6/9628a3]"
+      - "🇩🇪DE-276M-[ed1eaa/7bc9e5]"
+      - "🇩🇪DE-114M-[439fdd/8d3be5]"
+      - "🇩🇪DE-210M-[ba09b4/0ad28b]"
+      - "🌐XX-40M-[32d206/4c0584]"
+      - "🇺🇸US-29M-[46caae/e466f2]"
       - "🇩🇪DE-170M-[4924d0/248f2f]"
       - "🌐XX-361M-[c34bc6/b55a96]"
       - "🇫🇮FI-159M-[4d7f59/da2f6b]"
-      - "🇦🇱AL-226M-[acdd13/40ac5b]"
       - "🇦🇹AT-397M-[d72d43/e07fc3]"
-      - "🇭🇰HK-24M-[e884da/b0400e]"
       - "🇺🇸US-21M-[e26cd5/656726]"
-      - "🇷🇺RU-85M-[a663a0/749dff]"
-      - "🇺🇸US-55M-[46caae/e466f2]"
       - "🇺🇸US-24M-[3432b3/f9b038]"
       - "🇷🇺RU-66M-[f38f7e/eb1e94]"
 
