@@ -6,13 +6,58 @@ log-level: warning
 ipv6: false
 
 proxies:
-  - name: "🇳🇱NL-468M-[664ba6/9628a3]"
+  - name: "🇳🇱NL-436M-[664ba6/9628a3]"
     type: "ss"
     server: "82.38.31.171"
     port: 8080
     cipher: "chacha20-ietf-poly1305"
     password: "oZIoA69Q8yhcQV8ka3Pa3A"
     udp: true
+
+  - name: "🇳🇱NL-432M-[f9b827/6ce7b0]"
+    type: "ss"
+    server: "82.38.31.171"
+    port: 443
+    cipher: "chacha20-ietf-poly1305"
+    password: "oZIoA69Q8yhcQV8ka3Pa3A"
+    udp: true
+
+  - name: "🇩🇪DE-149M-[dc3614/8887b8]"
+    type: "vmess"
+    server: "23.165.200.150"
+    port: 52080
+    uuid: "672cdade-bb05-4c86-b578-e5d09b79524a"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    network: "http"
+    http-opts:
+      path:
+        - "/QQqun-737805443"
+      headers:
+        Host:
+          - "down-cdn.dingtalk.com"
+
+  - name: "🇳🇱NL-27M-[9731e3/b1629d]"
+    type: "vless"
+    server: "50.7.216.173"
+    port: 443
+    uuid: "3f89518a-e78f-4d31-a1c5-1725b4cfb70d"
+    udp: true
+    encryption: "none"
+    servername: "3f89518a.ferrin.uk"
+    client-fingerprint: "chrome"
+    alpn:
+      - "h2"
+    tls: true
+    network: "xhttp"
+    xhttp-opts:
+      path: "/nl"
+      host: "api.ferrin.uk"
+      mode: "stream-one"
+      reuse-settings:
+        h-max-reusable-secs: "1140-1260"
+        max-connections: 3
 
   - name: "🇩🇪DE-159M-[4924d0/d1577f]"
     type: "vmess"
@@ -43,14 +88,6 @@ proxies:
       path: "/api/v1/upload"
       host: "summerculture.net"
       mode: "auto"
-
-  - name: "🇳🇱NL-276M-[f9b827/6ce7b0]"
-    type: "ss"
-    server: "82.38.31.171"
-    port: 443
-    cipher: "chacha20-ietf-poly1305"
-    password: "oZIoA69Q8yhcQV8ka3Pa3A"
-    udp: true
 
   - name: "🇷🇺RU-21M-[f38f7e/b4a702]"
     type: "vless"
@@ -145,10 +182,12 @@ proxy-groups:
   - name: "AUTO"
     type: select
     proxies:
-      - "🇳🇱NL-468M-[664ba6/9628a3]"
+      - "🇳🇱NL-436M-[664ba6/9628a3]"
+      - "🇳🇱NL-432M-[f9b827/6ce7b0]"
+      - "🇩🇪DE-149M-[dc3614/8887b8]"
+      - "🇳🇱NL-27M-[9731e3/b1629d]"
       - "🇩🇪DE-159M-[4924d0/d1577f]"
       - "🇷🇺RU-43M-[e4db96/e21b14]"
-      - "🇳🇱NL-276M-[f9b827/6ce7b0]"
       - "🇷🇺RU-21M-[f38f7e/b4a702]"
       - "🇺🇸US-21M-[e26cd5/656726]"
       - "🇺🇸US-80M-[46caae/e466f2]"
