@@ -6,65 +6,7 @@ log-level: warning
 ipv6: false
 
 proxies:
-  - name: "🇪🇪EE-429M-[ea5c21/002fb1]"
-    type: "vless"
-    server: "95.85.242.81"
-    port: 443
-    uuid: "2b781b4a-5942-48e0-a7f3-5a07b7b488c1"
-    udp: true
-    encryption: "none"
-    flow: "xtls-rprx-vision"
-    servername: "ee-root.sworkingvpn.com"
-    client-fingerprint: "firefox"
-    tls: true
-    reality-opts:
-      public-key: "AhLy7ha7FF2EQfu-3SxOFKUwExyHActYPHtyv82KNCI"
-      short-id: "15bcc0a77c3cacdf"
-    network: "tcp"
-
-  - name: "🇳🇱NL-510M-[664ba6/9628a3]"
-    type: "ss"
-    server: "82.38.31.171"
-    port: 8080
-    cipher: "chacha20-ietf-poly1305"
-    password: "oZIoA69Q8yhcQV8ka3Pa3A"
-    udp: true
-
-  - name: "🌐XX-126M-[4924d0/248f2f]"
-    type: "vmess"
-    server: "31.77.8.97"
-    port: 110
-    uuid: "d2d8601b-c14b-42c6-b8ea-33889bce152a"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-    network: "tcp"
-
-  - name: "🇯🇵JP-122M-[98c8e8/a9969d]"
-    type: "vless"
-    server: "172.64.80.1"
-    port: 8880
-    uuid: "6d613d5f-1d65-48ca-b2e8-d83a2c3a17d9"
-    udp: true
-    encryption: "none"
-    packet-encoding: "xudp"
-    client-fingerprint: "chrome"
-    tls: false
-    network: "ws"
-    ws-opts:
-      path: "/pyip=ProxyIP.JP.CMLiussss.net"
-      headers:
-        Host: "tight-star-08eb.331-729.workers.dev"
-
-  - name: "🇮🇹IT-143M-[d9ede5/15413a]"
-    type: "ss"
-    server: "45.144.172.123"
-    port: 10771
-    cipher: "aes-256-gcm"
-    password: "78235e7dc55e9ad1"
-    udp: true
-
-  - name: "🇱🇻LV-421M-[8a6a3f/5bf48d]"
+  - name: "🇱🇻LV-264M-[8a6a3f/5bf48d]"
     type: "vless"
     server: "216.173.71.43"
     port: 443
@@ -80,23 +22,7 @@ proxies:
       short-id: "0da7e14db353e7d0"
     network: "tcp"
 
-  - name: "🇳🇱NL-231M-[37336b/01537b]"
-    type: "vless"
-    server: "78.159.131.79"
-    port: 443
-    uuid: "2b781b4a-5942-48e0-a7f3-5a07b7b488c1"
-    udp: true
-    encryption: "none"
-    flow: "xtls-rprx-vision"
-    servername: "nl-root.sworkingvpn.com"
-    client-fingerprint: "firefox"
-    tls: true
-    reality-opts:
-      public-key: "AhLy7ha7FF2EQfu-3SxOFKUwExyHActYPHtyv82KNCI"
-      short-id: "15bcc0a77c3cacdf"
-    network: "tcp"
-
-  - name: "🇩🇪DE-466M-[18b010/28060e]"
+  - name: "🇩🇪DE-521M-[18b010/28060e]"
     type: "vless"
     server: "50.7.157.236"
     port: 443
@@ -112,7 +38,15 @@ proxies:
       short-id: "ba4b2afa9e7193ea"
     network: "tcp"
 
-  - name: "🇧🇪BE-289M-[ecd1eb/37e03f]"
+  - name: "🇳🇱NL-501M-[664ba6/9628a3]"
+    type: "ss"
+    server: "82.38.31.171"
+    port: 8080
+    cipher: "chacha20-ietf-poly1305"
+    password: "oZIoA69Q8yhcQV8ka3Pa3A"
+    udp: true
+
+  - name: "🇧🇪BE-161M-[ecd1eb/37e03f]"
     type: "vless"
     server: "113.30.152.2"
     port: 443
@@ -128,23 +62,39 @@ proxies:
       short-id: "15bcc0a77c3cacdf"
     network: "tcp"
 
-  - name: "🇩🇪DE-340M-[c34bc6/b55a96]"
+  - name: "🇪🇪EE-246M-[ea5c21/002fb1]"
     type: "vless"
-    server: "150.241.64.105"
+    server: "95.85.242.81"
     port: 443
-    uuid: "9a1b2785-6baf-455c-9f75-80157ee7f7c5"
+    uuid: "2b781b4a-5942-48e0-a7f3-5a07b7b488c1"
     udp: true
     encryption: "none"
     flow: "xtls-rprx-vision"
-    servername: "conv.unit-digital.com"
-    client-fingerprint: "chrome"
+    servername: "ee-root.sworkingvpn.com"
+    client-fingerprint: "firefox"
     tls: true
     reality-opts:
-      public-key: "PK5kinwngrsb3QKJwwpeMcL4Iqj4r-ck7EwZDl62Sng"
-      short-id: "7d286a1f"
+      public-key: "AhLy7ha7FF2EQfu-3SxOFKUwExyHActYPHtyv82KNCI"
+      short-id: "15bcc0a77c3cacdf"
     network: "tcp"
 
-  - name: "🇳🇱NL-164M-[d65e3b/d70be9]"
+  - name: "🇳🇱NL-188M-[37336b/01537b]"
+    type: "vless"
+    server: "78.159.131.79"
+    port: 443
+    uuid: "2b781b4a-5942-48e0-a7f3-5a07b7b488c1"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "nl-root.sworkingvpn.com"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "AhLy7ha7FF2EQfu-3SxOFKUwExyHActYPHtyv82KNCI"
+      short-id: "15bcc0a77c3cacdf"
+    network: "tcp"
+
+  - name: "🇳🇱NL-135M-[d65e3b/d70be9]"
     type: "vless"
     server: "2.27.39.233"
     port: 443
@@ -160,41 +110,37 @@ proxies:
       short-id: "f3c023cc"
     network: "tcp"
 
-  - name: "🌐XX-232M-[439fdd/0a824f]"
+  - name: "🇷🇺RU-87M-[e4db96/e21b14]"
     type: "vless"
-    server: "2.27.35.74"
-    port: 443
-    uuid: "df53b6c2-8005-475c-9eb9-74e1be785dc8"
+    server: "78.159.250.84"
+    port: 2053
+    uuid: "2c634977-584e-4e1f-b501-1b70c77a6743"
     udp: true
     encryption: "none"
-    flow: "xtls-rprx-vision"
-    servername: "addons.mozilla.org"
-    client-fingerprint: "chrome"
+    servername: "summerculture.net"
+    client-fingerprint: "firefox"
+    alpn:
+      - "h2"
+      - "+http/1.1"
     tls: true
-    reality-opts:
-      public-key: "zAmNLsLPizp96b55zNe2kJ3zXBdpuNY0olnRaOpluks"
-      short-id: "34e797af"
-    network: "tcp"
+    network: "xhttp"
+    xhttp-opts:
+      path: "/api/v1/upload"
+      host: "summerculture.net"
+      mode: "auto"
 
-  - name: "🇩🇪DE-96M-[3c9fa3/df2f7f]"
-    type: "vless"
-    server: "144.31.192.167"
-    port: 443
-    uuid: "f49d04d6-aaa7-4013-b323-bc35b78230db"
+  - name: "🌐XX-62M-[75946d/9d9316]"
+    type: "hysteria2"
+    server: "mg.mangshe.xyz"
+    port: 2060
+    password: "5d0a6445-a30d-4522-bb1f-94f1d3ad63be"
     udp: true
-    encryption: "none"
-    servername: "s4ws.ragingbull.de5.net"
-    client-fingerprint: "chrome"
-    tls: true
-    network: "ws"
-    ws-opts:
-      path: "/wsrb7k2m"
-      headers:
-        Host: "s4ws.ragingbull.de5.net"
+    sni: "mg.mangshe.xyz"
+    skip-cert-verify: true
 
-  - name: "🇺🇸US-99M-[3432b3/f9b038]"
+  - name: "🇺🇸US-80M-[46caae/e466f2]"
     type: "ss"
-    server: "134.195.101.117"
+    server: "134.195.101.119"
     port: 2377
     cipher: "chacha20-ietf-poly1305"
     password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv"
@@ -204,9 +150,37 @@ proxies:
       host: "(Telegram🇨🇳 @VPNine1)fa03bb5:137563"
       mode: "tls"
 
-  - name: "🇺🇸US-68M-[46caae/e466f2]"
+  - name: "🇺🇸US-109M-[e26cd5/656726]"
     type: "ss"
-    server: "134.195.101.119"
+    server: "134.195.101.118"
+    port: 2377
+    cipher: "chacha20-ietf-poly1305"
+    password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv"
+    udp: true
+    plugin: "obfs"
+    plugin-opts:
+      host: "(Telegram🇨🇳 @VPNine1)9f6b1e7:141612"
+      mode: "tls"
+
+  - name: "🇷🇺RU-51M-[a80eee/e3c86d]"
+    type: "ss"
+    server: "46.17.42.141"
+    port: 10771
+    cipher: "aes-256-gcm"
+    password: "6b39ae3234dfd68b"
+    udp: true
+
+  - name: "🇮🇹IT-143M-[d9ede5/15413a]"
+    type: "ss"
+    server: "45.144.172.123"
+    port: 10771
+    cipher: "aes-256-gcm"
+    password: "78235e7dc55e9ad1"
+    udp: true
+
+  - name: "🇺🇸US-99M-[3432b3/f9b038]"
+    type: "ss"
+    server: "134.195.101.117"
     port: 2377
     cipher: "chacha20-ietf-poly1305"
     password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv"
@@ -233,26 +207,6 @@ proxies:
     grpc-opts:
       grpc-service-name: "grpc-tunnel"
 
-  - name: "🇺🇸US-106M-[e26cd5/656726]"
-    type: "ss"
-    server: "134.195.101.118"
-    port: 2377
-    cipher: "chacha20-ietf-poly1305"
-    password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv"
-    udp: true
-    plugin: "obfs"
-    plugin-opts:
-      host: "(Telegram🇨🇳 @VPNine1)9f6b1e7:141612"
-      mode: "tls"
-
-  - name: "🇷🇺RU-35M-[a80eee/e3c86d]"
-    type: "ss"
-    server: "46.17.42.141"
-    port: 10771
-    cipher: "aes-256-gcm"
-    password: "6b39ae3234dfd68b"
-    udp: true
-
   - name: "🇭🇰HK-42M-[e884da/b0400e]"
     type: "hysteria2"
     server: "xg1.mangshe.xyz"
@@ -270,30 +224,6 @@ proxies:
     udp: true
     sni: "els.mangshe.xyz"
     skip-cert-verify: true
-
-  - name: "🇷🇺RU-155M-[43f309/ba9099]"
-    type: "ss"
-    server: "46.17.41.166"
-    port: 10771
-    cipher: "aes-256-gcm"
-    password: "895b4b796a357570"
-    udp: true
-
-  - name: "🇩🇪DE-411M-[ed1eaa/7bc9e5]"
-    type: "vless"
-    server: "2.27.35.55"
-    port: 443
-    uuid: "df53b6c2-8005-475c-9eb9-74e1be785dc8"
-    udp: true
-    encryption: "none"
-    flow: "xtls-rprx-vision"
-    servername: "addons.mozilla.org"
-    client-fingerprint: "randomized"
-    tls: true
-    reality-opts:
-      public-key: "RTG-xTU5UuKTRrkk8_COe04GiUWrqrSdt9mqSak_XEc"
-      short-id: "e696e744"
-    network: "tcp"
 
   - name: "🇫🇷FR-496M-[56e798/221181]"
     type: "vless"
@@ -318,47 +248,6 @@ proxies:
     udp: true
     sni: "media.pantera-radio.ru"
 
-  - name: "🇸🇪SE-322M-[a9097b/7c9f39]"
-    type: "vless"
-    server: "95.85.241.203"
-    port: 443
-    uuid: "0d6e70a5-abfd-4766-8ad4-e502173ba82b"
-    udp: true
-    encryption: "none"
-    flow: "xtls-rprx-vision"
-    servername: "se2.virtez.pro"
-    client-fingerprint: "firefox"
-    tls: true
-    reality-opts:
-      public-key: "CsHuHGKul9Soue4U9mFoJB6tWItZpHIin2_kPV77xVM"
-      short-id: "b5ceb348df65795d"
-    network: "tcp"
-
-  - name: "🇩🇪DE-277M-[ba09b4/07a8d8]"
-    type: "vless"
-    server: "2.27.69.117"
-    port: 443
-    uuid: "df53b6c2-8005-475c-9eb9-74e1be785dc8"
-    udp: true
-    encryption: "none"
-    flow: "xtls-rprx-vision"
-    servername: "addons.mozilla.org"
-    client-fingerprint: "chrome"
-    tls: true
-    reality-opts:
-      public-key: "-bn-69fLm8-ZIN4AWcFJTvliohVXnevdOK6E0HJF90Y"
-      short-id: "123c2bff"
-    network: "tcp"
-
-  - name: "🇺🇸US-137M-[75946d/9d9316]"
-    type: "hysteria2"
-    server: "mg.mangshe.xyz"
-    port: 2060
-    password: "5d0a6445-a30d-4522-bb1f-94f1d3ad63be"
-    udp: true
-    sni: "mg.mangshe.xyz"
-    skip-cert-verify: true
-
   - name: "🇳🇱NL-234M-[185216/792f07]"
     type: "hysteria2"
     server: "77.74.123.107"
@@ -375,41 +264,6 @@ proxies:
     udp: true
     sni: "us3.xiaoliyu.cyou"
     skip-cert-verify: true
-
-  - name: "🇷🇺RU-489M-[e4db96/e21b14]"
-    type: "vless"
-    server: "78.159.250.84"
-    port: 2053
-    uuid: "2c634977-584e-4e1f-b501-1b70c77a6743"
-    udp: true
-    encryption: "none"
-    servername: "summerculture.net"
-    client-fingerprint: "firefox"
-    alpn:
-      - "h2"
-      - "+http/1.1"
-    tls: true
-    network: "xhttp"
-    xhttp-opts:
-      path: "/api/v1/upload"
-      host: "summerculture.net"
-      mode: "auto"
-
-  - name: "🇦🇹AT-522M-[d72d43/e07fc3]"
-    type: "vmess"
-    server: "94.177.9.66"
-    port: 29825
-    uuid: "1933a425-2842-4d2b-8589-9ca2242d7415"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-    network: "http"
-    http-opts:
-      path:
-        - "/"
-      headers:
-        Host:
-          - "tms.dingtalk.com"
 
   - name: "🇷🇺RU-160M-[f58d58/979333]"
     type: "vless"
@@ -458,22 +312,6 @@ proxies:
         max-concurrency: "16-32"
         max-connections: "0"
       x-padding-bytes: "100-1000"
-
-  - name: "🇫🇮FI-427M-[4d7f59/da2f6b]"
-    type: "vless"
-    server: "13.143.129.45"
-    port: 443
-    uuid: "df53b6c2-8005-475c-9eb9-74e1be785dc8"
-    udp: true
-    encryption: "none"
-    flow: "xtls-rprx-vision"
-    servername: "addons.mozilla.org"
-    client-fingerprint: "randomized"
-    tls: true
-    reality-opts:
-      public-key: "CsoM3VUYii1XxgxnrT4VEe-EALgn60k6BaKMJVP9qAM"
-      short-id: "7dd08043"
-    network: "tcp"
 
   - name: "🇳🇱NL-423M-[37e184/3cd02c]"
     type: "hysteria2"
@@ -530,38 +368,6 @@ proxies:
       sc-min-posts-interval-ms: "30"
       x-padding-bytes: "100-1000"
 
-  - name: "🇩🇪DE-482M-[ba09b4/0ad28b]"
-    type: "vless"
-    server: "2.27.69.117"
-    port: 443
-    uuid: "df53b6c2-8005-475c-9eb9-74e1be785dc8"
-    udp: true
-    encryption: "none"
-    flow: "xtls-rprx-vision"
-    servername: "addons.mozilla.org"
-    client-fingerprint: "randomized"
-    tls: true
-    reality-opts:
-      public-key: "-bn-69fLm8-ZIN4AWcFJTvliohVXnevdOK6E0HJF90Y"
-      short-id: "123c2bff"
-    network: "tcp"
-
-  - name: "🇩🇪DE-453M-[439fdd/8d3be5]"
-    type: "vless"
-    server: "2.27.35.74"
-    port: 443
-    uuid: "df53b6c2-8005-475c-9eb9-74e1be785dc8"
-    udp: true
-    encryption: "none"
-    flow: "xtls-rprx-vision"
-    servername: "addons.mozilla.org"
-    client-fingerprint: "randomized"
-    tls: true
-    reality-opts:
-      public-key: "zAmNLsLPizp96b55zNe2kJ3zXBdpuNY0olnRaOpluks"
-      short-id: "34e797af"
-    network: "tcp"
-
 proxy-groups:
   - name: "GLOBAL"
     type: select
@@ -571,45 +377,32 @@ proxy-groups:
   - name: "AUTO"
     type: select
     proxies:
-      - "🇪🇪EE-429M-[ea5c21/002fb1]"
-      - "🇳🇱NL-510M-[664ba6/9628a3]"
-      - "🌐XX-126M-[4924d0/248f2f]"
-      - "🇯🇵JP-122M-[98c8e8/a9969d]"
+      - "🇱🇻LV-264M-[8a6a3f/5bf48d]"
+      - "🇩🇪DE-521M-[18b010/28060e]"
+      - "🇳🇱NL-501M-[664ba6/9628a3]"
+      - "🇧🇪BE-161M-[ecd1eb/37e03f]"
+      - "🇪🇪EE-246M-[ea5c21/002fb1]"
+      - "🇳🇱NL-188M-[37336b/01537b]"
+      - "🇳🇱NL-135M-[d65e3b/d70be9]"
+      - "🇷🇺RU-87M-[e4db96/e21b14]"
+      - "🌐XX-62M-[75946d/9d9316]"
+      - "🇺🇸US-80M-[46caae/e466f2]"
+      - "🇺🇸US-109M-[e26cd5/656726]"
+      - "🇷🇺RU-51M-[a80eee/e3c86d]"
       - "🇮🇹IT-143M-[d9ede5/15413a]"
-      - "🇱🇻LV-421M-[8a6a3f/5bf48d]"
-      - "🇳🇱NL-231M-[37336b/01537b]"
-      - "🇩🇪DE-466M-[18b010/28060e]"
-      - "🇧🇪BE-289M-[ecd1eb/37e03f]"
-      - "🇩🇪DE-340M-[c34bc6/b55a96]"
-      - "🇳🇱NL-164M-[d65e3b/d70be9]"
-      - "🌐XX-232M-[439fdd/0a824f]"
-      - "🇩🇪DE-96M-[3c9fa3/df2f7f]"
       - "🇺🇸US-99M-[3432b3/f9b038]"
-      - "🇺🇸US-68M-[46caae/e466f2]"
       - "🇺🇸US-352M-[a3d2fa/8fae1c]"
-      - "🇺🇸US-106M-[e26cd5/656726]"
-      - "🇷🇺RU-35M-[a80eee/e3c86d]"
       - "🇭🇰HK-42M-[e884da/b0400e]"
       - "🇷🇺RU-71M-[a663a0/749dff]"
-      - "🇷🇺RU-155M-[43f309/ba9099]"
-      - "🇩🇪DE-411M-[ed1eaa/7bc9e5]"
       - "🇫🇷FR-496M-[56e798/221181]"
       - "🇳🇱NL-116M-[fa7570/8b5598]"
-      - "🇸🇪SE-322M-[a9097b/7c9f39]"
-      - "🇩🇪DE-277M-[ba09b4/07a8d8]"
-      - "🇺🇸US-137M-[75946d/9d9316]"
       - "🇳🇱NL-234M-[185216/792f07]"
       - "🇮🇹IT-75M-[c805c0/8f57cc]"
-      - "🇷🇺RU-489M-[e4db96/e21b14]"
-      - "🇦🇹AT-522M-[d72d43/e07fc3]"
       - "🇷🇺RU-160M-[f58d58/979333]"
       - "🇷🇺RU-232M-[f38f7e/2ca4a7]"
-      - "🇫🇮FI-427M-[4d7f59/da2f6b]"
       - "🇳🇱NL-423M-[37e184/3cd02c]"
       - "🇷🇺RU-206M-[f58d58/767d77]"
       - "🇷🇺RU-174M-[f38f7e/eb1e94]"
-      - "🇩🇪DE-482M-[ba09b4/0ad28b]"
-      - "🇩🇪DE-453M-[439fdd/8d3be5]"
 
 rules:
   - "DOMAIN,smtp.gmail.com,DIRECT"
