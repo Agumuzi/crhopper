@@ -6,6 +6,44 @@ log-level: warning
 ipv6: false
 
 proxies:
+  - name: "🇳🇱NL-468M-[664ba6/9628a3]"
+    type: "ss"
+    server: "82.38.31.171"
+    port: 8080
+    cipher: "chacha20-ietf-poly1305"
+    password: "oZIoA69Q8yhcQV8ka3Pa3A"
+    udp: true
+
+  - name: "🇩🇪DE-159M-[4924d0/d1577f]"
+    type: "vmess"
+    server: "31.77.8.97"
+    port: 110
+    uuid: "d2d8601b-c14b-42c6-b8ea-33889bce152a"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    skip-cert-verify: true
+    network: "tcp"
+
+  - name: "🇷🇺RU-43M-[e4db96/e21b14]"
+    type: "vless"
+    server: "78.159.250.84"
+    port: 2053
+    uuid: "2c634977-584e-4e1f-b501-1b70c77a6743"
+    udp: true
+    encryption: "none"
+    servername: "summerculture.net"
+    client-fingerprint: "firefox"
+    alpn:
+      - "h2"
+      - "+http/1.1"
+    tls: true
+    network: "xhttp"
+    xhttp-opts:
+      path: "/api/v1/upload"
+      host: "summerculture.net"
+      mode: "auto"
+
   - name: "🇳🇱NL-276M-[f9b827/6ce7b0]"
     type: "ss"
     server: "82.38.31.171"
@@ -13,24 +51,6 @@ proxies:
     cipher: "chacha20-ietf-poly1305"
     password: "oZIoA69Q8yhcQV8ka3Pa3A"
     udp: true
-
-  - name: "🇳🇱NL-276M-[375acb/4e4853]"
-    type: "vless"
-    server: "cedar.fdc.video-mvm.ru"
-    port: 443
-    uuid: "8a180a9e-3218-4140-bfd3-56cf230d27f8"
-    udp: true
-    encryption: "none"
-    servername: "cedar.fdc.video-mvm.ru"
-    client-fingerprint: "firefox"
-    alpn:
-      - "h2"
-      - "http/1.1"
-    tls: true
-    network: "xhttp"
-    xhttp-opts:
-      path: "/"
-      mode: "stream-up"
 
   - name: "🇷🇺RU-21M-[f38f7e/b4a702]"
     type: "vless"
@@ -55,31 +75,6 @@ proxies:
         max-concurrency: "16-32"
         max-connections: "0"
       x-padding-bytes: "100-1000"
-
-  - name: "🇳🇱NL-468M-[664ba6/9628a3]"
-    type: "ss"
-    server: "82.38.31.171"
-    port: 8080
-    cipher: "chacha20-ietf-poly1305"
-    password: "oZIoA69Q8yhcQV8ka3Pa3A"
-    udp: true
-
-  - name: "🇺🇸US-356M-[a3d2fa/8fae1c]"
-    type: "vless"
-    server: "45.132.176.125"
-    port: 9873
-    uuid: "5d16ac22-6eea-426f-b778-6f4c2961faef"
-    udp: true
-    encryption: "none"
-    servername: "dl.google.com"
-    client-fingerprint: "firefox"
-    tls: true
-    reality-opts:
-      public-key: "bnRIb3Er1i-K6NGGByCO9UbGfOvu43ZoiK7ulPd1SzU"
-      short-id: ""
-    network: "grpc"
-    grpc-opts:
-      grpc-service-name: "grpc-tunnel"
 
   - name: "🇺🇸US-21M-[e26cd5/656726]"
     type: "ss"
@@ -150,11 +145,11 @@ proxy-groups:
   - name: "AUTO"
     type: select
     proxies:
-      - "🇳🇱NL-276M-[f9b827/6ce7b0]"
-      - "🇳🇱NL-276M-[375acb/4e4853]"
-      - "🇷🇺RU-21M-[f38f7e/b4a702]"
       - "🇳🇱NL-468M-[664ba6/9628a3]"
-      - "🇺🇸US-356M-[a3d2fa/8fae1c]"
+      - "🇩🇪DE-159M-[4924d0/d1577f]"
+      - "🇷🇺RU-43M-[e4db96/e21b14]"
+      - "🇳🇱NL-276M-[f9b827/6ce7b0]"
+      - "🇷🇺RU-21M-[f38f7e/b4a702]"
       - "🇺🇸US-21M-[e26cd5/656726]"
       - "🇺🇸US-80M-[46caae/e466f2]"
       - "🇺🇸US-99M-[3432b3/f9b038]"
