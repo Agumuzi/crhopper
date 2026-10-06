@@ -6,15 +6,7 @@ log-level: warning
 ipv6: false
 
 proxies:
-  - name: "🇳🇱NL-468M-[664ba6/9628a3]"
-    type: "ss"
-    server: "82.38.31.171"
-    port: 8080
-    cipher: "chacha20-ietf-poly1305"
-    password: "oZIoA69Q8yhcQV8ka3Pa3A"
-    udp: true
-
-  - name: "🇳🇱NL-435M-[f9b827/6ce7b0]"
+  - name: "🇳🇱NL-276M-[f9b827/6ce7b0]"
     type: "ss"
     server: "82.38.31.171"
     port: 443
@@ -22,14 +14,55 @@ proxies:
     password: "oZIoA69Q8yhcQV8ka3Pa3A"
     udp: true
 
-  - name: "🌐XX-80M-[75946d/9d9316]"
-    type: "hysteria2"
-    server: "mg.mangshe.xyz"
-    port: 2060
-    password: "5d0a6445-a30d-4522-bb1f-94f1d3ad63be"
+  - name: "🇳🇱NL-276M-[375acb/4e4853]"
+    type: "vless"
+    server: "cedar.fdc.video-mvm.ru"
+    port: 443
+    uuid: "8a180a9e-3218-4140-bfd3-56cf230d27f8"
     udp: true
-    sni: "mg.mangshe.xyz"
-    skip-cert-verify: true
+    encryption: "none"
+    servername: "cedar.fdc.video-mvm.ru"
+    client-fingerprint: "firefox"
+    alpn:
+      - "h2"
+      - "http/1.1"
+    tls: true
+    network: "xhttp"
+    xhttp-opts:
+      path: "/"
+      mode: "stream-up"
+
+  - name: "🇷🇺RU-21M-[f38f7e/b4a702]"
+    type: "vless"
+    server: "dismissaltree.net"
+    port: 2053
+    uuid: "2c634977-584e-4e1f-b501-1b70c77a6743"
+    udp: true
+    encryption: "none"
+    packet-encoding: "xudp"
+    servername: "dismissaltree.net"
+    client-fingerprint: "chrome"
+    alpn:
+      - "h2"
+      - "http/1.1"
+    tls: true
+    network: "xhttp"
+    xhttp-opts:
+      path: "/api/v1/upload"
+      mode: "auto"
+      reuse-settings:
+        c-max-reuse-times: "64-128"
+        max-concurrency: "16-32"
+        max-connections: "0"
+      x-padding-bytes: "100-1000"
+
+  - name: "🇳🇱NL-468M-[664ba6/9628a3]"
+    type: "ss"
+    server: "82.38.31.171"
+    port: 8080
+    cipher: "chacha20-ietf-poly1305"
+    password: "oZIoA69Q8yhcQV8ka3Pa3A"
+    udp: true
 
   - name: "🇺🇸US-356M-[a3d2fa/8fae1c]"
     type: "vless"
@@ -48,45 +81,6 @@ proxies:
     grpc-opts:
       grpc-service-name: "grpc-tunnel"
 
-  - name: "🇫🇷FR-341M-[52c6d6/3170c3]"
-    type: "vless"
-    server: "lv1d.lynch.ir"
-    port: 4040
-    uuid: "59ab9bbf-3f08-4992-bbf3-4faddceb8e49"
-    udp: true
-    encryption: "none"
-    servername: "www.actionvfx.com"
-    client-fingerprint: "chrome"
-    tls: true
-    reality-opts:
-      public-key: "_OmNcv89o5SDt4H3ButRX9UynGIVwNZR250w4Zie-yk"
-      short-id: "73693dea6faae051"
-    network: "tcp"
-
-  - name: "🇳🇱NL-289M-[37336b/01537b]"
-    type: "vless"
-    server: "78.159.131.79"
-    port: 443
-    uuid: "2b781b4a-5942-48e0-a7f3-5a07b7b488c1"
-    udp: true
-    encryption: "none"
-    flow: "xtls-rprx-vision"
-    servername: "nl-root.sworkingvpn.com"
-    client-fingerprint: "firefox"
-    tls: true
-    reality-opts:
-      public-key: "AhLy7ha7FF2EQfu-3SxOFKUwExyHActYPHtyv82KNCI"
-      short-id: "15bcc0a77c3cacdf"
-    network: "tcp"
-
-  - name: "🇮🇹IT-22M-[d9ede5/15413a]"
-    type: "ss"
-    server: "45.144.172.123"
-    port: 10771
-    cipher: "aes-256-gcm"
-    password: "78235e7dc55e9ad1"
-    udp: true
-
   - name: "🇺🇸US-21M-[e26cd5/656726]"
     type: "ss"
     server: "134.195.101.118"
@@ -98,70 +92,6 @@ proxies:
     plugin-opts:
       host: "(Telegram🇨🇳 @VPNine1)9f6b1e7:141612"
       mode: "tls"
-
-  - name: "🇱🇻LV-264M-[8a6a3f/5bf48d]"
-    type: "vless"
-    server: "216.173.71.43"
-    port: 443
-    uuid: "ee18d188-14cc-417e-beb1-70e4add6d023"
-    udp: true
-    encryption: "none"
-    flow: "xtls-rprx-vision"
-    servername: "lv.nztvpn.com"
-    client-fingerprint: "firefox"
-    tls: true
-    reality-opts:
-      public-key: "miDhSALrcCvSfc38VjCDYlzNh5M61NMR5IkUli7IN08"
-      short-id: "0da7e14db353e7d0"
-    network: "tcp"
-
-  - name: "🇧🇪BE-161M-[ecd1eb/37e03f]"
-    type: "vless"
-    server: "113.30.152.2"
-    port: 443
-    uuid: "2b781b4a-5942-48e0-a7f3-5a07b7b488c1"
-    udp: true
-    encryption: "none"
-    flow: "xtls-rprx-vision"
-    servername: "be-root.sworkingvpn.com"
-    client-fingerprint: "firefox"
-    tls: true
-    reality-opts:
-      public-key: "cceRo0o9bFMlCNVahZCrQWRzMAsR5M6abWXADIapY0w"
-      short-id: "15bcc0a77c3cacdf"
-    network: "tcp"
-
-  - name: "🇪🇪EE-246M-[ea5c21/002fb1]"
-    type: "vless"
-    server: "95.85.242.81"
-    port: 443
-    uuid: "2b781b4a-5942-48e0-a7f3-5a07b7b488c1"
-    udp: true
-    encryption: "none"
-    flow: "xtls-rprx-vision"
-    servername: "ee-root.sworkingvpn.com"
-    client-fingerprint: "firefox"
-    tls: true
-    reality-opts:
-      public-key: "AhLy7ha7FF2EQfu-3SxOFKUwExyHActYPHtyv82KNCI"
-      short-id: "15bcc0a77c3cacdf"
-    network: "tcp"
-
-  - name: "🇳🇱NL-135M-[d65e3b/d70be9]"
-    type: "vless"
-    server: "2.27.39.233"
-    port: 443
-    uuid: "df53b6c2-8005-475c-9eb9-74e1be785dc8"
-    udp: true
-    encryption: "none"
-    flow: "xtls-rprx-vision"
-    servername: "addons.mozilla.org"
-    client-fingerprint: "firefox"
-    tls: true
-    reality-opts:
-      public-key: "5tMM2VdgddmxOKhdNa3b7i_aXno1g-_61SzkppS2UXQ"
-      short-id: "f3c023cc"
-    network: "tcp"
 
   - name: "🇺🇸US-80M-[46caae/e466f2]"
     type: "ss"
@@ -186,15 +116,6 @@ proxies:
     plugin-opts:
       host: "(Telegram🇨🇳 @VPNine1)fa03bb5:137563"
       mode: "tls"
-
-  - name: "🇷🇺RU-71M-[a663a0/749dff]"
-    type: "hysteria2"
-    server: "els.mangshe.xyz"
-    port: 2060
-    password: "5d0a6445-a30d-4522-bb1f-94f1d3ad63be"
-    udp: true
-    sni: "els.mangshe.xyz"
-    skip-cert-verify: true
 
   - name: "🇫🇷FR-496M-[56e798/221181]"
     type: "vless"
@@ -229,21 +150,14 @@ proxy-groups:
   - name: "AUTO"
     type: select
     proxies:
+      - "🇳🇱NL-276M-[f9b827/6ce7b0]"
+      - "🇳🇱NL-276M-[375acb/4e4853]"
+      - "🇷🇺RU-21M-[f38f7e/b4a702]"
       - "🇳🇱NL-468M-[664ba6/9628a3]"
-      - "🇳🇱NL-435M-[f9b827/6ce7b0]"
-      - "🌐XX-80M-[75946d/9d9316]"
       - "🇺🇸US-356M-[a3d2fa/8fae1c]"
-      - "🇫🇷FR-341M-[52c6d6/3170c3]"
-      - "🇳🇱NL-289M-[37336b/01537b]"
-      - "🇮🇹IT-22M-[d9ede5/15413a]"
       - "🇺🇸US-21M-[e26cd5/656726]"
-      - "🇱🇻LV-264M-[8a6a3f/5bf48d]"
-      - "🇧🇪BE-161M-[ecd1eb/37e03f]"
-      - "🇪🇪EE-246M-[ea5c21/002fb1]"
-      - "🇳🇱NL-135M-[d65e3b/d70be9]"
       - "🇺🇸US-80M-[46caae/e466f2]"
       - "🇺🇸US-99M-[3432b3/f9b038]"
-      - "🇷🇺RU-71M-[a663a0/749dff]"
       - "🇫🇷FR-496M-[56e798/221181]"
       - "🇮🇹IT-75M-[c805c0/8f57cc]"
 
