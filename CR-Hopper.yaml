@@ -6,23 +6,7 @@ log-level: warning
 ipv6: false
 
 proxies:
-  - name: "🇳🇱NL-432M-[f9b827/6ce7b0]"
-    type: "ss"
-    server: "82.38.31.171"
-    port: 443
-    cipher: "chacha20-ietf-poly1305"
-    password: "oZIoA69Q8yhcQV8ka3Pa3A"
-    udp: true
-
-  - name: "🇦🇱AL-154M-[acdd13/568e4d]"
-    type: "ss"
-    server: "130.49.189.158"
-    port: 43558
-    cipher: "chacha20-ietf-poly1305"
-    password: "EKGHx2yhUzmnRONhNOxvn+BqUr10wfqDQqRg4DYUJE8="
-    udp: true
-
-  - name: "🇳🇱NL-478M-[d5e5f3/13eef5]"
+  - name: "🇳🇱NL-460M-[d5e5f3/13eef5]"
     type: "ss"
     server: "193.29.139.197"
     port: 8080
@@ -30,7 +14,15 @@ proxies:
     password: "oZIoA69Q8yhcQV8ka3Pa3A"
     udp: true
 
-  - name: "🇳🇱NL-436M-[664ba6/9628a3]"
+  - name: "🇷🇺RU-146M-[cb92d1/40f64a]"
+    type: "ss"
+    server: "194.87.68.140"
+    port: 10771
+    cipher: "aes-256-gcm"
+    password: "81a20429165df87e"
+    udp: true
+
+  - name: "🇳🇱NL-507M-[664ba6/9628a3]"
     type: "ss"
     server: "82.38.31.171"
     port: 8080
@@ -38,7 +30,63 @@ proxies:
     password: "oZIoA69Q8yhcQV8ka3Pa3A"
     udp: true
 
-  - name: "🇷🇺RU-43M-[e4db96/e21b14]"
+  - name: "🇳🇱NL-493M-[f9b827/6ce7b0]"
+    type: "ss"
+    server: "82.38.31.171"
+    port: 443
+    cipher: "chacha20-ietf-poly1305"
+    password: "oZIoA69Q8yhcQV8ka3Pa3A"
+    udp: true
+
+  - name: "🌐XX-216M-[dc3614/8887b8]"
+    type: "vmess"
+    server: "23.165.200.150"
+    port: 52080
+    uuid: "672cdade-bb05-4c86-b578-e5d09b79524a"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    network: "http"
+    http-opts:
+      path:
+        - "/QQqun-737805443"
+      headers:
+        Host:
+          - "down-cdn.dingtalk.com"
+
+  - name: "🇱🇻LV-107M-[739c15/3c52bd]"
+    type: "vless"
+    server: "138.124.63.93"
+    port: 443
+    uuid: "2b781b4a-5942-48e0-a7f3-5a07b7b488c1"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "lv-root.sworkingvpn.com"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "AhLy7ha7FF2EQfu-3SxOFKUwExyHActYPHtyv82KNCI"
+      short-id: "15bcc0a77c3cacdf"
+    network: "tcp"
+
+  - name: "🇱🇻LV-93M-[c4421e/a30d5b]"
+    type: "vless"
+    server: "138.124.63.94"
+    port: 443
+    uuid: "2b781b4a-5942-48e0-a7f3-5a07b7b488c1"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "lv-root.sworkingvpn.com"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "AhLy7ha7FF2EQfu-3SxOFKUwExyHActYPHtyv82KNCI"
+      short-id: "15bcc0a77c3cacdf"
+    network: "tcp"
+
+  - name: "🇷🇺RU-90M-[e4db96/e21b14]"
     type: "vless"
     server: "78.159.250.84"
     port: 2053
@@ -56,6 +104,163 @@ proxies:
       path: "/api/v1/upload"
       host: "summerculture.net"
       mode: "auto"
+
+  - name: "🇳🇱NL-254M-[c8b0a3/0323a8]"
+    type: "vless"
+    server: "144.31.123.247"
+    port: 443
+    uuid: "2b781b4a-5942-48e0-a7f3-5a07b7b488c1"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "nl-root.sworkingvpn.com"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "AhLy7ha7FF2EQfu-3SxOFKUwExyHActYPHtyv82KNCI"
+      short-id: "15bcc0a77c3cacdf"
+    network: "tcp"
+
+  - name: "🇫🇮FI-353M-[52d3f0/18b1ee]"
+    type: "vless"
+    server: "13.143.174.201"
+    port: 2087
+    uuid: "689b65e0-57a8-41ba-804d-10c079c2b393"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "files.meridian-labs.net"
+    client-fingerprint: "chrome"
+    skip-cert-verify: true
+    tls: true
+    reality-opts:
+      public-key: "dBvFkg2zny545Ws6H_LXKEohOYV2MW_zACRrRQE1IUg"
+      short-id: "992e5a9a"
+    network: "tcp"
+
+  - name: "🇩🇪DE-394M-[3045ac/612c22]"
+    type: "vless"
+    server: "87.120.205.56"
+    port: 443
+    uuid: "2b781b4a-5942-48e0-a7f3-5a07b7b488c1"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "de-root.sworkingvpn.com"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "AhLy7ha7FF2EQfu-3SxOFKUwExyHActYPHtyv82KNCI"
+      short-id: "15bcc0a77c3cacdf"
+    network: "tcp"
+
+  - name: "🇪🇸ES-245M-[b803c9/52917d]"
+    type: "vless"
+    server: "138.124.62.158"
+    port: 443
+    uuid: "2b781b4a-5942-48e0-a7f3-5a07b7b488c1"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "es-root.sworkingvpn.com"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "AhLy7ha7FF2EQfu-3SxOFKUwExyHActYPHtyv82KNCI"
+      short-id: "15bcc0a77c3cacdf"
+    network: "tcp"
+
+  - name: "🇳🇱NL-523M-[653ffb/adb6c2]"
+    type: "vless"
+    server: "69.46.46.75"
+    port: 443
+    uuid: "6e4fa9d2-8f45-49ac-b168-18a59d5240ed"
+    udp: true
+    encryption: "none"
+    servername: "bvgl-production.up.railway.app"
+    client-fingerprint: "chrome"
+    alpn:
+      - "http/1.1"
+    tls: true
+    network: "ws"
+    ws-opts:
+      path: "/ws/6e4fa9d2-8f45-49ac-b168-18a59d5240ed"
+      headers:
+        Host: "bvgl-production.up.railway.app"
+
+  - name: "🇦🇱AL-74M-[acdd13/568e4d]"
+    type: "ss"
+    server: "130.49.189.158"
+    port: 43558
+    cipher: "chacha20-ietf-poly1305"
+    password: "EKGHx2yhUzmnRONhNOxvn+BqUr10wfqDQqRg4DYUJE8="
+    udp: true
+
+  - name: "🇦🇱AL-127M-[a56dc9/57e880]"
+    type: "vless"
+    server: "45.89.60.202"
+    port: 443
+    uuid: "2b781b4a-5942-48e0-a7f3-5a07b7b488c1"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "al-root.sworkingvpn.com"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "AhLy7ha7FF2EQfu-3SxOFKUwExyHActYPHtyv82KNCI"
+      short-id: "15bcc0a77c3cacdf"
+    network: "tcp"
+
+  - name: "🇨🇦CA-134M-[44dee7/6d7f30]"
+    type: "vless"
+    server: "45.148.103.85"
+    port: 443
+    uuid: "2b781b4a-5942-48e0-a7f3-5a07b7b488c1"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "ca-root.sworkingvpn.com"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "AhLy7ha7FF2EQfu-3SxOFKUwExyHActYPHtyv82KNCI"
+      short-id: "15bcc0a77c3cacdf"
+    network: "tcp"
+
+  - name: "🇫🇮FI-54M-[0f2449/d6e649]"
+    type: "vless"
+    server: "150.241.89.153"
+    port: 443
+    uuid: "a129c5ba-8ea1-4882-b068-74cce71e1075"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "finl.ruslanxray24.ru"
+    client-fingerprint: "chrome"
+    skip-cert-verify: true
+    tls: true
+    reality-opts:
+      public-key: "D-mcIaDu_DJF_5rdJYGz0mIiy_f-y1T5h3tvAwyW5Qc"
+      short-id: "d49d578f280fd83a"
+    network: "tcp"
+
+  - name: "🇩🇰DK-22M-[ec35ad/a6efb5]"
+    type: "vless"
+    server: "130.49.188.120"
+    port: 443
+    uuid: "76d1bd6e-6ba0-44c0-a4a4-becb4e0a9b3d"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "dk-1.alpha-ai-studio.com"
+    client-fingerprint: "chrome"
+    skip-cert-verify: true
+    tls: true
+    reality-opts:
+      public-key: "RsUYIPGTv1QIAC1wERleUBoyMZ-mpxHPRT_hA80u-BM"
+      short-id: "1aa760b0"
+    network: "tcp"
 
   - name: "🇷🇺RU-21M-[f38f7e/b4a702]"
     type: "vless"
@@ -117,21 +322,6 @@ proxies:
       host: "(Telegram🇨🇳 @VPNine1)fa03bb5:137563"
       mode: "tls"
 
-  - name: "🇫🇷FR-496M-[56e798/221181]"
-    type: "vless"
-    server: "fi1d.lynch.ir"
-    port: 8080
-    uuid: "59ab9bbf-3f08-4992-bbf3-4faddceb8e49"
-    udp: true
-    encryption: "none"
-    servername: "www.actionvfx.com"
-    client-fingerprint: "chrome"
-    tls: true
-    reality-opts:
-      public-key: "_OmNcv89o5SDt4H3ButRX9UynGIVwNZR250w4Zie-yk"
-      short-id: "73693dea6faae051"
-    network: "tcp"
-
   - name: "🇮🇹IT-75M-[c805c0/8f57cc]"
     type: "hysteria2"
     server: "us3.xiaoliyu.cyou"
@@ -150,16 +340,28 @@ proxy-groups:
   - name: "AUTO"
     type: select
     proxies:
-      - "🇳🇱NL-432M-[f9b827/6ce7b0]"
-      - "🇦🇱AL-154M-[acdd13/568e4d]"
-      - "🇳🇱NL-478M-[d5e5f3/13eef5]"
-      - "🇳🇱NL-436M-[664ba6/9628a3]"
-      - "🇷🇺RU-43M-[e4db96/e21b14]"
+      - "🇳🇱NL-460M-[d5e5f3/13eef5]"
+      - "🇷🇺RU-146M-[cb92d1/40f64a]"
+      - "🇳🇱NL-507M-[664ba6/9628a3]"
+      - "🇳🇱NL-493M-[f9b827/6ce7b0]"
+      - "🌐XX-216M-[dc3614/8887b8]"
+      - "🇱🇻LV-107M-[739c15/3c52bd]"
+      - "🇱🇻LV-93M-[c4421e/a30d5b]"
+      - "🇷🇺RU-90M-[e4db96/e21b14]"
+      - "🇳🇱NL-254M-[c8b0a3/0323a8]"
+      - "🇫🇮FI-353M-[52d3f0/18b1ee]"
+      - "🇩🇪DE-394M-[3045ac/612c22]"
+      - "🇪🇸ES-245M-[b803c9/52917d]"
+      - "🇳🇱NL-523M-[653ffb/adb6c2]"
+      - "🇦🇱AL-74M-[acdd13/568e4d]"
+      - "🇦🇱AL-127M-[a56dc9/57e880]"
+      - "🇨🇦CA-134M-[44dee7/6d7f30]"
+      - "🇫🇮FI-54M-[0f2449/d6e649]"
+      - "🇩🇰DK-22M-[ec35ad/a6efb5]"
       - "🇷🇺RU-21M-[f38f7e/b4a702]"
       - "🇺🇸US-21M-[e26cd5/656726]"
       - "🇺🇸US-80M-[46caae/e466f2]"
       - "🇺🇸US-99M-[3432b3/f9b038]"
-      - "🇫🇷FR-496M-[56e798/221181]"
       - "🇮🇹IT-75M-[c805c0/8f57cc]"
 
 rules:
