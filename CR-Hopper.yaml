@@ -6,14 +6,6 @@ log-level: warning
 ipv6: false
 
 proxies:
-  - name: "🇳🇱NL-436M-[664ba6/9628a3]"
-    type: "ss"
-    server: "82.38.31.171"
-    port: 8080
-    cipher: "chacha20-ietf-poly1305"
-    password: "oZIoA69Q8yhcQV8ka3Pa3A"
-    udp: true
-
   - name: "🇳🇱NL-432M-[f9b827/6ce7b0]"
     type: "ss"
     server: "82.38.31.171"
@@ -22,53 +14,29 @@ proxies:
     password: "oZIoA69Q8yhcQV8ka3Pa3A"
     udp: true
 
-  - name: "🇩🇪DE-149M-[dc3614/8887b8]"
-    type: "vmess"
-    server: "23.165.200.150"
-    port: 52080
-    uuid: "672cdade-bb05-4c86-b578-e5d09b79524a"
-    alterId: 0
-    cipher: "auto"
+  - name: "🇦🇱AL-154M-[acdd13/568e4d]"
+    type: "ss"
+    server: "130.49.189.158"
+    port: 43558
+    cipher: "chacha20-ietf-poly1305"
+    password: "EKGHx2yhUzmnRONhNOxvn+BqUr10wfqDQqRg4DYUJE8="
     udp: true
-    network: "http"
-    http-opts:
-      path:
-        - "/QQqun-737805443"
-      headers:
-        Host:
-          - "down-cdn.dingtalk.com"
 
-  - name: "🇳🇱NL-27M-[9731e3/b1629d]"
-    type: "vless"
-    server: "50.7.216.173"
-    port: 443
-    uuid: "3f89518a-e78f-4d31-a1c5-1725b4cfb70d"
+  - name: "🇳🇱NL-478M-[d5e5f3/13eef5]"
+    type: "ss"
+    server: "193.29.139.197"
+    port: 8080
+    cipher: "chacha20-ietf-poly1305"
+    password: "oZIoA69Q8yhcQV8ka3Pa3A"
     udp: true
-    encryption: "none"
-    servername: "3f89518a.ferrin.uk"
-    client-fingerprint: "chrome"
-    alpn:
-      - "h2"
-    tls: true
-    network: "xhttp"
-    xhttp-opts:
-      path: "/nl"
-      host: "api.ferrin.uk"
-      mode: "stream-one"
-      reuse-settings:
-        h-max-reusable-secs: "1140-1260"
-        max-connections: 3
 
-  - name: "🇩🇪DE-159M-[4924d0/d1577f]"
-    type: "vmess"
-    server: "31.77.8.97"
-    port: 110
-    uuid: "d2d8601b-c14b-42c6-b8ea-33889bce152a"
-    alterId: 0
-    cipher: "auto"
+  - name: "🇳🇱NL-436M-[664ba6/9628a3]"
+    type: "ss"
+    server: "82.38.31.171"
+    port: 8080
+    cipher: "chacha20-ietf-poly1305"
+    password: "oZIoA69Q8yhcQV8ka3Pa3A"
     udp: true
-    skip-cert-verify: true
-    network: "tcp"
 
   - name: "🇷🇺RU-43M-[e4db96/e21b14]"
     type: "vless"
@@ -182,11 +150,10 @@ proxy-groups:
   - name: "AUTO"
     type: select
     proxies:
-      - "🇳🇱NL-436M-[664ba6/9628a3]"
       - "🇳🇱NL-432M-[f9b827/6ce7b0]"
-      - "🇩🇪DE-149M-[dc3614/8887b8]"
-      - "🇳🇱NL-27M-[9731e3/b1629d]"
-      - "🇩🇪DE-159M-[4924d0/d1577f]"
+      - "🇦🇱AL-154M-[acdd13/568e4d]"
+      - "🇳🇱NL-478M-[d5e5f3/13eef5]"
+      - "🇳🇱NL-436M-[664ba6/9628a3]"
       - "🇷🇺RU-43M-[e4db96/e21b14]"
       - "🇷🇺RU-21M-[f38f7e/b4a702]"
       - "🇺🇸US-21M-[e26cd5/656726]"
