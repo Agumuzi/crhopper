@@ -6,6 +6,99 @@ log-level: warning
 ipv6: false
 
 proxies:
+  - name: "🇳🇱NL-468M-[664ba6/9628a3]"
+    type: "ss"
+    server: "82.38.31.171"
+    port: 8080
+    cipher: "chacha20-ietf-poly1305"
+    password: "oZIoA69Q8yhcQV8ka3Pa3A"
+    udp: true
+
+  - name: "🇳🇱NL-435M-[f9b827/6ce7b0]"
+    type: "ss"
+    server: "82.38.31.171"
+    port: 443
+    cipher: "chacha20-ietf-poly1305"
+    password: "oZIoA69Q8yhcQV8ka3Pa3A"
+    udp: true
+
+  - name: "🌐XX-80M-[75946d/9d9316]"
+    type: "hysteria2"
+    server: "mg.mangshe.xyz"
+    port: 2060
+    password: "5d0a6445-a30d-4522-bb1f-94f1d3ad63be"
+    udp: true
+    sni: "mg.mangshe.xyz"
+    skip-cert-verify: true
+
+  - name: "🇺🇸US-356M-[a3d2fa/8fae1c]"
+    type: "vless"
+    server: "45.132.176.125"
+    port: 9873
+    uuid: "5d16ac22-6eea-426f-b778-6f4c2961faef"
+    udp: true
+    encryption: "none"
+    servername: "dl.google.com"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "bnRIb3Er1i-K6NGGByCO9UbGfOvu43ZoiK7ulPd1SzU"
+      short-id: ""
+    network: "grpc"
+    grpc-opts:
+      grpc-service-name: "grpc-tunnel"
+
+  - name: "🇫🇷FR-341M-[52c6d6/3170c3]"
+    type: "vless"
+    server: "lv1d.lynch.ir"
+    port: 4040
+    uuid: "59ab9bbf-3f08-4992-bbf3-4faddceb8e49"
+    udp: true
+    encryption: "none"
+    servername: "www.actionvfx.com"
+    client-fingerprint: "chrome"
+    tls: true
+    reality-opts:
+      public-key: "_OmNcv89o5SDt4H3ButRX9UynGIVwNZR250w4Zie-yk"
+      short-id: "73693dea6faae051"
+    network: "tcp"
+
+  - name: "🇳🇱NL-289M-[37336b/01537b]"
+    type: "vless"
+    server: "78.159.131.79"
+    port: 443
+    uuid: "2b781b4a-5942-48e0-a7f3-5a07b7b488c1"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "nl-root.sworkingvpn.com"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "AhLy7ha7FF2EQfu-3SxOFKUwExyHActYPHtyv82KNCI"
+      short-id: "15bcc0a77c3cacdf"
+    network: "tcp"
+
+  - name: "🇮🇹IT-22M-[d9ede5/15413a]"
+    type: "ss"
+    server: "45.144.172.123"
+    port: 10771
+    cipher: "aes-256-gcm"
+    password: "78235e7dc55e9ad1"
+    udp: true
+
+  - name: "🇺🇸US-21M-[e26cd5/656726]"
+    type: "ss"
+    server: "134.195.101.118"
+    port: 2377
+    cipher: "chacha20-ietf-poly1305"
+    password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv"
+    udp: true
+    plugin: "obfs"
+    plugin-opts:
+      host: "(Telegram🇨🇳 @VPNine1)9f6b1e7:141612"
+      mode: "tls"
+
   - name: "🇱🇻LV-264M-[8a6a3f/5bf48d]"
     type: "vless"
     server: "216.173.71.43"
@@ -21,30 +114,6 @@ proxies:
       public-key: "miDhSALrcCvSfc38VjCDYlzNh5M61NMR5IkUli7IN08"
       short-id: "0da7e14db353e7d0"
     network: "tcp"
-
-  - name: "🇩🇪DE-521M-[18b010/28060e]"
-    type: "vless"
-    server: "50.7.157.236"
-    port: 443
-    uuid: "919a2568-3add-44ec-a769-915adad37bd2"
-    udp: true
-    encryption: "none"
-    flow: "xtls-rprx-vision"
-    servername: "edge-fr.extazy.money"
-    client-fingerprint: "edge"
-    tls: true
-    reality-opts:
-      public-key: "ygxQyBcJzlLgpSl3MCRDDiFET4TT-3wxa4GdG1obkCY"
-      short-id: "ba4b2afa9e7193ea"
-    network: "tcp"
-
-  - name: "🇳🇱NL-501M-[664ba6/9628a3]"
-    type: "ss"
-    server: "82.38.31.171"
-    port: 8080
-    cipher: "chacha20-ietf-poly1305"
-    password: "oZIoA69Q8yhcQV8ka3Pa3A"
-    udp: true
 
   - name: "🇧🇪BE-161M-[ecd1eb/37e03f]"
     type: "vless"
@@ -78,22 +147,6 @@ proxies:
       short-id: "15bcc0a77c3cacdf"
     network: "tcp"
 
-  - name: "🇳🇱NL-188M-[37336b/01537b]"
-    type: "vless"
-    server: "78.159.131.79"
-    port: 443
-    uuid: "2b781b4a-5942-48e0-a7f3-5a07b7b488c1"
-    udp: true
-    encryption: "none"
-    flow: "xtls-rprx-vision"
-    servername: "nl-root.sworkingvpn.com"
-    client-fingerprint: "firefox"
-    tls: true
-    reality-opts:
-      public-key: "AhLy7ha7FF2EQfu-3SxOFKUwExyHActYPHtyv82KNCI"
-      short-id: "15bcc0a77c3cacdf"
-    network: "tcp"
-
   - name: "🇳🇱NL-135M-[d65e3b/d70be9]"
     type: "vless"
     server: "2.27.39.233"
@@ -110,34 +163,6 @@ proxies:
       short-id: "f3c023cc"
     network: "tcp"
 
-  - name: "🇷🇺RU-87M-[e4db96/e21b14]"
-    type: "vless"
-    server: "78.159.250.84"
-    port: 2053
-    uuid: "2c634977-584e-4e1f-b501-1b70c77a6743"
-    udp: true
-    encryption: "none"
-    servername: "summerculture.net"
-    client-fingerprint: "firefox"
-    alpn:
-      - "h2"
-      - "+http/1.1"
-    tls: true
-    network: "xhttp"
-    xhttp-opts:
-      path: "/api/v1/upload"
-      host: "summerculture.net"
-      mode: "auto"
-
-  - name: "🌐XX-62M-[75946d/9d9316]"
-    type: "hysteria2"
-    server: "mg.mangshe.xyz"
-    port: 2060
-    password: "5d0a6445-a30d-4522-bb1f-94f1d3ad63be"
-    udp: true
-    sni: "mg.mangshe.xyz"
-    skip-cert-verify: true
-
   - name: "🇺🇸US-80M-[46caae/e466f2]"
     type: "ss"
     server: "134.195.101.119"
@@ -150,34 +175,6 @@ proxies:
       host: "(Telegram🇨🇳 @VPNine1)fa03bb5:137563"
       mode: "tls"
 
-  - name: "🇺🇸US-109M-[e26cd5/656726]"
-    type: "ss"
-    server: "134.195.101.118"
-    port: 2377
-    cipher: "chacha20-ietf-poly1305"
-    password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv"
-    udp: true
-    plugin: "obfs"
-    plugin-opts:
-      host: "(Telegram🇨🇳 @VPNine1)9f6b1e7:141612"
-      mode: "tls"
-
-  - name: "🇷🇺RU-51M-[a80eee/e3c86d]"
-    type: "ss"
-    server: "46.17.42.141"
-    port: 10771
-    cipher: "aes-256-gcm"
-    password: "6b39ae3234dfd68b"
-    udp: true
-
-  - name: "🇮🇹IT-143M-[d9ede5/15413a]"
-    type: "ss"
-    server: "45.144.172.123"
-    port: 10771
-    cipher: "aes-256-gcm"
-    password: "78235e7dc55e9ad1"
-    udp: true
-
   - name: "🇺🇸US-99M-[3432b3/f9b038]"
     type: "ss"
     server: "134.195.101.117"
@@ -189,32 +186,6 @@ proxies:
     plugin-opts:
       host: "(Telegram🇨🇳 @VPNine1)fa03bb5:137563"
       mode: "tls"
-
-  - name: "🇺🇸US-352M-[a3d2fa/8fae1c]"
-    type: "vless"
-    server: "45.132.176.125"
-    port: 9873
-    uuid: "5d16ac22-6eea-426f-b778-6f4c2961faef"
-    udp: true
-    encryption: "none"
-    servername: "dl.google.com"
-    client-fingerprint: "firefox"
-    tls: true
-    reality-opts:
-      public-key: "bnRIb3Er1i-K6NGGByCO9UbGfOvu43ZoiK7ulPd1SzU"
-      short-id: ""
-    network: "grpc"
-    grpc-opts:
-      grpc-service-name: "grpc-tunnel"
-
-  - name: "🇭🇰HK-42M-[e884da/b0400e]"
-    type: "hysteria2"
-    server: "xg1.mangshe.xyz"
-    port: 2060
-    password: "5d0a6445-a30d-4522-bb1f-94f1d3ad63be"
-    udp: true
-    sni: "xg1.mangshe.xyz"
-    skip-cert-verify: true
 
   - name: "🇷🇺RU-71M-[a663a0/749dff]"
     type: "hysteria2"
@@ -240,22 +211,6 @@ proxies:
       short-id: "73693dea6faae051"
     network: "tcp"
 
-  - name: "🇳🇱NL-116M-[fa7570/8b5598]"
-    type: "hysteria2"
-    server: "media.pantera-radio.ru"
-    port: 443
-    password: "4ffc5c57-3242-4422-88de-25fb0f7e97bc"
-    udp: true
-    sni: "media.pantera-radio.ru"
-
-  - name: "🇳🇱NL-234M-[185216/792f07]"
-    type: "hysteria2"
-    server: "77.74.123.107"
-    port: 8443
-    password: "s0_sdK93x9wer_D02Lz9cvK3_Sa014Oakl_C2z"
-    udp: true
-    sni: "grape-test-italy.dynuddns.net"
-
   - name: "🇮🇹IT-75M-[c805c0/8f57cc]"
     type: "hysteria2"
     server: "us3.xiaoliyu.cyou"
@@ -264,109 +219,6 @@ proxies:
     udp: true
     sni: "us3.xiaoliyu.cyou"
     skip-cert-verify: true
-
-  - name: "🇷🇺RU-160M-[f58d58/979333]"
-    type: "vless"
-    server: "185.141.227.180"
-    port: 2053
-    uuid: "2c634977-584e-4e1f-b501-1b70c77a6743"
-    udp: true
-    encryption: "none"
-    servername: "dismissaltree.net"
-    client-fingerprint: "random"
-    tls: true
-    network: "xhttp"
-    xhttp-opts:
-      path: "/api/v1/upload"
-      host: "dismissaltree.net"
-      mode: "auto"
-      reuse-settings:
-        c-max-reuse-times: "64-128"
-        max-concurrency: "16-32"
-        max-connections: "0"
-      sc-max-each-post-bytes: "1000000"
-      sc-min-posts-interval-ms: "30"
-      x-padding-bytes: "100-1000"
-
-  - name: "🇷🇺RU-232M-[f38f7e/2ca4a7]"
-    type: "vless"
-    server: "dismissaltree.net"
-    port: 2053
-    uuid: "2c634977-584e-4e1f-b501-1b70c77a6743"
-    udp: true
-    encryption: "none"
-    packet-encoding: "xudp"
-    servername: "dismissaltree.net"
-    client-fingerprint: "chrome"
-    alpn:
-      - "h2"
-      - "http/1.1"
-    tls: true
-    network: "xhttp"
-    xhttp-opts:
-      path: "/api/v1/upload"
-      host: "dismissaltree.net"
-      mode: "auto"
-      reuse-settings:
-        c-max-reuse-times: "64-128"
-        max-concurrency: "16-32"
-        max-connections: "0"
-      x-padding-bytes: "100-1000"
-
-  - name: "🇳🇱NL-423M-[37e184/3cd02c]"
-    type: "hysteria2"
-    server: "13.143.232.86"
-    port: 443
-    password: "4ffc5c57-3242-4422-88de-25fb0f7e97bc"
-    udp: true
-    sni: "media.pantera-radio.ru"
-
-  - name: "🇷🇺RU-206M-[f58d58/767d77]"
-    type: "vless"
-    server: "185.141.227.180"
-    port: 2053
-    uuid: "2c634977-584e-4e1f-b501-1b70c77a6743"
-    udp: true
-    encryption: "none"
-    servername: "dismissaltree.net"
-    client-fingerprint: "random"
-    tls: true
-    network: "xhttp"
-    xhttp-opts:
-      path: "/api/v1/upload"
-      host: "dismissaltree.net"
-      mode: "auto"
-      reuse-settings:
-        c-max-reuse-times: "64-128"
-        max-concurrency: "16-32"
-        max-connections: "0"
-      sc-max-each-post-bytes: "1000000"
-      sc-min-posts-interval-ms: "30"
-      x-padding-bytes: "100-1000"
-
-  - name: "🇷🇺RU-174M-[f38f7e/eb1e94]"
-    type: "vless"
-    server: "dismissaltree.net"
-    port: 2053
-    uuid: "2c634977-584e-4e1f-b501-1b70c77a6743"
-    udp: true
-    encryption: "none"
-    client-fingerprint: "chrome"
-    alpn:
-      - "h2"
-      - "http/1.1"
-    tls: true
-    network: "xhttp"
-    xhttp-opts:
-      path: "/api/v1/upload"
-      mode: "auto"
-      reuse-settings:
-        c-max-reuse-times: "64-128"
-        max-concurrency: "16-32"
-        max-connections: "0"
-      sc-max-each-post-bytes: "1000000"
-      sc-min-posts-interval-ms: "30"
-      x-padding-bytes: "100-1000"
 
 proxy-groups:
   - name: "GLOBAL"
@@ -377,32 +229,23 @@ proxy-groups:
   - name: "AUTO"
     type: select
     proxies:
+      - "🇳🇱NL-468M-[664ba6/9628a3]"
+      - "🇳🇱NL-435M-[f9b827/6ce7b0]"
+      - "🌐XX-80M-[75946d/9d9316]"
+      - "🇺🇸US-356M-[a3d2fa/8fae1c]"
+      - "🇫🇷FR-341M-[52c6d6/3170c3]"
+      - "🇳🇱NL-289M-[37336b/01537b]"
+      - "🇮🇹IT-22M-[d9ede5/15413a]"
+      - "🇺🇸US-21M-[e26cd5/656726]"
       - "🇱🇻LV-264M-[8a6a3f/5bf48d]"
-      - "🇩🇪DE-521M-[18b010/28060e]"
-      - "🇳🇱NL-501M-[664ba6/9628a3]"
       - "🇧🇪BE-161M-[ecd1eb/37e03f]"
       - "🇪🇪EE-246M-[ea5c21/002fb1]"
-      - "🇳🇱NL-188M-[37336b/01537b]"
       - "🇳🇱NL-135M-[d65e3b/d70be9]"
-      - "🇷🇺RU-87M-[e4db96/e21b14]"
-      - "🌐XX-62M-[75946d/9d9316]"
       - "🇺🇸US-80M-[46caae/e466f2]"
-      - "🇺🇸US-109M-[e26cd5/656726]"
-      - "🇷🇺RU-51M-[a80eee/e3c86d]"
-      - "🇮🇹IT-143M-[d9ede5/15413a]"
       - "🇺🇸US-99M-[3432b3/f9b038]"
-      - "🇺🇸US-352M-[a3d2fa/8fae1c]"
-      - "🇭🇰HK-42M-[e884da/b0400e]"
       - "🇷🇺RU-71M-[a663a0/749dff]"
       - "🇫🇷FR-496M-[56e798/221181]"
-      - "🇳🇱NL-116M-[fa7570/8b5598]"
-      - "🇳🇱NL-234M-[185216/792f07]"
       - "🇮🇹IT-75M-[c805c0/8f57cc]"
-      - "🇷🇺RU-160M-[f58d58/979333]"
-      - "🇷🇺RU-232M-[f38f7e/2ca4a7]"
-      - "🇳🇱NL-423M-[37e184/3cd02c]"
-      - "🇷🇺RU-206M-[f58d58/767d77]"
-      - "🇷🇺RU-174M-[f38f7e/eb1e94]"
 
 rules:
   - "DOMAIN,smtp.gmail.com,DIRECT"
