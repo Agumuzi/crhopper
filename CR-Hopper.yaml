@@ -6,23 +6,7 @@ log-level: warning
 ipv6: false
 
 proxies:
-  - name: "🇪🇪EE-161M-[5592bc/3bfbc6]"
-    type: "vless"
-    server: "5.175.178.30"
-    port: 443
-    uuid: "8fc806fa-350b-4548-937a-2bf35f7fe7eb"
-    udp: true
-    encryption: "none"
-    flow: "xtls-rprx-vision"
-    servername: "ee1.sky-vault.top"
-    client-fingerprint: "firefox"
-    tls: true
-    reality-opts:
-      public-key: "_KTsOFhGnC0W28ZqO8_FApozMp7tJ9cVBTLKLAA_OR0"
-      short-id: "ae64c9b46bff174a"
-    network: "tcp"
-
-  - name: "🇳🇱NL-473M-[f9b827/6ce7b0]"
+  - name: "🇳🇱NL-475M-[f9b827/6ce7b0]"
     type: "ss"
     server: "82.38.31.171"
     port: 443
@@ -30,7 +14,7 @@ proxies:
     password: "oZIoA69Q8yhcQV8ka3Pa3A"
     udp: true
 
-  - name: "🇳🇱NL-469M-[664ba6/9628a3]"
+  - name: "🇳🇱NL-444M-[664ba6/9628a3]"
     type: "ss"
     server: "82.38.31.171"
     port: 8080
@@ -38,13 +22,27 @@ proxies:
     password: "oZIoA69Q8yhcQV8ka3Pa3A"
     udp: true
 
-  - name: "🇦🇱AL-181M-[acdd13/568e4d]"
+  - name: "🇦🇱AL-155M-[acdd13/568e4d]"
     type: "ss"
     server: "130.49.189.158"
     port: 43558
     cipher: "chacha20-ietf-poly1305"
     password: "EKGHx2yhUzmnRONhNOxvn+BqUr10wfqDQqRg4DYUJE8="
     udp: true
+
+  - name: "🇫🇮FI-283M-[dc1ce0/0cf290]"
+    type: "vless"
+    server: "psf-3.weedly.top"
+    port: 80
+    uuid: "b0fae3b7-02de-4002-b8ca-b7159fe33841"
+    udp: true
+    encryption: "none"
+    tls: false
+    network: "ws"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "machinemag.ir"
 
   - name: "🇷🇺RU-49M-[f58d58/9c8595]"
     type: "vless"
@@ -100,30 +98,6 @@ proxies:
       host: "(Telegram🇨🇳 @VPNine1)fa03bb5:137563"
       mode: "tls"
 
-  - name: "🇷🇺RU-212M-[f38f7e/eb1e94]"
-    type: "vless"
-    server: "dismissaltree.net"
-    port: 2053
-    uuid: "2c634977-584e-4e1f-b501-1b70c77a6743"
-    udp: true
-    encryption: "none"
-    client-fingerprint: "chrome"
-    alpn:
-      - "h2"
-      - "http/1.1"
-    tls: true
-    network: "xhttp"
-    xhttp-opts:
-      path: "/api/v1/upload"
-      mode: "auto"
-      reuse-settings:
-        c-max-reuse-times: "64-128"
-        max-concurrency: "16-32"
-        max-connections: "0"
-      sc-max-each-post-bytes: "1000000"
-      sc-min-posts-interval-ms: "30"
-      x-padding-bytes: "100-1000"
-
   - name: "🇷🇺RU-259M-[f58d58/a92232]"
     type: "vless"
     server: "185.141.227.180"
@@ -164,29 +138,6 @@ proxies:
       sc-min-posts-interval-ms: "30"
       x-padding-bytes: "100-1000"
 
-  - name: "🇷🇺RU-254M-[f58d58/767d77]"
-    type: "vless"
-    server: "185.141.227.180"
-    port: 2053
-    uuid: "2c634977-584e-4e1f-b501-1b70c77a6743"
-    udp: true
-    encryption: "none"
-    servername: "dismissaltree.net"
-    client-fingerprint: "random"
-    tls: true
-    network: "xhttp"
-    xhttp-opts:
-      path: "/api/v1/upload"
-      host: "dismissaltree.net"
-      mode: "auto"
-      reuse-settings:
-        c-max-reuse-times: "64-128"
-        max-concurrency: "16-32"
-        max-connections: "0"
-      sc-max-each-post-bytes: "1000000"
-      sc-min-posts-interval-ms: "30"
-      x-padding-bytes: "100-1000"
-
 proxy-groups:
   - name: "GLOBAL"
     type: select
@@ -196,17 +147,15 @@ proxy-groups:
   - name: "AUTO"
     type: select
     proxies:
-      - "🇪🇪EE-161M-[5592bc/3bfbc6]"
-      - "🇳🇱NL-473M-[f9b827/6ce7b0]"
-      - "🇳🇱NL-469M-[664ba6/9628a3]"
-      - "🇦🇱AL-181M-[acdd13/568e4d]"
+      - "🇳🇱NL-475M-[f9b827/6ce7b0]"
+      - "🇳🇱NL-444M-[664ba6/9628a3]"
+      - "🇦🇱AL-155M-[acdd13/568e4d]"
+      - "🇫🇮FI-283M-[dc1ce0/0cf290]"
       - "🇷🇺RU-49M-[f58d58/9c8595]"
       - "🇷🇺RU-43M-[e4db96/e21b14]"
       - "🇺🇸US-99M-[46caae/e466f2]"
-      - "🇷🇺RU-212M-[f38f7e/eb1e94]"
       - "🇷🇺RU-259M-[f58d58/a92232]"
       - "🇷🇺RU-217M-[f38f7e/032323]"
-      - "🇷🇺RU-254M-[f58d58/767d77]"
 
 rules:
   - "DOMAIN,smtp.gmail.com,DIRECT"
