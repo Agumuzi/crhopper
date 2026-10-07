@@ -6,7 +6,23 @@ log-level: warning
 ipv6: false
 
 proxies:
-  - name: "🇳🇱NL-521M-[664ba6/9628a3]"
+  - name: "🇦🇱AL-235M-[acdd13/568e4d]"
+    type: "ss"
+    server: "130.49.189.158"
+    port: 43558
+    cipher: "chacha20-ietf-poly1305"
+    password: "EKGHx2yhUzmnRONhNOxvn+BqUr10wfqDQqRg4DYUJE8="
+    udp: true
+
+  - name: "🇳🇱NL-70M-[5388d5/05e025]"
+    type: "hysteria2"
+    server: "77.74.123.109"
+    port: 8443
+    password: "s0_sdK93x9wer_D02Lz9cvK3_Sa014Oakl_C2z"
+    udp: true
+    sni: "grape-test-italy.dynuddns.net"
+
+  - name: "🇳🇱NL-488M-[664ba6/9628a3]"
     type: "ss"
     server: "82.38.31.171"
     port: 8080
@@ -14,29 +30,64 @@ proxies:
     password: "oZIoA69Q8yhcQV8ka3Pa3A"
     udp: true
 
+  - name: "🇪🇪EE-72M-[fa52ec/ae4fd0]"
+    type: "vless"
+    server: "ee-2e06d85dc0.shamanapp.online"
+    port: 34451
+    uuid: "b3a11068-1a7e-4643-85de-7c82cce46943"
+    udp: true
+    encryption: "none"
+    servername: "ee-2e06d85dc0.shamanapp.online"
+    client-fingerprint: "chrome"
+    alpn:
+      - "h2"
+      - "http/1.1"
+    tls: true
+    network: "xhttp"
+    xhttp-opts:
+      path: "/ShamanXHTTP2026"
+      host: "ee-2e06d85dc0.shamanapp.online"
+      mode: "stream-up"
+
+  - name: "🇭🇰HK-117M-[9d14a6/4d5a28]"
+    type: "hysteria2"
+    server: "bff4b219-tmkao0-tnnrly-g43g.hk3.hyhuawei.com"
+    port: 443
+    password: "6ddb6a68-d5f5-ca30-3943-cf0c9876d50c"
+    udp: true
+    sni: "bff4b219-tmkao0-tnnrly-g43g.hk3.hyhuawei.com"
+    skip-cert-verify: true
+
+  - name: "🇺🇸US-63M-[3432b3/f9b038]"
+    type: "ss"
+    server: "134.195.101.117"
+    port: 2377
+    cipher: "chacha20-ietf-poly1305"
+    password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv"
+    udp: true
+    plugin: "obfs"
+    plugin-opts:
+      host: "(Telegram🇨🇳 @VPNine1)fa03bb5:137563"
+      mode: "tls"
+
+  - name: "🇺🇸US-25M-[e26cd5/656726]"
+    type: "ss"
+    server: "134.195.101.118"
+    port: 2377
+    cipher: "chacha20-ietf-poly1305"
+    password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv"
+    udp: true
+    plugin: "obfs"
+    plugin-opts:
+      host: "(Telegram🇨🇳 @VPNine1)9f6b1e7:141612"
+      mode: "tls"
+
   - name: "🇳🇱NL-502M-[f9b827/6ce7b0]"
     type: "ss"
     server: "82.38.31.171"
     port: 443
     cipher: "chacha20-ietf-poly1305"
     password: "oZIoA69Q8yhcQV8ka3Pa3A"
-    udp: true
-
-  - name: "🇭🇰HK-65M-[390494/653036]"
-    type: "hysteria2"
-    server: "50dc16b5-tmm5c0-tmj4pk-1kcpe.hk3.hyhuawei.com"
-    port: 443
-    password: "3f514ea2-4662-11ed-a8bf-f23c91cfbbc9"
-    udp: true
-    sni: "50dc16b5-tmm5c0-tmj4pk-1kcpe.hk3.hyhuawei.com"
-    skip-cert-verify: true
-
-  - name: "🇦🇱AL-224M-[acdd13/568e4d]"
-    type: "ss"
-    server: "130.49.189.158"
-    port: 43558
-    cipher: "chacha20-ietf-poly1305"
-    password: "EKGHx2yhUzmnRONhNOxvn+BqUr10wfqDQqRg4DYUJE8="
     udp: true
 
   - name: "🌐XX-87M-[e4db96/e21b14]"
@@ -174,10 +225,14 @@ proxy-groups:
   - name: "AUTO"
     type: select
     proxies:
-      - "🇳🇱NL-521M-[664ba6/9628a3]"
+      - "🇦🇱AL-235M-[acdd13/568e4d]"
+      - "🇳🇱NL-70M-[5388d5/05e025]"
+      - "🇳🇱NL-488M-[664ba6/9628a3]"
+      - "🇪🇪EE-72M-[fa52ec/ae4fd0]"
+      - "🇭🇰HK-117M-[9d14a6/4d5a28]"
+      - "🇺🇸US-63M-[3432b3/f9b038]"
+      - "🇺🇸US-25M-[e26cd5/656726]"
       - "🇳🇱NL-502M-[f9b827/6ce7b0]"
-      - "🇭🇰HK-65M-[390494/653036]"
-      - "🇦🇱AL-224M-[acdd13/568e4d]"
       - "🌐XX-87M-[e4db96/e21b14]"
       - "🇷🇺RU-30M-[f58d58/198719]"
       - "🇫🇮FI-283M-[dc1ce0/0cf290]"
