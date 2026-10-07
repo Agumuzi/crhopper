@@ -6,7 +6,81 @@ log-level: warning
 ipv6: false
 
 proxies:
-  - name: "🇳🇱NL-430M-[d5e5f3/13eef5]"
+  - name: "🇪🇪EE-161M-[5592bc/3bfbc6]"
+    type: "vless"
+    server: "5.175.178.30"
+    port: 443
+    uuid: "8fc806fa-350b-4548-937a-2bf35f7fe7eb"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "ee1.sky-vault.top"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "_KTsOFhGnC0W28ZqO8_FApozMp7tJ9cVBTLKLAA_OR0"
+      short-id: "ae64c9b46bff174a"
+    network: "tcp"
+
+  - name: "🇷🇺RU-138M-[35c8a5/fce232]"
+    type: "ss"
+    server: "46.17.42.141"
+    port: 10550
+    cipher: "aes-256-gcm"
+    password: "6b39ae3234dfd68b"
+    udp: true
+
+  - name: "🇷🇺RU-112M-[92435e/039b3f]"
+    type: "ss"
+    server: "194.87.196.13"
+    port: 10550
+    cipher: "aes-256-gcm"
+    password: "4938e975724d0ed1"
+    udp: true
+
+  - name: "🇳🇱NL-276M-[664ba6/9628a3]"
+    type: "ss"
+    server: "82.38.31.171"
+    port: 8080
+    cipher: "chacha20-ietf-poly1305"
+    password: "oZIoA69Q8yhcQV8ka3Pa3A"
+    udp: true
+
+  - name: "🇳🇱NL-276M-[f9b827/6ce7b0]"
+    type: "ss"
+    server: "82.38.31.171"
+    port: 443
+    cipher: "chacha20-ietf-poly1305"
+    password: "oZIoA69Q8yhcQV8ka3Pa3A"
+    udp: true
+
+  - name: "🇩🇪DE-114M-[627072/7e3659]"
+    type: "vless"
+    server: "fzjo.fbbv.electrocitymarket.ru"
+    port: 443
+    uuid: "d2519b5e-495e-462e-9703-bbf68011d2f3"
+    udp: true
+    encryption: "none"
+    servername: "fzjo.fbbv.electrocitymarket.ru"
+    client-fingerprint: "chrome"
+    alpn:
+      - "h2"
+      - "http/1.1"
+    tls: true
+    network: "xhttp"
+    xhttp-opts:
+      path: "/"
+      mode: "stream-up"
+
+  - name: "🇺🇸US-267M-[0b7655/1a880c]"
+    type: "ss"
+    server: "66.23.204.210"
+    port: 16995
+    cipher: "aes-128-gcm"
+    password: "89d3a0375a279f6e743fea76e72952a8"
+    udp: true
+
+  - name: "🇳🇱NL-214M-[d5e5f3/13eef5]"
     type: "ss"
     server: "193.29.139.197"
     port: 8080
@@ -14,20 +88,13 @@ proxies:
     password: "oZIoA69Q8yhcQV8ka3Pa3A"
     udp: true
 
-  - name: "🌐XX-173M-[98c8e8/da6e97]"
-    type: "vless"
-    server: "172.64.80.1"
-    port: 8880
-    uuid: "70c16ec7-13f7-473b-b97d-06399f1481e3"
+  - name: "🇦🇱AL-32M-[acdd13/568e4d]"
+    type: "ss"
+    server: "130.49.189.158"
+    port: 43558
+    cipher: "chacha20-ietf-poly1305"
+    password: "EKGHx2yhUzmnRONhNOxvn+BqUr10wfqDQqRg4DYUJE8="
     udp: true
-    encryption: "none"
-    servername: "mute-surf-0003.209.workers.dev"
-    tls: false
-    network: "ws"
-    ws-opts:
-      path: "/pyip=ProxyIP.US.CMLiussss.net"
-      headers:
-        Host: "mute-surf-0003.209.workers.dev"
 
   - name: "🇷🇺RU-180M-[c04ae4/ecf9fc]"
     type: "ss"
@@ -52,178 +119,6 @@ proxies:
       headers:
         Host:
           - "down-cdn.dingtalk.com"
-
-  - name: "🇷🇺RU-93M-[35c8a5/fce232]"
-    type: "ss"
-    server: "46.17.42.141"
-    port: 10550
-    cipher: "aes-256-gcm"
-    password: "6b39ae3234dfd68b"
-    udp: true
-
-  - name: "🌐XX-71M-[4e40c0/e56786]"
-    type: "vless"
-    server: "132.243.65.86"
-    port: 443
-    uuid: "73705990-99fd-4deb-98b4-91ca7bf9bbc0"
-    udp: true
-    encryption: "none"
-    servername: "ee2x.global-cdn.org"
-    client-fingerprint: "safari"
-    tls: true
-    network: "grpc"
-    grpc-opts:
-      grpc-service-name: "content.v1.Feed"
-
-  - name: "🇬🇧GB-478M-[80524a/2b4056]"
-    type: "vless"
-    server: "46.33.11.36"
-    port: 443
-    uuid: "f65b49ed-d3e6-46b3-9f92-1cab485e4a0e"
-    udp: true
-    encryption: "none"
-    servername: "edge2.sickok.com"
-    client-fingerprint: "safari"
-    tls: true
-    network: "xhttp"
-    xhttp-opts:
-      path: "/api/v1/ingest/KczWgyXedh"
-      mode: "stream-up"
-
-  - name: "🇷🇺RU-105M-[92435e/039b3f]"
-    type: "ss"
-    server: "194.87.196.13"
-    port: 10550
-    cipher: "aes-256-gcm"
-    password: "4938e975724d0ed1"
-    udp: true
-
-  - name: "🇸🇪SE-401M-[b46b8b/d5a8b3]"
-    type: "trojan"
-    server: "172.64.80.1"
-    port: 443
-    password: "0b5fa773-6f37-4134-87d4-0c349742b6f6"
-    udp: true
-    sni: "app-538961.user-y0o4gm.workers.dev"
-    client-fingerprint: "chrome"
-    skip-cert-verify: true
-    network: "ws"
-    ws-opts:
-      path: "/cmh"
-
-  - name: "🇳🇱NL-420M-[664ba6/9628a3]"
-    type: "ss"
-    server: "82.38.31.171"
-    port: 8080
-    cipher: "chacha20-ietf-poly1305"
-    password: "oZIoA69Q8yhcQV8ka3Pa3A"
-    udp: true
-
-  - name: "🇳🇱NL-448M-[f9b827/6ce7b0]"
-    type: "ss"
-    server: "82.38.31.171"
-    port: 443
-    cipher: "chacha20-ietf-poly1305"
-    password: "oZIoA69Q8yhcQV8ka3Pa3A"
-    udp: true
-
-  - name: "🇪🇪EE-312M-[5592bc/3bfbc6]"
-    type: "vless"
-    server: "5.175.178.30"
-    port: 443
-    uuid: "8fc806fa-350b-4548-937a-2bf35f7fe7eb"
-    udp: true
-    encryption: "none"
-    flow: "xtls-rprx-vision"
-    servername: "ee1.sky-vault.top"
-    client-fingerprint: "firefox"
-    tls: true
-    reality-opts:
-      public-key: "_KTsOFhGnC0W28ZqO8_FApozMp7tJ9cVBTLKLAA_OR0"
-      short-id: "ae64c9b46bff174a"
-    network: "tcp"
-
-  - name: "🌐XX-317M-[627072/7e3659]"
-    type: "vless"
-    server: "fzjo.fbbv.electrocitymarket.ru"
-    port: 443
-    uuid: "d2519b5e-495e-462e-9703-bbf68011d2f3"
-    udp: true
-    encryption: "none"
-    servername: "fzjo.fbbv.electrocitymarket.ru"
-    client-fingerprint: "chrome"
-    alpn:
-      - "h2"
-      - "http/1.1"
-    tls: true
-    network: "xhttp"
-    xhttp-opts:
-      path: "/"
-      mode: "stream-up"
-
-  - name: "🌐XX-145M-[8a0bb5/aa98b4]"
-    type: "vless"
-    server: "195.74.90.122"
-    port: 443
-    uuid: "698b212d-ca12-4794-8256-252a6e1b4533"
-    udp: true
-    encryption: "none"
-    servername: "w2p6.vpnpolar.online"
-    client-fingerprint: "firefox"
-    tls: true
-    network: "ws"
-    ws-opts:
-      path: "/beeline"
-      headers:
-        Host: "w2p6.vpnpolar.online"
-
-  - name: "🇦🇱AL-213M-[acdd13/568e4d]"
-    type: "ss"
-    server: "130.49.189.158"
-    port: 43558
-    cipher: "chacha20-ietf-poly1305"
-    password: "EKGHx2yhUzmnRONhNOxvn+BqUr10wfqDQqRg4DYUJE8="
-    udp: true
-
-  - name: "🌐XX-207M-[3f96f9/031a0f]"
-    type: "vless"
-    server: "177.1.192.72"
-    port: 443
-    uuid: "4d852af3-a121-41aa-9aed-4ca40a6f7b4d"
-    udp: true
-    encryption: "none"
-    flow: "xtls-rprx-vision"
-    servername: "addons.mozilla.org"
-    client-fingerprint: "randomized"
-    tls: true
-    reality-opts:
-      public-key: "y3YCXTqEVks0nGfiSwJ43ol4pY69-mWFUZsdmveoVDM"
-      short-id: "46455ff0"
-    network: "tcp"
-
-  - name: "🌐XX-136M-[b803c9/52917d]"
-    type: "vless"
-    server: "138.124.62.158"
-    port: 443
-    uuid: "2b781b4a-5942-48e0-a7f3-5a07b7b488c1"
-    udp: true
-    encryption: "none"
-    flow: "xtls-rprx-vision"
-    servername: "es-root.sworkingvpn.com"
-    client-fingerprint: "firefox"
-    tls: true
-    reality-opts:
-      public-key: "AhLy7ha7FF2EQfu-3SxOFKUwExyHActYPHtyv82KNCI"
-      short-id: "15bcc0a77c3cacdf"
-    network: "tcp"
-
-  - name: "🇺🇸US-386M-[0b7655/1a880c]"
-    type: "ss"
-    server: "66.23.204.210"
-    port: 16995
-    cipher: "aes-128-gcm"
-    password: "89d3a0375a279f6e743fea76e72952a8"
-    udp: true
 
   - name: "🇺🇸US-99M-[46caae/e466f2]"
     type: "ss"
@@ -260,14 +155,6 @@ proxies:
     password: "s0_sdK93x9wer_D02Lz9cvK3_Sa014Oakl_C2z"
     udp: true
     sni: "grape-test-italy.dynuddns.net"
-
-  - name: "🇷🇺RU-364M-[b58a29/c31a81]"
-    type: "ss"
-    server: "46.17.45.31"
-    port: 10550
-    cipher: "aes-256-gcm"
-    password: "bdb313adf74c2ede"
-    udp: true
 
   - name: "🇷🇺RU-212M-[f38f7e/eb1e94]"
     type: "vless"
@@ -392,28 +279,20 @@ proxy-groups:
   - name: "AUTO"
     type: select
     proxies:
-      - "🇳🇱NL-430M-[d5e5f3/13eef5]"
-      - "🌐XX-173M-[98c8e8/da6e97]"
+      - "🇪🇪EE-161M-[5592bc/3bfbc6]"
+      - "🇷🇺RU-138M-[35c8a5/fce232]"
+      - "🇷🇺RU-112M-[92435e/039b3f]"
+      - "🇳🇱NL-276M-[664ba6/9628a3]"
+      - "🇳🇱NL-276M-[f9b827/6ce7b0]"
+      - "🇩🇪DE-114M-[627072/7e3659]"
+      - "🇺🇸US-267M-[0b7655/1a880c]"
+      - "🇳🇱NL-214M-[d5e5f3/13eef5]"
+      - "🇦🇱AL-32M-[acdd13/568e4d]"
       - "🇷🇺RU-180M-[c04ae4/ecf9fc]"
       - "🌐XX-226M-[dc3614/8887b8]"
-      - "🇷🇺RU-93M-[35c8a5/fce232]"
-      - "🌐XX-71M-[4e40c0/e56786]"
-      - "🇬🇧GB-478M-[80524a/2b4056]"
-      - "🇷🇺RU-105M-[92435e/039b3f]"
-      - "🇸🇪SE-401M-[b46b8b/d5a8b3]"
-      - "🇳🇱NL-420M-[664ba6/9628a3]"
-      - "🇳🇱NL-448M-[f9b827/6ce7b0]"
-      - "🇪🇪EE-312M-[5592bc/3bfbc6]"
-      - "🌐XX-317M-[627072/7e3659]"
-      - "🌐XX-145M-[8a0bb5/aa98b4]"
-      - "🇦🇱AL-213M-[acdd13/568e4d]"
-      - "🌐XX-207M-[3f96f9/031a0f]"
-      - "🌐XX-136M-[b803c9/52917d]"
-      - "🇺🇸US-386M-[0b7655/1a880c]"
       - "🇺🇸US-99M-[46caae/e466f2]"
       - "🇺🇸US-229M-[fd26fa/49f2be]"
       - "🇳🇱NL-232M-[8e3ef2/60081b]"
-      - "🇷🇺RU-364M-[b58a29/c31a81]"
       - "🇷🇺RU-212M-[f38f7e/eb1e94]"
       - "🇷🇺RU-259M-[f58d58/a92232]"
       - "🇩🇪DE-141M-[cd9255/eed62d]"
