@@ -22,23 +22,7 @@ proxies:
       short-id: "ae64c9b46bff174a"
     network: "tcp"
 
-  - name: "🇷🇺RU-138M-[35c8a5/fce232]"
-    type: "ss"
-    server: "46.17.42.141"
-    port: 10550
-    cipher: "aes-256-gcm"
-    password: "6b39ae3234dfd68b"
-    udp: true
-
-  - name: "🇷🇺RU-112M-[92435e/039b3f]"
-    type: "ss"
-    server: "194.87.196.13"
-    port: 10550
-    cipher: "aes-256-gcm"
-    password: "4938e975724d0ed1"
-    udp: true
-
-  - name: "🇳🇱NL-276M-[664ba6/9628a3]"
+  - name: "🇳🇱NL-496M-[664ba6/9628a3]"
     type: "ss"
     server: "82.38.31.171"
     port: 8080
@@ -46,7 +30,7 @@ proxies:
     password: "oZIoA69Q8yhcQV8ka3Pa3A"
     udp: true
 
-  - name: "🇳🇱NL-276M-[f9b827/6ce7b0]"
+  - name: "🇳🇱NL-467M-[f9b827/6ce7b0]"
     type: "ss"
     server: "82.38.31.171"
     port: 443
@@ -54,41 +38,7 @@ proxies:
     password: "oZIoA69Q8yhcQV8ka3Pa3A"
     udp: true
 
-  - name: "🇩🇪DE-114M-[627072/7e3659]"
-    type: "vless"
-    server: "fzjo.fbbv.electrocitymarket.ru"
-    port: 443
-    uuid: "d2519b5e-495e-462e-9703-bbf68011d2f3"
-    udp: true
-    encryption: "none"
-    servername: "fzjo.fbbv.electrocitymarket.ru"
-    client-fingerprint: "chrome"
-    alpn:
-      - "h2"
-      - "http/1.1"
-    tls: true
-    network: "xhttp"
-    xhttp-opts:
-      path: "/"
-      mode: "stream-up"
-
-  - name: "🇺🇸US-267M-[0b7655/1a880c]"
-    type: "ss"
-    server: "66.23.204.210"
-    port: 16995
-    cipher: "aes-128-gcm"
-    password: "89d3a0375a279f6e743fea76e72952a8"
-    udp: true
-
-  - name: "🇳🇱NL-214M-[d5e5f3/13eef5]"
-    type: "ss"
-    server: "193.29.139.197"
-    port: 8080
-    cipher: "chacha20-ietf-poly1305"
-    password: "oZIoA69Q8yhcQV8ka3Pa3A"
-    udp: true
-
-  - name: "🇦🇱AL-32M-[acdd13/568e4d]"
+  - name: "🇦🇱AL-115M-[acdd13/568e4d]"
     type: "ss"
     server: "130.49.189.158"
     port: 43558
@@ -96,29 +46,63 @@ proxies:
     password: "EKGHx2yhUzmnRONhNOxvn+BqUr10wfqDQqRg4DYUJE8="
     udp: true
 
-  - name: "🇷🇺RU-180M-[c04ae4/ecf9fc]"
-    type: "ss"
-    server: "46.17.41.166"
-    port: 10550
-    cipher: "aes-256-gcm"
-    password: "895b4b796a357570"
+  - name: "🇷🇺RU-49M-[f58d58/9c8595]"
+    type: "vless"
+    server: "185.141.227.180"
+    port: 2053
+    uuid: "2c634977-584e-4e1f-b501-1b70c77a6743"
     udp: true
+    encryption: "none"
+    servername: "dismissaltree.net"
+    client-fingerprint: "chrome"
+    tls: true
+    network: "xhttp"
+    xhttp-opts:
+      path: "/api/v1/upload"
+      host: "dismissaltree.net"
+      mode: "auto"
+      reuse-settings:
+        c-max-reuse-times: "64-128"
+        max-concurrency: "16-32"
+        max-connections: "0"
+      sc-max-each-post-bytes: "1000000"
+      sc-min-posts-interval-ms: "30"
+      x-padding-bytes: "100-1000"
 
-  - name: "🌐XX-226M-[dc3614/8887b8]"
-    type: "vmess"
-    server: "23.165.200.150"
-    port: 52080
-    uuid: "672cdade-bb05-4c86-b578-e5d09b79524a"
-    alterId: 0
-    cipher: "auto"
+  - name: "🇷🇺RU-43M-[e4db96/e21b14]"
+    type: "vless"
+    server: "78.159.250.84"
+    port: 2053
+    uuid: "2c634977-584e-4e1f-b501-1b70c77a6743"
     udp: true
-    network: "http"
-    http-opts:
-      path:
-        - "/QQqun-737805443"
-      headers:
-        Host:
-          - "down-cdn.dingtalk.com"
+    encryption: "none"
+    servername: "summerculture.net"
+    client-fingerprint: "firefox"
+    alpn:
+      - "h2"
+      - "+http/1.1"
+    tls: true
+    network: "xhttp"
+    xhttp-opts:
+      path: "/api/v1/upload"
+      host: "summerculture.net"
+      mode: "auto"
+
+  - name: "🇺🇸US-51M-[75dca0/e2ad7c]"
+    type: "vless"
+    server: "88.216.210.13"
+    port: 443
+    uuid: "ee18d188-14cc-417e-beb1-70e4add6d023"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "node-us-1.nztvpn.com"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "Yn9rswmNTIdVx8jKgZkvQcqw61BRu_h_ZOl2blShDT4"
+      short-id: "0da7e14db353e7d0"
+    network: "tcp"
 
   - name: "🇺🇸US-99M-[46caae/e466f2]"
     type: "ss"
@@ -131,22 +115,6 @@ proxies:
     plugin-opts:
       host: "(Telegram🇨🇳 @VPNine1)fa03bb5:137563"
       mode: "tls"
-
-  - name: "🇺🇸US-229M-[fd26fa/49f2be]"
-    type: "vless"
-    server: "89.208.254.233"
-    port: 443
-    uuid: "ab1249da-9ac8-44c7-89a3-2d337ab25cb2"
-    udp: true
-    encryption: "none"
-    flow: "xtls-rprx-vision"
-    servername: "halo.sigy.me"
-    client-fingerprint: "firefox"
-    tls: true
-    reality-opts:
-      public-key: "PR2mhvCXer5q0MdcFq02GiyGhjSYqfyHVnFjjHhHOgY"
-      short-id: "3221cb224d06a873"
-    network: "tcp"
 
   - name: "🇳🇱NL-232M-[8e3ef2/60081b]"
     type: "hysteria2"
@@ -228,25 +196,6 @@ proxies:
       sc-min-posts-interval-ms: "30"
       x-padding-bytes: "100-1000"
 
-  - name: "🇷🇺RU-447M-[e4db96/e21b14]"
-    type: "vless"
-    server: "78.159.250.84"
-    port: 2053
-    uuid: "2c634977-584e-4e1f-b501-1b70c77a6743"
-    udp: true
-    encryption: "none"
-    servername: "summerculture.net"
-    client-fingerprint: "firefox"
-    alpn:
-      - "h2"
-      - "+http/1.1"
-    tls: true
-    network: "xhttp"
-    xhttp-opts:
-      path: "/api/v1/upload"
-      host: "summerculture.net"
-      mode: "auto"
-
   - name: "🇷🇺RU-254M-[f58d58/767d77]"
     type: "vless"
     server: "185.141.227.180"
@@ -280,24 +229,18 @@ proxy-groups:
     type: select
     proxies:
       - "🇪🇪EE-161M-[5592bc/3bfbc6]"
-      - "🇷🇺RU-138M-[35c8a5/fce232]"
-      - "🇷🇺RU-112M-[92435e/039b3f]"
-      - "🇳🇱NL-276M-[664ba6/9628a3]"
-      - "🇳🇱NL-276M-[f9b827/6ce7b0]"
-      - "🇩🇪DE-114M-[627072/7e3659]"
-      - "🇺🇸US-267M-[0b7655/1a880c]"
-      - "🇳🇱NL-214M-[d5e5f3/13eef5]"
-      - "🇦🇱AL-32M-[acdd13/568e4d]"
-      - "🇷🇺RU-180M-[c04ae4/ecf9fc]"
-      - "🌐XX-226M-[dc3614/8887b8]"
+      - "🇳🇱NL-496M-[664ba6/9628a3]"
+      - "🇳🇱NL-467M-[f9b827/6ce7b0]"
+      - "🇦🇱AL-115M-[acdd13/568e4d]"
+      - "🇷🇺RU-49M-[f58d58/9c8595]"
+      - "🇷🇺RU-43M-[e4db96/e21b14]"
+      - "🇺🇸US-51M-[75dca0/e2ad7c]"
       - "🇺🇸US-99M-[46caae/e466f2]"
-      - "🇺🇸US-229M-[fd26fa/49f2be]"
       - "🇳🇱NL-232M-[8e3ef2/60081b]"
       - "🇷🇺RU-212M-[f38f7e/eb1e94]"
       - "🇷🇺RU-259M-[f58d58/a92232]"
       - "🇩🇪DE-141M-[cd9255/eed62d]"
       - "🇷🇺RU-217M-[f38f7e/032323]"
-      - "🇷🇺RU-447M-[e4db96/e21b14]"
       - "🇷🇺RU-254M-[f58d58/767d77]"
 
 rules:
