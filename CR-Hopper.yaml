@@ -6,15 +6,7 @@ log-level: warning
 ipv6: false
 
 proxies:
-  - name: "🇳🇱NL-475M-[f9b827/6ce7b0]"
-    type: "ss"
-    server: "82.38.31.171"
-    port: 443
-    cipher: "chacha20-ietf-poly1305"
-    password: "oZIoA69Q8yhcQV8ka3Pa3A"
-    udp: true
-
-  - name: "🇳🇱NL-444M-[664ba6/9628a3]"
+  - name: "🇳🇱NL-521M-[664ba6/9628a3]"
     type: "ss"
     server: "82.38.31.171"
     port: 8080
@@ -22,13 +14,67 @@ proxies:
     password: "oZIoA69Q8yhcQV8ka3Pa3A"
     udp: true
 
-  - name: "🇦🇱AL-155M-[acdd13/568e4d]"
+  - name: "🇳🇱NL-502M-[f9b827/6ce7b0]"
+    type: "ss"
+    server: "82.38.31.171"
+    port: 443
+    cipher: "chacha20-ietf-poly1305"
+    password: "oZIoA69Q8yhcQV8ka3Pa3A"
+    udp: true
+
+  - name: "🇭🇰HK-65M-[390494/653036]"
+    type: "hysteria2"
+    server: "50dc16b5-tmm5c0-tmj4pk-1kcpe.hk3.hyhuawei.com"
+    port: 443
+    password: "3f514ea2-4662-11ed-a8bf-f23c91cfbbc9"
+    udp: true
+    sni: "50dc16b5-tmm5c0-tmj4pk-1kcpe.hk3.hyhuawei.com"
+    skip-cert-verify: true
+
+  - name: "🇦🇱AL-224M-[acdd13/568e4d]"
     type: "ss"
     server: "130.49.189.158"
     port: 43558
     cipher: "chacha20-ietf-poly1305"
     password: "EKGHx2yhUzmnRONhNOxvn+BqUr10wfqDQqRg4DYUJE8="
     udp: true
+
+  - name: "🌐XX-87M-[e4db96/e21b14]"
+    type: "vless"
+    server: "78.159.250.84"
+    port: 2053
+    uuid: "2c634977-584e-4e1f-b501-1b70c77a6743"
+    udp: true
+    encryption: "none"
+    servername: "summerculture.net"
+    client-fingerprint: "firefox"
+    alpn:
+      - "h2"
+      - "+http/1.1"
+    tls: true
+    network: "xhttp"
+    xhttp-opts:
+      path: "/api/v1/upload"
+      host: "summerculture.net"
+      mode: "auto"
+
+  - name: "🇷🇺RU-30M-[f58d58/198719]"
+    type: "vless"
+    server: "185.141.227.180"
+    port: 2053
+    uuid: "2c634977-584e-4e1f-b501-1b70c77a6743"
+    udp: true
+    encryption: "none"
+    servername: "dismissaltree.net"
+    client-fingerprint: "random"
+    alpn:
+      - "GHOFLSHCAN--GHOFLSHCAN--GHOFLSHCAN--GHOFLSHCAN--GHOFLSHCAN--GHOFLSHCAN--GHOFLSHCAN--GHOFLSHCAN"
+    tls: true
+    network: "xhttp"
+    xhttp-opts:
+      path: "/api/v1/upload"
+      host: "dismissaltree.net"
+      mode: "auto"
 
   - name: "🇫🇮FI-283M-[dc1ce0/0cf290]"
     type: "vless"
@@ -66,25 +112,6 @@ proxies:
       sc-max-each-post-bytes: "1000000"
       sc-min-posts-interval-ms: "30"
       x-padding-bytes: "100-1000"
-
-  - name: "🇷🇺RU-43M-[e4db96/e21b14]"
-    type: "vless"
-    server: "78.159.250.84"
-    port: 2053
-    uuid: "2c634977-584e-4e1f-b501-1b70c77a6743"
-    udp: true
-    encryption: "none"
-    servername: "summerculture.net"
-    client-fingerprint: "firefox"
-    alpn:
-      - "h2"
-      - "+http/1.1"
-    tls: true
-    network: "xhttp"
-    xhttp-opts:
-      path: "/api/v1/upload"
-      host: "summerculture.net"
-      mode: "auto"
 
   - name: "🇺🇸US-99M-[46caae/e466f2]"
     type: "ss"
@@ -147,12 +174,14 @@ proxy-groups:
   - name: "AUTO"
     type: select
     proxies:
-      - "🇳🇱NL-475M-[f9b827/6ce7b0]"
-      - "🇳🇱NL-444M-[664ba6/9628a3]"
-      - "🇦🇱AL-155M-[acdd13/568e4d]"
+      - "🇳🇱NL-521M-[664ba6/9628a3]"
+      - "🇳🇱NL-502M-[f9b827/6ce7b0]"
+      - "🇭🇰HK-65M-[390494/653036]"
+      - "🇦🇱AL-224M-[acdd13/568e4d]"
+      - "🌐XX-87M-[e4db96/e21b14]"
+      - "🇷🇺RU-30M-[f58d58/198719]"
       - "🇫🇮FI-283M-[dc1ce0/0cf290]"
       - "🇷🇺RU-49M-[f58d58/9c8595]"
-      - "🇷🇺RU-43M-[e4db96/e21b14]"
       - "🇺🇸US-99M-[46caae/e466f2]"
       - "🇷🇺RU-259M-[f58d58/a92232]"
       - "🇷🇺RU-217M-[f38f7e/032323]"
