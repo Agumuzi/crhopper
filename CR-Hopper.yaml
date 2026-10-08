@@ -6,6 +6,64 @@ log-level: warning
 ipv6: false
 
 proxies:
+  - name: "🇳🇱NL-277M-[f9b827/6ce7b0]"
+    type: "ss"
+    server: "82.38.31.171"
+    port: 443
+    cipher: "chacha20-ietf-poly1305"
+    password: "oZIoA69Q8yhcQV8ka3Pa3A"
+    udp: true
+
+  - name: "🇳🇱NL-276M-[664ba6/9628a3]"
+    type: "ss"
+    server: "82.38.31.171"
+    port: 8080
+    cipher: "chacha20-ietf-poly1305"
+    password: "oZIoA69Q8yhcQV8ka3Pa3A"
+    udp: true
+
+  - name: "🇪🇪EE-444M-[485705/afcef7]"
+    type: "vless"
+    server: "31.56.187.208"
+    port: 34451
+    uuid: "b3a11068-1a7e-4643-85de-7c82cce46943"
+    udp: true
+    encryption: "none"
+    servername: "ee-2e06d85dc0.shamanapp.online"
+    client-fingerprint: "firefox"
+    tls: true
+    network: "xhttp"
+    xhttp-opts:
+      path: "/ShamanXHTTP2026"
+      host: "ee-2e06d85dc0.shamanapp.online"
+
+  - name: "🇪🇪EE-415M-[fa52ec/ae4fd0]"
+    type: "vless"
+    server: "ee-2e06d85dc0.shamanapp.online"
+    port: 34451
+    uuid: "b3a11068-1a7e-4643-85de-7c82cce46943"
+    udp: true
+    encryption: "none"
+    servername: "ee-2e06d85dc0.shamanapp.online"
+    client-fingerprint: "chrome"
+    alpn:
+      - "h2"
+      - "http/1.1"
+    tls: true
+    network: "xhttp"
+    xhttp-opts:
+      path: "/ShamanXHTTP2026"
+      host: "ee-2e06d85dc0.shamanapp.online"
+      mode: "stream-up"
+
+  - name: "🇦🇱AL-44M-[acdd13/568e4d]"
+    type: "ss"
+    server: "130.49.189.158"
+    port: 43558
+    cipher: "chacha20-ietf-poly1305"
+    password: "EKGHx2yhUzmnRONhNOxvn+BqUr10wfqDQqRg4DYUJE8="
+    udp: true
+
   - name: "🇩🇪DE-169M-[e225de/37874c]"
     type: "trojan"
     server: "199.232.78.160"
@@ -18,30 +76,6 @@ proxies:
       path: "/---@VPNine1---@VPNine1/---@VPNine1---@VPNine1/---@VPNine1---@VPNine1/D-e1i@VPNine1---@VPNine1/---@VPNine1---@VPNine1/---@VPNine1---@VPNine1"
       headers:
         Host: "mitivpn-2--vip.global.ssl.fastly.net"
-
-  - name: "🇳🇱NL-276M-[664ba6/9628a3]"
-    type: "ss"
-    server: "82.38.31.171"
-    port: 8080
-    cipher: "chacha20-ietf-poly1305"
-    password: "oZIoA69Q8yhcQV8ka3Pa3A"
-    udp: true
-
-  - name: "🇳🇱NL-169M-[f9b827/6ce7b0]"
-    type: "ss"
-    server: "82.38.31.171"
-    port: 443
-    cipher: "chacha20-ietf-poly1305"
-    password: "oZIoA69Q8yhcQV8ka3Pa3A"
-    udp: true
-
-  - name: "🇦🇱AL-153M-[acdd13/568e4d]"
-    type: "ss"
-    server: "130.49.189.158"
-    port: 43558
-    cipher: "chacha20-ietf-poly1305"
-    password: "EKGHx2yhUzmnRONhNOxvn+BqUr10wfqDQqRg4DYUJE8="
-    udp: true
 
   - name: "🇫🇮FI-246M-[dc1ce0/d41866]"
     type: "vless"
@@ -230,21 +264,6 @@ proxies:
     client-fingerprint: "chrome"
     tls: true
     network: "tcp"
-
-  - name: "🇪🇪EE-469M-[485705/afcef7]"
-    type: "vless"
-    server: "31.56.187.208"
-    port: 34451
-    uuid: "b3a11068-1a7e-4643-85de-7c82cce46943"
-    udp: true
-    encryption: "none"
-    servername: "ee-2e06d85dc0.shamanapp.online"
-    client-fingerprint: "firefox"
-    tls: true
-    network: "xhttp"
-    xhttp-opts:
-      path: "/ShamanXHTTP2026"
-      host: "ee-2e06d85dc0.shamanapp.online"
 
   - name: "🇩🇪DE-481M-[c7ec1f/dea027]"
     type: "vless"
@@ -643,25 +662,6 @@ proxies:
     xhttp-opts:
       path: "/"
       mode: "auto"
-
-  - name: "🇪🇪EE-427M-[fa52ec/ae4fd0]"
-    type: "vless"
-    server: "ee-2e06d85dc0.shamanapp.online"
-    port: 34451
-    uuid: "b3a11068-1a7e-4643-85de-7c82cce46943"
-    udp: true
-    encryption: "none"
-    servername: "ee-2e06d85dc0.shamanapp.online"
-    client-fingerprint: "chrome"
-    alpn:
-      - "h2"
-      - "http/1.1"
-    tls: true
-    network: "xhttp"
-    xhttp-opts:
-      path: "/ShamanXHTTP2026"
-      host: "ee-2e06d85dc0.shamanapp.online"
-      mode: "stream-up"
 
   - name: "🌐XX-411M-[ff1ec3/a6fa4a]"
     type: "vless"
@@ -1103,10 +1103,12 @@ proxy-groups:
   - name: "AUTO"
     type: select
     proxies:
-      - "🇩🇪DE-169M-[e225de/37874c]"
+      - "🇳🇱NL-277M-[f9b827/6ce7b0]"
       - "🇳🇱NL-276M-[664ba6/9628a3]"
-      - "🇳🇱NL-169M-[f9b827/6ce7b0]"
-      - "🇦🇱AL-153M-[acdd13/568e4d]"
+      - "🇪🇪EE-444M-[485705/afcef7]"
+      - "🇪🇪EE-415M-[fa52ec/ae4fd0]"
+      - "🇦🇱AL-44M-[acdd13/568e4d]"
+      - "🇩🇪DE-169M-[e225de/37874c]"
       - "🇫🇮FI-246M-[dc1ce0/d41866]"
       - "🇺🇸US-64M-[e63438/fb886b]"
       - "🇺🇸US-161M-[1d97da/bd2264]"
@@ -1120,7 +1122,6 @@ proxy-groups:
       - "🇩🇪DE-360M-[e225de/04a1d5]"
       - "🇳🇱NL-71M-[12e53b/6c281e]"
       - "🇵🇱PL-174M-[b56150/433320]"
-      - "🇪🇪EE-469M-[485705/afcef7]"
       - "🇩🇪DE-481M-[c7ec1f/dea027]"
       - "🇩🇪DE-441M-[811bad/9d27f7]"
       - "🇩🇪DE-287M-[43e71a/1e2566]"
@@ -1148,7 +1149,6 @@ proxy-groups:
       - "🇯🇵JP-178M-[98c8e8/c0f052]"
       - "🌐XX-432M-[6857bc/c65997]"
       - "🌐XX-410M-[79f968/fcb496]"
-      - "🇪🇪EE-427M-[fa52ec/ae4fd0]"
       - "🌐XX-411M-[ff1ec3/a6fa4a]"
       - "🇺🇸US-134M-[e26cd5/656726]"
       - "🇺🇸US-82M-[46caae/e466f2]"
