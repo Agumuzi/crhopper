@@ -6,15 +6,28 @@ log-level: warning
 ipv6: false
 
 proxies:
-  - name: "🇷🇺RU-40M-[328cb3/628334]"
+  - name: "🇩🇪DE-169M-[e225de/37874c]"
+    type: "trojan"
+    server: "199.232.78.160"
+    port: 443
+    password: "mitivpn"
+    udp: true
+    sni: "mitivpn.fastly.com"
+    network: "ws"
+    ws-opts:
+      path: "/---@VPNine1---@VPNine1/---@VPNine1---@VPNine1/---@VPNine1---@VPNine1/D-e1i@VPNine1---@VPNine1/---@VPNine1---@VPNine1/---@VPNine1---@VPNine1"
+      headers:
+        Host: "mitivpn-2--vip.global.ssl.fastly.net"
+
+  - name: "🇳🇱NL-276M-[664ba6/9628a3]"
     type: "ss"
-    server: "194.87.196.13"
-    port: 20880
-    cipher: "aes-256-gcm"
-    password: "4938e975724d0ed1"
+    server: "82.38.31.171"
+    port: 8080
+    cipher: "chacha20-ietf-poly1305"
+    password: "oZIoA69Q8yhcQV8ka3Pa3A"
     udp: true
 
-  - name: "🇳🇱NL-497M-[f9b827/6ce7b0]"
+  - name: "🇳🇱NL-169M-[f9b827/6ce7b0]"
     type: "ss"
     server: "82.38.31.171"
     port: 443
@@ -22,12 +35,97 @@ proxies:
     password: "oZIoA69Q8yhcQV8ka3Pa3A"
     udp: true
 
-  - name: "🇳🇱NL-486M-[664ba6/9628a3]"
+  - name: "🇦🇱AL-153M-[acdd13/568e4d]"
     type: "ss"
-    server: "82.38.31.171"
-    port: 8080
+    server: "130.49.189.158"
+    port: 43558
     cipher: "chacha20-ietf-poly1305"
-    password: "oZIoA69Q8yhcQV8ka3Pa3A"
+    password: "EKGHx2yhUzmnRONhNOxvn+BqUr10wfqDQqRg4DYUJE8="
+    udp: true
+
+  - name: "🇫🇮FI-246M-[dc1ce0/d41866]"
+    type: "vless"
+    server: "psf-3.weedly.top"
+    port: 80
+    uuid: "b0fae3b7-02de-4002-b8ca-b7159fe33841"
+    udp: true
+    encryption: "none"
+    servername: "machinemag.ir"
+    tls: false
+    network: "ws"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "machinemag.ir"
+
+  - name: "🇺🇸US-64M-[e63438/fb886b]"
+    type: "vless"
+    server: "92.118.112.249"
+    port: 443
+    uuid: "2b781b4a-5942-48e0-a7f3-5a07b7b488c1"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "us-root.sworkingvpn.com"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "AhLy7ha7FF2EQfu-3SxOFKUwExyHActYPHtyv82KNCI"
+      short-id: "15bcc0a77c3cacdf"
+    network: "tcp"
+
+  - name: "🇺🇸US-161M-[1d97da/bd2264]"
+    type: "vmess"
+    server: "142.171.48.179"
+    port: 28167
+    uuid: "a0181cb3-fcc5-4a0a-9e71-db943a2309fa"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    network: "ws"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "gw.alicdn.com"
+
+  - name: "🇺🇸US-114M-[bc05b6/c4f427]"
+    type: "vless"
+    server: "193.239.179.15"
+    port: 443
+    uuid: "a903a468-ce63-4f3b-a4de-332eb91cc2f0"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "worldoftanks.asia"
+    client-fingerprint: "chrome"
+    tls: true
+    reality-opts:
+      public-key: "6dc3iKXilOQpA_JFrKlk5-CsFjSmOm_5p0kSQcO9qi4"
+      short-id: ""
+    network: "tcp"
+
+  - name: "🇺🇸US-164M-[c4d57b/de67e5]"
+    type: "vless"
+    server: "87.120.252.191"
+    port: 443
+    uuid: "eeec4cba-d104-4f31-b6d6-fca086e14250"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "worldoftanks.eu"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "6dc3iKXilOQpA_JFrKlk5-CsFjSmOm_5p0kSQcO9qi4"
+      short-id: ""
+    network: "tcp"
+
+  - name: "🇷🇺RU-40M-[328cb3/628334]"
+    type: "ss"
+    server: "194.87.196.13"
+    port: 20880
+    cipher: "aes-256-gcm"
+    password: "4938e975724d0ed1"
     udp: true
 
   - name: "🇩🇪DE-280M-[551e18/94e6ce]"
@@ -45,19 +143,6 @@ proxies:
       path: "/---@VPNine1---@VPNine1/---@VPNine1---@VPNine1/---@VPNine1---@VPNine1/NLSs---@VPNine1---@VPNine1/---@VPNine1---@VPNine1/---@VPNine1---@VPNine1"
       headers:
         Host: "mitivpn-4--vip.global.ssl.fastly.net"
-
-  - name: "🇩🇪DE-169M-[e225de/37874c]"
-    type: "trojan"
-    server: "199.232.78.160"
-    port: 443
-    password: "mitivpn"
-    udp: true
-    sni: "mitivpn.fastly.com"
-    network: "ws"
-    ws-opts:
-      path: "/---@VPNine1---@VPNine1/---@VPNine1---@VPNine1/---@VPNine1---@VPNine1/D-e1i@VPNine1---@VPNine1/---@VPNine1---@VPNine1/---@VPNine1---@VPNine1"
-      headers:
-        Host: "mitivpn-2--vip.global.ssl.fastly.net"
 
   - name: "🇩🇪DE-293M-[a177f4/ddd673]"
     type: "trojan"
@@ -89,14 +174,6 @@ proxies:
       path: "/"
       headers:
         Host: "beat.ir"
-
-  - name: "🇦🇱AL-29M-[acdd13/568e4d]"
-    type: "ss"
-    server: "130.49.189.158"
-    port: 43558
-    cipher: "chacha20-ietf-poly1305"
-    password: "EKGHx2yhUzmnRONhNOxvn+BqUr10wfqDQqRg4DYUJE8="
-    udp: true
 
   - name: "🇵🇱PL-38M-[4b8d73/6f20c1]"
     type: "vless"
@@ -1026,14 +1103,19 @@ proxy-groups:
   - name: "AUTO"
     type: select
     proxies:
-      - "🇷🇺RU-40M-[328cb3/628334]"
-      - "🇳🇱NL-497M-[f9b827/6ce7b0]"
-      - "🇳🇱NL-486M-[664ba6/9628a3]"
-      - "🇩🇪DE-280M-[551e18/94e6ce]"
       - "🇩🇪DE-169M-[e225de/37874c]"
+      - "🇳🇱NL-276M-[664ba6/9628a3]"
+      - "🇳🇱NL-169M-[f9b827/6ce7b0]"
+      - "🇦🇱AL-153M-[acdd13/568e4d]"
+      - "🇫🇮FI-246M-[dc1ce0/d41866]"
+      - "🇺🇸US-64M-[e63438/fb886b]"
+      - "🇺🇸US-161M-[1d97da/bd2264]"
+      - "🇺🇸US-114M-[bc05b6/c4f427]"
+      - "🇺🇸US-164M-[c4d57b/de67e5]"
+      - "🇷🇺RU-40M-[328cb3/628334]"
+      - "🇩🇪DE-280M-[551e18/94e6ce]"
       - "🇩🇪DE-293M-[a177f4/ddd673]"
       - "🇩🇪DE-345M-[f28e34/5fa18d]"
-      - "🇦🇱AL-29M-[acdd13/568e4d]"
       - "🇵🇱PL-38M-[4b8d73/6f20c1]"
       - "🇩🇪DE-360M-[e225de/04a1d5]"
       - "🇳🇱NL-71M-[12e53b/6c281e]"
