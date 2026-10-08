@@ -6,7 +6,21 @@ log-level: warning
 ipv6: false
 
 proxies:
-  - name: "🇳🇱NL-277M-[f9b827/6ce7b0]"
+  - name: "🇫🇮FI-283M-[dc1ce0/0cf290]"
+    type: "vless"
+    server: "psf-3.weedly.top"
+    port: 80
+    uuid: "b0fae3b7-02de-4002-b8ca-b7159fe33841"
+    udp: true
+    encryption: "none"
+    tls: false
+    network: "ws"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "machinemag.ir"
+
+  - name: "🇳🇱NL-469M-[f9b827/6ce7b0]"
     type: "ss"
     server: "82.38.31.171"
     port: 443
@@ -14,13 +28,59 @@ proxies:
     password: "oZIoA69Q8yhcQV8ka3Pa3A"
     udp: true
 
-  - name: "🇳🇱NL-276M-[664ba6/9628a3]"
+  - name: "🇳🇱NL-503M-[664ba6/9628a3]"
     type: "ss"
     server: "82.38.31.171"
     port: 8080
     cipher: "chacha20-ietf-poly1305"
     password: "oZIoA69Q8yhcQV8ka3Pa3A"
     udp: true
+
+  - name: "🇺🇸US-108M-[e63438/fb886b]"
+    type: "vless"
+    server: "92.118.112.249"
+    port: 443
+    uuid: "2b781b4a-5942-48e0-a7f3-5a07b7b488c1"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "us-root.sworkingvpn.com"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "AhLy7ha7FF2EQfu-3SxOFKUwExyHActYPHtyv82KNCI"
+      short-id: "15bcc0a77c3cacdf"
+    network: "tcp"
+
+  - name: "🇭🇰HK-100M-[3ca48d/0ea022]"
+    type: "vless"
+    server: "3696b38bsg.murphyweb.sbs"
+    port: 32134
+    uuid: "5b01dc2d-6892-49b8-8289-3f73a32e00e4"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "buylite.music.apple.com"
+    client-fingerprint: "chrome"
+    tls: true
+    reality-opts:
+      public-key: "OdTELUjAUKO_qr-O-uihaAZJAhA8GyIWVI6CpozVCU4"
+      short-id: "6c6c7c97"
+    network: "tcp"
+
+  - name: "🇩🇪DE-32M-[f28e34/5fa18d]"
+    type: "vless"
+    server: "psf-2.weedly.top"
+    port: 80
+    uuid: "e4ed5619-5e91-442a-92f1-755a7f6331b8"
+    udp: true
+    encryption: "none"
+    tls: false
+    network: "ws"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "beat.ir"
 
   - name: "🇪🇪EE-444M-[485705/afcef7]"
     type: "vless"
@@ -91,22 +151,6 @@ proxies:
       path: "/"
       headers:
         Host: "machinemag.ir"
-
-  - name: "🇺🇸US-64M-[e63438/fb886b]"
-    type: "vless"
-    server: "92.118.112.249"
-    port: 443
-    uuid: "2b781b4a-5942-48e0-a7f3-5a07b7b488c1"
-    udp: true
-    encryption: "none"
-    flow: "xtls-rprx-vision"
-    servername: "us-root.sworkingvpn.com"
-    client-fingerprint: "firefox"
-    tls: true
-    reality-opts:
-      public-key: "AhLy7ha7FF2EQfu-3SxOFKUwExyHActYPHtyv82KNCI"
-      short-id: "15bcc0a77c3cacdf"
-    network: "tcp"
 
   - name: "🇺🇸US-161M-[1d97da/bd2264]"
     type: "vmess"
@@ -194,20 +238,6 @@ proxies:
       path: "@VPNine1"
       headers:
         Host: "mitivpn--vip.global.ssl.fastly.net"
-
-  - name: "🇩🇪DE-345M-[f28e34/5fa18d]"
-    type: "vless"
-    server: "psf-2.weedly.top"
-    port: 80
-    uuid: "e4ed5619-5e91-442a-92f1-755a7f6331b8"
-    udp: true
-    encryption: "none"
-    tls: false
-    network: "ws"
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "beat.ir"
 
   - name: "🇵🇱PL-38M-[4b8d73/6f20c1]"
     type: "vless"
@@ -1017,20 +1047,6 @@ proxies:
       host: "dismissaltree.net"
       mode: "auto"
 
-  - name: "🇫🇮FI-283M-[dc1ce0/0cf290]"
-    type: "vless"
-    server: "psf-3.weedly.top"
-    port: 80
-    uuid: "b0fae3b7-02de-4002-b8ca-b7159fe33841"
-    udp: true
-    encryption: "none"
-    tls: false
-    network: "ws"
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "machinemag.ir"
-
   - name: "🇷🇺RU-49M-[f58d58/9c8595]"
     type: "vless"
     server: "185.141.227.180"
@@ -1103,21 +1119,23 @@ proxy-groups:
   - name: "AUTO"
     type: select
     proxies:
-      - "🇳🇱NL-277M-[f9b827/6ce7b0]"
-      - "🇳🇱NL-276M-[664ba6/9628a3]"
+      - "🇫🇮FI-283M-[dc1ce0/0cf290]"
+      - "🇳🇱NL-469M-[f9b827/6ce7b0]"
+      - "🇳🇱NL-503M-[664ba6/9628a3]"
+      - "🇺🇸US-108M-[e63438/fb886b]"
+      - "🇭🇰HK-100M-[3ca48d/0ea022]"
+      - "🇩🇪DE-32M-[f28e34/5fa18d]"
       - "🇪🇪EE-444M-[485705/afcef7]"
       - "🇪🇪EE-415M-[fa52ec/ae4fd0]"
       - "🇦🇱AL-44M-[acdd13/568e4d]"
       - "🇩🇪DE-169M-[e225de/37874c]"
       - "🇫🇮FI-246M-[dc1ce0/d41866]"
-      - "🇺🇸US-64M-[e63438/fb886b]"
       - "🇺🇸US-161M-[1d97da/bd2264]"
       - "🇺🇸US-114M-[bc05b6/c4f427]"
       - "🇺🇸US-164M-[c4d57b/de67e5]"
       - "🇷🇺RU-40M-[328cb3/628334]"
       - "🇩🇪DE-280M-[551e18/94e6ce]"
       - "🇩🇪DE-293M-[a177f4/ddd673]"
-      - "🇩🇪DE-345M-[f28e34/5fa18d]"
       - "🇵🇱PL-38M-[4b8d73/6f20c1]"
       - "🇩🇪DE-360M-[e225de/04a1d5]"
       - "🇳🇱NL-71M-[12e53b/6c281e]"
@@ -1173,7 +1191,6 @@ proxy-groups:
       - "🇹🇷TR-33M-[d48f69/15ce44]"
       - "🇪🇸ES-57M-[919bc0/d95326]"
       - "🇷🇺RU-30M-[f58d58/198719]"
-      - "🇫🇮FI-283M-[dc1ce0/0cf290]"
       - "🇷🇺RU-49M-[f58d58/9c8595]"
       - "🇷🇺RU-259M-[f58d58/a92232]"
       - "🇷🇺RU-217M-[f38f7e/032323]"
