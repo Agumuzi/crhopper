@@ -6,7 +6,7 @@ log-level: warning
 ipv6: false
 
 proxies:
-  - name: "🇷🇺RU-167M-[328cb3/628334]"
+  - name: "🇷🇺RU-40M-[328cb3/628334]"
     type: "ss"
     server: "194.87.196.13"
     port: 20880
@@ -14,7 +14,15 @@ proxies:
     password: "4938e975724d0ed1"
     udp: true
 
-  - name: "🇳🇱NL-483M-[664ba6/9628a3]"
+  - name: "🇳🇱NL-497M-[f9b827/6ce7b0]"
+    type: "ss"
+    server: "82.38.31.171"
+    port: 443
+    cipher: "chacha20-ietf-poly1305"
+    password: "oZIoA69Q8yhcQV8ka3Pa3A"
+    udp: true
+
+  - name: "🇳🇱NL-486M-[664ba6/9628a3]"
     type: "ss"
     server: "82.38.31.171"
     port: 8080
@@ -22,13 +30,85 @@ proxies:
     password: "oZIoA69Q8yhcQV8ka3Pa3A"
     udp: true
 
-  - name: "🇳🇱NL-488M-[f9b827/6ce7b0]"
-    type: "ss"
-    server: "82.38.31.171"
+  - name: "🇩🇪DE-280M-[551e18/94e6ce]"
+    type: "trojan"
+    server: "146.75.57.238"
     port: 443
-    cipher: "chacha20-ietf-poly1305"
-    password: "oZIoA69Q8yhcQV8ka3Pa3A"
+    password: "mitivpn"
     udp: true
+    sni: "ssl-mitivpn.fastly.com"
+    client-fingerprint: "chrome"
+    alpn:
+      - "http/1.1"
+    network: "ws"
+    ws-opts:
+      path: "/---@VPNine1---@VPNine1/---@VPNine1---@VPNine1/---@VPNine1---@VPNine1/NLSs---@VPNine1---@VPNine1/---@VPNine1---@VPNine1/---@VPNine1---@VPNine1"
+      headers:
+        Host: "mitivpn-4--vip.global.ssl.fastly.net"
+
+  - name: "🇩🇪DE-169M-[e225de/37874c]"
+    type: "trojan"
+    server: "199.232.78.160"
+    port: 443
+    password: "mitivpn"
+    udp: true
+    sni: "mitivpn.fastly.com"
+    network: "ws"
+    ws-opts:
+      path: "/---@VPNine1---@VPNine1/---@VPNine1---@VPNine1/---@VPNine1---@VPNine1/D-e1i@VPNine1---@VPNine1/---@VPNine1---@VPNine1/---@VPNine1---@VPNine1"
+      headers:
+        Host: "mitivpn-2--vip.global.ssl.fastly.net"
+
+  - name: "🇩🇪DE-293M-[a177f4/ddd673]"
+    type: "trojan"
+    server: "151.101.38.7"
+    port: 443
+    password: "mitivpn"
+    udp: true
+    sni: "jjl.fastly.com"
+    client-fingerprint: "chrome"
+    skip-cert-verify: true
+    alpn:
+      - "http/1.1"
+    network: "ws"
+    ws-opts:
+      path: "@VPNine1"
+      headers:
+        Host: "mitivpn--vip.global.ssl.fastly.net"
+
+  - name: "🇩🇪DE-345M-[f28e34/5fa18d]"
+    type: "vless"
+    server: "psf-2.weedly.top"
+    port: 80
+    uuid: "e4ed5619-5e91-442a-92f1-755a7f6331b8"
+    udp: true
+    encryption: "none"
+    tls: false
+    network: "ws"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "beat.ir"
+
+  - name: "🇦🇱AL-29M-[acdd13/568e4d]"
+    type: "ss"
+    server: "130.49.189.158"
+    port: 43558
+    cipher: "chacha20-ietf-poly1305"
+    password: "EKGHx2yhUzmnRONhNOxvn+BqUr10wfqDQqRg4DYUJE8="
+    udp: true
+
+  - name: "🇵🇱PL-38M-[4b8d73/6f20c1]"
+    type: "vless"
+    server: "95.85.253.241"
+    port: 2083
+    uuid: "ee0a38e3-d148-48ac-ba99-5133446c2377"
+    udp: true
+    encryption: "none"
+    servername: "95.85.253.241"
+    client-fingerprint: "chrome"
+    tls: true
+    network: "tcp"
 
   - name: "🇩🇪DE-360M-[e225de/04a1d5]"
     type: "trojan"
@@ -60,18 +140,6 @@ proxies:
     reality-opts:
       public-key: "xcTXD3of3Yt5hHdIwYGZ1LjMBgiL6sqj5J33J4U4ozM"
       short-id: "a7c31f92"
-    network: "tcp"
-
-  - name: "🇵🇱PL-144M-[4b8d73/6f20c1]"
-    type: "vless"
-    server: "95.85.253.241"
-    port: 2083
-    uuid: "ee0a38e3-d148-48ac-ba99-5133446c2377"
-    udp: true
-    encryption: "none"
-    servername: "95.85.253.241"
-    client-fingerprint: "chrome"
-    tls: true
     network: "tcp"
 
   - name: "🇵🇱PL-174M-[b56150/433320]"
@@ -169,14 +237,6 @@ proxies:
     tls: true
     network: "tcp"
 
-  - name: "🇦🇱AL-177M-[acdd13/568e4d]"
-    type: "ss"
-    server: "130.49.189.158"
-    port: 43558
-    cipher: "chacha20-ietf-poly1305"
-    password: "EKGHx2yhUzmnRONhNOxvn+BqUr10wfqDQqRg4DYUJE8="
-    udp: true
-
   - name: "🇵🇱PL-318M-[f9074d/2cb39c]"
     type: "vless"
     server: "95.85.253.241"
@@ -204,20 +264,6 @@ proxies:
       public-key: "L78hKnIWL5jdxw3R2NcY725t8QMqAfX8rGdYI46cFgs"
       short-id: "a8399289e18af5f4"
     network: "tcp"
-
-  - name: "🇩🇪DE-385M-[f28e34/5fa18d]"
-    type: "vless"
-    server: "psf-2.weedly.top"
-    port: 80
-    uuid: "e4ed5619-5e91-442a-92f1-755a7f6331b8"
-    udp: true
-    encryption: "none"
-    tls: false
-    network: "ws"
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "beat.ir"
 
   - name: "🇷🇺RU-168M-[e4db96/e21b14]"
     type: "vless"
@@ -471,22 +517,6 @@ proxies:
     grpc-opts:
       grpc-service-name: "astracat"
 
-  - name: "🇩🇪DE-251M-[551e18/94e6ce]"
-    type: "trojan"
-    server: "146.75.57.238"
-    port: 443
-    password: "mitivpn"
-    udp: true
-    sni: "ssl-mitivpn.fastly.com"
-    client-fingerprint: "chrome"
-    alpn:
-      - "http/1.1"
-    network: "ws"
-    ws-opts:
-      path: "/---@VPNine1---@VPNine1/---@VPNine1---@VPNine1/---@VPNine1---@VPNine1/NLSs---@VPNine1---@VPNine1/---@VPNine1---@VPNine1/---@VPNine1---@VPNine1"
-      headers:
-        Host: "mitivpn-4--vip.global.ssl.fastly.net"
-
   - name: "🇯🇵JP-178M-[98c8e8/c0f052]"
     type: "vless"
     server: "172.64.80.1"
@@ -555,23 +585,6 @@ proxies:
       path: "/ShamanXHTTP2026"
       host: "ee-2e06d85dc0.shamanapp.online"
       mode: "stream-up"
-
-  - name: "🇩🇪DE-272M-[a177f4/ddd673]"
-    type: "trojan"
-    server: "151.101.38.7"
-    port: 443
-    password: "mitivpn"
-    udp: true
-    sni: "jjl.fastly.com"
-    client-fingerprint: "chrome"
-    skip-cert-verify: true
-    alpn:
-      - "http/1.1"
-    network: "ws"
-    ws-opts:
-      path: "@VPNine1"
-      headers:
-        Host: "mitivpn--vip.global.ssl.fastly.net"
 
   - name: "🌐XX-411M-[ff1ec3/a6fa4a]"
     type: "vless"
@@ -1013,12 +1026,17 @@ proxy-groups:
   - name: "AUTO"
     type: select
     proxies:
-      - "🇷🇺RU-167M-[328cb3/628334]"
-      - "🇳🇱NL-483M-[664ba6/9628a3]"
-      - "🇳🇱NL-488M-[f9b827/6ce7b0]"
+      - "🇷🇺RU-40M-[328cb3/628334]"
+      - "🇳🇱NL-497M-[f9b827/6ce7b0]"
+      - "🇳🇱NL-486M-[664ba6/9628a3]"
+      - "🇩🇪DE-280M-[551e18/94e6ce]"
+      - "🇩🇪DE-169M-[e225de/37874c]"
+      - "🇩🇪DE-293M-[a177f4/ddd673]"
+      - "🇩🇪DE-345M-[f28e34/5fa18d]"
+      - "🇦🇱AL-29M-[acdd13/568e4d]"
+      - "🇵🇱PL-38M-[4b8d73/6f20c1]"
       - "🇩🇪DE-360M-[e225de/04a1d5]"
       - "🇳🇱NL-71M-[12e53b/6c281e]"
-      - "🇵🇱PL-144M-[4b8d73/6f20c1]"
       - "🇵🇱PL-174M-[b56150/433320]"
       - "🇪🇪EE-469M-[485705/afcef7]"
       - "🇩🇪DE-481M-[c7ec1f/dea027]"
@@ -1026,10 +1044,8 @@ proxy-groups:
       - "🇩🇪DE-287M-[43e71a/1e2566]"
       - "🇩🇪DE-487M-[8fb32e/b73de1]"
       - "🇩🇪DE-486M-[66c90d/fbec51]"
-      - "🇦🇱AL-177M-[acdd13/568e4d]"
       - "🇵🇱PL-318M-[f9074d/2cb39c]"
       - "🇺🇸US-304M-[7de798/11dac2]"
-      - "🇩🇪DE-385M-[f28e34/5fa18d]"
       - "🇷🇺RU-168M-[e4db96/e21b14]"
       - "🇯🇵JP-40M-[98c8e8/a9969d]"
       - "🇷🇺RU-39M-[3d84d3/f49d0a]"
@@ -1047,12 +1063,10 @@ proxy-groups:
       - "🌐XX-119M-[e208b1/69cf47]"
       - "🇩🇪DE-168M-[ac3606/b66c6b]"
       - "🇵🇱PL-443M-[574ab0/d565c0]"
-      - "🇩🇪DE-251M-[551e18/94e6ce]"
       - "🇯🇵JP-178M-[98c8e8/c0f052]"
       - "🌐XX-432M-[6857bc/c65997]"
       - "🌐XX-410M-[79f968/fcb496]"
       - "🇪🇪EE-427M-[fa52ec/ae4fd0]"
-      - "🇩🇪DE-272M-[a177f4/ddd673]"
       - "🌐XX-411M-[ff1ec3/a6fa4a]"
       - "🇺🇸US-134M-[e26cd5/656726]"
       - "🇺🇸US-82M-[46caae/e466f2]"
