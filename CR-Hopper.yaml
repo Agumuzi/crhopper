@@ -6,15 +6,15 @@ log-level: warning
 ipv6: false
 
 proxies:
-  - name: "🇦🇱AL-188M-[acdd13/568e4d]"
+  - name: "🇷🇺RU-167M-[328cb3/628334]"
     type: "ss"
-    server: "130.49.189.158"
-    port: 43558
-    cipher: "chacha20-ietf-poly1305"
-    password: "EKGHx2yhUzmnRONhNOxvn+BqUr10wfqDQqRg4DYUJE8="
+    server: "194.87.196.13"
+    port: 20880
+    cipher: "aes-256-gcm"
+    password: "4938e975724d0ed1"
     udp: true
 
-  - name: "🇳🇱NL-511M-[664ba6/9628a3]"
+  - name: "🇳🇱NL-483M-[664ba6/9628a3]"
     type: "ss"
     server: "82.38.31.171"
     port: 8080
@@ -22,13 +22,257 @@ proxies:
     password: "oZIoA69Q8yhcQV8ka3Pa3A"
     udp: true
 
-  - name: "🇷🇺RU-159M-[3d84d3/f49d0a]"
+  - name: "🇳🇱NL-488M-[f9b827/6ce7b0]"
+    type: "ss"
+    server: "82.38.31.171"
+    port: 443
+    cipher: "chacha20-ietf-poly1305"
+    password: "oZIoA69Q8yhcQV8ka3Pa3A"
+    udp: true
+
+  - name: "🇩🇪DE-360M-[e225de/04a1d5]"
+    type: "trojan"
+    server: "199.232.78.160"
+    port: 443
+    password: "mitivpn"
+    udp: true
+    sni: "mitivpn.fastly.com"
+    client-fingerprint: "chrome"
+    alpn:
+      - "http/1.1"
+    network: "ws"
+    ws-opts:
+      path: "/---@VPNine1---@VPNine1/---@VPNine1---@VPNine1/---@VPNine1---@VPNine1/D-e1i@VPNine1---@VPNine1/---@VPNine1---@VPNine1/---@VPNine1---@VPNine1"
+      headers:
+        Host: "mitivpn-2--vip.global.ssl.fastly.net"
+
+  - name: "🇳🇱NL-71M-[12e53b/6c281e]"
+    type: "vless"
+    server: "217.60.24.36"
+    port: 443
+    uuid: "40781fd4-c7df-4aeb-bd5a-ecfa3ba7b841"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "cipher961.filebeam.website"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "xcTXD3of3Yt5hHdIwYGZ1LjMBgiL6sqj5J33J4U4ozM"
+      short-id: "a7c31f92"
+    network: "tcp"
+
+  - name: "🇵🇱PL-144M-[4b8d73/6f20c1]"
+    type: "vless"
+    server: "95.85.253.241"
+    port: 2083
+    uuid: "ee0a38e3-d148-48ac-ba99-5133446c2377"
+    udp: true
+    encryption: "none"
+    servername: "95.85.253.241"
+    client-fingerprint: "chrome"
+    tls: true
+    network: "tcp"
+
+  - name: "🇵🇱PL-174M-[b56150/433320]"
+    type: "vless"
+    server: "95.85.253.241"
+    port: 2053
+    uuid: "ee0a38e3-d148-48ac-ba99-5133446c2377"
+    udp: true
+    encryption: "none"
+    servername: "95.85.253.241"
+    client-fingerprint: "chrome"
+    tls: true
+    network: "tcp"
+
+  - name: "🇪🇪EE-469M-[485705/afcef7]"
+    type: "vless"
+    server: "31.56.187.208"
+    port: 34451
+    uuid: "b3a11068-1a7e-4643-85de-7c82cce46943"
+    udp: true
+    encryption: "none"
+    servername: "ee-2e06d85dc0.shamanapp.online"
+    client-fingerprint: "firefox"
+    tls: true
+    network: "xhttp"
+    xhttp-opts:
+      path: "/ShamanXHTTP2026"
+      host: "ee-2e06d85dc0.shamanapp.online"
+
+  - name: "🇩🇪DE-481M-[c7ec1f/dea027]"
+    type: "vless"
+    server: "13.143.174.97"
+    port: 2087
+    uuid: "cfae6477-e8ad-4114-8efd-a7c3e5d8a05b"
+    udp: true
+    encryption: "none"
+    servername: "13.143.174.97"
+    client-fingerprint: "random"
+    tls: true
+    network: "tcp"
+
+  - name: "🇩🇪DE-441M-[811bad/9d27f7]"
+    type: "vless"
+    server: "13.143.174.97"
+    port: 2053
+    uuid: "cfae6477-e8ad-4114-8efd-a7c3e5d8a05b"
+    udp: true
+    encryption: "none"
+    servername: "13.143.174.97"
+    client-fingerprint: "firefox"
+    tls: true
+    network: "ws"
+    ws-opts:
+      path: "/ws-cdn1-vless"
+      headers:
+        Host: "se.fastmirror-labs.xyz"
+
+  - name: "🇩🇪DE-287M-[43e71a/1e2566]"
+    type: "vless"
+    server: "nl32.mech-pro.online"
+    port: 443
+    uuid: "6c84bdcd-2070-424b-a5ee-a26783d2a0e9"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "nl32.mech-pro.online"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "jbiddtGRgeBvlkjbuA3aU-WPjKgEX87tOVh1mFfvOUI"
+      short-id: "16e0f049"
+    network: "tcp"
+
+  - name: "🇩🇪DE-487M-[8fb32e/b73de1]"
+    type: "vless"
+    server: "13.143.174.97"
+    port: 8443
+    uuid: "cfae6477-e8ad-4114-8efd-a7c3e5d8a05b"
+    udp: true
+    encryption: "none"
+    servername: "13.143.174.97"
+    client-fingerprint: "firefox"
+    tls: true
+    network: "tcp"
+
+  - name: "🇩🇪DE-486M-[66c90d/fbec51]"
+    type: "vless"
+    server: "13.143.174.97"
+    port: 2083
+    uuid: "cfae6477-e8ad-4114-8efd-a7c3e5d8a05b"
+    udp: true
+    encryption: "none"
+    servername: "13.143.174.97"
+    client-fingerprint: "firefox"
+    tls: true
+    network: "tcp"
+
+  - name: "🇦🇱AL-177M-[acdd13/568e4d]"
+    type: "ss"
+    server: "130.49.189.158"
+    port: 43558
+    cipher: "chacha20-ietf-poly1305"
+    password: "EKGHx2yhUzmnRONhNOxvn+BqUr10wfqDQqRg4DYUJE8="
+    udp: true
+
+  - name: "🇵🇱PL-318M-[f9074d/2cb39c]"
+    type: "vless"
+    server: "95.85.253.241"
+    port: 2087
+    uuid: "ee0a38e3-d148-48ac-ba99-5133446c2377"
+    udp: true
+    encryption: "none"
+    servername: "95.85.253.241"
+    client-fingerprint: "firefox"
+    tls: true
+    network: "tcp"
+
+  - name: "🇺🇸US-304M-[7de798/11dac2]"
+    type: "vless"
+    server: "95.181.173.29"
+    port: 443
+    uuid: "0e538403-1c73-479a-b121-121087fa59af"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "us-01.botklan.ru"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "L78hKnIWL5jdxw3R2NcY725t8QMqAfX8rGdYI46cFgs"
+      short-id: "a8399289e18af5f4"
+    network: "tcp"
+
+  - name: "🇩🇪DE-385M-[f28e34/5fa18d]"
+    type: "vless"
+    server: "psf-2.weedly.top"
+    port: 80
+    uuid: "e4ed5619-5e91-442a-92f1-755a7f6331b8"
+    udp: true
+    encryption: "none"
+    tls: false
+    network: "ws"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "beat.ir"
+
+  - name: "🇷🇺RU-168M-[e4db96/e21b14]"
+    type: "vless"
+    server: "78.159.250.84"
+    port: 2053
+    uuid: "2c634977-584e-4e1f-b501-1b70c77a6743"
+    udp: true
+    encryption: "none"
+    servername: "summerculture.net"
+    client-fingerprint: "firefox"
+    alpn:
+      - "h2"
+      - "+http/1.1"
+    tls: true
+    network: "xhttp"
+    xhttp-opts:
+      path: "/api/v1/upload"
+      host: "summerculture.net"
+      mode: "auto"
+
+  - name: "🇯🇵JP-40M-[98c8e8/a9969d]"
+    type: "vless"
+    server: "172.64.80.1"
+    port: 8880
+    uuid: "6d613d5f-1d65-48ca-b2e8-d83a2c3a17d9"
+    udp: true
+    encryption: "none"
+    packet-encoding: "xudp"
+    client-fingerprint: "chrome"
+    tls: false
+    network: "ws"
+    ws-opts:
+      path: "/pyip=ProxyIP.JP.CMLiussss.net"
+      headers:
+        Host: "tight-star-08eb.331-729.workers.dev"
+
+  - name: "🇷🇺RU-39M-[3d84d3/f49d0a]"
     type: "ss"
     server: "176.32.39.52"
     port: 20880
     cipher: "aes-256-gcm"
     password: "8ad9d72a5571df86"
     udp: true
+
+  - name: "🇩🇪DE-24M-[b761e9/216533]"
+    type: "vless"
+    server: "141.98.7.193"
+    port: 443
+    uuid: "e9e60f73-1618-491c-a85b-477bdc959ae6"
+    udp: true
+    encryption: "none"
+    servername: "141.98.7.193"
+    client-fingerprint: "firefox"
+    tls: true
+    network: "tcp"
 
   - name: "🌐XX-294M-[630554/bc4fcf]"
     type: "vless"
@@ -44,22 +288,6 @@ proxies:
       path: "/?ed"
       headers:
         Host: "vms.lifetime07.workers.dev"
-
-  - name: "🇷🇺RU-167M-[328cb3/628334]"
-    type: "ss"
-    server: "194.87.196.13"
-    port: 20880
-    cipher: "aes-256-gcm"
-    password: "4938e975724d0ed1"
-    udp: true
-
-  - name: "🇳🇱NL-410M-[f9b827/6ce7b0]"
-    type: "ss"
-    server: "82.38.31.171"
-    port: 443
-    cipher: "chacha20-ietf-poly1305"
-    password: "oZIoA69Q8yhcQV8ka3Pa3A"
-    udp: true
 
   - name: "🌐XX-310M-[6857bc/53cbdd]"
     type: "vless"
@@ -105,38 +333,6 @@ proxies:
       path: "/pyip"
       headers:
         Host: "young-leaf-a723.162-4da.workers.dev"
-
-  - name: "🇩🇪DE-341M-[e225de/04a1d5]"
-    type: "trojan"
-    server: "199.232.78.160"
-    port: 443
-    password: "mitivpn"
-    udp: true
-    sni: "mitivpn.fastly.com"
-    client-fingerprint: "chrome"
-    alpn:
-      - "http/1.1"
-    network: "ws"
-    ws-opts:
-      path: "/---@VPNine1---@VPNine1/---@VPNine1---@VPNine1/---@VPNine1---@VPNine1/D-e1i@VPNine1---@VPNine1/---@VPNine1---@VPNine1/---@VPNine1---@VPNine1"
-      headers:
-        Host: "mitivpn-2--vip.global.ssl.fastly.net"
-
-  - name: "🇳🇱NL-311M-[12e53b/6c281e]"
-    type: "vless"
-    server: "217.60.24.36"
-    port: 443
-    uuid: "40781fd4-c7df-4aeb-bd5a-ecfa3ba7b841"
-    udp: true
-    encryption: "none"
-    flow: "xtls-rprx-vision"
-    servername: "cipher961.filebeam.website"
-    client-fingerprint: "firefox"
-    tls: true
-    reality-opts:
-      public-key: "xcTXD3of3Yt5hHdIwYGZ1LjMBgiL6sqj5J33J4U4ozM"
-      short-id: "a7c31f92"
-    network: "tcp"
 
   - name: "🇩🇪DE-187M-[551e18/b1308e]"
     type: "trojan"
@@ -186,18 +382,6 @@ proxies:
       headers:
         Host: "mitivpn-3--vip.global.ssl.fastly.net"
 
-  - name: "🇩🇪DE-459M-[66c90d/fbec51]"
-    type: "vless"
-    server: "13.143.174.97"
-    port: 2083
-    uuid: "cfae6477-e8ad-4114-8efd-a7c3e5d8a05b"
-    udp: true
-    encryption: "none"
-    servername: "13.143.174.97"
-    client-fingerprint: "firefox"
-    tls: true
-    network: "tcp"
-
   - name: "🇩🇪DE-295M-[c7ec1f/04db71]"
     type: "vless"
     server: "13.143.174.97"
@@ -209,21 +393,6 @@ proxies:
     client-fingerprint: "firefox"
     tls: true
     network: "tcp"
-
-  - name: "🇪🇪EE-138M-[485705/afcef7]"
-    type: "vless"
-    server: "31.56.187.208"
-    port: 34451
-    uuid: "b3a11068-1a7e-4643-85de-7c82cce46943"
-    udp: true
-    encryption: "none"
-    servername: "ee-2e06d85dc0.shamanapp.online"
-    client-fingerprint: "firefox"
-    tls: true
-    network: "xhttp"
-    xhttp-opts:
-      path: "/ShamanXHTTP2026"
-      host: "ee-2e06d85dc0.shamanapp.online"
 
   - name: "🇹🇷TR-141M-[cd60be/10fef0]"
     type: "vless"
@@ -240,18 +409,6 @@ proxies:
       headers:
         Host:
           - "play.google.com"
-
-  - name: "🇩🇪DE-501M-[8fb32e/b73de1]"
-    type: "vless"
-    server: "13.143.174.97"
-    port: 8443
-    uuid: "cfae6477-e8ad-4114-8efd-a7c3e5d8a05b"
-    udp: true
-    encryption: "none"
-    servername: "13.143.174.97"
-    client-fingerprint: "firefox"
-    tls: true
-    network: "tcp"
 
   - name: "🇩🇪DE-531M-[811bad/352707]"
     type: "vless"
@@ -329,25 +486,6 @@ proxies:
       path: "/---@VPNine1---@VPNine1/---@VPNine1---@VPNine1/---@VPNine1---@VPNine1/NLSs---@VPNine1---@VPNine1/---@VPNine1---@VPNine1/---@VPNine1---@VPNine1"
       headers:
         Host: "mitivpn-4--vip.global.ssl.fastly.net"
-
-  - name: "🇷🇺RU-376M-[e4db96/e21b14]"
-    type: "vless"
-    server: "78.159.250.84"
-    port: 2053
-    uuid: "2c634977-584e-4e1f-b501-1b70c77a6743"
-    udp: true
-    encryption: "none"
-    servername: "summerculture.net"
-    client-fingerprint: "firefox"
-    alpn:
-      - "h2"
-      - "+http/1.1"
-    tls: true
-    network: "xhttp"
-    xhttp-opts:
-      path: "/api/v1/upload"
-      host: "summerculture.net"
-      mode: "auto"
 
   - name: "🇯🇵JP-178M-[98c8e8/c0f052]"
     type: "vless"
@@ -875,31 +1013,41 @@ proxy-groups:
   - name: "AUTO"
     type: select
     proxies:
-      - "🇦🇱AL-188M-[acdd13/568e4d]"
-      - "🇳🇱NL-511M-[664ba6/9628a3]"
-      - "🇷🇺RU-159M-[3d84d3/f49d0a]"
-      - "🌐XX-294M-[630554/bc4fcf]"
       - "🇷🇺RU-167M-[328cb3/628334]"
-      - "🇳🇱NL-410M-[f9b827/6ce7b0]"
+      - "🇳🇱NL-483M-[664ba6/9628a3]"
+      - "🇳🇱NL-488M-[f9b827/6ce7b0]"
+      - "🇩🇪DE-360M-[e225de/04a1d5]"
+      - "🇳🇱NL-71M-[12e53b/6c281e]"
+      - "🇵🇱PL-144M-[4b8d73/6f20c1]"
+      - "🇵🇱PL-174M-[b56150/433320]"
+      - "🇪🇪EE-469M-[485705/afcef7]"
+      - "🇩🇪DE-481M-[c7ec1f/dea027]"
+      - "🇩🇪DE-441M-[811bad/9d27f7]"
+      - "🇩🇪DE-287M-[43e71a/1e2566]"
+      - "🇩🇪DE-487M-[8fb32e/b73de1]"
+      - "🇩🇪DE-486M-[66c90d/fbec51]"
+      - "🇦🇱AL-177M-[acdd13/568e4d]"
+      - "🇵🇱PL-318M-[f9074d/2cb39c]"
+      - "🇺🇸US-304M-[7de798/11dac2]"
+      - "🇩🇪DE-385M-[f28e34/5fa18d]"
+      - "🇷🇺RU-168M-[e4db96/e21b14]"
+      - "🇯🇵JP-40M-[98c8e8/a9969d]"
+      - "🇷🇺RU-39M-[3d84d3/f49d0a]"
+      - "🇩🇪DE-24M-[b761e9/216533]"
+      - "🌐XX-294M-[630554/bc4fcf]"
       - "🌐XX-310M-[6857bc/53cbdd]"
       - "🌐XX-138M-[b46b8b/cc20fd]"
       - "🇸🇬SG-262M-[98c8e8/70cecf]"
-      - "🇩🇪DE-341M-[e225de/04a1d5]"
-      - "🇳🇱NL-311M-[12e53b/6c281e]"
       - "🇩🇪DE-187M-[551e18/b1308e]"
       - "🇩🇪DE-322M-[a177f4/aa3f72]"
       - "🇩🇪DE-379M-[ac3606/318616]"
-      - "🇩🇪DE-459M-[66c90d/fbec51]"
       - "🇩🇪DE-295M-[c7ec1f/04db71]"
-      - "🇪🇪EE-138M-[485705/afcef7]"
       - "🇹🇷TR-141M-[cd60be/10fef0]"
-      - "🇩🇪DE-501M-[8fb32e/b73de1]"
       - "🇩🇪DE-531M-[811bad/352707]"
       - "🌐XX-119M-[e208b1/69cf47]"
       - "🇩🇪DE-168M-[ac3606/b66c6b]"
       - "🇵🇱PL-443M-[574ab0/d565c0]"
       - "🇩🇪DE-251M-[551e18/94e6ce]"
-      - "🇷🇺RU-376M-[e4db96/e21b14]"
       - "🇯🇵JP-178M-[98c8e8/c0f052]"
       - "🌐XX-432M-[6857bc/c65997]"
       - "🌐XX-410M-[79f968/fcb496]"
