@@ -6,6 +6,78 @@ log-level: warning
 ipv6: false
 
 proxies:
+  - name: "🇳🇱NL-289M-[664ba6/9628a3]"
+    type: "ss"
+    server: "82.38.31.171"
+    port: 8080
+    cipher: "chacha20-ietf-poly1305"
+    password: "oZIoA69Q8yhcQV8ka3Pa3A"
+    udp: true
+
+  - name: "🇳🇱NL-423M-[f9b827/6ce7b0]"
+    type: "ss"
+    server: "82.38.31.171"
+    port: 443
+    cipher: "chacha20-ietf-poly1305"
+    password: "oZIoA69Q8yhcQV8ka3Pa3A"
+    udp: true
+
+  - name: "🇳🇱NL-121M-[8af881/82b583]"
+    type: "vless"
+    server: "fi-s-1.pythonmakemigreat.wiki"
+    port: 443
+    uuid: "f8d52ece-fad4-478d-875d-df6eed3befa7"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "fi-s-1.pythonmakemigreat.wiki"
+    client-fingerprint: "chrome"
+    tls: true
+    reality-opts:
+      public-key: "ZqVz1kWNxh_5zQ5PPkoPHoaXQOvppM0ZyIo8uKp2dCg"
+      short-id: "78f97d82e16aaad6"
+    network: "tcp"
+
+  - name: "🇵🇱PL-301M-[810b52/9e2b5c]"
+    type: "hysteria2"
+    server: "45.192.12.93"
+    port: 443
+    password: "YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc"
+    udp: true
+    sni: "admin.wwwinternetvideo.click"
+
+  - name: "🇩🇪DE-416M-[24b1e7/50aaf6]"
+    type: "vless"
+    server: "efa11.lumariqis.com"
+    port: 443
+    uuid: "12313554-561d-431d-a550-6f4e96c57de1"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "efa11.lumariqis.com"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "QHh_UJffm-Oe4QtuSljlmCBlgCPidsAVY-DGfK9DoCg"
+      short-id: "9cc9137a"
+    network: "tcp"
+
+  - name: "🇭🇰HK-68M-[3ca48d/d69bed]"
+    type: "vless"
+    server: "3696b38bsg.murphyweb.sbs"
+    port: 32134
+    uuid: "5b01dc2d-6892-49b8-8289-3f73a32e00e4"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "buylite.music.apple.com"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "OdTELUjAUKO_qr-O-uihaAZJAhA8GyIWVI6CpozVCU4"
+      short-id: "6c6c7c97"
+    network: "tcp"
+
   - name: "🇫🇮FI-283M-[dc1ce0/0cf290]"
     type: "vless"
     server: "psf-3.weedly.top"
@@ -19,22 +91,6 @@ proxies:
       path: "/"
       headers:
         Host: "machinemag.ir"
-
-  - name: "🇳🇱NL-469M-[f9b827/6ce7b0]"
-    type: "ss"
-    server: "82.38.31.171"
-    port: 443
-    cipher: "chacha20-ietf-poly1305"
-    password: "oZIoA69Q8yhcQV8ka3Pa3A"
-    udp: true
-
-  - name: "🇳🇱NL-503M-[664ba6/9628a3]"
-    type: "ss"
-    server: "82.38.31.171"
-    port: 8080
-    cipher: "chacha20-ietf-poly1305"
-    password: "oZIoA69Q8yhcQV8ka3Pa3A"
-    udp: true
 
   - name: "🇺🇸US-108M-[e63438/fb886b]"
     type: "vless"
@@ -1119,9 +1175,13 @@ proxy-groups:
   - name: "AUTO"
     type: select
     proxies:
+      - "🇳🇱NL-289M-[664ba6/9628a3]"
+      - "🇳🇱NL-423M-[f9b827/6ce7b0]"
+      - "🇳🇱NL-121M-[8af881/82b583]"
+      - "🇵🇱PL-301M-[810b52/9e2b5c]"
+      - "🇩🇪DE-416M-[24b1e7/50aaf6]"
+      - "🇭🇰HK-68M-[3ca48d/d69bed]"
       - "🇫🇮FI-283M-[dc1ce0/0cf290]"
-      - "🇳🇱NL-469M-[f9b827/6ce7b0]"
-      - "🇳🇱NL-503M-[664ba6/9628a3]"
       - "🇺🇸US-108M-[e63438/fb886b]"
       - "🇭🇰HK-100M-[3ca48d/0ea022]"
       - "🇩🇪DE-32M-[f28e34/5fa18d]"
