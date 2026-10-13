@@ -23,7 +23,45 @@ proxies:
     grpc-opts:
       grpc-service-name: "gdd-grpc"
 
-  - name: "🇩🇪DE-459M-[97da8a/c9c30b]"
+  - name: "🇷🇺RU-429M-[71e211/e5271a]"
+    type: "hysteria2"
+    server: "194.87.118.184"
+    port: 2053
+    password: "7ab3c77e-8fcc-4848-918f-cae3d4eac794"
+    udp: true
+    sni: "match-stream.lovkisport.blog"
+
+  - name: "🇩🇪DE-405M-[673431/761ea7]"
+    type: "vless"
+    server: "de-gdd-1.unturned-rust-dead.lol"
+    port: 443
+    uuid: "c6e3c24c-ce20-4ad5-8c8c-68cb05890ea8"
+    udp: true
+    encryption: "none"
+    servername: "de-gdd-1.unturned-rust-dead.lol"
+    client-fingerprint: "chrome"
+    tls: true
+    reality-opts:
+      public-key: "aYz4_13W8gtAXGBrWeqJXtExahAJ9kUPDapqeyAlYCk"
+      short-id: ""
+    network: "grpc"
+    grpc-opts:
+      grpc-service-name: "gdd-grpc"
+
+  - name: "🇳🇱NL-388M-[7d212c/fb0303]"
+    type: "vless"
+    server: "video-origin.lovkisport.blog"
+    port: 443
+    uuid: "f310a861-cca2-4f6f-8db2-30102fccd0ae"
+    udp: true
+    encryption: "none"
+    servername: "video-origin.lovkisport.blog"
+    tls: true
+    network: "grpc"
+    grpc-opts:
+      grpc-service-name: "grpc"
+
+  - name: "🇩🇪DE-406M-[97da8a/c9c30b]"
     type: "vless"
     server: "31.58.95.10"
     port: 443
@@ -39,6 +77,205 @@ proxies:
     network: "grpc"
     grpc-opts:
       grpc-service-name: "gdd-grpc"
+
+  - name: "🇫🇮FI-85M-[d7ba71/079cf6]"
+    type: "vless"
+    server: "fi-p1.h1cloud.net"
+    port: 25481
+    uuid: "68c3d665-b2b5-4ffb-9f37-9f3d8c47324d"
+    udp: true
+    encryption: "none"
+    servername: "www.bing.com"
+    client-fingerprint: "random"
+    tls: true
+    reality-opts:
+      public-key: "mhIAHuZIEr2NpdGGSeOxar7VRSgEfVoNwb_G8Y0073E"
+      short-id: "3b84fc70657725af"
+    network: "grpc"
+    grpc-opts:
+      grpc-service-name: "8cb5baa18cd7"
+
+  - name: "🇳🇱NL-224M-[399e15/5ca081]"
+    type: "vless"
+    server: "media-origin.lovkisport.blog"
+    port: 443
+    uuid: "f310a861-cca2-4f6f-8db2-30102fccd0ae"
+    udp: true
+    encryption: "none"
+    servername: "media-origin.lovkisport.blog"
+    tls: true
+    network: "grpc"
+    grpc-opts:
+      grpc-service-name: "grpc"
+
+  - name: "🇫🇮FI-490M-[426960/fcdff4]"
+    type: "vless"
+    server: "finaluty.loknietotop.digital"
+    port: 443
+    uuid: "ace33fb8-c593-4b17-8f72-f3359b6e9638"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "finaluty.loknietotop.digital"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "III2StgFziJtisbaKDYlEF2qYwBHJZnzZH5DHdwuFQ8"
+      short-id: "d110331f200987ae"
+    network: "tcp"
+
+  - name: "🇷🇺RU-273M-[da8187/cbcc7e]"
+    type: "vless"
+    server: "176.124.214.107"
+    port: 8443
+    uuid: "ed8704b8-9e9e-48e6-b55b-ae9079ab3a59"
+    udp: true
+    encryption: "none"
+    servername: "apple.com"
+    client-fingerprint: "qq"
+    tls: true
+    reality-opts:
+      public-key: "i5a8i2AWUSMZ-rYA6hGBRCBBoe7W5ah33SCdF5JkMk4"
+      short-id: "8bcfe256cf216fd8"
+    network: "grpc"
+    grpc-opts:
+      grpc-service-name: "grpc-tunnel"
+
+  - name: "🇫🇮FI-377M-[0d77f6/f30124]"
+    type: "trojan"
+    server: "85.209.129.5"
+    port: 443
+    password: "muLkJXY1WyEbDdP-AoNpjg3HddPCAcBA"
+    udp: true
+    sni: "fl.global-cdn.org"
+    client-fingerprint: "chrome"
+    skip-cert-verify: true
+    alpn:
+      - "h2"
+    network: "grpc"
+    grpc-opts:
+      grpc-service-name: "ajv"
+
+  - name: "🇫🇮FI-400M-[27ce76/bd79b0]"
+    type: "vless"
+    server: "31.207.7.117"
+    port: 443
+    uuid: "524dd22d-9f8c-4cc4-9e12-f427f497dff4"
+    udp: true
+    encryption: "none"
+    servername: "se-twitch.global-cdn.org"
+    client-fingerprint: "chrome"
+    skip-cert-verify: true
+    alpn:
+      - "h2"
+    tls: true
+    network: "grpc"
+    grpc-opts:
+      grpc-service-name: "content.v1.Feed"
+
+  - name: "🇪🇪EE-171M-[c01fc9/60f4b9]"
+    type: "vless"
+    server: "185.76.241.49"
+    port: 443
+    uuid: "9ee57d03-dcf5-488b-aff7-305301879353"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "ru-in-est-4vp.movietop24.site"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "-vbYsY2UQcGl7Z6eTc5KDhxOfo_OhsqFlI_SyeL4TSE"
+      short-id: "b927c029ece94e02"
+    network: "tcp"
+
+  - name: "🇳🇱NL-286M-[da7aeb/252205]"
+    type: "ss"
+    server: "82.38.31.198"
+    port: 8080
+    cipher: "chacha20-ietf-poly1305"
+    password: "k1dBOmOB4oqi7Ump37a1bQ"
+    udp: true
+
+  - name: "🇳🇱NL-377M-[e05175/ecd88f]"
+    type: "ss"
+    server: "82.38.31.54"
+    port: 8080
+    cipher: "chacha20-ietf-poly1305"
+    password: "oZIoA69Q8yhcQV8ka3Pa3A"
+    udp: true
+
+  - name: "🇫🇮FI-432M-[e0ec2d/5136a6]"
+    type: "vless"
+    server: "31.77.151.175"
+    port: 443
+    uuid: "f8d52ece-fad4-478d-875d-df6eed3befa7"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "fi.pythonsetupbib.online"
+    client-fingerprint: "random"
+    tls: true
+    reality-opts:
+      public-key: "ZqVz1kWNxh_5zQ5PPkoPHoaXQOvppM0ZyIo8uKp2dCg"
+      short-id: "bdf5852d1423e694"
+    network: "tcp"
+
+  - name: "🇳🇱NL-430M-[7a3829/6f55fc]"
+    type: "ss"
+    server: "82.38.31.213"
+    port: 8080
+    cipher: "chacha20-ietf-poly1305"
+    password: "k1dBOmOB4oqi7Ump37a1bQ"
+    udp: true
+
+  - name: "🇳🇱NL-445M-[dd742b/c54999]"
+    type: "ss"
+    server: "82.38.31.182"
+    port: 8080
+    cipher: "chacha20-ietf-poly1305"
+    password: "k1dBOmOB4oqi7Ump37a1bQ"
+    udp: true
+
+  - name: "🇳🇱NL-427M-[20ea8d/63f44d]"
+    type: "ss"
+    server: "82.38.31.174"
+    port: 443
+    cipher: "chacha20-ietf-poly1305"
+    password: "oZIoA69Q8yhcQV8ka3Pa3A"
+    udp: true
+
+  - name: "🇳🇱NL-373M-[f9a0f5/96a5a0]"
+    type: "ss"
+    server: "82.38.31.203"
+    port: 8080
+    cipher: "chacha20-ietf-poly1305"
+    password: "k1dBOmOB4oqi7Ump37a1bQ"
+    udp: true
+
+  - name: "🇳🇱NL-424M-[d4aa4c/884bfc]"
+    type: "ss"
+    server: "82.38.31.149"
+    port: 443
+    cipher: "chacha20-ietf-poly1305"
+    password: "oZIoA69Q8yhcQV8ka3Pa3A"
+    udp: true
+
+  - name: "🇸🇪SE-280M-[b2f220/23c2f5]"
+    type: "vless"
+    server: "swerka.loknietotop.digital"
+    port: 443
+    uuid: "ace33fb8-c593-4b17-8f72-f3359b6e9638"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "swerka.loknietotop.digital"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "x6p656szvu_3CKLsJ4NtkooRvdTVGx7IoPca_p58_jA"
+      short-id: "fb442438e2223836"
+    network: "tcp"
 
   - name: "🇫🇮FI-90M-[5843d0/37e694]"
     type: "vless"
@@ -232,30 +469,6 @@ proxies:
     password: "oZIoA69Q8yhcQV8ka3Pa3A"
     udp: true
 
-  - name: "🇳🇱NL-276M-[20ea8d/63f44d]"
-    type: "ss"
-    server: "82.38.31.174"
-    port: 443
-    cipher: "chacha20-ietf-poly1305"
-    password: "oZIoA69Q8yhcQV8ka3Pa3A"
-    udp: true
-
-  - name: "🇫🇮FI-415M-[e0ec2d/5136a6]"
-    type: "vless"
-    server: "31.77.151.175"
-    port: 443
-    uuid: "f8d52ece-fad4-478d-875d-df6eed3befa7"
-    udp: true
-    encryption: "none"
-    flow: "xtls-rprx-vision"
-    servername: "fi.pythonsetupbib.online"
-    client-fingerprint: "random"
-    tls: true
-    reality-opts:
-      public-key: "ZqVz1kWNxh_5zQ5PPkoPHoaXQOvppM0ZyIo8uKp2dCg"
-      short-id: "bdf5852d1423e694"
-    network: "tcp"
-
   - name: "🇳🇱NL-287M-[797068/14c325]"
     type: "ss"
     server: "82.38.31.219"
@@ -312,30 +525,6 @@ proxies:
     password: "k1dBOmOB4oqi7Ump37a1bQ"
     udp: true
 
-  - name: "🇳🇱NL-422M-[d4aa4c/884bfc]"
-    type: "ss"
-    server: "82.38.31.149"
-    port: 443
-    cipher: "chacha20-ietf-poly1305"
-    password: "oZIoA69Q8yhcQV8ka3Pa3A"
-    udp: true
-
-  - name: "🇪🇪EE-95M-[c01fc9/60f4b9]"
-    type: "vless"
-    server: "185.76.241.49"
-    port: 443
-    uuid: "9ee57d03-dcf5-488b-aff7-305301879353"
-    udp: true
-    encryption: "none"
-    flow: "xtls-rprx-vision"
-    servername: "ru-in-est-4vp.movietop24.site"
-    client-fingerprint: "firefox"
-    tls: true
-    reality-opts:
-      public-key: "-vbYsY2UQcGl7Z6eTc5KDhxOfo_OhsqFlI_SyeL4TSE"
-      short-id: "b927c029ece94e02"
-    network: "tcp"
-
   - name: "🇳🇱NL-490M-[e297b0/02316b]"
     type: "ss"
     server: "82.38.31.201"
@@ -358,22 +547,6 @@ proxies:
     port: 8080
     cipher: "chacha20-ietf-poly1305"
     password: "oZIoA69Q8yhcQV8ka3Pa3A"
-    udp: true
-
-  - name: "🇷🇺RU-246M-[71e211/e5271a]"
-    type: "hysteria2"
-    server: "194.87.118.184"
-    port: 2053
-    password: "7ab3c77e-8fcc-4848-918f-cae3d4eac794"
-    udp: true
-    sni: "match-stream.lovkisport.blog"
-
-  - name: "🇳🇱NL-494M-[dd742b/c54999]"
-    type: "ss"
-    server: "82.38.31.182"
-    port: 8080
-    cipher: "chacha20-ietf-poly1305"
-    password: "k1dBOmOB4oqi7Ump37a1bQ"
     udp: true
 
   - name: "🇳🇱NL-462M-[6732df/1c40dc]"
@@ -408,30 +581,6 @@ proxies:
     network: "grpc"
     grpc-opts:
       grpc-service-name: "GunService"
-
-  - name: "🇳🇱NL-420M-[da7aeb/252205]"
-    type: "ss"
-    server: "82.38.31.198"
-    port: 8080
-    cipher: "chacha20-ietf-poly1305"
-    password: "k1dBOmOB4oqi7Ump37a1bQ"
-    udp: true
-
-  - name: "🇳🇱NL-446M-[f9a0f5/96a5a0]"
-    type: "ss"
-    server: "82.38.31.203"
-    port: 8080
-    cipher: "chacha20-ietf-poly1305"
-    password: "k1dBOmOB4oqi7Ump37a1bQ"
-    udp: true
-
-  - name: "🇳🇱NL-395M-[7a3829/6f55fc]"
-    type: "ss"
-    server: "82.38.31.213"
-    port: 8080
-    cipher: "chacha20-ietf-poly1305"
-    password: "k1dBOmOB4oqi7Ump37a1bQ"
-    udp: true
 
   - name: "🇳🇱NL-454M-[199a8e/b08d40]"
     type: "ss"
@@ -687,7 +836,26 @@ proxy-groups:
     type: select
     proxies:
       - "🇩🇪DE-388M-[5d2928/177adb]"
-      - "🇩🇪DE-459M-[97da8a/c9c30b]"
+      - "🇷🇺RU-429M-[71e211/e5271a]"
+      - "🇩🇪DE-405M-[673431/761ea7]"
+      - "🇳🇱NL-388M-[7d212c/fb0303]"
+      - "🇩🇪DE-406M-[97da8a/c9c30b]"
+      - "🇫🇮FI-85M-[d7ba71/079cf6]"
+      - "🇳🇱NL-224M-[399e15/5ca081]"
+      - "🇫🇮FI-490M-[426960/fcdff4]"
+      - "🇷🇺RU-273M-[da8187/cbcc7e]"
+      - "🇫🇮FI-377M-[0d77f6/f30124]"
+      - "🇫🇮FI-400M-[27ce76/bd79b0]"
+      - "🇪🇪EE-171M-[c01fc9/60f4b9]"
+      - "🇳🇱NL-286M-[da7aeb/252205]"
+      - "🇳🇱NL-377M-[e05175/ecd88f]"
+      - "🇫🇮FI-432M-[e0ec2d/5136a6]"
+      - "🇳🇱NL-430M-[7a3829/6f55fc]"
+      - "🇳🇱NL-445M-[dd742b/c54999]"
+      - "🇳🇱NL-427M-[20ea8d/63f44d]"
+      - "🇳🇱NL-373M-[f9a0f5/96a5a0]"
+      - "🇳🇱NL-424M-[d4aa4c/884bfc]"
+      - "🇸🇪SE-280M-[b2f220/23c2f5]"
       - "🇫🇮FI-90M-[5843d0/37e694]"
       - "🇩🇪DE-473M-[673431/4cf8e9]"
       - "🇩🇪DE-252M-[77dcc0/86a8e3]"
@@ -706,8 +874,6 @@ proxy-groups:
       - "🇳🇱NL-276M-[664ba6/9628a3]"
       - "🇫🇮FI-82M-[5df3a3/65ea81]"
       - "🇳🇱NL-276M-[0449e6/4d3e6e]"
-      - "🇳🇱NL-276M-[20ea8d/63f44d]"
-      - "🇫🇮FI-415M-[e0ec2d/5136a6]"
       - "🇳🇱NL-287M-[797068/14c325]"
       - "🇳🇱NL-510M-[d15429/e16773]"
       - "🇳🇱NL-469M-[834705/4deed7]"
@@ -715,19 +881,12 @@ proxy-groups:
       - "🇳🇱NL-446M-[93b0a2/ed0aae]"
       - "🇳🇱NL-306M-[27fdd9/079ef5]"
       - "🇳🇱NL-360M-[bd29ea/9a9924]"
-      - "🇳🇱NL-422M-[d4aa4c/884bfc]"
-      - "🇪🇪EE-95M-[c01fc9/60f4b9]"
       - "🇳🇱NL-490M-[e297b0/02316b]"
       - "🇳🇱NL-266M-[83b4ce/07b652]"
       - "🇳🇱NL-218M-[598062/e5b086]"
-      - "🇷🇺RU-246M-[71e211/e5271a]"
-      - "🇳🇱NL-494M-[dd742b/c54999]"
       - "🇳🇱NL-462M-[6732df/1c40dc]"
       - "🇳🇱NL-206M-[48604d/d8b204]"
       - "🇹🇷TR-175M-[a8e9d1/afe390]"
-      - "🇳🇱NL-420M-[da7aeb/252205]"
-      - "🇳🇱NL-446M-[f9a0f5/96a5a0]"
-      - "🇳🇱NL-395M-[7a3829/6f55fc]"
       - "🇳🇱NL-454M-[199a8e/b08d40]"
       - "🇳🇱NL-384M-[a0516b/3c1fa0]"
       - "🇳🇱NL-391M-[0af911/67b0a8]"
