@@ -6,6 +6,147 @@ log-level: warning
 ipv6: false
 
 proxies:
+  - name: "🇷🇺RU-420M-[71e211/e5271a]"
+    type: "hysteria2"
+    server: "194.87.118.184"
+    port: 2053
+    password: "7ab3c77e-8fcc-4848-918f-cae3d4eac794"
+    udp: true
+    sni: "match-stream.lovkisport.blog"
+
+  - name: "🇪🇸ES-160M-[6fef58/d382a7]"
+    type: "hysteria2"
+    server: "es2.xiaoliyu.cyou"
+    port: 18333
+    password: "8b64b840-a48d-4ac0-b10f-8f7d7081a0f1"
+    udp: true
+    sni: "es2.xiaoliyu.cyou"
+    skip-cert-verify: true
+
+  - name: "🇫🇮FI-233M-[15a3e2/30ea4c]"
+    type: "vless"
+    server: "62.60.159.81"
+    port: 2053
+    uuid: "fc00adfb-232a-46ce-8b93-0c70e516aa8a"
+    udp: true
+    encryption: "none"
+    servername: "www.samsung.com"
+    client-fingerprint: "safari"
+    tls: true
+    reality-opts:
+      public-key: "ygmJxS-Mc7g0buNSUTVGhazT-FoBjyYtLLfUYIQxFTw"
+      short-id: "d0ea1847066af5a6"
+    network: "grpc"
+    grpc-opts:
+      grpc-service-name: "grpce5bb9e71"
+
+  - name: "🇺🇸US-81M-[6c8da5/50f222]"
+    type: "vless"
+    server: "147.45.60.160"
+    port: 8444
+    uuid: "f55e9aba-7b14-4f6f-b59a-d5b3d45c9309"
+    udp: true
+    encryption: "none"
+    servername: "github.com"
+    client-fingerprint: "chrome"
+    tls: true
+    reality-opts:
+      public-key: "FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0"
+      short-id: ""
+    network: "grpc"
+    grpc-opts:
+      grpc-service-name: "GunService"
+      grpc-authority: "/?TELEGRAM--MARAMBASHI--MARAMBASHI--MARAMBASHI--MARAMBASHI"
+
+  - name: "🇳🇱NL-290M-[09f334/bc08b4]"
+    type: "ss"
+    server: "82.38.31.149"
+    port: 8080
+    cipher: "chacha20-ietf-poly1305"
+    password: "oZIoA69Q8yhcQV8ka3Pa3A"
+    udp: true
+
+  - name: "🇺🇸US-108M-[38bfa3/9fb256]"
+    type: "hysteria2"
+    server: "155.117.19.17"
+    port: 443
+    password: "5fa748137b6d822308eea4611f474ad5"
+    udp: true
+    sni: "www.bing.com"
+    skip-cert-verify: true
+    obfs: "salamander"
+    obfs-password: "a39ca173b57ac7021b08bf3e3de9f1f6"
+
+  - name: "🇺🇸US-77M-[41109c/52217a]"
+    type: "hysteria2"
+    server: "77.232.139.128"
+    port: 11592
+    password: "033dc6b532"
+    udp: true
+    sni: "srv-8718e6.frd21.ru"
+    obfs: "salamander"
+    obfs-password: "eba1b4766d2a26d6c167e2d2e9efabf4"
+
+  - name: "🇭🇰HK-132M-[4a21b5/65e372]"
+    type: "hysteria2"
+    server: "hk2.xiaoliyu.cyou"
+    port: 4433
+    password: "8b64b840-a48d-4ac0-b10f-8f7d7081a0f1"
+    udp: true
+    sni: "hk2.xiaoliyu.cyou"
+    skip-cert-verify: true
+
+  - name: "🇷🇴RO-237M-[2adb5e/979325]"
+    type: "hysteria2"
+    server: "185.156.44.99"
+    port: 443
+    password: "gf1:gfhysteria2024"
+    udp: true
+    sni: "speedtest.tinkoff.ru"
+    skip-cert-verify: true
+
+  - name: "🇳🇱NL-269M-[797068/14c325]"
+    type: "ss"
+    server: "82.38.31.219"
+    port: 8080
+    cipher: "chacha20-ietf-poly1305"
+    password: "k1dBOmOB4oqi7Ump37a1bQ"
+    udp: true
+
+  - name: "🇩🇪DE-243M-[e225de/554f6f]"
+    type: "trojan"
+    server: "199.232.78.160"
+    port: 443
+    password: "mitivpn"
+    udp: true
+    sni: "google.com"
+    client-fingerprint: "chrome"
+    skip-cert-verify: true
+    alpn:
+      - "http/1.1"
+    network: "ws"
+    ws-opts:
+      path: "/---@VPNine1---@VPNine1/---@VPNine1---@VPNine1/---@VPNine1---@VPNine1/NLSus---@VPNine1---@VPNine1/---@VPNine1---@VPNine1/---@VPNine1---@VPNine1"
+      headers:
+        Host: "mitivpn--s2.global.ssl.fastly.net"
+
+  - name: "🇩🇪DE-179M-[084390/77315e]"
+    type: "trojan"
+    server: "151.101.38.6"
+    port: 443
+    password: "mitivpn"
+    udp: true
+    sni: "www.firefox.com"
+    client-fingerprint: "chrome"
+    skip-cert-verify: true
+    alpn:
+      - "http/1.1"
+    network: "ws"
+    ws-opts:
+      path: "/---@VPNine1---@VPNine1/---@VPNine1---@VPNine1/---@VPNine1---@VPNine1/NLSus---@VPNine1---@VPNine1/---@VPNine1---@VPNine1/---@VPNine1---@VPNine1"
+      headers:
+        Host: "mitivpn--s3.global.ssl.fastly.net"
+
   - name: "🇳🇱NL-402M-[a0516b/3c1fa0]"
     type: "ss"
     server: "82.38.31.204"
@@ -40,14 +181,6 @@ proxies:
       path: "/"
       host: "132.243.65.82"
       mode: "auto"
-
-  - name: "🇳🇱NL-268M-[09f334/bc08b4]"
-    type: "ss"
-    server: "82.38.31.149"
-    port: 8080
-    cipher: "chacha20-ietf-poly1305"
-    password: "oZIoA69Q8yhcQV8ka3Pa3A"
-    udp: true
 
   - name: "🇳🇱NL-262M-[7b88cd/df01a2]"
     type: "ss"
@@ -121,23 +254,6 @@ proxies:
     password: "k1dBOmOB4oqi7Ump37a1bQ"
     udp: true
 
-  - name: "🇫🇮FI-284M-[15a3e2/30ea4c]"
-    type: "vless"
-    server: "62.60.159.81"
-    port: 2053
-    uuid: "fc00adfb-232a-46ce-8b93-0c70e516aa8a"
-    udp: true
-    encryption: "none"
-    servername: "www.samsung.com"
-    client-fingerprint: "safari"
-    tls: true
-    reality-opts:
-      public-key: "ygmJxS-Mc7g0buNSUTVGhazT-FoBjyYtLLfUYIQxFTw"
-      short-id: "d0ea1847066af5a6"
-    network: "grpc"
-    grpc-opts:
-      grpc-service-name: "grpce5bb9e71"
-
   - name: "🇳🇱NL-339M-[93b0a2/ed0aae]"
     type: "ss"
     server: "82.38.31.200"
@@ -195,37 +311,12 @@ proxies:
       headers:
         Host: "mitivpn--s2.global.ssl.fastly.net"
 
-  - name: "🇩🇪DE-145M-[084390/77315e]"
-    type: "trojan"
-    server: "151.101.38.6"
-    port: 443
-    password: "mitivpn"
-    udp: true
-    sni: "www.firefox.com"
-    client-fingerprint: "chrome"
-    skip-cert-verify: true
-    alpn:
-      - "http/1.1"
-    network: "ws"
-    ws-opts:
-      path: "/---@VPNine1---@VPNine1/---@VPNine1---@VPNine1/---@VPNine1---@VPNine1/NLSus---@VPNine1---@VPNine1/---@VPNine1---@VPNine1/---@VPNine1---@VPNine1"
-      headers:
-        Host: "mitivpn--s3.global.ssl.fastly.net"
-
   - name: "🇳🇱NL-364M-[67523d/fa6b3c]"
     type: "ss"
     server: "82.38.31.7"
     port: 8080
     cipher: "chacha20-ietf-poly1305"
     password: "oZIoA69Q8yhcQV8ka3Pa3A"
-    udp: true
-
-  - name: "🇳🇱NL-278M-[797068/14c325]"
-    type: "ss"
-    server: "82.38.31.219"
-    port: 8080
-    cipher: "chacha20-ietf-poly1305"
-    password: "k1dBOmOB4oqi7Ump37a1bQ"
     udp: true
 
   - name: "🇳🇱NL-205M-[e297b0/02316b]"
@@ -341,14 +432,6 @@ proxies:
     cipher: "chacha20-ietf-poly1305"
     password: "k1dBOmOB4oqi7Ump37a1bQ"
     udp: true
-
-  - name: "🇷🇺RU-420M-[71e211/e5271a]"
-    type: "hysteria2"
-    server: "194.87.118.184"
-    port: 2053
-    password: "7ab3c77e-8fcc-4848-918f-cae3d4eac794"
-    udp: true
-    sni: "match-stream.lovkisport.blog"
 
   - name: "🇳🇱NL-257M-[48604d/d8b204]"
     type: "ss"
@@ -585,27 +668,6 @@ proxies:
       headers:
         Host: "hgky2opr5fr3nkjg.v.3dns.vip"
 
-  - name: "🇺🇸US-111M-[38bfa3/9fb256]"
-    type: "hysteria2"
-    server: "155.117.19.17"
-    port: 443
-    password: "5fa748137b6d822308eea4611f474ad5"
-    udp: true
-    sni: "www.bing.com"
-    skip-cert-verify: true
-    obfs: "salamander"
-    obfs-password: "a39ca173b57ac7021b08bf3e3de9f1f6"
-
-  - name: "🇺🇸US-102M-[41109c/52217a]"
-    type: "hysteria2"
-    server: "77.232.139.128"
-    port: 11592
-    password: "033dc6b532"
-    udp: true
-    sni: "srv-8718e6.frd21.ru"
-    obfs: "salamander"
-    obfs-password: "eba1b4766d2a26d6c167e2d2e9efabf4"
-
   - name: "🇷🇺RU-140M-[6abb93/72b873]"
     type: "vless"
     server: "fitindoor.net"
@@ -828,10 +890,21 @@ proxy-groups:
   - name: "AUTO"
     type: select
     proxies:
+      - "🇷🇺RU-420M-[71e211/e5271a]"
+      - "🇪🇸ES-160M-[6fef58/d382a7]"
+      - "🇫🇮FI-233M-[15a3e2/30ea4c]"
+      - "🇺🇸US-81M-[6c8da5/50f222]"
+      - "🇳🇱NL-290M-[09f334/bc08b4]"
+      - "🇺🇸US-108M-[38bfa3/9fb256]"
+      - "🇺🇸US-77M-[41109c/52217a]"
+      - "🇭🇰HK-132M-[4a21b5/65e372]"
+      - "🇷🇴RO-237M-[2adb5e/979325]"
+      - "🇳🇱NL-269M-[797068/14c325]"
+      - "🇩🇪DE-243M-[e225de/554f6f]"
+      - "🇩🇪DE-179M-[084390/77315e]"
       - "🇳🇱NL-402M-[a0516b/3c1fa0]"
       - "🇷🇺RU-290M-[4d1389/281184]"
       - "🇪🇪EE-260M-[7bec22/38beed]"
-      - "🇳🇱NL-268M-[09f334/bc08b4]"
       - "🇳🇱NL-262M-[7b88cd/df01a2]"
       - "🇳🇱NL-374M-[f9a0f5/96a5a0]"
       - "🇳🇱NL-227M-[d15429/e16773]"
@@ -841,16 +914,13 @@ proxy-groups:
       - "🇳🇱NL-290M-[4d7a12/d0b82f]"
       - "🇳🇱NL-318M-[455f0e/54b992]"
       - "🇳🇱NL-114M-[da7aeb/252205]"
-      - "🇫🇮FI-284M-[15a3e2/30ea4c]"
       - "🇳🇱NL-339M-[93b0a2/ed0aae]"
       - "🇩🇪DE-109M-[6d02eb/73df81]"
       - "🇳🇱NL-280M-[0c6a0b/21f8f9]"
       - "🇳🇱NL-340M-[664ba6/9628a3]"
       - "🇳🇱NL-317M-[f9b827/6ce7b0]"
       - "🇩🇪DE-154M-[006578/a7e814]"
-      - "🇩🇪DE-145M-[084390/77315e]"
       - "🇳🇱NL-364M-[67523d/fa6b3c]"
-      - "🇳🇱NL-278M-[797068/14c325]"
       - "🇳🇱NL-205M-[e297b0/02316b]"
       - "🇳🇱NL-412M-[0e2372/a52c73]"
       - "🇳🇱NL-446M-[0af911/67b0a8]"
@@ -863,7 +933,6 @@ proxy-groups:
       - "🇳🇱NL-478M-[2c6c1b/cacfab]"
       - "🇳🇱NL-460M-[f9e2b5/74cdfc]"
       - "🇳🇱NL-452M-[83b4ce/07b652]"
-      - "🇷🇺RU-420M-[71e211/e5271a]"
       - "🇳🇱NL-257M-[48604d/d8b204]"
       - "🇳🇱NL-410M-[598062/e5b086]"
       - "🇳🇱NL-371M-[dad84f/eafe23]"
@@ -885,8 +954,6 @@ proxy-groups:
       - "🇷🇺RU-266M-[7a96bd/79f60e]"
       - "🇩🇪DE-64M-[c43d10/b34bf8]"
       - "🇩🇪DE-129M-[3d2bf3/90a73f]"
-      - "🇺🇸US-111M-[38bfa3/9fb256]"
-      - "🇺🇸US-102M-[41109c/52217a]"
       - "🇷🇺RU-140M-[6abb93/72b873]"
       - "🇳🇱NL-277M-[834705/4deed7]"
       - "🇹🇷TR-139M-[a8e9d1/683e8d]"
