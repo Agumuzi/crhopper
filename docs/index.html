@@ -19,7 +19,19 @@
 <header class="top">
   <a class="brand" href="#top" aria-label="CR-Hopper home"><img src="./assets/rocket.svg" alt="" width="40" height="40"><strong>CR<b>-</b>HOPPER<em>_</em></strong></a>
   <nav aria-label="Main navigation"><a href="#feeds" data-i18n="navFeeds">SUBSCRIPTIONS</a><a href="#how" data-i18n="navHow">HOW IT WORKS</a><a href="https://github.com/Agumuzi/crhopper" target="_blank" rel="noopener noreferrer">GITHUB ↗</a></nav>
-  <select id="language" aria-label="Website language"><option value="en">EN</option><option value="zh">中文</option><option value="ru">RU</option><option value="fa">فارسی</option></select>
+  <div class="language-switcher" id="language-switcher" dir="ltr">
+    <button class="language-toggle" id="language-toggle" type="button" aria-haspopup="menu" aria-expanded="false" aria-controls="language-menu" aria-label="English — select language">
+      <span class="language-flag" id="language-flag" aria-hidden="true">🇬🇧</span>
+      <span class="language-label" id="language-label">English</span>
+      <span class="language-chevron" aria-hidden="true">⌄</span>
+    </button>
+    <div class="language-menu" id="language-menu" role="menu" aria-label="Website language" hidden>
+      <button type="button" class="language-option" role="menuitemradio" aria-checked="true" data-language="en" lang="en"><span class="language-flag" aria-hidden="true">🇬🇧</span><span class="language-option-label">English</span></button>
+      <button type="button" class="language-option" role="menuitemradio" aria-checked="false" data-language="zh" lang="zh-CN"><span class="language-flag" aria-hidden="true">🇨🇳</span><span class="language-option-label">简体中文</span></button>
+      <button type="button" class="language-option" role="menuitemradio" aria-checked="false" data-language="ru" lang="ru"><span class="language-flag" aria-hidden="true">🇷🇺</span><span class="language-option-label">Русский</span></button>
+      <button type="button" class="language-option" role="menuitemradio" aria-checked="false" data-language="fa" lang="fa"><span class="language-flag" aria-hidden="true">🇮🇷</span><span class="language-option-label" dir="rtl">فارسی</span></button>
+    </div>
+  </div>
 </header>
 <main id="main">
 <section class="hero" id="top" aria-labelledby="hero-title">
