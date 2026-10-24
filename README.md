@@ -75,6 +75,12 @@ The repository **does not create, host or operate proxy servers**. All upstream 
 
 Public third-party nodes are not inherently trusted. Their operators may observe traffic metadata, and CR-Hopper does not guarantee confidentiality, integrity, endpoint ownership, privacy or security. Prefer end-to-end encrypted connections and avoid sending sensitive data through untrusted intermediaries.
 
+## Maintainer-only Google Drive sync
+
+**CR-Hopper Sync** is the project's maintainer-operated Google Drive archive integration. A separate local scanner uses `rclone` to back up project files and operational evidence to the maintainer's own Drive. This is **not** a Google login feature for public subscribers; subscribing to TXT or YAML never requires Google authorization. The published feed URLs are unchanged.
+
+[CR-Hopper Sync privacy policy](https://agumuzi.github.io/crhopper/privacy.html) describes data access, storage, retention, and revocation. OAuth client credentials and private scanner files are not part of this public repository.
+
 ## Website and branding
 
 The [CR-Hopper website](https://agumuzi.github.io/crhopper/) is a static, four-language project guide with copyable feed URLs. It lives in [docs/](./docs/), separate from the subscription files and publication workflow. The repository remains named **crhopper** to preserve existing remote URLs; the public-facing project name is **CR-Hopper**.
