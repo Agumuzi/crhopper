@@ -1,10 +1,14 @@
 <div align="center">
 
-# 🚀 CR-Hopper
+<img src="docs/assets/rocket.svg" alt="CR-Hopper pixel rocket" width="105" height="105">
+
+# CR-Hopper
 
 **اشتراک عمومیِ منتخب پروکسی برای Hiddify، Mihomo و کلاینت‌های سازگار با Clash.**
 
 [English](./README.md) · [简体中文](./README.zh-CN.md) · [Русский](./README.ru.md) · [فارسی](./README.fa.md)
+
+[**وب‌سایت پروژه / کپی آسان لینک‌ها**](https://agumuzi.github.io/crhopper/)
 
 </div>
 
