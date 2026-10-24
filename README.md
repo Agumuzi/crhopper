@@ -18,10 +18,27 @@ Free public proxy subscriptions for Hiddify, Mihomo and Clash-compatible clients
 
 ## Quick start
 
-| Client | Format | Remote subscription |
-| :-- | :-- | :-- |
-| **Hiddify** and URI-compatible clients | TXT / URI | [CR-Hopper.txt](https://raw.githubusercontent.com/Agumuzi/crhopper/main/CR-Hopper.txt) |
-| **Mihomo** and Clash-compatible clients | YAML | [CR-Hopper.yaml](https://raw.githubusercontent.com/Agumuzi/crhopper/main/CR-Hopper.yaml) |
+<table width="100%">
+<thead>
+<tr>
+<th align="left" width="43%">Client</th>
+<th align="left" width="17%">Format</th>
+<th align="left" width="40%">Remote subscription</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Hiddify</strong> and URI-compatible clients</td>
+<td>TXT / URI</td>
+<td><a href="https://raw.githubusercontent.com/Agumuzi/crhopper/main/CR-Hopper.txt">CR-Hopper.txt</a></td>
+</tr>
+<tr>
+<td><strong>Mihomo</strong> and Clash-compatible clients</td>
+<td>YAML</td>
+<td><a href="https://raw.githubusercontent.com/Agumuzi/crhopper/main/CR-Hopper.yaml">CR-Hopper.yaml</a></td>
+</tr>
+</tbody>
+</table>
 
 Add one of the raw URLs as a **remote subscription/profile** in your client. The [website](https://agumuzi.github.io/crhopper/#feeds) offers one-click copying and a short guide.
 
