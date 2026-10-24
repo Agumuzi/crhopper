@@ -1,8 +1,14 @@
 <div align="center">
 
-# 🚀 CR-Hopper
+<img src="docs/assets/rocket.svg" width="116" height="116" alt="CR-Hopper pixel rocket logo">
 
-**Curated public proxy subscription feeds for Hiddify, Mihomo and Clash-compatible clients.**
+# CR-Hopper
+
+**Curated public proxy feeds. Ready for your client.**
+
+Free public proxy subscriptions for Hiddify, Mihomo and Clash-compatible clients.
+
+[**Website / Quick Start**](https://agumuzi.github.io/crhopper/) · [**TXT Feed**](https://raw.githubusercontent.com/Agumuzi/crhopper/main/CR-Hopper.txt) · [**YAML Feed**](https://raw.githubusercontent.com/Agumuzi/crhopper/main/CR-Hopper.yaml) · [Issues](https://github.com/Agumuzi/crhopper/issues)
 
 [English](./README.md) · [简体中文](./README.zh-CN.md) · [Русский](./README.ru.md) · [فارسی](./README.fa.md)
 
@@ -10,42 +16,51 @@
 
 ---
 
-## Subscription links
+## Quick start
 
-### Hiddify / URI subscription
+| Client | Format | Remote subscription |
+| :-- | :-- | :-- |
+| **Hiddify** and URI-compatible clients | TXT / URI | [CR-Hopper.txt](https://raw.githubusercontent.com/Agumuzi/crhopper/main/CR-Hopper.txt) |
+| **Mihomo** and Clash-compatible clients | YAML | [CR-Hopper.yaml](https://raw.githubusercontent.com/Agumuzi/crhopper/main/CR-Hopper.yaml) |
 
-Copy the link below and add it as a remote profile in Hiddify or another URI-subscription client.
+Add one of the raw URLs as a **remote subscription/profile** in your client. The [website](https://agumuzi.github.io/crhopper/#feeds) offers one-click copying and a short guide.
 
-```text
+### Permanent feed URLs
+
+~~~text
 https://raw.githubusercontent.com/Agumuzi/crhopper/main/CR-Hopper.txt
-```
-
-### Mihomo / Clash YAML
-
-Copy the link below and use it as a remote YAML profile in Mihomo / Clash-compatible clients.
-
-```text
 https://raw.githubusercontent.com/Agumuzi/crhopper/main/CR-Hopper.yaml
-```
+~~~
 
-## What is CR-Hopper?
+These URLs and filenames are intentionally preserved for existing subscribers.
 
-CR-Hopper publishes a compact set of proxy nodes that have already passed upstream qualification and runtime preparation before publication.
+## How it works
 
-All upstream proxy candidates processed by CR-Hopper come from sources that are already publicly available on the Internet. CR-Hopper does not create, host or operate those upstream nodes; it only collects, screens, validates and republishes a filtered subset in client-ready formats.
+CR-Hopper collects proxy candidates from sources already public on the Internet, screens and prepares a changing selection, then republishes it in client-ready formats.
 
-The public feed may contain multiple protocols, including VLESS, Hysteria2 and Shadowsocks. The exact node count and protocol mix can change between updates.
+~~~text
+PUBLIC SOURCES → COLLECT → FILTER → PREPARE → PUBLISH
+                                           ├─ URI / TXT → Hiddify
+                                           └─ YAML      → Mihomo / Clash
+~~~
 
-## Recommended clients
+The repository **does not create, host or operate proxy servers**. All upstream nodes belong to independent third parties. The publicly published set can include VLESS, Hysteria2 and Shadowsocks, depending on available candidates and filtering outcomes. The TXT and YAML feeds represent the same selected set in different formats.
 
-- **Hiddify:** use `CR-Hopper.txt`
-- **Mihomo / Clash-compatible clients:** use `CR-Hopper.yaml`
+## Compatibility
 
-## Notes
+- **Hiddify:** use the TXT/URI subscription.
+- **Mihomo and Clash-compatible clients:** use the YAML subscription.
+- Other compatible clients can use the format they support.
 
-- Public proxy nodes can become unavailable at any time. Refresh the subscription when connectivity changes.
-- Geo information shown by a client is determined by the client and may differ from the node label.
-- The TXT and YAML feeds represent the same published candidate set in different formats.
+**When connections stop working:** try refreshing your subscription. Public nodes are ephemeral and may disappear without notice. Node speed, location and uptime are not guaranteed; a client-reported location may differ from a node label or actual egress.
+
+## Privacy and security
+
+Public third-party nodes are not inherently trusted. Their operators may observe traffic metadata, and CR-Hopper does not guarantee confidentiality, integrity, endpoint ownership, privacy or security. Prefer end-to-end encrypted connections and avoid sending sensitive data through untrusted intermediaries.
+
+## Website and branding
+
+The [CR-Hopper website](https://agumuzi.github.io/crhopper/) is a static, four-language project guide with copyable feed URLs. It lives in [docs/](./docs/), separate from the subscription files and publication workflow. The repository remains named **crhopper** to preserve existing remote URLs; the public-facing project name is **CR-Hopper**.
 
 ## Disclaimer
 
@@ -58,3 +73,7 @@ The repository maintainers do not operate, control or guarantee the third-party 
 The project is provided **"as is"** and **"as available"**, without warranties of any kind. Users assume all risks arising from their use of the project and are responsible for their own network activity, data, accounts, devices and compliance obligations.
 
 To the fullest extent permitted by applicable law, the developers and maintainers shall not be responsible or liable for misuse of the project, unlawful activity by users, service interruptions, account restrictions, data loss or exposure, security incidents, financial loss, legal consequences, or any other direct or indirect damages arising from the use of, or inability to use, CR-Hopper.
+
+---
+
+<sub>Maintained by [Agumuzi](https://github.com/Agumuzi). All upstream nodes are third-party resources. No uptime, privacy or security guarantees.</sub>
