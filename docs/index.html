@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CR-Hopper — Curated Public Proxy Feeds</title>
+<meta name="description" content="Free curated public proxy subscriptions for Hiddify, Mihomo and Clash-compatible clients. Two client-ready formats: URI/TXT and YAML.">
+<meta name="theme-color" content="#08121a"><meta property="og:type" content="website">
+<meta property="og:title" content="CR-Hopper · Curated Public Proxy Feeds">
+<meta property="og:description" content="Public sources. Curated feeds. Ready for your client.">
+<meta property="og:url" content="https://agumuzi.github.io/crhopper/">
+<link rel="canonical" href="https://agumuzi.github.io/crhopper/">
+<link rel="icon" href="./assets/rocket.svg" type="image/svg+xml">
+<link rel="stylesheet" href="./assets/style.css">
+<script src="./assets/app.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="site">
+<header class="top">
+  <a class="brand" href="#top" aria-label="CR-Hopper home"><img src="./assets/rocket.svg" alt="" width="40" height="40"><strong>CR<b>-</b>HOPPER<em>_</em></strong></a>
+  <nav aria-label="Main navigation"><a href="#feeds" data-i18n="navFeeds">SUBSCRIPTIONS</a><a href="#how" data-i18n="navHow">HOW IT WORKS</a><a href="https://github.com/Agumuzi/crhopper" target="_blank" rel="noopener noreferrer">GITHUB ↗</a></nav>
+  <select id="language" aria-label="Website language"><option value="en">EN</option><option value="zh">中文</option><option value="ru">RU</option><option value="fa">فارسی</option></select>
+</header>
+<main id="main">
+<section class="hero" id="top" aria-labelledby="hero-title">
+  <div><div class="eyebrow"><span class="dot"></span><span data-i18n="eyebrow">PUBLIC FEEDS // INDEPENDENT PROJECT</span></div>
+  <h1 id="hero-title">CR<span class="dash">-</span><span class="mint">HOPPER</span><span class="cursor" aria-hidden="true">█</span></h1>
+  <h2 data-i18n="heroText">Curated public proxy feeds. Ready for your client.</h2>
+  <p class="lead" data-i18n="heroDesc">A compact collection of public third-party proxy nodes, screened and published in client-ready subscription formats. No account. No paid tier.</p>
+  <div class="hero-actions"><a class="btn btn-primary" href="#feeds" data-i18n="getLinks">GET SUBSCRIPTION LINKS ↘</a><a class="btn" href="https://github.com/Agumuzi/crhopper" target="_blank" rel="noopener noreferrer">VIEW SOURCE ↗</a></div>
+  <div class="tags"><span>URI / TXT</span><span>MIHOMO / YAML</span><span>PUBLIC SOURCES</span></div></div>
+  <div class="hero-visual"><div class="orbit"></div><div class="orbit second"></div><img src="./assets/rocket.svg" width="270" height="270" alt="Pixel rocket emblem in red, white, blue and green"><small>↗ CRH://OPEN_NETWORK <span>READY</span></small></div>
+</section>
+<section class="section" id="feeds" aria-labelledby="feeds-title">
+  <div class="section-id">01 / FEEDS</div><h2 id="feeds-title" data-i18n="feedsTitle">Your connection starts here.</h2>
+  <p class="subtitle" data-i18n="feedsDesc">Copy a link and add it as a remote profile in your compatible client.</p>
+  <div class="feed-grid">
+    <article class="card"><div class="card-bar"><span class="lights">● ● ●</span><span>URI / TXT</span><span>01</span></div>
+      <div class="card-body"><span class="label">FOR HIDDIFY + URI CLIENTS</span><h3>Hiddify</h3><p data-i18n="uriDesc">A TXT/URI subscription for Hiddify and clients that accept remote URI profiles.</p>
+      <div class="code"><code>https://raw.githubusercontent.com/Agumuzi/crhopper/main/CR-Hopper.txt</code></div>
+      <button type="button" class="btn copy" data-copy="txt" data-i18n="copy">COPY LINK ↗</button></div>
+    </article>
+    <article class="card"><div class="card-bar"><span class="lights">● ● ●</span><span>MIHOMO / YAML</span><span>02</span></div>
+      <div class="card-body"><span class="label">FOR MIHOMO + CLASH CLIENTS</span><h3>Mihomo</h3><p data-i18n="yamlDesc">A YAML remote profile for Mihomo and compatible Clash clients.</p>
+      <div class="code"><code>https://raw.githubusercontent.com/Agumuzi/crhopper/main/CR-Hopper.yaml</code></div>
+      <button type="button" class="btn copy" data-copy="yaml" data-i18n="copy">COPY LINK ↗</button></div>
+    </article>
+  </div>
+  <p class="warning" data-i18n="warning">! Public third-party nodes may be slow, unsafe or unavailable at any time. Refresh the feed if connections fail. Security, privacy and uptime are not guaranteed.</p>
+</section>
+<section class="section" id="how" aria-labelledby="how-title">
+  <div class="section-id">02 / PROCESS</div><h2 id="how-title" data-i18n="howTitle">From public sources to client-ready feeds.</h2>
+  <p class="subtitle" data-i18n="howDesc">CR-Hopper organizes public nodes operated by independent third parties. It does not own or run the servers.</p>
+  <div class="steps">
+    <article class="step"><span class="num">01</span><div class="symbol">▦</div><h3 data-i18n="collect">COLLECT</h3><p data-i18n="collectDesc">Gather publicly available upstream candidates.</p></article>
+    <article class="step"><span class="num">02</span><div class="symbol">▤</div><h3 data-i18n="filter">FILTER</h3><p data-i18n="filterDesc">Screen the candidates before publication.</p></article>
+    <article class="step"><span class="num">03</span><div class="symbol">◇</div><h3 data-i18n="prepare">PREPARE</h3><p data-i18n="prepareDesc">Check and prepare selected entries.</p></article>
+    <article class="step"><span class="num">04</span><div class="symbol">⇧</div><h3 data-i18n="publish">PUBLISH</h3><p data-i18n="publishDesc">Publish URI/TXT and YAML feeds.</p></article>
+  </div>
+</section>
+<section class="section about" id="about">
+  <div class="terminal" aria-label="Illustrative project manifest"><div class="card-bar"><span class="lights">● ● ●</span><span>MANIFEST / PROJECT</span><span>READ ONLY</span></div>
+  <pre><span class="prompt">$ project-info</span>
+{
+  <span class="key">"upstream"</span>: <span class="str">"public third-party nodes"</span>,
+  <span class="key">"formats"</span>: [<span class="str">"URI/TXT"</span>, <span class="str">"Mihomo YAML"</span>],
+  <span class="key">"operates_servers"</span>: <span class="bool">false</span>,
+  <span class="key">"uptime_guarantee"</span>: <span class="bool">false</span>,
+  <span class="key">"cost"</span>: <span class="str">"free"</span>
+}
+<span class="comment">// Project facts; not live telemetry</span></pre></div>
+  <div><div class="section-id">03 / ABOUT</div><h2 data-i18n="aboutTitle">An open project. Not a proxy provider.</h2>
+  <p data-i18n="aboutDesc">CR-Hopper collects, screens and republishes a changing selection of public proxy nodes. The servers remain third-party infrastructure; their speed, safety, exit location and privacy cannot be guaranteed.</p>
+  <a class="text-link" href="https://github.com/Agumuzi/crhopper" target="_blank" rel="noopener noreferrer" data-i18n="viewRepo">EXPLORE REPOSITORY ↗</a></div>
+</section>
+<section class="section" id="faq" aria-labelledby="faq-title">
+  <div class="section-id">04 / FAQ</div><h2 id="faq-title" data-i18n="faqTitle">Before you connect.</h2>
+  <div class="faq">
+    <details><summary data-i18n="q1">Is CR-Hopper free?</summary><p data-i18n="a1">Yes. The published subscription URLs are free to use without registration; individual servers are operated by third parties.</p></details>
+    <details><summary data-i18n="q2">Which subscription should I use?</summary><p data-i18n="a2">Use TXT for Hiddify/URI-compatible clients; YAML for Mihomo and Clash-compatible clients.</p></details>
+    <details><summary data-i18n="q3">Why do nodes stop working?</summary><p data-i18n="a3">Public third-party nodes can disappear without notice. Refresh the subscription when needed.</p></details>
+    <details><summary data-i18n="q4">Are these proxies secure?</summary><p data-i18n="a4">There is no security guarantee. Untrusted operators may inspect traffic metadata. Prefer end-to-end encrypted connections and avoid exposing sensitive data.</p></details>
+  </div>
+</section>
+<section class="disclaimer" aria-labelledby="notice-title">
+ <div><div class="section-id">05 / NOTICE</div><h2 id="notice-title" data-i18n="noticeTitle">Use responsibly.</h2>
+ <p data-i18n="notice">For testing, research and personal network use. Comply with local laws and service terms. CR-Hopper does not operate upstream nodes; availability, security, speed, privacy and egress location are not guaranteed. Provided as is.</p></div>
+ <a class="text-link" href="https://github.com/Agumuzi/crhopper#disclaimer" data-i18n="full">FULL DISCLAIMER ↗</a>
+</section>
+</main>
+<footer><div class="foot"><img src="./assets/rocket.svg" alt="" width="29" height="29"><strong>CR-HOPPER</strong><span>© 2026 AGUMUZI</span></div><div><a href="https://github.com/Agumuzi/crhopper">GITHUB ↗</a><a href="#feeds" data-i18n="footerFeeds">FEEDS ↑</a></div></footer></div>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body></html>
