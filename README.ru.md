@@ -1,10 +1,14 @@
 <div align="center">
 
-# 🚀 CR-Hopper
+<img src="docs/assets/rocket.svg" alt="CR-Hopper pixel rocket" width="105" height="105">
+
+# CR-Hopper
 
 **Отобранные публичные подписки прокси для Hiddify, Mihomo и Clash-совместимых клиентов.**
 
 [English](./README.md) · [简体中文](./README.zh-CN.md) · [Русский](./README.ru.md) · [فارسی](./README.fa.md)
+
+[**Сайт проекта / быстрое копирование**](https://agumuzi.github.io/crhopper/)
 
 </div>
 
