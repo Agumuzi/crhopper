@@ -108,3 +108,18 @@
     word-break:break-all;
   }
 }
+
+/* Maintainer OAuth disclosure and privacy policy, matching the existing terminal theme. */
+.sync-section .subtitle{max-width:900px;line-height:1.9}
+.policy-hero{padding:74px 0 42px}
+.policy-hero h1{font-size:clamp(37px,5.8vw,68px);letter-spacing:-.065em;line-height:1.2;margin:17px 0 22px}
+.policy-hero .lead{max-width:900px;line-height:1.9}
+.policy-date{color:var(--mint);font-size:11px;letter-spacing:.04em;margin-top:25px}
+.policy-content{max-width:960px;min-width:0}
+.policy-content .section{padding:32px 0}
+.policy-content h2{font-size:clamp(20px,2.7vw,27px);letter-spacing:-.035em;margin:0 0 14px}
+.policy-content p{font-size:13px;line-height:1.95;color:var(--muted);overflow-wrap:anywhere;margin:0 0 14px}
+.policy-content p:last-child{margin-bottom:0}
+.policy-actions{padding:30px 0 80px}
+footer>div:nth-child(2){flex-wrap:wrap}
+@media(max-width:720px){.policy-hero{padding:56px 0 38px}.policy-content .section{padding:25px 0}.policy-actions{padding-bottom:56px}}
