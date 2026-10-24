@@ -63,3 +63,48 @@
   .language-toggle{min-width:132px;max-width:142px}
   .hero h1{font-size:clamp(35px,10.3vw,39px)}
 }
+
+
+/* Subscription URLs: explicit break opportunities in markup plus robust narrow viewport layout. */
+.feed-grid,
+.feed-grid > .card,
+.feed-grid .card-body,
+.subscription-url {
+  min-width: 0;
+  max-width: 100%;
+}
+.feed-grid > .card { overflow: hidden; }
+.subscription-url {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+  text-align: left;
+  direction: ltr;
+}
+.subscription-url .subscription-url-text {
+  display: block;
+  min-width: 0;
+  max-width: 100%;
+  white-space: normal;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+  line-height: 1.65;
+}
+@media(max-width:720px) {
+  .feed-grid{width:100%;grid-template-columns:minmax(0,1fr);}
+  .feed-grid > .card{width:100%;min-width:0;max-width:100%;}
+  .subscription-url{
+    padding: 11px 10px;
+    overflow-x: hidden;
+  }
+  .subscription-url .subscription-url-text {
+    font-size:clamp(10px,2.65vw,12px);
+    letter-spacing:-.02em;
+    white-space:normal;
+    overflow-wrap:anywhere;
+    word-break:break-all;
+  }
+}
