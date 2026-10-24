@@ -1,10 +1,14 @@
 <div align="center">
 
-# 🚀 CR-Hopper
+<img src="docs/assets/rocket.svg" alt="CR-Hopper pixel rocket" width="105" height="105">
+
+# CR-Hopper
 
 **面向 Hiddify、Mihomo 与 Clash 兼容客户端的精选公共代理订阅。**
 
 [English](./README.md) · [简体中文](./README.zh-CN.md) · [Русский](./README.ru.md) · [فارسی](./README.fa.md)
+
+[**项目官网 / 一键复制订阅**](https://agumuzi.github.io/crhopper/)
 
 </div>
 
