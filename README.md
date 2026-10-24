@@ -81,6 +81,12 @@ Public third-party nodes are not inherently trusted. Their operators may observe
 
 [CR-Hopper Sync privacy policy](https://agumuzi.github.io/crhopper/privacy.html) describes data access, storage, retention, and revocation. OAuth client credentials and private scanner files are not part of this public repository.
 
+## Contributing and security
+
+- [Contributing](CONTRIBUTING.md) — website, subscription-format, translation and compatibility feedback.
+- [Security policy](SECURITY.md) — report project vulnerabilities privately where supported. Do not post private nodes, tokens or personal logs in public issues.
+- **License status:** No repository-wide open-source license has been granted for this project. The public third-party proxy entries do not become the maintainer's intellectual property merely by being republished.
+
 ## Website and branding
 
 The [CR-Hopper website](https://agumuzi.github.io/crhopper/) is a static, four-language project guide with copyable feed URLs. It lives in [docs/](./docs/), separate from the subscription files and publication workflow. The repository remains named **crhopper** to preserve existing remote URLs; the public-facing project name is **CR-Hopper**.
