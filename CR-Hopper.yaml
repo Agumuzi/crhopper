@@ -6,7 +6,7 @@ log-level: warning
 ipv6: false
 
 proxies:
-  - name: "🇦🇹AT-276M-[d50cc3/96f1e6]"
+  - name: "🇦🇹AT-437M-[d50cc3/96f1e6]"
     type: "vless"
     server: "50.7.36.29"
     port: 443
@@ -20,7 +20,74 @@ proxies:
     tls: true
     network: "tcp"
 
-  - name: "🇳🇱NL-468M-[598062/e5b086]"
+  - name: "🇳🇱NL-276M-[56acf6/9247c3]"
+    type: "ss"
+    server: "82.38.31.169"
+    port: 443
+    cipher: "chacha20-ietf-poly1305"
+    password: "oZIoA69Q8yhcQV8ka3Pa3A"
+    udp: true
+
+  - name: "🇳🇱NL-221M-[0e2372/a52c73]"
+    type: "ss"
+    server: "82.38.31.220"
+    port: 8080
+    cipher: "chacha20-ietf-poly1305"
+    password: "k1dBOmOB4oqi7Ump37a1bQ"
+    udp: true
+
+  - name: "🇳🇱NL-216M-[797068/14c325]"
+    type: "ss"
+    server: "82.38.31.219"
+    port: 8080
+    cipher: "chacha20-ietf-poly1305"
+    password: "k1dBOmOB4oqi7Ump37a1bQ"
+    udp: true
+
+  - name: "🇩🇪DE-213M-[e225de/d39348]"
+    type: "trojan"
+    server: "199.232.78.160"
+    port: 443
+    password: "mitivpn"
+    udp: true
+    sni: "community.fastly.steamstatic.com"
+    client-fingerprint: "android"
+    skip-cert-verify: true
+    network: "ws"
+    ws-opts:
+      path: "/---@VPNine1---@VPNine1/---@VPNine1---@VPNine1/---@VPNine1---@VPNine1/NLSus---@VPNine1---@VPNine1/---@VPNine1---@VPNine1/---@VPNine1---@VPNine1"
+      headers:
+        Host: "mitivpn-mitivpn.ac.ir"
+
+  - name: "🇩🇪DE-215M-[1b414a/bd4c27]"
+    type: "trojan"
+    server: "151.101.36.244"
+    port: 443
+    password: "mitivpn"
+    udp: true
+    sni: "ns2.firefox.com"
+    client-fingerprint: "android"
+    skip-cert-verify: true
+    alpn:
+      - "http/1.1"
+    network: "ws"
+    ws-opts:
+      path: "/---@VPNine1---@VPNine1/---@VPNine1---@VPNine1/---@VPNine1---@VPNine1/NLSus---@VPNine1---@VPNine1/---@VPNine1---@VPNine1/---@VPNine1---@VPNine1"
+      headers:
+        Host: "mitivpn-mitivpn.ac.ir"
+
+  - name: "🇹🇷TR-244M-[f37d8b/f0c486]"
+    type: "hysteria2"
+    server: "153.56.210.134"
+    port: 34121
+    password: "c8ed6cd1-6566-4f7a-819e-1c55b2b360c9"
+    udp: true
+    sni: "www.bing.com"
+    skip-cert-verify: true
+    obfs: "salamander"
+    obfs-password: "9a33460c-b037-47aa-a606-d04211f4e0ec"
+
+  - name: "🇳🇱NL-352M-[598062/e5b086]"
     type: "ss"
     server: "82.38.31.2"
     port: 8080
@@ -28,18 +95,101 @@ proxies:
     password: "oZIoA69Q8yhcQV8ka3Pa3A"
     udp: true
 
-  - name: "🇳🇱NL-438M-[d4aa4c/884bfc]"
+  - name: "🇺🇸US-100M-[a1a4ff/ab6f26]"
+    type: "vless"
+    server: "www.qarvian.ir"
+    port: 443
+    uuid: "f9a9aa1f-75fb-4490-9155-85567af7a0ff"
+    udp: true
+    encryption: "none"
+    servername: "cdn.akamai.steamstatic.com"
+    client-fingerprint: "chrome"
+    skip-cert-verify: true
+    tls: true
+    network: "ws"
+    ws-opts:
+      path: "/?TELEGRAM--FaraGATE-FaraGATE-FaraGATE-FaraGATE-FaraGATE-FaraGATE-FaraGATE-FaraGATE-FaraGATE-FaraGATE--TELEGRAM"
+      headers:
+        Host: "copy_az_channel_NUFiLTER_17i.global.ssl.fastly.net."
+
+  - name: "🇪🇸ES-68M-[c55faa/0d7c8d]"
+    type: "vless"
+    server: "api.ferrin.uk"
+    port: 443
+    uuid: "7d1a74fd-8a38-4a29-863f-5da53a9e557e"
+    udp: true
+    encryption: "none"
+    packet-encoding: "xudp"
+    servername: "7d1a74fd.ferrin.uk"
+    client-fingerprint: "firefox"
+    alpn:
+      - "h2"
+    tls: true
+    network: "xhttp"
+    xhttp-opts:
+      path: "/es"
+      mode: "stream-one"
+
+  - name: "🇩🇪DE-165M-[f40d3d/069d77]"
+    type: "vless"
+    server: "87.120.126.12"
+    port: 443
+    uuid: "f5e70ce3-cfb4-4df1-b25c-d19bfae627c0"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "twitch.tv"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "1ICPOmjNd4sps44xtIF3CggFUMC2XITPoF6IBOqir3E"
+      short-id: ""
+    network: "tcp"
+
+  - name: "🇹🇼TW-61M-[3134ee/0c792c]"
+    type: "trojan"
+    server: "kw119.zxmm.eu.org"
+    port: 20031
+    password: "00a72bf349e6479b"
+    udp: true
+    sni: "kw119.zxmm.eu.org"
+    skip-cert-verify: true
+    network: "tcp"
+
+  - name: "🇳🇱NL-29M-[664ba6/9628a3]"
     type: "ss"
-    server: "82.38.31.149"
+    server: "82.38.31.171"
+    port: 8080
+    cipher: "chacha20-ietf-poly1305"
+    password: "oZIoA69Q8yhcQV8ka3Pa3A"
+    udp: true
+
+  - name: "🇳🇱NL-53M-[f9b827/6ce7b0]"
+    type: "ss"
+    server: "82.38.31.171"
     port: 443
     cipher: "chacha20-ietf-poly1305"
     password: "oZIoA69Q8yhcQV8ka3Pa3A"
     udp: true
 
-  - name: "🇳🇱NL-307M-[664ba6/9628a3]"
+  - name: "🇫🇷FR-35M-[7bbe1e/808cde]"
+    type: "vless"
+    server: "194.24.161.220"
+    port: 443
+    uuid: "4c5a54b3-774e-4391-b78e-f3e9fa928792"
+    udp: true
+    encryption: "none"
+    servername: "borsch2.spravedlivost.fun"
+    client-fingerprint: "firefox"
+    tls: true
+    network: "ws"
+    ws-opts:
+      path: "/api/metric/ws"
+
+  - name: "🇳🇱NL-438M-[d4aa4c/884bfc]"
     type: "ss"
-    server: "82.38.31.171"
-    port: 8080
+    server: "82.38.31.149"
+    port: 443
     cipher: "chacha20-ietf-poly1305"
     password: "oZIoA69Q8yhcQV8ka3Pa3A"
     udp: true
@@ -92,28 +242,12 @@ proxies:
     password: "k1dBOmOB4oqi7Ump37a1bQ"
     udp: true
 
-  - name: "🇳🇱NL-444M-[56acf6/9247c3]"
-    type: "ss"
-    server: "82.38.31.169"
-    port: 443
-    cipher: "chacha20-ietf-poly1305"
-    password: "oZIoA69Q8yhcQV8ka3Pa3A"
-    udp: true
-
   - name: "🇳🇱NL-473M-[2c6c1b/cacfab]"
     type: "ss"
     server: "82.38.31.212"
     port: 8080
     cipher: "chacha20-ietf-poly1305"
     password: "k1dBOmOB4oqi7Ump37a1bQ"
-    udp: true
-
-  - name: "🇳🇱NL-347M-[f9b827/6ce7b0]"
-    type: "ss"
-    server: "82.38.31.171"
-    port: 443
-    cipher: "chacha20-ietf-poly1305"
-    password: "oZIoA69Q8yhcQV8ka3Pa3A"
     udp: true
 
   - name: "🇳🇱NL-467M-[0af911/67b0a8]"
@@ -188,17 +322,6 @@ proxies:
     cipher: "chacha20-ietf-poly1305"
     password: "oZIoA69Q8yhcQV8ka3Pa3A"
     udp: true
-
-  - name: "🇹🇷TR-80M-[f37d8b/f0c486]"
-    type: "hysteria2"
-    server: "153.56.210.134"
-    port: 34121
-    password: "c8ed6cd1-6566-4f7a-819e-1c55b2b360c9"
-    udp: true
-    sni: "www.bing.com"
-    skip-cert-verify: true
-    obfs: "salamander"
-    obfs-password: "9a33460c-b037-47aa-a606-d04211f4e0ec"
 
   - name: "🇳🇱NL-276M-[96e68e/4d56ba]"
     type: "ss"
@@ -618,25 +741,9 @@ proxies:
     udp: true
     sni: "de5.shvpn.ru"
 
-  - name: "🇳🇱NL-122M-[0e2372/a52c73]"
-    type: "ss"
-    server: "82.38.31.220"
-    port: 8080
-    cipher: "chacha20-ietf-poly1305"
-    password: "k1dBOmOB4oqi7Ump37a1bQ"
-    udp: true
-
   - name: "🇳🇱NL-185M-[cf9e21/710c07]"
     type: "ss"
     server: "82.38.31.178"
-    port: 8080
-    cipher: "chacha20-ietf-poly1305"
-    password: "k1dBOmOB4oqi7Ump37a1bQ"
-    udp: true
-
-  - name: "🇳🇱NL-135M-[797068/14c325]"
-    type: "ss"
-    server: "82.38.31.219"
     port: 8080
     cipher: "chacha20-ietf-poly1305"
     password: "k1dBOmOB4oqi7Ump37a1bQ"
@@ -1039,19 +1146,29 @@ proxy-groups:
   - name: "AUTO"
     type: select
     proxies:
-      - "🇦🇹AT-276M-[d50cc3/96f1e6]"
-      - "🇳🇱NL-468M-[598062/e5b086]"
+      - "🇦🇹AT-437M-[d50cc3/96f1e6]"
+      - "🇳🇱NL-276M-[56acf6/9247c3]"
+      - "🇳🇱NL-221M-[0e2372/a52c73]"
+      - "🇳🇱NL-216M-[797068/14c325]"
+      - "🇩🇪DE-213M-[e225de/d39348]"
+      - "🇩🇪DE-215M-[1b414a/bd4c27]"
+      - "🇹🇷TR-244M-[f37d8b/f0c486]"
+      - "🇳🇱NL-352M-[598062/e5b086]"
+      - "🇺🇸US-100M-[a1a4ff/ab6f26]"
+      - "🇪🇸ES-68M-[c55faa/0d7c8d]"
+      - "🇩🇪DE-165M-[f40d3d/069d77]"
+      - "🇹🇼TW-61M-[3134ee/0c792c]"
+      - "🇳🇱NL-29M-[664ba6/9628a3]"
+      - "🇳🇱NL-53M-[f9b827/6ce7b0]"
+      - "🇫🇷FR-35M-[7bbe1e/808cde]"
       - "🇳🇱NL-438M-[d4aa4c/884bfc]"
-      - "🇳🇱NL-307M-[664ba6/9628a3]"
       - "🇳🇱NL-447M-[dad84f/eafe23]"
       - "🇳🇱NL-406M-[03f0cb/7d4208]"
       - "🇳🇱NL-433M-[e05175/ecd88f]"
       - "🇳🇱NL-456M-[a0516b/3c1fa0]"
       - "🇳🇱NL-434M-[e297b0/02316b]"
       - "🇳🇱NL-519M-[f9a0f5/96a5a0]"
-      - "🇳🇱NL-444M-[56acf6/9247c3]"
       - "🇳🇱NL-473M-[2c6c1b/cacfab]"
-      - "🇳🇱NL-347M-[f9b827/6ce7b0]"
       - "🇳🇱NL-467M-[0af911/67b0a8]"
       - "🇳🇱NL-307M-[d15429/e16773]"
       - "🌐XX-393M-[6732df/1c40dc]"
@@ -1060,7 +1177,6 @@ proxy-groups:
       - "🇳🇱NL-414M-[09f334/bc08b4]"
       - "🇳🇱NL-411M-[67523d/fa6b3c]"
       - "🇳🇱NL-276M-[6413a2/a0f577]"
-      - "🇹🇷TR-80M-[f37d8b/f0c486]"
       - "🇳🇱NL-276M-[96e68e/4d56ba]"
       - "🇳🇱NL-276M-[0c6a0b/21f8f9]"
       - "🇳🇱NL-276M-[bd29ea/9a9924]"
@@ -1105,9 +1221,7 @@ proxy-groups:
       - "🇫🇮FI-332M-[dac064/4fce61]"
       - "🇳🇱NL-342M-[4b1ee0/48ca28]"
       - "🇩🇪DE-194M-[55003e/1b52d4]"
-      - "🇳🇱NL-122M-[0e2372/a52c73]"
       - "🇳🇱NL-185M-[cf9e21/710c07]"
-      - "🇳🇱NL-135M-[797068/14c325]"
       - "🌐XX-296M-[630554/5aed96]"
       - "🇮🇹IT-411M-[d57070/9abc1e]"
       - "🇮🇹IT-407M-[f44479/81e57b]"
