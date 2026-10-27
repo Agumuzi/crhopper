@@ -8,7 +8,7 @@
 
 Free public proxy subscriptions for Hiddify, Mihomo and Clash-compatible clients.
 
-[**Website / Quick Start**](https://agumuzi.github.io/crhopper/) · [**TXT Feed**](https://raw.githubusercontent.com/Agumuzi/crhopper/main/CR-Hopper.txt) · [**YAML Feed**](https://raw.githubusercontent.com/Agumuzi/crhopper/main/CR-Hopper.yaml) · [Issues](https://github.com/Agumuzi/crhopper/issues)
+[**Website / Quick Start**](https://agumuzi.github.io/crhopper/) · [☕ Support development](https://ko-fi.com/agumuzi) · [**TXT Feed**](https://raw.githubusercontent.com/Agumuzi/crhopper/main/CR-Hopper.txt) · [**YAML Feed**](https://raw.githubusercontent.com/Agumuzi/crhopper/main/CR-Hopper.yaml) · [Issues](https://github.com/Agumuzi/crhopper/issues)
 
 [English](./README.md) · [简体中文](./README.zh-CN.md) · [Русский](./README.ru.md) · [فارسی](./README.fa.md)
 
