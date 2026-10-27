@@ -1,0 +1,34 @@
+name: Public Site Checks
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "docs/**"
+      - "scripts/check-public-site.py"
+      - ".github/workflows/site-ci.yml"
+  pull_request:
+    paths:
+      - "docs/**"
+      - "scripts/check-public-site.py"
+      - ".github/workflows/site-ci.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: public-site-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  validate:
+    name: Validate CR-Hopper public website
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v6
+      - name: Lint website JavaScript
+        run: node --check docs/assets/app.js
+      - name: Validate local links, languages and feed URLs
+        run: python3 scripts/check-public-site.py
