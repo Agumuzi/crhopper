@@ -1,0 +1,63 @@
+name: "🐛 Website or feed issue"
+description: "Report a website, subscription format or publishing issue"
+title: "[Bug] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **Only share public, non-sensitive examples.** Never include private proxy IPs, credentials, OAuth tokens, personal connection logs or unpublished feeds. Third-party public nodes may expire; uptime and location are not guaranteed.
+  - type: dropdown
+    id: area
+    attributes:
+      label: Affected area
+      options:
+        - Website or mobile layout
+        - Language or documentation
+        - TXT / URI subscription
+        - YAML / Mihomo / Clash subscription
+        - Broken link or publishing issue
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What happened?
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected result
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Non-sensitive reproduction steps
+      placeholder: |
+        1. Open the public page or feed...
+        2. Try...
+        3. Observe...
+    validations:
+      required: true
+  - type: input
+    id: observed-at
+    attributes:
+      label: Approximate date/time observed (optional)
+      placeholder: "UTC preferred"
+    validations:
+      required: false
+  - type: input
+    id: client
+    attributes:
+      label: Client and version (if applicable)
+      placeholder: "e.g. Mihomo, Hiddify"
+    validations:
+      required: false
+  - type: textarea
+    id: context
+    attributes:
+      label: Public, redacted examples or screenshots (optional)
+    validations:
+      required: false
