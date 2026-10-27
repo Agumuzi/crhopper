@@ -91,6 +91,12 @@ Public third-party nodes are not inherently trusted. Their operators may observe
 
 The [CR-Hopper website](https://agumuzi.github.io/crhopper/) is a static, four-language project guide with copyable feed URLs. It lives in [docs/](./docs/), separate from the subscription files and publication workflow. The repository remains named **crhopper** to preserve existing remote URLs; the public-facing project name is **CR-Hopper**.
 
+## Community
+
+- [Contributing](CONTRIBUTING.md) — report public-site or format issues and propose improvements.
+- [Code of Conduct](CODE_OF_CONDUCT.md) — participation and moderation guidelines.
+- [Security policy](SECURITY.md) — report security issues without sharing secrets publicly.
+
 ## Disclaimer
 
 CR-Hopper is provided for testing, research and personal network use only.
