@@ -8,7 +8,7 @@
 
 [English](./README.md) · [简体中文](./README.zh-CN.md) · [Русский](./README.ru.md) · [فارسی](./README.fa.md)
 
-[**وب‌سایت پروژه / کپی آسان لینک‌ها**](https://agumuzi.github.io/crhopper/)
+[**وب‌سایت پروژه / کپی آسان لینک‌ها**](https://agumuzi.github.io/crhopper/) · [☕ حمایت از توسعه](https://ko-fi.com/agumuzi)
 
 </div>
 
