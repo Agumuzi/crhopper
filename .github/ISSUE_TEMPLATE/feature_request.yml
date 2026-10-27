@@ -1,0 +1,39 @@
+name: "💡 Docs or compatibility suggestion"
+description: "Suggest a client, website, translation or documentation improvement"
+title: "[Suggestion] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        CR-Hopper republishes third-party public nodes; private infrastructure, paid hosting and guaranteed uptime are out of scope. Do not share credentials or private node information.
+  - type: textarea
+    id: use-case
+    attributes:
+      label: Current problem or use case
+    validations:
+      required: true
+  - type: textarea
+    id: desired
+    attributes:
+      label: Suggested improvement
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Related area
+      options:
+        - Website UI and mobile usability
+        - Languages and documentation
+        - Hiddify / URI support
+        - Mihomo / Clash YAML support
+        - Feed publishing and compatibility
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: value
+    attributes:
+      label: Why it would help
+    validations:
+      required: true
