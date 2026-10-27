@@ -8,7 +8,7 @@
 
 [English](./README.md) · [简体中文](./README.zh-CN.md) · [Русский](./README.ru.md) · [فارسی](./README.fa.md)
 
-[**项目官网 / 一键复制订阅**](https://agumuzi.github.io/crhopper/)
+[**项目官网 / 一键复制订阅**](https://agumuzi.github.io/crhopper/) · [☕ 支持开发](https://ko-fi.com/agumuzi)
 
 </div>
 
