@@ -176,12 +176,12 @@ footer>div:nth-child(2){flex-wrap:wrap}
   border:1px solid rgba(82,220,167,.38);
   border-radius:50%;
   color:var(--mint);
-  font-size:16px;
-  line-height:1;
 }
+.hero-cadence .cadence-symbol svg{width:17px;height:17px;display:block;flex:none;overflow:visible}
 html[lang="ru"] .hero-cadence{letter-spacing:0}
 html[dir="rtl"] .hero-cadence{direction:rtl}
 @media(max-width:560px){
   .hero-cadence{font-size:11px;gap:8px;margin-top:18px}
-  .hero-cadence .cadence-symbol{width:21px;height:21px;font-size:14px}
+  .hero-cadence .cadence-symbol{width:21px;height:21px}
+  .hero-cadence .cadence-symbol svg{width:15px;height:15px}
 }
