@@ -45,6 +45,13 @@ CR-Hopper 处理的上游代理候选均来自互联网上已经公开可获取�
 - **Hiddify：** 使用 `CR-Hopper.txt`
 - **Mihomo / Clash 兼容客户端：** 使用 `CR-Hopper.yaml`
 
+## 下载客户端与使用教程
+
+- **Hiddify（TXT）：** [官方 GitHub 下载](https://github.com/hiddify/hiddify-app/releases) · [安装说明](https://hiddify.com/app/How-to-install-Hiddify-app/) · [使用说明](https://hiddify.com/app/How-to-use-Hiddify-app/)。打开首页，点击 **「+」→「剪贴板」**（或手动添加），导入上方的 TXT 订阅地址，然后连接。
+- **Clash Mi（YAML）：** [开发者下载页](https://clashmi.app/download) · [GitHub Releases](https://github.com/KaringX/clashmi/releases) · [官方用户手册](https://clashmi.app/guide/)。打开 **「我的配置」→「+」→「添加配置链接」**，粘贴上方的 YAML 地址，返回首页开启连接。
+
+两款客户端均支持 iOS、Android、macOS、Windows 与 Linux。请通过开发者渠道下载安装包；CR-Hopper 不提供客户端软件。更多步骤请查看[项目网站的使用教程](https://agumuzi.github.io/crhopper/#setup)。
+
 ## 使用说明
 
 - 公共节点可能随时失效；连接异常时请先刷新订阅。
