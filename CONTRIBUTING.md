@@ -20,6 +20,8 @@ Open an [Issue](https://github.com/Agumuzi/crhopper/issues) for website bugs, do
 
 Describe the problem and changed files; include before/after screenshots for layout changes, and manually verify link-copy interactions and both subscription URLs. Changes to public feed formats require compatibility testing with intended clients.
 
-## Licensing caution
+## Licensing and contribution rights
 
-This repository currently has **no repository-wide open-source license**. Visibility on GitHub does not grant blanket permission to reuse or redistribute the project's code or documentation. Public third-party proxy entries and related metadata may have separate origins and rights. Do not assume the project can relicense upstream data.
+Original project-maintained source code is available under [PolyForm Noncommercial 1.0.0](LICENSE) for permitted noncommercial use. Original project logos and artwork are reserved under [Brand & Visual Assets](ASSETS-LICENSE.md). Public third-party proxy entries and related metadata have separate origins and rights and are **not** relicensed by this project.
+
+Only submit materials you have the right to contribute. By submitting code you allow its inclusion under this project's current terms; contributors retain their own copyrights, and the maintainer needs separate permission to license contributed material commercially.
