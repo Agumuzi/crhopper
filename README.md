@@ -92,7 +92,9 @@ Public third-party nodes are not inherently trusted. Their operators may observe
 
 - [Contributing](CONTRIBUTING.md) — website, subscription-format, translation and compatibility feedback.
 - [Security policy](SECURITY.md) — report project vulnerabilities privately where supported. Do not post private nodes, tokens or personal logs in public issues.
-- **License status:** No repository-wide open-source license has been granted for this project. The public third-party proxy entries do not become the maintainer's intellectual property merely by being republished.
+- **Source-code license:** Original project-maintained code is available under [PolyForm Noncommercial 1.0.0](LICENSE) for qualifying noncommercial use and modification; commercial use requires separate permission. This is source-available, not OSI open source.
+- **Branding:** The original CR-Hopper rocket icon, Agumuzi marks and other original artwork are separately reserved under [Brand & Visual Assets](ASSETS-LICENSE.md); reusing them requires permission.
+- **Third-party feeds:** Public proxy nodes, addresses, and upstream data are not owned by CR-Hopper and are **not** licensed under PolyForm merely because they are republished here.
 
 ## Website and branding
 
