@@ -47,6 +47,13 @@ CR-Hopper مجموعه‌ای فشرده از نودهای پروکسی را م�
 - **Hiddify:** از `CR-Hopper.txt` استفاده کنید.
 - **Mihomo / کلاینت‌های سازگار با Clash:** از `CR-Hopper.yaml` استفاده کنید.
 
+## نصب برنامه و اتصال
+
+- **Hiddify (TXT):** [دریافت از گیت‌هاب](https://github.com/hiddify/hiddify-app/releases) · [راهنمای نصب](https://hiddify.com/app/How-to-install-Hiddify-app/) · [راهنمای استفاده](https://hiddify.com/app/How-to-use-Hiddify-app/). در صفحه اصلی **+ → Clipboard** (یا **Manually**) را انتخاب کنید، لینک TXT بالا را وارد کنید و متصل شوید.
+- **Clash Mi (YAML):** [دریافت از سایت توسعه‌دهنده](https://clashmi.app/download) · [انتشارهای گیت‌هاب](https://github.com/KaringX/clashmi/releases) · [راهنمای استفاده](https://clashmi.app/guide/). مسیر **My Configurations → + → Add configuration link** را باز کنید، لینک YAML بالا را وارد کرده و اتصال را فعال کنید.
+
+هر دو برنامه از iOS، Android، macOS، Windows و Linux پشتیبانی می‌کنند. برنامه‌ها را از منابع توسعه‌دهندگان دریافت کنید؛ CR-Hopper فایل نصب برنامه ارائه نمی‌کند. [راهنمای مرحله‌به‌مرحله در وب‌سایت](https://agumuzi.github.io/crhopper/#setup).
+
 ## نکات
 
 - نودهای عمومی ممکن است هر زمان از دسترس خارج شوند؛ در صورت بروز مشکل اتصال، ابتدا اشتراک را به‌روزرسانی کنید.
