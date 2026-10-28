@@ -123,3 +123,31 @@
 .policy-actions{padding:30px 0 80px}
 footer>div:nth-child(2){flex-wrap:wrap}
 @media(max-width:720px){.policy-hero{padding:56px 0 38px}.policy-content .section{padding:25px 0}.policy-actions{padding-bottom:56px}}
+
+
+/* Client setup guides: aligned with CR-Hopper's terminal cards and mobile layout. */
+.setup-section .subtitle{max-width:860px}
+.setup-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;align-items:stretch}
+.setup-card{min-width:0;background:var(--surface);border:1px solid var(--border);box-shadow:5px 5px #050c12;display:flex;flex-direction:column}
+.setup-card-head{display:flex;justify-content:space-between;align-items:center;gap:10px;background:#162630;border-bottom:1px solid var(--border);padding:12px 20px;color:var(--mint);font-size:10px;font-weight:800;letter-spacing:.04em}
+.setup-tag{color:var(--muted);font-size:9px;letter-spacing:.04em}
+.setup-card-body{padding:25px;display:flex;flex-direction:column;flex:1;min-width:0}
+.setup-card h3{font-size:clamp(25px,3vw,33px);line-height:1.2;letter-spacing:-.055em;margin:2px 0 12px}
+.setup-summary{color:var(--muted);font-size:13px;line-height:1.7;margin:0 0 13px;min-height:44px}
+.platform-list{font-size:10px;color:#91aebd;letter-spacing:.03em;line-height:1.8;margin-bottom:20px;overflow-wrap:anywhere;direction:ltr;text-align:start;unicode-bidi:isolate}
+.setup-links{display:flex;align-items:center;flex-wrap:wrap;gap:14px 20px;min-height:48px}
+.setup-download{min-height:43px;background:#163e33;border-color:#437662;color:var(--mint);padding:10px 15px}
+.setup-links .text-link{font-size:11px}
+.setup-instructions{border-top:1px solid var(--border);margin-top:24px;padding-top:18px;flex:1}
+.setup-caption{color:var(--mint);font-size:10px;letter-spacing:.1em;font-weight:800;margin:0 0 16px}
+.setup-instructions ol{list-style:none;counter-reset:quickstart;margin:0;padding:0;display:grid;gap:13px}
+.setup-instructions li{counter-increment:quickstart;position:relative;padding-inline-start:42px;color:#c2d0d6;font-size:12px;line-height:1.75;overflow-wrap:anywhere}
+.setup-instructions li::before{content:"0" counter(quickstart);position:absolute;inset-inline-start:0;top:0;color:var(--mint);border:1px solid #365a57;background:#10272b;min-width:30px;height:27px;text-align:center;line-height:25px;font-size:10px;font-weight:800}
+.setup-bottom{border-top:1px solid var(--border);padding-top:20px;margin-top:24px;display:flex;align-items:center;flex-wrap:wrap;gap:10px 20px}
+.setup-copy{width:auto;margin-top:0;min-height:43px;padding:10px 17px}
+.setup-more{font-size:11px;color:var(--mint);font-weight:800;text-decoration:underline;text-underline-offset:5px}
+.setup-more:hover{color:var(--text)}
+.setup-caution{border-inline-start:3px solid var(--gold);padding-inline-start:14px;font-size:12px;color:#acbac0;line-height:1.8;margin:25px 0 0}
+@media(max-width:760px){.setup-grid{grid-template-columns:minmax(0,1fr)}.setup-card-body{padding:20px}.setup-summary{min-height:0}.setup-card-head{padding:12px 16px}}
+@media(max-width:420px){.setup-links{align-items:flex-start;flex-direction:column;gap:12px}.setup-bottom{align-items:flex-start;flex-direction:column;gap:16px}.setup-copy{width:100%}.setup-card-head{flex-wrap:wrap}.setup-instructions li{padding-inline-start:38px}}
+@media(prefers-reduced-motion:reduce){.setup-download,.setup-copy{transition:none}}
