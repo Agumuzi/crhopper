@@ -42,6 +42,13 @@ Free public proxy subscriptions for Hiddify, Mihomo and Clash-compatible clients
 
 Add one of the raw URLs as a **remote subscription/profile** in your client. The [website](https://agumuzi.github.io/crhopper/#feeds) offers one-click copying and a short guide.
 
+## Install a client and connect
+
+- **Hiddify (TXT):** [Download Hiddify](https://github.com/hiddify/hiddify-app/releases) · [Official installation guide](https://hiddify.com/app/How-to-install-Hiddify-app/) · [Official usage guide](https://hiddify.com/app/How-to-use-Hiddify-app/). Open **Home → + → Clipboard** (or **Manually**) and import the [TXT URL](https://raw.githubusercontent.com/Agumuzi/crhopper/main/CR-Hopper.txt), then connect.
+- **Clash Mi (YAML):** [Official downloads](https://clashmi.app/download) · [GitHub releases](https://github.com/KaringX/clashmi/releases) · [Official usage guide](https://clashmi.app/guide/). Open **My Configurations → + → Add configuration link**, paste the [YAML URL](https://raw.githubusercontent.com/Agumuzi/crhopper/main/CR-Hopper.yaml), return Home and enable the connection.
+
+Both clients support iOS, Android, macOS, Windows and Linux. Use the developer links for installers; CR-Hopper does not distribute client applications. See the [illustrated website quick start](https://agumuzi.github.io/crhopper/#setup) for the full steps.
+
 ### Permanent feed URLs
 
 ~~~text
