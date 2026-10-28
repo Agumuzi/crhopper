@@ -45,6 +45,13 @@ CR-Hopper публикует компактный набор прокси-узл
 - **Hiddify:** используйте `CR-Hopper.txt`
 - **Mihomo / Clash-совместимые клиенты:** используйте `CR-Hopper.yaml`
 
+## Установка клиентов и подключение
+
+- **Hiddify (TXT):** [Скачать](https://github.com/hiddify/hiddify-app/releases) · [Установка](https://hiddify.com/app/How-to-install-Hiddify-app/) · [Руководство](https://hiddify.com/app/How-to-use-Hiddify-app/). На главной странице нажмите **+ → Clipboard** (или **Manually**), добавьте TXT-ссылку выше и подключитесь.
+- **Clash Mi (YAML):** [Скачать с сайта разработчика](https://clashmi.app/download) · [GitHub Releases](https://github.com/KaringX/clashmi/releases) · [Руководство](https://clashmi.app/guide/). Откройте **My Configurations → + → Add configuration link**, вставьте YAML-ссылку выше и включите подключение.
+
+Оба клиента доступны для iOS, Android, macOS, Windows и Linux. Скачивайте приложения по ссылкам разработчиков; CR-Hopper не распространяет клиентские программы. [Пошаговая инструкция на сайте](https://agumuzi.github.io/crhopper/#setup).
+
 ## Примечания
 
 - Публичные прокси-узлы могут перестать работать в любой момент. При проблемах с подключением сначала обновите подписку.
