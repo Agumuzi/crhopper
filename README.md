@@ -1,112 +1,142 @@
 <div align="center">
 
-<img src="docs/assets/rocket.svg" width="116" height="116" alt="CR-Hopper pixel rocket logo">
+<img src="docs/assets/rocket.svg" width="104" height="104" alt="CR-Hopper pixel rocket logo">
 
 # CR-Hopper
 
-**Curated public proxy feeds. Ready for your client.**
+**Public proxy feeds. Frequently refreshed. Easy to use.**
 
-Free public proxy subscriptions for Hiddify, Mihomo and Clash-compatible clients.
+Curated subscriptions for **Hiddify**, **Mihomo**, and **Clash-compatible clients**.
 
-[**Website / Quick Start**](https://agumuzi.github.io/crhopper/) · [☕ Support development](https://ko-fi.com/agumuzi) · [**TXT Feed**](https://raw.githubusercontent.com/Agumuzi/crhopper/main/CR-Hopper.txt) · [**YAML Feed**](https://raw.githubusercontent.com/Agumuzi/crhopper/main/CR-Hopper.yaml) · [Issues](https://github.com/Agumuzi/crhopper/issues)
+<p>
+  <a href="https://agumuzi.github.io/crhopper/"><img src="https://img.shields.io/badge/QUICK_START-Visit_Website-149DDD?style=for-the-badge" alt="Open the quick start website"></a>
+  <a href="https://raw.githubusercontent.com/Agumuzi/crhopper/main/CR-Hopper.txt"><img src="https://img.shields.io/badge/TXT_/_URI-Get_Feed-F27676?style=for-the-badge" alt="Get the TXT subscription"></a>
+  <a href="https://raw.githubusercontent.com/Agumuzi/crhopper/main/CR-Hopper.yaml"><img src="https://img.shields.io/badge/YAML-Get_Feed-28A98B?style=for-the-badge" alt="Get the YAML subscription"></a>
+</p>
 
-[English](./README.md) · [简体中文](./README.zh-CN.md) · [Русский](./README.ru.md) · [فارسی](./README.fa.md)
+[Website](https://agumuzi.github.io/crhopper/) · [How it works](#how-it-works) · [Support development ☕](https://ko-fi.com/agumuzi) · [Report an issue](https://github.com/Agumuzi/crhopper/issues)
+
+**English** · [简体中文](./README.zh-CN.md) · [Русский](./README.ru.md) · [فارسی](./README.fa.md)
 
 </div>
 
 ---
 
-## Quick start
+## ⚡ Quick start
 
-<table width="100%">
-<thead>
-<tr>
-<th align="left" width="43%">Client</th>
-<th align="left" width="17%">Format</th>
-<th align="left" width="40%">Remote subscription</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>Hiddify</strong> and URI-compatible clients</td>
-<td>TXT / URI</td>
-<td><a href="https://raw.githubusercontent.com/Agumuzi/crhopper/main/CR-Hopper.txt">CR-Hopper.txt</a></td>
-</tr>
-<tr>
-<td><strong>Mihomo</strong> and Clash-compatible clients</td>
-<td>YAML</td>
-<td><a href="https://raw.githubusercontent.com/Agumuzi/crhopper/main/CR-Hopper.yaml">CR-Hopper.yaml</a></td>
-</tr>
-</tbody>
-</table>
+**No account, API key, or Google authorization required.** Choose a compatible client, import a feed as a **remote subscription**, and connect.
 
-Add one of the raw URLs as a **remote subscription/profile** in your client. The [website](https://agumuzi.github.io/crhopper/#feeds) offers one-click copying and a short guide.
+| Your client | Subscription format | Get the client |
+| :--- | :--- | :--- |
+| **Hiddify** and URI-compatible apps | **[TXT / URI feed](https://raw.githubusercontent.com/Agumuzi/crhopper/main/CR-Hopper.txt)** | [Hiddify releases](https://github.com/hiddify/hiddify-app/releases) |
+| **Clash Mi**, Mihomo and Clash-compatible apps | **[YAML feed](https://raw.githubusercontent.com/Agumuzi/crhopper/main/CR-Hopper.yaml)** | [Clash Mi downloads](https://clashmi.app/download) |
 
-## Install a client and connect
+1. **Install** the client for your device.
+2. **Copy** the appropriate subscription URL from the table above or the [project website](https://agumuzi.github.io/crhopper/#feeds).
+3. **Import** it as a remote profile/configuration, then enable the connection.
 
-- **Hiddify (TXT):** [Download Hiddify](https://github.com/hiddify/hiddify-app/releases) · [Official installation guide](https://hiddify.com/app/How-to-install-Hiddify-app/) · [Official usage guide](https://hiddify.com/app/How-to-use-Hiddify-app/). Open **Home → + → Clipboard** (or **Manually**) and import the [TXT URL](https://raw.githubusercontent.com/Agumuzi/crhopper/main/CR-Hopper.txt), then connect.
-- **Clash Mi (YAML):** [Official downloads](https://clashmi.app/download) · [GitHub releases](https://github.com/KaringX/clashmi/releases) · [Official usage guide](https://clashmi.app/guide/). Open **My Configurations → + → Add configuration link**, paste the [YAML URL](https://raw.githubusercontent.com/Agumuzi/crhopper/main/CR-Hopper.yaml), return Home and enable the connection.
+> **New here?** The [illustrated quick-start guide](https://agumuzi.github.io/crhopper/#setup) walks through the setup step by step.
 
-Both clients support iOS, Android, macOS, Windows and Linux. Use the developer links for installers; CR-Hopper does not distribute client applications. See the [illustrated website quick start](https://agumuzi.github.io/crhopper/#setup) for the full steps.
+<details>
+<summary><strong>Hiddify — import the TXT / URI subscription</strong></summary>
 
-### Permanent feed URLs
+1. Download [Hiddify](https://github.com/hiddify/hiddify-app/releases).
+2. Open **Home → + → Clipboard** (or **Manually**).
+3. Import the [TXT subscription](https://raw.githubusercontent.com/Agumuzi/crhopper/main/CR-Hopper.txt), then connect.
+
+Official references: [Installation guide](https://hiddify.com/app/How-to-install-Hiddify-app/) · [Usage guide](https://hiddify.com/app/How-to-use-Hiddify-app/).
+
+</details>
+
+<details>
+<summary><strong>Clash Mi — import the YAML subscription</strong></summary>
+
+1. Download [Clash Mi](https://clashmi.app/download) ([GitHub releases](https://github.com/KaringX/clashmi/releases)).
+2. Open **My Configurations → + → Add configuration link**.
+3. Paste the [YAML subscription URL](https://raw.githubusercontent.com/Agumuzi/crhopper/main/CR-Hopper.yaml), return to **Home**, and enable the connection.
+
+Official reference: [Clash Mi usage guide](https://clashmi.app/guide/).
+
+</details>
+
+<details>
+<summary><strong>Show permanent subscription URLs</strong></summary>
+
+**TXT / URI — Hiddify and compatible clients**
 
 ~~~text
 https://raw.githubusercontent.com/Agumuzi/crhopper/main/CR-Hopper.txt
+~~~
+
+**YAML — Mihomo / Clash-compatible clients**
+
+~~~text
 https://raw.githubusercontent.com/Agumuzi/crhopper/main/CR-Hopper.yaml
 ~~~
 
-These URLs and filenames are intentionally preserved for existing subscribers.
+These URLs and filenames are kept unchanged for existing subscribers.
+
+</details>
+
+Both recommended clients support iOS, Android, macOS, Windows and Linux. Download installers directly from their developers; CR-Hopper does not distribute client applications.
 
 ## How it works
 
-CR-Hopper collects proxy candidates from sources already public on the Internet, screens and prepares a changing selection, then republishes it in client-ready formats.
+CR-Hopper collects proxy candidates from **publicly available third-party sources**, screens them, and publishes a changing selection in two client-ready formats.
 
-~~~text
-PUBLIC SOURCES → COLLECT → FILTER → PREPARE → PUBLISH
-                                           ├─ URI / TXT → Hiddify
-                                           └─ YAML      → Mihomo / Clash
-~~~
+<div align="center">
 
-The repository **does not create, host or operate proxy servers**. All upstream nodes belong to independent third parties. The publicly published set can include VLESS, Hysteria2 and Shadowsocks, depending on available candidates and filtering outcomes. The TXT and YAML feeds represent the same selected set in different formats.
+**PUBLIC SOURCES → COLLECT → FILTER → PUBLISH**
 
-## Compatibility
+**↳ TXT / URI for Hiddify · ↳ YAML for Mihomo / Clash**
 
-- **Hiddify:** use the TXT/URI subscription.
-- **Mihomo and Clash-compatible clients:** use the YAML subscription.
-- Other compatible clients can use the format they support.
+</div>
 
-**When connections stop working:** try refreshing your subscription. Public nodes are ephemeral and may disappear without notice. Node speed, location and uptime are not guaranteed; a client-reported location may differ from a node label or actual egress.
+The feeds represent the **same selected set**, packaged in different formats. Depending on available candidates, the selection may include VLESS, Hysteria2 and Shadowsocks.
 
-## Privacy and security
+**CR-Hopper does not create, host, own, or operate proxy servers.** All upstream nodes are independent third-party resources.
 
-Public third-party nodes are not inherently trusted. Their operators may observe traffic metadata, and CR-Hopper does not guarantee confidentiality, integrity, endpoint ownership, privacy or security. Prefer end-to-end encrypted connections and avoid sending sensitive data through untrusted intermediaries.
+## Compatibility, privacy & reliability
 
-## Maintainer-only Google Drive sync
+- **Choose the right format.** Hiddify and URI-compatible clients use TXT / URI; Mihomo and Clash-compatible clients use YAML. Other clients may work if they support one of these formats.
+- **Refresh when connections fail.** Public nodes may disappear or change without warning. Speed, availability, routing and uptime are not guaranteed; client-reported locations can differ from node labels or actual egress.
+- **Treat public nodes as untrusted.** Operators may observe traffic metadata. CR-Hopper cannot guarantee confidentiality, integrity, endpoint ownership, privacy or security. Prefer end-to-end encryption and avoid sending sensitive information through untrusted intermediaries.
 
-**CR-Hopper Sync** is the project's maintainer-operated Google Drive archive integration. A separate local scanner uses `rclone` to back up project files and operational evidence to the maintainer's own Drive. This is **not** a Google login feature for public subscribers; subscribing to TXT or YAML never requires Google authorization. The published feed URLs are unchanged.
+## Project resources
 
-[CR-Hopper Sync privacy policy](https://agumuzi.github.io/crhopper/privacy.html) describes data access, storage, retention, and revocation. OAuth client credentials and private scanner files are not part of this public repository.
+| | |
+| :--- | :--- |
+| 🌐 **Project website** | [Four-language quick start and copyable feed URLs](https://agumuzi.github.io/crhopper/) |
+| 🛠️ **Contributing** | [Report website, format, translation or compatibility issues](CONTRIBUTING.md) |
+| 🛡️ **Security** | [Report vulnerabilities privately where supported](SECURITY.md) |
+| 🤝 **Community** | [Code of Conduct](CODE_OF_CONDUCT.md) · [GitHub Issues](https://github.com/Agumuzi/crhopper/issues) |
+| ☕ **Support** | [Support development on Ko-fi](https://ko-fi.com/agumuzi) |
 
-## Contributing and security
+Please **do not** post private nodes, tokens, account data, or personal logs in public issues.
 
-- [Contributing](CONTRIBUTING.md) — website, subscription-format, translation and compatibility feedback.
-- [Security policy](SECURITY.md) — report project vulnerabilities privately where supported. Do not post private nodes, tokens or personal logs in public issues.
-- **Source-code license:** Original project-maintained code is available under [PolyForm Noncommercial 1.0.0](LICENSE) for qualifying noncommercial use and modification; commercial use requires separate permission. This is source-available, not OSI open source.
-- **Branding:** The original CR-Hopper rocket icon, Agumuzi marks and other original artwork are separately reserved under [Brand & Visual Assets](ASSETS-LICENSE.md); reusing them requires permission.
-- **Third-party feeds:** Public proxy nodes, addresses, and upstream data are not owned by CR-Hopper and are **not** licensed under PolyForm merely because they are republished here.
+### License & branding
 
-## Website and branding
+- **Project-maintained source code:** [PolyForm Noncommercial 1.0.0](LICENSE). Qualifying noncommercial use and modification are permitted; commercial use requires separate permission. This is **source-available, not OSI open source**.
+- **Original artwork and branding:** The rocket icon, Agumuzi marks and other original visuals are separately reserved under [Brand & Visual Assets](ASSETS-LICENSE.md); reuse requires permission.
+- **Third-party feeds:** Public node addresses and upstream data do not belong to CR-Hopper and are not covered by the project's PolyForm license merely because they appear in the feeds.
 
-The [CR-Hopper website](https://agumuzi.github.io/crhopper/) is a static, four-language project guide with copyable feed URLs. It lives in [docs/](./docs/), separate from the subscription files and publication workflow. The repository remains named **crhopper** to preserve existing remote URLs; the public-facing project name is **CR-Hopper**.
+<details>
+<summary><strong>Maintainer notes — website & Google Drive sync</strong></summary>
 
-## Community
+The [project website](https://agumuzi.github.io/crhopper/) is a static four-language guide maintained in [docs/](./docs/), separate from the subscription files and publication workflow. The repository remains named **crhopper** to preserve existing remote URLs; the public project name is **CR-Hopper**.
 
-- [Contributing](CONTRIBUTING.md) — report public-site or format issues and propose improvements.
-- [Code of Conduct](CODE_OF_CONDUCT.md) — participation and moderation guidelines.
-- [Security policy](SECURITY.md) — report security issues without sharing secrets publicly.
+**CR-Hopper Sync** is a maintainer-only Google Drive archive integration. A separate local scanner uses \`rclone\` to back up project files and operational evidence to the maintainer's own Drive. It is **not** a public subscriber login feature: using the TXT or YAML feeds never requires Google authorization, and the published URLs are unchanged.
+
+See the [CR-Hopper Sync privacy policy](https://agumuzi.github.io/crhopper/privacy.html) for data access, storage, retention and revocation. OAuth client credentials and private scanner files are not part of this public repository.
+
+</details>
 
 ## Disclaimer
+
+**For testing, research and personal network use only.** Use CR-Hopper in accordance with the laws, regulations, contracts and service terms applicable to you. Third-party public nodes have **no guaranteed availability, privacy or security**.
+
+<details>
+<summary><strong>Read the full disclaimer</strong></summary>
 
 CR-Hopper is provided for testing, research and personal network use only.
 
@@ -118,6 +148,10 @@ The project is provided **"as is"** and **"as available"**, without warranties o
 
 To the fullest extent permitted by applicable law, the developers and maintainers shall not be responsible or liable for misuse of the project, unlawful activity by users, service interruptions, account restrictions, data loss or exposure, security incidents, financial loss, legal consequences, or any other direct or indirect damages arising from the use of, or inability to use, CR-Hopper.
 
+</details>
+
 ---
 
-<sub>Maintained by [Agumuzi](https://github.com/Agumuzi). All upstream nodes are third-party resources. No uptime, privacy or security guarantees.</sub>
+<div align="center">
+<sub>Maintained by <a href="https://github.com/Agumuzi">Agumuzi</a> · All upstream nodes are third-party resources · No uptime, privacy or security guarantees</sub>
+</div>
