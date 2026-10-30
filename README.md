@@ -58,7 +58,7 @@ https://raw.githubusercontent.com/Agumuzi/crhopper/main/CR-Hopper.yaml
 
 [Official usage guide](https://clashmi.app/guide/)
 
-> **Prefer screenshots?** The [visual setup guide](https://agumuzi.github.io/crhopper/#setup) shows the full steps. You do **not** need a CR-Hopper account, API key or Google authorization to subscribe. CR-Hopper does not distribute client installers.
+> **Prefer screenshots?** The [visual setup guide](https://agumuzi.github.io/crhopper/#setup) shows the full steps. You do **not** need a CR-Hopper account or API key to subscribe. CR-Hopper does not distribute client installers.
 
 ---
 
@@ -101,17 +101,6 @@ Please **do not** post private nodes, tokens, account data, or personal logs in 
 - **Project-maintained source code:** [PolyForm Noncommercial 1.0.0](LICENSE). Qualifying noncommercial use and modification are permitted; commercial use requires separate permission. This is **source-available, not OSI open source**.
 - **Original artwork and branding:** The rocket icon, Agumuzi marks and other original visuals are separately reserved under [Brand & Visual Assets](ASSETS-LICENSE.md); reuse requires permission.
 - **Third-party feeds:** Public node addresses and upstream data do not belong to CR-Hopper and are not covered by the project's PolyForm license merely because they appear in the feeds.
-
-<details>
-<summary><strong>Maintainer notes — website & Google Drive sync</strong></summary>
-
-The [project website](https://agumuzi.github.io/crhopper/) is a static four-language guide maintained in [docs/](./docs/), separate from the subscription files and publication workflow. The repository remains named **crhopper** to preserve existing remote URLs; the public project name is **CR-Hopper**.
-
-**CR-Hopper Sync** is a maintainer-only Google Drive archive integration. A separate local scanner uses rclone to back up project files and operational evidence to the maintainer's own Drive. It is **not** a public subscriber login feature: using the TXT or YAML feeds never requires Google authorization, and the published URLs are unchanged.
-
-See the [CR-Hopper Sync privacy policy](https://agumuzi.github.io/crhopper/privacy.html) for data access, storage, retention and revocation. OAuth client credentials and private scanner files are not part of this public repository.
-
-</details>
 
 ## Disclaimer
 
