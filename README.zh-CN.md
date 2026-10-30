@@ -58,12 +58,6 @@ CR-Hopper 处理的上游代理候选均来自互联网上已经公开可获取�
 - 客户端显示的 Geo 地理位置由客户端自行判断，可能与节点名称中的标签不同。
 - TXT 与 YAML 是同一批公开节点的不同订阅格式。
 
-## Google Drive 内部同步说明
-
-**CR-Hopper Sync** 是仅由项目维护者使用的 Google Drive 归档组件。独立运行的本地筛选系统通过 `rclone` 将项目文件与运行证据同步到维护者自己的云盘。**这不是公开订阅用户的 Google 登录功能**：使用 TXT/YAML 订阅无需 Google 授权，原订阅链接不变。私人扫描文件及 OAuth 凭据不会放入公开仓库。
-
-[查看 CR-Hopper Sync 隐私政策](https://agumuzi.github.io/crhopper/privacy.html)，了解数据访问、保存、删除和撤销授权方式。
-
 ## 免责声明
 
 CR-Hopper 仅提供用于测试、研究及个人网络用途的公共订阅数据。
