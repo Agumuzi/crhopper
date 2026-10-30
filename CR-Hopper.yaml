@@ -23,7 +23,7 @@ proxies:
       headers:
         Host: "mitivpn--mitivpn.ac.ir"
 
-  - name: "🇺🇸US-124M-[af3435/03e446]"
+  - name: "🇺🇸US-84M-[af3435/03e446]"
     type: "vless"
     server: "13.143.176.83"
     port: 443
@@ -36,6 +36,316 @@ proxies:
     network: "grpc"
     grpc-opts:
       grpc-service-name: "grpc"
+
+  - name: "🇳🇱NL-200M-[ce6d22/29230e]"
+    type: "hysteria2"
+    server: "130.49.161.70"
+    port: 443
+    password: "p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR"
+    udp: true
+    sni: "hy2.aspidnet.xyz"
+    obfs: "salamander"
+    obfs-password: "rG07s3COMIEvdnQipRyWzx_H_2xygNC3"
+
+  - name: "🇳🇱NL-178M-[3092a9/84d5ab]"
+    type: "hysteria2"
+    server: "hy2.aspidnet.xyz"
+    port: 443
+    password: "p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR"
+    udp: true
+    sni: "hy2.aspidnet.xyz"
+    obfs: "salamander"
+    obfs-password: "rG07s3COMIEvdnQipRyWzx_H_2xygNC3"
+
+  - name: "🇳🇱NL-276M-[56acf6/9247c3]"
+    type: "ss"
+    server: "82.38.31.169"
+    port: 443
+    cipher: "chacha20-ietf-poly1305"
+    password: "oZIoA69Q8yhcQV8ka3Pa3A"
+    udp: true
+
+  - name: "🇳🇱NL-276M-[0449e6/4d3e6e]"
+    type: "ss"
+    server: "82.38.31.26"
+    port: 8080
+    cipher: "chacha20-ietf-poly1305"
+    password: "oZIoA69Q8yhcQV8ka3Pa3A"
+    udp: true
+
+  - name: "🇳🇱NL-164M-[797068/14c325]"
+    type: "ss"
+    server: "82.38.31.219"
+    port: 8080
+    cipher: "chacha20-ietf-poly1305"
+    password: "k1dBOmOB4oqi7Ump37a1bQ"
+    udp: true
+
+  - name: "🇳🇱NL-276M-[7a3829/6f55fc]"
+    type: "ss"
+    server: "82.38.31.213"
+    port: 8080
+    cipher: "chacha20-ietf-poly1305"
+    password: "k1dBOmOB4oqi7Ump37a1bQ"
+    udp: true
+
+  - name: "🇳🇱NL-276M-[e297b0/02316b]"
+    type: "ss"
+    server: "82.38.31.201"
+    port: 8080
+    cipher: "chacha20-ietf-poly1305"
+    password: "k1dBOmOB4oqi7Ump37a1bQ"
+    udp: true
+
+  - name: "🇳🇱NL-276M-[93b0a2/ed0aae]"
+    type: "ss"
+    server: "82.38.31.200"
+    port: 8080
+    cipher: "chacha20-ietf-poly1305"
+    password: "k1dBOmOB4oqi7Ump37a1bQ"
+    udp: true
+
+  - name: "🇳🇱NL-276M-[2c6c1b/cacfab]"
+    type: "ss"
+    server: "82.38.31.212"
+    port: 8080
+    cipher: "chacha20-ietf-poly1305"
+    password: "k1dBOmOB4oqi7Ump37a1bQ"
+    udp: true
+
+  - name: "🇳🇱NL-243M-[0e2372/a52c73]"
+    type: "ss"
+    server: "82.38.31.220"
+    port: 8080
+    cipher: "chacha20-ietf-poly1305"
+    password: "k1dBOmOB4oqi7Ump37a1bQ"
+    udp: true
+
+  - name: "🇳🇱NL-276M-[bd29ea/9a9924]"
+    type: "ss"
+    server: "82.38.31.207"
+    port: 8080
+    cipher: "chacha20-ietf-poly1305"
+    password: "k1dBOmOB4oqi7Ump37a1bQ"
+    udp: true
+
+  - name: "🇩🇪DE-183M-[17773f/2d61b5]"
+    type: "vless"
+    server: "199.232.239.239"
+    port: 443
+    uuid: "faa0dff2-e398-48fb-d599-f8a379808edf"
+    udp: true
+    encryption: "none"
+    servername: "firefox.com"
+    client-fingerprint: "firefox"
+    skip-cert-verify: true
+    alpn:
+      - "h2"
+    tls: true
+    network: "ws"
+    ws-opts:
+      path: "/@CloudVPNchannel/@CloudVPNchannel/@CloudVPNchannel/@CloudVPNchannel/@CloudVPNchannel/@CloudVPNchannel?ed=2056"
+      headers:
+        Host: "mpkoe7ypcibr80p102020123.global.ssl.fastly.net"
+
+  - name: "🇱🇻LV-66M-[daa6cf/7c9175]"
+    type: "hysteria2"
+    server: "104.165.205.142"
+    port: 9443
+    password: "e3c3b722-1264-4cdc-a97c-b0a1bb73cd67"
+    udp: true
+    sni: "onecloudstream.com"
+
+  - name: "🇱🇻LV-149M-[4be62a/936e89]"
+    type: "hysteria2"
+    server: "104.165.205.21"
+    port: 9443
+    password: "e3c3b722-1264-4cdc-a97c-b0a1bb73cd67"
+    udp: true
+    sni: "onecloudstream.com"
+
+  - name: "🇳🇱NL-276M-[ff37be/f0232a]"
+    type: "ss"
+    server: "82.38.31.192"
+    port: 8080
+    cipher: "chacha20-ietf-poly1305"
+    password: "k1dBOmOB4oqi7Ump37a1bQ"
+    udp: true
+
+  - name: "🇳🇱NL-219M-[bb5121/99945c]"
+    type: "vless"
+    server: "94.249.148.20"
+    port: 443
+    uuid: "7b22dce8-7ebd-425b-8ca4-7b6190321985"
+    udp: true
+    encryption: "none"
+    servername: "a.de-3.bnc-gt.co.uk"
+    client-fingerprint: "firefox"
+    tls: true
+    network: "grpc"
+    grpc-opts:
+      grpc-service-name: "grpc"
+
+  - name: "🇫🇷FR-270M-[cfad93/0b02e3]"
+    type: "vless"
+    server: "82.22.2.225"
+    port: 443
+    uuid: "7b22dce8-7ebd-425b-8ca4-7b6190321985"
+    udp: true
+    encryption: "none"
+    servername: "b-wl.fr-2.bnc-gt.co.uk"
+    client-fingerprint: "qq"
+    tls: true
+    network: "grpc"
+    grpc-opts:
+      grpc-service-name: "grpc"
+
+  - name: "🇮🇹IT-89M-[d57070/9abc1e]"
+    type: "ss"
+    server: "202.50.253.63"
+    port: 19999
+    cipher: "aes-256-gcm"
+    password: "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
+    udp: true
+
+  - name: "🇳🇱NL-77M-[4a59f6/fd3500]"
+    type: "vless"
+    server: "72.56.23.254"
+    port: 41827
+    uuid: "e769c1c2-f2b8-4006-bc84-0672c8368578"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "www.google.nl"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "cpKcsAG-_0k5q8envXiiOoBzt53gxwVWEqg6uVKMNDk"
+      short-id: "fba996d8e3568d0d"
+    network: "tcp"
+
+  - name: "🇳🇱NL-276M-[ca7b5d/22b2ec]"
+    type: "vless"
+    server: "de-3.bnc-gt.co.uk"
+    port: 443
+    uuid: "7b22dce8-7ebd-425b-8ca4-7b6190321985"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "de-3.bnc-gt.co.uk"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "CegqLjzOImUmYD9ZdpOOG65UgNTGeQfRmpIni8iraB0"
+      short-id: "7be1e9c243451b14"
+    network: "tcp"
+
+  - name: "🇳🇱NL-254M-[d4aa4c/884bfc]"
+    type: "ss"
+    server: "82.38.31.149"
+    port: 443
+    cipher: "chacha20-ietf-poly1305"
+    password: "oZIoA69Q8yhcQV8ka3Pa3A"
+    udp: true
+
+  - name: "🇹🇷TR-253M-[a0813d/8ceec6]"
+    type: "hysteria2"
+    server: "153.56.210.134"
+    port: 38045
+    password: "a81a7b45-dd70-42ef-822f-ef467f944382"
+    udp: true
+    sni: "www.bing.com"
+    skip-cert-verify: true
+    obfs: "salamander"
+    obfs-password: "642516f2-f9bd-41ce-9904-dee699c39cf9"
+
+  - name: "🇳🇱NL-346M-[f0ce02/fc54a6]"
+    type: "vless"
+    server: "94.249.187.88"
+    port: 43000
+    uuid: "390c7bd2-d83c-49b6-a6d5-c454583bbb2d"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    client-fingerprint: "chrome"
+    tls: true
+    reality-opts:
+      public-key: "r710c3Is-baifKzevzR4GKPnWOdolchLdP1NoOOtK2A"
+      short-id: "ecef9d30"
+    network: "tcp"
+
+  - name: "🇬🇧GB-318M-[3a38af/9e8ec8]"
+    type: "vless"
+    server: "gb.srv.dvzh.net"
+    port: 443
+    uuid: "9ab3a362-1518-496d-b08d-eced45cec936"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "gb.srv.dvzh.net"
+    client-fingerprint: "chrome"
+    tls: true
+    reality-opts:
+      public-key: "9GEc6lOjnGQyyE1951OZSBMWt4uCXsOjKyj9fysxHH0"
+      short-id: "d30f9d846a7c8cba"
+    network: "tcp"
+
+  - name: "🇮🇹IT-425M-[68b609/742cea]"
+    type: "ss"
+    server: "202.50.253.54"
+    port: 19999
+    cipher: "aes-256-gcm"
+    password: "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
+    udp: true
+
+  - name: "🇸🇪SE-166M-[367427/0b46e3]"
+    type: "vless"
+    server: "pp-fx2.firelinkservers.ir"
+    port: 443
+    uuid: "4d70f5ee-a94a-4d5d-8ad2-2b90283df466"
+    udp: true
+    encryption: "none"
+    servername: "cdn.akamai.steamstatic.com"
+    client-fingerprint: "chrome"
+    skip-cert-verify: true
+    tls: true
+    network: "xhttp"
+    xhttp-opts:
+      path: "/plas"
+      host: "barca23.global.ssl.fastly.net"
+      mode: "auto"
+      reuse-settings:
+        h-keep-alive-period: 20
+        h-max-request-times: "300-500"
+        h-max-reusable-secs: "300-480"
+        max-concurrency: "16-32"
+      sc-max-each-post-bytes: "500000-1000000"
+      sc-min-posts-interval-ms: "20-40"
+      x-padding-bytes: "100-1000"
+
+  - name: "🇳🇱NL-430M-[598062/e5b086]"
+    type: "ss"
+    server: "82.38.31.2"
+    port: 8080
+    cipher: "chacha20-ietf-poly1305"
+    password: "oZIoA69Q8yhcQV8ka3Pa3A"
+    udp: true
+
+  - name: "🇮🇹IT-420M-[bd760b/17b4d2]"
+    type: "ss"
+    server: "202.50.253.90"
+    port: 19999
+    cipher: "aes-256-gcm"
+    password: "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
+    udp: true
+
+  - name: "🇳🇱NL-116M-[f9b827/6ce7b0]"
+    type: "ss"
+    server: "82.38.31.171"
+    port: 443
+    cipher: "chacha20-ietf-poly1305"
+    password: "oZIoA69Q8yhcQV8ka3Pa3A"
+    udp: true
 
   - name: "🇳🇱NL-245M-[fda664/619380]"
     type: "vless"
@@ -64,20 +374,6 @@ proxies:
     servername: "b.fi-1.bnc-gt.co.uk"
     client-fingerprint: "firefox"
     skip-cert-verify: true
-    tls: true
-    network: "grpc"
-    grpc-opts:
-      grpc-service-name: "grpc"
-
-  - name: "🇳🇱NL-443M-[bb5121/99945c]"
-    type: "vless"
-    server: "94.249.148.20"
-    port: 443
-    uuid: "7b22dce8-7ebd-425b-8ca4-7b6190321985"
-    udp: true
-    encryption: "none"
-    servername: "a.de-3.bnc-gt.co.uk"
-    client-fingerprint: "firefox"
     tls: true
     network: "grpc"
     grpc-opts:
@@ -121,95 +417,9 @@ proxies:
     obfs: "salamander"
     obfs-password: "rG07s3COMIEvdnQipRyWzx_H_2xygNC3"
 
-  - name: "🇳🇱NL-282M-[ce6d22/29230e]"
-    type: "hysteria2"
-    server: "130.49.161.70"
-    port: 443
-    password: "p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR"
-    udp: true
-    sni: "hy2.aspidnet.xyz"
-    obfs: "salamander"
-    obfs-password: "rG07s3COMIEvdnQipRyWzx_H_2xygNC3"
-
-  - name: "🇸🇪SE-240M-[367427/0b46e3]"
-    type: "vless"
-    server: "pp-fx2.firelinkservers.ir"
-    port: 443
-    uuid: "4d70f5ee-a94a-4d5d-8ad2-2b90283df466"
-    udp: true
-    encryption: "none"
-    servername: "cdn.akamai.steamstatic.com"
-    client-fingerprint: "chrome"
-    skip-cert-verify: true
-    tls: true
-    network: "xhttp"
-    xhttp-opts:
-      path: "/plas"
-      host: "barca23.global.ssl.fastly.net"
-      mode: "auto"
-      reuse-settings:
-        h-keep-alive-period: 20
-        h-max-request-times: "300-500"
-        h-max-reusable-secs: "300-480"
-        max-concurrency: "16-32"
-      sc-max-each-post-bytes: "500000-1000000"
-      sc-min-posts-interval-ms: "20-40"
-      x-padding-bytes: "100-1000"
-
-  - name: "🇱🇻LV-98M-[daa6cf/7c9175]"
-    type: "hysteria2"
-    server: "104.165.205.142"
-    port: 9443
-    password: "e3c3b722-1264-4cdc-a97c-b0a1bb73cd67"
-    udp: true
-    sni: "onecloudstream.com"
-
-  - name: "🇳🇱NL-458M-[598062/e5b086]"
-    type: "ss"
-    server: "82.38.31.2"
-    port: 8080
-    cipher: "chacha20-ietf-poly1305"
-    password: "oZIoA69Q8yhcQV8ka3Pa3A"
-    udp: true
-
-  - name: "🇳🇱NL-478M-[2c6c1b/cacfab]"
-    type: "ss"
-    server: "82.38.31.212"
-    port: 8080
-    cipher: "chacha20-ietf-poly1305"
-    password: "k1dBOmOB4oqi7Ump37a1bQ"
-    udp: true
-
-  - name: "🇫🇮FI-373M-[17773f/2d61b5]"
-    type: "vless"
-    server: "199.232.239.239"
-    port: 443
-    uuid: "faa0dff2-e398-48fb-d599-f8a379808edf"
-    udp: true
-    encryption: "none"
-    servername: "firefox.com"
-    client-fingerprint: "firefox"
-    skip-cert-verify: true
-    alpn:
-      - "h2"
-    tls: true
-    network: "ws"
-    ws-opts:
-      path: "/@CloudVPNchannel/@CloudVPNchannel/@CloudVPNchannel/@CloudVPNchannel/@CloudVPNchannel/@CloudVPNchannel?ed=2056"
-      headers:
-        Host: "mpkoe7ypcibr80p102020123.global.ssl.fastly.net"
-
   - name: "🇳🇱NL-454M-[96e68e/4d56ba]"
     type: "ss"
     server: "82.38.31.206"
-    port: 8080
-    cipher: "chacha20-ietf-poly1305"
-    password: "k1dBOmOB4oqi7Ump37a1bQ"
-    udp: true
-
-  - name: "🇳🇱NL-508M-[93b0a2/ed0aae]"
-    type: "ss"
-    server: "82.38.31.200"
     port: 8080
     cipher: "chacha20-ietf-poly1305"
     password: "k1dBOmOB4oqi7Ump37a1bQ"
@@ -231,22 +441,6 @@ proxies:
     password: "oZIoA69Q8yhcQV8ka3Pa3A"
     udp: true
 
-  - name: "🇳🇱NL-461M-[d4aa4c/884bfc]"
-    type: "ss"
-    server: "82.38.31.149"
-    port: 443
-    cipher: "chacha20-ietf-poly1305"
-    password: "oZIoA69Q8yhcQV8ka3Pa3A"
-    udp: true
-
-  - name: "🇳🇱NL-487M-[e297b0/02316b]"
-    type: "ss"
-    server: "82.38.31.201"
-    port: 8080
-    cipher: "chacha20-ietf-poly1305"
-    password: "k1dBOmOB4oqi7Ump37a1bQ"
-    udp: true
-
   - name: "🇳🇱NL-430M-[4d7a12/d0b82f]"
     type: "ss"
     server: "82.38.31.174"
@@ -255,28 +449,12 @@ proxies:
     password: "oZIoA69Q8yhcQV8ka3Pa3A"
     udp: true
 
-  - name: "🇱🇻LV-173M-[4be62a/936e89]"
-    type: "hysteria2"
-    server: "104.165.205.21"
-    port: 9443
-    password: "e3c3b722-1264-4cdc-a97c-b0a1bb73cd67"
-    udp: true
-    sni: "onecloudstream.com"
-
   - name: "🇳🇱NL-384M-[03f0cb/7d4208]"
     type: "ss"
     server: "82.38.31.46"
     port: 8080
     cipher: "chacha20-ietf-poly1305"
     password: "oZIoA69Q8yhcQV8ka3Pa3A"
-    udp: true
-
-  - name: "🇳🇱NL-483M-[bd29ea/9a9924]"
-    type: "ss"
-    server: "82.38.31.207"
-    port: 8080
-    cipher: "chacha20-ietf-poly1305"
-    password: "k1dBOmOB4oqi7Ump37a1bQ"
     udp: true
 
   - name: "🇳🇱NL-362M-[48604d/d8b204]"
@@ -398,14 +576,6 @@ proxies:
     password: "k1dBOmOB4oqi7Ump37a1bQ"
     udp: true
 
-  - name: "🌐XX-508M-[0e2372/a52c73]"
-    type: "ss"
-    server: "82.38.31.220"
-    port: 8080
-    cipher: "chacha20-ietf-poly1305"
-    password: "k1dBOmOB4oqi7Ump37a1bQ"
-    udp: true
-
   - name: "🌐XX-481M-[d82c59/9b523a]"
     type: "ss"
     server: "193.29.139.223"
@@ -446,22 +616,6 @@ proxies:
     password: "oZIoA69Q8yhcQV8ka3Pa3A"
     udp: true
 
-  - name: "🌐XX-197M-[797068/14c325]"
-    type: "ss"
-    server: "82.38.31.219"
-    port: 8080
-    cipher: "chacha20-ietf-poly1305"
-    password: "k1dBOmOB4oqi7Ump37a1bQ"
-    udp: true
-
-  - name: "🌐XX-446M-[0449e6/4d3e6e]"
-    type: "ss"
-    server: "82.38.31.26"
-    port: 8080
-    cipher: "chacha20-ietf-poly1305"
-    password: "oZIoA69Q8yhcQV8ka3Pa3A"
-    udp: true
-
   - name: "🌐XX-458M-[67523d/fa6b3c]"
     type: "ss"
     server: "82.38.31.7"
@@ -494,14 +648,6 @@ proxies:
     password: "oZIoA69Q8yhcQV8ka3Pa3A"
     udp: true
 
-  - name: "🌐XX-455M-[56acf6/9247c3]"
-    type: "ss"
-    server: "82.38.31.169"
-    port: 443
-    cipher: "chacha20-ietf-poly1305"
-    password: "oZIoA69Q8yhcQV8ka3Pa3A"
-    udp: true
-
   - name: "🇳🇱NL-186M-[08c0f4/7a1eed]"
     type: "hysteria2"
     server: "5.129.235.85"
@@ -510,16 +656,6 @@ proxies:
     udp: true
     sni: "5.129.235.85"
     skip-cert-verify: true
-
-  - name: "🇳🇱NL-297M-[3092a9/84d5ab]"
-    type: "hysteria2"
-    server: "hy2.aspidnet.xyz"
-    port: 443
-    password: "p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR"
-    udp: true
-    sni: "hy2.aspidnet.xyz"
-    obfs: "salamander"
-    obfs-password: "rG07s3COMIEvdnQipRyWzx_H_2xygNC3"
 
   - name: "🇳🇱NL-463M-[a0516b/3c1fa0]"
     type: "ss"
@@ -599,28 +735,12 @@ proxies:
     password: "oZIoA69Q8yhcQV8ka3Pa3A"
     udp: true
 
-  - name: "🇳🇱NL-344M-[ff37be/f0232a]"
-    type: "ss"
-    server: "82.38.31.192"
-    port: 8080
-    cipher: "chacha20-ietf-poly1305"
-    password: "k1dBOmOB4oqi7Ump37a1bQ"
-    udp: true
-
   - name: "🇳🇱NL-234M-[d15429/e16773]"
     type: "ss"
     server: "82.38.31.185"
     port: 8080
     cipher: "chacha20-ietf-poly1305"
     password: "k1dBOmOB4oqi7Ump37a1bQ"
-    udp: true
-
-  - name: "🇳🇱NL-316M-[f9b827/6ce7b0]"
-    type: "ss"
-    server: "82.38.31.171"
-    port: 443
-    cipher: "chacha20-ietf-poly1305"
-    password: "oZIoA69Q8yhcQV8ka3Pa3A"
     udp: true
 
   - name: "🇪🇪EE-137M-[cd16f7/5b4690]"
@@ -809,21 +929,6 @@ proxies:
       host: "ee-2e06d85dc0.shamanapp.online"
       mode: "stream-up"
 
-  - name: "🇳🇱NL-313M-[f0ce02/fc54a6]"
-    type: "vless"
-    server: "94.249.187.88"
-    port: 43000
-    uuid: "390c7bd2-d83c-49b6-a6d5-c454583bbb2d"
-    udp: true
-    encryption: "none"
-    flow: "xtls-rprx-vision"
-    client-fingerprint: "chrome"
-    tls: true
-    reality-opts:
-      public-key: "r710c3Is-baifKzevzR4GKPnWOdolchLdP1NoOOtK2A"
-      short-id: "ecef9d30"
-    network: "tcp"
-
   - name: "🇪🇪EE-454M-[fa52ec/1baa07]"
     type: "vless"
     server: "ee-2e06d85dc0.shamanapp.online"
@@ -932,33 +1037,6 @@ proxies:
       public-key: "isYQuhKDrgc7IQ7G0LHywFnt57wffrkZ-er18DkVsBA"
       short-id: "e6d589857d1cec5e"
     network: "tcp"
-
-  - name: "🇮🇹IT-384M-[d57070/9abc1e]"
-    type: "ss"
-    server: "202.50.253.63"
-    port: 19999
-    cipher: "aes-256-gcm"
-    password: "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
-    udp: true
-
-  - name: "🇹🇷TR-220M-[a0813d/8ceec6]"
-    type: "hysteria2"
-    server: "153.56.210.134"
-    port: 38045
-    password: "a81a7b45-dd70-42ef-822f-ef467f944382"
-    udp: true
-    sni: "www.bing.com"
-    skip-cert-verify: true
-    obfs: "salamander"
-    obfs-password: "642516f2-f9bd-41ce-9904-dee699c39cf9"
-
-  - name: "🇮🇹IT-397M-[bd760b/17b4d2]"
-    type: "ss"
-    server: "202.50.253.90"
-    port: 19999
-    cipher: "aes-256-gcm"
-    password: "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
-    udp: true
 
   - name: "🇳🇱NL-74M-[4a59f6/bbdfaf]"
     type: "vless"
@@ -1071,22 +1149,6 @@ proxies:
       public-key: "_aURfmVUjvCRZipDI2eqMO0VQa64BJRGYFOdlBFi1XQ"
       short-id: ""
     network: "tcp"
-
-  - name: "🇮🇹IT-456M-[68b609/742cea]"
-    type: "ss"
-    server: "202.50.253.54"
-    port: 19999
-    cipher: "aes-256-gcm"
-    password: "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
-    udp: true
-
-  - name: "🇳🇱NL-323M-[7a3829/6f55fc]"
-    type: "ss"
-    server: "82.38.31.213"
-    port: 8080
-    cipher: "chacha20-ietf-poly1305"
-    password: "k1dBOmOB4oqi7Ump37a1bQ"
-    udp: true
 
   - name: "🇮🇹IT-276M-[f44479/81e57b]"
     type: "ss"
@@ -1404,29 +1466,46 @@ proxy-groups:
     type: select
     proxies:
       - "🇬🇧GB-360M-[be8dab/1bb7ee]"
-      - "🇺🇸US-124M-[af3435/03e446]"
+      - "🇺🇸US-84M-[af3435/03e446]"
+      - "🇳🇱NL-200M-[ce6d22/29230e]"
+      - "🇳🇱NL-178M-[3092a9/84d5ab]"
+      - "🇳🇱NL-276M-[56acf6/9247c3]"
+      - "🇳🇱NL-276M-[0449e6/4d3e6e]"
+      - "🇳🇱NL-164M-[797068/14c325]"
+      - "🇳🇱NL-276M-[7a3829/6f55fc]"
+      - "🇳🇱NL-276M-[e297b0/02316b]"
+      - "🇳🇱NL-276M-[93b0a2/ed0aae]"
+      - "🇳🇱NL-276M-[2c6c1b/cacfab]"
+      - "🇳🇱NL-243M-[0e2372/a52c73]"
+      - "🇳🇱NL-276M-[bd29ea/9a9924]"
+      - "🇩🇪DE-183M-[17773f/2d61b5]"
+      - "🇱🇻LV-66M-[daa6cf/7c9175]"
+      - "🇱🇻LV-149M-[4be62a/936e89]"
+      - "🇳🇱NL-276M-[ff37be/f0232a]"
+      - "🇳🇱NL-219M-[bb5121/99945c]"
+      - "🇫🇷FR-270M-[cfad93/0b02e3]"
+      - "🇮🇹IT-89M-[d57070/9abc1e]"
+      - "🇳🇱NL-77M-[4a59f6/fd3500]"
+      - "🇳🇱NL-276M-[ca7b5d/22b2ec]"
+      - "🇳🇱NL-254M-[d4aa4c/884bfc]"
+      - "🇹🇷TR-253M-[a0813d/8ceec6]"
+      - "🇳🇱NL-346M-[f0ce02/fc54a6]"
+      - "🇬🇧GB-318M-[3a38af/9e8ec8]"
+      - "🇮🇹IT-425M-[68b609/742cea]"
+      - "🇸🇪SE-166M-[367427/0b46e3]"
+      - "🇳🇱NL-430M-[598062/e5b086]"
+      - "🇮🇹IT-420M-[bd760b/17b4d2]"
+      - "🇳🇱NL-116M-[f9b827/6ce7b0]"
       - "🇳🇱NL-245M-[fda664/619380]"
       - "🇫🇮FI-467M-[5aedb9/90534e]"
-      - "🇳🇱NL-443M-[bb5121/99945c]"
       - "🇷🇺RU-539M-[9e7092/08293f]"
       - "🇫🇷FR-359M-[cfad93/46eb26]"
       - "🇳🇱NL-281M-[3092a9/7ba880]"
-      - "🇳🇱NL-282M-[ce6d22/29230e]"
-      - "🇸🇪SE-240M-[367427/0b46e3]"
-      - "🇱🇻LV-98M-[daa6cf/7c9175]"
-      - "🇳🇱NL-458M-[598062/e5b086]"
-      - "🇳🇱NL-478M-[2c6c1b/cacfab]"
-      - "🇫🇮FI-373M-[17773f/2d61b5]"
       - "🇳🇱NL-454M-[96e68e/4d56ba]"
-      - "🇳🇱NL-508M-[93b0a2/ed0aae]"
       - "🇳🇱NL-437M-[20ea8d/63f44d]"
       - "🇳🇱NL-478M-[664ba6/9628a3]"
-      - "🇳🇱NL-461M-[d4aa4c/884bfc]"
-      - "🇳🇱NL-487M-[e297b0/02316b]"
       - "🇳🇱NL-430M-[4d7a12/d0b82f]"
-      - "🇱🇻LV-173M-[4be62a/936e89]"
       - "🇳🇱NL-384M-[03f0cb/7d4208]"
-      - "🇳🇱NL-483M-[bd29ea/9a9924]"
       - "🇳🇱NL-362M-[48604d/d8b204]"
       - "🇳🇱NL-420M-[09f334/bc08b4]"
       - "🇳🇱NL-433M-[6413a2/a0f577]"
@@ -1437,21 +1516,16 @@ proxy-groups:
       - "🌐XX-491M-[5aedb9/f0c2fa]"
       - "🌐XX-551M-[9e7092/fa2e81]"
       - "🌐XX-104M-[da7aeb/252205]"
-      - "🌐XX-508M-[0e2372/a52c73]"
       - "🌐XX-481M-[d82c59/9b523a]"
       - "🌐XX-471M-[83b4ce/07b652]"
       - "🌐XX-460M-[dd742b/c54999]"
       - "🌐XX-459M-[199a8e/b08d40]"
       - "🌐XX-425M-[0c6a0b/21f8f9]"
-      - "🌐XX-197M-[797068/14c325]"
-      - "🌐XX-446M-[0449e6/4d3e6e]"
       - "🌐XX-458M-[67523d/fa6b3c]"
       - "🌐XX-504M-[834705/4deed7]"
       - "🌐XX-434M-[0af911/67b0a8]"
       - "🌐XX-437M-[e05175/ecd88f]"
-      - "🌐XX-455M-[56acf6/9247c3]"
       - "🇳🇱NL-186M-[08c0f4/7a1eed]"
-      - "🇳🇱NL-297M-[3092a9/84d5ab]"
       - "🇳🇱NL-463M-[a0516b/3c1fa0]"
       - "🇳🇱NL-479M-[2c262e/6154af]"
       - "🇳🇱NL-482M-[f9a0f5/96a5a0]"
@@ -1461,9 +1535,7 @@ proxy-groups:
       - "🇳🇱NL-427M-[455f0e/54b992]"
       - "🇳🇱NL-249M-[f94611/1f4bbb]"
       - "🇳🇱NL-265M-[d5e5f3/13eef5]"
-      - "🇳🇱NL-344M-[ff37be/f0232a]"
       - "🇳🇱NL-234M-[d15429/e16773]"
-      - "🇳🇱NL-316M-[f9b827/6ce7b0]"
       - "🇪🇪EE-137M-[cd16f7/5b4690]"
       - "🇳🇱NL-89M-[d8ef85/23046f]"
       - "🇳🇱NL-475M-[f9e2b5/74cdfc]"
@@ -1478,7 +1550,6 @@ proxy-groups:
       - "🇳🇱NL-435M-[f36414/90a1ff]"
       - "🇬🇧GB-207M-[98f452/6202f8]"
       - "🇪🇪EE-420M-[5d8e6b/99c39e]"
-      - "🇳🇱NL-313M-[f0ce02/fc54a6]"
       - "🇪🇪EE-454M-[fa52ec/1baa07]"
       - "🇩🇪DE-427M-[a0a6c6/052b98]"
       - "🇫🇷FR-227M-[52dd10/0fabf6]"
@@ -1486,9 +1557,6 @@ proxy-groups:
       - "🇳🇱NL-293M-[b0a482/d24571]"
       - "🇩🇪DE-194M-[ad613a/c10344]"
       - "🇳🇱NL-72M-[0ec51e/ec7348]"
-      - "🇮🇹IT-384M-[d57070/9abc1e]"
-      - "🇹🇷TR-220M-[a0813d/8ceec6]"
-      - "🇮🇹IT-397M-[bd760b/17b4d2]"
       - "🇳🇱NL-74M-[4a59f6/bbdfaf]"
       - "🇨🇿CZ-394M-[633713/4255f0]"
       - "🇳🇱NL-302M-[3e5af9/eb797c]"
@@ -1496,8 +1564,6 @@ proxy-groups:
       - "🇫🇷FR-207M-[52dd10/6c65c0]"
       - "🇳🇱NL-404M-[b0a482/8f93a2]"
       - "🇩🇪DE-472M-[3c65b0/fbbb49]"
-      - "🇮🇹IT-456M-[68b609/742cea]"
-      - "🇳🇱NL-323M-[7a3829/6f55fc]"
       - "🇮🇹IT-276M-[f44479/81e57b]"
       - "🌐XX-469M-[de3cad/49b71f]"
       - "🇪🇪EE-133M-[fa52ec/b54651]"
