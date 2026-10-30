@@ -4,17 +4,11 @@
 
 # CR-Hopper
 
-**Public proxy feeds. Frequently refreshed. Easy to use.**
+**Public proxy subscriptions · Frequently refreshed · Easy to use**
 
-Curated subscriptions for **Hiddify**, **Mihomo**, and **Clash-compatible clients**.
+Free curated proxy feeds for Hiddify, Mihomo and Clash-compatible clients.
 
-<p>
-  <a href="https://agumuzi.github.io/crhopper/"><img src="https://img.shields.io/badge/QUICK_START-Visit_Website-149DDD?style=for-the-badge" alt="Open the quick start website"></a>
-  <a href="https://raw.githubusercontent.com/Agumuzi/crhopper/main/CR-Hopper.txt"><img src="https://img.shields.io/badge/TXT_URI-Get_Feed-F27676?style=for-the-badge" alt="Get the TXT subscription"></a>
-  <a href="https://raw.githubusercontent.com/Agumuzi/crhopper/main/CR-Hopper.yaml"><img src="https://img.shields.io/badge/YAML-Get_Feed-28A98B?style=for-the-badge" alt="Get the YAML subscription"></a>
-</p>
-
-[Website](https://agumuzi.github.io/crhopper/) · [How it works](#how-it-works) · [Support development ☕](https://ko-fi.com/agumuzi) · [Report an issue](https://github.com/Agumuzi/crhopper/issues)
+[🌐 Website & visual guide](https://agumuzi.github.io/crhopper/) · [☕ Support](https://ko-fi.com/agumuzi) · [Report an issue](https://github.com/Agumuzi/crhopper/issues)
 
 **English** · [简体中文](./README.zh-CN.md) · [Русский](./README.ru.md) · [فارسی](./README.fa.md)
 
@@ -22,63 +16,51 @@ Curated subscriptions for **Hiddify**, **Mihomo**, and **Clash-compatible client
 
 ---
 
-## ⚡ Quick start
+## 📋 Subscription URLs
 
-**No account, API key, or Google authorization required.** Choose a compatible client, import a feed as a **remote subscription**, and connect.
+**Copy the entire URL from the box that matches your client.** Each code block has a copy button on GitHub. Add the URL as a **remote subscription**, not as a local file.
 
-| Your client | Subscription format | Get the client |
-| :--- | :--- | :--- |
-| **Hiddify** and URI-compatible apps | **[TXT / URI feed](https://raw.githubusercontent.com/Agumuzi/crhopper/main/CR-Hopper.txt)** | [Hiddify releases](https://github.com/hiddify/hiddify-app/releases) |
-| **Clash Mi**, Mihomo and Clash-compatible apps | **[YAML feed](https://raw.githubusercontent.com/Agumuzi/crhopper/main/CR-Hopper.yaml)** | [Clash Mi downloads](https://clashmi.app/download) |
+### Hiddify · TXT / URI
 
-1. **Install** the client for your device.
-2. **Copy** the appropriate subscription URL from the table above or the [project website](https://agumuzi.github.io/crhopper/#feeds).
-3. **Import** it as a remote profile/configuration, then enable the connection.
+For **Hiddify** and other URI-compatible clients.
 
-> **New here?** The [illustrated quick-start guide](https://agumuzi.github.io/crhopper/#setup) walks through the setup step by step.
-
-<details>
-<summary><strong>Hiddify — import the TXT / URI subscription</strong></summary>
-
-1. Download [Hiddify](https://github.com/hiddify/hiddify-app/releases).
-2. Open **Home → + → Clipboard** (or **Manually**).
-3. Import the [TXT subscription](https://raw.githubusercontent.com/Agumuzi/crhopper/main/CR-Hopper.txt), then connect.
-
-Official references: [Installation guide](https://hiddify.com/app/How-to-install-Hiddify-app/) · [Usage guide](https://hiddify.com/app/How-to-use-Hiddify-app/).
-
-</details>
-
-<details>
-<summary><strong>Clash Mi — import the YAML subscription</strong></summary>
-
-1. Download [Clash Mi](https://clashmi.app/download) ([GitHub releases](https://github.com/KaringX/clashmi/releases)).
-2. Open **My Configurations → + → Add configuration link**.
-3. Paste the [YAML subscription URL](https://raw.githubusercontent.com/Agumuzi/crhopper/main/CR-Hopper.yaml), return to **Home**, and enable the connection.
-
-Official reference: [Clash Mi usage guide](https://clashmi.app/guide/).
-
-</details>
-
-<details>
-<summary><strong>Show permanent subscription URLs</strong></summary>
-
-**TXT / URI — Hiddify and compatible clients**
-
-~~~text
+```text
 https://raw.githubusercontent.com/Agumuzi/crhopper/main/CR-Hopper.txt
-~~~
+```
 
-**YAML — Mihomo / Clash-compatible clients**
+### Clash Mi / Mihomo · YAML
 
-~~~text
+For **Clash Mi**, **Mihomo** and other Clash-compatible clients.
+
+```text
 https://raw.githubusercontent.com/Agumuzi/crhopper/main/CR-Hopper.yaml
-~~~
+```
 
-These URLs and filenames are kept unchanged for existing subscribers.
+> Both subscriptions contain the same selected public nodes in different formats. The feed URLs are permanent and remain unchanged for existing subscribers.
 
-</details>
+## 🚀 How to connect
 
-Both recommended clients support iOS, Android, macOS, Windows and Linux. Download installers directly from their developers; CR-Hopper does not distribute client applications.
+### Option 1 — Hiddify (TXT / URI)
+
+1. **Install Hiddify:** [Download for iOS, Android, macOS, Windows or Linux](https://github.com/hiddify/hiddify-app/releases).
+2. **Copy** the TXT / URI URL from the first box above.
+3. **Import:** Open Hiddify → **Home → + → Clipboard**. If needed, choose **Manually** and paste the URL.
+4. **Connect:** Select the imported profile and start the connection. Refresh the subscription when nodes stop working.
+
+[Official installation guide](https://hiddify.com/app/How-to-install-Hiddify-app/) · [Official usage guide](https://hiddify.com/app/How-to-use-Hiddify-app/)
+
+### Option 2 — Clash Mi (YAML)
+
+1. **Install Clash Mi:** [Official downloads](https://clashmi.app/download) · [GitHub releases](https://github.com/KaringX/clashmi/releases).
+2. **Copy** the YAML URL from the second box above.
+3. **Import:** Open Clash Mi → **My Configurations → + → Add configuration link** → paste the URL and save.
+4. **Connect:** Return to **Home** and enable the connection. Refresh the subscription when nodes stop working.
+
+[Official usage guide](https://clashmi.app/guide/)
+
+> **Prefer screenshots?** The [visual setup guide](https://agumuzi.github.io/crhopper/#setup) shows the full steps. You do **not** need a CR-Hopper account, API key or Google authorization to subscribe. CR-Hopper does not distribute client installers.
+
+---
 
 ## How it works
 
