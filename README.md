@@ -10,7 +10,7 @@ Curated subscriptions for **Hiddify**, **Mihomo**, and **Clash-compatible client
 
 <p>
   <a href="https://agumuzi.github.io/crhopper/"><img src="https://img.shields.io/badge/QUICK_START-Visit_Website-149DDD?style=for-the-badge" alt="Open the quick start website"></a>
-  <a href="https://raw.githubusercontent.com/Agumuzi/crhopper/main/CR-Hopper.txt"><img src="https://img.shields.io/badge/TXT_/_URI-Get_Feed-F27676?style=for-the-badge" alt="Get the TXT subscription"></a>
+  <a href="https://raw.githubusercontent.com/Agumuzi/crhopper/main/CR-Hopper.txt"><img src="https://img.shields.io/badge/TXT_URI-Get_Feed-F27676?style=for-the-badge" alt="Get the TXT subscription"></a>
   <a href="https://raw.githubusercontent.com/Agumuzi/crhopper/main/CR-Hopper.yaml"><img src="https://img.shields.io/badge/YAML-Get_Feed-28A98B?style=for-the-badge" alt="Get the YAML subscription"></a>
 </p>
 
@@ -125,7 +125,7 @@ Please **do not** post private nodes, tokens, account data, or personal logs in 
 
 The [project website](https://agumuzi.github.io/crhopper/) is a static four-language guide maintained in [docs/](./docs/), separate from the subscription files and publication workflow. The repository remains named **crhopper** to preserve existing remote URLs; the public project name is **CR-Hopper**.
 
-**CR-Hopper Sync** is a maintainer-only Google Drive archive integration. A separate local scanner uses \`rclone\` to back up project files and operational evidence to the maintainer's own Drive. It is **not** a public subscriber login feature: using the TXT or YAML feeds never requires Google authorization, and the published URLs are unchanged.
+**CR-Hopper Sync** is a maintainer-only Google Drive archive integration. A separate local scanner uses rclone to back up project files and operational evidence to the maintainer's own Drive. It is **not** a public subscriber login feature: using the TXT or YAML feeds never requires Google authorization, and the published URLs are unchanged.
 
 See the [CR-Hopper Sync privacy policy](https://agumuzi.github.io/crhopper/privacy.html) for data access, storage, retention and revocation. OAuth client credentials and private scanner files are not part of this public repository.
 
