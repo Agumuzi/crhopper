@@ -6,7 +6,7 @@ log-level: warning
 ipv6: false
 
 proxies:
-  - name: "🇹🇷TR-179M-[f37d8b/f0c486]"
+  - name: "🇹🇷TR-207M-[f37d8b/f0c486]"
     type: "hysteria2"
     server: "153.56.210.134"
     port: 34121
@@ -17,20 +17,339 @@ proxies:
     obfs: "salamander"
     obfs-password: "9a33460c-b037-47aa-a606-d04211f4e0ec"
 
+  - name: "🇳🇱NL-329M-[0449e6/4d3e6e]"
+    type: "ss"
+    server: "82.38.31.26"
+    port: 8080
+    cipher: "chacha20-ietf-poly1305"
+    password: "oZIoA69Q8yhcQV8ka3Pa3A"
+    udp: true
+
+  - name: "🇩🇪DE-309M-[a9f15f/f0cf84]"
+    type: "hysteria2"
+    server: "45.88.12.120"
+    port: 443
+    password: "5a7cb309-4ce9-4f2a-b887-747f991e03da"
+    udp: true
+    sni: "crt.onecloudstream.com"
+
+  - name: "🇳🇱NL-248M-[03f0cb/7d4208]"
+    type: "ss"
+    server: "82.38.31.46"
+    port: 8080
+    cipher: "chacha20-ietf-poly1305"
+    password: "oZIoA69Q8yhcQV8ka3Pa3A"
+    udp: true
+
+  - name: "🇳🇱NL-294M-[849fc0/785c28]"
+    type: "ss"
+    server: "109.201.152.181"
+    port: 443
+    cipher: "aes-128-cfb"
+    password: "shadowsocks"
+    udp: true
+
+  - name: "🇮🇹IT-253M-[2fd0fd/bfe57c]"
+    type: "ss"
+    server: "202.50.253.81"
+    port: 19999
+    cipher: "aes-256-gcm"
+    password: "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
+    udp: true
+
+  - name: "🇷🇺RU-329M-[76d10a/1a07e4]"
+    type: "vless"
+    server: "185.147.27.164"
+    port: 8443
+    uuid: "3a90bf69-1ffe-4ebb-b9a7-ad9ba8e9f66f"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "ekb.eg"
+    client-fingerprint: "chrome"
+    skip-cert-verify: true
+    tls: true
+    network: "tcp"
+
+  - name: "🇳🇱NL-260M-[56acf6/9247c3]"
+    type: "ss"
+    server: "82.38.31.169"
+    port: 443
+    cipher: "chacha20-ietf-poly1305"
+    password: "oZIoA69Q8yhcQV8ka3Pa3A"
+    udp: true
+
+  - name: "🇳🇱NL-303M-[48604d/d8b204]"
+    type: "ss"
+    server: "82.38.31.18"
+    port: 8080
+    cipher: "chacha20-ietf-poly1305"
+    password: "oZIoA69Q8yhcQV8ka3Pa3A"
+    udp: true
+
+  - name: "🇷🇺RU-329M-[9e7092/08293f]"
+    type: "vless"
+    server: "185.147.27.183"
+    port: 8443
+    uuid: "379998c5-2a71-4202-9c74-522e0c3c5404"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "ekb.eg"
+    client-fingerprint: "chrome"
+    skip-cert-verify: true
+    tls: true
+    network: "tcp"
+
+  - name: "🇳🇱NL-284M-[6413a2/a0f577]"
+    type: "ss"
+    server: "82.38.31.17"
+    port: 8080
+    cipher: "chacha20-ietf-poly1305"
+    password: "oZIoA69Q8yhcQV8ka3Pa3A"
+    udp: true
+
+  - name: "🇫🇷FR-470M-[a8e43d/8f788b]"
+    type: "vless"
+    server: "198.16.112.148"
+    port: 443
+    uuid: "e53b3d8c-2782-456b-97bc-6bc232bdbaa8"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "fr2.greenzone12.com"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "jIq_COD-tIXTvgDn-TslFGtB_a8HVgUOOIlUByv8fkg"
+      short-id: "8718c58d3d51db59"
+    network: "tcp"
+
+  - name: "🇵🇱PL-475M-[86e0e6/b39f69]"
+    type: "vless"
+    server: "191.217.245.10"
+    port: 443
+    uuid: "2614a96d-e39f-4cca-a9c7-467a178c2c0a"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "pl.lenvex.cc"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "OFmJtVi6OB9E6KIc5QV5YmoouimRFc-Se9hICjtV8hQ"
+      short-id: ""
+    network: "tcp"
+
+  - name: "🇳🇱NL-318M-[598062/e5b086]"
+    type: "ss"
+    server: "82.38.31.2"
+    port: 8080
+    cipher: "chacha20-ietf-poly1305"
+    password: "oZIoA69Q8yhcQV8ka3Pa3A"
+    udp: true
+
+  - name: "🇫🇮FI-78M-[17773f/a2015a]"
+    type: "vless"
+    server: "199.232.239.239"
+    port: 443
+    uuid: "40694ced-9a8c-42fd-f5f8-3ac3c8b27fc2"
+    udp: true
+    encryption: "none"
+    servername: "firefox.com"
+    client-fingerprint: "firefox"
+    skip-cert-verify: true
+    alpn:
+      - "h2"
+    tls: true
+    network: "ws"
+    ws-opts:
+      path: "/@CloudVPNchannel/@CloudVPNchannel/@CloudVPNchannel/@CloudVPNchannel/@CloudVPNchannel/@CloudVPNchannel?ed=2056"
+      headers:
+        Host: "mpkoe7ypcibr80p102020123.global.ssl.fastly.net"
+
+  - name: "🇮🇹IT-369M-[68b609/742cea]"
+    type: "ss"
+    server: "202.50.253.54"
+    port: 19999
+    cipher: "aes-256-gcm"
+    password: "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
+    udp: true
+
+  - name: "🇳🇱NL-408M-[d15429/e16773]"
+    type: "ss"
+    server: "82.38.31.185"
+    port: 8080
+    cipher: "chacha20-ietf-poly1305"
+    password: "k1dBOmOB4oqi7Ump37a1bQ"
+    udp: true
+
+  - name: "🇩🇪DE-111M-[4900be/60fa7a]"
+    type: "vmess"
+    server: "pmh11gc5ouvbikgm.v.3dns.vip"
+    port: 443
+    uuid: "ba7f523686914da1b35c62ae7927a8dd"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    tls: true
+    servername: "pmh11gc5ouvbikgm.v.3dns.vip"
+    network: "ws"
+    ws-opts:
+      path: "/ws-vmess"
+      headers:
+        Host: "pmh11gc5ouvbikgm.v.3dns.vip"
+
+  - name: "🇳🇱NL-432M-[199a8e/b08d40]"
+    type: "ss"
+    server: "82.38.31.211"
+    port: 8080
+    cipher: "chacha20-ietf-poly1305"
+    password: "k1dBOmOB4oqi7Ump37a1bQ"
+    udp: true
+
+  - name: "🇱🇻LV-358M-[0747ab/9ddc2b]"
+    type: "vless"
+    server: "72.56.52.229"
+    port: 443
+    uuid: "2614a96d-e39f-4cca-a9c7-467a178c2c0a"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "lv.dexlen.cc"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "OFmJtVi6OB9E6KIc5QV5YmoouimRFc-Se9hICjtV8hQ"
+      short-id: ""
+    network: "tcp"
+
+  - name: "🇷🇺RU-203M-[dbd11f/a2e9e9]"
+    type: "vless"
+    server: "135.106.153.131"
+    port: 443
+    uuid: "a5212bcb-ab85-459a-bec6-9f259eeeebfa"
+    udp: true
+    encryption: "none"
+    servername: "rug.tems.bet"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "OIWmjOL9lOxVRm-ejEvQf_G-Km-5Rw3L-w5d8rhVzQw"
+      short-id: "69b1363a7dfd97d3"
+    network: "tcp"
+
+  - name: "🇬🇧GB-71M-[cc1c65/488c1c]"
+    type: "trojan"
+    server: "146.75.57.120"
+    port: 443
+    password: "MiTiVPN"
+    udp: true
+    sni: "firefox.com"
+    client-fingerprint: "chrome"
+    skip-cert-verify: true
+    alpn:
+      - "http/1.1"
+    network: "ws"
+    ws-opts:
+      path: "/---@GHOFLSHCAN---@GHOFLSHCAN/---@GHOFLSHCAN---@GHOFLSHCAN/---@GHOFLSHCAN---@GHOFLSHCAN/NLSus---@GHOFLSHCAN---@GHOFLSHCAN/---@GHOFLSHCAN---@GHOFLSHCAN/---@GHOFLSHCAN---@GHOFLSHCAN"
+      headers:
+        Host: "mitivpn--mitivpn-mitivpn.ac.ir"
+
+  - name: "🇵🇱PL-479M-[166c93/4c575d]"
+    type: "vless"
+    server: "191.217.245.227"
+    port: 443
+    uuid: "2614a96d-e39f-4cca-a9c7-467a178c2c0a"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "pl.lenvex.cc"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "OFmJtVi6OB9E6KIc5QV5YmoouimRFc-Se9hICjtV8hQ"
+      short-id: ""
+    network: "tcp"
+
+  - name: "🇳🇱NL-270M-[0c6a0b/21f8f9]"
+    type: "ss"
+    server: "82.38.31.10"
+    port: 8080
+    cipher: "chacha20-ietf-poly1305"
+    password: "oZIoA69Q8yhcQV8ka3Pa3A"
+    udp: true
+
+  - name: "🇮🇹IT-365M-[d57070/9abc1e]"
+    type: "ss"
+    server: "202.50.253.63"
+    port: 19999
+    cipher: "aes-256-gcm"
+    password: "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
+    udp: true
+
+  - name: "🇩🇪DE-320M-[689344/856f92]"
+    type: "vless"
+    server: "94.228.162.222"
+    port: 443
+    uuid: "a9fe0131-af95-4599-bc7f-7205479ec7c7"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "vena.solomon-planet.ru"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "rvDa0xNkcJYEIJ-1Ncrq54BUjjwm99C_8Vv_-He6j1U"
+      short-id: ""
+    network: "tcp"
+
+  - name: "🇹🇷TR-134M-[66b0b9/6566ab]"
+    type: "vless"
+    server: "177.202.96.106"
+    port: 443
+    uuid: "e53b3d8c-2782-456b-97bc-6bc232bdbaa8"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "pl2.spidermanshopping.com"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "jIq_COD-tIXTvgDn-TslFGtB_a8HVgUOOIlUByv8fkg"
+      short-id: "8718c58d3d51db59"
+    network: "tcp"
+
+  - name: "🇳🇱NL-427M-[4e1ab4/9e00dc]"
+    type: "ss"
+    server: "82.38.31.175"
+    port: 443
+    cipher: "chacha20-ietf-poly1305"
+    password: "oZIoA69Q8yhcQV8ka3Pa3A"
+    udp: true
+
+  - name: "🇳🇱NL-338M-[67523d/fa6b3c]"
+    type: "ss"
+    server: "82.38.31.7"
+    port: 8080
+    cipher: "chacha20-ietf-poly1305"
+    password: "oZIoA69Q8yhcQV8ka3Pa3A"
+    udp: true
+
+  - name: "🇳🇱NL-370M-[4d7a12/d0b82f]"
+    type: "ss"
+    server: "82.38.31.174"
+    port: 8080
+    cipher: "chacha20-ietf-poly1305"
+    password: "oZIoA69Q8yhcQV8ka3Pa3A"
+    udp: true
+
   - name: "🇳🇱NL-431M-[27fdd9/079ef5]"
     type: "ss"
     server: "82.38.31.193"
     port: 8080
     cipher: "chacha20-ietf-poly1305"
     password: "k1dBOmOB4oqi7Ump37a1bQ"
-    udp: true
-
-  - name: "🇳🇱NL-434M-[56acf6/9247c3]"
-    type: "ss"
-    server: "82.38.31.169"
-    port: 443
-    cipher: "chacha20-ietf-poly1305"
-    password: "oZIoA69Q8yhcQV8ka3Pa3A"
     udp: true
 
   - name: "🇳🇱NL-487M-[834705/4deed7]"
@@ -109,14 +428,6 @@ proxies:
     obfs: "salamander"
     obfs-password: "642516f2-f9bd-41ce-9904-dee699c39cf9"
 
-  - name: "🇳🇱NL-185M-[03f0cb/7d4208]"
-    type: "ss"
-    server: "82.38.31.46"
-    port: 8080
-    cipher: "chacha20-ietf-poly1305"
-    password: "oZIoA69Q8yhcQV8ka3Pa3A"
-    udp: true
-
   - name: "🇫🇷FR-473M-[742952/2a8c6b]"
     type: "vless"
     server: "auto.claudpath.com"
@@ -144,14 +455,6 @@ proxies:
     password: "oZIoA69Q8yhcQV8ka3Pa3A"
     udp: true
 
-  - name: "🇳🇱NL-236M-[849fc0/785c28]"
-    type: "ss"
-    server: "109.201.152.181"
-    port: 443
-    cipher: "aes-128-cfb"
-    password: "shadowsocks"
-    udp: true
-
   - name: "🇷🇺RU-473M-[9e7092/fa2e81]"
     type: "vless"
     server: "185.147.27.183"
@@ -166,14 +469,6 @@ proxies:
     tls: true
     network: "tcp"
 
-  - name: "🇳🇱NL-391M-[6413a2/a0f577]"
-    type: "ss"
-    server: "82.38.31.17"
-    port: 8080
-    cipher: "chacha20-ietf-poly1305"
-    password: "oZIoA69Q8yhcQV8ka3Pa3A"
-    udp: true
-
   - name: "🇳🇱NL-86M-[664ba6/9628a3]"
     type: "ss"
     server: "82.38.31.171"
@@ -181,70 +476,6 @@ proxies:
     cipher: "chacha20-ietf-poly1305"
     password: "oZIoA69Q8yhcQV8ka3Pa3A"
     udp: true
-
-  - name: "🇳🇱NL-376M-[48604d/d8b204]"
-    type: "ss"
-    server: "82.38.31.18"
-    port: 8080
-    cipher: "chacha20-ietf-poly1305"
-    password: "oZIoA69Q8yhcQV8ka3Pa3A"
-    udp: true
-
-  - name: "🇩🇪DE-67M-[4900be/60fa7a]"
-    type: "vmess"
-    server: "pmh11gc5ouvbikgm.v.3dns.vip"
-    port: 443
-    uuid: "ba7f523686914da1b35c62ae7927a8dd"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-    tls: true
-    servername: "pmh11gc5ouvbikgm.v.3dns.vip"
-    network: "ws"
-    ws-opts:
-      path: "/ws-vmess"
-      headers:
-        Host: "pmh11gc5ouvbikgm.v.3dns.vip"
-
-  - name: "🇳🇱NL-341M-[d15429/e16773]"
-    type: "ss"
-    server: "82.38.31.185"
-    port: 8080
-    cipher: "chacha20-ietf-poly1305"
-    password: "k1dBOmOB4oqi7Ump37a1bQ"
-    udp: true
-
-  - name: "🇫🇷FR-490M-[a8e43d/8f788b]"
-    type: "vless"
-    server: "198.16.112.148"
-    port: 443
-    uuid: "e53b3d8c-2782-456b-97bc-6bc232bdbaa8"
-    udp: true
-    encryption: "none"
-    flow: "xtls-rprx-vision"
-    servername: "fr2.greenzone12.com"
-    client-fingerprint: "firefox"
-    tls: true
-    reality-opts:
-      public-key: "jIq_COD-tIXTvgDn-TslFGtB_a8HVgUOOIlUByv8fkg"
-      short-id: "8718c58d3d51db59"
-    network: "tcp"
-
-  - name: "🇩🇪DE-295M-[689344/856f92]"
-    type: "vless"
-    server: "94.228.162.222"
-    port: 443
-    uuid: "a9fe0131-af95-4599-bc7f-7205479ec7c7"
-    udp: true
-    encryption: "none"
-    flow: "xtls-rprx-vision"
-    servername: "vena.solomon-planet.ru"
-    client-fingerprint: "firefox"
-    tls: true
-    reality-opts:
-      public-key: "rvDa0xNkcJYEIJ-1Ncrq54BUjjwm99C_8Vv_-He6j1U"
-      short-id: ""
-    network: "tcp"
 
   - name: "🇵🇱PL-435M-[eb86f9/c043ab]"
     type: "vless"
@@ -270,31 +501,6 @@ proxies:
     udp: true
     sni: "css.rbxcdn.com"
     skip-cert-verify: true
-
-  - name: "🇬🇧GB-73M-[cc1c65/488c1c]"
-    type: "trojan"
-    server: "146.75.57.120"
-    port: 443
-    password: "MiTiVPN"
-    udp: true
-    sni: "firefox.com"
-    client-fingerprint: "chrome"
-    skip-cert-verify: true
-    alpn:
-      - "http/1.1"
-    network: "ws"
-    ws-opts:
-      path: "/---@GHOFLSHCAN---@GHOFLSHCAN/---@GHOFLSHCAN---@GHOFLSHCAN/---@GHOFLSHCAN---@GHOFLSHCAN/NLSus---@GHOFLSHCAN---@GHOFLSHCAN/---@GHOFLSHCAN---@GHOFLSHCAN/---@GHOFLSHCAN---@GHOFLSHCAN"
-      headers:
-        Host: "mitivpn--mitivpn-mitivpn.ac.ir"
-
-  - name: "🇮🇹IT-387M-[2fd0fd/bfe57c]"
-    type: "ss"
-    server: "202.50.253.81"
-    port: 19999
-    cipher: "aes-256-gcm"
-    password: "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
-    udp: true
 
   - name: "🇵🇱PL-164M-[523453/abe6a5]"
     type: "vless"
@@ -345,14 +551,6 @@ proxies:
       short-id: "051f20c2344a2dfd"
     network: "tcp"
 
-  - name: "🇳🇱NL-362M-[67523d/fa6b3c]"
-    type: "ss"
-    server: "82.38.31.7"
-    port: 8080
-    cipher: "chacha20-ietf-poly1305"
-    password: "oZIoA69Q8yhcQV8ka3Pa3A"
-    udp: true
-
   - name: "🇳🇱NL-378M-[bd29ea/9a9924]"
     type: "ss"
     server: "82.38.31.207"
@@ -397,14 +595,6 @@ proxies:
     port: 8080
     cipher: "chacha20-ietf-poly1305"
     password: "k1dBOmOB4oqi7Ump37a1bQ"
-    udp: true
-
-  - name: "🇳🇱NL-265M-[0c6a0b/21f8f9]"
-    type: "ss"
-    server: "82.38.31.10"
-    port: 8080
-    cipher: "chacha20-ietf-poly1305"
-    password: "oZIoA69Q8yhcQV8ka3Pa3A"
     udp: true
 
   - name: "🇳🇱NL-424M-[0af911/67b0a8]"
@@ -516,25 +706,6 @@ proxies:
       headers:
         Host: "peka-de.node.aleque.net"
 
-  - name: "🇫🇮FI-129M-[17773f/a2015a]"
-    type: "vless"
-    server: "199.232.239.239"
-    port: 443
-    uuid: "40694ced-9a8c-42fd-f5f8-3ac3c8b27fc2"
-    udp: true
-    encryption: "none"
-    servername: "firefox.com"
-    client-fingerprint: "firefox"
-    skip-cert-verify: true
-    alpn:
-      - "h2"
-    tls: true
-    network: "ws"
-    ws-opts:
-      path: "/@CloudVPNchannel/@CloudVPNchannel/@CloudVPNchannel/@CloudVPNchannel/@CloudVPNchannel/@CloudVPNchannel?ed=2056"
-      headers:
-        Host: "mpkoe7ypcibr80p102020123.global.ssl.fastly.net"
-
   - name: "🇩🇪DE-194M-[81f082/721bac]"
     type: "vless"
     server: "31.77.220.8"
@@ -584,14 +755,6 @@ proxies:
     sni: "pl3.nexfile.net"
     skip-cert-verify: true
 
-  - name: "🇳🇱NL-260M-[598062/e5b086]"
-    type: "ss"
-    server: "82.38.31.2"
-    port: 8080
-    cipher: "chacha20-ietf-poly1305"
-    password: "oZIoA69Q8yhcQV8ka3Pa3A"
-    udp: true
-
   - name: "🇳🇱NL-277M-[a0516b/3c1fa0]"
     type: "ss"
     server: "82.38.31.204"
@@ -622,14 +785,6 @@ proxies:
     port: 8080
     cipher: "chacha20-ietf-poly1305"
     password: "k1dBOmOB4oqi7Ump37a1bQ"
-    udp: true
-
-  - name: "🇮🇹IT-328M-[68b609/742cea]"
-    type: "ss"
-    server: "202.50.253.54"
-    port: 19999
-    cipher: "aes-256-gcm"
-    password: "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
     udp: true
 
   - name: "🇮🇹IT-320M-[9cee66/9f9b89]"
@@ -672,28 +827,12 @@ proxies:
     password: "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
     udp: true
 
-  - name: "🇳🇱NL-324M-[4e1ab4/9e00dc]"
-    type: "ss"
-    server: "82.38.31.175"
-    port: 443
-    cipher: "chacha20-ietf-poly1305"
-    password: "oZIoA69Q8yhcQV8ka3Pa3A"
-    udp: true
-
   - name: "🌐XX-167M-[9d385b/1ada72]"
     type: "ss"
     server: "dns27.m3hrzd.ir"
     port: 8044
     cipher: "chacha20-ietf-poly1305"
     password: "hNfeLCN3XzYgLFSAWo_fxOl4HC1gNw0V"
-    udp: true
-
-  - name: "🇳🇱NL-116M-[4d7a12/d0b82f]"
-    type: "ss"
-    server: "82.38.31.174"
-    port: 8080
-    cipher: "chacha20-ietf-poly1305"
-    password: "oZIoA69Q8yhcQV8ka3Pa3A"
     udp: true
 
   - name: "🌐XX-225M-[7f05ce/57bc77]"
@@ -768,22 +907,6 @@ proxies:
     port: 8080
     cipher: "chacha20-ietf-poly1305"
     password: "k1dBOmOB4oqi7Ump37a1bQ"
-    udp: true
-
-  - name: "🌐XX-281M-[199a8e/b08d40]"
-    type: "ss"
-    server: "82.38.31.211"
-    port: 8080
-    cipher: "chacha20-ietf-poly1305"
-    password: "k1dBOmOB4oqi7Ump37a1bQ"
-    udp: true
-
-  - name: "🇳🇱NL-260M-[0449e6/4d3e6e]"
-    type: "ss"
-    server: "82.38.31.26"
-    port: 8080
-    cipher: "chacha20-ietf-poly1305"
-    password: "oZIoA69Q8yhcQV8ka3Pa3A"
     udp: true
 
   - name: "🇳🇱NL-140M-[4ada72/f95df6]"
@@ -1027,20 +1150,6 @@ proxies:
     xhttp-opts:
       path: "/api/v1/sync/"
       mode: "auto"
-
-  - name: "🇷🇺RU-404M-[9e7092/08293f]"
-    type: "vless"
-    server: "185.147.27.183"
-    port: 8443
-    uuid: "379998c5-2a71-4202-9c74-522e0c3c5404"
-    udp: true
-    encryption: "none"
-    flow: "xtls-rprx-vision"
-    servername: "ekb.eg"
-    client-fingerprint: "chrome"
-    skip-cert-verify: true
-    tls: true
-    network: "tcp"
 
   - name: "🇳🇱NL-392M-[2c6c1b/cacfab]"
     type: "ss"
@@ -1459,14 +1568,6 @@ proxies:
     password: "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
     udp: true
 
-  - name: "🇮🇹IT-398M-[d57070/9abc1e]"
-    type: "ss"
-    server: "202.50.253.63"
-    port: 19999
-    cipher: "aes-256-gcm"
-    password: "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
-    udp: true
-
   - name: "🇮🇹IT-400M-[8c4136/6ca94c]"
     type: "ss"
     server: "202.50.253.99"
@@ -1573,9 +1674,37 @@ proxy-groups:
   - name: "AUTO"
     type: select
     proxies:
-      - "🇹🇷TR-179M-[f37d8b/f0c486]"
+      - "🇹🇷TR-207M-[f37d8b/f0c486]"
+      - "🇳🇱NL-329M-[0449e6/4d3e6e]"
+      - "🇩🇪DE-309M-[a9f15f/f0cf84]"
+      - "🇳🇱NL-248M-[03f0cb/7d4208]"
+      - "🇳🇱NL-294M-[849fc0/785c28]"
+      - "🇮🇹IT-253M-[2fd0fd/bfe57c]"
+      - "🇷🇺RU-329M-[76d10a/1a07e4]"
+      - "🇳🇱NL-260M-[56acf6/9247c3]"
+      - "🇳🇱NL-303M-[48604d/d8b204]"
+      - "🇷🇺RU-329M-[9e7092/08293f]"
+      - "🇳🇱NL-284M-[6413a2/a0f577]"
+      - "🇫🇷FR-470M-[a8e43d/8f788b]"
+      - "🇵🇱PL-475M-[86e0e6/b39f69]"
+      - "🇳🇱NL-318M-[598062/e5b086]"
+      - "🇫🇮FI-78M-[17773f/a2015a]"
+      - "🇮🇹IT-369M-[68b609/742cea]"
+      - "🇳🇱NL-408M-[d15429/e16773]"
+      - "🇩🇪DE-111M-[4900be/60fa7a]"
+      - "🇳🇱NL-432M-[199a8e/b08d40]"
+      - "🇱🇻LV-358M-[0747ab/9ddc2b]"
+      - "🇷🇺RU-203M-[dbd11f/a2e9e9]"
+      - "🇬🇧GB-71M-[cc1c65/488c1c]"
+      - "🇵🇱PL-479M-[166c93/4c575d]"
+      - "🇳🇱NL-270M-[0c6a0b/21f8f9]"
+      - "🇮🇹IT-365M-[d57070/9abc1e]"
+      - "🇩🇪DE-320M-[689344/856f92]"
+      - "🇹🇷TR-134M-[66b0b9/6566ab]"
+      - "🇳🇱NL-427M-[4e1ab4/9e00dc]"
+      - "🇳🇱NL-338M-[67523d/fa6b3c]"
+      - "🇳🇱NL-370M-[4d7a12/d0b82f]"
       - "🇳🇱NL-431M-[27fdd9/079ef5]"
-      - "🇳🇱NL-434M-[56acf6/9247c3]"
       - "🇳🇱NL-487M-[834705/4deed7]"
       - "🇳🇱NL-347M-[797068/14c325]"
       - "🇳🇱NL-312M-[09f334/bc08b4]"
@@ -1584,32 +1713,20 @@ proxy-groups:
       - "🇷🇺RU-400M-[76d10a/354bac]"
       - "🇹🇷TR-196M-[f9d7f2/3b7b83]"
       - "🇹🇷TR-197M-[a0813d/8ceec6]"
-      - "🇳🇱NL-185M-[03f0cb/7d4208]"
       - "🇫🇷FR-473M-[742952/2a8c6b]"
       - "🇳🇱NL-187M-[f9b827/6ce7b0]"
-      - "🇳🇱NL-236M-[849fc0/785c28]"
       - "🇷🇺RU-473M-[9e7092/fa2e81]"
-      - "🇳🇱NL-391M-[6413a2/a0f577]"
       - "🇳🇱NL-86M-[664ba6/9628a3]"
-      - "🇳🇱NL-376M-[48604d/d8b204]"
-      - "🇩🇪DE-67M-[4900be/60fa7a]"
-      - "🇳🇱NL-341M-[d15429/e16773]"
-      - "🇫🇷FR-490M-[a8e43d/8f788b]"
-      - "🇩🇪DE-295M-[689344/856f92]"
       - "🇵🇱PL-435M-[eb86f9/c043ab]"
       - "🇷🇴RO-163M-[2adb5e/781a67]"
-      - "🇬🇧GB-73M-[cc1c65/488c1c]"
-      - "🇮🇹IT-387M-[2fd0fd/bfe57c]"
       - "🇵🇱PL-164M-[523453/abe6a5]"
       - "🇬🇧GB-118M-[be8dab/9fbdc5]"
       - "🌐XX-365M-[448ca2/de2927]"
-      - "🇳🇱NL-362M-[67523d/fa6b3c]"
       - "🇳🇱NL-378M-[bd29ea/9a9924]"
       - "🇵🇱PL-163M-[4545f6/8bb203]"
       - "🇳🇱NL-447M-[2c262e/6154af]"
       - "🇳🇱NL-371M-[f9e2b5/74cdfc]"
       - "🇳🇱NL-480M-[96e68e/4d56ba]"
-      - "🇳🇱NL-265M-[0c6a0b/21f8f9]"
       - "🇳🇱NL-424M-[0af911/67b0a8]"
       - "🇮🇹IT-374M-[5ef892/8d84df]"
       - "🇬🇧GB-516M-[1ea5d9/2733a6]"
@@ -1619,25 +1736,20 @@ proxy-groups:
       - "🇮🇹IT-449M-[5f7b88/8ac5dc]"
       - "🇷🇺RU-292M-[cbfe5d/c94f86]"
       - "🇩🇪DE-211M-[0fae9e/6563c7]"
-      - "🇫🇮FI-129M-[17773f/a2015a]"
       - "🇩🇪DE-194M-[81f082/721bac]"
       - "🇵🇱PL-247M-[8deb9d/7ba6f1]"
       - "🇵🇱PL-368M-[b26f75/fc22a8]"
       - "🇵🇱PL-342M-[c1970f/a90c8a]"
       - "🇵🇱PL-277M-[8deb9d/eb27f9]"
-      - "🇳🇱NL-260M-[598062/e5b086]"
       - "🇳🇱NL-277M-[a0516b/3c1fa0]"
       - "🌐XX-234M-[b16a58/1b600e]"
       - "🇳🇱NL-166M-[20ea8d/63f44d]"
       - "🇳🇱NL-272M-[cf9e21/710c07]"
-      - "🇮🇹IT-328M-[68b609/742cea]"
       - "🇮🇹IT-320M-[9cee66/9f9b89]"
       - "🌐XX-326M-[d6c4cf/bdddd7]"
       - "🇳🇱NL-137M-[455f0e/54b992]"
       - "🇮🇹IT-336M-[f44479/81e57b]"
-      - "🇳🇱NL-324M-[4e1ab4/9e00dc]"
       - "🌐XX-167M-[9d385b/1ada72]"
-      - "🇳🇱NL-116M-[4d7a12/d0b82f]"
       - "🌐XX-225M-[7f05ce/57bc77]"
       - "🌐XX-313M-[3b8b6c/e2fe22]"
       - "🌐XX-251M-[7f68ca/2eace1]"
@@ -1645,8 +1757,6 @@ proxy-groups:
       - "🇳🇱NL-392M-[f9a0f5/96a5a0]"
       - "🇳🇱NL-383M-[d4aa4c/884bfc]"
       - "🇳🇱NL-355M-[93b0a2/ed0aae]"
-      - "🌐XX-281M-[199a8e/b08d40]"
-      - "🇳🇱NL-260M-[0449e6/4d3e6e]"
       - "🇳🇱NL-140M-[4ada72/f95df6]"
       - "🇩🇪DE-347M-[f3564a/2a2e09]"
       - "🇩🇪DE-317M-[90223b/c3a2ce]"
@@ -1669,7 +1779,6 @@ proxy-groups:
       - "🇳🇱NL-436M-[e297b0/02316b]"
       - "🇳🇱NL-268M-[13d913/c09bfc]"
       - "🇩🇪DE-363M-[0eac0a/c95c31]"
-      - "🇷🇺RU-404M-[9e7092/08293f]"
       - "🇳🇱NL-392M-[2c6c1b/cacfab]"
       - "🇳🇱NL-287M-[dd742b/c54999]"
       - "🇷🇺RU-96M-[7bdd53/796b1e]"
@@ -1701,7 +1810,6 @@ proxy-groups:
       - "🇨🇿CZ-437M-[aecb07/2c8a81]"
       - "🇩🇪DE-319M-[92080c/efdbca]"
       - "🇮🇹IT-388M-[de3cad/49b71f]"
-      - "🇮🇹IT-398M-[d57070/9abc1e]"
       - "🇮🇹IT-400M-[8c4136/6ca94c]"
       - "🇨🇿CZ-276M-[aecb07/93bbbe]"
       - "🇨🇿CZ-276M-[633713/14a0d7]"
