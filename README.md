@@ -98,18 +98,18 @@ Please **do not** post private nodes, tokens, account data, or personal logs in 
 
 ### License & branding
 
-- **Project-maintained source code:** [PolyForm Noncommercial 1.0.0](LICENSE). Qualifying noncommercial use and modification are permitted; commercial use requires separate permission. This is **source-available, not OSI open source**.
+- **Project-maintained source code:** [MIT License](LICENSE). Reuse, modification, redistribution and commercial use are permitted with the required copyright and license notices.
 - **Original artwork and branding:** The rocket icon, Agumuzi marks and other original visuals are separately reserved under [Brand & Visual Assets](ASSETS-LICENSE.md); reuse requires permission.
-- **Third-party feeds:** Public node addresses and upstream data do not belong to CR-Hopper and are not covered by the project's PolyForm license merely because they appear in the feeds.
+- **Third-party feeds:** Public node addresses and upstream data belong to their respective sources and are **not** relicensed under MIT merely because they appear in CR-Hopper feeds.
 
 ## Disclaimer
 
-**For testing, research and personal network use only.** Use CR-Hopper in accordance with the laws, regulations, contracts and service terms applicable to you. Third-party public nodes have **no guaranteed availability, privacy or security**.
+**Designed for testing, research and personal network use.** Use CR-Hopper in accordance with the laws, regulations, contracts and service terms applicable to you. Third-party public nodes have **no guaranteed availability, privacy or security**.
 
 <details>
 <summary><strong>Read the full disclaimer</strong></summary>
 
-CR-Hopper is provided for testing, research and personal network use only.
+The public feeds are intended primarily for testing, research and personal network use. The project-maintained source code is licensed under MIT; third-party feeds and assets have separate rights.
 
 Users are solely responsible for ensuring that their use of this repository, its subscription feeds and any third-party proxy nodes complies with all laws, regulations, contractual obligations and service terms applicable in their country or jurisdiction. **Do not use CR-Hopper in any manner that is prohibited by local law or regulation.**
 

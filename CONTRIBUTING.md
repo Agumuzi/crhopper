@@ -22,6 +22,6 @@ Describe the problem and changed files; include before/after screenshots for lay
 
 ## Licensing and contribution rights
 
-Original project-maintained source code is available under [PolyForm Noncommercial 1.0.0](LICENSE) for permitted noncommercial use. Original project logos and artwork are reserved under [Brand & Visual Assets](ASSETS-LICENSE.md). Public third-party proxy entries and related metadata have separate origins and rights and are **not** relicensed by this project.
+Original project-maintained source code is available under the [MIT License](LICENSE), including commercial reuse with required notices. Original logos and artwork are reserved under [Brand & Visual Assets](ASSETS-LICENSE.md). Third-party proxy entries and related metadata have separate origins and rights and are **not** relicensed under MIT by this project.
 
-Only submit materials you have the right to contribute. By submitting code you allow its inclusion under this project's current terms; contributors retain their own copyrights, and the maintainer needs separate permission to license contributed material commercially.
+Only submit materials you have the right to contribute under MIT. By submitting code you allow inclusion under the MIT License, including commercial use; contributors retain their copyrights. Relicensing their work under unrelated terms may require additional permission.
