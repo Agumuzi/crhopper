@@ -6,7 +6,7 @@ log-level: warning
 ipv6: false
 
 proxies:
-  - name: "🇺🇸US-43M-[547bad/a86b0a]"
+  - name: "🇺🇸US-41M-[547bad/a86b0a]"
     type: "vless"
     server: "143.246.62.191"
     port: 8443
@@ -19,6 +19,16 @@ proxies:
     reality-opts:
       public-key: "4g6gX0ueJap7pY_iTDx23h6bzo3KIOTcFzP1Uacn0QA"
       short-id: "4ad2e4e660550e43"
+    network: "tcp"
+
+  - name: "🇲🇽MX-20M-[a6a548/590594]"
+    type: "trojan"
+    server: "mx001.zestapp778.com"
+    port: 15083
+    password: "5t6i121em5lkmsmk"
+    udp: true
+    sni: "mx001.zestapp778.com"
+    skip-cert-verify: true
     network: "tcp"
 
   - name: "🇺🇸US-182M-[a1e34d/8e6809]"
@@ -1482,7 +1492,8 @@ proxy-groups:
   - name: "AUTO"
     type: select
     proxies:
-      - "🇺🇸US-43M-[547bad/a86b0a]"
+      - "🇺🇸US-41M-[547bad/a86b0a]"
+      - "🇲🇽MX-20M-[a6a548/590594]"
       - "🇺🇸US-182M-[a1e34d/8e6809]"
       - "🇺🇸US-33M-[015a03/9d78ec]"
       - "🇺🇸US-43M-[547bad/b7922a]"
