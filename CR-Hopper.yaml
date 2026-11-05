@@ -6,18 +6,31 @@ log-level: warning
 ipv6: false
 
 proxies:
-  - name: "🇺🇸US-184M-[a1e34d/8e6809]"
-    type: "hysteria2"
-    server: "142.11.207.17"
+  - name: "🇫🇮FI-189M-[56d575/0eff67]"
+    type: "vless"
+    server: "193.233.199.84"
     port: 443
-    password: "kztyblVC7ZlEKR3ZO5HW"
+    uuid: "db80088c-32a1-4cb8-a907-0f3cb7844152"
     udp: true
-    sni: "www.bing.com"
-    skip-cert-verify: true
-    up: "50 Mbps"
-    down: "200 Mbps"
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "fi3game.japancase.site"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "1ONSjyJWD3lAomwIqFmmzb6lAhg077bvMJ7rGJCDk0g"
+      short-id: "38559e47f5536913"
+    network: "tcp"
 
-  - name: "🇫🇮FI-78M-[b56833/ddd199]"
+  - name: "🇳🇱NL-244M-[d554ff/9af21a]"
+    type: "hysteria2"
+    server: "9.247.54.188"
+    port: 443
+    password: "146d567c-6335-4e63-a8aa-7ec068642440"
+    udp: true
+    sni: "nl1.obxodvpn.us"
+
+  - name: "🇫🇮FI-349M-[b56833/ddd199]"
     type: "vless"
     server: "122.8.47.4"
     port: 8443
@@ -34,21 +47,212 @@ proxies:
     grpc-opts:
       grpc-service-name: "TunService"
 
-  - name: "🇫🇮FI-222M-[56d575/0eff67]"
+  - name: "🇩🇪DE-68M-[8e3785/734ff0]"
     type: "vless"
-    server: "193.233.199.84"
+    server: "31.76.83.1"
+    port: 443
+    uuid: "caedb3a1-6395-40b9-a9a8-4b9694eb224a"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "www.rimi.lv"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "0ucabP76F6UHGAAoi73bxlt6ugwqoRDoLAW5n39pezU"
+      short-id: ""
+    network: "tcp"
+
+  - name: "🇸🇪SE-382M-[9294d5/656484]"
+    type: "trojan"
+    server: "chatgpt.com"
+    port: 443
+    password: "Telegram--CONFIG7X--CONFIG7X--CONFIG7X--CONFIG7X--CONFIG7X--CONFIG7X--CONFIG7X--CONFIG7X-"
+    udp: true
+    sni: "cdn.config7x.site"
+    client-fingerprint: "chrome"
+    network: "ws"
+    ws-opts:
+      path: "/7x-tj-cdn"
+
+  - name: "🇺🇸US-292M-[cc1c65/1f2a62]"
+    type: "trojan"
+    server: "146.75.57.120"
+    port: 443
+    password: "MiTiVPN"
+    udp: true
+    sni: "cdn.akamai.steamstatic.com"
+    client-fingerprint: "chrome"
+    skip-cert-verify: true
+    alpn:
+      - "http/1.1"
+    network: "ws"
+    ws-opts:
+      path: "/---@MiTiVPN---@MiTiVPN"
+      headers:
+        Host: "mtlooabmakaakaoijji.global.ssl.fastly.net"
+
+  - name: "🇸🇪SE-346M-[512069/e7eb8c]"
+    type: "vless"
+    server: "grok.com"
+    port: 2083
+    uuid: "fc2d811f-3b7d-4706-9f46-d470255ef061"
+    udp: true
+    encryption: "none"
+    servername: "cdn.config7x.site"
+    client-fingerprint: "chrome"
+    tls: true
+    network: "ws"
+    ws-opts:
+      path: "/7x"
+      headers:
+        Host: "cdn.config7x.site"
+
+  - name: "🇹🇷TR-119M-[d14fc6/d3690b]"
+    type: "vmess"
+    server: "free.ertebatgoostar.ir"
+    port: 443
+    uuid: "1ffa1361-1552-45cc-ba33-dc9a71d37476"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    network: "tcp"
+
+  - name: "🇺🇸US-137M-[a1e34d/ac8f93]"
+    type: "hysteria2"
+    server: "142.11.207.17"
+    port: 443
+    password: "kztyblVC7ZlEKR3ZO5HW"
+    udp: true
+    sni: "www.bing.com"
+    skip-cert-verify: true
+
+  - name: "🇵🇱PL-293M-[862e84/8eb10e]"
+    type: "vless"
+    server: "pl-b1.golangwikito.cfd"
+    port: 61374
+    uuid: "f8d52ece-fad4-478d-875d-df6eed3befa7"
+    udp: true
+    encryption: "none"
+    packet-encoding: "xudp"
+    servername: "pl-b1.golangwikito.cfd"
+    client-fingerprint: "chrome"
+    tls: true
+    reality-opts:
+      public-key: "QrNs0ew7snHqLfpVXS9RAhlRzgAzzGZK9fXmDcx9xHI"
+      short-id: ""
+    network: "xhttp"
+    xhttp-opts:
+      path: "/"
+      host: "pl-b1.golangwikito.cfd"
+      mode: "packet-up"
+      reuse-settings:
+        max-connections: "3"
+      x-padding-bytes: "100-500"
+
+  - name: "🇳🇱NL-225M-[5b3dd8/187000]"
+    type: "vless"
+    server: "rm3.rmastore.ir"
+    port: 2053
+    uuid: "116e7d57-afcf-4558-be0a-01e80fe6cd31"
+    udp: true
+    encryption: "mlkem768x25519plus.native.0rtt.0zrIHtnNGtLLe7tm3aMwb5bJbza8t3DqG8TMfEJgflA"
+    tls: false
+    network: "ws"
+    ws-opts:
+      path: "/nlrma"
+
+  - name: "🇺🇸US-297M-[0180f7/8186b3]"
+    type: "vless"
+    server: "us2.japancase.site"
     port: 443
     uuid: "db80088c-32a1-4cb8-a907-0f3cb7844152"
     udp: true
     encryption: "none"
     flow: "xtls-rprx-vision"
-    servername: "fi3game.japancase.site"
+    servername: "us2.japancase.site"
+    client-fingerprint: "chrome"
+    tls: true
+    reality-opts:
+      public-key: "zEntiD6D81wY__YHPvIw78e09CBIgYkyQ5meIo7c_hg"
+      short-id: "41ae8e266bc3346f"
+    network: "tcp"
+
+  - name: "🇺🇸US-163M-[dc1530/852deb]"
+    type: "vless"
+    server: "opener-calcine.video-streams.org"
+    port: 443
+    uuid: "e0d6cafb-cb54-4057-9cb1-d81146a89733"
+    udp: true
+    encryption: "none"
+    servername: "opener-calcine.video-streams.org"
+    client-fingerprint: "qq"
+    tls: true
+    network: "ws"
+    ws-opts:
+      path: "/ws"
+      headers:
+        Host: "opener-calcine.video-streams.org"
+
+  - name: "🇺🇸US-25M-[015a03/9d78ec]"
+    type: "trojan"
+    server: "us001.zestapp778.com"
+    port: 57277
+    password: "5t6i121em5lkmsmk"
+    udp: true
+    sni: "us001.zestapp778.com"
+    network: "tcp"
+
+  - name: "🇩🇪DE-30M-[29f247/753d64]"
+    type: "vless"
+    server: "31.76.62.158"
+    port: 443
+    uuid: "caedb3a1-6395-40b9-a9a8-4b9694eb224a"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "www.maxima.lv"
     client-fingerprint: "firefox"
     tls: true
     reality-opts:
-      public-key: "1ONSjyJWD3lAomwIqFmmzb6lAhg077bvMJ7rGJCDk0g"
-      short-id: "38559e47f5536913"
+      public-key: "q97mUwRiZeygHgoRa6PJHDamhGS5lrMMB0zh6qFY6gk"
+      short-id: ""
     network: "tcp"
+
+  - name: "🇺🇸US-40M-[547bad/b7922a]"
+    type: "vless"
+    server: "143.246.62.191"
+    port: 8443
+    uuid: "eb8c97f7-a154-4442-91b0-54c0d055ad0b"
+    udp: true
+    encryption: "none"
+    packet-encoding: "none"
+    servername: "github.githubassets.com"
+    client-fingerprint: "chrome"
+    tls: true
+    reality-opts:
+      public-key: "4g6gX0ueJap7pY_iTDx23h6bzo3KIOTcFzP1Uacn0QA"
+      short-id: "4ad2e4e660550e43"
+    network: "tcp"
+
+  - name: "🇲🇽MX-34M-[a6a548/aababa]"
+    type: "trojan"
+    server: "mx001.zestapp778.com"
+    port: 15083
+    password: "5t6i121em5lkmsmk"
+    udp: true
+    network: "tcp"
+
+  - name: "🇺🇸US-184M-[a1e34d/8e6809]"
+    type: "hysteria2"
+    server: "142.11.207.17"
+    port: 443
+    password: "kztyblVC7ZlEKR3ZO5HW"
+    udp: true
+    sni: "www.bing.com"
+    skip-cert-verify: true
+    up: "50 Mbps"
+    down: "200 Mbps"
 
   - name: "🇵🇱PL-419M-[71071a/d61128]"
     type: "vless"
@@ -101,32 +305,6 @@ proxies:
       short-id: "f9d991431c87703c"
     network: "tcp"
 
-  - name: "🇹🇷TR-26M-[d14fc6/d3690b]"
-    type: "vmess"
-    server: "free.ertebatgoostar.ir"
-    port: 443
-    uuid: "1ffa1361-1552-45cc-ba33-dc9a71d37476"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-    network: "tcp"
-
-  - name: "🇺🇸US-43M-[547bad/b7922a]"
-    type: "vless"
-    server: "143.246.62.191"
-    port: 8443
-    uuid: "eb8c97f7-a154-4442-91b0-54c0d055ad0b"
-    udp: true
-    encryption: "none"
-    packet-encoding: "none"
-    servername: "github.githubassets.com"
-    client-fingerprint: "chrome"
-    tls: true
-    reality-opts:
-      public-key: "4g6gX0ueJap7pY_iTDx23h6bzo3KIOTcFzP1Uacn0QA"
-      short-id: "4ad2e4e660550e43"
-    network: "tcp"
-
   - name: "🇺🇸US-41M-[547bad/a86b0a]"
     type: "vless"
     server: "143.246.62.191"
@@ -141,27 +319,6 @@ proxies:
       public-key: "4g6gX0ueJap7pY_iTDx23h6bzo3KIOTcFzP1Uacn0QA"
       short-id: "4ad2e4e660550e43"
     network: "tcp"
-
-  - name: "🇺🇸US-33M-[015a03/9d78ec]"
-    type: "trojan"
-    server: "us001.zestapp778.com"
-    port: 57277
-    password: "5t6i121em5lkmsmk"
-    udp: true
-    sni: "us001.zestapp778.com"
-    network: "tcp"
-
-  - name: "🇳🇱NL-133M-[5b3dd8/187000]"
-    type: "vless"
-    server: "rm3.rmastore.ir"
-    port: 2053
-    uuid: "116e7d57-afcf-4558-be0a-01e80fe6cd31"
-    udp: true
-    encryption: "mlkem768x25519plus.native.0rtt.0zrIHtnNGtLLe7tm3aMwb5bJbza8t3DqG8TMfEJgflA"
-    tls: false
-    network: "ws"
-    ws-opts:
-      path: "/nlrma"
 
   - name: "🇳🇱NL-276M-[7595d7/fb6009]"
     type: "vless"
@@ -186,29 +343,6 @@ proxies:
         max-connections: "3"
       x-padding-bytes: "100-500"
 
-  - name: "🇵🇱PL-483M-[862e84/8eb10e]"
-    type: "vless"
-    server: "pl-b1.golangwikito.cfd"
-    port: 61374
-    uuid: "f8d52ece-fad4-478d-875d-df6eed3befa7"
-    udp: true
-    encryption: "none"
-    packet-encoding: "xudp"
-    servername: "pl-b1.golangwikito.cfd"
-    client-fingerprint: "chrome"
-    tls: true
-    reality-opts:
-      public-key: "QrNs0ew7snHqLfpVXS9RAhlRzgAzzGZK9fXmDcx9xHI"
-      short-id: ""
-    network: "xhttp"
-    xhttp-opts:
-      path: "/"
-      host: "pl-b1.golangwikito.cfd"
-      mode: "packet-up"
-      reuse-settings:
-        max-connections: "3"
-      x-padding-bytes: "100-500"
-
 proxy-groups:
   - name: "GLOBAL"
     type: select
@@ -218,18 +352,28 @@ proxy-groups:
   - name: "AUTO"
     type: select
     proxies:
+      - "🇫🇮FI-189M-[56d575/0eff67]"
+      - "🇳🇱NL-244M-[d554ff/9af21a]"
+      - "🇫🇮FI-349M-[b56833/ddd199]"
+      - "🇩🇪DE-68M-[8e3785/734ff0]"
+      - "🇸🇪SE-382M-[9294d5/656484]"
+      - "🇺🇸US-292M-[cc1c65/1f2a62]"
+      - "🇸🇪SE-346M-[512069/e7eb8c]"
+      - "🇹🇷TR-119M-[d14fc6/d3690b]"
+      - "🇺🇸US-137M-[a1e34d/ac8f93]"
+      - "🇵🇱PL-293M-[862e84/8eb10e]"
+      - "🇳🇱NL-225M-[5b3dd8/187000]"
+      - "🇺🇸US-297M-[0180f7/8186b3]"
+      - "🇺🇸US-163M-[dc1530/852deb]"
+      - "🇺🇸US-25M-[015a03/9d78ec]"
+      - "🇩🇪DE-30M-[29f247/753d64]"
+      - "🇺🇸US-40M-[547bad/b7922a]"
+      - "🇲🇽MX-34M-[a6a548/aababa]"
       - "🇺🇸US-184M-[a1e34d/8e6809]"
-      - "🇫🇮FI-78M-[b56833/ddd199]"
-      - "🇫🇮FI-222M-[56d575/0eff67]"
       - "🇵🇱PL-419M-[71071a/d61128]"
       - "🇳🇱NL-26M-[192348/472e62]"
-      - "🇹🇷TR-26M-[d14fc6/d3690b]"
-      - "🇺🇸US-43M-[547bad/b7922a]"
       - "🇺🇸US-41M-[547bad/a86b0a]"
-      - "🇺🇸US-33M-[015a03/9d78ec]"
-      - "🇳🇱NL-133M-[5b3dd8/187000]"
       - "🇳🇱NL-276M-[7595d7/fb6009]"
-      - "🇵🇱PL-483M-[862e84/8eb10e]"
 
 rules:
   - "DOMAIN,smtp.gmail.com,DIRECT"
