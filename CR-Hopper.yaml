@@ -6,6 +6,157 @@ log-level: warning
 ipv6: false
 
 proxies:
+  - name: "🇳🇱NL-276M-[2ce925/86cb55]"
+    type: "vless"
+    server: "147.45.221.5"
+    port: 443
+    uuid: "db80088c-32a1-4cb8-a907-0f3cb7844152"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "nl4.japancase.site"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "lXCVb-MY5dJqMUw6xvkuPbi0idyfF-OkSY_6GpOovVI"
+      short-id: "9f05c35b73b47d53"
+    network: "tcp"
+
+  - name: "🇹🇷TR-247M-[f9d7f2/3b7b83]"
+    type: "hysteria2"
+    server: "153.56.210.134"
+    port: 57251
+    password: "ff0343ad-1c9f-4986-8c62-c01935b508ca"
+    udp: true
+    sni: "www.bing.com"
+    skip-cert-verify: true
+    obfs: "salamander"
+    obfs-password: "0ee2089e-70df-4c30-bfea-1fb9be61d93e"
+
+  - name: "🇸🇪SE-276M-[9294d5/656484]"
+    type: "trojan"
+    server: "chatgpt.com"
+    port: 443
+    password: "Telegram--CONFIG7X--CONFIG7X--CONFIG7X--CONFIG7X--CONFIG7X--CONFIG7X--CONFIG7X--CONFIG7X-"
+    udp: true
+    sni: "cdn.config7x.site"
+    client-fingerprint: "chrome"
+    network: "ws"
+    ws-opts:
+      path: "/7x-tj-cdn"
+
+  - name: "🇸🇪SE-276M-[512069/e7eb8c]"
+    type: "vless"
+    server: "grok.com"
+    port: 2083
+    uuid: "fc2d811f-3b7d-4706-9f46-d470255ef061"
+    udp: true
+    encryption: "none"
+    servername: "cdn.config7x.site"
+    client-fingerprint: "chrome"
+    tls: true
+    network: "ws"
+    ws-opts:
+      path: "/7x"
+      headers:
+        Host: "cdn.config7x.site"
+
+  - name: "🇳🇱NL-276M-[2936b9/2d9689]"
+    type: "vless"
+    server: "104.245.102.26"
+    port: 443
+    uuid: "0a3432cd-74b8-413a-896d-f51492b030bc"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "portal.citygrainla.com"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "BlSccfT5tvDIOS7v9VaPd0ulUNhUdvlMjGiNzDNDUHE"
+      short-id: "051f20c2344a2dfd"
+    network: "tcp"
+
+  - name: "🇳🇱NL-133M-[5b3dd8/187000]"
+    type: "vless"
+    server: "rm3.rmastore.ir"
+    port: 2053
+    uuid: "116e7d57-afcf-4558-be0a-01e80fe6cd31"
+    udp: true
+    encryption: "mlkem768x25519plus.native.0rtt.0zrIHtnNGtLLe7tm3aMwb5bJbza8t3DqG8TMfEJgflA"
+    tls: false
+    network: "ws"
+    ws-opts:
+      path: "/nlrma"
+
+  - name: "🇺🇸US-132M-[84c577/d99318]"
+    type: "vless"
+    server: "104.160.44.254"
+    port: 443
+    uuid: "0a3432cd-74b8-413a-896d-f51492b030bc"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "portal.citygrainla.com"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "BlSccfT5tvDIOS7v9VaPd0ulUNhUdvlMjGiNzDNDUHE"
+      short-id: "051f20c2344a2dfd"
+    network: "tcp"
+
+  - name: "🇳🇱NL-51M-[78d395/aba4a8]"
+    type: "vless"
+    server: "79.141.164.124"
+    port: 443
+    uuid: "83d84969-c242-4b31-b3e4-f65987eb9fc9"
+    udp: true
+    encryption: "none"
+    servername: "nla.kosmosapp.net"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "pR39Vv5qhk8r6akOicoy6mMs4-ppSWUez8MyAXG7wwQ"
+      short-id: "27350908de933e09"
+    network: "grpc"
+    grpc-opts:
+      grpc-service-name: "neurex"
+
+  - name: "🇳🇱NL-44M-[fd8980/8fd0b3]"
+    type: "vmess"
+    server: "sidwqer-production.up.railway.app"
+    port: 443
+    uuid: "231fd16c-aa66-494a-bf94-ce62b55cf187"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    tls: true
+    servername: "sidwqer-production.up.railway.app"
+    client-fingerprint: "chrome"
+    alpn:
+      - "http/1.1"
+    network: "ws"
+    ws-opts:
+      path: "/api/v_2yYS"
+      headers:
+        Host: "sidwqer-production.up.railway.app"
+
+  - name: "🇺🇸US-44M-[547bad/b7922a]"
+    type: "vless"
+    server: "143.246.62.191"
+    port: 8443
+    uuid: "eb8c97f7-a154-4442-91b0-54c0d055ad0b"
+    udp: true
+    encryption: "none"
+    packet-encoding: "none"
+    servername: "github.githubassets.com"
+    client-fingerprint: "chrome"
+    tls: true
+    reality-opts:
+      public-key: "4g6gX0ueJap7pY_iTDx23h6bzo3KIOTcFzP1Uacn0QA"
+      short-id: "4ad2e4e660550e43"
+    network: "tcp"
+
   - name: "🇪🇪EE-189M-[8bf303/e967a6]"
     type: "vless"
     server: "45.86.60.190"
@@ -201,17 +352,6 @@ proxies:
     password: "k1dBOmOB4oqi7Ump37a1bQ"
     udp: true
 
-  - name: "🇹🇷TR-124M-[f9d7f2/3b7b83]"
-    type: "hysteria2"
-    server: "153.56.210.134"
-    port: 57251
-    password: "ff0343ad-1c9f-4986-8c62-c01935b508ca"
-    udp: true
-    sni: "www.bing.com"
-    skip-cert-verify: true
-    obfs: "salamander"
-    obfs-password: "0ee2089e-70df-4c30-bfea-1fb9be61d93e"
-
   - name: "🇳🇱NL-461M-[f9e2b5/74cdfc]"
     type: "ss"
     server: "82.38.31.181"
@@ -373,22 +513,6 @@ proxies:
     skip-cert-verify: true
     obfs: "salamander"
     obfs-password: "642516f2-f9bd-41ce-9904-dee699c39cf9"
-
-  - name: "🇳🇱NL-276M-[2ce925/86cb55]"
-    type: "vless"
-    server: "147.45.221.5"
-    port: 443
-    uuid: "db80088c-32a1-4cb8-a907-0f3cb7844152"
-    udp: true
-    encryption: "none"
-    flow: "xtls-rprx-vision"
-    servername: "nl4.japancase.site"
-    client-fingerprint: "firefox"
-    tls: true
-    reality-opts:
-      public-key: "lXCVb-MY5dJqMUw6xvkuPbi0idyfF-OkSY_6GpOovVI"
-      short-id: "9f05c35b73b47d53"
-    network: "tcp"
 
   - name: "🇪🇪EE-217M-[f10868/95ef37]"
     type: "vless"
@@ -1277,6 +1401,16 @@ proxy-groups:
   - name: "AUTO"
     type: select
     proxies:
+      - "🇳🇱NL-276M-[2ce925/86cb55]"
+      - "🇹🇷TR-247M-[f9d7f2/3b7b83]"
+      - "🇸🇪SE-276M-[9294d5/656484]"
+      - "🇸🇪SE-276M-[512069/e7eb8c]"
+      - "🇳🇱NL-276M-[2936b9/2d9689]"
+      - "🇳🇱NL-133M-[5b3dd8/187000]"
+      - "🇺🇸US-132M-[84c577/d99318]"
+      - "🇳🇱NL-51M-[78d395/aba4a8]"
+      - "🇳🇱NL-44M-[fd8980/8fd0b3]"
+      - "🇺🇸US-44M-[547bad/b7922a]"
       - "🇪🇪EE-189M-[8bf303/e967a6]"
       - "🇳🇱NL-174M-[da7aeb/252205]"
       - "🇳🇱NL-276M-[0af911/67b0a8]"
@@ -1297,7 +1431,6 @@ proxy-groups:
       - "🇷🇺RU-311M-[145e62/229673]"
       - "🇹🇷TR-212M-[f37d8b/f0c486]"
       - "🇳🇱NL-427M-[2c262e/6154af]"
-      - "🇹🇷TR-124M-[f9d7f2/3b7b83]"
       - "🇳🇱NL-461M-[f9e2b5/74cdfc]"
       - "🇮🇹IT-276M-[f44479/81e57b]"
       - "🇮🇹IT-276M-[d57070/9abc1e]"
@@ -1314,7 +1447,6 @@ proxy-groups:
       - "🇳🇱NL-146M-[65f6d2/fa2bab]"
       - "🇳🇱NL-277M-[96e68e/4d56ba]"
       - "🇹🇷TR-205M-[a0813d/8ceec6]"
-      - "🇳🇱NL-276M-[2ce925/86cb55]"
       - "🇪🇪EE-217M-[f10868/95ef37]"
       - "🇦🇹AT-132M-[97678d/e24831]"
       - "🇵🇱PL-277M-[bae540/97d7ff]"
