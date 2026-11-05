@@ -6,6 +6,57 @@ log-level: warning
 ipv6: false
 
 proxies:
+  - name: "🇺🇸US-43M-[547bad/a86b0a]"
+    type: "vless"
+    server: "143.246.62.191"
+    port: 8443
+    uuid: "eb8c97f7-a154-4442-91b0-54c0d055ad0b"
+    udp: true
+    encryption: "none"
+    servername: "github.githubassets.com"
+    client-fingerprint: "chrome"
+    tls: true
+    reality-opts:
+      public-key: "4g6gX0ueJap7pY_iTDx23h6bzo3KIOTcFzP1Uacn0QA"
+      short-id: "4ad2e4e660550e43"
+    network: "tcp"
+
+  - name: "🇺🇸US-182M-[a1e34d/8e6809]"
+    type: "hysteria2"
+    server: "142.11.207.17"
+    port: 443
+    password: "kztyblVC7ZlEKR3ZO5HW"
+    udp: true
+    sni: "www.bing.com"
+    skip-cert-verify: true
+    up: "50 Mbps"
+    down: "200 Mbps"
+
+  - name: "🇺🇸US-33M-[015a03/9d78ec]"
+    type: "trojan"
+    server: "us001.zestapp778.com"
+    port: 57277
+    password: "5t6i121em5lkmsmk"
+    udp: true
+    sni: "us001.zestapp778.com"
+    network: "tcp"
+
+  - name: "🇺🇸US-43M-[547bad/b7922a]"
+    type: "vless"
+    server: "143.246.62.191"
+    port: 8443
+    uuid: "eb8c97f7-a154-4442-91b0-54c0d055ad0b"
+    udp: true
+    encryption: "none"
+    packet-encoding: "none"
+    servername: "github.githubassets.com"
+    client-fingerprint: "chrome"
+    tls: true
+    reality-opts:
+      public-key: "4g6gX0ueJap7pY_iTDx23h6bzo3KIOTcFzP1Uacn0QA"
+      short-id: "4ad2e4e660550e43"
+    network: "tcp"
+
   - name: "🇳🇱NL-51M-[78d395/aba4a8]"
     type: "vless"
     server: "79.141.164.124"
@@ -94,21 +145,6 @@ proxies:
     reality-opts:
       public-key: "B5Rbu23-J_PmzD6d-5ra_pxKaXd1MeRf6IT4jT_6PEM"
       short-id: "071c3bd86b0c3c73"
-    network: "tcp"
-
-  - name: "🇺🇸US-43M-[547bad/a86b0a]"
-    type: "vless"
-    server: "143.246.62.191"
-    port: 8443
-    uuid: "eb8c97f7-a154-4442-91b0-54c0d055ad0b"
-    udp: true
-    encryption: "none"
-    servername: "github.githubassets.com"
-    client-fingerprint: "chrome"
-    tls: true
-    reality-opts:
-      public-key: "4g6gX0ueJap7pY_iTDx23h6bzo3KIOTcFzP1Uacn0QA"
-      short-id: "4ad2e4e660550e43"
     network: "tcp"
 
   - name: "🇳🇱NL-276M-[2ce925/86cb55]"
@@ -212,22 +248,6 @@ proxies:
       path: "/api/v_2yYS"
       headers:
         Host: "sidwqer-production.up.railway.app"
-
-  - name: "🇺🇸US-44M-[547bad/b7922a]"
-    type: "vless"
-    server: "143.246.62.191"
-    port: 8443
-    uuid: "eb8c97f7-a154-4442-91b0-54c0d055ad0b"
-    udp: true
-    encryption: "none"
-    packet-encoding: "none"
-    servername: "github.githubassets.com"
-    client-fingerprint: "chrome"
-    tls: true
-    reality-opts:
-      public-key: "4g6gX0ueJap7pY_iTDx23h6bzo3KIOTcFzP1Uacn0QA"
-      short-id: "4ad2e4e660550e43"
-    network: "tcp"
 
   - name: "🇪🇪EE-189M-[8bf303/e967a6]"
     type: "vless"
@@ -1462,13 +1482,16 @@ proxy-groups:
   - name: "AUTO"
     type: select
     proxies:
+      - "🇺🇸US-43M-[547bad/a86b0a]"
+      - "🇺🇸US-182M-[a1e34d/8e6809]"
+      - "🇺🇸US-33M-[015a03/9d78ec]"
+      - "🇺🇸US-43M-[547bad/b7922a]"
       - "🇳🇱NL-51M-[78d395/aba4a8]"
       - "🇦🇲AM-285M-[4efe31/5cc200]"
       - "🇹🇷TR-206M-[a0813d/8ceec6]"
       - "🇺🇸US-149M-[84c577/d99318]"
       - "🇹🇷TR-135M-[07544b/eadb5d]"
       - "🇹🇷TR-171M-[5527c0/a99739]"
-      - "🇺🇸US-43M-[547bad/a86b0a]"
       - "🇳🇱NL-276M-[2ce925/86cb55]"
       - "🇹🇷TR-247M-[f9d7f2/3b7b83]"
       - "🇸🇪SE-276M-[9294d5/656484]"
@@ -1476,7 +1499,6 @@ proxy-groups:
       - "🇳🇱NL-276M-[2936b9/2d9689]"
       - "🇳🇱NL-133M-[5b3dd8/187000]"
       - "🇳🇱NL-44M-[fd8980/8fd0b3]"
-      - "🇺🇸US-44M-[547bad/b7922a]"
       - "🇪🇪EE-189M-[8bf303/e967a6]"
       - "🇳🇱NL-174M-[da7aeb/252205]"
       - "🇳🇱NL-276M-[0af911/67b0a8]"
