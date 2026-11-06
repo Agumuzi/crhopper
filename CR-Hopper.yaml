@@ -6,7 +6,7 @@ log-level: warning
 ipv6: false
 
 proxies:
-  - name: "🇫🇮FI-338M-[56d575/0eff67]"
+  - name: "🇫🇮FI-336M-[56d575/0eff67]"
     type: "vless"
     server: "193.233.199.84"
     port: 443
@@ -22,24 +22,171 @@ proxies:
       short-id: "38559e47f5536913"
     network: "tcp"
 
-  - name: "🇫🇮FI-118M-[6479aa/7b3a86]"
+  - name: "🇩🇪DE-353M-[1dcd75/9f45c8]"
     type: "vless"
-    server: "122.8.47.2"
+    server: "178.20.28.3"
     port: 8443
     uuid: "cfcfd0bb-7e8c-4f2b-9cc2-505c983fb8f1"
     udp: true
     encryption: "none"
-    servername: "www.hp.com"
+    servername: "res.cdn.office.net"
     client-fingerprint: "firefox"
     tls: true
     reality-opts:
-      public-key: "QzFNQqkvBnDKIyjXUHJQe9jruaw9G5AV44vDC-qvnlo"
+      public-key: "4g8R0-Acc1LjppgvUopldH0Wg3JA2tPXvYB96aJnigo"
       short-id: ""
     network: "grpc"
     grpc-opts:
       grpc-service-name: "TunService"
 
-  - name: "🇫🇮FI-320M-[59f9d3/638018]"
+  - name: "🇳🇱NL-70M-[d554ff/9af21a]"
+    type: "hysteria2"
+    server: "9.247.54.188"
+    port: 443
+    password: "146d567c-6335-4e63-a8aa-7ec068642440"
+    udp: true
+    sni: "nl1.obxodvpn.us"
+
+  - name: "🇺🇸US-224M-[fad582/726892]"
+    type: "vless"
+    server: "122.8.46.7"
+    port: 8443
+    uuid: "cfcfd0bb-7e8c-4f2b-9cc2-505c983fb8f1"
+    udp: true
+    encryption: "none"
+    servername: "download.nvidia.com"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "wcOBPSgoOKptWa9ZHpFpmbrPfLqobBNpCgLH88Ptjhk"
+      short-id: ""
+    network: "grpc"
+    grpc-opts:
+      grpc-service-name: "TunService"
+
+  - name: "🇫🇮FI-419M-[d79043/2d6283]"
+    type: "vless"
+    server: "122.8.46.9"
+    port: 443
+    uuid: "cfcfd0bb-7e8c-4f2b-9cc2-505c983fb8f1"
+    udp: true
+    encryption: "none"
+    servername: "www.canon.com"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "iVDh09Vm2DqZMNQoUdf-LCZ6TqVGb9mLXnClAK2LRj4"
+      short-id: ""
+    network: "xhttp"
+    xhttp-opts:
+      path: "/"
+
+  - name: "🇳🇱NL-351M-[87683f/377b59]"
+    type: "vless"
+    server: "nl2.botfight.fun"
+    port: 443
+    uuid: "255a8044-3337-473e-af26-46a37208adcc"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "nl2.botfight.fun"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "KzMIiJZl6BXPiDBCOFNEiL1Uc3CJg_ZSZJLrc4MgFnU"
+      short-id: "f3912f1a2dd0ed8e"
+    network: "tcp"
+
+  - name: "🇺🇸US-321M-[b56833/214bee]"
+    type: "vless"
+    server: "122.8.47.4"
+    port: 8443
+    uuid: "cfcfd0bb-7e8c-4f2b-9cc2-505c983fb8f1"
+    udp: true
+    encryption: "none"
+    servername: "download.nvidia.com"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "hwwiWVqYq5b7S0JaXNSxjWSEv_1OUFMaWJGHzeAGyRM"
+      short-id: ""
+    network: "grpc"
+    grpc-opts:
+      grpc-service-name: "TunService"
+
+  - name: "🇫🇮FI-286M-[cce725/5c5d4b]"
+    type: "vless"
+    server: "122.8.47.5"
+    port: 8443
+    uuid: "cfcfd0bb-7e8c-4f2b-9cc2-505c983fb8f1"
+    udp: true
+    encryption: "none"
+    servername: "download.nvidia.com"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "skXBkyphBIt0TWVM0R5U3U-8UG0cuW00ONkaQpJ-OxU"
+      short-id: ""
+    network: "grpc"
+    grpc-opts:
+      grpc-service-name: "TunService"
+
+  - name: "🇫🇮FI-399M-[3d1aaf/821296]"
+    type: "vless"
+    server: "122.8.46.9"
+    port: 8443
+    uuid: "cfcfd0bb-7e8c-4f2b-9cc2-505c983fb8f1"
+    udp: true
+    encryption: "none"
+    servername: "cdn.steamstatic.com"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "sRTNjrosfFSiuQX7Yt7Ub5DJvFznfHSC3nlzFQ3H2WU"
+      short-id: ""
+    network: "grpc"
+    grpc-opts:
+      grpc-service-name: "TunService"
+
+  - name: "🇳🇱NL-437M-[54d37c/830cba]"
+    type: "vless"
+    server: "198.202.24.27"
+    port: 443
+    uuid: "64c5f924-1c24-44a5-acff-2e3ebcd2f807"
+    udp: true
+    encryption: "none"
+    servername: "nl29.dr-ping.ir"
+    client-fingerprint: "chrome"
+    alpn:
+      - "h3"
+      - "h2"
+      - "http/1.1"
+    tls: true
+    network: "xhttp"
+    xhttp-opts:
+      path: "/"
+      host: "nl29.dr-ping.ir"
+      mode: "auto"
+      x-padding-bytes: "100-1000"
+
+  - name: "🇺🇸US-173M-[d8fb05/5d8a27]"
+    type: "vless"
+    server: "147.78.182.7"
+    port: 8443
+    uuid: "cfcfd0bb-7e8c-4f2b-9cc2-505c983fb8f1"
+    udp: true
+    encryption: "none"
+    servername: "www.epson.com"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "Rt2wltCWOxIroFggNWMudZDBJXls8DsF4icaWqxKDk8"
+      short-id: ""
+    network: "grpc"
+    grpc-opts:
+      grpc-service-name: "TunService"
+
+  - name: "🇫🇮FI-276M-[59f9d3/638018]"
     type: "vless"
     server: "122.8.46.8"
     port: 8443
@@ -56,13 +203,306 @@ proxies:
     grpc-opts:
       grpc-service-name: "TunService"
 
-  - name: "🇳🇱NL-204M-[d554ff/9af21a]"
-    type: "hysteria2"
-    server: "9.247.54.188"
-    port: 443
-    password: "146d567c-6335-4e63-a8aa-7ec068642440"
+  - name: "🇫🇮FI-381M-[6479aa/7b3a86]"
+    type: "vless"
+    server: "122.8.47.2"
+    port: 8443
+    uuid: "cfcfd0bb-7e8c-4f2b-9cc2-505c983fb8f1"
     udp: true
-    sni: "nl1.obxodvpn.us"
+    encryption: "none"
+    servername: "www.hp.com"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "QzFNQqkvBnDKIyjXUHJQe9jruaw9G5AV44vDC-qvnlo"
+      short-id: ""
+    network: "grpc"
+    grpc-opts:
+      grpc-service-name: "TunService"
+
+  - name: "🇫🇮FI-233M-[5fd07f/c418a8]"
+    type: "vless"
+    server: "45.88.13.8"
+    port: 443
+    uuid: "cfcfd0bb-7e8c-4f2b-9cc2-505c983fb8f1"
+    udp: true
+    encryption: "none"
+    servername: "download.nvidia.com"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "FOQzn10eHqu4F5xOxiXW2bTDG8lH4TdOXP6A5rDqKFk"
+      short-id: ""
+    network: "xhttp"
+    xhttp-opts:
+      path: "/"
+
+  - name: "🇩🇪DE-276M-[2d902a/a06ab4]"
+    type: "vless"
+    server: "178.20.28.2"
+    port: 443
+    uuid: "cfcfd0bb-7e8c-4f2b-9cc2-505c983fb8f1"
+    udp: true
+    encryption: "none"
+    servername: "res.cdn.office.net"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "4g8R0-Acc1LjppgvUopldH0Wg3JA2tPXvYB96aJnigo"
+      short-id: ""
+    network: "xhttp"
+    xhttp-opts:
+      path: "/"
+
+  - name: "🇫🇮FI-268M-[e1c162/25f648]"
+    type: "vless"
+    server: "45.88.13.8"
+    port: 8443
+    uuid: "cfcfd0bb-7e8c-4f2b-9cc2-505c983fb8f1"
+    udp: true
+    encryption: "none"
+    servername: "download.nvidia.com"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "FOQzn10eHqu4F5xOxiXW2bTDG8lH4TdOXP6A5rDqKFk"
+      short-id: ""
+    network: "grpc"
+    grpc-opts:
+      grpc-service-name: "TunService"
+
+  - name: "🇳🇱NL-235M-[9119c3/8c1212]"
+    type: "vless"
+    server: "213.108.21.173"
+    port: 443
+    uuid: "c1fdf1e6-6370-4bad-a866-f80f27f5e785"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "nl1.kids-games.ru"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "oSbyJBoI2JTEva2ks51kmUCA7z-iFUcoGYCk-ciEaDU"
+      short-id: ""
+    network: "tcp"
+
+  - name: "🇺🇸US-148M-[be8dab/4f1294]"
+    type: "trojan"
+    server: "199.232.78.120"
+    port: 443
+    password: "MiTiVPN"
+    udp: true
+    sni: "cdn.akamai.steamstatic.com"
+    client-fingerprint: "chrome"
+    skip-cert-verify: true
+    alpn:
+      - "http/1.1"
+    network: "ws"
+    ws-opts:
+      path: "/---@MiTiVPN---@MiTiVPN"
+      headers:
+        Host: "mtlooabmakaakaoijji.global.ssl.fastly.net"
+
+  - name: "🇺🇸US-157M-[cc1c65/1f2a62]"
+    type: "trojan"
+    server: "146.75.57.120"
+    port: 443
+    password: "MiTiVPN"
+    udp: true
+    sni: "cdn.akamai.steamstatic.com"
+    client-fingerprint: "chrome"
+    skip-cert-verify: true
+    alpn:
+      - "http/1.1"
+    network: "ws"
+    ws-opts:
+      path: "/---@MiTiVPN---@MiTiVPN"
+      headers:
+        Host: "mtlooabmakaakaoijji.global.ssl.fastly.net"
+
+  - name: "🇺🇸US-162M-[98f452/7a652b]"
+    type: "trojan"
+    server: "167.82.64.120"
+    port: 443
+    password: "MiTiVPN"
+    udp: true
+    sni: "cdn.akamai.steamstatic.com"
+    client-fingerprint: "chrome"
+    skip-cert-verify: true
+    alpn:
+      - "http/1.1"
+    network: "ws"
+    ws-opts:
+      path: "/---@MiTiVPN---@MiTiVPN"
+      headers:
+        Host: "mtlooabmakaakaoijji.global.ssl.fastly.net"
+
+  - name: "🌐XX-140M-[6309e9/d626ce]"
+    type: "vless"
+    server: "141.193.213.30"
+    port: 8880
+    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    udp: true
+    encryption: "none"
+    tls: false
+    network: "ws"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "vms.lifetime23.workers.dev"
+
+  - name: "🇳🇱NL-280M-[5afe81/14408f]"
+    type: "vless"
+    server: "191.217.216.208"
+    port: 2054
+    uuid: "3d78373f-bdbd-428a-9b83-aea64264bf4e"
+    udp: true
+    encryption: "none"
+    servername: "dl.google.com"
+    client-fingerprint: "chrome"
+    tls: true
+    reality-opts:
+      public-key: "lszRqVbMe37CVLcMHifgRllBcDYt0EGDyY6KI2bXEQg"
+      short-id: ""
+    network: "grpc"
+    grpc-opts:
+      grpc-service-name: "grpc-tunnel"
+
+  - name: "🇳🇱NL-203M-[3b9e34/fc9dcf]"
+    type: "vless"
+    server: "piston.kachow.ink"
+    port: 443
+    uuid: "255a8044-3337-473e-af26-46a37208adcc"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "piston.kachow.ink"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "wl48cP9KpZxoAqUAePYqVmjNHO2gOzW_QCm3okkiLks"
+      short-id: "87ac946b53bb52f5"
+    network: "tcp"
+
+  - name: "🇫🇮FI-238M-[ea6053/da80a4]"
+    type: "vless"
+    server: "fi3game.japancase.site"
+    port: 443
+    uuid: "db80088c-32a1-4cb8-a907-0f3cb7844152"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "fi3game.japancase.site"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "1ONSjyJWD3lAomwIqFmmzb6lAhg077bvMJ7rGJCDk0g"
+      short-id: "38559e47f5536913"
+    network: "tcp"
+
+  - name: "🇸🇪SE-307M-[777933/ec715d]"
+    type: "vless"
+    server: "193.233.252.43"
+    port: 443
+    uuid: "db80088c-32a1-4cb8-a907-0f3cb7844152"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "se1.japancase.site"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "zEntiD6D81wY__YHPvIw78e09CBIgYkyQ5meIo7c_hg"
+      short-id: "41ae8e266bc3346f"
+    network: "tcp"
+
+  - name: "🇫🇮FI-191M-[17773f/8eab61]"
+    type: "vless"
+    server: "199.232.239.239"
+    port: 443
+    uuid: "a55a4d25-76f0-4f0e-d395-3a92c0b34268"
+    udp: true
+    encryption: "none"
+    servername: "community.fastly.steamstatic.com"
+    client-fingerprint: "chrome"
+    skip-cert-verify: true
+    alpn:
+      - "h2"
+    tls: true
+    network: "xhttp"
+    xhttp-opts:
+      path: "/@CloudVPNchannel/@CloudVPNchannel/@CloudVPNchannel"
+      host: "cloudnet2026.global.ssl.fastly.net"
+      mode: "packet-up"
+
+  - name: "🇵🇱PL-274M-[862e84/8eb10e]"
+    type: "vless"
+    server: "pl-b1.golangwikito.cfd"
+    port: 61374
+    uuid: "f8d52ece-fad4-478d-875d-df6eed3befa7"
+    udp: true
+    encryption: "none"
+    packet-encoding: "xudp"
+    servername: "pl-b1.golangwikito.cfd"
+    client-fingerprint: "chrome"
+    tls: true
+    reality-opts:
+      public-key: "QrNs0ew7snHqLfpVXS9RAhlRzgAzzGZK9fXmDcx9xHI"
+      short-id: ""
+    network: "xhttp"
+    xhttp-opts:
+      path: "/"
+      host: "pl-b1.golangwikito.cfd"
+      mode: "packet-up"
+      reuse-settings:
+        max-connections: "3"
+      x-padding-bytes: "100-500"
+
+  - name: "🇦🇲AM-167M-[4efe31/5cc200]"
+    type: "trojan"
+    server: "arc.net"
+    port: 2083
+    password: "BQbRrd5QMMEF"
+    udp: true
+    sni: "rayan04-frqbdb4h-t2.rayan-04.workers.dev"
+    client-fingerprint: "chrome"
+    network: "ws"
+    ws-opts:
+      path: "/?ed=2560"
+      headers:
+        Host: "rayan04-frqbdb4h-t2.rayan-04.workers.dev"
+
+  - name: "🇱🇻LV-332M-[8df659/ddb225]"
+    type: "vless"
+    server: "live.flicker.work"
+    port: 443
+    uuid: "255a8044-3337-473e-af26-46a37208adcc"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "live.flicker.work"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "PZwky05a2NPTC1x7YolaKV7IGDuJDJD47fUEk8nVqFw"
+      short-id: "1995a38bfed15b2a"
+    network: "tcp"
+
+  - name: "🇷🇺RU-182M-[87d674/195bad]"
+    type: "vless"
+    server: "104.17.177.160"
+    port: 8443
+    uuid: "fceb3200-2516-47d2-8e28-d04ecde9427a"
+    udp: true
+    encryption: "none"
+    client-fingerprint: "chrome"
+    tls: true
+    network: "ws"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "edge-fef90023.pages.dev"
 
   - name: "🇩🇪DE-92M-[d4bac0/b9ec22]"
     type: "hysteria2"
@@ -87,88 +527,6 @@ proxies:
       headers:
         Host: "frosty-clover-b8ea-df1f0206.pages.dev"
 
-  - name: "🇫🇮FI-320M-[cce725/5c5d4b]"
-    type: "vless"
-    server: "122.8.47.5"
-    port: 8443
-    uuid: "cfcfd0bb-7e8c-4f2b-9cc2-505c983fb8f1"
-    udp: true
-    encryption: "none"
-    servername: "download.nvidia.com"
-    client-fingerprint: "firefox"
-    tls: true
-    reality-opts:
-      public-key: "skXBkyphBIt0TWVM0R5U3U-8UG0cuW00ONkaQpJ-OxU"
-      short-id: ""
-    network: "grpc"
-    grpc-opts:
-      grpc-service-name: "TunService"
-
-  - name: "🇫🇮FI-241M-[3d1aaf/821296]"
-    type: "vless"
-    server: "122.8.46.9"
-    port: 8443
-    uuid: "cfcfd0bb-7e8c-4f2b-9cc2-505c983fb8f1"
-    udp: true
-    encryption: "none"
-    servername: "cdn.steamstatic.com"
-    client-fingerprint: "firefox"
-    tls: true
-    reality-opts:
-      public-key: "sRTNjrosfFSiuQX7Yt7Ub5DJvFznfHSC3nlzFQ3H2WU"
-      short-id: ""
-    network: "grpc"
-    grpc-opts:
-      grpc-service-name: "TunService"
-
-  - name: "🇩🇪DE-303M-[1dcd75/9f45c8]"
-    type: "vless"
-    server: "178.20.28.3"
-    port: 8443
-    uuid: "cfcfd0bb-7e8c-4f2b-9cc2-505c983fb8f1"
-    udp: true
-    encryption: "none"
-    servername: "res.cdn.office.net"
-    client-fingerprint: "firefox"
-    tls: true
-    reality-opts:
-      public-key: "4g8R0-Acc1LjppgvUopldH0Wg3JA2tPXvYB96aJnigo"
-      short-id: ""
-    network: "grpc"
-    grpc-opts:
-      grpc-service-name: "TunService"
-
-  - name: "🌐XX-250M-[4efe31/5cc200]"
-    type: "trojan"
-    server: "arc.net"
-    port: 2083
-    password: "BQbRrd5QMMEF"
-    udp: true
-    sni: "rayan04-frqbdb4h-t2.rayan-04.workers.dev"
-    client-fingerprint: "chrome"
-    network: "ws"
-    ws-opts:
-      path: "/?ed=2560"
-      headers:
-        Host: "rayan04-frqbdb4h-t2.rayan-04.workers.dev"
-
-  - name: "🇺🇸US-364M-[b56833/214bee]"
-    type: "vless"
-    server: "122.8.47.4"
-    port: 8443
-    uuid: "cfcfd0bb-7e8c-4f2b-9cc2-505c983fb8f1"
-    udp: true
-    encryption: "none"
-    servername: "download.nvidia.com"
-    client-fingerprint: "firefox"
-    tls: true
-    reality-opts:
-      public-key: "hwwiWVqYq5b7S0JaXNSxjWSEv_1OUFMaWJGHzeAGyRM"
-      short-id: ""
-    network: "grpc"
-    grpc-opts:
-      grpc-service-name: "TunService"
-
   - name: "🇷🇺RU-287M-[723577/c0d670]"
     type: "vless"
     server: "162.159.152.58"
@@ -184,73 +542,6 @@ proxies:
       path: "/"
       headers:
         Host: "ns4t32a2zc38o0on-ghqgwsswrh4mqda.pages.dev"
-
-  - name: "🇫🇮FI-190M-[e1c162/25f648]"
-    type: "vless"
-    server: "45.88.13.8"
-    port: 8443
-    uuid: "cfcfd0bb-7e8c-4f2b-9cc2-505c983fb8f1"
-    udp: true
-    encryption: "none"
-    servername: "download.nvidia.com"
-    client-fingerprint: "firefox"
-    tls: true
-    reality-opts:
-      public-key: "FOQzn10eHqu4F5xOxiXW2bTDG8lH4TdOXP6A5rDqKFk"
-      short-id: ""
-    network: "grpc"
-    grpc-opts:
-      grpc-service-name: "TunService"
-
-  - name: "🇫🇮FI-385M-[5fd07f/c418a8]"
-    type: "vless"
-    server: "45.88.13.8"
-    port: 443
-    uuid: "cfcfd0bb-7e8c-4f2b-9cc2-505c983fb8f1"
-    udp: true
-    encryption: "none"
-    servername: "download.nvidia.com"
-    client-fingerprint: "firefox"
-    tls: true
-    reality-opts:
-      public-key: "FOQzn10eHqu4F5xOxiXW2bTDG8lH4TdOXP6A5rDqKFk"
-      short-id: ""
-    network: "xhttp"
-    xhttp-opts:
-      path: "/"
-
-  - name: "🇺🇸US-188M-[d8fb05/5d8a27]"
-    type: "vless"
-    server: "147.78.182.7"
-    port: 8443
-    uuid: "cfcfd0bb-7e8c-4f2b-9cc2-505c983fb8f1"
-    udp: true
-    encryption: "none"
-    servername: "www.epson.com"
-    client-fingerprint: "firefox"
-    tls: true
-    reality-opts:
-      public-key: "Rt2wltCWOxIroFggNWMudZDBJXls8DsF4icaWqxKDk8"
-      short-id: ""
-    network: "grpc"
-    grpc-opts:
-      grpc-service-name: "TunService"
-
-  - name: "🇳🇱NL-300M-[87683f/377b59]"
-    type: "vless"
-    server: "nl2.botfight.fun"
-    port: 443
-    uuid: "255a8044-3337-473e-af26-46a37208adcc"
-    udp: true
-    encryption: "none"
-    flow: "xtls-rprx-vision"
-    servername: "nl2.botfight.fun"
-    client-fingerprint: "firefox"
-    tls: true
-    reality-opts:
-      public-key: "KzMIiJZl6BXPiDBCOFNEiL1Uc3CJg_ZSZJLrc4MgFnU"
-      short-id: "f3912f1a2dd0ed8e"
-    network: "tcp"
 
   - name: "🇳🇱NL-344M-[192348/472e62]"
     type: "vless"
@@ -300,39 +591,6 @@ proxies:
       short-id: "647547b8f895f9b9"
     network: "tcp"
 
-  - name: "🇺🇸US-135M-[be8dab/4f1294]"
-    type: "trojan"
-    server: "199.232.78.120"
-    port: 443
-    password: "MiTiVPN"
-    udp: true
-    sni: "cdn.akamai.steamstatic.com"
-    client-fingerprint: "chrome"
-    skip-cert-verify: true
-    alpn:
-      - "http/1.1"
-    network: "ws"
-    ws-opts:
-      path: "/---@MiTiVPN---@MiTiVPN"
-      headers:
-        Host: "mtlooabmakaakaoijji.global.ssl.fastly.net"
-
-  - name: "🇳🇱NL-91M-[9119c3/8c1212]"
-    type: "vless"
-    server: "213.108.21.173"
-    port: 443
-    uuid: "c1fdf1e6-6370-4bad-a866-f80f27f5e785"
-    udp: true
-    encryption: "none"
-    flow: "xtls-rprx-vision"
-    servername: "nl1.kids-games.ru"
-    client-fingerprint: "firefox"
-    tls: true
-    reality-opts:
-      public-key: "oSbyJBoI2JTEva2ks51kmUCA7z-iFUcoGYCk-ciEaDU"
-      short-id: ""
-    network: "tcp"
-
   - name: "🇸🇪SE-371M-[9294d5/656484]"
     type: "trojan"
     server: "chatgpt.com"
@@ -344,39 +602,6 @@ proxies:
     network: "ws"
     ws-opts:
       path: "/7x-tj-cdn"
-
-  - name: "🇩🇪DE-296M-[2d902a/a06ab4]"
-    type: "vless"
-    server: "178.20.28.2"
-    port: 443
-    uuid: "cfcfd0bb-7e8c-4f2b-9cc2-505c983fb8f1"
-    udp: true
-    encryption: "none"
-    servername: "res.cdn.office.net"
-    client-fingerprint: "firefox"
-    tls: true
-    reality-opts:
-      public-key: "4g8R0-Acc1LjppgvUopldH0Wg3JA2tPXvYB96aJnigo"
-      short-id: ""
-    network: "xhttp"
-    xhttp-opts:
-      path: "/"
-
-  - name: "🇱🇻LV-311M-[8df659/ddb225]"
-    type: "vless"
-    server: "live.flicker.work"
-    port: 443
-    uuid: "255a8044-3337-473e-af26-46a37208adcc"
-    udp: true
-    encryption: "none"
-    flow: "xtls-rprx-vision"
-    servername: "live.flicker.work"
-    client-fingerprint: "firefox"
-    tls: true
-    reality-opts:
-      public-key: "PZwky05a2NPTC1x7YolaKV7IGDuJDJD47fUEk8nVqFw"
-      short-id: "1995a38bfed15b2a"
-    network: "tcp"
 
   - name: "🇩🇪DE-174M-[8e3785/734ff0]"
     type: "vless"
@@ -393,23 +618,6 @@ proxies:
       public-key: "0ucabP76F6UHGAAoi73bxlt6ugwqoRDoLAW5n39pezU"
       short-id: ""
     network: "tcp"
-
-  - name: "🇺🇸US-273M-[cc1c65/1f2a62]"
-    type: "trojan"
-    server: "146.75.57.120"
-    port: 443
-    password: "MiTiVPN"
-    udp: true
-    sni: "cdn.akamai.steamstatic.com"
-    client-fingerprint: "chrome"
-    skip-cert-verify: true
-    alpn:
-      - "http/1.1"
-    network: "ws"
-    ws-opts:
-      path: "/---@MiTiVPN---@MiTiVPN"
-      headers:
-        Host: "mtlooabmakaakaoijji.global.ssl.fastly.net"
 
   - name: "🇸🇪SE-243M-[346512/d8e23d]"
     type: "vless"
@@ -441,22 +649,6 @@ proxies:
       path: "/?ed"
       headers:
         Host: "vms.lifetime07.workers.dev"
-
-  - name: "🇫🇮FI-394M-[ea6053/da80a4]"
-    type: "vless"
-    server: "fi3game.japancase.site"
-    port: 443
-    uuid: "db80088c-32a1-4cb8-a907-0f3cb7844152"
-    udp: true
-    encryption: "none"
-    flow: "xtls-rprx-vision"
-    servername: "fi3game.japancase.site"
-    client-fingerprint: "firefox"
-    tls: true
-    reality-opts:
-      public-key: "1ONSjyJWD3lAomwIqFmmzb6lAhg077bvMJ7rGJCDk0g"
-      short-id: "38559e47f5536913"
-    network: "tcp"
 
   - name: "🌐XX-190M-[0addeb/8a1e8d]"
     type: "vless"
@@ -510,29 +702,6 @@ proxies:
     udp: true
     sni: "www.bing.com"
     skip-cert-verify: true
-
-  - name: "🇵🇱PL-293M-[862e84/8eb10e]"
-    type: "vless"
-    server: "pl-b1.golangwikito.cfd"
-    port: 61374
-    uuid: "f8d52ece-fad4-478d-875d-df6eed3befa7"
-    udp: true
-    encryption: "none"
-    packet-encoding: "xudp"
-    servername: "pl-b1.golangwikito.cfd"
-    client-fingerprint: "chrome"
-    tls: true
-    reality-opts:
-      public-key: "QrNs0ew7snHqLfpVXS9RAhlRzgAzzGZK9fXmDcx9xHI"
-      short-id: ""
-    network: "xhttp"
-    xhttp-opts:
-      path: "/"
-      host: "pl-b1.golangwikito.cfd"
-      mode: "packet-up"
-      reuse-settings:
-        max-connections: "3"
-      x-padding-bytes: "100-500"
 
   - name: "🇳🇱NL-225M-[5b3dd8/187000]"
     type: "vless"
@@ -720,40 +889,50 @@ proxy-groups:
   - name: "AUTO"
     type: select
     proxies:
-      - "🇫🇮FI-338M-[56d575/0eff67]"
-      - "🇫🇮FI-118M-[6479aa/7b3a86]"
-      - "🇫🇮FI-320M-[59f9d3/638018]"
-      - "🇳🇱NL-204M-[d554ff/9af21a]"
+      - "🇫🇮FI-336M-[56d575/0eff67]"
+      - "🇩🇪DE-353M-[1dcd75/9f45c8]"
+      - "🇳🇱NL-70M-[d554ff/9af21a]"
+      - "🇺🇸US-224M-[fad582/726892]"
+      - "🇫🇮FI-419M-[d79043/2d6283]"
+      - "🇳🇱NL-351M-[87683f/377b59]"
+      - "🇺🇸US-321M-[b56833/214bee]"
+      - "🇫🇮FI-286M-[cce725/5c5d4b]"
+      - "🇫🇮FI-399M-[3d1aaf/821296]"
+      - "🇳🇱NL-437M-[54d37c/830cba]"
+      - "🇺🇸US-173M-[d8fb05/5d8a27]"
+      - "🇫🇮FI-276M-[59f9d3/638018]"
+      - "🇫🇮FI-381M-[6479aa/7b3a86]"
+      - "🇫🇮FI-233M-[5fd07f/c418a8]"
+      - "🇩🇪DE-276M-[2d902a/a06ab4]"
+      - "🇫🇮FI-268M-[e1c162/25f648]"
+      - "🇳🇱NL-235M-[9119c3/8c1212]"
+      - "🇺🇸US-148M-[be8dab/4f1294]"
+      - "🇺🇸US-157M-[cc1c65/1f2a62]"
+      - "🇺🇸US-162M-[98f452/7a652b]"
+      - "🌐XX-140M-[6309e9/d626ce]"
+      - "🇳🇱NL-280M-[5afe81/14408f]"
+      - "🇳🇱NL-203M-[3b9e34/fc9dcf]"
+      - "🇫🇮FI-238M-[ea6053/da80a4]"
+      - "🇸🇪SE-307M-[777933/ec715d]"
+      - "🇫🇮FI-191M-[17773f/8eab61]"
+      - "🇵🇱PL-274M-[862e84/8eb10e]"
+      - "🇦🇲AM-167M-[4efe31/5cc200]"
+      - "🇱🇻LV-332M-[8df659/ddb225]"
+      - "🇷🇺RU-182M-[87d674/195bad]"
       - "🇩🇪DE-92M-[d4bac0/b9ec22]"
       - "🇺🇸US-317M-[429ba1/54c2d6]"
-      - "🇫🇮FI-320M-[cce725/5c5d4b]"
-      - "🇫🇮FI-241M-[3d1aaf/821296]"
-      - "🇩🇪DE-303M-[1dcd75/9f45c8]"
-      - "🌐XX-250M-[4efe31/5cc200]"
-      - "🇺🇸US-364M-[b56833/214bee]"
       - "🇷🇺RU-287M-[723577/c0d670]"
-      - "🇫🇮FI-190M-[e1c162/25f648]"
-      - "🇫🇮FI-385M-[5fd07f/c418a8]"
-      - "🇺🇸US-188M-[d8fb05/5d8a27]"
-      - "🇳🇱NL-300M-[87683f/377b59]"
       - "🇳🇱NL-344M-[192348/472e62]"
       - "🇸🇪SE-350M-[512069/e7eb8c]"
       - "🇩🇪DE-323M-[768394/a76c13]"
-      - "🇺🇸US-135M-[be8dab/4f1294]"
-      - "🇳🇱NL-91M-[9119c3/8c1212]"
       - "🇸🇪SE-371M-[9294d5/656484]"
-      - "🇩🇪DE-296M-[2d902a/a06ab4]"
-      - "🇱🇻LV-311M-[8df659/ddb225]"
       - "🇩🇪DE-174M-[8e3785/734ff0]"
-      - "🇺🇸US-273M-[cc1c65/1f2a62]"
       - "🇸🇪SE-243M-[346512/d8e23d]"
       - "🇦🇪AE-218M-[630554/bc4fcf]"
-      - "🇫🇮FI-394M-[ea6053/da80a4]"
       - "🌐XX-190M-[0addeb/8a1e8d]"
       - "🇫🇮FI-349M-[b56833/ddd199]"
       - "🇹🇷TR-119M-[d14fc6/d3690b]"
       - "🇺🇸US-137M-[a1e34d/ac8f93]"
-      - "🇵🇱PL-293M-[862e84/8eb10e]"
       - "🇳🇱NL-225M-[5b3dd8/187000]"
       - "🇺🇸US-297M-[0180f7/8186b3]"
       - "🇺🇸US-163M-[dc1530/852deb]"
