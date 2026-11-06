@@ -23,6 +23,22 @@ proxies:
       headers:
         Host: "mtlooabmakaakaoijji.global.ssl.fastly.net"
 
+  - name: "🇺🇸US-40M-[547bad/b7922a]"
+    type: "vless"
+    server: "143.246.62.191"
+    port: 8443
+    uuid: "eb8c97f7-a154-4442-91b0-54c0d055ad0b"
+    udp: true
+    encryption: "none"
+    packet-encoding: "none"
+    servername: "github.githubassets.com"
+    client-fingerprint: "chrome"
+    tls: true
+    reality-opts:
+      public-key: "4g6gX0ueJap7pY_iTDx23h6bzo3KIOTcFzP1Uacn0QA"
+      short-id: "4ad2e4e660550e43"
+    network: "tcp"
+
   - name: "🇺🇸US-93M-[98f452/7a652b]"
     type: "trojan"
     server: "167.82.64.120"
@@ -87,22 +103,6 @@ proxies:
       path: "/---@MiTiVPN---@MiTiVPN"
       headers:
         Host: "mtlooabmakaakaoijji.global.ssl.fastly.net"
-
-  - name: "🇺🇸US-46M-[547bad/b7922a]"
-    type: "vless"
-    server: "143.246.62.191"
-    port: 8443
-    uuid: "eb8c97f7-a154-4442-91b0-54c0d055ad0b"
-    udp: true
-    encryption: "none"
-    packet-encoding: "none"
-    servername: "github.githubassets.com"
-    client-fingerprint: "chrome"
-    tls: true
-    reality-opts:
-      public-key: "4g6gX0ueJap7pY_iTDx23h6bzo3KIOTcFzP1Uacn0QA"
-      short-id: "4ad2e4e660550e43"
-    network: "tcp"
 
   - name: "🇫🇮FI-188M-[56d575/0eff67]"
     type: "vless"
@@ -1479,11 +1479,11 @@ proxy-groups:
     type: select
     proxies:
       - "🇺🇸US-166M-[cc1c65/1f2a62]"
+      - "🇺🇸US-40M-[547bad/b7922a]"
       - "🇺🇸US-93M-[98f452/7a652b]"
       - "🇳🇱NL-438M-[590976/fa0e7f]"
       - "🇨🇦CA-343M-[7138e4/74e18a]"
       - "🇺🇸US-29M-[be8dab/4f1294]"
-      - "🇺🇸US-46M-[547bad/b7922a]"
       - "🇫🇮FI-188M-[56d575/0eff67]"
       - "🇩🇪DE-392M-[4a9135/2d3b05]"
       - "🇺🇸US-20M-[4430e0/dbf18c]"
