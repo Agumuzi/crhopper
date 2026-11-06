@@ -23,6 +23,92 @@ proxies:
       headers:
         Host: "mtlooabmakaakaoijji.global.ssl.fastly.net"
 
+  - name: "🇬🇧GB-276M-[f43c91/530f16]"
+    type: "vless"
+    server: "fduknew.titun.su"
+    port: 443
+    uuid: "90157e25-cee1-4217-921e-91f300bc1a24"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "bizorg.su"
+    client-fingerprint: "edge"
+    tls: true
+    reality-opts:
+      public-key: "1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs"
+      short-id: "428ef87fd47a3a32"
+    network: "tcp"
+
+  - name: "🇸🇮SI-173M-[b2ce3e/88d202]"
+    type: "vless"
+    server: "92.42.201.160"
+    port: 14443
+    uuid: "a60da2ca-0abf-49f8-9dcb-156989d76ad2"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "node-slo05.rkitman.ru"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "fmZQYGYXw4xYtiuMFvH4Dgse1DBoGazt-vWM7LOdchY"
+      short-id: "e013fa99a81badcc"
+    network: "tcp"
+
+  - name: "🇺🇸US-195M-[00eaf6/2c8c91]"
+    type: "ss"
+    server: "88.216.254.18"
+    port: 1080
+    cipher: "chacha20-ietf-poly1305"
+    password: "V7WLaYdujkwnj6xxXq-2BSxGWEcSJtTA"
+    udp: true
+
+  - name: "🇺🇸US-143M-[a51b3f/5bd581]"
+    type: "vless"
+    server: "usa4.un1.cloud"
+    port: 443
+    uuid: "d3790aa8-9c54-440a-b91d-1c8d689e0258"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "usa4.un1.cloud"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "Ef3MlZmKu6OYxX7EotP_-FJPdfRmhrOZQpqqPAVAzz4"
+      short-id: "6ba85179e30d4fc2"
+    network: "tcp"
+
+  - name: "🇵🇱PL-58M-[4d499f/482b36]"
+    type: "vless"
+    server: "185.255.115.87"
+    port: 443
+    uuid: "55458d10-24ab-4ea6-a522-13741b546f2a"
+    udp: true
+    encryption: "none"
+    servername: "d58daft.plp1.h1cloud.net"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "ixnCbdlT5sAVd-ilp2nG11CvnNsBCf9xPD56TlXxlR4"
+      short-id: "a91531ad58c8611c"
+    network: "tcp"
+
+  - name: "🇵🇱PL-54M-[92de32/95da51]"
+    type: "vless"
+    server: "d58daft.plp1.h1cloud.net"
+    port: 443
+    uuid: "13e6bdfd-d51b-4e57-a40e-b88784cba8bd"
+    udp: true
+    encryption: "none"
+    servername: "d58daft.plp1.h1cloud.net"
+    client-fingerprint: "chrome"
+    tls: true
+    reality-opts:
+      public-key: "ixnCbdlT5sAVd-ilp2nG11CvnNsBCf9xPD56TlXxlR4"
+      short-id: "a91531ad58c8611c"
+    network: "tcp"
+
   - name: "🇺🇸US-40M-[547bad/b7922a]"
     type: "vless"
     server: "143.246.62.191"
@@ -1479,6 +1565,12 @@ proxy-groups:
     type: select
     proxies:
       - "🇺🇸US-166M-[cc1c65/1f2a62]"
+      - "🇬🇧GB-276M-[f43c91/530f16]"
+      - "🇸🇮SI-173M-[b2ce3e/88d202]"
+      - "🇺🇸US-195M-[00eaf6/2c8c91]"
+      - "🇺🇸US-143M-[a51b3f/5bd581]"
+      - "🇵🇱PL-58M-[4d499f/482b36]"
+      - "🇵🇱PL-54M-[92de32/95da51]"
       - "🇺🇸US-40M-[547bad/b7922a]"
       - "🇺🇸US-93M-[98f452/7a652b]"
       - "🇳🇱NL-438M-[590976/fa0e7f]"
