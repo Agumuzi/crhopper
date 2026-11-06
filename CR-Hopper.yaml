@@ -6,6 +6,287 @@ log-level: warning
 ipv6: false
 
 proxies:
+  - name: "🇺🇸US-253M-[00eaf6/2c8c91]"
+    type: "ss"
+    server: "88.216.254.18"
+    port: 1080
+    cipher: "chacha20-ietf-poly1305"
+    password: "V7WLaYdujkwnj6xxXq-2BSxGWEcSJtTA"
+    udp: true
+
+  - name: "🇩🇪DE-155M-[708dd0/e497b0]"
+    type: "vless"
+    server: "93.190.9.194"
+    port: 3090
+    uuid: "1589e19a-4ff8-4064-b58a-97f8bfd91b3f"
+    udp: true
+    encryption: "none"
+    tls: false
+    network: "grpc"
+    grpc-opts:
+      grpc-service-name: "vless"
+
+  - name: "🇬🇧GB-347M-[f43c91/33a05c]"
+    type: "vless"
+    server: "fduknew.titun.su"
+    port: 443
+    uuid: "90157e25-cee1-4217-921e-91f300bc1a24"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "bizorg.su"
+    client-fingerprint: "chrome"
+    tls: true
+    reality-opts:
+      public-key: "1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs"
+      short-id: "428ef87fd47a3a32"
+    network: "tcp"
+
+  - name: "🇬🇧GB-257M-[01d4b3/97172f]"
+    type: "vless"
+    server: "50.7.227.77"
+    port: 443
+    uuid: "90157e25-cee1-4217-921e-91f300bc1a24"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "bizorg.su"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs"
+      short-id: "428ef87fd47a3a32"
+    network: "tcp"
+
+  - name: "🇪🇪EE-97M-[01f67a/f8fb4e]"
+    type: "trojan"
+    server: "de-bots4.h1cloud.net"
+    port: 25267
+    password: "happybirthdaydaniel"
+    udp: true
+    skip-cert-verify: true
+    network: "tcp"
+
+  - name: "🇨🇭CH-297M-[fb8580/cec444]"
+    type: "vless"
+    server: "prvtch.titun.su"
+    port: 443
+    uuid: "90157e25-cee1-4217-921e-91f300bc1a24"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "perevodchiki.su"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs"
+      short-id: "428ef87fd47a3a32"
+    network: "tcp"
+
+  - name: "🇫🇷FR-332M-[8af83a/af9dbd]"
+    type: "vless"
+    server: "212.183.88.53"
+    port: 443
+    uuid: "86c7af80-c9cf-4265-ab77-da12b0bf8bb6"
+    udp: true
+    encryption: "none"
+    servername: "19.baklajann.ru"
+    client-fingerprint: "firefox"
+    tls: true
+    network: "ws"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "19.baklajann.ru"
+
+  - name: "🇧🇬BG-374M-[353de1/4085f7]"
+    type: "vless"
+    server: "168.113.128.70"
+    port: 20105
+    uuid: "9aff658c-1f80-4c82-9213-48ca26996142"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "ripelever.net"
+    client-fingerprint: "edge"
+    alpn:
+      - "h2"
+      - "http/1.1"
+    tls: true
+    network: "tcp"
+
+  - name: "🇸🇮SI-255M-[f29cda/da57a6]"
+    type: "vless"
+    server: "92.42.201.155"
+    port: 14443
+    uuid: "a60da2ca-0abf-49f8-9dcb-156989d76ad2"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "node-slo04.rkitman.ru"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "mGTe1s-luknrPURs4KI4fjdCXZAq03f_-b7by6Dr-CI"
+      short-id: "e204defc87a8949e"
+    network: "tcp"
+
+  - name: "🇸🇮SI-278M-[b2ce3e/88d202]"
+    type: "vless"
+    server: "92.42.201.160"
+    port: 14443
+    uuid: "a60da2ca-0abf-49f8-9dcb-156989d76ad2"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "node-slo05.rkitman.ru"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "fmZQYGYXw4xYtiuMFvH4Dgse1DBoGazt-vWM7LOdchY"
+      short-id: "e013fa99a81badcc"
+    network: "tcp"
+
+  - name: "🇨🇭CH-277M-[b9c1be/24ebc4]"
+    type: "vless"
+    server: "179.43.166.190"
+    port: 443
+    uuid: "90157e25-cee1-4217-921e-91f300bc1a24"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "perevodchiki.su"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs"
+      short-id: "428ef87fd47a3a32"
+    network: "tcp"
+
+  - name: "🇵🇱PL-99M-[8b39c2/b626f5]"
+    type: "vless"
+    server: "cz.pythonmakemigreat.wiki"
+    port: 61374
+    uuid: "f8d52ece-fad4-478d-875d-df6eed3befa7"
+    udp: true
+    encryption: "none"
+    packet-encoding: "xudp"
+    servername: "cz.pythonmakemigreat.wiki"
+    client-fingerprint: "chrome"
+    tls: true
+    reality-opts:
+      public-key: "QrNs0ew7snHqLfpVXS9RAhlRzgAzzGZK9fXmDcx9xHI"
+      short-id: ""
+    network: "xhttp"
+    xhttp-opts:
+      path: "/"
+      host: "cz.pythonmakemigreat.wiki"
+      mode: "packet-up"
+      reuse-settings:
+        max-connections: "3"
+      x-padding-bytes: "100-500"
+
+  - name: "🇦🇹AT-197M-[2bb282/7cb77f]"
+    type: "vless"
+    server: "at1.japancase.site"
+    port: 443
+    uuid: "db80088c-32a1-4cb8-a907-0f3cb7844152"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "at1.japancase.site"
+    client-fingerprint: "edge"
+    tls: true
+    reality-opts:
+      public-key: "zEntiD6D81wY__YHPvIw78e09CBIgYkyQ5meIo7c_hg"
+      short-id: "41ae8e266bc3346f"
+    network: "tcp"
+
+  - name: "🇵🇱PL-258M-[bae540/97d7ff]"
+    type: "vless"
+    server: "pl3.japancase.site"
+    port: 443
+    uuid: "db80088c-32a1-4cb8-a907-0f3cb7844152"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "pl3.japancase.site"
+    client-fingerprint: "edge"
+    tls: true
+    reality-opts:
+      public-key: "COvqGpB7lUdZshmbn5zdqiVi81n8Iyha8RbEHtK93xc"
+      short-id: "5037f0423dc4e4ff"
+    network: "tcp"
+
+  - name: "🇺🇸US-200M-[213bb7/846905]"
+    type: "vless"
+    server: "us2-ws.gacvpn.site"
+    port: 993
+    uuid: "981c7ccc-2b17-473c-8358-7fd1d6eec1b4"
+    udp: true
+    encryption: "none"
+    servername: "us2-ws.gacvpn.site"
+    client-fingerprint: "firefox"
+    tls: true
+    network: "ws"
+    ws-opts:
+      path: "/static/js/vendor.2e12e7f4.js?ed=2048"
+      headers:
+        Host: "us2-ws.gacvpn.site"
+
+  - name: "🇵🇱PL-138M-[862e84/8eb10e]"
+    type: "vless"
+    server: "pl-b1.golangwikito.cfd"
+    port: 61374
+    uuid: "f8d52ece-fad4-478d-875d-df6eed3befa7"
+    udp: true
+    encryption: "none"
+    packet-encoding: "xudp"
+    servername: "pl-b1.golangwikito.cfd"
+    client-fingerprint: "chrome"
+    tls: true
+    reality-opts:
+      public-key: "QrNs0ew7snHqLfpVXS9RAhlRzgAzzGZK9fXmDcx9xHI"
+      short-id: ""
+    network: "xhttp"
+    xhttp-opts:
+      path: "/"
+      host: "pl-b1.golangwikito.cfd"
+      mode: "packet-up"
+      reuse-settings:
+        max-connections: "3"
+      x-padding-bytes: "100-500"
+
+  - name: "🇺🇸US-299M-[d27a08/eba551]"
+    type: "vless"
+    server: "04535dt.us9.h1clayd.click"
+    port: 443
+    uuid: "cda0862a-0f87-4be9-8ed8-1d0c9e382839"
+    udp: true
+    encryption: "none"
+    servername: "04535dt.us9.h1clayd.click"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "UoS8qZ74hP_ECcncCz55lzvlcVss3R7VA0WYZE0YQCY"
+      short-id: "ba2a3dce62b99092"
+    network: "tcp"
+
+  - name: "🇺🇸US-46M-[547bad/a86b0a]"
+    type: "vless"
+    server: "143.246.62.191"
+    port: 8443
+    uuid: "eb8c97f7-a154-4442-91b0-54c0d055ad0b"
+    udp: true
+    encryption: "none"
+    servername: "github.githubassets.com"
+    client-fingerprint: "chrome"
+    tls: true
+    reality-opts:
+      public-key: "4g6gX0ueJap7pY_iTDx23h6bzo3KIOTcFzP1Uacn0QA"
+      short-id: "4ad2e4e660550e43"
+    network: "tcp"
+
   - name: "🇵🇱PL-419M-[71071a/d61128]"
     type: "vless"
     server: "cdn-ya.shamanapp.online"
@@ -54,85 +335,6 @@ proxies:
     reality-opts:
       public-key: "ixnCbdlT5sAVd-ilp2nG11CvnNsBCf9xPD56TlXxlR4"
       short-id: "a91531ad58c8611c"
-    network: "tcp"
-
-  - name: "🇸🇮SI-365M-[b2ce3e/88d202]"
-    type: "vless"
-    server: "92.42.201.160"
-    port: 14443
-    uuid: "a60da2ca-0abf-49f8-9dcb-156989d76ad2"
-    udp: true
-    encryption: "none"
-    flow: "xtls-rprx-vision"
-    servername: "node-slo05.rkitman.ru"
-    client-fingerprint: "firefox"
-    tls: true
-    reality-opts:
-      public-key: "fmZQYGYXw4xYtiuMFvH4Dgse1DBoGazt-vWM7LOdchY"
-      short-id: "e013fa99a81badcc"
-    network: "tcp"
-
-  - name: "🌐XX-105M-[8b39c2/b626f5]"
-    type: "vless"
-    server: "cz.pythonmakemigreat.wiki"
-    port: 61374
-    uuid: "f8d52ece-fad4-478d-875d-df6eed3befa7"
-    udp: true
-    encryption: "none"
-    packet-encoding: "xudp"
-    servername: "cz.pythonmakemigreat.wiki"
-    client-fingerprint: "chrome"
-    tls: true
-    reality-opts:
-      public-key: "QrNs0ew7snHqLfpVXS9RAhlRzgAzzGZK9fXmDcx9xHI"
-      short-id: ""
-    network: "xhttp"
-    xhttp-opts:
-      path: "/"
-      host: "cz.pythonmakemigreat.wiki"
-      mode: "packet-up"
-      reuse-settings:
-        max-connections: "3"
-      x-padding-bytes: "100-500"
-
-  - name: "🇬🇧GB-349M-[f43c91/33a05c]"
-    type: "vless"
-    server: "fduknew.titun.su"
-    port: 443
-    uuid: "90157e25-cee1-4217-921e-91f300bc1a24"
-    udp: true
-    encryption: "none"
-    flow: "xtls-rprx-vision"
-    servername: "bizorg.su"
-    client-fingerprint: "chrome"
-    tls: true
-    reality-opts:
-      public-key: "1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs"
-      short-id: "428ef87fd47a3a32"
-    network: "tcp"
-
-  - name: "🇺🇸US-262M-[00eaf6/2c8c91]"
-    type: "ss"
-    server: "88.216.254.18"
-    port: 1080
-    cipher: "chacha20-ietf-poly1305"
-    password: "V7WLaYdujkwnj6xxXq-2BSxGWEcSJtTA"
-    udp: true
-
-  - name: "🇵🇱PL-315M-[bae540/97d7ff]"
-    type: "vless"
-    server: "pl3.japancase.site"
-    port: 443
-    uuid: "db80088c-32a1-4cb8-a907-0f3cb7844152"
-    udp: true
-    encryption: "none"
-    flow: "xtls-rprx-vision"
-    servername: "pl3.japancase.site"
-    client-fingerprint: "edge"
-    tls: true
-    reality-opts:
-      public-key: "COvqGpB7lUdZshmbn5zdqiVi81n8Iyha8RbEHtK93xc"
-      short-id: "5037f0423dc4e4ff"
     network: "tcp"
 
   - name: "🇬🇧GB-276M-[f43c91/530f16]"
@@ -214,29 +416,6 @@ proxies:
       headers:
         Host: "www.windowsmsidownloads.com"
 
-  - name: "🇵🇱PL-274M-[862e84/8eb10e]"
-    type: "vless"
-    server: "pl-b1.golangwikito.cfd"
-    port: 61374
-    uuid: "f8d52ece-fad4-478d-875d-df6eed3befa7"
-    udp: true
-    encryption: "none"
-    packet-encoding: "xudp"
-    servername: "pl-b1.golangwikito.cfd"
-    client-fingerprint: "chrome"
-    tls: true
-    reality-opts:
-      public-key: "QrNs0ew7snHqLfpVXS9RAhlRzgAzzGZK9fXmDcx9xHI"
-      short-id: ""
-    network: "xhttp"
-    xhttp-opts:
-      path: "/"
-      host: "pl-b1.golangwikito.cfd"
-      mode: "packet-up"
-      reuse-settings:
-        max-connections: "3"
-      x-padding-bytes: "100-500"
-
 proxy-groups:
   - name: "GLOBAL"
     type: select
@@ -246,19 +425,31 @@ proxy-groups:
   - name: "AUTO"
     type: select
     proxies:
+      - "🇺🇸US-253M-[00eaf6/2c8c91]"
+      - "🇩🇪DE-155M-[708dd0/e497b0]"
+      - "🇬🇧GB-347M-[f43c91/33a05c]"
+      - "🇬🇧GB-257M-[01d4b3/97172f]"
+      - "🇪🇪EE-97M-[01f67a/f8fb4e]"
+      - "🇨🇭CH-297M-[fb8580/cec444]"
+      - "🇫🇷FR-332M-[8af83a/af9dbd]"
+      - "🇧🇬BG-374M-[353de1/4085f7]"
+      - "🇸🇮SI-255M-[f29cda/da57a6]"
+      - "🇸🇮SI-278M-[b2ce3e/88d202]"
+      - "🇨🇭CH-277M-[b9c1be/24ebc4]"
+      - "🇵🇱PL-99M-[8b39c2/b626f5]"
+      - "🇦🇹AT-197M-[2bb282/7cb77f]"
+      - "🇵🇱PL-258M-[bae540/97d7ff]"
+      - "🇺🇸US-200M-[213bb7/846905]"
+      - "🇵🇱PL-138M-[862e84/8eb10e]"
+      - "🇺🇸US-299M-[d27a08/eba551]"
+      - "🇺🇸US-46M-[547bad/a86b0a]"
       - "🇵🇱PL-419M-[71071a/d61128]"
       - "🇵🇱PL-128M-[92de32/95da51]"
-      - "🇸🇮SI-365M-[b2ce3e/88d202]"
-      - "🌐XX-105M-[8b39c2/b626f5]"
-      - "🇬🇧GB-349M-[f43c91/33a05c]"
-      - "🇺🇸US-262M-[00eaf6/2c8c91]"
-      - "🇵🇱PL-315M-[bae540/97d7ff]"
       - "🇬🇧GB-276M-[f43c91/530f16]"
       - "🇺🇸US-143M-[a51b3f/5bd581]"
       - "🇨🇦CA-343M-[7138e4/74e18a]"
       - "🇺🇸US-20M-[4430e0/dbf18c]"
       - "🌐XX-354M-[7138e4/d5a2ef]"
-      - "🇵🇱PL-274M-[862e84/8eb10e]"
 
 rules:
   - "DOMAIN,smtp.gmail.com,DIRECT"
