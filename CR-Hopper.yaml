@@ -22,6 +22,73 @@ proxies:
       short-id: "38559e47f5536913"
     network: "tcp"
 
+  - name: "🇩🇪DE-392M-[4a9135/2d3b05]"
+    type: "vless"
+    server: "chatgpt.com"
+    port: 8443
+    uuid: "7eb360e0-3bf4-4e9b-9192-ca25a2f54b73"
+    udp: true
+    encryption: "none"
+    servername: "de9.ahsvip.eu.org"
+    client-fingerprint: "unsafe"
+    alpn:
+      - "http/1.1"
+    tls: true
+    network: "ws"
+    ws-opts:
+      path: "/sg-melbi"
+      headers:
+        Host: "de9.ahsvip.eu.org"
+
+  - name: "🇺🇸US-32M-[98f452/7a652b]"
+    type: "trojan"
+    server: "167.82.64.120"
+    port: 443
+    password: "MiTiVPN"
+    udp: true
+    sni: "cdn.akamai.steamstatic.com"
+    client-fingerprint: "chrome"
+    skip-cert-verify: true
+    alpn:
+      - "http/1.1"
+    network: "ws"
+    ws-opts:
+      path: "/---@MiTiVPN---@MiTiVPN"
+      headers:
+        Host: "mtlooabmakaakaoijji.global.ssl.fastly.net"
+
+  - name: "🇺🇸US-20M-[4430e0/dbf18c]"
+    type: "vless"
+    server: "199.232.249.131"
+    port: 443
+    uuid: "33751cb1-43ea-458c-8dc5-0b8993746bce"
+    udp: true
+    encryption: "none"
+    servername: "community.fastly.steamstatic.com"
+    skip-cert-verify: true
+    tls: true
+    network: "ws"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "copy_az_channel_NUFiLTER_10i.global.ssl.fastly.net."
+
+  - name: "🇺🇸US-43M-[547bad/b7922a]"
+    type: "vless"
+    server: "143.246.62.191"
+    port: 8443
+    uuid: "eb8c97f7-a154-4442-91b0-54c0d055ad0b"
+    udp: true
+    encryption: "none"
+    packet-encoding: "none"
+    servername: "github.githubassets.com"
+    client-fingerprint: "chrome"
+    tls: true
+    reality-opts:
+      public-key: "4g6gX0ueJap7pY_iTDx23h6bzo3KIOTcFzP1Uacn0QA"
+      short-id: "4ad2e4e660550e43"
+    network: "tcp"
+
   - name: "🇺🇸US-277M-[c2d2b1/04fc82]"
     type: "vless"
     server: "5.175.178.214"
@@ -918,23 +985,6 @@ proxies:
       short-id: ""
     network: "tcp"
 
-  - name: "🇺🇸US-162M-[98f452/7a652b]"
-    type: "trojan"
-    server: "167.82.64.120"
-    port: 443
-    password: "MiTiVPN"
-    udp: true
-    sni: "cdn.akamai.steamstatic.com"
-    client-fingerprint: "chrome"
-    skip-cert-verify: true
-    alpn:
-      - "http/1.1"
-    network: "ws"
-    ws-opts:
-      path: "/---@MiTiVPN---@MiTiVPN"
-      headers:
-        Host: "mtlooabmakaakaoijji.global.ssl.fastly.net"
-
   - name: "🌐XX-140M-[6309e9/d626ce]"
     type: "vless"
     server: "141.193.213.30"
@@ -1326,22 +1376,6 @@ proxies:
       short-id: ""
     network: "tcp"
 
-  - name: "🇺🇸US-40M-[547bad/b7922a]"
-    type: "vless"
-    server: "143.246.62.191"
-    port: 8443
-    uuid: "eb8c97f7-a154-4442-91b0-54c0d055ad0b"
-    udp: true
-    encryption: "none"
-    packet-encoding: "none"
-    servername: "github.githubassets.com"
-    client-fingerprint: "chrome"
-    tls: true
-    reality-opts:
-      public-key: "4g6gX0ueJap7pY_iTDx23h6bzo3KIOTcFzP1Uacn0QA"
-      short-id: "4ad2e4e660550e43"
-    network: "tcp"
-
   - name: "🇲🇽MX-34M-[a6a548/aababa]"
     type: "trojan"
     server: "mx001.zestapp778.com"
@@ -1429,6 +1463,10 @@ proxy-groups:
     type: select
     proxies:
       - "🇫🇮FI-188M-[56d575/0eff67]"
+      - "🇩🇪DE-392M-[4a9135/2d3b05]"
+      - "🇺🇸US-32M-[98f452/7a652b]"
+      - "🇺🇸US-20M-[4430e0/dbf18c]"
+      - "🇺🇸US-43M-[547bad/b7922a]"
       - "🇺🇸US-277M-[c2d2b1/04fc82]"
       - "🇳🇱NL-416M-[15fda2/fba49e]"
       - "🇵🇱PL-381M-[58a460/536d2a]"
@@ -1484,7 +1522,6 @@ proxy-groups:
       - "🇺🇸US-321M-[b56833/214bee]"
       - "🇫🇮FI-381M-[6479aa/7b3a86]"
       - "🇳🇱NL-235M-[9119c3/8c1212]"
-      - "🇺🇸US-162M-[98f452/7a652b]"
       - "🌐XX-140M-[6309e9/d626ce]"
       - "🇳🇱NL-203M-[3b9e34/fc9dcf]"
       - "🇫🇮FI-238M-[ea6053/da80a4]"
@@ -1511,7 +1548,6 @@ proxy-groups:
       - "🇺🇸US-163M-[dc1530/852deb]"
       - "🇺🇸US-25M-[015a03/9d78ec]"
       - "🇩🇪DE-30M-[29f247/753d64]"
-      - "🇺🇸US-40M-[547bad/b7922a]"
       - "🇲🇽MX-34M-[a6a548/aababa]"
       - "🇺🇸US-184M-[a1e34d/8e6809]"
       - "🇵🇱PL-419M-[71071a/d61128]"
