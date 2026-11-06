@@ -6,6 +6,104 @@ log-level: warning
 ipv6: false
 
 proxies:
+  - name: "🇺🇸US-166M-[cc1c65/1f2a62]"
+    type: "trojan"
+    server: "146.75.57.120"
+    port: 443
+    password: "MiTiVPN"
+    udp: true
+    sni: "cdn.akamai.steamstatic.com"
+    client-fingerprint: "chrome"
+    skip-cert-verify: true
+    alpn:
+      - "http/1.1"
+    network: "ws"
+    ws-opts:
+      path: "/---@MiTiVPN---@MiTiVPN"
+      headers:
+        Host: "mtlooabmakaakaoijji.global.ssl.fastly.net"
+
+  - name: "🇺🇸US-93M-[98f452/7a652b]"
+    type: "trojan"
+    server: "167.82.64.120"
+    port: 443
+    password: "MiTiVPN"
+    udp: true
+    sni: "cdn.akamai.steamstatic.com"
+    client-fingerprint: "chrome"
+    skip-cert-verify: true
+    alpn:
+      - "http/1.1"
+    network: "ws"
+    ws-opts:
+      path: "/---@MiTiVPN---@MiTiVPN"
+      headers:
+        Host: "mtlooabmakaakaoijji.global.ssl.fastly.net"
+
+  - name: "🇳🇱NL-438M-[590976/fa0e7f]"
+    type: "vless"
+    server: "nl3.japancase.site"
+    port: 443
+    uuid: "db80088c-32a1-4cb8-a907-0f3cb7844152"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "nl3.japancase.site"
+    client-fingerprint: "qq"
+    tls: true
+    reality-opts:
+      public-key: "ZsKgmywoAPRRkYHqQ8hUHFB6X_f7tjXfYmvSeHj0-xQ"
+      short-id: "0d98b07acc98ccef"
+    network: "tcp"
+
+  - name: "🇨🇦CA-343M-[7138e4/74e18a]"
+    type: "vmess"
+    server: "wwww.speedtest.org"
+    port: 443
+    uuid: "80be2deb-3b27-4775-9bd1-7f2a2b9c261b"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    tls: true
+    network: "ws"
+    ws-opts:
+      path: "/truth"
+      headers:
+        Host: "www.windowsmsidownloads.com"
+
+  - name: "🇺🇸US-29M-[be8dab/4f1294]"
+    type: "trojan"
+    server: "199.232.78.120"
+    port: 443
+    password: "MiTiVPN"
+    udp: true
+    sni: "cdn.akamai.steamstatic.com"
+    client-fingerprint: "chrome"
+    skip-cert-verify: true
+    alpn:
+      - "http/1.1"
+    network: "ws"
+    ws-opts:
+      path: "/---@MiTiVPN---@MiTiVPN"
+      headers:
+        Host: "mtlooabmakaakaoijji.global.ssl.fastly.net"
+
+  - name: "🇺🇸US-46M-[547bad/b7922a]"
+    type: "vless"
+    server: "143.246.62.191"
+    port: 8443
+    uuid: "eb8c97f7-a154-4442-91b0-54c0d055ad0b"
+    udp: true
+    encryption: "none"
+    packet-encoding: "none"
+    servername: "github.githubassets.com"
+    client-fingerprint: "chrome"
+    tls: true
+    reality-opts:
+      public-key: "4g6gX0ueJap7pY_iTDx23h6bzo3KIOTcFzP1Uacn0QA"
+      short-id: "4ad2e4e660550e43"
+    network: "tcp"
+
   - name: "🇫🇮FI-188M-[56d575/0eff67]"
     type: "vless"
     server: "193.233.199.84"
@@ -40,23 +138,6 @@ proxies:
       headers:
         Host: "de9.ahsvip.eu.org"
 
-  - name: "🇺🇸US-32M-[98f452/7a652b]"
-    type: "trojan"
-    server: "167.82.64.120"
-    port: 443
-    password: "MiTiVPN"
-    udp: true
-    sni: "cdn.akamai.steamstatic.com"
-    client-fingerprint: "chrome"
-    skip-cert-verify: true
-    alpn:
-      - "http/1.1"
-    network: "ws"
-    ws-opts:
-      path: "/---@MiTiVPN---@MiTiVPN"
-      headers:
-        Host: "mtlooabmakaakaoijji.global.ssl.fastly.net"
-
   - name: "🇺🇸US-20M-[4430e0/dbf18c]"
     type: "vless"
     server: "199.232.249.131"
@@ -72,22 +153,6 @@ proxies:
       path: "/"
       headers:
         Host: "copy_az_channel_NUFiLTER_10i.global.ssl.fastly.net."
-
-  - name: "🇺🇸US-43M-[547bad/b7922a]"
-    type: "vless"
-    server: "143.246.62.191"
-    port: 8443
-    uuid: "eb8c97f7-a154-4442-91b0-54c0d055ad0b"
-    udp: true
-    encryption: "none"
-    packet-encoding: "none"
-    servername: "github.githubassets.com"
-    client-fingerprint: "chrome"
-    tls: true
-    reality-opts:
-      public-key: "4g6gX0ueJap7pY_iTDx23h6bzo3KIOTcFzP1Uacn0QA"
-      short-id: "4ad2e4e660550e43"
-    network: "tcp"
 
   - name: "🇺🇸US-277M-[c2d2b1/04fc82]"
     type: "vless"
@@ -585,21 +650,6 @@ proxies:
       short-id: ""
     network: "tcp"
 
-  - name: "🇨🇦CA-206M-[7138e4/74e18a]"
-    type: "vmess"
-    server: "wwww.speedtest.org"
-    port: 443
-    uuid: "80be2deb-3b27-4775-9bd1-7f2a2b9c261b"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-    tls: true
-    network: "ws"
-    ws-opts:
-      path: "/truth"
-      headers:
-        Host: "www.windowsmsidownloads.com"
-
   - name: "🇺🇸US-108M-[74afdf/8a15aa]"
     type: "vless"
     server: "103.175.79.5"
@@ -845,23 +895,6 @@ proxies:
       sc-min-posts-interval-ms: 30
       x-padding-bytes: "100-1000"
 
-  - name: "🇺🇸US-166M-[cc1c65/1f2a62]"
-    type: "trojan"
-    server: "146.75.57.120"
-    port: 443
-    password: "MiTiVPN"
-    udp: true
-    sni: "cdn.akamai.steamstatic.com"
-    client-fingerprint: "chrome"
-    skip-cert-verify: true
-    alpn:
-      - "http/1.1"
-    network: "ws"
-    ws-opts:
-      path: "/---@MiTiVPN---@MiTiVPN"
-      headers:
-        Host: "mtlooabmakaakaoijji.global.ssl.fastly.net"
-
   - name: "🇳🇱NL-247M-[9119c3/f8d215]"
     type: "vless"
     server: "213.108.21.173"
@@ -877,23 +910,6 @@ proxies:
       public-key: "oSbyJBoI2JTEva2ks51kmUCA7z-iFUcoGYCk-ciEaDU"
       short-id: ""
     network: "tcp"
-
-  - name: "🇺🇸US-151M-[be8dab/4f1294]"
-    type: "trojan"
-    server: "199.232.78.120"
-    port: 443
-    password: "MiTiVPN"
-    udp: true
-    sni: "cdn.akamai.steamstatic.com"
-    client-fingerprint: "chrome"
-    skip-cert-verify: true
-    alpn:
-      - "http/1.1"
-    network: "ws"
-    ws-opts:
-      path: "/---@MiTiVPN---@MiTiVPN"
-      headers:
-        Host: "mtlooabmakaakaoijji.global.ssl.fastly.net"
 
   - name: "🇬🇧GB-324M-[05a9e5/0d3a3d]"
     type: "vless"
@@ -1462,11 +1478,15 @@ proxy-groups:
   - name: "AUTO"
     type: select
     proxies:
+      - "🇺🇸US-166M-[cc1c65/1f2a62]"
+      - "🇺🇸US-93M-[98f452/7a652b]"
+      - "🇳🇱NL-438M-[590976/fa0e7f]"
+      - "🇨🇦CA-343M-[7138e4/74e18a]"
+      - "🇺🇸US-29M-[be8dab/4f1294]"
+      - "🇺🇸US-46M-[547bad/b7922a]"
       - "🇫🇮FI-188M-[56d575/0eff67]"
       - "🇩🇪DE-392M-[4a9135/2d3b05]"
-      - "🇺🇸US-32M-[98f452/7a652b]"
       - "🇺🇸US-20M-[4430e0/dbf18c]"
-      - "🇺🇸US-43M-[547bad/b7922a]"
       - "🇺🇸US-277M-[c2d2b1/04fc82]"
       - "🇳🇱NL-416M-[15fda2/fba49e]"
       - "🇵🇱PL-381M-[58a460/536d2a]"
@@ -1498,7 +1518,6 @@ proxy-groups:
       - "🇫🇮FI-276M-[4c9455/d961a8]"
       - "🇺🇸US-153M-[e25728/02101f]"
       - "🇲🇩MD-254M-[2e8062/ef00fe]"
-      - "🇨🇦CA-206M-[7138e4/74e18a]"
       - "🇺🇸US-108M-[74afdf/8a15aa]"
       - "🇺🇸US-165M-[76831e/5d63c3]"
       - "🇸🇪SE-288M-[4ec3c1/8b3f53]"
@@ -1513,9 +1532,7 @@ proxy-groups:
       - "🇳🇱NL-138M-[54d37c/830cba]"
       - "🇺🇸US-249M-[b56833/679957]"
       - "🇧🇬BG-276M-[bea74c/cc6754]"
-      - "🇺🇸US-166M-[cc1c65/1f2a62]"
       - "🇳🇱NL-247M-[9119c3/f8d215]"
-      - "🇺🇸US-151M-[be8dab/4f1294]"
       - "🇬🇧GB-324M-[05a9e5/0d3a3d]"
       - "🇸🇪SE-118M-[a77273/2313d9]"
       - "🇳🇱NL-70M-[d554ff/9af21a]"
