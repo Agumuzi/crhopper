@@ -41,15 +41,7 @@ proxies:
       x-padding-obfs-mode: true
       x-padding-placement: "header"
 
-  - name: "🇺🇸US-236M-[d13725/3cdf1d]"
-    type: "hysteria2"
-    server: "88.216.57.197"
-    port: 20443
-    password: "4fa0ca1b-0742-419d-8fd2-3f698e06b206"
-    udp: true
-    sni: "hy51290d.w-mebel.pro"
-
-  - name: "🇺🇸US-249M-[c91a1b/cf7a54]"
+  - name: "🇺🇸US-199M-[c91a1b/cf7a54]"
     type: "hysteria2"
     server: "88.216.254.13"
     port: 20443
@@ -57,22 +49,47 @@ proxies:
     udp: true
     sni: "hy51290d.w-mebel.pro"
 
-  - name: "🇳🇱NL-137M-[5a89db/b7cd28]"
+  - name: "🇺🇸US-99M-[d13725/3cdf1d]"
+    type: "hysteria2"
+    server: "88.216.57.197"
+    port: 20443
+    password: "4fa0ca1b-0742-419d-8fd2-3f698e06b206"
+    udp: true
+    sni: "hy51290d.w-mebel.pro"
+
+  - name: "🇬🇧GB-276M-[f43c91/29695b]"
     type: "vless"
-    server: "76574ct.nl7.h1clayd.click"
+    server: "fduknew.titun.su"
     port: 443
-    uuid: "cda0862a-0f87-4be9-8ed8-1d0c9e382839"
+    uuid: "90157e25-cee1-4217-921e-91f300bc1a24"
     udp: true
     encryption: "none"
-    servername: "76574ct.nl7.h1clayd.click"
-    client-fingerprint: "chrome"
+    flow: "xtls-rprx-vision"
+    servername: "bizorg.su"
+    client-fingerprint: "firefox"
     tls: true
     reality-opts:
-      public-key: "9zW5lTDbs9svY-lzlPp-pq0j2Sr6g031SY0E-3xSHDc"
-      short-id: "2ca59bdc5121f921"
+      public-key: "1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs"
+      short-id: "428ef87fd47a3a32"
     network: "tcp"
 
-  - name: "🇺🇸US-270M-[00eaf6/2c8c91]"
+  - name: "🇬🇧GB-276M-[01d4b3/97172f]"
+    type: "vless"
+    server: "50.7.227.77"
+    port: 443
+    uuid: "90157e25-cee1-4217-921e-91f300bc1a24"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "bizorg.su"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs"
+      short-id: "428ef87fd47a3a32"
+    network: "tcp"
+
+  - name: "🇺🇸US-182M-[00eaf6/2c8c91]"
     type: "ss"
     server: "88.216.254.18"
     port: 1080
@@ -80,23 +97,7 @@ proxies:
     password: "V7WLaYdujkwnj6xxXq-2BSxGWEcSJtTA"
     udp: true
 
-  - name: "🇺🇸US-102M-[82b14f/85973b]"
-    type: "vless"
-    server: "176.122.188.184"
-    port: 443
-    uuid: "e60f4255-3cf2-483b-b6d3-3e302f431ef3"
-    udp: true
-    encryption: "none"
-    flow: "xtls-rprx-vision"
-    servername: "portal.citygrainla.com"
-    client-fingerprint: "firefox"
-    tls: true
-    reality-opts:
-      public-key: "BlSccfT5tvDIOS7v9VaPd0ulUNhUdvlMjGiNzDNDUHE"
-      short-id: "051f20c2344a2dfd"
-    network: "tcp"
-
-  - name: "🇺🇸US-96M-[59ad30/dd7cfa]"
+  - name: "🇺🇸US-127M-[59ad30/dd7cfa]"
     type: "vless"
     server: "176.122.142.140"
     port: 443
@@ -112,20 +113,89 @@ proxies:
       short-id: "051f20c2344a2dfd"
     network: "tcp"
 
-  - name: "🇬🇧GB-164M-[01d4b3/97172f]"
+  - name: "🇺🇸US-119M-[82b14f/85973b]"
     type: "vless"
-    server: "50.7.227.77"
+    server: "176.122.188.184"
     port: 443
-    uuid: "90157e25-cee1-4217-921e-91f300bc1a24"
+    uuid: "e60f4255-3cf2-483b-b6d3-3e302f431ef3"
     udp: true
     encryption: "none"
     flow: "xtls-rprx-vision"
-    servername: "bizorg.su"
+    servername: "portal.citygrainla.com"
     client-fingerprint: "firefox"
     tls: true
     reality-opts:
-      public-key: "1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs"
-      short-id: "428ef87fd47a3a32"
+      public-key: "BlSccfT5tvDIOS7v9VaPd0ulUNhUdvlMjGiNzDNDUHE"
+      short-id: "051f20c2344a2dfd"
+    network: "tcp"
+
+  - name: "🇵🇱PL-197M-[8b39c2/b626f5]"
+    type: "vless"
+    server: "cz.pythonmakemigreat.wiki"
+    port: 61374
+    uuid: "f8d52ece-fad4-478d-875d-df6eed3befa7"
+    udp: true
+    encryption: "none"
+    packet-encoding: "xudp"
+    servername: "cz.pythonmakemigreat.wiki"
+    client-fingerprint: "chrome"
+    tls: true
+    reality-opts:
+      public-key: "QrNs0ew7snHqLfpVXS9RAhlRzgAzzGZK9fXmDcx9xHI"
+      short-id: ""
+    network: "xhttp"
+    xhttp-opts:
+      path: "/"
+      host: "cz.pythonmakemigreat.wiki"
+      mode: "packet-up"
+      reuse-settings:
+        max-connections: "3"
+      x-padding-bytes: "100-500"
+
+  - name: "🇳🇱NL-32M-[1d6b5a/4167a6]"
+    type: "vless"
+    server: "alex.xvanta.online"
+    port: 443
+    uuid: "71b566cb-78c4-48e4-af5b-720e4f7884f2"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "alex.xvanta.online"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "FWMXp0NyvEUgXtbyEbGv8Ultiqif8FqKTATZxbeiJwU"
+      short-id: "2b762b951707f99f"
+    network: "tcp"
+
+  - name: "🇺🇸US-24M-[547bad/a86b0a]"
+    type: "vless"
+    server: "143.246.62.191"
+    port: 8443
+    uuid: "eb8c97f7-a154-4442-91b0-54c0d055ad0b"
+    udp: true
+    encryption: "none"
+    servername: "github.githubassets.com"
+    client-fingerprint: "chrome"
+    tls: true
+    reality-opts:
+      public-key: "4g6gX0ueJap7pY_iTDx23h6bzo3KIOTcFzP1Uacn0QA"
+      short-id: "4ad2e4e660550e43"
+    network: "tcp"
+
+  - name: "🇳🇱NL-137M-[5a89db/b7cd28]"
+    type: "vless"
+    server: "76574ct.nl7.h1clayd.click"
+    port: 443
+    uuid: "cda0862a-0f87-4be9-8ed8-1d0c9e382839"
+    udp: true
+    encryption: "none"
+    servername: "76574ct.nl7.h1clayd.click"
+    client-fingerprint: "chrome"
+    tls: true
+    reality-opts:
+      public-key: "9zW5lTDbs9svY-lzlPp-pq0j2Sr6g031SY0E-3xSHDc"
+      short-id: "2ca59bdc5121f921"
     network: "tcp"
 
   - name: "🇳🇱NL-29M-[0011d0/774d22]"
@@ -153,21 +223,6 @@ proxies:
     password: "4fa0ca1b-0742-419d-8fd2-3f698e06b206"
     udp: true
     sni: "hy530899.w-mebel.pro"
-
-  - name: "🇺🇸US-44M-[547bad/a86b0a]"
-    type: "vless"
-    server: "143.246.62.191"
-    port: 8443
-    uuid: "eb8c97f7-a154-4442-91b0-54c0d055ad0b"
-    udp: true
-    encryption: "none"
-    servername: "github.githubassets.com"
-    client-fingerprint: "chrome"
-    tls: true
-    reality-opts:
-      public-key: "4g6gX0ueJap7pY_iTDx23h6bzo3KIOTcFzP1Uacn0QA"
-      short-id: "4ad2e4e660550e43"
-    network: "tcp"
 
   - name: "🇺🇸US-33M-[e424c5/c33b43]"
     type: "vless"
@@ -758,29 +813,6 @@ proxies:
       public-key: "q4_o7NvD6vQg4hYsyO29Q6PVufjTJHDUbQTqstre9EQ"
       short-id: ""
     network: "tcp"
-
-  - name: "🇵🇱PL-202M-[8b39c2/b626f5]"
-    type: "vless"
-    server: "cz.pythonmakemigreat.wiki"
-    port: 61374
-    uuid: "f8d52ece-fad4-478d-875d-df6eed3befa7"
-    udp: true
-    encryption: "none"
-    packet-encoding: "xudp"
-    servername: "cz.pythonmakemigreat.wiki"
-    client-fingerprint: "chrome"
-    tls: true
-    reality-opts:
-      public-key: "QrNs0ew7snHqLfpVXS9RAhlRzgAzzGZK9fXmDcx9xHI"
-      short-id: ""
-    network: "xhttp"
-    xhttp-opts:
-      path: "/"
-      host: "cz.pythonmakemigreat.wiki"
-      mode: "packet-up"
-      reuse-settings:
-        max-connections: "3"
-      x-padding-bytes: "100-500"
 
   - name: "🇸🇮SI-191M-[f29cda/52f4a1]"
     type: "vless"
@@ -1443,16 +1475,19 @@ proxy-groups:
     type: select
     proxies:
       - "🇵🇱PL-138M-[71071a/d61128]"
-      - "🇺🇸US-236M-[d13725/3cdf1d]"
-      - "🇺🇸US-249M-[c91a1b/cf7a54]"
+      - "🇺🇸US-199M-[c91a1b/cf7a54]"
+      - "🇺🇸US-99M-[d13725/3cdf1d]"
+      - "🇬🇧GB-276M-[f43c91/29695b]"
+      - "🇬🇧GB-276M-[01d4b3/97172f]"
+      - "🇺🇸US-182M-[00eaf6/2c8c91]"
+      - "🇺🇸US-127M-[59ad30/dd7cfa]"
+      - "🇺🇸US-119M-[82b14f/85973b]"
+      - "🇵🇱PL-197M-[8b39c2/b626f5]"
+      - "🇳🇱NL-32M-[1d6b5a/4167a6]"
+      - "🇺🇸US-24M-[547bad/a86b0a]"
       - "🇳🇱NL-137M-[5a89db/b7cd28]"
-      - "🇺🇸US-270M-[00eaf6/2c8c91]"
-      - "🇺🇸US-102M-[82b14f/85973b]"
-      - "🇺🇸US-96M-[59ad30/dd7cfa]"
-      - "🇬🇧GB-164M-[01d4b3/97172f]"
       - "🇳🇱NL-29M-[0011d0/774d22]"
       - "🇸🇬SG-44M-[6c35f4/aca556]"
-      - "🇺🇸US-44M-[547bad/a86b0a]"
       - "🇺🇸US-33M-[e424c5/c33b43]"
       - "🇺🇸US-37M-[196aad/ef6b29]"
       - "🇺🇸US-50M-[d27a08/eba551]"
@@ -1490,7 +1525,6 @@ proxy-groups:
       - "🇨🇭CH-275M-[b9c1be/24ebc4]"
       - "🇳🇱NL-91M-[0011d0/d068df]"
       - "🇩🇪DE-173M-[339b5b/7ed4a3]"
-      - "🇵🇱PL-202M-[8b39c2/b626f5]"
       - "🇸🇮SI-191M-[f29cda/52f4a1]"
       - "🇵🇱PL-283M-[12269e/2f2f67]"
       - "🇦🇹AT-128M-[2bb282/91ea7c]"
