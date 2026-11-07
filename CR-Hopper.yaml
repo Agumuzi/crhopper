@@ -6,7 +6,7 @@ log-level: warning
 ipv6: false
 
 proxies:
-  - name: "🇵🇱PL-407M-[71071a/d61128]"
+  - name: "🇵🇱PL-264M-[71071a/d61128]"
     type: "vless"
     server: "cdn-ya.shamanapp.online"
     port: 443
@@ -41,7 +41,7 @@ proxies:
       x-padding-obfs-mode: true
       x-padding-placement: "header"
 
-  - name: "🇳🇱NL-150M-[722485/160b66]"
+  - name: "🇳🇱NL-144M-[722485/160b66]"
     type: "hysteria2"
     server: "31.77.170.135"
     port: 8443
@@ -51,17 +51,95 @@ proxies:
     obfs: "salamander"
     obfs-password: "HihU9VKRmaKmKv8sLenU0YwTNKCa8HAU"
 
-  - name: "🇺🇸US-217M-[c91a1b/cf7a54]"
+  - name: "🇺🇸US-206M-[d13725/3cdf1d]"
     type: "hysteria2"
-    server: "88.216.254.13"
+    server: "88.216.57.197"
     port: 20443
     password: "4fa0ca1b-0742-419d-8fd2-3f698e06b206"
     udp: true
     sni: "hy51290d.w-mebel.pro"
 
-  - name: "🇺🇸US-252M-[d13725/3cdf1d]"
+  - name: "🇳🇱NL-61M-[590976/fa0e7f]"
+    type: "vless"
+    server: "nl3.japancase.site"
+    port: 443
+    uuid: "db80088c-32a1-4cb8-a907-0f3cb7844152"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "nl3.japancase.site"
+    client-fingerprint: "qq"
+    tls: true
+    reality-opts:
+      public-key: "ZsKgmywoAPRRkYHqQ8hUHFB6X_f7tjXfYmvSeHj0-xQ"
+      short-id: "0d98b07acc98ccef"
+    network: "tcp"
+
+  - name: "🇵🇱PL-94M-[8b39c2/b626f5]"
+    type: "vless"
+    server: "cz.pythonmakemigreat.wiki"
+    port: 61374
+    uuid: "f8d52ece-fad4-478d-875d-df6eed3befa7"
+    udp: true
+    encryption: "none"
+    packet-encoding: "xudp"
+    servername: "cz.pythonmakemigreat.wiki"
+    client-fingerprint: "chrome"
+    tls: true
+    reality-opts:
+      public-key: "QrNs0ew7snHqLfpVXS9RAhlRzgAzzGZK9fXmDcx9xHI"
+      short-id: ""
+    network: "xhttp"
+    xhttp-opts:
+      path: "/"
+      host: "cz.pythonmakemigreat.wiki"
+      mode: "packet-up"
+      reuse-settings:
+        max-connections: "3"
+      x-padding-bytes: "100-500"
+
+  - name: "🇬🇧GB-276M-[f43c91/530f16]"
+    type: "vless"
+    server: "fduknew.titun.su"
+    port: 443
+    uuid: "90157e25-cee1-4217-921e-91f300bc1a24"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "bizorg.su"
+    client-fingerprint: "edge"
+    tls: true
+    reality-opts:
+      public-key: "1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs"
+      short-id: "428ef87fd47a3a32"
+    network: "tcp"
+
+  - name: "🇸🇬SG-42M-[6c35f4/aca556]"
     type: "hysteria2"
-    server: "88.216.57.197"
+    server: "84.32.23.76"
+    port: 20443
+    password: "4fa0ca1b-0742-419d-8fd2-3f698e06b206"
+    udp: true
+    sni: "hy530899.w-mebel.pro"
+
+  - name: "🇺🇸US-37M-[547bad/a86b0a]"
+    type: "vless"
+    server: "143.246.62.191"
+    port: 8443
+    uuid: "eb8c97f7-a154-4442-91b0-54c0d055ad0b"
+    udp: true
+    encryption: "none"
+    servername: "github.githubassets.com"
+    client-fingerprint: "chrome"
+    tls: true
+    reality-opts:
+      public-key: "4g6gX0ueJap7pY_iTDx23h6bzo3KIOTcFzP1Uacn0QA"
+      short-id: "4ad2e4e660550e43"
+    network: "tcp"
+
+  - name: "🇺🇸US-217M-[c91a1b/cf7a54]"
+    type: "hysteria2"
+    server: "88.216.254.13"
     port: 20443
     password: "4fa0ca1b-0742-419d-8fd2-3f698e06b206"
     udp: true
@@ -155,14 +233,6 @@ proxies:
       short-id: "41ae8e266bc3346f"
     network: "tcp"
 
-  - name: "🇸🇬SG-41M-[6c35f4/aca556]"
-    type: "hysteria2"
-    server: "84.32.23.76"
-    port: 20443
-    password: "4fa0ca1b-0742-419d-8fd2-3f698e06b206"
-    udp: true
-    sni: "hy530899.w-mebel.pro"
-
   - name: "🇬🇧GB-276M-[f43c91/29695b]"
     type: "vless"
     server: "fduknew.titun.su"
@@ -227,29 +297,6 @@ proxies:
       short-id: "051f20c2344a2dfd"
     network: "tcp"
 
-  - name: "🇵🇱PL-197M-[8b39c2/b626f5]"
-    type: "vless"
-    server: "cz.pythonmakemigreat.wiki"
-    port: 61374
-    uuid: "f8d52ece-fad4-478d-875d-df6eed3befa7"
-    udp: true
-    encryption: "none"
-    packet-encoding: "xudp"
-    servername: "cz.pythonmakemigreat.wiki"
-    client-fingerprint: "chrome"
-    tls: true
-    reality-opts:
-      public-key: "QrNs0ew7snHqLfpVXS9RAhlRzgAzzGZK9fXmDcx9xHI"
-      short-id: ""
-    network: "xhttp"
-    xhttp-opts:
-      path: "/"
-      host: "cz.pythonmakemigreat.wiki"
-      mode: "packet-up"
-      reuse-settings:
-        max-connections: "3"
-      x-padding-bytes: "100-500"
-
   - name: "🇳🇱NL-32M-[1d6b5a/4167a6]"
     type: "vless"
     server: "alex.xvanta.online"
@@ -264,21 +311,6 @@ proxies:
     reality-opts:
       public-key: "FWMXp0NyvEUgXtbyEbGv8Ultiqif8FqKTATZxbeiJwU"
       short-id: "2b762b951707f99f"
-    network: "tcp"
-
-  - name: "🇺🇸US-24M-[547bad/a86b0a]"
-    type: "vless"
-    server: "143.246.62.191"
-    port: 8443
-    uuid: "eb8c97f7-a154-4442-91b0-54c0d055ad0b"
-    udp: true
-    encryption: "none"
-    servername: "github.githubassets.com"
-    client-fingerprint: "chrome"
-    tls: true
-    reality-opts:
-      public-key: "4g6gX0ueJap7pY_iTDx23h6bzo3KIOTcFzP1Uacn0QA"
-      short-id: "4ad2e4e660550e43"
     network: "tcp"
 
   - name: "🇳🇱NL-137M-[5a89db/b7cd28]"
@@ -1428,22 +1460,6 @@ proxies:
     tls: true
     network: "tcp"
 
-  - name: "🇬🇧GB-276M-[f43c91/530f16]"
-    type: "vless"
-    server: "fduknew.titun.su"
-    port: 443
-    uuid: "90157e25-cee1-4217-921e-91f300bc1a24"
-    udp: true
-    encryption: "none"
-    flow: "xtls-rprx-vision"
-    servername: "bizorg.su"
-    client-fingerprint: "edge"
-    tls: true
-    reality-opts:
-      public-key: "1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs"
-      short-id: "428ef87fd47a3a32"
-    network: "tcp"
-
   - name: "🇺🇸US-143M-[a51b3f/5bd581]"
     type: "vless"
     server: "usa4.un1.cloud"
@@ -1516,24 +1532,26 @@ proxy-groups:
   - name: "AUTO"
     type: select
     proxies:
-      - "🇵🇱PL-407M-[71071a/d61128]"
-      - "🇳🇱NL-150M-[722485/160b66]"
+      - "🇵🇱PL-264M-[71071a/d61128]"
+      - "🇳🇱NL-144M-[722485/160b66]"
+      - "🇺🇸US-206M-[d13725/3cdf1d]"
+      - "🇳🇱NL-61M-[590976/fa0e7f]"
+      - "🇵🇱PL-94M-[8b39c2/b626f5]"
+      - "🇬🇧GB-276M-[f43c91/530f16]"
+      - "🇸🇬SG-42M-[6c35f4/aca556]"
+      - "🇺🇸US-37M-[547bad/a86b0a]"
       - "🇺🇸US-217M-[c91a1b/cf7a54]"
-      - "🇺🇸US-252M-[d13725/3cdf1d]"
       - "🇬🇧GB-350M-[f43c91/33a05c]"
       - "🇬🇧GB-417M-[01d4b3/f456db]"
       - "🇺🇸US-245M-[00eaf6/2c8c91]"
       - "🇵🇱PL-173M-[bae540/84b355]"
       - "🇦🇹AT-438M-[102681/93f5f8]"
       - "🇦🇹AT-122M-[2bb282/7cb77f]"
-      - "🇸🇬SG-41M-[6c35f4/aca556]"
       - "🇬🇧GB-276M-[f43c91/29695b]"
       - "🇬🇧GB-276M-[01d4b3/97172f]"
       - "🇺🇸US-127M-[59ad30/dd7cfa]"
       - "🇺🇸US-119M-[82b14f/85973b]"
-      - "🇵🇱PL-197M-[8b39c2/b626f5]"
       - "🇳🇱NL-32M-[1d6b5a/4167a6]"
-      - "🇺🇸US-24M-[547bad/a86b0a]"
       - "🇳🇱NL-137M-[5a89db/b7cd28]"
       - "🇳🇱NL-29M-[0011d0/774d22]"
       - "🇺🇸US-33M-[e424c5/c33b43]"
@@ -1605,7 +1623,6 @@ proxy-groups:
       - "🇵🇱PL-341M-[e25acc/64f582]"
       - "🇫🇷FR-332M-[8af83a/af9dbd]"
       - "🇧🇬BG-374M-[353de1/4085f7]"
-      - "🇬🇧GB-276M-[f43c91/530f16]"
       - "🇺🇸US-143M-[a51b3f/5bd581]"
       - "🇨🇦CA-343M-[7138e4/74e18a]"
       - "🇺🇸US-20M-[4430e0/dbf18c]"
