@@ -6,7 +6,7 @@ log-level: warning
 ipv6: false
 
 proxies:
-  - name: "🇵🇱PL-264M-[71071a/d61128]"
+  - name: "🇵🇱PL-382M-[71071a/d61128]"
     type: "vless"
     server: "cdn-ya.shamanapp.online"
     port: 443
@@ -41,7 +41,7 @@ proxies:
       x-padding-obfs-mode: true
       x-padding-placement: "header"
 
-  - name: "🇳🇱NL-144M-[722485/160b66]"
+  - name: "🇳🇱NL-211M-[722485/160b66]"
     type: "hysteria2"
     server: "31.77.170.135"
     port: 8443
@@ -50,6 +50,163 @@ proxies:
     sni: "nl1.kittieslabs.tech"
     obfs: "salamander"
     obfs-password: "HihU9VKRmaKmKv8sLenU0YwTNKCa8HAU"
+
+  - name: "🇩🇪DE-408M-[c7a32a/662e5d]"
+    type: "hysteria2"
+    server: "84.32.98.84"
+    port: 20443
+    password: "4fa0ca1b-0742-419d-8fd2-3f698e06b206"
+    udp: true
+    sni: "hy6b373d.w-mebel.pro"
+
+  - name: "🇦🇹AT-442M-[102681/93f5f8]"
+    type: "vless"
+    server: "66.90.106.28"
+    port: 443
+    uuid: "90157e25-cee1-4217-921e-91f300bc1a24"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "banket-restoran.su"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs"
+      short-id: "428ef87fd47a3a32"
+    network: "tcp"
+
+  - name: "🇺🇸US-87M-[a1e34d/ac8f93]"
+    type: "hysteria2"
+    server: "142.11.207.17"
+    port: 443
+    password: "kztyblVC7ZlEKR3ZO5HW"
+    udp: true
+    sni: "www.bing.com"
+    skip-cert-verify: true
+
+  - name: "🇦🇹AT-455M-[f6b651/97e9b6]"
+    type: "vless"
+    server: "fdat.titun.su"
+    port: 443
+    uuid: "90157e25-cee1-4217-921e-91f300bc1a24"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "banket-restoran.su"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs"
+      short-id: "428ef87fd47a3a32"
+    network: "tcp"
+
+  - name: "🇺🇸US-271M-[00eaf6/2c8c91]"
+    type: "ss"
+    server: "88.216.254.18"
+    port: 1080
+    cipher: "chacha20-ietf-poly1305"
+    password: "V7WLaYdujkwnj6xxXq-2BSxGWEcSJtTA"
+    udp: true
+
+  - name: "🇩🇪DE-95M-[d59503/e6ff51]"
+    type: "vless"
+    server: "base.hosamobenl.co.uk"
+    port: 443
+    uuid: "667016ca-f02e-4b5f-bfc3-3d8ed81e9bec"
+    udp: true
+    encryption: "none"
+    servername: "base.hosamobenl.co.uk"
+    alpn:
+      - "http/1.1"
+    tls: true
+    network: "tcp"
+
+  - name: "🇬🇧GB-389M-[f43c91/33a05c]"
+    type: "vless"
+    server: "fduknew.titun.su"
+    port: 443
+    uuid: "90157e25-cee1-4217-921e-91f300bc1a24"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "bizorg.su"
+    client-fingerprint: "chrome"
+    tls: true
+    reality-opts:
+      public-key: "1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs"
+      short-id: "428ef87fd47a3a32"
+    network: "tcp"
+
+  - name: "🇸🇬SG-33M-[6c35f4/aca556]"
+    type: "hysteria2"
+    server: "84.32.23.76"
+    port: 20443
+    password: "4fa0ca1b-0742-419d-8fd2-3f698e06b206"
+    udp: true
+    sni: "hy530899.w-mebel.pro"
+
+  - name: "🇬🇧GB-26M-[01d4b3/97172f]"
+    type: "vless"
+    server: "50.7.227.77"
+    port: 443
+    uuid: "90157e25-cee1-4217-921e-91f300bc1a24"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "bizorg.su"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs"
+      short-id: "428ef87fd47a3a32"
+    network: "tcp"
+
+  - name: "🇦🇹AT-23M-[2bb282/91ea7c]"
+    type: "vless"
+    server: "at1.japancase.site"
+    port: 443
+    uuid: "db80088c-32a1-4cb8-a907-0f3cb7844152"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "at1.japancase.site"
+    client-fingerprint: "chrome"
+    tls: true
+    reality-opts:
+      public-key: "zEntiD6D81wY__YHPvIw78e09CBIgYkyQ5meIo7c_hg"
+      short-id: "41ae8e266bc3346f"
+    network: "tcp"
+
+  - name: "🇺🇸US-24M-[5fc6bc/eb8d55]"
+    type: "vless"
+    server: "156.229.167.109"
+    port: 8443
+    uuid: "eb8c97f7-a154-4442-91b0-54c0d055ad0b"
+    udp: true
+    encryption: "none"
+    servername: "github.githubassets.com"
+    client-fingerprint: "chrome"
+    tls: true
+    reality-opts:
+      public-key: "4g6gX0ueJap7pY_iTDx23h6bzo3KIOTcFzP1Uacn0QA"
+      short-id: "4ad2e4e660550e43"
+    network: "tcp"
+
+  - name: "🇺🇸US-44M-[547bad/b7922a]"
+    type: "vless"
+    server: "143.246.62.191"
+    port: 8443
+    uuid: "eb8c97f7-a154-4442-91b0-54c0d055ad0b"
+    udp: true
+    encryption: "none"
+    packet-encoding: "none"
+    servername: "github.githubassets.com"
+    client-fingerprint: "chrome"
+    tls: true
+    reality-opts:
+      public-key: "4g6gX0ueJap7pY_iTDx23h6bzo3KIOTcFzP1Uacn0QA"
+      short-id: "4ad2e4e660550e43"
+    network: "tcp"
 
   - name: "🇺🇸US-206M-[d13725/3cdf1d]"
     type: "hysteria2"
@@ -114,14 +271,6 @@ proxies:
       short-id: "428ef87fd47a3a32"
     network: "tcp"
 
-  - name: "🇸🇬SG-42M-[6c35f4/aca556]"
-    type: "hysteria2"
-    server: "84.32.23.76"
-    port: 20443
-    password: "4fa0ca1b-0742-419d-8fd2-3f698e06b206"
-    udp: true
-    sni: "hy530899.w-mebel.pro"
-
   - name: "🇺🇸US-37M-[547bad/a86b0a]"
     type: "vless"
     server: "143.246.62.191"
@@ -145,22 +294,6 @@ proxies:
     udp: true
     sni: "hy51290d.w-mebel.pro"
 
-  - name: "🇬🇧GB-350M-[f43c91/33a05c]"
-    type: "vless"
-    server: "fduknew.titun.su"
-    port: 443
-    uuid: "90157e25-cee1-4217-921e-91f300bc1a24"
-    udp: true
-    encryption: "none"
-    flow: "xtls-rprx-vision"
-    servername: "bizorg.su"
-    client-fingerprint: "chrome"
-    tls: true
-    reality-opts:
-      public-key: "1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs"
-      short-id: "428ef87fd47a3a32"
-    network: "tcp"
-
   - name: "🇬🇧GB-417M-[01d4b3/f456db]"
     type: "vless"
     server: "50.7.227.77"
@@ -177,14 +310,6 @@ proxies:
       short-id: "428ef87fd47a3a32"
     network: "tcp"
 
-  - name: "🇺🇸US-245M-[00eaf6/2c8c91]"
-    type: "ss"
-    server: "88.216.254.18"
-    port: 1080
-    cipher: "chacha20-ietf-poly1305"
-    password: "V7WLaYdujkwnj6xxXq-2BSxGWEcSJtTA"
-    udp: true
-
   - name: "🇵🇱PL-173M-[bae540/84b355]"
     type: "vless"
     server: "pl3.japancase.site"
@@ -199,22 +324,6 @@ proxies:
     reality-opts:
       public-key: "COvqGpB7lUdZshmbn5zdqiVi81n8Iyha8RbEHtK93xc"
       short-id: "5037f0423dc4e4ff"
-    network: "tcp"
-
-  - name: "🇦🇹AT-438M-[102681/93f5f8]"
-    type: "vless"
-    server: "66.90.106.28"
-    port: 443
-    uuid: "90157e25-cee1-4217-921e-91f300bc1a24"
-    udp: true
-    encryption: "none"
-    flow: "xtls-rprx-vision"
-    servername: "banket-restoran.su"
-    client-fingerprint: "firefox"
-    tls: true
-    reality-opts:
-      public-key: "1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs"
-      short-id: "428ef87fd47a3a32"
     network: "tcp"
 
   - name: "🇦🇹AT-122M-[2bb282/7cb77f]"
@@ -236,22 +345,6 @@ proxies:
   - name: "🇬🇧GB-276M-[f43c91/29695b]"
     type: "vless"
     server: "fduknew.titun.su"
-    port: 443
-    uuid: "90157e25-cee1-4217-921e-91f300bc1a24"
-    udp: true
-    encryption: "none"
-    flow: "xtls-rprx-vision"
-    servername: "bizorg.su"
-    client-fingerprint: "firefox"
-    tls: true
-    reality-opts:
-      public-key: "1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs"
-      short-id: "428ef87fd47a3a32"
-    network: "tcp"
-
-  - name: "🇬🇧GB-276M-[01d4b3/97172f]"
-    type: "vless"
-    server: "50.7.227.77"
     port: 443
     uuid: "90157e25-cee1-4217-921e-91f300bc1a24"
     udp: true
@@ -936,22 +1029,6 @@ proxies:
       headers:
         Host: "nl2-edge.gacvpn.site"
 
-  - name: "🇦🇹AT-128M-[2bb282/91ea7c]"
-    type: "vless"
-    server: "at1.japancase.site"
-    port: 443
-    uuid: "db80088c-32a1-4cb8-a907-0f3cb7844152"
-    udp: true
-    encryption: "none"
-    flow: "xtls-rprx-vision"
-    servername: "at1.japancase.site"
-    client-fingerprint: "chrome"
-    tls: true
-    reality-opts:
-      public-key: "zEntiD6D81wY__YHPvIw78e09CBIgYkyQ5meIo7c_hg"
-      short-id: "41ae8e266bc3346f"
-    network: "tcp"
-
   - name: "🇳🇱NL-143M-[41028d/f9b2de]"
     type: "vless"
     server: "193.233.127.149"
@@ -1532,23 +1609,30 @@ proxy-groups:
   - name: "AUTO"
     type: select
     proxies:
-      - "🇵🇱PL-264M-[71071a/d61128]"
-      - "🇳🇱NL-144M-[722485/160b66]"
+      - "🇵🇱PL-382M-[71071a/d61128]"
+      - "🇳🇱NL-211M-[722485/160b66]"
+      - "🇩🇪DE-408M-[c7a32a/662e5d]"
+      - "🇦🇹AT-442M-[102681/93f5f8]"
+      - "🇺🇸US-87M-[a1e34d/ac8f93]"
+      - "🇦🇹AT-455M-[f6b651/97e9b6]"
+      - "🇺🇸US-271M-[00eaf6/2c8c91]"
+      - "🇩🇪DE-95M-[d59503/e6ff51]"
+      - "🇬🇧GB-389M-[f43c91/33a05c]"
+      - "🇸🇬SG-33M-[6c35f4/aca556]"
+      - "🇬🇧GB-26M-[01d4b3/97172f]"
+      - "🇦🇹AT-23M-[2bb282/91ea7c]"
+      - "🇺🇸US-24M-[5fc6bc/eb8d55]"
+      - "🇺🇸US-44M-[547bad/b7922a]"
       - "🇺🇸US-206M-[d13725/3cdf1d]"
       - "🇳🇱NL-61M-[590976/fa0e7f]"
       - "🇵🇱PL-94M-[8b39c2/b626f5]"
       - "🇬🇧GB-276M-[f43c91/530f16]"
-      - "🇸🇬SG-42M-[6c35f4/aca556]"
       - "🇺🇸US-37M-[547bad/a86b0a]"
       - "🇺🇸US-217M-[c91a1b/cf7a54]"
-      - "🇬🇧GB-350M-[f43c91/33a05c]"
       - "🇬🇧GB-417M-[01d4b3/f456db]"
-      - "🇺🇸US-245M-[00eaf6/2c8c91]"
       - "🇵🇱PL-173M-[bae540/84b355]"
-      - "🇦🇹AT-438M-[102681/93f5f8]"
       - "🇦🇹AT-122M-[2bb282/7cb77f]"
       - "🇬🇧GB-276M-[f43c91/29695b]"
-      - "🇬🇧GB-276M-[01d4b3/97172f]"
       - "🇺🇸US-127M-[59ad30/dd7cfa]"
       - "🇺🇸US-119M-[82b14f/85973b]"
       - "🇳🇱NL-32M-[1d6b5a/4167a6]"
@@ -1591,7 +1675,6 @@ proxy-groups:
       - "🇩🇪DE-173M-[339b5b/7ed4a3]"
       - "🇸🇮SI-191M-[f29cda/52f4a1]"
       - "🇵🇱PL-283M-[12269e/2f2f67]"
-      - "🇦🇹AT-128M-[2bb282/91ea7c]"
       - "🇳🇱NL-143M-[41028d/f9b2de]"
       - "🇲🇴MO-72M-[741d13/01df8b]"
       - "🇵🇱PL-208M-[4efe31/5cc200]"
