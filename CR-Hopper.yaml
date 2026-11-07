@@ -6,7 +6,7 @@ log-level: warning
 ipv6: false
 
 proxies:
-  - name: "🇵🇱PL-138M-[71071a/d61128]"
+  - name: "🇵🇱PL-407M-[71071a/d61128]"
     type: "vless"
     server: "cdn-ya.shamanapp.online"
     port: 443
@@ -41,7 +41,17 @@ proxies:
       x-padding-obfs-mode: true
       x-padding-placement: "header"
 
-  - name: "🇺🇸US-199M-[c91a1b/cf7a54]"
+  - name: "🇳🇱NL-150M-[722485/160b66]"
+    type: "hysteria2"
+    server: "31.77.170.135"
+    port: 8443
+    password: "6eaf5e8f-e4fe-4dc7-a1cd-f24343536abe"
+    udp: true
+    sni: "nl1.kittieslabs.tech"
+    obfs: "salamander"
+    obfs-password: "HihU9VKRmaKmKv8sLenU0YwTNKCa8HAU"
+
+  - name: "🇺🇸US-217M-[c91a1b/cf7a54]"
     type: "hysteria2"
     server: "88.216.254.13"
     port: 20443
@@ -49,13 +59,109 @@ proxies:
     udp: true
     sni: "hy51290d.w-mebel.pro"
 
-  - name: "🇺🇸US-99M-[d13725/3cdf1d]"
+  - name: "🇺🇸US-252M-[d13725/3cdf1d]"
     type: "hysteria2"
     server: "88.216.57.197"
     port: 20443
     password: "4fa0ca1b-0742-419d-8fd2-3f698e06b206"
     udp: true
     sni: "hy51290d.w-mebel.pro"
+
+  - name: "🇬🇧GB-350M-[f43c91/33a05c]"
+    type: "vless"
+    server: "fduknew.titun.su"
+    port: 443
+    uuid: "90157e25-cee1-4217-921e-91f300bc1a24"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "bizorg.su"
+    client-fingerprint: "chrome"
+    tls: true
+    reality-opts:
+      public-key: "1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs"
+      short-id: "428ef87fd47a3a32"
+    network: "tcp"
+
+  - name: "🇬🇧GB-417M-[01d4b3/f456db]"
+    type: "vless"
+    server: "50.7.227.77"
+    port: 443
+    uuid: "90157e25-cee1-4217-921e-91f300bc1a24"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "bizorg.su"
+    client-fingerprint: "chrome"
+    tls: true
+    reality-opts:
+      public-key: "1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs"
+      short-id: "428ef87fd47a3a32"
+    network: "tcp"
+
+  - name: "🇺🇸US-245M-[00eaf6/2c8c91]"
+    type: "ss"
+    server: "88.216.254.18"
+    port: 1080
+    cipher: "chacha20-ietf-poly1305"
+    password: "V7WLaYdujkwnj6xxXq-2BSxGWEcSJtTA"
+    udp: true
+
+  - name: "🇵🇱PL-173M-[bae540/84b355]"
+    type: "vless"
+    server: "pl3.japancase.site"
+    port: 443
+    uuid: "db80088c-32a1-4cb8-a907-0f3cb7844152"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "pl3.japancase.site"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "COvqGpB7lUdZshmbn5zdqiVi81n8Iyha8RbEHtK93xc"
+      short-id: "5037f0423dc4e4ff"
+    network: "tcp"
+
+  - name: "🇦🇹AT-438M-[102681/93f5f8]"
+    type: "vless"
+    server: "66.90.106.28"
+    port: 443
+    uuid: "90157e25-cee1-4217-921e-91f300bc1a24"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "banket-restoran.su"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs"
+      short-id: "428ef87fd47a3a32"
+    network: "tcp"
+
+  - name: "🇦🇹AT-122M-[2bb282/7cb77f]"
+    type: "vless"
+    server: "at1.japancase.site"
+    port: 443
+    uuid: "db80088c-32a1-4cb8-a907-0f3cb7844152"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "at1.japancase.site"
+    client-fingerprint: "edge"
+    tls: true
+    reality-opts:
+      public-key: "zEntiD6D81wY__YHPvIw78e09CBIgYkyQ5meIo7c_hg"
+      short-id: "41ae8e266bc3346f"
+    network: "tcp"
+
+  - name: "🇸🇬SG-41M-[6c35f4/aca556]"
+    type: "hysteria2"
+    server: "84.32.23.76"
+    port: 20443
+    password: "4fa0ca1b-0742-419d-8fd2-3f698e06b206"
+    udp: true
+    sni: "hy530899.w-mebel.pro"
 
   - name: "🇬🇧GB-276M-[f43c91/29695b]"
     type: "vless"
@@ -88,14 +194,6 @@ proxies:
       public-key: "1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs"
       short-id: "428ef87fd47a3a32"
     network: "tcp"
-
-  - name: "🇺🇸US-182M-[00eaf6/2c8c91]"
-    type: "ss"
-    server: "88.216.254.18"
-    port: 1080
-    cipher: "chacha20-ietf-poly1305"
-    password: "V7WLaYdujkwnj6xxXq-2BSxGWEcSJtTA"
-    udp: true
 
   - name: "🇺🇸US-127M-[59ad30/dd7cfa]"
     type: "vless"
@@ -215,14 +313,6 @@ proxies:
       path: "/static/js/chunk"
       host: "nep.qiksme.com"
       mode: "stream-one"
-
-  - name: "🇸🇬SG-44M-[6c35f4/aca556]"
-    type: "hysteria2"
-    server: "84.32.23.76"
-    port: 20443
-    password: "4fa0ca1b-0742-419d-8fd2-3f698e06b206"
-    udp: true
-    sni: "hy530899.w-mebel.pro"
 
   - name: "🇺🇸US-33M-[e424c5/c33b43]"
     type: "vless"
@@ -386,22 +476,6 @@ proxies:
       headers:
         Host: "thumborigin.comparecarprices.org"
 
-  - name: "🇬🇧GB-484M-[01d4b3/f456db]"
-    type: "vless"
-    server: "50.7.227.77"
-    port: 443
-    uuid: "90157e25-cee1-4217-921e-91f300bc1a24"
-    udp: true
-    encryption: "none"
-    flow: "xtls-rprx-vision"
-    servername: "bizorg.su"
-    client-fingerprint: "chrome"
-    tls: true
-    reality-opts:
-      public-key: "1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs"
-      short-id: "428ef87fd47a3a32"
-    network: "tcp"
-
   - name: "🇳🇱NL-153M-[3332d4/61cfaa]"
     type: "vless"
     server: "5d0319t.nl7.h1clayd.click"
@@ -511,22 +585,6 @@ proxies:
     reality-opts:
       public-key: "B5Rbu23-J_PmzD6d-5ra_pxKaXd1MeRf6IT4jT_6PEM"
       short-id: "071c3bd86b0c3c73"
-    network: "tcp"
-
-  - name: "🇦🇹AT-163M-[2bb282/7cb77f]"
-    type: "vless"
-    server: "at1.japancase.site"
-    port: 443
-    uuid: "db80088c-32a1-4cb8-a907-0f3cb7844152"
-    udp: true
-    encryption: "none"
-    flow: "xtls-rprx-vision"
-    servername: "at1.japancase.site"
-    client-fingerprint: "edge"
-    tls: true
-    reality-opts:
-      public-key: "zEntiD6D81wY__YHPvIw78e09CBIgYkyQ5meIo7c_hg"
-      short-id: "41ae8e266bc3346f"
     network: "tcp"
 
   - name: "🇺🇸US-302M-[0180f7/8186b3]"
@@ -1053,22 +1111,6 @@ proxies:
       short-id: ""
     network: "tcp"
 
-  - name: "🇬🇧GB-326M-[f43c91/33a05c]"
-    type: "vless"
-    server: "fduknew.titun.su"
-    port: 443
-    uuid: "90157e25-cee1-4217-921e-91f300bc1a24"
-    udp: true
-    encryption: "none"
-    flow: "xtls-rprx-vision"
-    servername: "bizorg.su"
-    client-fingerprint: "chrome"
-    tls: true
-    reality-opts:
-      public-key: "1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs"
-      short-id: "428ef87fd47a3a32"
-    network: "tcp"
-
   - name: "🇵🇱PL-307M-[862e84/8eb10e]"
     type: "vless"
     server: "pl-b1.golangwikito.cfd"
@@ -1474,12 +1516,19 @@ proxy-groups:
   - name: "AUTO"
     type: select
     proxies:
-      - "🇵🇱PL-138M-[71071a/d61128]"
-      - "🇺🇸US-199M-[c91a1b/cf7a54]"
-      - "🇺🇸US-99M-[d13725/3cdf1d]"
+      - "🇵🇱PL-407M-[71071a/d61128]"
+      - "🇳🇱NL-150M-[722485/160b66]"
+      - "🇺🇸US-217M-[c91a1b/cf7a54]"
+      - "🇺🇸US-252M-[d13725/3cdf1d]"
+      - "🇬🇧GB-350M-[f43c91/33a05c]"
+      - "🇬🇧GB-417M-[01d4b3/f456db]"
+      - "🇺🇸US-245M-[00eaf6/2c8c91]"
+      - "🇵🇱PL-173M-[bae540/84b355]"
+      - "🇦🇹AT-438M-[102681/93f5f8]"
+      - "🇦🇹AT-122M-[2bb282/7cb77f]"
+      - "🇸🇬SG-41M-[6c35f4/aca556]"
       - "🇬🇧GB-276M-[f43c91/29695b]"
       - "🇬🇧GB-276M-[01d4b3/97172f]"
-      - "🇺🇸US-182M-[00eaf6/2c8c91]"
       - "🇺🇸US-127M-[59ad30/dd7cfa]"
       - "🇺🇸US-119M-[82b14f/85973b]"
       - "🇵🇱PL-197M-[8b39c2/b626f5]"
@@ -1487,7 +1536,6 @@ proxy-groups:
       - "🇺🇸US-24M-[547bad/a86b0a]"
       - "🇳🇱NL-137M-[5a89db/b7cd28]"
       - "🇳🇱NL-29M-[0011d0/774d22]"
-      - "🇸🇬SG-44M-[6c35f4/aca556]"
       - "🇺🇸US-33M-[e424c5/c33b43]"
       - "🇺🇸US-37M-[196aad/ef6b29]"
       - "🇺🇸US-50M-[d27a08/eba551]"
@@ -1498,7 +1546,6 @@ proxy-groups:
       - "🇵🇱PL-59M-[4d499f/8ad591]"
       - "🇵🇱PL-56M-[92de32/95da51]"
       - "🌐XX-341M-[ceee3b/4e29a6]"
-      - "🇬🇧GB-484M-[01d4b3/f456db]"
       - "🇳🇱NL-153M-[3332d4/61cfaa]"
       - "🇷🇺RU-386M-[cd3359/429a76]"
       - "🇳🇱NL-436M-[ae119c/3d245b]"
@@ -1506,7 +1553,6 @@ proxy-groups:
       - "🇹🇷TR-357M-[166dd7/b88dd6]"
       - "🇺🇸US-319M-[e4d82c/9ad15b]"
       - "🇹🇷TR-343M-[386895/95903e]"
-      - "🇦🇹AT-163M-[2bb282/7cb77f]"
       - "🇺🇸US-302M-[0180f7/8186b3]"
       - "🇵🇱PL-123M-[bae540/97d7ff]"
       - "🇦🇹AT-107M-[3e3390/ff09f4]"
@@ -1540,7 +1586,6 @@ proxy-groups:
       - "🇩🇪DE-310M-[6ecff4/3f6046]"
       - "🇩🇪DE-282M-[592b58/a31102]"
       - "🇳🇱NL-292M-[94a075/a2a10e]"
-      - "🇬🇧GB-326M-[f43c91/33a05c]"
       - "🇵🇱PL-307M-[862e84/8eb10e]"
       - "🇫🇷FR-270M-[438a47/cdb843]"
       - "🇩🇪DE-202M-[a1f0ed/266384]"
