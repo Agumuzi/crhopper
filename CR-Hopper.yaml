@@ -6,6 +6,46 @@ log-level: warning
 ipv6: false
 
 proxies:
+  - name: "🇱🇺LU-342M-[c8e892/6daf9c]"
+    type: "ss"
+    server: "87.228.61.175"
+    port: 1443
+    cipher: "chacha20-ietf-poly1305"
+    password: "tAGGzgRCi6W95UwG0qerf6"
+    udp: true
+
+  - name: "🌐XX-251M-[f43c91/5dc131]"
+    type: "vless"
+    server: "fduknew.titun.su"
+    port: 443
+    uuid: "90157e25-cee1-4217-921e-91f300bc1a24"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "bizorg.su"
+    client-fingerprint: "chrome"
+    tls: true
+    reality-opts:
+      public-key: "1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs"
+      short-id: "428ef87fd47a3a32"
+    network: "tcp"
+
+  - name: "🌐XX-44M-[547bad/b7922a]"
+    type: "vless"
+    server: "143.246.62.191"
+    port: 8443
+    uuid: "eb8c97f7-a154-4442-91b0-54c0d055ad0b"
+    udp: true
+    encryption: "none"
+    packet-encoding: "none"
+    servername: "github.githubassets.com"
+    client-fingerprint: "chrome"
+    tls: true
+    reality-opts:
+      public-key: "4g6gX0ueJap7pY_iTDx23h6bzo3KIOTcFzP1Uacn0QA"
+      short-id: "4ad2e4e660550e43"
+    network: "tcp"
+
   - name: "🇳🇱NL-24M-[e225de/2fc94b]"
     type: "trojan"
     server: "199.232.78.160"
@@ -833,14 +873,6 @@ proxies:
       short-id: "6b360314a8d57342"
     network: "tcp"
 
-  - name: "🇱🇺LU-342M-[c8e892/6daf9c]"
-    type: "ss"
-    server: "87.228.61.175"
-    port: 1443
-    cipher: "chacha20-ietf-poly1305"
-    password: "tAGGzgRCi6W95UwG0qerf6"
-    udp: true
-
   - name: "🇵🇱PL-128M-[bae540/59b542]"
     type: "vless"
     server: "pl3.japancase.site"
@@ -1616,6 +1648,9 @@ proxy-groups:
   - name: "AUTO"
     type: select
     proxies:
+      - "🇱🇺LU-342M-[c8e892/6daf9c]"
+      - "🌐XX-251M-[f43c91/5dc131]"
+      - "🌐XX-44M-[547bad/b7922a]"
       - "🇳🇱NL-24M-[e225de/2fc94b]"
       - "🇳🇱NL-37M-[52ab3f/bb879d]"
       - "🇺🇸US-37M-[5fc6bc/eb8d55]"
@@ -1675,7 +1710,6 @@ proxy-groups:
       - "🇵🇱PL-167M-[036876/795c02]"
       - "🇷🇺RU-357M-[723577/c0d670]"
       - "🌐XX-360M-[aebe04/bea1ab]"
-      - "🇱🇺LU-342M-[c8e892/6daf9c]"
       - "🇵🇱PL-128M-[bae540/59b542]"
       - "🇺🇸US-194M-[a1e34d/ac8f93]"
       - "🇦🇹AT-351M-[2bb282/7cb77f]"
