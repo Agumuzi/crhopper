@@ -46,6 +46,75 @@ proxies:
       x-padding-obfs-mode: true
       x-padding-placement: "header"
 
+  - name: "🌐XX-268M-[71071a/b2032d]"
+    type: "vless"
+    server: "cdn-ya.shamanapp.online"
+    port: 443
+    uuid: "40c8a202-4b7f-45a6-b0aa-37db0fac4df8"
+    udp: true
+    encryption: "none"
+    servername: "cdn-ya.shamanapp.online"
+    client-fingerprint: "firefox"
+    alpn:
+      - "h2"
+      - "http/1.1"
+    tls: true
+    network: "xhttp"
+    xhttp-opts:
+      path: "/media/hls/720p/"
+      host: "cdn-ya.shamanapp.online"
+      mode: "packet-up"
+      no-grpc-header: true
+      sc-max-each-post-bytes: "20000"
+      sc-min-posts-interval-ms: "5"
+      seq-key: "page"
+      seq-placement: "query"
+      uplink-chunk-size: "20000"
+      uplink-data-key: "X-Request-Id"
+      uplink-data-placement: "header"
+      uplink-http-method: "GET"
+      x-padding-bytes: "100-1000"
+      x-padding-header: "X-Cache"
+      x-padding-key: "_dc"
+      x-padding-method: "tokenish"
+      x-padding-obfs-mode: true
+      x-padding-placement: "header"
+
+  - name: "🇩🇪DE-276M-[49e4e7/cce03b]"
+    type: "vless"
+    server: "n4.topingr.ir"
+    port: 443
+    uuid: "f9cb35cd-e905-4b8a-8188-44873be88c2f"
+    udp: true
+    encryption: "none"
+    servername: "static.zovip2.ir"
+    client-fingerprint: "chrome"
+    alpn:
+      - "http/1.1"
+    tls: true
+    network: "ws"
+    ws-opts:
+      path: "/api/v3/pulse"
+      headers:
+        Host: "static.zovip2.ir"
+
+  - name: "🇷🇺RU-55M-[b87858/761a73]"
+    type: "vless"
+    server: "9e72bbg.msk2.h1clayd.click"
+    port: 443
+    uuid: "13e6bdfd-d51b-4e57-a40e-b88784cba8bd"
+    udp: true
+    encryption: "none"
+    servername: "9e72bbg.msk2.h1clayd.click"
+    client-fingerprint: "chrome"
+    tls: true
+    reality-opts:
+      public-key: "0R5QIf2DFXNgISIYDQdoWIdbNoImaJHrwOkc2tzRPyQ"
+      short-id: "cc07501e28b18687"
+    network: "grpc"
+    grpc-opts:
+      grpc-service-name: "93013a569b78"
+
   - name: "🇳🇱NL-201M-[a1f774/4d25a4]"
     type: "hysteria2"
     server: "84.32.102.145"
@@ -1516,6 +1585,9 @@ proxy-groups:
     proxies:
       - "🇳🇱NL-392M-[a1f774/8962a4]"
       - "🇳🇱NL-276M-[42ca38/cc5088]"
+      - "🌐XX-268M-[71071a/b2032d]"
+      - "🇩🇪DE-276M-[49e4e7/cce03b]"
+      - "🇷🇺RU-55M-[b87858/761a73]"
       - "🇳🇱NL-201M-[a1f774/4d25a4]"
       - "🇳🇱NL-191M-[efb4dd/8abb4a]"
       - "🇺🇸US-158M-[5e9d34/983756]"
