@@ -6,6 +6,71 @@ log-level: warning
 ipv6: false
 
 proxies:
+  - name: "🇳🇱NL-24M-[e225de/2fc94b]"
+    type: "trojan"
+    server: "199.232.78.160"
+    port: 443
+    password: "MiTiVPN"
+    udp: true
+    sni: "cdn.akamai.steamstatic.com"
+    client-fingerprint: "chrome"
+    skip-cert-verify: true
+    alpn:
+      - "http/1.1"
+    network: "ws"
+    ws-opts:
+      path: "/---@MiTiVPN---@MiTiVPN"
+      headers:
+        Host: "mitivpn-1-mitivpn.ac.ir"
+
+  - name: "🇳🇱NL-37M-[52ab3f/bb879d]"
+    type: "trojan"
+    server: "167.82.64.7"
+    port: 443
+    password: "MiTiVPN"
+    udp: true
+    sni: "cdn.akamai.steamstatic.com"
+    client-fingerprint: "chrome"
+    skip-cert-verify: true
+    alpn:
+      - "http/1.1"
+    network: "ws"
+    ws-opts:
+      path: "/---@MiTiVPN---@MiTiVPN"
+      headers:
+        Host: "mitivpn-1-mitivpn.ac.ir"
+
+  - name: "🇺🇸US-37M-[5fc6bc/eb8d55]"
+    type: "vless"
+    server: "156.229.167.109"
+    port: 8443
+    uuid: "eb8c97f7-a154-4442-91b0-54c0d055ad0b"
+    udp: true
+    encryption: "none"
+    servername: "github.githubassets.com"
+    client-fingerprint: "chrome"
+    tls: true
+    reality-opts:
+      public-key: "4g6gX0ueJap7pY_iTDx23h6bzo3KIOTcFzP1Uacn0QA"
+      short-id: "4ad2e4e660550e43"
+    network: "tcp"
+
+  - name: "🇺🇸US-40M-[547bad/66ffe6]"
+    type: "vless"
+    server: "143.246.62.191"
+    port: 8443
+    uuid: "eb8c97f7-a154-4442-91b0-54c0d055ad0b"
+    udp: true
+    encryption: "none"
+    packet-encoding: "xudp"
+    servername: "github.githubassets.com"
+    client-fingerprint: "chrome"
+    tls: true
+    reality-opts:
+      public-key: "4g6gX0ueJap7pY_iTDx23h6bzo3KIOTcFzP1Uacn0QA"
+      short-id: "4ad2e4e660550e43"
+    network: "tcp"
+
   - name: "🇳🇱NL-392M-[a1f774/8962a4]"
     type: "hysteria2"
     server: "84.32.102.145"
@@ -284,23 +349,6 @@ proxies:
       short-id: "428ef87fd47a3a32"
     network: "tcp"
 
-  - name: "🇳🇱NL-22M-[e225de/2fc94b]"
-    type: "trojan"
-    server: "199.232.78.160"
-    port: 443
-    password: "MiTiVPN"
-    udp: true
-    sni: "cdn.akamai.steamstatic.com"
-    client-fingerprint: "chrome"
-    skip-cert-verify: true
-    alpn:
-      - "http/1.1"
-    network: "ws"
-    ws-opts:
-      path: "/---@MiTiVPN---@MiTiVPN"
-      headers:
-        Host: "mitivpn-1-mitivpn.ac.ir"
-
   - name: "🇺🇸US-34M-[547bad/a86b0a]"
     type: "vless"
     server: "143.246.62.191"
@@ -330,21 +378,6 @@ proxies:
     reality-opts:
       public-key: "Au1rmQdDRjlEJk17IfLQv5PBUEEosMWNhAlrWZj6mnY"
       short-id: "14324280"
-    network: "tcp"
-
-  - name: "🇺🇸US-24M-[5fc6bc/eb8d55]"
-    type: "vless"
-    server: "156.229.167.109"
-    port: 8443
-    uuid: "eb8c97f7-a154-4442-91b0-54c0d055ad0b"
-    udp: true
-    encryption: "none"
-    servername: "github.githubassets.com"
-    client-fingerprint: "chrome"
-    tls: true
-    reality-opts:
-      public-key: "4g6gX0ueJap7pY_iTDx23h6bzo3KIOTcFzP1Uacn0QA"
-      short-id: "4ad2e4e660550e43"
     network: "tcp"
 
   - name: "🇺🇸US-172M-[49f92b/483086]"
@@ -1583,6 +1616,10 @@ proxy-groups:
   - name: "AUTO"
     type: select
     proxies:
+      - "🇳🇱NL-24M-[e225de/2fc94b]"
+      - "🇳🇱NL-37M-[52ab3f/bb879d]"
+      - "🇺🇸US-37M-[5fc6bc/eb8d55]"
+      - "🇺🇸US-40M-[547bad/66ffe6]"
       - "🇳🇱NL-392M-[a1f774/8962a4]"
       - "🇳🇱NL-276M-[42ca38/cc5088]"
       - "🌐XX-268M-[71071a/b2032d]"
@@ -1600,10 +1637,8 @@ proxy-groups:
       - "🇬🇧GB-277M-[01d4b3/f456db]"
       - "🇵🇱PL-181M-[71071a/d61128]"
       - "🇦🇹AT-370M-[f6b651/a8be1f]"
-      - "🇳🇱NL-22M-[e225de/2fc94b]"
       - "🇺🇸US-34M-[547bad/a86b0a]"
       - "🇰🇿KZ-23M-[e4756f/066a30]"
-      - "🇺🇸US-24M-[5fc6bc/eb8d55]"
       - "🇺🇸US-172M-[49f92b/483086]"
       - "🇺🇸US-169M-[a18604/51e6e6]"
       - "🇸🇪SE-105M-[90f44e/292b4c]"
