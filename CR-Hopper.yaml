@@ -6,6 +6,591 @@ log-level: warning
 ipv6: false
 
 proxies:
+  - name: "🇫🇷FR-195M-[7e7972/3c25fe]"
+    type: "vless"
+    server: "151.101.36.111"
+    port: 443
+    uuid: "67cd3349-f789-4cbb-8b91-4b6b1654ce7c"
+    udp: true
+    encryption: "none"
+    servername: "accounts.fastly.com"
+    client-fingerprint: "chrome"
+    alpn:
+      - "h3"
+    tls: true
+    network: "xhttp"
+    xhttp-opts:
+      path: "/"
+      host: "ovd11.global.ssl.fastly.net"
+      mode: "auto"
+
+  - name: "🇳🇱NL-322M-[bcda65/98129b]"
+    type: "vless"
+    server: "fetch.mediacorphub.org"
+    port: 443
+    uuid: "1653818d-532e-46be-b825-384107fb7c3a"
+    udp: true
+    encryption: "none"
+    servername: "fetch.mediacorphub.org"
+    client-fingerprint: "firefox"
+    alpn:
+      - "h2"
+    tls: true
+    network: "grpc"
+    grpc-opts:
+      grpc-service-name: "api.v1.FeedService"
+
+  - name: "🇳🇱NL-392M-[6879f7/8dcefc]"
+    type: "vless"
+    server: "cdn.mediacorphub.org"
+    port: 443
+    uuid: "1653818d-532e-46be-b825-384107fb7c3a"
+    udp: true
+    encryption: "none"
+    servername: "cdn.mediacorphub.org"
+    client-fingerprint: "firefox"
+    alpn:
+      - "h2"
+    tls: true
+    network: "grpc"
+    grpc-opts:
+      grpc-service-name: "stats.v2.StreamService"
+
+  - name: "🇳🇱NL-269M-[2892ae/1f03e3]"
+    type: "vless"
+    server: "gateway.mediacorphub.org"
+    port: 443
+    uuid: "1653818d-532e-46be-b825-384107fb7c3a"
+    udp: true
+    encryption: "none"
+    servername: "gateway.mediacorphub.org"
+    client-fingerprint: "firefox"
+    alpn:
+      - "h2"
+    tls: true
+    network: "grpc"
+    grpc-opts:
+      grpc-service-name: "home.v1.ObjectService"
+
+  - name: "🇳🇱NL-376M-[dda22f/f2d3c8]"
+    type: "vless"
+    server: "stats.mediacorphub.org"
+    port: 443
+    uuid: "1653818d-532e-46be-b825-384107fb7c3a"
+    udp: true
+    encryption: "none"
+    servername: "stats.mediacorphub.org"
+    client-fingerprint: "firefox"
+    alpn:
+      - "h2"
+    tls: true
+    network: "grpc"
+    grpc-opts:
+      grpc-service-name: "gw.v2.PushService"
+
+  - name: "🇳🇱NL-274M-[75eec0/9a7448]"
+    type: "vless"
+    server: "edge.mediacorphub.org"
+    port: 443
+    uuid: "1653818d-532e-46be-b825-384107fb7c3a"
+    udp: true
+    encryption: "none"
+    servername: "edge.mediacorphub.org"
+    client-fingerprint: "firefox"
+    alpn:
+      - "h2"
+    tls: true
+    network: "grpc"
+    grpc-opts:
+      grpc-service-name: "hub.v1.ObjectService"
+
+  - name: "🇳🇱NL-240M-[a858a3/0d4531]"
+    type: "vless"
+    server: "app.mediacorphub.org"
+    port: 443
+    uuid: "1653818d-532e-46be-b825-384107fb7c3a"
+    udp: true
+    encryption: "none"
+    servername: "app.mediacorphub.org"
+    client-fingerprint: "firefox"
+    alpn:
+      - "h2"
+    tls: true
+    network: "grpc"
+    grpc-opts:
+      grpc-service-name: "stats.v2.StreamService"
+
+  - name: "🇳🇱NL-382M-[4c4ce8/0a4b49]"
+    type: "vless"
+    server: "net.mediacorphub.org"
+    port: 443
+    uuid: "1653818d-532e-46be-b825-384107fb7c3a"
+    udp: true
+    encryption: "none"
+    servername: "net.mediacorphub.org"
+    client-fingerprint: "firefox"
+    alpn:
+      - "h2"
+    tls: true
+    network: "grpc"
+    grpc-opts:
+      grpc-service-name: "home.v2.MetricsService"
+
+  - name: "🇬🇧GB-311M-[aa736c/9a7120]"
+    type: "vless"
+    server: "main.onecloudtraining.com"
+    port: 443
+    uuid: "0ad875ef-b751-46e3-aa89-e1ae20e43bcc"
+    udp: true
+    encryption: "none"
+    servername: "main.onecloudtraining.com"
+    client-fingerprint: "firefox"
+    alpn:
+      - "h2"
+      - "http/1.1"
+    tls: true
+    network: "xhttp"
+    xhttp-opts:
+      path: "/stream/v1/chunk/m6OfwfAj3W"
+      mode: "stream-up"
+      reuse-settings:
+        c-max-reuse-times: 0
+        h-keep-alive-period: 0
+        h-max-request-times: "600-900"
+        h-max-reusable-secs: "1800-3000"
+        max-concurrency: 0
+        max-connections: 2
+
+  - name: "🇳🇱NL-361M-[6bfc43/976edc]"
+    type: "vless"
+    server: "api.mediacorphub.org"
+    port: 443
+    uuid: "1653818d-532e-46be-b825-384107fb7c3a"
+    udp: true
+    encryption: "none"
+    servername: "api.mediacorphub.org"
+    client-fingerprint: "firefox"
+    alpn:
+      - "h2"
+    tls: true
+    network: "grpc"
+    grpc-opts:
+      grpc-service-name: "gw.v2.PushService"
+
+  - name: "🇳🇱NL-356M-[4dc8e9/673345]"
+    type: "vless"
+    server: "live.mediacorphub.org"
+    port: 443
+    uuid: "1653818d-532e-46be-b825-384107fb7c3a"
+    udp: true
+    encryption: "none"
+    servername: "live.mediacorphub.org"
+    client-fingerprint: "firefox"
+    alpn:
+      - "h2"
+    tls: true
+    network: "grpc"
+    grpc-opts:
+      grpc-service-name: "home.v1.ObjectService"
+
+  - name: "🇬🇧GB-329M-[09685f/1a6665]"
+    type: "vless"
+    server: "upload.onecloudtraining.com"
+    port: 443
+    uuid: "0ad875ef-b751-46e3-aa89-e1ae20e43bcc"
+    udp: true
+    encryption: "none"
+    servername: "upload.onecloudtraining.com"
+    client-fingerprint: "firefox"
+    alpn:
+      - "h2"
+      - "http/1.1"
+    tls: true
+    network: "xhttp"
+    xhttp-opts:
+      path: "/assets/v1/ingest/5y2XX8T5BC"
+      mode: "stream-up"
+      reuse-settings:
+        c-max-reuse-times: 0
+        h-keep-alive-period: 0
+        h-max-request-times: "600-900"
+        h-max-reusable-secs: "1800-3000"
+        max-concurrency: 0
+        max-connections: 2
+
+  - name: "🇬🇧GB-374M-[bc8895/b2ee23]"
+    type: "vless"
+    server: "fetch.onecloudtraining.com"
+    port: 443
+    uuid: "0ad875ef-b751-46e3-aa89-e1ae20e43bcc"
+    udp: true
+    encryption: "none"
+    servername: "fetch.onecloudtraining.com"
+    client-fingerprint: "firefox"
+    alpn:
+      - "h2"
+      - "http/1.1"
+    tls: true
+    network: "xhttp"
+    xhttp-opts:
+      path: "/cdn/v2/blob/uvUWSZiudw"
+      mode: "stream-up"
+      reuse-settings:
+        c-max-reuse-times: 0
+        h-keep-alive-period: 0
+        h-max-request-times: "600-900"
+        h-max-reusable-secs: "1800-3000"
+        max-concurrency: 0
+        max-connections: 2
+
+  - name: "🇬🇧GB-337M-[2e50f0/f6106e]"
+    type: "vless"
+    server: "link.onecloudtraining.com"
+    port: 443
+    uuid: "0ad875ef-b751-46e3-aa89-e1ae20e43bcc"
+    udp: true
+    encryption: "none"
+    servername: "link.onecloudtraining.com"
+    client-fingerprint: "firefox"
+    alpn:
+      - "h2"
+      - "http/1.1"
+    tls: true
+    network: "xhttp"
+    xhttp-opts:
+      path: "/static/v3/object/OqyozN63ao"
+      mode: "stream-up"
+      reuse-settings:
+        c-max-reuse-times: 0
+        h-keep-alive-period: 0
+        h-max-request-times: "600-900"
+        h-max-reusable-secs: "1800-3000"
+        max-concurrency: 0
+        max-connections: 2
+
+  - name: "🇬🇧GB-323M-[7667b0/02a43b]"
+    type: "vless"
+    server: "us.onecloudtraining.com"
+    port: 443
+    uuid: "0ad875ef-b751-46e3-aa89-e1ae20e43bcc"
+    udp: true
+    encryption: "none"
+    servername: "us.onecloudtraining.com"
+    client-fingerprint: "firefox"
+    alpn:
+      - "h2"
+      - "http/1.1"
+    tls: true
+    network: "xhttp"
+    xhttp-opts:
+      path: "/media/v1/push/NKdRufUu3q"
+      mode: "stream-up"
+      reuse-settings:
+        c-max-reuse-times: 0
+        h-keep-alive-period: 0
+        h-max-request-times: "600-900"
+        h-max-reusable-secs: "1800-3000"
+        max-concurrency: 0
+        max-connections: 2
+
+  - name: "🇬🇧GB-407M-[6f4628/ee96ad]"
+    type: "vless"
+    server: "media.onecloudtraining.com"
+    port: 443
+    uuid: "0ad875ef-b751-46e3-aa89-e1ae20e43bcc"
+    udp: true
+    encryption: "none"
+    servername: "media.onecloudtraining.com"
+    client-fingerprint: "firefox"
+    alpn:
+      - "h2"
+      - "http/1.1"
+    tls: true
+    network: "xhttp"
+    xhttp-opts:
+      path: "/media/v2/ingest/YH4m9gMDye"
+      mode: "stream-up"
+      reuse-settings:
+        c-max-reuse-times: 0
+        h-keep-alive-period: 0
+        h-max-request-times: "600-900"
+        h-max-reusable-secs: "1800-3000"
+        max-concurrency: 0
+        max-connections: 2
+
+  - name: "🇬🇧GB-379M-[2f8a8b/bfced4]"
+    type: "vless"
+    server: "assets.onecloudtraining.com"
+    port: 443
+    uuid: "0ad875ef-b751-46e3-aa89-e1ae20e43bcc"
+    udp: true
+    encryption: "none"
+    servername: "assets.onecloudtraining.com"
+    client-fingerprint: "firefox"
+    alpn:
+      - "h2"
+      - "http/1.1"
+    tls: true
+    network: "xhttp"
+    xhttp-opts:
+      path: "/static/v1/blob/SUBAhgozTk"
+      mode: "stream-up"
+      reuse-settings:
+        c-max-reuse-times: 0
+        h-keep-alive-period: 0
+        h-max-request-times: "600-900"
+        h-max-reusable-secs: "1800-3000"
+        max-concurrency: 0
+        max-connections: 2
+
+  - name: "🇬🇧GB-476M-[ab5076/6e4cda]"
+    type: "vless"
+    server: "proxy.onecloudtraining.com"
+    port: 443
+    uuid: "0ad875ef-b751-46e3-aa89-e1ae20e43bcc"
+    udp: true
+    encryption: "none"
+    servername: "proxy.onecloudtraining.com"
+    client-fingerprint: "firefox"
+    alpn:
+      - "h2"
+      - "http/1.1"
+    tls: true
+    network: "xhttp"
+    xhttp-opts:
+      path: "/assets/v1/segment/tNDnAEKWSp"
+      mode: "stream-up"
+      reuse-settings:
+        c-max-reuse-times: 0
+        h-keep-alive-period: 0
+        h-max-request-times: "600-900"
+        h-max-reusable-secs: "1800-3000"
+        max-concurrency: 0
+        max-connections: 2
+
+  - name: "🇳🇱NL-465M-[533d68/ce22c7]"
+    type: "vless"
+    server: "images.mediacorphub.org"
+    port: 443
+    uuid: "1653818d-532e-46be-b825-384107fb7c3a"
+    udp: true
+    encryption: "none"
+    servername: "images.mediacorphub.org"
+    client-fingerprint: "firefox"
+    alpn:
+      - "h2"
+    tls: true
+    network: "grpc"
+    grpc-opts:
+      grpc-service-name: "stats.v2.StreamService"
+
+  - name: "🇵🇱PL-370M-[d79332/fc00b5]"
+    type: "vless"
+    server: "dl.megadrishto.com"
+    port: 443
+    uuid: "95f85937-7b95-45c4-8d69-95da6a978569"
+    udp: true
+    encryption: "none"
+    servername: "dl.megadrishto.com"
+    client-fingerprint: "firefox"
+    alpn:
+      - "h2"
+    tls: true
+    network: "grpc"
+    grpc-opts:
+      grpc-service-name: "stats.v2.StreamService"
+
+  - name: "🇬🇧GB-500M-[8a75e2/b142a8]"
+    type: "vless"
+    server: "download.onecloudtraining.com"
+    port: 443
+    uuid: "0ad875ef-b751-46e3-aa89-e1ae20e43bcc"
+    udp: true
+    encryption: "none"
+    servername: "download.onecloudtraining.com"
+    client-fingerprint: "firefox"
+    alpn:
+      - "h2"
+      - "http/1.1"
+    tls: true
+    network: "xhttp"
+    xhttp-opts:
+      path: "/stream/v3/upload/KAawhnLCtp"
+      mode: "stream-up"
+      reuse-settings:
+        c-max-reuse-times: 0
+        h-keep-alive-period: 0
+        h-max-request-times: "600-900"
+        h-max-reusable-secs: "1800-3000"
+        max-concurrency: 0
+        max-connections: 2
+
+  - name: "🇳🇱NL-451M-[ca1c5b/c9d959]"
+    type: "vless"
+    server: "89.105.195.152"
+    port: 443
+    uuid: "1653818d-532e-46be-b825-384107fb7c3a"
+    udp: true
+    encryption: "none"
+    servername: "relay.mediacorphub.org"
+    client-fingerprint: "firefox"
+    tls: true
+    network: "grpc"
+    grpc-opts:
+      grpc-service-name: "api.v1.FeedService"
+
+  - name: "🇳🇱NL-320M-[99f246/3344e7]"
+    type: "vless"
+    server: "tracker.mediacorphub.org"
+    port: 443
+    uuid: "1653818d-532e-46be-b825-384107fb7c3a"
+    udp: true
+    encryption: "none"
+    servername: "tracker.mediacorphub.org"
+    client-fingerprint: "firefox"
+    alpn:
+      - "h2"
+    tls: true
+    network: "grpc"
+    grpc-opts:
+      grpc-service-name: "home.v1.ObjectService"
+
+  - name: "🇩🇪DE-211M-[e0c91d/706d4e]"
+    type: "vless"
+    server: "31.76.35.118"
+    port: 443
+    uuid: "68a67906-5b37-4779-a6cc-58a1655f18b4"
+    udp: true
+    encryption: "none"
+    servername: "logs.spacelex.app"
+    client-fingerprint: "firefox"
+    tls: true
+    network: "xhttp"
+    xhttp-opts:
+      path: "/api/v1/console"
+      host: "logs.spacelex.app"
+      reuse-settings:
+        h-max-request-times: "600-900"
+        h-max-reusable-secs: "1800-3000"
+        max-concurrency: "16-32"
+        max-connections: 0
+      sc-max-each-post-bytes: 1000000
+      sc-min-posts-interval-ms: 30
+      x-padding-bytes: "100-1000"
+
+  - name: "🇳🇱NL-395M-[b46876/4faffd]"
+    type: "vless"
+    server: "89.105.195.147"
+    port: 443
+    uuid: "1653818d-532e-46be-b825-384107fb7c3a"
+    udp: true
+    encryption: "none"
+    servername: "live.mediacorphub.org"
+    client-fingerprint: "firefox"
+    tls: true
+    network: "grpc"
+    grpc-opts:
+      grpc-service-name: "home.v1.ObjectService"
+
+  - name: "🇳🇱NL-372M-[802661/262ab6]"
+    type: "vless"
+    server: "89.105.195.148"
+    port: 443
+    uuid: "1653818d-532e-46be-b825-384107fb7c3a"
+    udp: true
+    encryption: "none"
+    servername: "get.mediacorphub.org"
+    client-fingerprint: "firefox"
+    tls: true
+    network: "grpc"
+    grpc-opts:
+      grpc-service-name: "gw.v2.PushService"
+
+  - name: "🇳🇱NL-407M-[083b8f/f30c5d]"
+    type: "vless"
+    server: "89.105.195.149"
+    port: 443
+    uuid: "1653818d-532e-46be-b825-384107fb7c3a"
+    udp: true
+    encryption: "none"
+    servername: "img.mediacorphub.org"
+    client-fingerprint: "firefox"
+    tls: true
+    network: "grpc"
+    grpc-opts:
+      grpc-service-name: "home.v2.MetricsService"
+
+  - name: "🇳🇱NL-427M-[b1b8bd/9e02ce]"
+    type: "vless"
+    server: "data.mediacorphub.org"
+    port: 443
+    uuid: "1653818d-532e-46be-b825-384107fb7c3a"
+    udp: true
+    encryption: "none"
+    servername: "data.mediacorphub.org"
+    client-fingerprint: "firefox"
+    alpn:
+      - "h2"
+    tls: true
+    network: "grpc"
+    grpc-opts:
+      grpc-service-name: "home.v2.MetricsService"
+
+  - name: "🇳🇱NL-284M-[dc3a42/52f23f]"
+    type: "vless"
+    server: "rpc.mediacorphub.org"
+    port: 443
+    uuid: "1653818d-532e-46be-b825-384107fb7c3a"
+    udp: true
+    encryption: "none"
+    servername: "rpc.mediacorphub.org"
+    client-fingerprint: "firefox"
+    alpn:
+      - "h2"
+    tls: true
+    network: "grpc"
+    grpc-opts:
+      grpc-service-name: "api.v1.FeedService"
+
+  - name: "🇩🇪DE-199M-[a40c60/432e2c]"
+    type: "vless"
+    server: "31.76.35.119"
+    port: 443
+    uuid: "68a67906-5b37-4779-a6cc-58a1655f18b4"
+    udp: true
+    encryption: "none"
+    servername: "logs.spacelex.app"
+    client-fingerprint: "firefox"
+    tls: true
+    network: "xhttp"
+    xhttp-opts:
+      path: "/api/v1/console"
+      host: "logs.spacelex.app"
+      reuse-settings:
+        h-max-request-times: "600-900"
+        h-max-reusable-secs: "1800-3000"
+        max-concurrency: "16-32"
+        max-connections: 0
+      sc-max-each-post-bytes: 1000000
+      sc-min-posts-interval-ms: 30
+      x-padding-bytes: "100-1000"
+
+  - name: "🇳🇱NL-413M-[6347fe/09ec36]"
+    type: "vless"
+    server: "assets.mediacorphub.org"
+    port: 443
+    uuid: "1653818d-532e-46be-b825-384107fb7c3a"
+    udp: true
+    encryption: "none"
+    servername: "assets.mediacorphub.org"
+    client-fingerprint: "firefox"
+    alpn:
+      - "h2"
+    tls: true
+    network: "grpc"
+    grpc-opts:
+      grpc-service-name: "hub.v1.ObjectService"
+
   - name: "🇳🇱NL-177M-[41028d/55f4c5]"
     type: "vless"
     server: "193.233.127.149"
@@ -22,22 +607,6 @@ proxies:
       path: "/static/js/chunk"
       host: "nep.qiksme.com"
       mode: "stream-one"
-
-  - name: "🇳🇱NL-388M-[6347fe/09ec36]"
-    type: "vless"
-    server: "assets.mediacorphub.org"
-    port: 443
-    uuid: "1653818d-532e-46be-b825-384107fb7c3a"
-    udp: true
-    encryption: "none"
-    servername: "assets.mediacorphub.org"
-    client-fingerprint: "firefox"
-    alpn:
-      - "h2"
-    tls: true
-    network: "grpc"
-    grpc-opts:
-      grpc-service-name: "hub.v1.ObjectService"
 
   - name: "🇳🇱NL-390M-[ec7fac/769eb0]"
     type: "vless"
@@ -71,145 +640,6 @@ proxies:
     grpc-opts:
       grpc-service-name: "home.v2.MetricsService"
 
-  - name: "🇳🇱NL-365M-[a858a3/0d4531]"
-    type: "vless"
-    server: "app.mediacorphub.org"
-    port: 443
-    uuid: "1653818d-532e-46be-b825-384107fb7c3a"
-    udp: true
-    encryption: "none"
-    servername: "app.mediacorphub.org"
-    client-fingerprint: "firefox"
-    alpn:
-      - "h2"
-    tls: true
-    network: "grpc"
-    grpc-opts:
-      grpc-service-name: "stats.v2.StreamService"
-
-  - name: "🇳🇱NL-394M-[dc3a42/52f23f]"
-    type: "vless"
-    server: "rpc.mediacorphub.org"
-    port: 443
-    uuid: "1653818d-532e-46be-b825-384107fb7c3a"
-    udp: true
-    encryption: "none"
-    servername: "rpc.mediacorphub.org"
-    client-fingerprint: "firefox"
-    alpn:
-      - "h2"
-    tls: true
-    network: "grpc"
-    grpc-opts:
-      grpc-service-name: "api.v1.FeedService"
-
-  - name: "🇳🇱NL-241M-[75eec0/9a7448]"
-    type: "vless"
-    server: "edge.mediacorphub.org"
-    port: 443
-    uuid: "1653818d-532e-46be-b825-384107fb7c3a"
-    udp: true
-    encryption: "none"
-    servername: "edge.mediacorphub.org"
-    client-fingerprint: "firefox"
-    alpn:
-      - "h2"
-    tls: true
-    network: "grpc"
-    grpc-opts:
-      grpc-service-name: "hub.v1.ObjectService"
-
-  - name: "🇬🇧GB-327M-[ab5076/6e4cda]"
-    type: "vless"
-    server: "proxy.onecloudtraining.com"
-    port: 443
-    uuid: "0ad875ef-b751-46e3-aa89-e1ae20e43bcc"
-    udp: true
-    encryption: "none"
-    servername: "proxy.onecloudtraining.com"
-    client-fingerprint: "firefox"
-    alpn:
-      - "h2"
-      - "http/1.1"
-    tls: true
-    network: "xhttp"
-    xhttp-opts:
-      path: "/assets/v1/segment/tNDnAEKWSp"
-      mode: "stream-up"
-      reuse-settings:
-        c-max-reuse-times: 0
-        h-keep-alive-period: 0
-        h-max-request-times: "600-900"
-        h-max-reusable-secs: "1800-3000"
-        max-concurrency: 0
-        max-connections: 2
-
-  - name: "🇬🇧GB-272M-[2f8a8b/bfced4]"
-    type: "vless"
-    server: "assets.onecloudtraining.com"
-    port: 443
-    uuid: "0ad875ef-b751-46e3-aa89-e1ae20e43bcc"
-    udp: true
-    encryption: "none"
-    servername: "assets.onecloudtraining.com"
-    client-fingerprint: "firefox"
-    alpn:
-      - "h2"
-      - "http/1.1"
-    tls: true
-    network: "xhttp"
-    xhttp-opts:
-      path: "/static/v1/blob/SUBAhgozTk"
-      mode: "stream-up"
-      reuse-settings:
-        c-max-reuse-times: 0
-        h-keep-alive-period: 0
-        h-max-request-times: "600-900"
-        h-max-reusable-secs: "1800-3000"
-        max-concurrency: 0
-        max-connections: 2
-
-  - name: "🇬🇧GB-293M-[09685f/1a6665]"
-    type: "vless"
-    server: "upload.onecloudtraining.com"
-    port: 443
-    uuid: "0ad875ef-b751-46e3-aa89-e1ae20e43bcc"
-    udp: true
-    encryption: "none"
-    servername: "upload.onecloudtraining.com"
-    client-fingerprint: "firefox"
-    alpn:
-      - "h2"
-      - "http/1.1"
-    tls: true
-    network: "xhttp"
-    xhttp-opts:
-      path: "/assets/v1/ingest/5y2XX8T5BC"
-      mode: "stream-up"
-      reuse-settings:
-        c-max-reuse-times: 0
-        h-keep-alive-period: 0
-        h-max-request-times: "600-900"
-        h-max-reusable-secs: "1800-3000"
-        max-concurrency: 0
-        max-connections: 2
-
-  - name: "🇳🇱NL-386M-[6879f7/8dcefc]"
-    type: "vless"
-    server: "cdn.mediacorphub.org"
-    port: 443
-    uuid: "1653818d-532e-46be-b825-384107fb7c3a"
-    udp: true
-    encryption: "none"
-    servername: "cdn.mediacorphub.org"
-    client-fingerprint: "firefox"
-    alpn:
-      - "h2"
-    tls: true
-    network: "grpc"
-    grpc-opts:
-      grpc-service-name: "stats.v2.StreamService"
-
   - name: "🇳🇱NL-300M-[a6582a/e599d2]"
     type: "vless"
     server: "get.mediacorphub.org"
@@ -226,22 +656,6 @@ proxies:
     grpc-opts:
       grpc-service-name: "gw.v2.PushService"
 
-  - name: "🇳🇱NL-354M-[2892ae/1f03e3]"
-    type: "vless"
-    server: "gateway.mediacorphub.org"
-    port: 443
-    uuid: "1653818d-532e-46be-b825-384107fb7c3a"
-    udp: true
-    encryption: "none"
-    servername: "gateway.mediacorphub.org"
-    client-fingerprint: "firefox"
-    alpn:
-      - "h2"
-    tls: true
-    network: "grpc"
-    grpc-opts:
-      grpc-service-name: "home.v1.ObjectService"
-
   - name: "🇳🇱NL-381M-[50d326/3cf108]"
     type: "vless"
     server: "hub.mediacorphub.org"
@@ -257,143 +671,6 @@ proxies:
     network: "grpc"
     grpc-opts:
       grpc-service-name: "hub.v1.ObjectService"
-
-  - name: "🇳🇱NL-240M-[4dc8e9/673345]"
-    type: "vless"
-    server: "live.mediacorphub.org"
-    port: 443
-    uuid: "1653818d-532e-46be-b825-384107fb7c3a"
-    udp: true
-    encryption: "none"
-    servername: "live.mediacorphub.org"
-    client-fingerprint: "firefox"
-    alpn:
-      - "h2"
-    tls: true
-    network: "grpc"
-    grpc-opts:
-      grpc-service-name: "home.v1.ObjectService"
-
-  - name: "🇳🇱NL-333M-[6bfc43/976edc]"
-    type: "vless"
-    server: "api.mediacorphub.org"
-    port: 443
-    uuid: "1653818d-532e-46be-b825-384107fb7c3a"
-    udp: true
-    encryption: "none"
-    servername: "api.mediacorphub.org"
-    client-fingerprint: "firefox"
-    alpn:
-      - "h2"
-    tls: true
-    network: "grpc"
-    grpc-opts:
-      grpc-service-name: "gw.v2.PushService"
-
-  - name: "🇳🇱NL-360M-[99f246/3344e7]"
-    type: "vless"
-    server: "tracker.mediacorphub.org"
-    port: 443
-    uuid: "1653818d-532e-46be-b825-384107fb7c3a"
-    udp: true
-    encryption: "none"
-    servername: "tracker.mediacorphub.org"
-    client-fingerprint: "firefox"
-    alpn:
-      - "h2"
-    tls: true
-    network: "grpc"
-    grpc-opts:
-      grpc-service-name: "home.v1.ObjectService"
-
-  - name: "🇳🇱NL-340M-[b1b8bd/9e02ce]"
-    type: "vless"
-    server: "data.mediacorphub.org"
-    port: 443
-    uuid: "1653818d-532e-46be-b825-384107fb7c3a"
-    udp: true
-    encryption: "none"
-    servername: "data.mediacorphub.org"
-    client-fingerprint: "firefox"
-    alpn:
-      - "h2"
-    tls: true
-    network: "grpc"
-    grpc-opts:
-      grpc-service-name: "home.v2.MetricsService"
-
-  - name: "🇳🇱NL-386M-[4c4ce8/0a4b49]"
-    type: "vless"
-    server: "net.mediacorphub.org"
-    port: 443
-    uuid: "1653818d-532e-46be-b825-384107fb7c3a"
-    udp: true
-    encryption: "none"
-    servername: "net.mediacorphub.org"
-    client-fingerprint: "firefox"
-    alpn:
-      - "h2"
-    tls: true
-    network: "grpc"
-    grpc-opts:
-      grpc-service-name: "home.v2.MetricsService"
-
-  - name: "🇳🇱NL-362M-[bcda65/98129b]"
-    type: "vless"
-    server: "fetch.mediacorphub.org"
-    port: 443
-    uuid: "1653818d-532e-46be-b825-384107fb7c3a"
-    udp: true
-    encryption: "none"
-    servername: "fetch.mediacorphub.org"
-    client-fingerprint: "firefox"
-    alpn:
-      - "h2"
-    tls: true
-    network: "grpc"
-    grpc-opts:
-      grpc-service-name: "api.v1.FeedService"
-
-  - name: "🇵🇱PL-297M-[d79332/fc00b5]"
-    type: "vless"
-    server: "dl.megadrishto.com"
-    port: 443
-    uuid: "95f85937-7b95-45c4-8d69-95da6a978569"
-    udp: true
-    encryption: "none"
-    servername: "dl.megadrishto.com"
-    client-fingerprint: "firefox"
-    alpn:
-      - "h2"
-    tls: true
-    network: "grpc"
-    grpc-opts:
-      grpc-service-name: "stats.v2.StreamService"
-
-  - name: "🇬🇧GB-417M-[8a75e2/b142a8]"
-    type: "vless"
-    server: "download.onecloudtraining.com"
-    port: 443
-    uuid: "0ad875ef-b751-46e3-aa89-e1ae20e43bcc"
-    udp: true
-    encryption: "none"
-    servername: "download.onecloudtraining.com"
-    client-fingerprint: "firefox"
-    alpn:
-      - "h2"
-      - "http/1.1"
-    tls: true
-    network: "xhttp"
-    xhttp-opts:
-      path: "/stream/v3/upload/KAawhnLCtp"
-      mode: "stream-up"
-      reuse-settings:
-        c-max-reuse-times: 0
-        h-keep-alive-period: 0
-        h-max-request-times: "600-900"
-        h-max-reusable-secs: "1800-3000"
-        max-concurrency: 0
-        max-connections: 2
 
   - name: "🇩🇪DE-429M-[bf2a03/1f63e7]"
     type: "ss"
@@ -430,77 +707,6 @@ proxies:
       sc-min-posts-interval-ms: 30
       x-padding-bytes: "100-1000"
 
-  - name: "🇩🇪DE-206M-[e0c91d/706d4e]"
-    type: "vless"
-    server: "31.76.35.118"
-    port: 443
-    uuid: "68a67906-5b37-4779-a6cc-58a1655f18b4"
-    udp: true
-    encryption: "none"
-    servername: "logs.spacelex.app"
-    client-fingerprint: "firefox"
-    tls: true
-    network: "xhttp"
-    xhttp-opts:
-      path: "/api/v1/console"
-      host: "logs.spacelex.app"
-      reuse-settings:
-        h-max-request-times: "600-900"
-        h-max-reusable-secs: "1800-3000"
-        max-concurrency: "16-32"
-        max-connections: 0
-      sc-max-each-post-bytes: 1000000
-      sc-min-posts-interval-ms: 30
-      x-padding-bytes: "100-1000"
-
-  - name: "🇩🇪DE-149M-[a40c60/432e2c]"
-    type: "vless"
-    server: "31.76.35.119"
-    port: 443
-    uuid: "68a67906-5b37-4779-a6cc-58a1655f18b4"
-    udp: true
-    encryption: "none"
-    servername: "logs.spacelex.app"
-    client-fingerprint: "firefox"
-    tls: true
-    network: "xhttp"
-    xhttp-opts:
-      path: "/api/v1/console"
-      host: "logs.spacelex.app"
-      reuse-settings:
-        h-max-request-times: "600-900"
-        h-max-reusable-secs: "1800-3000"
-        max-concurrency: "16-32"
-        max-connections: 0
-      sc-max-each-post-bytes: 1000000
-      sc-min-posts-interval-ms: 30
-      x-padding-bytes: "100-1000"
-
-  - name: "🇬🇧GB-141M-[2e50f0/f6106e]"
-    type: "vless"
-    server: "link.onecloudtraining.com"
-    port: 443
-    uuid: "0ad875ef-b751-46e3-aa89-e1ae20e43bcc"
-    udp: true
-    encryption: "none"
-    servername: "link.onecloudtraining.com"
-    client-fingerprint: "firefox"
-    alpn:
-      - "h2"
-      - "http/1.1"
-    tls: true
-    network: "xhttp"
-    xhttp-opts:
-      path: "/static/v3/object/OqyozN63ao"
-      mode: "stream-up"
-      reuse-settings:
-        c-max-reuse-times: 0
-        h-keep-alive-period: 0
-        h-max-request-times: "600-900"
-        h-max-reusable-secs: "1800-3000"
-        max-concurrency: 0
-        max-connections: 2
-
   - name: "🇵🇱PL-242M-[79910d/cc73ef]"
     type: "vless"
     server: "2.26.224.174"
@@ -533,31 +739,6 @@ proxies:
     network: "grpc"
     grpc-opts:
       grpc-service-name: "93013a569b78"
-
-  - name: "🇬🇧GB-267M-[bc8895/b2ee23]"
-    type: "vless"
-    server: "fetch.onecloudtraining.com"
-    port: 443
-    uuid: "0ad875ef-b751-46e3-aa89-e1ae20e43bcc"
-    udp: true
-    encryption: "none"
-    servername: "fetch.onecloudtraining.com"
-    client-fingerprint: "firefox"
-    alpn:
-      - "h2"
-      - "http/1.1"
-    tls: true
-    network: "xhttp"
-    xhttp-opts:
-      path: "/cdn/v2/blob/uvUWSZiudw"
-      mode: "stream-up"
-      reuse-settings:
-        c-max-reuse-times: 0
-        h-keep-alive-period: 0
-        h-max-request-times: "600-900"
-        h-max-reusable-secs: "1800-3000"
-        max-concurrency: 0
-        max-connections: 2
 
   - name: "🇳🇱NL-276M-[60ab67/5042af]"
     type: "vless"
@@ -795,24 +976,6 @@ proxies:
       path: "/eyJqdW5rIjoiZTA0TGg3eENkIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcmVmaXgiLCJwYW5lbElQcyI6WyJbMmEwMjo4OTg6MTQ2OjY0OjpdIl19"
       headers:
         Host: "wqa3miojjr8fyozhiui--su3-ucg1gdx.pages.dev"
-
-  - name: "🇫🇷FR-195M-[7e7972/3c25fe]"
-    type: "vless"
-    server: "151.101.36.111"
-    port: 443
-    uuid: "67cd3349-f789-4cbb-8b91-4b6b1654ce7c"
-    udp: true
-    encryption: "none"
-    servername: "accounts.fastly.com"
-    client-fingerprint: "chrome"
-    alpn:
-      - "h3"
-    tls: true
-    network: "xhttp"
-    xhttp-opts:
-      path: "/"
-      host: "ovd11.global.ssl.fastly.net"
-      mode: "auto"
 
   - name: "🇳🇱NL-391M-[3c8efd/86adcb]"
     type: "vless"
@@ -1639,36 +1802,46 @@ proxy-groups:
   - name: "AUTO"
     type: select
     proxies:
+      - "🇫🇷FR-195M-[7e7972/3c25fe]"
+      - "🇳🇱NL-322M-[bcda65/98129b]"
+      - "🇳🇱NL-392M-[6879f7/8dcefc]"
+      - "🇳🇱NL-269M-[2892ae/1f03e3]"
+      - "🇳🇱NL-376M-[dda22f/f2d3c8]"
+      - "🇳🇱NL-274M-[75eec0/9a7448]"
+      - "🇳🇱NL-240M-[a858a3/0d4531]"
+      - "🇳🇱NL-382M-[4c4ce8/0a4b49]"
+      - "🇬🇧GB-311M-[aa736c/9a7120]"
+      - "🇳🇱NL-361M-[6bfc43/976edc]"
+      - "🇳🇱NL-356M-[4dc8e9/673345]"
+      - "🇬🇧GB-329M-[09685f/1a6665]"
+      - "🇬🇧GB-374M-[bc8895/b2ee23]"
+      - "🇬🇧GB-337M-[2e50f0/f6106e]"
+      - "🇬🇧GB-323M-[7667b0/02a43b]"
+      - "🇬🇧GB-407M-[6f4628/ee96ad]"
+      - "🇬🇧GB-379M-[2f8a8b/bfced4]"
+      - "🇬🇧GB-476M-[ab5076/6e4cda]"
+      - "🇳🇱NL-465M-[533d68/ce22c7]"
+      - "🇵🇱PL-370M-[d79332/fc00b5]"
+      - "🇬🇧GB-500M-[8a75e2/b142a8]"
+      - "🇳🇱NL-451M-[ca1c5b/c9d959]"
+      - "🇳🇱NL-320M-[99f246/3344e7]"
+      - "🇩🇪DE-211M-[e0c91d/706d4e]"
+      - "🇳🇱NL-395M-[b46876/4faffd]"
+      - "🇳🇱NL-372M-[802661/262ab6]"
+      - "🇳🇱NL-407M-[083b8f/f30c5d]"
+      - "🇳🇱NL-427M-[b1b8bd/9e02ce]"
+      - "🇳🇱NL-284M-[dc3a42/52f23f]"
+      - "🇩🇪DE-199M-[a40c60/432e2c]"
+      - "🇳🇱NL-413M-[6347fe/09ec36]"
       - "🇳🇱NL-177M-[41028d/55f4c5]"
-      - "🇳🇱NL-388M-[6347fe/09ec36]"
       - "🇳🇱NL-390M-[ec7fac/769eb0]"
       - "🇳🇱NL-356M-[8354be/0fa9af]"
-      - "🇳🇱NL-365M-[a858a3/0d4531]"
-      - "🇳🇱NL-394M-[dc3a42/52f23f]"
-      - "🇳🇱NL-241M-[75eec0/9a7448]"
-      - "🇬🇧GB-327M-[ab5076/6e4cda]"
-      - "🇬🇧GB-272M-[2f8a8b/bfced4]"
-      - "🇬🇧GB-293M-[09685f/1a6665]"
-      - "🇳🇱NL-386M-[6879f7/8dcefc]"
       - "🇳🇱NL-300M-[a6582a/e599d2]"
-      - "🇳🇱NL-354M-[2892ae/1f03e3]"
       - "🇳🇱NL-381M-[50d326/3cf108]"
-      - "🇳🇱NL-240M-[4dc8e9/673345]"
-      - "🇳🇱NL-333M-[6bfc43/976edc]"
-      - "🇳🇱NL-360M-[99f246/3344e7]"
-      - "🇳🇱NL-340M-[b1b8bd/9e02ce]"
-      - "🇳🇱NL-386M-[4c4ce8/0a4b49]"
-      - "🇳🇱NL-362M-[bcda65/98129b]"
-      - "🇵🇱PL-297M-[d79332/fc00b5]"
-      - "🇬🇧GB-417M-[8a75e2/b142a8]"
       - "🇩🇪DE-429M-[bf2a03/1f63e7]"
       - "🇩🇪DE-182M-[11cb57/3dd041]"
-      - "🇩🇪DE-206M-[e0c91d/706d4e]"
-      - "🇩🇪DE-149M-[a40c60/432e2c]"
-      - "🇬🇧GB-141M-[2e50f0/f6106e]"
       - "🇵🇱PL-242M-[79910d/cc73ef]"
       - "🇷🇺RU-67M-[b87858/761a73]"
-      - "🇬🇧GB-267M-[bc8895/b2ee23]"
       - "🇳🇱NL-276M-[60ab67/5042af]"
       - "🇪🇪EE-94M-[884b9b/b15e3a]"
       - "🇳🇱NL-244M-[94a075/a2a10e]"
@@ -1684,7 +1857,6 @@ proxy-groups:
       - "🇳🇱NL-146M-[55c16c/1239bd]"
       - "🇷🇺RU-297M-[42553c/41c90d]"
       - "🌐XX-224M-[3b8b6c/193607]"
-      - "🇫🇷FR-195M-[7e7972/3c25fe]"
       - "🇳🇱NL-391M-[3c8efd/86adcb]"
       - "🇫🇷FR-273M-[a8b907/406917]"
       - "🇫🇷FR-211M-[f9fc3f/5743c9]"
