@@ -6,52 +6,29 @@ log-level: warning
 ipv6: false
 
 proxies:
-  - name: "🇳🇱NL-264M-[81bfec/7a59e5]"
+  - name: "🇱🇺LU-261M-[c8e892/6daf9c]"
+    type: "ss"
+    server: "87.228.61.175"
+    port: 1443
+    cipher: "chacha20-ietf-poly1305"
+    password: "tAGGzgRCi6W95UwG0qerf6"
+    udp: true
+
+  - name: "🇳🇱NL-271M-[2892ae/d3bbd1]"
     type: "vless"
-    server: "89.105.195.150"
+    server: "gateway.mediacorphub.org"
     port: 443
     uuid: "1653818d-532e-46be-b825-384107fb7c3a"
     udp: true
     encryption: "none"
-    servername: "images.mediacorphub.org"
+    servername: "gateway.mediacorphub.org"
     client-fingerprint: "firefox"
     tls: true
     network: "grpc"
     grpc-opts:
-      grpc-service-name: "stats.v2.StreamService"
+      grpc-service-name: "home.v1.ObjectService"
 
-  - name: "🌐XX-235M-[978162/cccd17]"
-    type: "vless"
-    server: "201.58.189.105"
-    port: 2083
-    uuid: "d7ddade6-b7a0-4cab-a910-d5d5c378d98a"
-    udp: true
-    encryption: "none"
-    servername: "dl.google.com"
-    client-fingerprint: "chrome"
-    tls: true
-    reality-opts:
-      public-key: "B7x5bYp-YhtLeH31zYcilpKFCkGTMe3jtSECSw-bMC4"
-      short-id: "8bd80253"
-    network: "grpc"
-    grpc-opts:
-      grpc-service-name: "google.storage.v2.Storage"
-
-  - name: "🇵🇱PL-276M-[358b8f/108976]"
-    type: "vless"
-    server: "80.47.13.182"
-    port: 443
-    uuid: "95f85937-7b95-45c4-8d69-95da6a978569"
-    udp: true
-    encryption: "none"
-    servername: "dl.megadrishto.com"
-    client-fingerprint: "firefox"
-    tls: true
-    network: "grpc"
-    grpc-opts:
-      grpc-service-name: "stats.v2.StreamService"
-
-  - name: "🌐XX-224M-[bbac69/93340f]"
+  - name: "🇵🇱PL-281M-[bbac69/93340f]"
     type: "vless"
     server: "201.58.189.104"
     port: 2083
@@ -68,6 +45,421 @@ proxies:
     grpc-opts:
       grpc-service-name: "google.storage.v2.Storage"
 
+  - name: "🇳🇱NL-276M-[dc3a42/0cb4b4]"
+    type: "vless"
+    server: "rpc.mediacorphub.org"
+    port: 443
+    uuid: "1653818d-532e-46be-b825-384107fb7c3a"
+    udp: true
+    encryption: "none"
+    servername: "rpc.mediacorphub.org"
+    client-fingerprint: "firefox"
+    tls: true
+    network: "grpc"
+    grpc-opts:
+      grpc-service-name: "api.v1.FeedService"
+
+  - name: "🇵🇱PL-324M-[978162/cccd17]"
+    type: "vless"
+    server: "201.58.189.105"
+    port: 2083
+    uuid: "d7ddade6-b7a0-4cab-a910-d5d5c378d98a"
+    udp: true
+    encryption: "none"
+    servername: "dl.google.com"
+    client-fingerprint: "chrome"
+    tls: true
+    reality-opts:
+      public-key: "B7x5bYp-YhtLeH31zYcilpKFCkGTMe3jtSECSw-bMC4"
+      short-id: "8bd80253"
+    network: "grpc"
+    grpc-opts:
+      grpc-service-name: "google.storage.v2.Storage"
+
+  - name: "🇳🇱NL-285M-[75eec0/ca4f10]"
+    type: "vless"
+    server: "edge.mediacorphub.org"
+    port: 443
+    uuid: "1653818d-532e-46be-b825-384107fb7c3a"
+    udp: true
+    encryption: "none"
+    servername: "edge.mediacorphub.org"
+    client-fingerprint: "firefox"
+    tls: true
+    network: "grpc"
+    grpc-opts:
+      grpc-service-name: "hub.v1.ObjectService"
+
+  - name: "🇳🇱NL-303M-[533d68/47e7d6]"
+    type: "vless"
+    server: "images.mediacorphub.org"
+    port: 443
+    uuid: "1653818d-532e-46be-b825-384107fb7c3a"
+    udp: true
+    encryption: "none"
+    servername: "images.mediacorphub.org"
+    client-fingerprint: "firefox"
+    tls: true
+    network: "grpc"
+    grpc-opts:
+      grpc-service-name: "stats.v2.StreamService"
+
+  - name: "🇳🇱NL-355M-[4dc8e9/e96a72]"
+    type: "vless"
+    server: "live.mediacorphub.org"
+    port: 443
+    uuid: "1653818d-532e-46be-b825-384107fb7c3a"
+    udp: true
+    encryption: "none"
+    servername: "live.mediacorphub.org"
+    client-fingerprint: "firefox"
+    tls: true
+    network: "grpc"
+    grpc-opts:
+      grpc-service-name: "home.v1.ObjectService"
+
+  - name: "🇳🇱NL-294M-[6879f7/434c35]"
+    type: "vless"
+    server: "cdn.mediacorphub.org"
+    port: 443
+    uuid: "1653818d-532e-46be-b825-384107fb7c3a"
+    udp: true
+    encryption: "none"
+    servername: "cdn.mediacorphub.org"
+    client-fingerprint: "firefox"
+    tls: true
+    network: "grpc"
+    grpc-opts:
+      grpc-service-name: "stats.v2.StreamService"
+
+  - name: "🇳🇱NL-205M-[ec7fac/96b9f7]"
+    type: "vless"
+    server: "relay.mediacorphub.org"
+    port: 443
+    uuid: "1653818d-532e-46be-b825-384107fb7c3a"
+    udp: true
+    encryption: "none"
+    servername: "relay.mediacorphub.org"
+    client-fingerprint: "firefox"
+    tls: true
+    network: "grpc"
+    grpc-opts:
+      grpc-service-name: "api.v1.FeedService"
+
+  - name: "🇳🇱NL-254M-[bcda65/c55c94]"
+    type: "vless"
+    server: "fetch.mediacorphub.org"
+    port: 443
+    uuid: "1653818d-532e-46be-b825-384107fb7c3a"
+    udp: true
+    encryption: "none"
+    servername: "fetch.mediacorphub.org"
+    client-fingerprint: "firefox"
+    tls: true
+    network: "grpc"
+    grpc-opts:
+      grpc-service-name: "api.v1.FeedService"
+
+  - name: "🇳🇱NL-234M-[9d385b/775d9c]"
+    type: "ss"
+    server: "dns27.m3hrzd.ir"
+    port: 8044
+    cipher: "chacha20-ietf-poly1305"
+    password: "H4JHkHU2pIRZ1sbruQ-p39Grh1z6nxY8"
+    udp: true
+
+  - name: "🇳🇱NL-221M-[8354be/287590]"
+    type: "vless"
+    server: "img.mediacorphub.org"
+    port: 443
+    uuid: "1653818d-532e-46be-b825-384107fb7c3a"
+    udp: true
+    encryption: "none"
+    servername: "img.mediacorphub.org"
+    client-fingerprint: "firefox"
+    tls: true
+    network: "grpc"
+    grpc-opts:
+      grpc-service-name: "home.v2.MetricsService"
+
+  - name: "🇳🇱NL-235M-[4c4ce8/1ed35b]"
+    type: "vless"
+    server: "net.mediacorphub.org"
+    port: 443
+    uuid: "1653818d-532e-46be-b825-384107fb7c3a"
+    udp: true
+    encryption: "none"
+    servername: "net.mediacorphub.org"
+    client-fingerprint: "firefox"
+    tls: true
+    network: "grpc"
+    grpc-opts:
+      grpc-service-name: "home.v2.MetricsService"
+
+  - name: "🇳🇱NL-317M-[b46876/4faffd]"
+    type: "vless"
+    server: "89.105.195.147"
+    port: 443
+    uuid: "1653818d-532e-46be-b825-384107fb7c3a"
+    udp: true
+    encryption: "none"
+    servername: "live.mediacorphub.org"
+    client-fingerprint: "firefox"
+    tls: true
+    network: "grpc"
+    grpc-opts:
+      grpc-service-name: "home.v1.ObjectService"
+
+  - name: "🇳🇱NL-185M-[81bfec/7a59e5]"
+    type: "vless"
+    server: "89.105.195.150"
+    port: 443
+    uuid: "1653818d-532e-46be-b825-384107fb7c3a"
+    udp: true
+    encryption: "none"
+    servername: "images.mediacorphub.org"
+    client-fingerprint: "firefox"
+    tls: true
+    network: "grpc"
+    grpc-opts:
+      grpc-service-name: "stats.v2.StreamService"
+
+  - name: "🇵🇱PL-141M-[358b8f/2bbed0]"
+    type: "vless"
+    server: "80.47.13.182"
+    port: 443
+    uuid: "95f85937-7b95-45c4-8d69-95da6a978569"
+    udp: true
+    encryption: "none"
+    servername: "dl.megadrishto.com"
+    client-fingerprint: "firefox"
+    tls: true
+    network: "grpc"
+    grpc-opts:
+      grpc-service-name: "stats.v2.StreamService"
+
+  - name: "🇳🇱NL-199M-[dda22f/7eb54c]"
+    type: "vless"
+    server: "stats.mediacorphub.org"
+    port: 443
+    uuid: "1653818d-532e-46be-b825-384107fb7c3a"
+    udp: true
+    encryption: "none"
+    servername: "stats.mediacorphub.org"
+    client-fingerprint: "firefox"
+    tls: true
+    network: "grpc"
+    grpc-opts:
+      grpc-service-name: "gw.v2.PushService"
+
+  - name: "🇳🇱NL-272M-[50d326/c275fc]"
+    type: "vless"
+    server: "hub.mediacorphub.org"
+    port: 443
+    uuid: "1653818d-532e-46be-b825-384107fb7c3a"
+    udp: true
+    encryption: "none"
+    servername: "hub.mediacorphub.org"
+    client-fingerprint: "firefox"
+    tls: true
+    network: "grpc"
+    grpc-opts:
+      grpc-service-name: "hub.v1.ObjectService"
+
+  - name: "🇳🇱NL-219M-[bb4a04/a046bc]"
+    type: "vless"
+    server: "89.105.195.151"
+    port: 443
+    uuid: "1653818d-532e-46be-b825-384107fb7c3a"
+    udp: true
+    encryption: "none"
+    servername: "assets.mediacorphub.org"
+    client-fingerprint: "firefox"
+    tls: true
+    network: "grpc"
+    grpc-opts:
+      grpc-service-name: "hub.v1.ObjectService"
+
+  - name: "🇳🇱NL-235M-[b1b8bd/f59983]"
+    type: "vless"
+    server: "data.mediacorphub.org"
+    port: 443
+    uuid: "1653818d-532e-46be-b825-384107fb7c3a"
+    udp: true
+    encryption: "none"
+    servername: "data.mediacorphub.org"
+    client-fingerprint: "safari"
+    alpn:
+      - "h2"
+    tls: true
+    network: "grpc"
+    grpc-opts:
+      grpc-service-name: "home.v2.MetricsService"
+
+  - name: "🇳🇱NL-251M-[6347fe/f7535c]"
+    type: "vless"
+    server: "assets.mediacorphub.org"
+    port: 443
+    uuid: "1653818d-532e-46be-b825-384107fb7c3a"
+    udp: true
+    encryption: "none"
+    servername: "assets.mediacorphub.org"
+    client-fingerprint: "iOS"
+    alpn:
+      - "h2"
+    tls: true
+    network: "grpc"
+    grpc-opts:
+      grpc-service-name: "hub.v1.ObjectService"
+
+  - name: "🇳🇱NL-283M-[a858a3/8e0c0a]"
+    type: "vless"
+    server: "app.mediacorphub.org"
+    port: 443
+    uuid: "1653818d-532e-46be-b825-384107fb7c3a"
+    udp: true
+    encryption: "none"
+    servername: "app.mediacorphub.org"
+    client-fingerprint: "edge"
+    tls: true
+    network: "grpc"
+    grpc-opts:
+      grpc-service-name: "stats.v2.StreamService"
+
+  - name: "🇳🇱NL-268M-[6bfc43/2e6b32]"
+    type: "vless"
+    server: "api.mediacorphub.org"
+    port: 443
+    uuid: "1653818d-532e-46be-b825-384107fb7c3a"
+    udp: true
+    encryption: "none"
+    servername: "api.mediacorphub.org"
+    client-fingerprint: "firefox"
+    tls: true
+    network: "grpc"
+    grpc-opts:
+      grpc-service-name: "gw.v2.PushService"
+
+  - name: "🇳🇱NL-179M-[083b8f/f30c5d]"
+    type: "vless"
+    server: "89.105.195.149"
+    port: 443
+    uuid: "1653818d-532e-46be-b825-384107fb7c3a"
+    udp: true
+    encryption: "none"
+    servername: "img.mediacorphub.org"
+    client-fingerprint: "firefox"
+    tls: true
+    network: "grpc"
+    grpc-opts:
+      grpc-service-name: "home.v2.MetricsService"
+
+  - name: "🇳🇱NL-217M-[99f246/ed28e3]"
+    type: "vless"
+    server: "tracker.mediacorphub.org"
+    port: 443
+    uuid: "1653818d-532e-46be-b825-384107fb7c3a"
+    udp: true
+    encryption: "none"
+    servername: "tracker.mediacorphub.org"
+    client-fingerprint: "safari"
+    alpn:
+      - "h2"
+    tls: true
+    network: "grpc"
+    grpc-opts:
+      grpc-service-name: "home.v1.ObjectService"
+
+  - name: "🇳🇴NO-366M-[abae9f/75c9d6]"
+    type: "vless"
+    server: "no.gacvpn.site"
+    port: 443
+    uuid: "3f5e89d5-591f-4ac9-b071-b05680b573c3"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "no.gacvpn.site"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "mCLTVbcvg_tkaIuGqMVVBV-5d_ftEoLnJHhrCmeLDFk"
+      short-id: "08d12dce"
+    network: "tcp"
+
+  - name: "🇳🇱NL-249M-[ca1c5b/773554]"
+    type: "vless"
+    server: "89.105.195.152"
+    port: 443
+    uuid: "1653818d-532e-46be-b825-384107fb7c3a"
+    udp: true
+    encryption: "none"
+    servername: "rpc.mediacorphub.org"
+    client-fingerprint: "firefox"
+    tls: true
+    network: "grpc"
+    grpc-opts:
+      grpc-service-name: "api.v1.FeedService"
+
+  - name: "🇳🇱NL-253M-[802661/fbe506]"
+    type: "vless"
+    server: "89.105.195.148"
+    port: 443
+    uuid: "1653818d-532e-46be-b825-384107fb7c3a"
+    udp: true
+    encryption: "none"
+    servername: "stats.mediacorphub.org"
+    client-fingerprint: "firefox"
+    tls: true
+    network: "grpc"
+    grpc-opts:
+      grpc-service-name: "gw.v2.PushService"
+
+  - name: "🇵🇱PL-329M-[d79332/06fbc4]"
+    type: "vless"
+    server: "dl.megadrishto.com"
+    port: 443
+    uuid: "95f85937-7b95-45c4-8d69-95da6a978569"
+    udp: true
+    encryption: "none"
+    servername: "dl.megadrishto.com"
+    client-fingerprint: "edge"
+    alpn:
+      - "h2"
+    tls: true
+    network: "grpc"
+    grpc-opts:
+      grpc-service-name: "stats.v2.StreamService"
+
+  - name: "🇳🇱NL-337M-[a6582a/e599d2]"
+    type: "vless"
+    server: "get.mediacorphub.org"
+    port: 443
+    uuid: "1653818d-532e-46be-b825-384107fb7c3a"
+    udp: true
+    encryption: "none"
+    servername: "get.mediacorphub.org"
+    client-fingerprint: "firefox"
+    alpn:
+      - "h2"
+    tls: true
+    network: "grpc"
+    grpc-opts:
+      grpc-service-name: "gw.v2.PushService"
+
+  - name: "🇵🇱PL-276M-[358b8f/108976]"
+    type: "vless"
+    server: "80.47.13.182"
+    port: 443
+    uuid: "95f85937-7b95-45c4-8d69-95da6a978569"
+    udp: true
+    encryption: "none"
+    servername: "dl.megadrishto.com"
+    client-fingerprint: "firefox"
+    tls: true
+    network: "grpc"
+    grpc-opts:
+      grpc-service-name: "stats.v2.StreamService"
+
   - name: "🇵🇱PL-276M-[d79332/fc00b5]"
     type: "vless"
     server: "dl.megadrishto.com"
@@ -83,28 +475,6 @@ proxies:
     network: "grpc"
     grpc-opts:
       grpc-service-name: "stats.v2.StreamService"
-
-  - name: "🇳🇱NL-194M-[9d385b/775d9c]"
-    type: "ss"
-    server: "dns27.m3hrzd.ir"
-    port: 8044
-    cipher: "chacha20-ietf-poly1305"
-    password: "H4JHkHU2pIRZ1sbruQ-p39Grh1z6nxY8"
-    udp: true
-
-  - name: "🇳🇱NL-104M-[2892ae/d3bbd1]"
-    type: "vless"
-    server: "gateway.mediacorphub.org"
-    port: 443
-    uuid: "1653818d-532e-46be-b825-384107fb7c3a"
-    udp: true
-    encryption: "none"
-    servername: "gateway.mediacorphub.org"
-    client-fingerprint: "firefox"
-    tls: true
-    network: "grpc"
-    grpc-opts:
-      grpc-service-name: "home.v1.ObjectService"
 
   - name: "🇳🇱NL-95M-[3557de/b4509c]"
     type: "trojan"
@@ -138,20 +508,6 @@ proxies:
       public-key: "VZS639V1i-35g7VXb9EoTYL-Srm7858sxcvFAunncmA"
       short-id: "8d0d0679f42ffd98"
     network: "tcp"
-
-  - name: "🇳🇱NL-204M-[8354be/287590]"
-    type: "vless"
-    server: "img.mediacorphub.org"
-    port: 443
-    uuid: "1653818d-532e-46be-b825-384107fb7c3a"
-    udp: true
-    encryption: "none"
-    servername: "img.mediacorphub.org"
-    client-fingerprint: "firefox"
-    tls: true
-    network: "grpc"
-    grpc-opts:
-      grpc-service-name: "home.v2.MetricsService"
 
   - name: "🇺🇸US-237M-[55d0b4/266c0b]"
     type: "vless"
@@ -222,20 +578,6 @@ proxies:
       mode: "stream-up"
       x-padding-bytes: "100-1000"
 
-  - name: "🇳🇱NL-215M-[dc3a42/0cb4b4]"
-    type: "vless"
-    server: "rpc.mediacorphub.org"
-    port: 443
-    uuid: "1653818d-532e-46be-b825-384107fb7c3a"
-    udp: true
-    encryption: "none"
-    servername: "rpc.mediacorphub.org"
-    client-fingerprint: "firefox"
-    tls: true
-    network: "grpc"
-    grpc-opts:
-      grpc-service-name: "api.v1.FeedService"
-
   - name: "🇩🇪DE-265M-[bf2a03/1f63e7]"
     type: "ss"
     server: "177.202.64.67"
@@ -252,34 +594,6 @@ proxies:
     udp: true
     encryption: "none"
     servername: "data.mediacorphub.org"
-    client-fingerprint: "firefox"
-    tls: true
-    network: "grpc"
-    grpc-opts:
-      grpc-service-name: "home.v2.MetricsService"
-
-  - name: "🇳🇱NL-78M-[dda22f/7eb54c]"
-    type: "vless"
-    server: "stats.mediacorphub.org"
-    port: 443
-    uuid: "1653818d-532e-46be-b825-384107fb7c3a"
-    udp: true
-    encryption: "none"
-    servername: "stats.mediacorphub.org"
-    client-fingerprint: "firefox"
-    tls: true
-    network: "grpc"
-    grpc-opts:
-      grpc-service-name: "gw.v2.PushService"
-
-  - name: "🇳🇱NL-73M-[4c4ce8/1ed35b]"
-    type: "vless"
-    server: "net.mediacorphub.org"
-    port: 443
-    uuid: "1653818d-532e-46be-b825-384107fb7c3a"
-    udp: true
-    encryption: "none"
-    servername: "net.mediacorphub.org"
     client-fingerprint: "firefox"
     tls: true
     network: "grpc"
@@ -324,20 +638,6 @@ proxies:
       host: "rss.worldoftanks.com"
       mode: "auto"
 
-  - name: "🇳🇱NL-102M-[533d68/47e7d6]"
-    type: "vless"
-    server: "images.mediacorphub.org"
-    port: 443
-    uuid: "1653818d-532e-46be-b825-384107fb7c3a"
-    udp: true
-    encryption: "none"
-    servername: "images.mediacorphub.org"
-    client-fingerprint: "firefox"
-    tls: true
-    network: "grpc"
-    grpc-opts:
-      grpc-service-name: "stats.v2.StreamService"
-
   - name: "🇺🇸US-74M-[d34e76/40043f]"
     type: "vless"
     server: "150.241.82.7"
@@ -369,20 +669,6 @@ proxies:
     network: "grpc"
     grpc-opts:
       grpc-service-name: "gw.v2.PushService"
-
-  - name: "🇳🇱NL-82M-[ca1c5b/773554]"
-    type: "vless"
-    server: "89.105.195.152"
-    port: 443
-    uuid: "1653818d-532e-46be-b825-384107fb7c3a"
-    udp: true
-    encryption: "none"
-    servername: "rpc.mediacorphub.org"
-    client-fingerprint: "firefox"
-    tls: true
-    network: "grpc"
-    grpc-opts:
-      grpc-service-name: "api.v1.FeedService"
 
   - name: "🇵🇱PL-138M-[71071a/b2032d]"
     type: "vless"
@@ -433,20 +719,6 @@ proxies:
     network: "grpc"
     grpc-opts:
       grpc-service-name: "stats.v2.StreamService"
-
-  - name: "🇳🇱NL-288M-[083b8f/f30c5d]"
-    type: "vless"
-    server: "89.105.195.149"
-    port: 443
-    uuid: "1653818d-532e-46be-b825-384107fb7c3a"
-    udp: true
-    encryption: "none"
-    servername: "img.mediacorphub.org"
-    client-fingerprint: "firefox"
-    tls: true
-    network: "grpc"
-    grpc-opts:
-      grpc-service-name: "home.v2.MetricsService"
 
   - name: "🇳🇱NL-196M-[ca1c5b/c9d959]"
     type: "vless"
@@ -507,22 +779,6 @@ proxies:
     network: "grpc"
     grpc-opts:
       grpc-service-name: "hub.v1.ObjectService"
-
-  - name: "🇳🇱NL-224M-[a6582a/e599d2]"
-    type: "vless"
-    server: "get.mediacorphub.org"
-    port: 443
-    uuid: "1653818d-532e-46be-b825-384107fb7c3a"
-    udp: true
-    encryption: "none"
-    servername: "get.mediacorphub.org"
-    client-fingerprint: "firefox"
-    alpn:
-      - "h2"
-    tls: true
-    network: "grpc"
-    grpc-opts:
-      grpc-service-name: "gw.v2.PushService"
 
   - name: "🇳🇱NL-277M-[75eec0/9a7448]"
     type: "vless"
@@ -668,22 +924,6 @@ proxies:
     grpc-opts:
       grpc-service-name: "home.v1.ObjectService"
 
-  - name: "🇳🇱NL-252M-[99f246/ed28e3]"
-    type: "vless"
-    server: "tracker.mediacorphub.org"
-    port: 443
-    uuid: "1653818d-532e-46be-b825-384107fb7c3a"
-    udp: true
-    encryption: "none"
-    servername: "tracker.mediacorphub.org"
-    client-fingerprint: "safari"
-    alpn:
-      - "h2"
-    tls: true
-    network: "grpc"
-    grpc-opts:
-      grpc-service-name: "home.v1.ObjectService"
-
   - name: "🇳🇱NL-257M-[802661/262ab6]"
     type: "vless"
     server: "89.105.195.148"
@@ -697,20 +937,6 @@ proxies:
     network: "grpc"
     grpc-opts:
       grpc-service-name: "gw.v2.PushService"
-
-  - name: "🇳🇱NL-268M-[ec7fac/96b9f7]"
-    type: "vless"
-    server: "relay.mediacorphub.org"
-    port: 443
-    uuid: "1653818d-532e-46be-b825-384107fb7c3a"
-    udp: true
-    encryption: "none"
-    servername: "relay.mediacorphub.org"
-    client-fingerprint: "firefox"
-    tls: true
-    network: "grpc"
-    grpc-opts:
-      grpc-service-name: "api.v1.FeedService"
 
   - name: "🇳🇱NL-134M-[dda22f/f2d3c8]"
     type: "vless"
@@ -786,20 +1012,6 @@ proxies:
         h-max-reusable-secs: "1800-3000"
         max-concurrency: 0
         max-connections: 2
-
-  - name: "🇳🇱NL-388M-[b46876/4faffd]"
-    type: "vless"
-    server: "89.105.195.147"
-    port: 443
-    uuid: "1653818d-532e-46be-b825-384107fb7c3a"
-    udp: true
-    encryption: "none"
-    servername: "live.mediacorphub.org"
-    client-fingerprint: "firefox"
-    tls: true
-    network: "grpc"
-    grpc-opts:
-      grpc-service-name: "home.v1.ObjectService"
 
   - name: "🇳🇱NL-381M-[99f246/3344e7]"
     type: "vless"
@@ -912,20 +1124,6 @@ proxies:
     network: "grpc"
     grpc-opts:
       grpc-service-name: "home.v2.MetricsService"
-
-  - name: "🇵🇱PL-362M-[358b8f/2bbed0]"
-    type: "vless"
-    server: "80.47.13.182"
-    port: 443
-    uuid: "95f85937-7b95-45c4-8d69-95da6a978569"
-    udp: true
-    encryption: "none"
-    servername: "dl.megadrishto.com"
-    client-fingerprint: "firefox"
-    tls: true
-    network: "grpc"
-    grpc-opts:
-      grpc-service-name: "stats.v2.StreamService"
 
   - name: "🇳🇱NL-392M-[ec7fac/769eb0]"
     type: "vless"
@@ -1633,22 +1831,6 @@ proxies:
         max-connections: "16"
       x-padding-bytes: "100-1000"
 
-  - name: "🇳🇴NO-308M-[abae9f/75c9d6]"
-    type: "vless"
-    server: "no.gacvpn.site"
-    port: 443
-    uuid: "3f5e89d5-591f-4ac9-b071-b05680b573c3"
-    udp: true
-    encryption: "none"
-    flow: "xtls-rprx-vision"
-    servername: "no.gacvpn.site"
-    client-fingerprint: "firefox"
-    tls: true
-    reality-opts:
-      public-key: "mCLTVbcvg_tkaIuGqMVVBV-5d_ftEoLnJHhrCmeLDFk"
-      short-id: "08d12dce"
-    network: "tcp"
-
   - name: "🇳🇱NL-102M-[ffe8b2/b45390]"
     type: "vless"
     server: "94.241.173.174"
@@ -1897,14 +2079,6 @@ proxies:
     network: "grpc"
     grpc-opts:
       grpc-service-name: "204adda7e3da"
-
-  - name: "🇱🇺LU-261M-[c8e892/6daf9c]"
-    type: "ss"
-    server: "87.228.61.175"
-    port: 1443
-    cipher: "chacha20-ietf-poly1305"
-    password: "tAGGzgRCi6W95UwG0qerf6"
-    udp: true
 
   - name: "🇳🇱NL-420M-[9f93ea/e51fd4]"
     type: "vless"
@@ -2277,39 +2451,57 @@ proxy-groups:
   - name: "AUTO"
     type: select
     proxies:
-      - "🇳🇱NL-264M-[81bfec/7a59e5]"
-      - "🌐XX-235M-[978162/cccd17]"
+      - "🇱🇺LU-261M-[c8e892/6daf9c]"
+      - "🇳🇱NL-271M-[2892ae/d3bbd1]"
+      - "🇵🇱PL-281M-[bbac69/93340f]"
+      - "🇳🇱NL-276M-[dc3a42/0cb4b4]"
+      - "🇵🇱PL-324M-[978162/cccd17]"
+      - "🇳🇱NL-285M-[75eec0/ca4f10]"
+      - "🇳🇱NL-303M-[533d68/47e7d6]"
+      - "🇳🇱NL-355M-[4dc8e9/e96a72]"
+      - "🇳🇱NL-294M-[6879f7/434c35]"
+      - "🇳🇱NL-205M-[ec7fac/96b9f7]"
+      - "🇳🇱NL-254M-[bcda65/c55c94]"
+      - "🇳🇱NL-234M-[9d385b/775d9c]"
+      - "🇳🇱NL-221M-[8354be/287590]"
+      - "🇳🇱NL-235M-[4c4ce8/1ed35b]"
+      - "🇳🇱NL-317M-[b46876/4faffd]"
+      - "🇳🇱NL-185M-[81bfec/7a59e5]"
+      - "🇵🇱PL-141M-[358b8f/2bbed0]"
+      - "🇳🇱NL-199M-[dda22f/7eb54c]"
+      - "🇳🇱NL-272M-[50d326/c275fc]"
+      - "🇳🇱NL-219M-[bb4a04/a046bc]"
+      - "🇳🇱NL-235M-[b1b8bd/f59983]"
+      - "🇳🇱NL-251M-[6347fe/f7535c]"
+      - "🇳🇱NL-283M-[a858a3/8e0c0a]"
+      - "🇳🇱NL-268M-[6bfc43/2e6b32]"
+      - "🇳🇱NL-179M-[083b8f/f30c5d]"
+      - "🇳🇱NL-217M-[99f246/ed28e3]"
+      - "🇳🇴NO-366M-[abae9f/75c9d6]"
+      - "🇳🇱NL-249M-[ca1c5b/773554]"
+      - "🇳🇱NL-253M-[802661/fbe506]"
+      - "🇵🇱PL-329M-[d79332/06fbc4]"
+      - "🇳🇱NL-337M-[a6582a/e599d2]"
       - "🇵🇱PL-276M-[358b8f/108976]"
-      - "🌐XX-224M-[bbac69/93340f]"
       - "🇵🇱PL-276M-[d79332/fc00b5]"
-      - "🇳🇱NL-194M-[9d385b/775d9c]"
-      - "🇳🇱NL-104M-[2892ae/d3bbd1]"
       - "🇳🇱NL-95M-[3557de/b4509c]"
       - "🇳🇱NL-97M-[37fd26/32a5d7]"
-      - "🇳🇱NL-204M-[8354be/287590]"
       - "🇺🇸US-237M-[55d0b4/266c0b]"
       - "🇳🇱NL-387M-[c16dc4/c331dc]"
       - "🇺🇸US-279M-[e262ff/e66da3]"
       - "🇩🇪DE-234M-[52c408/c2d6e8]"
-      - "🇳🇱NL-215M-[dc3a42/0cb4b4]"
       - "🇩🇪DE-265M-[bf2a03/1f63e7]"
       - "🇳🇱NL-80M-[b1b8bd/693b5c]"
-      - "🇳🇱NL-78M-[dda22f/7eb54c]"
-      - "🇳🇱NL-73M-[4c4ce8/1ed35b]"
       - "🇺🇸US-263M-[12b592/d214e9]"
       - "🇺🇸US-276M-[e4a709/c06ad7]"
-      - "🇳🇱NL-102M-[533d68/47e7d6]"
       - "🇺🇸US-74M-[d34e76/40043f]"
       - "🇳🇱NL-88M-[6bfc43/976edc]"
-      - "🇳🇱NL-82M-[ca1c5b/773554]"
       - "🇵🇱PL-138M-[71071a/b2032d]"
       - "🇳🇱NL-171M-[6879f7/8dcefc]"
-      - "🇳🇱NL-288M-[083b8f/f30c5d]"
       - "🇳🇱NL-196M-[ca1c5b/c9d959]"
       - "🇳🇱NL-282M-[2892ae/1f03e3]"
       - "🇳🇱NL-309M-[a858a3/0d4531]"
       - "🇳🇱NL-260M-[bb4a04/7b3766]"
-      - "🇳🇱NL-224M-[a6582a/e599d2]"
       - "🇳🇱NL-277M-[75eec0/9a7448]"
       - "🇳🇱NL-357M-[6bfc43/f3e7a3]"
       - "🇳🇱NL-291M-[bcda65/98129b]"
@@ -2319,21 +2511,17 @@ proxy-groups:
       - "🇳🇱NL-371M-[b1b8bd/9e02ce]"
       - "🇳🇱NL-364M-[b46876/2888e7]"
       - "🇳🇱NL-381M-[4dc8e9/673345]"
-      - "🇳🇱NL-252M-[99f246/ed28e3]"
       - "🇳🇱NL-257M-[802661/262ab6]"
-      - "🇳🇱NL-268M-[ec7fac/96b9f7]"
       - "🇳🇱NL-134M-[dda22f/f2d3c8]"
       - "🇳🇱NL-276M-[50d326/3cf108]"
       - "🇫🇷FR-195M-[7e7972/3c25fe]"
       - "🇬🇧GB-337M-[2e50f0/f6106e]"
-      - "🇳🇱NL-388M-[b46876/4faffd]"
       - "🇳🇱NL-381M-[99f246/3344e7]"
       - "🇬🇧GB-395M-[09685f/1a6665]"
       - "🇳🇱NL-392M-[8354be/0fa9af]"
       - "🇳🇱NL-273M-[6347fe/09ec36]"
       - "🇩🇪DE-222M-[e0c91d/706d4e]"
       - "🇳🇱NL-391M-[4c4ce8/0a4b49]"
-      - "🇵🇱PL-362M-[358b8f/2bbed0]"
       - "🇳🇱NL-392M-[ec7fac/769eb0]"
       - "🇪🇸ES-149M-[69e6f4/139854]"
       - "🇳🇱NL-411M-[dc3a42/52f23f]"
@@ -2371,7 +2559,6 @@ proxy-groups:
       - "🇪🇪EE-150M-[914e6f/8d36f9]"
       - "🇫🇮FI-161M-[17773f/5e2aa4]"
       - "🇩🇪DE-157M-[cd2c83/eed95c]"
-      - "🇳🇴NO-308M-[abae9f/75c9d6]"
       - "🇳🇱NL-102M-[ffe8b2/b45390]"
       - "🇵🇱PL-319M-[8b39c2/b626f5]"
       - "🇳🇱NL-193M-[41028d/7c1ced]"
@@ -2387,7 +2574,6 @@ proxy-groups:
       - "🇬🇧GB-413M-[04ad05/40a28a]"
       - "🇵🇱PL-447M-[8b39c2/810528]"
       - "🇳🇱NL-237M-[aab901/946820]"
-      - "🇱🇺LU-261M-[c8e892/6daf9c]"
       - "🇳🇱NL-420M-[9f93ea/e51fd4]"
       - "🇺🇸US-64M-[f21b24/2ffdbd]"
       - "🇷🇴RO-117M-[dc190f/d69ac0]"
