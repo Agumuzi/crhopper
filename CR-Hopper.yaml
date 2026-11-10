@@ -24,7 +24,7 @@ proxies:
       host: "ovd13.global.ssl.fastly.net"
       mode: "auto"
 
-  - name: "🇵🇱PL-297M-[bbac69/93340f]"
+  - name: "🇵🇱PL-346M-[bbac69/93340f]"
     type: "vless"
     server: "201.58.189.104"
     port: 2083
@@ -41,21 +41,7 @@ proxies:
     grpc-opts:
       grpc-service-name: "google.storage.v2.Storage"
 
-  - name: "🇳🇱NL-198M-[205438/dd7691]"
-    type: "vless"
-    server: "wr0ct1hfg.apruxdomain.online"
-    port: 39443
-    uuid: "17923e69-98e0-4952-a599-9c848c1b8ffe"
-    udp: true
-    encryption: "none"
-    servername: "x0c8j8znhp8ou.hat.onl"
-    client-fingerprint: "qq"
-    tls: true
-    network: "grpc"
-    grpc-opts:
-      grpc-service-name: "hls.5nd8-y0dx.lfm6tQMz2FNwh-fo0ugHo6dYDCvUyg.m3u8"
-
-  - name: "🇳🇱NL-276M-[6d507e/496c7b]"
+  - name: "🇳🇱NL-127M-[6d507e/496c7b]"
     type: "vless"
     server: "94.183.164.141"
     port: 7443
@@ -71,6 +57,111 @@ proxies:
     network: "grpc"
     grpc-opts:
       grpc-service-name: "ebl"
+
+  - name: "🇹🇷TR-91M-[8d8d6f/b40e91]"
+    type: "ss"
+    server: "gaming.cloudnamercqtzumigrhrjm.ir"
+    port: 30473
+    cipher: "2022-blake3-aes-256-gcm"
+    password: "5n3cwrcnUDtzPesQ9EC2/95cxVKaWNud1aUJSj4Aemw=:BNQqPjIRZvaTHbySMfNMYKLFQ2D13bVg+l/iyJkMsSM="
+    udp: true
+
+  - name: "🇳🇱NL-89M-[50d326/bd735f]"
+    type: "vless"
+    server: "hub.mediacorphub.org"
+    port: 443
+    uuid: "1653818d-532e-46be-b825-384107fb7c3a"
+    udp: true
+    encryption: "none"
+    servername: "hub.mediacorphub.org"
+    tls: true
+    network: "grpc"
+    grpc-opts:
+      grpc-service-name: "hub.v1.ObjectService"
+
+  - name: "🇸🇬SG-27M-[668aac/57f248]"
+    type: "vless"
+    server: "support.zoom.us"
+    port: 8080
+    uuid: "d18e76ed-eca4-43ff-a916-9b34533c4d2e"
+    udp: true
+    encryption: "none"
+    tls: false
+    network: "ws"
+    ws-opts:
+      path: "/cs"
+      headers:
+        Host: "asia.csmaster.pp.ua"
+
+  - name: "🇺🇸US-33M-[547bad/a86b0a]"
+    type: "vless"
+    server: "143.246.62.191"
+    port: 8443
+    uuid: "eb8c97f7-a154-4442-91b0-54c0d055ad0b"
+    udp: true
+    encryption: "none"
+    servername: "github.githubassets.com"
+    client-fingerprint: "chrome"
+    tls: true
+    reality-opts:
+      public-key: "4g6gX0ueJap7pY_iTDx23h6bzo3KIOTcFzP1Uacn0QA"
+      short-id: "4ad2e4e660550e43"
+    network: "tcp"
+
+  - name: "🇺🇸US-37M-[5fc6bc/eb8d55]"
+    type: "vless"
+    server: "156.229.167.109"
+    port: 8443
+    uuid: "eb8c97f7-a154-4442-91b0-54c0d055ad0b"
+    udp: true
+    encryption: "none"
+    servername: "github.githubassets.com"
+    client-fingerprint: "chrome"
+    tls: true
+    reality-opts:
+      public-key: "4g6gX0ueJap7pY_iTDx23h6bzo3KIOTcFzP1Uacn0QA"
+      short-id: "4ad2e4e660550e43"
+    network: "tcp"
+
+  - name: "🇲🇽MX-32M-[a6a548/aababa]"
+    type: "trojan"
+    server: "mx001.zestapp778.com"
+    port: 15083
+    password: "5t6i121em5lkmsmk"
+    udp: true
+    network: "tcp"
+
+  - name: "🇺🇸US-20M-[03831a/6cb983]"
+    type: "vless"
+    server: "uuss2.qik-server.uk"
+    port: 443
+    uuid: "38de3363-7945-402e-9a9b-6f2f9015a44e"
+    udp: true
+    encryption: "none"
+    servername: "uuss2.qik-server.uk"
+    client-fingerprint: "qq"
+    alpn:
+      - "h2"
+    tls: true
+    network: "xhttp"
+    xhttp-opts:
+      path: "/static/js/chunk"
+      host: "uuss2.qik-server.uk"
+      mode: "stream-one"
+
+  - name: "🇳🇱NL-198M-[205438/dd7691]"
+    type: "vless"
+    server: "wr0ct1hfg.apruxdomain.online"
+    port: 39443
+    uuid: "17923e69-98e0-4952-a599-9c848c1b8ffe"
+    udp: true
+    encryption: "none"
+    servername: "x0c8j8znhp8ou.hat.onl"
+    client-fingerprint: "qq"
+    tls: true
+    network: "grpc"
+    grpc-opts:
+      grpc-service-name: "hls.5nd8-y0dx.lfm6tQMz2FNwh-fo0ugHo6dYDCvUyg.m3u8"
 
   - name: "🇳🇱NL-240M-[dfe2fe/ca47a0]"
     type: "vless"
@@ -147,29 +238,6 @@ proxies:
     udp: true
     sni: "us001.zestapp778.com"
     skip-cert-verify: true
-    network: "tcp"
-
-  - name: "🇲🇽MX-40M-[a6a548/aababa]"
-    type: "trojan"
-    server: "mx001.zestapp778.com"
-    port: 15083
-    password: "5t6i121em5lkmsmk"
-    udp: true
-    network: "tcp"
-
-  - name: "🇺🇸US-24M-[547bad/a86b0a]"
-    type: "vless"
-    server: "143.246.62.191"
-    port: 8443
-    uuid: "eb8c97f7-a154-4442-91b0-54c0d055ad0b"
-    udp: true
-    encryption: "none"
-    servername: "github.githubassets.com"
-    client-fingerprint: "chrome"
-    tls: true
-    reality-opts:
-      public-key: "4g6gX0ueJap7pY_iTDx23h6bzo3KIOTcFzP1Uacn0QA"
-      short-id: "4ad2e4e660550e43"
     network: "tcp"
 
   - name: "🇳🇱NL-276M-[467805/f28ba3]"
@@ -257,35 +325,6 @@ proxies:
       path: "/"
       headers:
         Host: "copy_az_channel_NUFiLTER_7i.global.ssl.fastly.net."
-
-  - name: "🇸🇬SG-45M-[668aac/57f248]"
-    type: "vless"
-    server: "support.zoom.us"
-    port: 8080
-    uuid: "d18e76ed-eca4-43ff-a916-9b34533c4d2e"
-    udp: true
-    encryption: "none"
-    tls: false
-    network: "ws"
-    ws-opts:
-      path: "/cs"
-      headers:
-        Host: "asia.csmaster.pp.ua"
-
-  - name: "🇺🇸US-45M-[5fc6bc/eb8d55]"
-    type: "vless"
-    server: "156.229.167.109"
-    port: 8443
-    uuid: "eb8c97f7-a154-4442-91b0-54c0d055ad0b"
-    udp: true
-    encryption: "none"
-    servername: "github.githubassets.com"
-    client-fingerprint: "chrome"
-    tls: true
-    reality-opts:
-      public-key: "4g6gX0ueJap7pY_iTDx23h6bzo3KIOTcFzP1Uacn0QA"
-      short-id: "4ad2e4e660550e43"
-    network: "tcp"
 
   - name: "🇺🇸US-45M-[547bad/b7922a]"
     type: "vless"
@@ -1380,19 +1419,6 @@ proxies:
     grpc-opts:
       grpc-service-name: "gw.v2.PushService"
 
-  - name: "🇳🇱NL-338M-[50d326/bd735f]"
-    type: "vless"
-    server: "hub.mediacorphub.org"
-    port: 443
-    uuid: "1653818d-532e-46be-b825-384107fb7c3a"
-    udp: true
-    encryption: "none"
-    servername: "hub.mediacorphub.org"
-    tls: true
-    network: "grpc"
-    grpc-opts:
-      grpc-service-name: "hub.v1.ObjectService"
-
   - name: "🇳🇱NL-280M-[bcda65/873186]"
     type: "vless"
     server: "fetch.mediacorphub.org"
@@ -2139,23 +2165,26 @@ proxy-groups:
     type: select
     proxies:
       - "🇩🇪DE-110M-[cd2c83/dec478]"
-      - "🇵🇱PL-297M-[bbac69/93340f]"
+      - "🇵🇱PL-346M-[bbac69/93340f]"
+      - "🇳🇱NL-127M-[6d507e/496c7b]"
+      - "🇹🇷TR-91M-[8d8d6f/b40e91]"
+      - "🇳🇱NL-89M-[50d326/bd735f]"
+      - "🇸🇬SG-27M-[668aac/57f248]"
+      - "🇺🇸US-33M-[547bad/a86b0a]"
+      - "🇺🇸US-37M-[5fc6bc/eb8d55]"
+      - "🇲🇽MX-32M-[a6a548/aababa]"
+      - "🇺🇸US-20M-[03831a/6cb983]"
       - "🇳🇱NL-198M-[205438/dd7691]"
-      - "🇳🇱NL-276M-[6d507e/496c7b]"
       - "🇳🇱NL-240M-[dfe2fe/ca47a0]"
       - "🇳🇱NL-250M-[c0ca47/41adbe]"
       - "🇵🇱PL-143M-[54602b/5bee28]"
       - "🇵🇱PL-412M-[862e84/8eb10e]"
       - "🇺🇸US-38M-[015a03/4faad1]"
-      - "🇲🇽MX-40M-[a6a548/aababa]"
-      - "🇺🇸US-24M-[547bad/a86b0a]"
       - "🇳🇱NL-276M-[467805/f28ba3]"
       - "🇵🇱PL-445M-[862e84/ae87f1]"
       - "🇮🇳IN-146M-[406a43/6c8e3c]"
       - "🇮🇳IN-144M-[d3e96a/adad11]"
       - "🇺🇸US-162M-[d54b4d/0517f6]"
-      - "🇸🇬SG-45M-[668aac/57f248]"
-      - "🇺🇸US-45M-[5fc6bc/eb8d55]"
       - "🇺🇸US-45M-[547bad/b7922a]"
       - "🇳🇱NL-34M-[6bfc43/f3e7a3]"
       - "🇵🇱PL-430M-[ab4c5e/ebdbcd]"
@@ -2227,7 +2256,6 @@ proxy-groups:
       - "🇳🇱NL-297M-[dc3a42/faafbb]"
       - "🇳🇱NL-305M-[75eec0/167a51]"
       - "🇳🇱NL-206M-[6bfc43/976edc]"
-      - "🇳🇱NL-338M-[50d326/bd735f]"
       - "🇳🇱NL-280M-[bcda65/873186]"
       - "🇳🇱NL-242M-[8354be/287590]"
       - "🇳🇱NL-318M-[bb4a04/9d46c7]"
