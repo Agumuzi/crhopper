@@ -24,6 +24,102 @@ proxies:
       host: "ovd7.global.ssl.fastly.net"
       mode: "auto"
 
+  - name: "🇵🇱PL-412M-[71071a/b2032d]"
+    type: "vless"
+    server: "cdn-ya.shamanapp.online"
+    port: 443
+    uuid: "40c8a202-4b7f-45a6-b0aa-37db0fac4df8"
+    udp: true
+    encryption: "none"
+    servername: "cdn-ya.shamanapp.online"
+    client-fingerprint: "firefox"
+    alpn:
+      - "h2"
+      - "http/1.1"
+    tls: true
+    network: "xhttp"
+    xhttp-opts:
+      path: "/media/hls/720p/"
+      host: "cdn-ya.shamanapp.online"
+      mode: "packet-up"
+      no-grpc-header: true
+      sc-max-each-post-bytes: "20000"
+      sc-min-posts-interval-ms: "5"
+      seq-key: "page"
+      seq-placement: "query"
+      uplink-chunk-size: "20000"
+      uplink-data-key: "X-Request-Id"
+      uplink-data-placement: "header"
+      uplink-http-method: "GET"
+      x-padding-bytes: "100-1000"
+      x-padding-header: "X-Cache"
+      x-padding-key: "_dc"
+      x-padding-method: "tokenish"
+      x-padding-obfs-mode: true
+      x-padding-placement: "header"
+
+  - name: "🇩🇪DE-34M-[d18a1e/24a732]"
+    type: "vless"
+    server: "a566d1g.de7.h1clayd.click"
+    port: 443
+    uuid: "95c2ba1e-a330-4e6b-bd81-bf9c0f647b2f"
+    udp: true
+    encryption: "none"
+    servername: "a566d1g.de7.h1clayd.click"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "C_DlyXDDS4fWcAlxb-6O7LBKtq28fg2slCrH5tPaTQ4"
+      short-id: "16cea10606a4e401"
+    network: "grpc"
+    grpc-opts:
+      grpc-service-name: "98b9c56e8ebb"
+
+  - name: "🇩🇪DE-34M-[dfc8cb/ab5f66]"
+    type: "vless"
+    server: "f3b21at.de7.h1clayd.click"
+    port: 443
+    uuid: "95c2ba1e-a330-4e6b-bd81-bf9c0f647b2f"
+    udp: true
+    encryption: "none"
+    servername: "f3b21at.de7.h1clayd.click"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "lneTk9CP66okHF_VgXVaSj_QNpRzEmvrAmRxmux5JVU"
+      short-id: "08485ad122fafbd5"
+    network: "tcp"
+
+  - name: "🇳🇱NL-20M-[75eec0/5df810]"
+    type: "vless"
+    server: "edge.mediacorphub.org"
+    port: 443
+    uuid: "1653818d-532e-46be-b825-384107fb7c3a"
+    udp: true
+    encryption: "none"
+    servername: "edge.mediacorphub.org"
+    client-fingerprint: "chrome"
+    tls: true
+    network: "grpc"
+    grpc-opts:
+      grpc-service-name: "hub.v1.ObjectService"
+
+  - name: "🇺🇸US-36M-[5fc6bc/ef60e9]"
+    type: "vless"
+    server: "156.229.167.109"
+    port: 8443
+    uuid: "eb8c97f7-a154-4442-91b0-54c0d055ad0b"
+    udp: true
+    encryption: "none"
+    packet-encoding: "xudp"
+    servername: "github.githubassets.com"
+    client-fingerprint: "chrome"
+    tls: true
+    reality-opts:
+      public-key: "4g6gX0ueJap7pY_iTDx23h6bzo3KIOTcFzP1Uacn0QA"
+      short-id: "4ad2e4e660550e43"
+    network: "tcp"
+
   - name: "🇵🇱PL-272M-[bbac69/93340f]"
     type: "vless"
     server: "201.58.189.104"
@@ -161,22 +257,6 @@ proxies:
     network: "grpc"
     grpc-opts:
       grpc-service-name: "ebl"
-
-  - name: "🇺🇸US-43M-[5fc6bc/ef60e9]"
-    type: "vless"
-    server: "156.229.167.109"
-    port: 8443
-    uuid: "eb8c97f7-a154-4442-91b0-54c0d055ad0b"
-    udp: true
-    encryption: "none"
-    packet-encoding: "xudp"
-    servername: "github.githubassets.com"
-    client-fingerprint: "chrome"
-    tls: true
-    reality-opts:
-      public-key: "4g6gX0ueJap7pY_iTDx23h6bzo3KIOTcFzP1Uacn0QA"
-      short-id: "4ad2e4e660550e43"
-    network: "tcp"
 
   - name: "🇳🇱NL-41M-[dda22f/d78815]"
     type: "vless"
@@ -1622,20 +1702,6 @@ proxies:
     grpc-opts:
       grpc-service-name: "home.v1.ObjectService"
 
-  - name: "🇳🇱NL-258M-[75eec0/5df810]"
-    type: "vless"
-    server: "edge.mediacorphub.org"
-    port: 443
-    uuid: "1653818d-532e-46be-b825-384107fb7c3a"
-    udp: true
-    encryption: "none"
-    servername: "edge.mediacorphub.org"
-    client-fingerprint: "chrome"
-    tls: true
-    network: "grpc"
-    grpc-opts:
-      grpc-service-name: "hub.v1.ObjectService"
-
   - name: "🇳🇱NL-174M-[dda22f/dc529f]"
     type: "vless"
     server: "stats.mediacorphub.org"
@@ -2241,6 +2307,11 @@ proxy-groups:
     type: select
     proxies:
       - "🇵🇱PL-136M-[20532f/953493]"
+      - "🇵🇱PL-412M-[71071a/b2032d]"
+      - "🇩🇪DE-34M-[d18a1e/24a732]"
+      - "🇩🇪DE-34M-[dfc8cb/ab5f66]"
+      - "🇳🇱NL-20M-[75eec0/5df810]"
+      - "🇺🇸US-36M-[5fc6bc/ef60e9]"
       - "🇵🇱PL-272M-[bbac69/93340f]"
       - "🇨🇭CH-276M-[e2c4c7/4ed554]"
       - "🇳🇱NL-56M-[6bfc43/315011]"
@@ -2250,7 +2321,6 @@ proxy-groups:
       - "🇩🇪DE-117M-[580782/860691]"
       - "🇵🇱PL-295M-[54602b/5bee28]"
       - "🇳🇱NL-43M-[6d507e/496c7b]"
-      - "🇺🇸US-43M-[5fc6bc/ef60e9]"
       - "🇳🇱NL-41M-[dda22f/d78815]"
       - "🇹🇷TR-91M-[8d8d6f/b40e91]"
       - "🇳🇱NL-89M-[50d326/bd735f]"
@@ -2346,7 +2416,6 @@ proxy-groups:
       - "🇳🇱NL-325M-[81bfec/9747e5]"
       - "🇳🇱NL-285M-[533d68/61f8ea]"
       - "🇳🇱NL-233M-[b46876/93a794]"
-      - "🇳🇱NL-258M-[75eec0/5df810]"
       - "🇳🇱NL-174M-[dda22f/dc529f]"
       - "🇺🇸US-67M-[884b9b/b15e3a]"
       - "🇳🇱NL-161M-[4dc8e9/673345]"
