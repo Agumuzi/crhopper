@@ -24,7 +24,7 @@ proxies:
       host: "ovd13.global.ssl.fastly.net"
       mode: "auto"
 
-  - name: "🇵🇱PL-346M-[bbac69/93340f]"
+  - name: "🇵🇱PL-302M-[bbac69/93340f]"
     type: "vless"
     server: "201.58.189.104"
     port: 2083
@@ -41,7 +41,39 @@ proxies:
     grpc-opts:
       grpc-service-name: "google.storage.v2.Storage"
 
-  - name: "🇳🇱NL-127M-[6d507e/496c7b]"
+  - name: "🇩🇪DE-117M-[580782/860691]"
+    type: "vless"
+    server: "vv9bo423qfvc.cloudymedia.click"
+    port: 443
+    uuid: "fb390da4-00c5-54f1-a1b4-c8e2bb6378c2"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "deepl.com"
+    client-fingerprint: "qq"
+    tls: true
+    reality-opts:
+      public-key: "8RfEuI1RxxW1dqq2nbt6ssKwx7UdmgKW1nKL9OuilGs"
+      short-id: "0492eabdb9"
+    network: "tcp"
+
+  - name: "🇵🇱PL-295M-[54602b/5bee28]"
+    type: "vless"
+    server: "177.202.68.217"
+    port: 443
+    uuid: "f8d52ece-fad4-478d-875d-df6eed3befa7"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "pl-b1.golangwikito.cfd"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "DsTVLCehsKvfFGtNZU5leKOLTlEp28qeifHYtRKOFwg"
+      short-id: "986ede37bf6925ae"
+    network: "tcp"
+
+  - name: "🇳🇱NL-43M-[6d507e/496c7b]"
     type: "vless"
     server: "94.183.164.141"
     port: 7443
@@ -57,6 +89,52 @@ proxies:
     network: "grpc"
     grpc-opts:
       grpc-service-name: "ebl"
+
+  - name: "🇺🇸US-43M-[5fc6bc/ef60e9]"
+    type: "vless"
+    server: "156.229.167.109"
+    port: 8443
+    uuid: "eb8c97f7-a154-4442-91b0-54c0d055ad0b"
+    udp: true
+    encryption: "none"
+    packet-encoding: "xudp"
+    servername: "github.githubassets.com"
+    client-fingerprint: "chrome"
+    tls: true
+    reality-opts:
+      public-key: "4g6gX0ueJap7pY_iTDx23h6bzo3KIOTcFzP1Uacn0QA"
+      short-id: "4ad2e4e660550e43"
+    network: "tcp"
+
+  - name: "🇺🇸US-42M-[547bad/66ffe6]"
+    type: "vless"
+    server: "143.246.62.191"
+    port: 8443
+    uuid: "eb8c97f7-a154-4442-91b0-54c0d055ad0b"
+    udp: true
+    encryption: "none"
+    packet-encoding: "xudp"
+    servername: "github.githubassets.com"
+    client-fingerprint: "chrome"
+    tls: true
+    reality-opts:
+      public-key: "4g6gX0ueJap7pY_iTDx23h6bzo3KIOTcFzP1Uacn0QA"
+      short-id: "4ad2e4e660550e43"
+    network: "tcp"
+
+  - name: "🇳🇱NL-41M-[dda22f/d78815]"
+    type: "vless"
+    server: "stats.mediacorphub.org"
+    port: 443
+    uuid: "1653818d-532e-46be-b825-384107fb7c3a"
+    udp: true
+    encryption: "none"
+    servername: "stats.mediacorphub.org"
+    client-fingerprint: "chrome"
+    tls: true
+    network: "grpc"
+    grpc-opts:
+      grpc-service-name: "gw.v2.PushService"
 
   - name: "🇹🇷TR-91M-[8d8d6f/b40e91]"
     type: "ss"
@@ -190,22 +268,6 @@ proxies:
     network: "grpc"
     grpc-opts:
       grpc-service-name: "hls.5nd8-y0dx.lfm6tQMz2FNwh-fo0ugHo6dYDCvUyg.m3u8"
-
-  - name: "🇵🇱PL-143M-[54602b/5bee28]"
-    type: "vless"
-    server: "177.202.68.217"
-    port: 443
-    uuid: "f8d52ece-fad4-478d-875d-df6eed3befa7"
-    udp: true
-    encryption: "none"
-    flow: "xtls-rprx-vision"
-    servername: "pl-b1.golangwikito.cfd"
-    client-fingerprint: "firefox"
-    tls: true
-    reality-opts:
-      public-key: "DsTVLCehsKvfFGtNZU5leKOLTlEp28qeifHYtRKOFwg"
-      short-id: "986ede37bf6925ae"
-    network: "tcp"
 
   - name: "🇵🇱PL-412M-[862e84/8eb10e]"
     type: "vless"
@@ -1789,22 +1851,6 @@ proxies:
       short-id: "3b306f15c6057d55"
     network: "tcp"
 
-  - name: "🇺🇸US-38M-[547bad/66ffe6]"
-    type: "vless"
-    server: "143.246.62.191"
-    port: 8443
-    uuid: "eb8c97f7-a154-4442-91b0-54c0d055ad0b"
-    udp: true
-    encryption: "none"
-    packet-encoding: "xudp"
-    servername: "github.githubassets.com"
-    client-fingerprint: "chrome"
-    tls: true
-    reality-opts:
-      public-key: "4g6gX0ueJap7pY_iTDx23h6bzo3KIOTcFzP1Uacn0QA"
-      short-id: "4ad2e4e660550e43"
-    network: "tcp"
-
   - name: "🇳🇱NL-41M-[802661/fbe506]"
     type: "vless"
     server: "89.105.195.148"
@@ -2165,8 +2211,13 @@ proxy-groups:
     type: select
     proxies:
       - "🇩🇪DE-110M-[cd2c83/dec478]"
-      - "🇵🇱PL-346M-[bbac69/93340f]"
-      - "🇳🇱NL-127M-[6d507e/496c7b]"
+      - "🇵🇱PL-302M-[bbac69/93340f]"
+      - "🇩🇪DE-117M-[580782/860691]"
+      - "🇵🇱PL-295M-[54602b/5bee28]"
+      - "🇳🇱NL-43M-[6d507e/496c7b]"
+      - "🇺🇸US-43M-[5fc6bc/ef60e9]"
+      - "🇺🇸US-42M-[547bad/66ffe6]"
+      - "🇳🇱NL-41M-[dda22f/d78815]"
       - "🇹🇷TR-91M-[8d8d6f/b40e91]"
       - "🇳🇱NL-89M-[50d326/bd735f]"
       - "🇸🇬SG-27M-[668aac/57f248]"
@@ -2177,7 +2228,6 @@ proxy-groups:
       - "🇳🇱NL-198M-[205438/dd7691]"
       - "🇳🇱NL-240M-[dfe2fe/ca47a0]"
       - "🇳🇱NL-250M-[c0ca47/41adbe]"
-      - "🇵🇱PL-143M-[54602b/5bee28]"
       - "🇵🇱PL-412M-[862e84/8eb10e]"
       - "🇺🇸US-38M-[015a03/4faad1]"
       - "🇳🇱NL-276M-[467805/f28ba3]"
@@ -2282,7 +2332,6 @@ proxy-groups:
       - "🇱🇺LU-82M-[c8e892/6daf9c]"
       - "🇳🇱NL-99M-[37fd26/32a5d7]"
       - "🇵🇱PL-39M-[aa35a2/70d0bf]"
-      - "🇺🇸US-38M-[547bad/66ffe6]"
       - "🇳🇱NL-41M-[802661/fbe506]"
       - "🇳🇱NL-164M-[60ab67/7ce489]"
       - "🇳🇱NL-285M-[75eec0/ca4f10]"
