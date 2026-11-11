@@ -6,6 +6,99 @@ log-level: warning
 ipv6: false
 
 proxies:
+  - name: "🇫🇮FI-47M-[b8ab87/15a2f8]"
+    type: "hysteria2"
+    server: "94.183.164.119"
+    port: 24433
+    password: "549766c3-fa5f-471e-8031-ffc1f8d5064f"
+    udp: true
+    sni: "lakes.blog-forme.ru"
+
+  - name: "🇳🇱NL-276M-[96e162/b44637]"
+    type: "vless"
+    server: "dock.foghollow.top"
+    port: 443
+    uuid: "cf1b08a7-55b7-4241-b80a-c59116272b43"
+    udp: true
+    encryption: "none"
+    servername: "dock.foghollow.top"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "EpfNfUY-xtHzn-b8SX58Spb3FUV1GC1qWJ-wAkXunjA"
+      short-id: "c8d752a5b8522c12"
+    network: "grpc"
+    grpc-opts:
+      grpc-service-name: "grpc"
+
+  - name: "🇳🇱NL-184M-[f4d777/0c87d7]"
+    type: "vless"
+    server: "50.7.178.197"
+    port: 8443
+    uuid: "3f5e89d5-591f-4ac9-b071-b05680b573c3"
+    udp: true
+    encryption: "none"
+    servername: "fr2.gacvpn.site"
+    client-fingerprint: "firefox"
+    tls: true
+    network: "grpc"
+    grpc-opts:
+      grpc-service-name: "connect-fr"
+
+  - name: "🌐XX-183M-[2b8b77/b2b5c5]"
+    type: "vless"
+    server: "199.232.207.166"
+    port: 443
+    uuid: "d38d73fd-88d8-4097-91d3-d6f7217c8279"
+    udp: true
+    encryption: "none"
+    servername: "accounts.fastly.com"
+    client-fingerprint: "firefox"
+    tls: true
+    network: "xhttp"
+    xhttp-opts:
+      path: "/"
+      host: "yeternek-blookwn.net"
+      mode: "packet-up"
+
+  - name: "🇺🇸US-114M-[499b76/9b11e4]"
+    type: "vless"
+    server: "141.193.154.198"
+    port: 443
+    uuid: "b8d08151-73bd-4567-afac-8b4a01daff78"
+    udp: true
+    encryption: "none"
+    servername: "cloudflare.com"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "ZsBXnmtXqG_bOX7M10A1DGtds_Ch-NuvJNlGNl9-OEU"
+      short-id: "be4d24310c27"
+    network: "tcp"
+
+  - name: "🇪🇪EE-21M-[884b9b/90fd99]"
+    type: "hysteria2"
+    server: "201.8.64.7"
+    port: 443
+    password: "146d567c-6335-4e63-a8aa-7ec068642440"
+    udp: true
+    sni: "nlll.obxodvpn.us"
+
+  - name: "🇺🇸US-37M-[547bad/a86b0a]"
+    type: "vless"
+    server: "143.246.62.191"
+    port: 8443
+    uuid: "eb8c97f7-a154-4442-91b0-54c0d055ad0b"
+    udp: true
+    encryption: "none"
+    servername: "github.githubassets.com"
+    client-fingerprint: "chrome"
+    tls: true
+    reality-opts:
+      public-key: "4g6gX0ueJap7pY_iTDx23h6bzo3KIOTcFzP1Uacn0QA"
+      short-id: "4ad2e4e660550e43"
+    network: "tcp"
+
   - name: "🇳🇱NL-99M-[de3329/135a23]"
     type: "hysteria2"
     server: "94.183.164.119"
@@ -30,14 +123,6 @@ proxies:
     grpc-opts:
       grpc-service-name: "hub.v1.ObjectService"
 
-  - name: "🇫🇮FI-184M-[b8ab87/15a2f8]"
-    type: "hysteria2"
-    server: "94.183.164.119"
-    port: 24433
-    password: "549766c3-fa5f-471e-8031-ffc1f8d5064f"
-    udp: true
-    sni: "lakes.blog-forme.ru"
-
   - name: "🇫🇮FI-300M-[a63303/311712]"
     type: "ss"
     server: "213.176.92.148"
@@ -45,36 +130,6 @@ proxies:
     cipher: "aes-256-gcm"
     password: "DgMywXKqojHXeuXY8hOJaYGPFcjweCIJeD5cdg/cUUY="
     udp: true
-
-  - name: "🇳🇱NL-128M-[f4d777/0c87d7]"
-    type: "vless"
-    server: "50.7.178.197"
-    port: 8443
-    uuid: "3f5e89d5-591f-4ac9-b071-b05680b573c3"
-    udp: true
-    encryption: "none"
-    servername: "fr2.gacvpn.site"
-    client-fingerprint: "firefox"
-    tls: true
-    network: "grpc"
-    grpc-opts:
-      grpc-service-name: "connect-fr"
-
-  - name: "🇳🇱NL-203M-[2b8b77/b2b5c5]"
-    type: "vless"
-    server: "199.232.207.166"
-    port: 443
-    uuid: "d38d73fd-88d8-4097-91d3-d6f7217c8279"
-    udp: true
-    encryption: "none"
-    servername: "accounts.fastly.com"
-    client-fingerprint: "firefox"
-    tls: true
-    network: "xhttp"
-    xhttp-opts:
-      path: "/"
-      host: "yeternek-blookwn.net"
-      mode: "packet-up"
 
   - name: "🇫🇮FI-234M-[fd80e0/557735]"
     type: "vless"
@@ -1718,21 +1773,6 @@ proxies:
       short-id: "4ad2e4e660550e43"
     network: "tcp"
 
-  - name: "🇺🇸US-36M-[547bad/a86b0a]"
-    type: "vless"
-    server: "143.246.62.191"
-    port: 8443
-    uuid: "eb8c97f7-a154-4442-91b0-54c0d055ad0b"
-    udp: true
-    encryption: "none"
-    servername: "github.githubassets.com"
-    client-fingerprint: "chrome"
-    tls: true
-    reality-opts:
-      public-key: "4g6gX0ueJap7pY_iTDx23h6bzo3KIOTcFzP1Uacn0QA"
-      short-id: "4ad2e4e660550e43"
-    network: "tcp"
-
   - name: "🇩🇪DE-32M-[b48e41/d83dfc]"
     type: "vless"
     server: "195.206.235.7"
@@ -2177,12 +2217,16 @@ proxy-groups:
   - name: "AUTO"
     type: select
     proxies:
+      - "🇫🇮FI-47M-[b8ab87/15a2f8]"
+      - "🇳🇱NL-276M-[96e162/b44637]"
+      - "🇳🇱NL-184M-[f4d777/0c87d7]"
+      - "🌐XX-183M-[2b8b77/b2b5c5]"
+      - "🇺🇸US-114M-[499b76/9b11e4]"
+      - "🇪🇪EE-21M-[884b9b/90fd99]"
+      - "🇺🇸US-37M-[547bad/a86b0a]"
       - "🇳🇱NL-99M-[de3329/135a23]"
       - "🇳🇱NL-135M-[6347fe/606cb0]"
-      - "🇫🇮FI-184M-[b8ab87/15a2f8]"
       - "🇫🇮FI-300M-[a63303/311712]"
-      - "🇳🇱NL-128M-[f4d777/0c87d7]"
-      - "🇳🇱NL-203M-[2b8b77/b2b5c5]"
       - "🇫🇮FI-234M-[fd80e0/557735]"
       - "🇸🇪SE-72M-[9294d5/4d4a3a]"
       - "🇳🇱NL-114M-[6bfc43/315011]"
@@ -2289,7 +2333,6 @@ proxy-groups:
       - "🇫🇷FR-33M-[a8b907/9212f3]"
       - "🇩🇪DE-49M-[5d516c/82943a]"
       - "🇺🇸US-40M-[5fc6bc/ef60e9]"
-      - "🇺🇸US-36M-[547bad/a86b0a]"
       - "🇩🇪DE-32M-[b48e41/d83dfc]"
       - "🇳🇱NL-20M-[75eec0/5df810]"
       - "🇨🇭CH-276M-[e2c4c7/4ed554]"
