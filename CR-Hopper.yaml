@@ -6,13 +6,43 @@ log-level: warning
 ipv6: false
 
 proxies:
-  - name: "🇫🇮FI-160M-[b8ab87/15a2f8]"
+  - name: "🇫🇮FI-82M-[b8ab87/15a2f8]"
     type: "hysteria2"
     server: "94.183.164.119"
     port: 24433
     password: "549766c3-fa5f-471e-8031-ffc1f8d5064f"
     udp: true
     sni: "lakes.blog-forme.ru"
+
+  - name: "🇺🇸US-94M-[499b76/804502]"
+    type: "vless"
+    server: "141.193.154.198"
+    port: 443
+    uuid: "b8d08151-73bd-4567-afac-8b4a01daff78"
+    udp: true
+    encryption: "none"
+    servername: "cloudflare.com"
+    client-fingerprint: "chrome"
+    tls: true
+    reality-opts:
+      public-key: "ZsBXnmtXqG_bOX7M10A1DGtds_Ch-NuvJNlGNl9-OEU"
+      short-id: "be4d24310c27"
+    network: "tcp"
+
+  - name: "🇺🇸US-29M-[5fc6bc/eb8d55]"
+    type: "vless"
+    server: "156.229.167.109"
+    port: 8443
+    uuid: "eb8c97f7-a154-4442-91b0-54c0d055ad0b"
+    udp: true
+    encryption: "none"
+    servername: "github.githubassets.com"
+    client-fingerprint: "chrome"
+    tls: true
+    reality-opts:
+      public-key: "4g6gX0ueJap7pY_iTDx23h6bzo3KIOTcFzP1Uacn0QA"
+      short-id: "4ad2e4e660550e43"
+    network: "tcp"
 
   - name: "🇬🇧GB-330M-[f43c91/703265]"
     type: "vless"
@@ -129,21 +159,6 @@ proxies:
     network: "grpc"
     grpc-opts:
       grpc-service-name: "5b79e8a94241"
-
-  - name: "🇺🇸US-22M-[5fc6bc/eb8d55]"
-    type: "vless"
-    server: "156.229.167.109"
-    port: 8443
-    uuid: "eb8c97f7-a154-4442-91b0-54c0d055ad0b"
-    udp: true
-    encryption: "none"
-    servername: "github.githubassets.com"
-    client-fingerprint: "chrome"
-    tls: true
-    reality-opts:
-      public-key: "4g6gX0ueJap7pY_iTDx23h6bzo3KIOTcFzP1Uacn0QA"
-      short-id: "4ad2e4e660550e43"
-    network: "tcp"
 
   - name: "🇺🇸US-41M-[547bad/b7922a]"
     type: "vless"
@@ -2287,7 +2302,9 @@ proxy-groups:
   - name: "AUTO"
     type: select
     proxies:
-      - "🇫🇮FI-160M-[b8ab87/15a2f8]"
+      - "🇫🇮FI-82M-[b8ab87/15a2f8]"
+      - "🇺🇸US-94M-[499b76/804502]"
+      - "🇺🇸US-29M-[5fc6bc/eb8d55]"
       - "🇬🇧GB-330M-[f43c91/703265]"
       - "🇸🇪SE-285M-[9294d5/f927c9]"
       - "🇳🇱NL-74M-[f4d777/0c87d7]"
@@ -2295,7 +2312,6 @@ proxy-groups:
       - "🇳🇱NL-22M-[208eb7/16c094]"
       - "🇳🇱NL-54M-[7dd40a/f7eced]"
       - "🇳🇱NL-26M-[6d4d30/90d08f]"
-      - "🇺🇸US-22M-[5fc6bc/eb8d55]"
       - "🇺🇸US-41M-[547bad/b7922a]"
       - "🇳🇱NL-276M-[96e162/b44637]"
       - "🌐XX-183M-[2b8b77/b2b5c5]"
