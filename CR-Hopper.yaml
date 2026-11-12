@@ -6,7 +6,7 @@ log-level: warning
 ipv6: false
 
 proxies:
-  - name: "🇳🇱NL-360M-[50d326/bd735f]"
+  - name: "🇳🇱NL-206M-[50d326/bd735f]"
     type: "vless"
     server: "hub.mediacorphub.org"
     port: 443
@@ -19,13 +19,450 @@ proxies:
     grpc-opts:
       grpc-service-name: "hub.v1.ObjectService"
 
-  - name: "🇳🇱NL-111M-[79e270/764de2]"
+  - name: "🇪🇪EE-190M-[2ea4c6/bf07ef]"
+    type: "vless"
+    server: "38.244.155.67"
+    port: 443
+    uuid: "d651c9ab-b844-4420-b3d0-20d201ef5f55"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "node-eu-1.nztpro.com"
+    client-fingerprint: "chrome"
+    tls: true
+    reality-opts:
+      public-key: "NLXltMEkWIxv9bL2J4XkPGb4oVwGbCkITCTXF-jVxAE"
+      short-id: "2976f793571fb671"
+    network: "tcp"
+
+  - name: "🇳🇱NL-61M-[79e270/764de2]"
     type: "hysteria2"
     server: "212.34.137.105"
     port: 443
     password: "549766c3-fa5f-471e-8031-ffc1f8d5064f"
     udp: true
     sni: "shorts.blog-forme.ru"
+
+  - name: "🇳🇱NL-237M-[dda22f/d32add]"
+    type: "vless"
+    server: "stats.mediacorphub.org"
+    port: 443
+    uuid: "1653818d-532e-46be-b825-384107fb7c3a"
+    udp: true
+    encryption: "none"
+    servername: "stats.mediacorphub.org"
+    tls: true
+    network: "grpc"
+    grpc-opts:
+      grpc-service-name: "gw.v2.PushService"
+
+  - name: "🇪🇪EE-281M-[fcac29/3a9a82]"
+    type: "vless"
+    server: "185.215.184.86"
+    port: 443
+    uuid: "90157e25-cee1-4217-921e-91f300bc1a24"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "dvizhok.su"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs"
+      short-id: "428ef87fd47a3a32"
+    network: "tcp"
+
+  - name: "🇳🇱NL-72M-[208eb7/16c094]"
+    type: "vless"
+    server: "196.196.148.63"
+    port: 443
+    uuid: "cda0862a-0f87-4be9-8ed8-1d0c9e382839"
+    udp: true
+    encryption: "none"
+    servername: "717252g.nl8.h1clayd.click"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "PD8Jdlg3xB9QY--jwQjp8PFPzCS8-Oryw6-HWBcHMFU"
+      short-id: "d3bd772514c87d28"
+    network: "grpc"
+    grpc-opts:
+      grpc-service-name: "204adda7e3da"
+
+  - name: "🇳🇱NL-276M-[f4d777/94c284]"
+    type: "vless"
+    server: "50.7.178.197"
+    port: 8443
+    uuid: "3f5e89d5-591f-4ac9-b071-b05680b573c3"
+    udp: true
+    encryption: "none"
+    servername: "fr2.gacvpn.site"
+    tls: true
+    network: "grpc"
+    grpc-opts:
+      grpc-service-name: "connect-fr"
+
+  - name: "🇳🇱NL-274M-[bb4a04/f6c751]"
+    type: "vless"
+    server: "89.105.195.151"
+    port: 443
+    uuid: "1653818d-532e-46be-b825-384107fb7c3a"
+    udp: true
+    encryption: "none"
+    servername: "assets.mediacorphub.org"
+    client-fingerprint: "chrome"
+    tls: true
+    network: "grpc"
+    grpc-opts:
+      grpc-service-name: "hub.v1.ObjectService"
+
+  - name: "🇩🇪DE-276M-[95d2af/c2f92d]"
+    type: "vless"
+    server: "3.125.9.238"
+    port: 65532
+    uuid: "6ba2eac6-0ec9-44ca-a42b-a8e23aafb530"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "apple.com"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "WfkCF0eEuIoO0MyJsKOddU89QrTzCZ4y2dzCJbH99CQ"
+      short-id: "79a1e14b"
+    network: "tcp"
+
+  - name: "🇮🇹IT-169M-[2325de/f8e6c2]"
+    type: "ss"
+    server: "dns24.m3hrzd.ir"
+    port: 1349
+    cipher: "chacha20-ietf-poly1305"
+    password: "byX4-DV0C42PLFTWQhMTAQ63mZ8qrDRB"
+    udp: true
+
+  - name: "🌐XX-276M-[443e2a/5bc8d3]"
+    type: "vless"
+    server: "212.113.116.181"
+    port: 443
+    uuid: "1d46250c-f015-439d-a7fd-c4d9e2a4c63d"
+    udp: true
+    encryption: "none"
+    servername: "de.oncloudvpn.com"
+    client-fingerprint: "chrome"
+    alpn:
+      - "h2"
+    tls: true
+    network: "grpc"
+    grpc-opts:
+      grpc-service-name: "grpc"
+
+  - name: "🇩🇪DE-93M-[cd2c83/dec478]"
+    type: "vless"
+    server: "151.101.36.235"
+    port: 443
+    uuid: "67cd3349-f789-4cbb-8b91-4b6b1654ce7c"
+    udp: true
+    encryption: "none"
+    servername: "accounts.fastly.com"
+    client-fingerprint: "iOS"
+    alpn:
+      - "h3"
+    tls: true
+    network: "xhttp"
+    xhttp-opts:
+      path: "/"
+      host: "ovd13.global.ssl.fastly.net"
+      mode: "auto"
+
+  - name: "🇫🇷FR-241M-[acd8b8/d6ffd7]"
+    type: "vless"
+    server: "151.101.36.246"
+    port: 443
+    uuid: "67cd3349-f789-4cbb-8b91-4b6b1654ce7c"
+    udp: true
+    encryption: "none"
+    servername: "accounts.fastly.com"
+    client-fingerprint: "safari"
+    alpn:
+      - "h3"
+    tls: true
+    network: "xhttp"
+    xhttp-opts:
+      path: "/"
+      host: "ovd12.global.ssl.fastly.net"
+      mode: "auto"
+
+  - name: "🇫🇷FR-77M-[c41e46/dd5e2f]"
+    type: "vless"
+    server: "151.101.36.2"
+    port: 443
+    uuid: "67cd3349-f789-4cbb-8b91-4b6b1654ce7c"
+    udp: true
+    encryption: "none"
+    servername: "accounts.fastly.com"
+    client-fingerprint: "safari"
+    alpn:
+      - "h3"
+    tls: true
+    network: "xhttp"
+    xhttp-opts:
+      path: "/"
+      host: "oh4.global.ssl.fastly.net"
+      mode: "auto"
+
+  - name: "🌐XX-193M-[0addeb/1ad638]"
+    type: "vless"
+    server: "190.93.244.166"
+    port: 2096
+    uuid: "b2853d19-fada-44dc-8d44-967d1af122e0"
+    udp: true
+    encryption: "none"
+    servername: "wqa3miojjr8fyozhiui--su3-ucg1gdx.pages.dev"
+    client-fingerprint: "chrome"
+    tls: true
+    network: "ws"
+    ws-opts:
+      path: "/eyJqdW5rIjoiWmFzVk5rd2siLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByZWZpeCIsInBhbmVsSVBzIjpbIlsyYTAyOjg5ODoxNDY6NjQ6Ol0iXX0="
+      headers:
+        Host: "wqa3miojjr8fyozhiui--su3-ucg1gdx.pages.dev"
+
+  - name: "🇬🇧GB-431M-[a98be9/319c54]"
+    type: "vless"
+    server: "50.7.227.78"
+    port: 443
+    uuid: "90157e25-cee1-4217-921e-91f300bc1a24"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "bizorg.su"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs"
+      short-id: "428ef87fd47a3a32"
+    network: "tcp"
+
+  - name: "🇳🇱NL-270M-[6347fe/f7535c]"
+    type: "vless"
+    server: "assets.mediacorphub.org"
+    port: 443
+    uuid: "1653818d-532e-46be-b825-384107fb7c3a"
+    udp: true
+    encryption: "none"
+    servername: "assets.mediacorphub.org"
+    client-fingerprint: "iOS"
+    alpn:
+      - "h2"
+    tls: true
+    network: "grpc"
+    grpc-opts:
+      grpc-service-name: "hub.v1.ObjectService"
+
+  - name: "🇫🇷FR-402M-[e6089c/0da2be]"
+    type: "vless"
+    server: "67.159.44.219"
+    port: 443
+    uuid: "90157e25-cee1-4217-921e-91f300bc1a24"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "bestgif.su"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs"
+      short-id: "428ef87fd47a3a32"
+    network: "tcp"
+
+  - name: "🇪🇪EE-388M-[890f62/4e35d1]"
+    type: "vless"
+    server: "185.215.184.50"
+    port: 443
+    uuid: "90157e25-cee1-4217-921e-91f300bc1a24"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "dvizhok.su"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs"
+      short-id: "428ef87fd47a3a32"
+    network: "tcp"
+
+  - name: "🇳🇱NL-259M-[7dd40a/f7eced]"
+    type: "vless"
+    server: "136.234.9.28"
+    port: 443
+    uuid: "cda0862a-0f87-4be9-8ed8-1d0c9e382839"
+    udp: true
+    encryption: "none"
+    servername: "717252g.nl8.h1clayd.click"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "PD8Jdlg3xB9QY--jwQjp8PFPzCS8-Oryw6-HWBcHMFU"
+      short-id: "d3bd772514c87d28"
+    network: "grpc"
+    grpc-opts:
+      grpc-service-name: "204adda7e3da"
+
+  - name: "🇩🇪DE-308M-[580782/e17f74]"
+    type: "vless"
+    server: "vv9bo423qfvc.cloudymedia.click"
+    port: 443
+    uuid: "fb390da4-00c5-54f1-a1b4-c8e2bb6378c2"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "deepl.com"
+    client-fingerprint: "qq"
+    tls: true
+    reality-opts:
+      public-key: "8RfEuI1RxxW1dqq2nbt6ssKwx7UdmgKW1nKL9OuilGs"
+      short-id: "0492eabdb9"
+    network: "tcp"
+
+  - name: "🇬🇧GB-276M-[f43c91/703265]"
+    type: "vless"
+    server: "fduknew.titun.su"
+    port: 443
+    uuid: "90157e25-cee1-4217-921e-91f300bc1a24"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    packet-encoding: "xudp"
+    servername: "bizorg.su"
+    client-fingerprint: "chrome"
+    tls: true
+    reality-opts:
+      public-key: "1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs"
+      short-id: "428ef87fd47a3a32"
+    network: "tcp"
+
+  - name: "🇵🇱PL-171M-[700305/782937]"
+    type: "vless"
+    server: "151.101.36.253"
+    port: 443
+    uuid: "67cd3349-f789-4cbb-8b91-4b6b1654ce7c"
+    udp: true
+    encryption: "none"
+    servername: "accounts.fastly.com"
+    client-fingerprint: "edge"
+    alpn:
+      - "h3"
+    tls: true
+    network: "xhttp"
+    xhttp-opts:
+      path: "/"
+      host: "ovd9.global.ssl.fastly.net"
+      mode: "auto"
+
+  - name: "🇳🇱NL-187M-[a6582a/790318]"
+    type: "vless"
+    server: "get.mediacorphub.org"
+    port: 443
+    uuid: "1653818d-532e-46be-b825-384107fb7c3a"
+    udp: true
+    encryption: "none"
+    servername: "get.mediacorphub.org"
+    client-fingerprint: "firefox"
+    tls: true
+    network: "grpc"
+    grpc-opts:
+      grpc-service-name: "gw.v2.PushService"
+
+  - name: "🇳🇱NL-168M-[551e18/e30397]"
+    type: "vless"
+    server: "146.75.57.238"
+    port: 443
+    uuid: "bad0b0df-f838-48a7-a86b-7d5f8b075953"
+    udp: true
+    encryption: "none"
+    servername: "steamstatic.com"
+    client-fingerprint: "chrome"
+    skip-cert-verify: true
+    alpn:
+      - "h2"
+    tls: true
+    network: "xhttp"
+    xhttp-opts:
+      path: "/"
+      host: "cplusshape.global.ssl.fastly.net."
+      mode: "auto"
+
+  - name: "🇮🇹IT-395M-[02a9bc/acc0c2]"
+    type: "vless"
+    server: "205.237.110.251"
+    port: 443
+    uuid: "5159ee41-1fb8-42e9-8c09-160aa3fc3160"
+    udp: true
+    encryption: "none"
+    servername: "oxcx5bu8dq.stream-book.com"
+    client-fingerprint: "firefox"
+    alpn:
+      - "h2"
+      - "http/1.1"
+    tls: true
+    network: "tcp"
+
+  - name: "🇷🇺RU-179M-[07e9d9/037019]"
+    type: "ss"
+    server: "185.22.153.117"
+    port: 18443
+    cipher: "aes-256-gcm"
+    password: "NTiHBg64fsY8u8DbGrtypD9gPGSL386p"
+    udp: true
+
+  - name: "🇵🇱PL-160M-[20532f/43e6f3]"
+    type: "vless"
+    server: "151.101.36.128"
+    port: 443
+    uuid: "67cd3349-f789-4cbb-8b91-4b6b1654ce7c"
+    udp: true
+    encryption: "none"
+    servername: "accounts.fastly.com"
+    client-fingerprint: "safari"
+    alpn:
+      - "h3"
+    tls: true
+    network: "xhttp"
+    xhttp-opts:
+      path: "/"
+      host: "ovd7.global.ssl.fastly.net"
+      mode: "auto"
+
+  - name: "🇳🇱NL-277M-[e0c916/508da5]"
+    type: "vless"
+    server: "94.183.164.142"
+    port: 443
+    uuid: "3f5e89d5-591f-4ac9-b071-b05680b573c3"
+    udp: true
+    encryption: "none"
+    servername: "nl4.gacvpn.site"
+    client-fingerprint: "firefox"
+    tls: true
+    network: "ws"
+    ws-opts:
+      path: "/static/js/vendor.cc1645b6.js?ed=2048"
+      headers:
+        Host: "nl4.gacvpn.site"
+
+  - name: "🇫🇷FR-134M-[be8dab/d1a6ee]"
+    type: "vless"
+    server: "199.232.78.120"
+    port: 443
+    uuid: "8d2cbffd-43d0-458d-906b-7c54b7b51f38"
+    udp: true
+    encryption: "none"
+    servername: "cdn.akamai.steamstatic.com"
+    skip-cert-verify: true
+    tls: true
+    network: "ws"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "fraboijji.global.ssl.fastly.net."
 
   - name: "🇳🇱NL-217M-[f4d777/0c87d7]"
     type: "vless"
@@ -83,19 +520,6 @@ proxies:
       sc-min-posts-interval-ms: "20-40"
       x-padding-bytes: "100-1000"
 
-  - name: "🇳🇱NL-254M-[dda22f/d32add]"
-    type: "vless"
-    server: "stats.mediacorphub.org"
-    port: 443
-    uuid: "1653818d-532e-46be-b825-384107fb7c3a"
-    udp: true
-    encryption: "none"
-    servername: "stats.mediacorphub.org"
-    tls: true
-    network: "grpc"
-    grpc-opts:
-      grpc-service-name: "gw.v2.PushService"
-
   - name: "🇳🇱NL-323M-[802661/dfb029]"
     type: "vless"
     server: "89.105.195.148"
@@ -118,30 +542,6 @@ proxies:
     udp: true
     sni: "lakes.blog-forme.ru"
 
-  - name: "🇩🇪DE-375M-[95d2af/c2f92d]"
-    type: "vless"
-    server: "3.125.9.238"
-    port: 65532
-    uuid: "6ba2eac6-0ec9-44ca-a42b-a8e23aafb530"
-    udp: true
-    encryption: "none"
-    flow: "xtls-rprx-vision"
-    servername: "apple.com"
-    client-fingerprint: "firefox"
-    tls: true
-    reality-opts:
-      public-key: "WfkCF0eEuIoO0MyJsKOddU89QrTzCZ4y2dzCJbH99CQ"
-      short-id: "79a1e14b"
-    network: "tcp"
-
-  - name: "🇮🇹IT-184M-[2325de/f8e6c2]"
-    type: "ss"
-    server: "dns24.m3hrzd.ir"
-    port: 1349
-    cipher: "chacha20-ietf-poly1305"
-    password: "byX4-DV0C42PLFTWQhMTAQ63mZ8qrDRB"
-    udp: true
-
   - name: "🇳🇱NL-337M-[6347fe/24196a]"
     type: "vless"
     server: "assets.mediacorphub.org"
@@ -155,22 +555,6 @@ proxies:
     network: "grpc"
     grpc-opts:
       grpc-service-name: "hub.v1.ObjectService"
-
-  - name: "🇪🇪EE-414M-[2ea4c6/bf07ef]"
-    type: "vless"
-    server: "38.244.155.67"
-    port: 443
-    uuid: "d651c9ab-b844-4420-b3d0-20d201ef5f55"
-    udp: true
-    encryption: "none"
-    flow: "xtls-rprx-vision"
-    servername: "node-eu-1.nztpro.com"
-    client-fingerprint: "chrome"
-    tls: true
-    reality-opts:
-      public-key: "NLXltMEkWIxv9bL2J4XkPGb4oVwGbCkITCTXF-jVxAE"
-      short-id: "2976f793571fb671"
-    network: "tcp"
 
   - name: "🇳🇱NL-322M-[bb4a04/7b3766]"
     type: "vless"
@@ -286,47 +670,6 @@ proxies:
     grpc-opts:
       grpc-service-name: "gw.v2.PushService"
 
-  - name: "🇷🇺RU-158M-[07e9d9/037019]"
-    type: "ss"
-    server: "185.22.153.117"
-    port: 18443
-    cipher: "aes-256-gcm"
-    password: "NTiHBg64fsY8u8DbGrtypD9gPGSL386p"
-    udp: true
-
-  - name: "🇩🇪DE-184M-[580782/e17f74]"
-    type: "vless"
-    server: "vv9bo423qfvc.cloudymedia.click"
-    port: 443
-    uuid: "fb390da4-00c5-54f1-a1b4-c8e2bb6378c2"
-    udp: true
-    encryption: "none"
-    flow: "xtls-rprx-vision"
-    servername: "deepl.com"
-    client-fingerprint: "qq"
-    tls: true
-    reality-opts:
-      public-key: "8RfEuI1RxxW1dqq2nbt6ssKwx7UdmgKW1nKL9OuilGs"
-      short-id: "0492eabdb9"
-    network: "tcp"
-
-  - name: "🇳🇱NL-202M-[208eb7/16c094]"
-    type: "vless"
-    server: "196.196.148.63"
-    port: 443
-    uuid: "cda0862a-0f87-4be9-8ed8-1d0c9e382839"
-    udp: true
-    encryption: "none"
-    servername: "717252g.nl8.h1clayd.click"
-    client-fingerprint: "firefox"
-    tls: true
-    reality-opts:
-      public-key: "PD8Jdlg3xB9QY--jwQjp8PFPzCS8-Oryw6-HWBcHMFU"
-      short-id: "d3bd772514c87d28"
-    network: "grpc"
-    grpc-opts:
-      grpc-service-name: "204adda7e3da"
-
   - name: "🇳🇱NL-116M-[ae740e/f74133]"
     type: "vless"
     server: "89.125.48.218"
@@ -373,22 +716,6 @@ proxies:
       short-id: "428ef87fd47a3a32"
     network: "tcp"
 
-  - name: "🇪🇪EE-351M-[890f62/4e35d1]"
-    type: "vless"
-    server: "185.215.184.50"
-    port: 443
-    uuid: "90157e25-cee1-4217-921e-91f300bc1a24"
-    udp: true
-    encryption: "none"
-    flow: "xtls-rprx-vision"
-    servername: "dvizhok.su"
-    client-fingerprint: "firefox"
-    tls: true
-    reality-opts:
-      public-key: "1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs"
-      short-id: "428ef87fd47a3a32"
-    network: "tcp"
-
   - name: "🇫🇮FI-462M-[ad40dc/a9a08a]"
     type: "vless"
     server: "178.214.125.1"
@@ -403,22 +730,6 @@ proxies:
     reality-opts:
       public-key: "ZxCwJxbsZWJYYCPzeWj7_fxJMVhwh4XGfpvjmEIQjHY"
       short-id: "6172ba9cffe9c22f"
-    network: "tcp"
-
-  - name: "🇪🇪EE-349M-[fcac29/3a9a82]"
-    type: "vless"
-    server: "185.215.184.86"
-    port: 443
-    uuid: "90157e25-cee1-4217-921e-91f300bc1a24"
-    udp: true
-    encryption: "none"
-    flow: "xtls-rprx-vision"
-    servername: "dvizhok.su"
-    client-fingerprint: "firefox"
-    tls: true
-    reality-opts:
-      public-key: "1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs"
-      short-id: "428ef87fd47a3a32"
     network: "tcp"
 
   - name: "🇫🇮FI-372M-[95684d/870bca]"
@@ -492,23 +803,6 @@ proxies:
     grpc-opts:
       grpc-service-name: "gw.v2.PushService"
 
-  - name: "🇳🇱NL-76M-[7dd40a/f7eced]"
-    type: "vless"
-    server: "136.234.9.28"
-    port: 443
-    uuid: "cda0862a-0f87-4be9-8ed8-1d0c9e382839"
-    udp: true
-    encryption: "none"
-    servername: "717252g.nl8.h1clayd.click"
-    client-fingerprint: "firefox"
-    tls: true
-    reality-opts:
-      public-key: "PD8Jdlg3xB9QY--jwQjp8PFPzCS8-Oryw6-HWBcHMFU"
-      short-id: "d3bd772514c87d28"
-    network: "grpc"
-    grpc-opts:
-      grpc-service-name: "204adda7e3da"
-
   - name: "🇳🇱NL-132M-[f4d777/d45faf]"
     type: "vless"
     server: "50.7.178.197"
@@ -522,24 +816,6 @@ proxies:
     network: "grpc"
     grpc-opts:
       grpc-service-name: "connect-fr"
-
-  - name: "🇩🇪DE-125M-[cd2c83/dec478]"
-    type: "vless"
-    server: "151.101.36.235"
-    port: 443
-    uuid: "67cd3349-f789-4cbb-8b91-4b6b1654ce7c"
-    udp: true
-    encryption: "none"
-    servername: "accounts.fastly.com"
-    client-fingerprint: "iOS"
-    alpn:
-      - "h3"
-    tls: true
-    network: "xhttp"
-    xhttp-opts:
-      path: "/"
-      host: "ovd13.global.ssl.fastly.net"
-      mode: "auto"
 
   - name: "🇬🇧GB-402M-[f43c91/5dc131]"
     type: "vless"
@@ -621,40 +897,6 @@ proxies:
       short-id: "00000000"
     network: "tcp"
 
-  - name: "🇫🇷FR-177M-[acd8b8/d6ffd7]"
-    type: "vless"
-    server: "151.101.36.246"
-    port: 443
-    uuid: "67cd3349-f789-4cbb-8b91-4b6b1654ce7c"
-    udp: true
-    encryption: "none"
-    servername: "accounts.fastly.com"
-    client-fingerprint: "safari"
-    alpn:
-      - "h3"
-    tls: true
-    network: "xhttp"
-    xhttp-opts:
-      path: "/"
-      host: "ovd12.global.ssl.fastly.net"
-      mode: "auto"
-
-  - name: "🇳🇱NL-117M-[e0c916/508da5]"
-    type: "vless"
-    server: "94.183.164.142"
-    port: 443
-    uuid: "3f5e89d5-591f-4ac9-b071-b05680b573c3"
-    udp: true
-    encryption: "none"
-    servername: "nl4.gacvpn.site"
-    client-fingerprint: "firefox"
-    tls: true
-    network: "ws"
-    ws-opts:
-      path: "/static/js/vendor.cc1645b6.js?ed=2048"
-      headers:
-        Host: "nl4.gacvpn.site"
-
   - name: "🇵🇱PL-405M-[54602b/5bee28]"
     type: "vless"
     server: "177.202.68.217"
@@ -670,24 +912,6 @@ proxies:
       public-key: "DsTVLCehsKvfFGtNZU5leKOLTlEp28qeifHYtRKOFwg"
       short-id: "986ede37bf6925ae"
     network: "tcp"
-
-  - name: "🇫🇷FR-155M-[c41e46/dd5e2f]"
-    type: "vless"
-    server: "151.101.36.2"
-    port: 443
-    uuid: "67cd3349-f789-4cbb-8b91-4b6b1654ce7c"
-    udp: true
-    encryption: "none"
-    servername: "accounts.fastly.com"
-    client-fingerprint: "safari"
-    alpn:
-      - "h3"
-    tls: true
-    network: "xhttp"
-    xhttp-opts:
-      path: "/"
-      host: "oh4.global.ssl.fastly.net"
-      mode: "auto"
 
   - name: "🇫🇷FR-254M-[f9fc3f/abb7cc]"
     type: "vless"
@@ -753,24 +977,6 @@ proxies:
     grpc-opts:
       grpc-service-name: "gw.v2.PushService"
 
-  - name: "🇵🇱PL-122M-[20532f/43e6f3]"
-    type: "vless"
-    server: "151.101.36.128"
-    port: 443
-    uuid: "67cd3349-f789-4cbb-8b91-4b6b1654ce7c"
-    udp: true
-    encryption: "none"
-    servername: "accounts.fastly.com"
-    client-fingerprint: "safari"
-    alpn:
-      - "h3"
-    tls: true
-    network: "xhttp"
-    xhttp-opts:
-      path: "/"
-      host: "ovd7.global.ssl.fastly.net"
-      mode: "auto"
-
   - name: "🇫🇷FR-407M-[e6089c/fffd8f]"
     type: "vless"
     server: "67.159.44.219"
@@ -780,39 +986,6 @@ proxies:
     encryption: "none"
     flow: "xtls-rprx-vision"
     servername: "bestgif.su"
-    client-fingerprint: "chrome"
-    tls: true
-    reality-opts:
-      public-key: "1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs"
-      short-id: "428ef87fd47a3a32"
-    network: "tcp"
-
-  - name: "🇬🇧GB-417M-[a98be9/319c54]"
-    type: "vless"
-    server: "50.7.227.78"
-    port: 443
-    uuid: "90157e25-cee1-4217-921e-91f300bc1a24"
-    udp: true
-    encryption: "none"
-    flow: "xtls-rprx-vision"
-    servername: "bizorg.su"
-    client-fingerprint: "firefox"
-    tls: true
-    reality-opts:
-      public-key: "1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs"
-      short-id: "428ef87fd47a3a32"
-    network: "tcp"
-
-  - name: "🇬🇧GB-454M-[f43c91/703265]"
-    type: "vless"
-    server: "fduknew.titun.su"
-    port: 443
-    uuid: "90157e25-cee1-4217-921e-91f300bc1a24"
-    udp: true
-    encryption: "none"
-    flow: "xtls-rprx-vision"
-    packet-encoding: "xudp"
-    servername: "bizorg.su"
     client-fingerprint: "chrome"
     tls: true
     reality-opts:
@@ -922,20 +1095,6 @@ proxies:
     network: "grpc"
     grpc-opts:
       grpc-service-name: "gw.v2.PushService"
-
-  - name: "🇳🇱NL-101M-[bb4a04/f6c751]"
-    type: "vless"
-    server: "89.105.195.151"
-    port: 443
-    uuid: "1653818d-532e-46be-b825-384107fb7c3a"
-    udp: true
-    encryption: "none"
-    servername: "assets.mediacorphub.org"
-    client-fingerprint: "chrome"
-    tls: true
-    network: "grpc"
-    grpc-opts:
-      grpc-service-name: "hub.v1.ObjectService"
 
   - name: "🇺🇸US-123M-[499b76/804502]"
     type: "vless"
@@ -1696,22 +1855,6 @@ proxies:
     grpc-opts:
       grpc-service-name: "hub.v1.ObjectService"
 
-  - name: "🇳🇱NL-251M-[6347fe/f7535c]"
-    type: "vless"
-    server: "assets.mediacorphub.org"
-    port: 443
-    uuid: "1653818d-532e-46be-b825-384107fb7c3a"
-    udp: true
-    encryption: "none"
-    servername: "assets.mediacorphub.org"
-    client-fingerprint: "iOS"
-    alpn:
-      - "h2"
-    tls: true
-    network: "grpc"
-    grpc-opts:
-      grpc-service-name: "hub.v1.ObjectService"
-
   - name: "🇳🇱NL-277M-[75eec0/9a7448]"
     type: "vless"
     server: "edge.mediacorphub.org"
@@ -1737,19 +1880,43 @@ proxy-groups:
   - name: "AUTO"
     type: select
     proxies:
-      - "🇳🇱NL-360M-[50d326/bd735f]"
-      - "🇳🇱NL-111M-[79e270/764de2]"
+      - "🇳🇱NL-206M-[50d326/bd735f]"
+      - "🇪🇪EE-190M-[2ea4c6/bf07ef]"
+      - "🇳🇱NL-61M-[79e270/764de2]"
+      - "🇳🇱NL-237M-[dda22f/d32add]"
+      - "🇪🇪EE-281M-[fcac29/3a9a82]"
+      - "🇳🇱NL-72M-[208eb7/16c094]"
+      - "🇳🇱NL-276M-[f4d777/94c284]"
+      - "🇳🇱NL-274M-[bb4a04/f6c751]"
+      - "🇩🇪DE-276M-[95d2af/c2f92d]"
+      - "🇮🇹IT-169M-[2325de/f8e6c2]"
+      - "🌐XX-276M-[443e2a/5bc8d3]"
+      - "🇩🇪DE-93M-[cd2c83/dec478]"
+      - "🇫🇷FR-241M-[acd8b8/d6ffd7]"
+      - "🇫🇷FR-77M-[c41e46/dd5e2f]"
+      - "🌐XX-193M-[0addeb/1ad638]"
+      - "🇬🇧GB-431M-[a98be9/319c54]"
+      - "🇳🇱NL-270M-[6347fe/f7535c]"
+      - "🇫🇷FR-402M-[e6089c/0da2be]"
+      - "🇪🇪EE-388M-[890f62/4e35d1]"
+      - "🇳🇱NL-259M-[7dd40a/f7eced]"
+      - "🇩🇪DE-308M-[580782/e17f74]"
+      - "🇬🇧GB-276M-[f43c91/703265]"
+      - "🇵🇱PL-171M-[700305/782937]"
+      - "🇳🇱NL-187M-[a6582a/790318]"
+      - "🇳🇱NL-168M-[551e18/e30397]"
+      - "🇮🇹IT-395M-[02a9bc/acc0c2]"
+      - "🇷🇺RU-179M-[07e9d9/037019]"
+      - "🇵🇱PL-160M-[20532f/43e6f3]"
+      - "🇳🇱NL-277M-[e0c916/508da5]"
+      - "🇫🇷FR-134M-[be8dab/d1a6ee]"
       - "🇳🇱NL-217M-[f4d777/0c87d7]"
       - "🇳🇱NL-76M-[c7b814/54f1b5]"
       - "🇪🇪EE-136M-[884b9b/b15e3a]"
       - "🇫🇷FR-388M-[3f2643/f51a05]"
-      - "🇳🇱NL-254M-[dda22f/d32add]"
       - "🇳🇱NL-323M-[802661/dfb029]"
       - "🇫🇮FI-320M-[b8ab87/15a2f8]"
-      - "🇩🇪DE-375M-[95d2af/c2f92d]"
-      - "🇮🇹IT-184M-[2325de/f8e6c2]"
       - "🇳🇱NL-337M-[6347fe/24196a]"
-      - "🇪🇪EE-414M-[2ea4c6/bf07ef]"
       - "🇳🇱NL-322M-[bb4a04/7b3766]"
       - "🇳🇱NL-348M-[75eec0/167a51]"
       - "🇳🇱NL-337M-[a6582a/da71e3]"
@@ -1757,40 +1924,27 @@ proxy-groups:
       - "🇳🇱NL-357M-[c8d825/8943ff]"
       - "🇸🇪SE-483M-[d51fa3/20b0e4]"
       - "🇳🇱NL-219M-[6bfc43/315011]"
-      - "🇷🇺RU-158M-[07e9d9/037019]"
-      - "🇩🇪DE-184M-[580782/e17f74]"
-      - "🇳🇱NL-202M-[208eb7/16c094]"
       - "🇳🇱NL-116M-[ae740e/f74133]"
       - "🇳🇱NL-411M-[912cb4/cdcbf0]"
       - "🇪🇪EE-85M-[0904f2/aaf753]"
-      - "🇪🇪EE-351M-[890f62/4e35d1]"
       - "🇫🇮FI-462M-[ad40dc/a9a08a]"
-      - "🇪🇪EE-349M-[fcac29/3a9a82]"
       - "🇫🇮FI-372M-[95684d/870bca]"
       - "🇪🇪EE-329M-[0904f2/ecafc2]"
       - "🇩🇪DE-264M-[443e2a/150c95]"
       - "🇵🇱PL-235M-[fc5705/b1d86c]"
       - "🇳🇱NL-263M-[802661/12a3b0]"
-      - "🇳🇱NL-76M-[7dd40a/f7eced]"
       - "🇳🇱NL-132M-[f4d777/d45faf]"
-      - "🇩🇪DE-125M-[cd2c83/dec478]"
       - "🇬🇧GB-402M-[f43c91/5dc131]"
       - "🇳🇱NL-261M-[6347fe/606cb0]"
       - "🇳🇱NL-168M-[2b8508/c309e8]"
       - "🇬🇧GB-348M-[a98be9/569567]"
       - "🇩🇪DE-369M-[4f0adc/fde262]"
-      - "🇫🇷FR-177M-[acd8b8/d6ffd7]"
-      - "🇳🇱NL-117M-[e0c916/508da5]"
       - "🇵🇱PL-405M-[54602b/5bee28]"
-      - "🇫🇷FR-155M-[c41e46/dd5e2f]"
       - "🇫🇷FR-254M-[f9fc3f/abb7cc]"
       - "🇳🇱NL-84M-[479492/953ab8]"
       - "🇫🇷FR-433M-[e6089c/703be1]"
       - "🇳🇱NL-331M-[6bfc43/8236b0]"
-      - "🇵🇱PL-122M-[20532f/43e6f3]"
       - "🇫🇷FR-407M-[e6089c/fffd8f]"
-      - "🇬🇧GB-417M-[a98be9/319c54]"
-      - "🇬🇧GB-454M-[f43c91/703265]"
       - "🇳🇱NL-321M-[e0c916/750e4f]"
       - "🇳🇱NL-134M-[802661/fbe506]"
       - "🇳🇱NL-204M-[dda22f/36b322]"
@@ -1798,7 +1952,6 @@ proxy-groups:
       - "🇳🇱NL-139M-[aab901/946820]"
       - "🇳🇱NL-136M-[6bfc43/d36932]"
       - "🇳🇱NL-146M-[a6582a/deccce]"
-      - "🇳🇱NL-101M-[bb4a04/f6c751]"
       - "🇺🇸US-123M-[499b76/804502]"
       - "🇳🇱NL-29M-[a5cd3b/dff600]"
       - "🇵🇱PL-150M-[b6bb4a/3765a5]"
@@ -1849,7 +2002,6 @@ proxy-groups:
       - "🇳🇱NL-277M-[50d326/3cf108]"
       - "🇳🇱NL-285M-[75eec0/ca4f10]"
       - "🇳🇱NL-219M-[bb4a04/a046bc]"
-      - "🇳🇱NL-251M-[6347fe/f7535c]"
       - "🇳🇱NL-277M-[75eec0/9a7448]"
 
 rules:
