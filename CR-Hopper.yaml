@@ -6,31 +6,23 @@ log-level: warning
 ipv6: false
 
 proxies:
-  - name: "🇫🇮FI-21M-[be7d78/447ff2]"
-    type: "hysteria2"
-    server: "48.102.214.167"
-    port: 4444
-    password: "a35c508f-4d5d-4531-842e-6e9d43c762c0"
-    udp: true
-    sni: "fl5.edgeport.cloud"
-
-  - name: "🇩🇪DE-513M-[06d792/9c2820]"
+  - name: "🇫🇮FI-362M-[95684d/870bca]"
     type: "vless"
-    server: "48.103.120.1"
+    server: "177.3.220.53"
     port: 443
-    uuid: "fa081e9f-7574-4e18-8928-31aa5ac923c7"
+    uuid: "f8d52ece-fad4-478d-875d-df6eed3befa7"
     udp: true
     encryption: "none"
     flow: "xtls-rprx-vision"
-    servername: "de1-b.sbcweb.net"
+    servername: "fi-b2.golangwikito.cfd"
     client-fingerprint: "firefox"
     tls: true
     reality-opts:
-      public-key: "drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ"
-      short-id: "868419504747f6de"
+      public-key: "ZqVz1kWNxh_5zQ5PPkoPHoaXQOvppM0ZyIo8uKp2dCg"
+      short-id: "78f97d82e16aaad6"
     network: "tcp"
 
-  - name: "🇺🇸US-472M-[35ed4d/4fe1c7]"
+  - name: "🇺🇸US-276M-[35ed4d/4fe1c7]"
     type: "vless"
     server: "48.102.167.110"
     port: 443
@@ -46,11 +38,150 @@ proxies:
       short-id: "a3565610aa574a6e"
     network: "tcp"
 
-  - name: "🇮🇹IT-426M-[34bdd9/3506d4]"
+  - name: "🇵🇱PL-263M-[bebe8d/e20e9b]"
+    type: "vless"
+    server: "80.47.11.123"
+    port: 443
+    uuid: "fa081e9f-7574-4e18-8928-31aa5ac923c7"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "pl8.lazeroe.com"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ"
+      short-id: "868419504747f6de"
+    network: "tcp"
+
+  - name: "🇫🇮FI-138M-[95684d/c8a7be]"
+    type: "vless"
+    server: "177.3.220.53"
+    port: 443
+    uuid: "f8d52ece-fad4-478d-875d-df6eed3befa7"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "fi-b2.golangwikito.cfd"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "ZqVz1kWNxh_5zQ5PPkoPHoaXQOvppM0ZyIo8uKp2dCg"
+      short-id: "bdf5852d1423e694"
+    network: "tcp"
+
+  - name: "🇩🇪DE-276M-[d3e96a/adad11]"
+    type: "vless"
+    server: "85.234.100.32"
+    port: 443
+    uuid: "c1208c5a-2350-0003-affd-fc41b4319286"
+    udp: true
+    encryption: "none"
+    servername: "decdn-28.nome-rkp.net"
+    client-fingerprint: "firefox"
+    tls: true
+    network: "ws"
+    ws-opts:
+      path: "/media/ws/"
+      headers:
+        Host: "decdn-28.nome-rkp.net"
+
+  - name: "🇩🇪DE-387M-[406a43/6c8e3c]"
+    type: "vless"
+    server: "decdn-28.nome-rkp.net"
+    port: 443
+    uuid: "c1208c5a-2350-0003-affd-fc41b4319286"
+    udp: true
+    encryption: "none"
+    servername: "decdn-28.nome-rkp.net"
+    client-fingerprint: "chrome"
+    tls: true
+    network: "ws"
+    ws-opts:
+      path: "/media/ws/"
+      headers:
+        Host: "decdn-28.nome-rkp.net"
+
+  - name: "🇺🇸US-168M-[050af6/fd5aff]"
+    type: "vless"
+    server: "48.102.170.205"
+    port: 8443
+    uuid: "1d1eda2e-0bd7-4478-877b-1c5425c6c4dd"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "tradingview.com"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "yr_opKG6DGTppNDXkk-DhGSYJZXbb9o-caexk2FZO38"
+      short-id: "8f3c6e2a1b5d4f09"
+    network: "tcp"
+
+  - name: "🇫🇮FI-231M-[17773f/f6aa4f]"
+    type: "vless"
+    server: "199.232.239.239"
+    port: 443
+    uuid: "5a4db896-caab-4b9c-f747-52ce95b0f9ad"
+    udp: true
+    encryption: "none"
+    servername: "community.fastly.steamstatic.com"
+    client-fingerprint: "firefox"
+    skip-cert-verify: true
+    alpn:
+      - "h2"
+    tls: true
+    network: "xhttp"
+    xhttp-opts:
+      path: "/@CloudVPNchannel/@CloudVPNchannel/@CloudVPNchannel"
+      host: "cloudvpn2026-4.global.prod.fastly.net.global.prod.fastly.net"
+      mode: "packet-up"
+
+  - name: "🇮🇹IT-248M-[34bdd9/3506d4]"
     type: "vless"
     server: "203.23.179.123"
     port: 443
     uuid: "fa081e9f-7574-0002-8928-31aa5ac923c7"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "de1-b.sbcweb.net"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ"
+      short-id: "868419504747f6de"
+    network: "tcp"
+
+  - name: "🇵🇱PL-24M-[1287a6/b933f4]"
+    type: "vless"
+    server: "195.3.223.124"
+    port: 443
+    uuid: "fa081e9f-7574-4e18-8928-31aa5ac923c7"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "tcppl6.lazeroe.com"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ"
+      short-id: "868419504747f6de"
+    network: "tcp"
+
+  - name: "🇫🇮FI-21M-[be7d78/447ff2]"
+    type: "hysteria2"
+    server: "48.102.214.167"
+    port: 4444
+    password: "a35c508f-4d5d-4531-842e-6e9d43c762c0"
+    udp: true
+    sni: "fl5.edgeport.cloud"
+
+  - name: "🇩🇪DE-513M-[06d792/9c2820]"
+    type: "vless"
+    server: "48.103.120.1"
+    port: 443
+    uuid: "fa081e9f-7574-4e18-8928-31aa5ac923c7"
     udp: true
     encryption: "none"
     flow: "xtls-rprx-vision"
@@ -92,22 +223,6 @@ proxies:
     reality-opts:
       public-key: "awc2TGvraH8xMqfsAnNQ7JMQ_uUF8gW5auvU2gQfjR0"
       short-id: "b31de5bead2ebf3c"
-    network: "tcp"
-
-  - name: "🇵🇱PL-239M-[bebe8d/e20e9b]"
-    type: "vless"
-    server: "80.47.11.123"
-    port: 443
-    uuid: "fa081e9f-7574-4e18-8928-31aa5ac923c7"
-    udp: true
-    encryption: "none"
-    flow: "xtls-rprx-vision"
-    servername: "pl8.lazeroe.com"
-    client-fingerprint: "firefox"
-    tls: true
-    reality-opts:
-      public-key: "drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ"
-      short-id: "868419504747f6de"
     network: "tcp"
 
   - name: "🇬🇧GB-529M-[f43c91/703265]"
@@ -414,25 +529,6 @@ proxies:
       short-id: "b31de5bead2ebf3c"
     network: "tcp"
 
-  - name: "🇫🇮FI-235M-[17773f/f6aa4f]"
-    type: "vless"
-    server: "199.232.239.239"
-    port: 443
-    uuid: "5a4db896-caab-4b9c-f747-52ce95b0f9ad"
-    udp: true
-    encryption: "none"
-    servername: "community.fastly.steamstatic.com"
-    client-fingerprint: "firefox"
-    skip-cert-verify: true
-    alpn:
-      - "h2"
-    tls: true
-    network: "xhttp"
-    xhttp-opts:
-      path: "/@CloudVPNchannel/@CloudVPNchannel/@CloudVPNchannel"
-      host: "cloudvpn2026-4.global.prod.fastly.net.global.prod.fastly.net"
-      mode: "packet-up"
-
   - name: "🇷🇴RO-157M-[3aa676/7b7efa]"
     type: "vless"
     server: "forumdrun.xubi.org"
@@ -662,22 +758,6 @@ proxies:
     reality-opts:
       public-key: "VZS639V1i-35g7VXb9EoTYL-Srm7858sxcvFAunncmA"
       short-id: "8d0d0679f42ffd98"
-    network: "tcp"
-
-  - name: "🇫🇮FI-362M-[95684d/870bca]"
-    type: "vless"
-    server: "177.3.220.53"
-    port: 443
-    uuid: "f8d52ece-fad4-478d-875d-df6eed3befa7"
-    udp: true
-    encryption: "none"
-    flow: "xtls-rprx-vision"
-    servername: "fi-b2.golangwikito.cfd"
-    client-fingerprint: "firefox"
-    tls: true
-    reality-opts:
-      public-key: "ZqVz1kWNxh_5zQ5PPkoPHoaXQOvppM0ZyIo8uKp2dCg"
-      short-id: "78f97d82e16aaad6"
     network: "tcp"
 
   - name: "🇳🇱NL-211M-[9b7a67/c21d9e]"
@@ -1499,13 +1579,20 @@ proxy-groups:
   - name: "AUTO"
     type: select
     proxies:
+      - "🇫🇮FI-362M-[95684d/870bca]"
+      - "🇺🇸US-276M-[35ed4d/4fe1c7]"
+      - "🇵🇱PL-263M-[bebe8d/e20e9b]"
+      - "🇫🇮FI-138M-[95684d/c8a7be]"
+      - "🇩🇪DE-276M-[d3e96a/adad11]"
+      - "🇩🇪DE-387M-[406a43/6c8e3c]"
+      - "🇺🇸US-168M-[050af6/fd5aff]"
+      - "🇫🇮FI-231M-[17773f/f6aa4f]"
+      - "🇮🇹IT-248M-[34bdd9/3506d4]"
+      - "🇵🇱PL-24M-[1287a6/b933f4]"
       - "🇫🇮FI-21M-[be7d78/447ff2]"
       - "🇩🇪DE-513M-[06d792/9c2820]"
-      - "🇺🇸US-472M-[35ed4d/4fe1c7]"
-      - "🇮🇹IT-426M-[34bdd9/3506d4]"
       - "🇱🇹LT-436M-[c5f2bd/a085a0]"
       - "🇱🇹LT-417M-[a9d06f/ea1108]"
-      - "🇵🇱PL-239M-[bebe8d/e20e9b]"
       - "🇬🇧GB-529M-[f43c91/703265]"
       - "🇬🇧GB-291M-[358e36/b793cc]"
       - "🇩🇪DE-289M-[4dbb3f/5d799a]"
@@ -1524,7 +1611,6 @@ proxy-groups:
       - "🇳🇱NL-215M-[f26cb1/f28087]"
       - "🌐XX-30M-[d769b8/f74a62]"
       - "🇱🇹LT-346M-[c5f2bd/6040f4]"
-      - "🇫🇮FI-235M-[17773f/f6aa4f]"
       - "🇷🇴RO-157M-[3aa676/7b7efa]"
       - "🇹🇷TR-233M-[5e3778/5e4762]"
       - "🇩🇪DE-143M-[e8f15d/d6c85c]"
@@ -1539,7 +1625,6 @@ proxy-groups:
       - "🇳🇱NL-226M-[bac8de/b23699]"
       - "🇬🇧GB-342M-[281aee/fcfa5a]"
       - "🇳🇱NL-123M-[90f7bb/ebc8dd]"
-      - "🇫🇮FI-362M-[95684d/870bca]"
       - "🇳🇱NL-211M-[9b7a67/c21d9e]"
       - "🇸🇪SE-250M-[c18415/53227b]"
       - "🇳🇱NL-125M-[1fa1e4/dc0a1a]"
