@@ -6,6 +6,32 @@ log-level: warning
 ipv6: false
 
 proxies:
+  - name: "🇹🇷TR-233M-[5e3778/5e4762]"
+    type: "vless"
+    server: "146.75.59.186"
+    port: 443
+    uuid: "8d2cbffd-43d0-458d-906b-7c54b7b51f38"
+    udp: true
+    encryption: "none"
+    servername: "cdn.akamai.steamstatic.com"
+    client-fingerprint: "iOS"
+    skip-cert-verify: true
+    tls: true
+    network: "ws"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "looabomrhesamijji.global.ssl.fastly.net."
+
+  - name: "🇸🇬SG-23M-[027b66/761e7c]"
+    type: "hysteria2"
+    server: "sg1.xiaoliyu.cyou"
+    port: 2056
+    password: "8b64b840-a48d-4ac0-b10f-8f7d7081a0f1"
+    udp: true
+    sni: "sg1.xiaoliyu.cyou"
+    skip-cert-verify: true
+
   - name: "🇩🇪DE-267M-[9930d4/31306f]"
     type: "vless"
     server: "84.32.100.166"
@@ -629,23 +655,6 @@ proxies:
       public-key: "SS-XyOr9wL4mqZPuAaGPAaROVy3_CSP6jFtvZemn21g"
       short-id: "a1b2c3d4e5f60718"
     network: "tcp"
-
-  - name: "🇹🇷TR-233M-[5e3778/5e4762]"
-    type: "vless"
-    server: "146.75.59.186"
-    port: 443
-    uuid: "8d2cbffd-43d0-458d-906b-7c54b7b51f38"
-    udp: true
-    encryption: "none"
-    servername: "cdn.akamai.steamstatic.com"
-    client-fingerprint: "iOS"
-    skip-cert-verify: true
-    tls: true
-    network: "ws"
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "looabomrhesamijji.global.ssl.fastly.net."
 
   - name: "🇩🇪DE-143M-[e8f15d/d6c85c]"
     type: "vless"
@@ -1648,6 +1657,8 @@ proxy-groups:
   - name: "AUTO"
     type: select
     proxies:
+      - "🇹🇷TR-233M-[5e3778/5e4762]"
+      - "🇸🇬SG-23M-[027b66/761e7c]"
       - "🇩🇪DE-267M-[9930d4/31306f]"
       - "🇧🇬BG-81M-[1f11fd/bba9e3]"
       - "🇵🇱PL-245M-[bebe8d/e20e9b]"
@@ -1686,7 +1697,6 @@ proxy-groups:
       - "🇳🇱NL-215M-[f26cb1/f28087]"
       - "🇱🇹LT-346M-[c5f2bd/6040f4]"
       - "🇷🇴RO-157M-[3aa676/7b7efa]"
-      - "🇹🇷TR-233M-[5e3778/5e4762]"
       - "🇩🇪DE-143M-[e8f15d/d6c85c]"
       - "🇺🇸US-63M-[d54b4d/2a6c00]"
       - "🇫🇷FR-56M-[be8dab/d1a6ee]"
