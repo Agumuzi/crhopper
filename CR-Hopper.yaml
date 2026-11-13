@@ -6,6 +6,66 @@ log-level: warning
 ipv6: false
 
 proxies:
+  - name: "🇺🇸US-275M-[e225de/1d88da]"
+    type: "vless"
+    server: "199.232.78.160"
+    port: 443
+    uuid: "97e0ea78-67ae-4984-8a14-a7d1a51e58de"
+    udp: true
+    encryption: "none"
+    servername: "cdn.akamai.steamstatic.com"
+    skip-cert-verify: true
+    tls: true
+    network: "ws"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "copy_az_channel_NUFiLTER_10i.global.ssl.fastly.net."
+
+  - name: "🌐XX-544M-[95684d/870bca]"
+    type: "vless"
+    server: "177.3.220.53"
+    port: 443
+    uuid: "f8d52ece-fad4-478d-875d-df6eed3befa7"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "fi-b2.golangwikito.cfd"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "ZqVz1kWNxh_5zQ5PPkoPHoaXQOvppM0ZyIo8uKp2dCg"
+      short-id: "78f97d82e16aaad6"
+    network: "tcp"
+
+  - name: "🇸🇪SE-65M-[c18415/8e2cc5]"
+    type: "vless"
+    server: "perplexity.ai"
+    port: 443
+    uuid: "240db31e-077c-4ec2-a907-d3237fa06478"
+    udp: true
+    encryption: "mlkem768x25519plus.native.0rtt.vRXNL_XhxPdlqRnLXcf5tKBaB5t33oqSXWOtaK1mAAY"
+    flow: "xtls-rprx-vision"
+    servername: "googoosh.subgift.cyou"
+    client-fingerprint: "unsafe"
+    alpn:
+      - "http/1.1"
+    tls: true
+    network: "ws"
+    ws-opts:
+      path: "/t.me-SubGift"
+      headers:
+        Host: "googoosh.subgift.cyou"
+
+  - name: "🇸🇬SG-27M-[027b66/761e7c]"
+    type: "hysteria2"
+    server: "sg1.xiaoliyu.cyou"
+    port: 2056
+    password: "8b64b840-a48d-4ac0-b10f-8f7d7081a0f1"
+    udp: true
+    sni: "sg1.xiaoliyu.cyou"
+    skip-cert-verify: true
+
   - name: "🇹🇷TR-233M-[5e3778/5e4762]"
     type: "vless"
     server: "146.75.59.186"
@@ -22,15 +82,6 @@ proxies:
       path: "/"
       headers:
         Host: "looabomrhesamijji.global.ssl.fastly.net."
-
-  - name: "🇸🇬SG-23M-[027b66/761e7c]"
-    type: "hysteria2"
-    server: "sg1.xiaoliyu.cyou"
-    port: 2056
-    password: "8b64b840-a48d-4ac0-b10f-8f7d7081a0f1"
-    udp: true
-    sni: "sg1.xiaoliyu.cyou"
-    skip-cert-verify: true
 
   - name: "🇩🇪DE-267M-[9930d4/31306f]"
     type: "vless"
@@ -329,22 +380,6 @@ proxies:
     xhttp-opts:
       path: "/eb278d1e559e"
       mode: "auto"
-
-  - name: "🇫🇮FI-362M-[95684d/870bca]"
-    type: "vless"
-    server: "177.3.220.53"
-    port: 443
-    uuid: "f8d52ece-fad4-478d-875d-df6eed3befa7"
-    udp: true
-    encryption: "none"
-    flow: "xtls-rprx-vision"
-    servername: "fi-b2.golangwikito.cfd"
-    client-fingerprint: "firefox"
-    tls: true
-    reality-opts:
-      public-key: "ZqVz1kWNxh_5zQ5PPkoPHoaXQOvppM0ZyIo8uKp2dCg"
-      short-id: "78f97d82e16aaad6"
-    network: "tcp"
 
   - name: "🇩🇪DE-276M-[d3e96a/adad11]"
     type: "vless"
@@ -1390,22 +1425,6 @@ proxies:
       path: "/"
       host: "nl1.soshelper.space"
 
-  - name: "🇺🇸US-275M-[e225de/1d88da]"
-    type: "vless"
-    server: "199.232.78.160"
-    port: 443
-    uuid: "97e0ea78-67ae-4984-8a14-a7d1a51e58de"
-    udp: true
-    encryption: "none"
-    servername: "cdn.akamai.steamstatic.com"
-    skip-cert-verify: true
-    tls: true
-    network: "ws"
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "copy_az_channel_NUFiLTER_10i.global.ssl.fastly.net."
-
   - name: "🇳🇱NL-203M-[2af34f/1d52a4]"
     type: "vless"
     server: "191.217.217.81"
@@ -1657,8 +1676,11 @@ proxy-groups:
   - name: "AUTO"
     type: select
     proxies:
+      - "🇺🇸US-275M-[e225de/1d88da]"
+      - "🌐XX-544M-[95684d/870bca]"
+      - "🇸🇪SE-65M-[c18415/8e2cc5]"
+      - "🇸🇬SG-27M-[027b66/761e7c]"
       - "🇹🇷TR-233M-[5e3778/5e4762]"
-      - "🇸🇬SG-23M-[027b66/761e7c]"
       - "🇩🇪DE-267M-[9930d4/31306f]"
       - "🇧🇬BG-81M-[1f11fd/bba9e3]"
       - "🇵🇱PL-245M-[bebe8d/e20e9b]"
@@ -1677,7 +1699,6 @@ proxy-groups:
       - "🇱🇹LT-463M-[a9d06f/ea1108]"
       - "🇱🇹LT-400M-[c5f2bd/a085a0]"
       - "🇵🇱PL-21M-[d769b8/f74a62]"
-      - "🇫🇮FI-362M-[95684d/870bca]"
       - "🇩🇪DE-276M-[d3e96a/adad11]"
       - "🇩🇪DE-387M-[406a43/6c8e3c]"
       - "🇺🇸US-168M-[050af6/fd5aff]"
@@ -1740,7 +1761,6 @@ proxy-groups:
       - "🇳🇱NL-244M-[12b8b9/898c53]"
       - "🇳🇱NL-169M-[50167c/de6355]"
       - "🇳🇱NL-154M-[351660/c8a2c6]"
-      - "🇺🇸US-275M-[e225de/1d88da]"
       - "🇳🇱NL-203M-[2af34f/1d52a4]"
       - "🇳🇱NL-302M-[d4189c/ac6cc6]"
       - "🇳🇱NL-182M-[4bad76/e73d14]"
