@@ -6,6 +6,95 @@ log-level: warning
 ipv6: false
 
 proxies:
+  - name: "🇩🇪DE-267M-[9930d4/31306f]"
+    type: "vless"
+    server: "84.32.100.166"
+    port: 443
+    uuid: "fa081e9f-7574-4e18-8928-31aa5ac923c7"
+    udp: true
+    encryption: "none"
+    servername: "de8.lazeroe.com"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ"
+      short-id: "868419504747f6de"
+    network: "tcp"
+
+  - name: "🇧🇬BG-81M-[1f11fd/bba9e3]"
+    type: "vless"
+    server: "earlytrain.net"
+    port: 8443
+    uuid: "37af0181-5598-4aad-a040-d926bcb65757"
+    udp: true
+    encryption: "none"
+    servername: "earlytrain.net"
+    client-fingerprint: "chrome"
+    alpn:
+      - "h2"
+      - "http/1.1"
+    tls: true
+    network: "xhttp"
+    xhttp-opts:
+      path: "/api/v1/upload"
+      host: "earlytrain.net"
+      mode: "auto"
+      reuse-settings:
+        c-max-reuse-times: "64-128"
+        max-concurrency: "16-32"
+        max-connections: 0
+      sc-max-each-post-bytes: 1000000
+      sc-min-posts-interval-ms: 30
+      x-padding-bytes: "100-1000"
+
+  - name: "🇵🇱PL-245M-[bebe8d/e20e9b]"
+    type: "vless"
+    server: "80.47.11.123"
+    port: 443
+    uuid: "fa081e9f-7574-4e18-8928-31aa5ac923c7"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "pl8.lazeroe.com"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ"
+      short-id: "868419504747f6de"
+    network: "tcp"
+
+  - name: "🇮🇹IT-103M-[34bdd9/98d573]"
+    type: "vless"
+    server: "203.23.179.123"
+    port: 443
+    uuid: "fa081e9f-7574-0001-8928-31aa5ac923c7"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "de1-b.sbcweb.net"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ"
+      short-id: "868419504747f6de"
+    network: "tcp"
+
+  - name: "🇺🇸US-161M-[c479e9/9ddb56]"
+    type: "vless"
+    server: "84.32.61.133"
+    port: 443
+    uuid: "fa081e9f-7574-4e18-8928-31aa5ac923c7"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "us5.sbcweb.net"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ"
+      short-id: "868419504747f6de"
+    network: "tcp"
+
   - name: "🇫🇮FI-231M-[17773f/f6aa4f]"
     type: "vless"
     server: "199.232.239.239"
@@ -57,32 +146,6 @@ proxies:
       short-id: "bdf5852d1423e694"
     network: "tcp"
 
-  - name: "🇧🇬BG-107M-[1f11fd/bba9e3]"
-    type: "vless"
-    server: "earlytrain.net"
-    port: 8443
-    uuid: "37af0181-5598-4aad-a040-d926bcb65757"
-    udp: true
-    encryption: "none"
-    servername: "earlytrain.net"
-    client-fingerprint: "chrome"
-    alpn:
-      - "h2"
-      - "http/1.1"
-    tls: true
-    network: "xhttp"
-    xhttp-opts:
-      path: "/api/v1/upload"
-      host: "earlytrain.net"
-      mode: "auto"
-      reuse-settings:
-        c-max-reuse-times: "64-128"
-        max-concurrency: "16-32"
-        max-connections: 0
-      sc-max-each-post-bytes: 1000000
-      sc-min-posts-interval-ms: 30
-      x-padding-bytes: "100-1000"
-
   - name: "🇩🇪DE-119M-[4dbb3f/5d799a]"
     type: "vless"
     server: "107.189.23.205"
@@ -97,22 +160,6 @@ proxies:
     reality-opts:
       public-key: "5Xgf3UO6yZb7gCK3R3GULk8jyNIp7Sr-26YXZfSW71c"
       short-id: "13975a8e0bd50e7c"
-    network: "tcp"
-
-  - name: "🇮🇹IT-276M-[34bdd9/98d573]"
-    type: "vless"
-    server: "203.23.179.123"
-    port: 443
-    uuid: "fa081e9f-7574-0001-8928-31aa5ac923c7"
-    udp: true
-    encryption: "none"
-    flow: "xtls-rprx-vision"
-    servername: "de1-b.sbcweb.net"
-    client-fingerprint: "firefox"
-    tls: true
-    reality-opts:
-      public-key: "drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ"
-      short-id: "868419504747f6de"
     network: "tcp"
 
   - name: "🇺🇸US-276M-[35ed4d/4fe1c7]"
@@ -188,22 +235,6 @@ proxies:
     udp: true
     encryption: "none"
     tls: false
-    network: "tcp"
-
-  - name: "🇺🇸US-86M-[c479e9/9ddb56]"
-    type: "vless"
-    server: "84.32.61.133"
-    port: 443
-    uuid: "fa081e9f-7574-4e18-8928-31aa5ac923c7"
-    udp: true
-    encryption: "none"
-    flow: "xtls-rprx-vision"
-    servername: "us5.sbcweb.net"
-    client-fingerprint: "firefox"
-    tls: true
-    reality-opts:
-      public-key: "drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ"
-      short-id: "868419504747f6de"
     network: "tcp"
 
   - name: "🇷🇴RO-308M-[01c4a8/e707b6]"
@@ -287,22 +318,6 @@ proxies:
     reality-opts:
       public-key: "ZqVz1kWNxh_5zQ5PPkoPHoaXQOvppM0ZyIo8uKp2dCg"
       short-id: "78f97d82e16aaad6"
-    network: "tcp"
-
-  - name: "🇵🇱PL-263M-[bebe8d/e20e9b]"
-    type: "vless"
-    server: "80.47.11.123"
-    port: 443
-    uuid: "fa081e9f-7574-4e18-8928-31aa5ac923c7"
-    udp: true
-    encryption: "none"
-    flow: "xtls-rprx-vision"
-    servername: "pl8.lazeroe.com"
-    client-fingerprint: "firefox"
-    tls: true
-    reality-opts:
-      public-key: "drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ"
-      short-id: "868419504747f6de"
     network: "tcp"
 
   - name: "🇩🇪DE-276M-[d3e96a/adad11]"
@@ -484,21 +499,6 @@ proxies:
       sc-max-each-post-bytes: 1000000
       sc-min-posts-interval-ms: 30
       x-padding-bytes: "100-1000"
-
-  - name: "🇩🇪DE-267M-[9930d4/31306f]"
-    type: "vless"
-    server: "84.32.100.166"
-    port: 443
-    uuid: "fa081e9f-7574-4e18-8928-31aa5ac923c7"
-    udp: true
-    encryption: "none"
-    servername: "de8.lazeroe.com"
-    client-fingerprint: "firefox"
-    tls: true
-    reality-opts:
-      public-key: "drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ"
-      short-id: "868419504747f6de"
-    network: "tcp"
 
   - name: "🇩🇪DE-118M-[51f33e/8394d7]"
     type: "vless"
@@ -1648,24 +1648,25 @@ proxy-groups:
   - name: "AUTO"
     type: select
     proxies:
+      - "🇩🇪DE-267M-[9930d4/31306f]"
+      - "🇧🇬BG-81M-[1f11fd/bba9e3]"
+      - "🇵🇱PL-245M-[bebe8d/e20e9b]"
+      - "🇮🇹IT-103M-[34bdd9/98d573]"
+      - "🇺🇸US-161M-[c479e9/9ddb56]"
       - "🇫🇮FI-231M-[17773f/f6aa4f]"
       - "🇳🇱NL-242M-[d29de7/98a7a3]"
       - "🇫🇮FI-276M-[95684d/c8a7be]"
-      - "🇧🇬BG-107M-[1f11fd/bba9e3]"
       - "🇩🇪DE-119M-[4dbb3f/5d799a]"
-      - "🇮🇹IT-276M-[34bdd9/98d573]"
       - "🇺🇸US-276M-[35ed4d/4fe1c7]"
       - "🇵🇱PL-235M-[1287a6/b933f4]"
       - "🇬🇧GB-276M-[f43c91/703265]"
       - "🇬🇧GB-277M-[358e36/b793cc]"
       - "🇺🇸US-144M-[d5ea44/0c3fa4]"
-      - "🇺🇸US-86M-[c479e9/9ddb56]"
       - "🇷🇴RO-308M-[01c4a8/e707b6]"
       - "🇱🇹LT-463M-[a9d06f/ea1108]"
       - "🇱🇹LT-400M-[c5f2bd/a085a0]"
       - "🇵🇱PL-21M-[d769b8/f74a62]"
       - "🇫🇮FI-362M-[95684d/870bca]"
-      - "🇵🇱PL-263M-[bebe8d/e20e9b]"
       - "🇩🇪DE-276M-[d3e96a/adad11]"
       - "🇩🇪DE-387M-[406a43/6c8e3c]"
       - "🇺🇸US-168M-[050af6/fd5aff]"
@@ -1677,7 +1678,6 @@ proxy-groups:
       - "🇵🇱PL-28M-[346dcf/0315fa]"
       - "🇺🇸US-35M-[d54b4d/abf23c]"
       - "🇧🇬BG-114M-[1f11fd/bb4df5]"
-      - "🇩🇪DE-267M-[9930d4/31306f]"
       - "🇩🇪DE-118M-[51f33e/8394d7]"
       - "🇳🇱NL-403M-[c4e6f3/a699d8]"
       - "🇺🇸US-128M-[e225de/4523b6]"
