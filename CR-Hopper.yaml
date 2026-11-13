@@ -6,16 +6,7 @@ log-level: warning
 ipv6: false
 
 proxies:
-  - name: "🇸🇬SG-27M-[027b66/761e7c]"
-    type: "hysteria2"
-    server: "sg1.xiaoliyu.cyou"
-    port: 2056
-    password: "8b64b840-a48d-4ac0-b10f-8f7d7081a0f1"
-    udp: true
-    sni: "sg1.xiaoliyu.cyou"
-    skip-cert-verify: true
-
-  - name: "🇩🇪DE-135M-[bb2fb8/cf83bf]"
+  - name: "🇩🇪DE-262M-[bb2fb8/cf83bf]"
     type: "vless"
     server: "157.173.16.162"
     port: 443
@@ -31,7 +22,105 @@ proxies:
       short-id: "569eb4ca6edbd45f"
     network: "tcp"
 
-  - name: "🇫🇷FR-56M-[be8dab/d1a6ee]"
+  - name: "🇸🇪SE-358M-[c18415/4edef4]"
+    type: "vless"
+    server: "perplexity.ai"
+    port: 443
+    uuid: "e60b77ce-1fca-4751-82b0-ef0c3d746efe"
+    udp: true
+    encryption: "mlkem768x25519plus.native.0rtt.DnzFjeBiVd9hsdJLa3doeSXL6TXTWhAs02TzQZdLDXw"
+    flow: "xtls-rprx-vision"
+    servername: "moon.subgift24.bond"
+    client-fingerprint: "unsafe"
+    alpn:
+      - "http/1.1"
+    tls: true
+    network: "ws"
+    ws-opts:
+      path: "/t.me-SubGift"
+      headers:
+        Host: "moon.subgift24.bond"
+
+  - name: "🇳🇱NL-147M-[1fa1e4/08cdbb]"
+    type: "vless"
+    server: "8a2e72t.nl11.h1clayd.click"
+    port: 443
+    uuid: "4201786b-d99b-4147-a5f0-20d47acddb81"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    packet-encoding: "xudp"
+    servername: "8a2e72t.nl11.h1clayd.click"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "VZS639V1i-35g7VXb9EoTYL-Srm7858sxcvFAunncmA"
+      short-id: "8d0d0679f42ffd98"
+    network: "tcp"
+
+  - name: "🇸🇬SG-77M-[027b66/761e7c]"
+    type: "hysteria2"
+    server: "sg1.xiaoliyu.cyou"
+    port: 2056
+    password: "8b64b840-a48d-4ac0-b10f-8f7d7081a0f1"
+    udp: true
+    sni: "sg1.xiaoliyu.cyou"
+    skip-cert-verify: true
+
+  - name: "🇩🇪DE-250M-[e02d63/fe3c56]"
+    type: "vless"
+    server: "silk.filnex.baby"
+    port: 443
+    uuid: "820fa845-a1eb-4a83-b613-e6714cea8a1a"
+    udp: true
+    encryption: "none"
+    servername: "silk.filnex.baby"
+    client-fingerprint: "chrome"
+    alpn:
+      - "http/1.1"
+    tls: true
+    network: "ws"
+    ws-opts:
+      path: "/api/de5/stream"
+      headers:
+        Host: "silk.filnex.baby"
+
+  - name: "🇹🇷TR-113M-[5e3778/5e4762]"
+    type: "vless"
+    server: "146.75.59.186"
+    port: 443
+    uuid: "8d2cbffd-43d0-458d-906b-7c54b7b51f38"
+    udp: true
+    encryption: "none"
+    servername: "cdn.akamai.steamstatic.com"
+    client-fingerprint: "iOS"
+    skip-cert-verify: true
+    tls: true
+    network: "ws"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "looabomrhesamijji.global.ssl.fastly.net."
+
+  - name: "🇩🇪DE-63M-[67572a/ad3cc7]"
+    type: "vless"
+    server: "ivory.filnex.baby"
+    port: 443
+    uuid: "820fa845-a1eb-4a83-b613-e6714cea8a1a"
+    udp: true
+    encryption: "none"
+    servername: "ivory.filnex.baby"
+    client-fingerprint: "chrome"
+    alpn:
+      - "http/1.1"
+    tls: true
+    network: "ws"
+    ws-opts:
+      path: "/api/de4/stream"
+      headers:
+        Host: "ivory.filnex.baby"
+
+  - name: "🇫🇷FR-30M-[be8dab/d1a6ee]"
     type: "vless"
     server: "199.232.78.120"
     port: 443
@@ -46,6 +135,19 @@ proxies:
       path: "/"
       headers:
         Host: "fraboijji.global.ssl.fastly.net."
+
+  - name: "🇳🇱NL-20M-[52cc79/5500b9]"
+    type: "vless"
+    server: "connect6.blog-forme.ru"
+    port: 443
+    uuid: "549766c3-fa5f-471e-8031-ffc1f8d5064f"
+    udp: true
+    encryption: "none"
+    servername: "connect6.blog-forme.ru"
+    tls: true
+    network: "ws"
+    ws-opts:
+      path: "/v2/connect/a9cbd64ca09f8612"
 
   - name: "🇳🇱NL-125M-[1fa1e4/dc0a1a]"
     type: "vless"
@@ -73,23 +175,6 @@ proxies:
     udp: true
     network: "tcp"
 
-  - name: "🇳🇱NL-68M-[1fa1e4/08cdbb]"
-    type: "vless"
-    server: "8a2e72t.nl11.h1clayd.click"
-    port: 443
-    uuid: "4201786b-d99b-4147-a5f0-20d47acddb81"
-    udp: true
-    encryption: "none"
-    flow: "xtls-rprx-vision"
-    packet-encoding: "xudp"
-    servername: "8a2e72t.nl11.h1clayd.click"
-    client-fingerprint: "firefox"
-    tls: true
-    reality-opts:
-      public-key: "VZS639V1i-35g7VXb9EoTYL-Srm7858sxcvFAunncmA"
-      short-id: "8d0d0679f42ffd98"
-    network: "tcp"
-
 proxy-groups:
   - name: "GLOBAL"
     type: select
@@ -99,12 +184,17 @@ proxy-groups:
   - name: "AUTO"
     type: select
     proxies:
-      - "🇸🇬SG-27M-[027b66/761e7c]"
-      - "🇩🇪DE-135M-[bb2fb8/cf83bf]"
-      - "🇫🇷FR-56M-[be8dab/d1a6ee]"
+      - "🇩🇪DE-262M-[bb2fb8/cf83bf]"
+      - "🇸🇪SE-358M-[c18415/4edef4]"
+      - "🇳🇱NL-147M-[1fa1e4/08cdbb]"
+      - "🇸🇬SG-77M-[027b66/761e7c]"
+      - "🇩🇪DE-250M-[e02d63/fe3c56]"
+      - "🇹🇷TR-113M-[5e3778/5e4762]"
+      - "🇩🇪DE-63M-[67572a/ad3cc7]"
+      - "🇫🇷FR-30M-[be8dab/d1a6ee]"
+      - "🇳🇱NL-20M-[52cc79/5500b9]"
       - "🇳🇱NL-125M-[1fa1e4/dc0a1a]"
       - "🇸🇬SG-78M-[e98022/14b6ae]"
-      - "🇳🇱NL-68M-[1fa1e4/08cdbb]"
 
 rules:
   - "DOMAIN,smtp.gmail.com,DIRECT"
