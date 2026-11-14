@@ -6,6 +6,32 @@ log-level: warning
 ipv6: false
 
 proxies:
+  - name: "🇧🇬BG-60M-[1f11fd/d54fc3]"
+    type: "vless"
+    server: "earlytrain.net"
+    port: 8443
+    uuid: "37af0181-5598-4aad-a040-d926bcb65757"
+    udp: true
+    encryption: "none"
+    servername: "earlytrain.net"
+    client-fingerprint: "chrome"
+    alpn:
+      - "h2"
+      - "http/1.1"
+    tls: true
+    network: "xhttp"
+    xhttp-opts:
+      path: "/api/v1/upload"
+      host: "earlytrain.net"
+      mode: "auto"
+      reuse-settings:
+        c-max-reuse-times: "64-128"
+        max-concurrency: "16-32"
+        max-connections: 0
+      sc-max-each-post-bytes: 1000000
+      sc-min-posts-interval-ms: 30
+      x-padding-bytes: "100-1000"
+
   - name: "🇧🇬BG-221M-[1f11fd/da0831]"
     type: "vless"
     server: "earlytrain.net"
@@ -31,6 +57,16 @@ proxies:
       sc-min-posts-interval-ms: 30
       x-padding-bytes: "100-1000"
 
+  - name: "🇭🇰HK-108M-[516399/225768]"
+    type: "vmess"
+    server: "103.160.180.26"
+    port: 22222
+    uuid: "a5206a55-d5bd-41b9-92a5-bd27a90355ff"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    network: "tcp"
+
   - name: "🇫🇮FI-483M-[95684d/870bca]"
     type: "vless"
     server: "177.3.220.53"
@@ -46,6 +82,24 @@ proxies:
       public-key: "ZqVz1kWNxh_5zQ5PPkoPHoaXQOvppM0ZyIo8uKp2dCg"
       short-id: "78f97d82e16aaad6"
     network: "tcp"
+
+  - name: "🇳🇱NL-474M-[b01ead/c98481]"
+    type: "vless"
+    server: "whitepanel-ui-production-c594e7d1.up.railway.app"
+    port: 443
+    uuid: "8f326bdd-8456-2cde-930d-8d90df11c886"
+    udp: true
+    encryption: "none"
+    servername: "whitepanel-ui-production-c594e7d1.up.railway.app"
+    client-fingerprint: "chrome"
+    alpn:
+      - "http/1.1"
+    tls: true
+    network: "ws"
+    ws-opts:
+      path: "/ws/8f326bdd-8456-2cde-930d-8d90df11c886"
+      headers:
+        Host: "whitepanel-ui-production-c594e7d1.up.railway.app"
 
   - name: "🇺🇸US-223M-[bdcd75/a1e791]"
     type: "vless"
@@ -63,7 +117,7 @@ proxies:
       short-id: "acb05d85369b"
     network: "tcp"
 
-  - name: "🇺🇸US-29M-[be8dab/f557c4]"
+  - name: "🇺🇸US-28M-[be8dab/f557c4]"
     type: "vless"
     server: "199.232.78.120"
     port: 443
@@ -88,10 +142,13 @@ proxy-groups:
   - name: "AUTO"
     type: select
     proxies:
+      - "🇧🇬BG-60M-[1f11fd/d54fc3]"
       - "🇧🇬BG-221M-[1f11fd/da0831]"
+      - "🇭🇰HK-108M-[516399/225768]"
       - "🇫🇮FI-483M-[95684d/870bca]"
+      - "🇳🇱NL-474M-[b01ead/c98481]"
       - "🇺🇸US-223M-[bdcd75/a1e791]"
-      - "🇺🇸US-29M-[be8dab/f557c4]"
+      - "🇺🇸US-28M-[be8dab/f557c4]"
 
 rules:
   - "DOMAIN,smtp.gmail.com,DIRECT"
