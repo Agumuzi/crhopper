@@ -6,6 +6,38 @@ log-level: warning
 ipv6: false
 
 proxies:
+  - name: "🇫🇷FR-28M-[be8dab/d1a6ee]"
+    type: "vless"
+    server: "199.232.78.120"
+    port: 443
+    uuid: "8d2cbffd-43d0-458d-906b-7c54b7b51f38"
+    udp: true
+    encryption: "none"
+    servername: "cdn.akamai.steamstatic.com"
+    skip-cert-verify: true
+    tls: true
+    network: "ws"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "fraboijji.global.ssl.fastly.net."
+
+  - name: "🇷🇺RU-315M-[e2dd12/94efde]"
+    type: "vless"
+    server: "83.141.69.189"
+    port: 443
+    uuid: "20d56ff9-359e-4983-9b04-6402e9ebce08"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "cdn.savesafe.space"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "X5QCQAU6PhQ0ZYdMfsOD8SzK2tAcKqGbqHcGKOCkHg0"
+      short-id: "3e70d4cbb01bddfd"
+    network: "tcp"
+
   - name: "🇫🇮FI-397M-[95684d/c8a7be]"
     type: "vless"
     server: "177.3.220.53"
@@ -252,22 +284,6 @@ proxies:
     cipher: "auto"
     udp: true
     network: "tcp"
-
-  - name: "🇫🇷FR-129M-[be8dab/d1a6ee]"
-    type: "vless"
-    server: "199.232.78.120"
-    port: 443
-    uuid: "8d2cbffd-43d0-458d-906b-7c54b7b51f38"
-    udp: true
-    encryption: "none"
-    servername: "cdn.akamai.steamstatic.com"
-    skip-cert-verify: true
-    tls: true
-    network: "ws"
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "fraboijji.global.ssl.fastly.net."
 
   - name: "🇵🇱PL-275M-[800c4e/462025]"
     type: "hysteria2"
@@ -750,6 +766,8 @@ proxy-groups:
   - name: "AUTO"
     type: select
     proxies:
+      - "🇫🇷FR-28M-[be8dab/d1a6ee]"
+      - "🇷🇺RU-315M-[e2dd12/94efde]"
       - "🇫🇮FI-397M-[95684d/c8a7be]"
       - "🇳🇱NL-301M-[c8d825/8943ff]"
       - "🇳🇱NL-381M-[107018/f45397]"
@@ -766,7 +784,6 @@ proxy-groups:
       - "🇸🇬SG-28M-[027b66/761e7c]"
       - "🇯🇵JP-21M-[52cf99/299a7c]"
       - "🌐XX-28M-[e98022/be11c1]"
-      - "🇫🇷FR-129M-[be8dab/d1a6ee]"
       - "🇵🇱PL-275M-[800c4e/462025]"
       - "🇷🇴RO-224M-[233394/a70a7a]"
       - "🇨🇿CZ-276M-[e4ae28/201fe6]"
