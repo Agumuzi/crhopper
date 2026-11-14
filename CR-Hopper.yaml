@@ -6,6 +6,112 @@ log-level: warning
 ipv6: false
 
 proxies:
+  - name: "🇫🇮FI-397M-[95684d/c8a7be]"
+    type: "vless"
+    server: "177.3.220.53"
+    port: 443
+    uuid: "f8d52ece-fad4-478d-875d-df6eed3befa7"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "fi-b2.golangwikito.cfd"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "ZqVz1kWNxh_5zQ5PPkoPHoaXQOvppM0ZyIo8uKp2dCg"
+      short-id: "bdf5852d1423e694"
+    network: "tcp"
+
+  - name: "🇫🇮FI-276M-[95684d/870bca]"
+    type: "vless"
+    server: "177.3.220.53"
+    port: 443
+    uuid: "f8d52ece-fad4-478d-875d-df6eed3befa7"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "fi-b2.golangwikito.cfd"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "ZqVz1kWNxh_5zQ5PPkoPHoaXQOvppM0ZyIo8uKp2dCg"
+      short-id: "78f97d82e16aaad6"
+    network: "tcp"
+
+  - name: "🌐XX-76M-[513a0c/ac7432]"
+    type: "vless"
+    server: "185.122.167.103"
+    port: 59130
+    uuid: "b771804e-a62c-429f-a56c-9f0a452d8f6e"
+    udp: true
+    encryption: "mlkem768x25519plus.native.0rtt.8oUBloz7dC7Dj2HwtrH_gsqKLAfv3sw1me3xB5yBQjA"
+    flow: "xtls-rprx-vision"
+    servername: "nvplm.stg.nvidia.com"
+    client-fingerprint: "chrome"
+    tls: true
+    reality-opts:
+      public-key: "6Lh48ni3w8oe9QW3xVzNMIE5LU-p5VPHPMCUtVMOmgo"
+      short-id: "14"
+    network: "tcp"
+
+  - name: "🇳🇱NL-276M-[a7b84c/08ac40]"
+    type: "vmess"
+    server: "dklietestyui-production.up.railway.app"
+    port: 443
+    uuid: "50de15cf-c737-42f1-bbe5-6ad3ab433a07"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    tls: true
+    servername: "dklietestyui-production.up.railway.app"
+    network: "ws"
+    ws-opts:
+      path: "/api/oBQ3uf"
+      headers:
+        Host: "dklietestyui-production.up.railway.app"
+
+  - name: "🇺🇸US-217M-[3ebd42/46ab93]"
+    type: "trojan"
+    server: "96.44.133.37"
+    port: 2087
+    password: "2e7sEZERnvGOlt35hf6rNg"
+    udp: true
+    sni: "www.bing.com"
+    skip-cert-verify: true
+    network: "tcp"
+
+  - name: "🇺🇸US-130M-[bdcd75/a1e791]"
+    type: "vless"
+    server: "204.152.198.135"
+    port: 57938
+    uuid: "d62f1228-251a-4fa9-a739-093244083cab"
+    udp: true
+    encryption: "mlkem768x25519plus.native.0rtt.Rej94IYrH64T6AyDB9hNM4Js72UHDSn_DPVlPwVoi2c"
+    flow: "xtls-rprx-vision"
+    servername: "api.docs.nvidia.com"
+    client-fingerprint: "chrome"
+    tls: true
+    reality-opts:
+      public-key: "W_VahGtN28jS59zNCnex-Bfpz2eNVY5VveQwkHoUZgQ"
+      short-id: "acb05d85369b"
+    network: "tcp"
+
+  - name: "🇺🇸US-21M-[be8dab/f557c4]"
+    type: "vless"
+    server: "199.232.78.120"
+    port: 443
+    uuid: "8d2cbffd-43d0-458d-906b-7c54b7b51f38"
+    udp: true
+    encryption: "none"
+    servername: "cdn.akamai.steamstatic.com"
+    skip-cert-verify: true
+    tls: true
+    network: "ws"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "ushetzijji.global.ssl.fastly.net."
+
   - name: "🇫🇷FR-28M-[be8dab/d1a6ee]"
     type: "vless"
     server: "199.232.78.120"
@@ -36,22 +142,6 @@ proxies:
     reality-opts:
       public-key: "X5QCQAU6PhQ0ZYdMfsOD8SzK2tAcKqGbqHcGKOCkHg0"
       short-id: "3e70d4cbb01bddfd"
-    network: "tcp"
-
-  - name: "🇫🇮FI-397M-[95684d/c8a7be]"
-    type: "vless"
-    server: "177.3.220.53"
-    port: 443
-    uuid: "f8d52ece-fad4-478d-875d-df6eed3befa7"
-    udp: true
-    encryption: "none"
-    flow: "xtls-rprx-vision"
-    servername: "fi-b2.golangwikito.cfd"
-    client-fingerprint: "firefox"
-    tls: true
-    reality-opts:
-      public-key: "ZqVz1kWNxh_5zQ5PPkoPHoaXQOvppM0ZyIo8uKp2dCg"
-      short-id: "bdf5852d1423e694"
     network: "tcp"
 
   - name: "🇳🇱NL-301M-[c8d825/8943ff]"
@@ -766,9 +856,15 @@ proxy-groups:
   - name: "AUTO"
     type: select
     proxies:
+      - "🇫🇮FI-397M-[95684d/c8a7be]"
+      - "🇫🇮FI-276M-[95684d/870bca]"
+      - "🌐XX-76M-[513a0c/ac7432]"
+      - "🇳🇱NL-276M-[a7b84c/08ac40]"
+      - "🇺🇸US-217M-[3ebd42/46ab93]"
+      - "🇺🇸US-130M-[bdcd75/a1e791]"
+      - "🇺🇸US-21M-[be8dab/f557c4]"
       - "🇫🇷FR-28M-[be8dab/d1a6ee]"
       - "🇷🇺RU-315M-[e2dd12/94efde]"
-      - "🇫🇮FI-397M-[95684d/c8a7be]"
       - "🇳🇱NL-301M-[c8d825/8943ff]"
       - "🇳🇱NL-381M-[107018/f45397]"
       - "🇺🇸US-69M-[f3f80e/da3416]"
