@@ -6,6 +6,253 @@ log-level: warning
 ipv6: false
 
 proxies:
+  - name: "🇫🇮FI-397M-[95684d/c8a7be]"
+    type: "vless"
+    server: "177.3.220.53"
+    port: 443
+    uuid: "f8d52ece-fad4-478d-875d-df6eed3befa7"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "fi-b2.golangwikito.cfd"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "ZqVz1kWNxh_5zQ5PPkoPHoaXQOvppM0ZyIo8uKp2dCg"
+      short-id: "bdf5852d1423e694"
+    network: "tcp"
+
+  - name: "🇳🇱NL-301M-[c8d825/8943ff]"
+    type: "vless"
+    server: "radar.cloudflare.com"
+    port: 8080
+    uuid: "cfa71937-73d5-4eb8-9b25-eadecd944803"
+    udp: true
+    encryption: "none"
+    packet-encoding: "xudp"
+    tls: false
+    network: "ws"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "sh-harand.shcharand00.workers.dev"
+
+  - name: "🇳🇱NL-381M-[107018/f45397]"
+    type: "vless"
+    server: "31.77.217.124"
+    port: 28004
+    uuid: "142559e8-6c3a-42fc-acbe-d5bc33f420b8"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "connect.i-love-russia.online"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "X55pAuXu8jxuXS03vzSdf9T7QSiEilXngKvXi4_AShU"
+      short-id: "bc6e2fcfa32fe6fa"
+    network: "tcp"
+
+  - name: "🇺🇸US-69M-[f3f80e/da3416]"
+    type: "vless"
+    server: "api.alder.lalibobi.online"
+    port: 443
+    uuid: "7d718630-7a1a-4af8-9332-aa0610634e8a"
+    udp: true
+    encryption: "none"
+    servername: "api.alder.lalibobi.online"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "tKzo0qk-NJCNnmxmSgP7uGmd9VHKiTG2L-YqXYGj4Dc"
+      short-id: "203242200f9d16be"
+    network: "grpc"
+    grpc-opts:
+      grpc-service-name: "shop.v1.Catalog"
+
+  - name: "🇪🇪EE-98M-[4e72bb/2ae9de]"
+    type: "vless"
+    server: "132.243.67.197"
+    port: 443
+    uuid: "7d718630-7a1a-4af8-9332-aa0610634e8a"
+    udp: true
+    encryption: "none"
+    servername: "media.aava.lalibobi.online"
+    client-fingerprint: "firefox"
+    alpn:
+      - "http/1.1"
+    tls: true
+    network: "ws"
+    ws-opts:
+      path: "/live/showroom"
+
+  - name: "🇧🇬BG-293M-[26cfc3/425054]"
+    type: "vless"
+    server: "46.243.234.17"
+    port: 8443
+    uuid: "37af0181-5598-4aad-a040-d926bcb65757"
+    udp: true
+    encryption: "none"
+    servername: "windytrout.net"
+    alpn:
+      - "h2"
+      - "http/1.1"
+    tls: true
+    network: "xhttp"
+    xhttp-opts:
+      path: "/api/v1/upload"
+      host: "windytrout.net"
+      mode: "auto"
+
+  - name: "🇺🇸US-148M-[2094dd/f18e70]"
+    type: "vless"
+    server: "79.98.38.24"
+    port: 443
+    uuid: "7d718630-7a1a-4af8-9332-aa0610634e8a"
+    udp: true
+    encryption: "none"
+    servername: "api.alder.lalibobi.online"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "tKzo0qk-NJCNnmxmSgP7uGmd9VHKiTG2L-YqXYGj4Dc"
+      short-id: "203242200f9d16be"
+    network: "grpc"
+    grpc-opts:
+      grpc-service-name: "shop.v1.Catalog"
+
+  - name: "🇧🇬BG-85M-[777e9e/6c3de4]"
+    type: "vless"
+    server: "185.178.208.140"
+    port: 443
+    uuid: "5be144a2-75d3-476a-badb-fa57336617e5"
+    udp: true
+    encryption: "none"
+    servername: "kfx7q.bakarova-top.ru"
+    client-fingerprint: "firefox"
+    tls: true
+    network: "xhttp"
+    xhttp-opts:
+      path: "/api/v2/events"
+      host: "kfx7q.bakarova-top.ru"
+      mode: "packet-up"
+
+  - name: "🇺🇸US-234M-[c00bc3/1f79cb]"
+    type: "trojan"
+    server: "fastly2.dunnexa.ir"
+    port: 443
+    password: "jcTG9WSWMJAmR4rv10xpww"
+    udp: true
+    sni: "cdn.akamai.steamstatic.com"
+    skip-cert-verify: true
+    network: "ws"
+    ws-opts:
+      path: "/TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER"
+      headers:
+        Host: "copy_az_channel_nufilter_17i.global.ssl.fastly.net."
+
+  - name: "🇪🇪EE-130M-[5f6614/b64637]"
+    type: "vless"
+    server: "95.85.243.40"
+    port: 443
+    uuid: "7d718630-7a1a-4af8-9332-aa0610634e8a"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "saar-est3.lalibobi.online"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "Oc8iFCgfl2hRU3yCf2aaZOxiuK5GLwxct3lYy6sw7nk"
+      short-id: ""
+    network: "tcp"
+
+  - name: "🇪🇪EE-157M-[6a21ef/5ba534]"
+    type: "vless"
+    server: "saar-est3.lalibobi.online"
+    port: 443
+    uuid: "7d718630-7a1a-4af8-9332-aa0610634e8a"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "saar-est3.lalibobi.online"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "Oc8iFCgfl2hRU3yCf2aaZOxiuK5GLwxct3lYy6sw7nk"
+      short-id: ""
+    network: "tcp"
+
+  - name: "🇳🇱NL-32M-[2ca5c7/5dd143]"
+    type: "vless"
+    server: "93.152.215.172"
+    port: 443
+    uuid: "6db6b948-655f-4f68-a9e7-865050e05b31"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "93.152.215.172"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "_bGFsLP1Vw7sK0g6oervHFV00C5O3q7X3x_aOo-zhWI"
+      short-id: "672cac"
+    network: "tcp"
+
+  - name: "🇫🇮FI-35M-[d10cb3/5b3a36]"
+    type: "vless"
+    server: "1c7b4fx.fi9.h1clayd.click"
+    port: 443
+    uuid: "0753957f-bbb0-48ea-8bd3-b0c709e552d7"
+    udp: true
+    encryption: "none"
+    servername: "1c7b4fx.fi9.h1clayd.click"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "8ktFVjaoN-Xk4fAtuIjOgRxpt9v1HS36U13eJSaICkk"
+      short-id: "26d9ed3d3a9ab73d"
+    network: "xhttp"
+    xhttp-opts:
+      path: "/25df08978996"
+      mode: "auto"
+
+  - name: "🇸🇬SG-28M-[027b66/761e7c]"
+    type: "hysteria2"
+    server: "sg1.xiaoliyu.cyou"
+    port: 2056
+    password: "8b64b840-a48d-4ac0-b10f-8f7d7081a0f1"
+    udp: true
+    sni: "sg1.xiaoliyu.cyou"
+    skip-cert-verify: true
+
+  - name: "🇯🇵JP-21M-[52cf99/299a7c]"
+    type: "vless"
+    server: "31.77.29.50"
+    port: 443
+    uuid: "7d718630-7a1a-4af8-9332-aa0610634e8a"
+    udp: true
+    encryption: "none"
+    servername: "api.hinoki.lalibobi.online"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "of5IGFLdYn5BrWcKnwW3ucJfrQCt7ofPkySZWen3EzI"
+      short-id: "3e9f3d0780415792"
+    network: "grpc"
+    grpc-opts:
+      grpc-service-name: "shop.v1.Catalog"
+
+  - name: "🌐XX-28M-[e98022/be11c1]"
+    type: "vmess"
+    server: "195.133.135.238"
+    port: 10086
+    uuid: "b831381d-6324-4d53-ad4f-8cda48b30811"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    network: "tcp"
+
   - name: "🇫🇷FR-129M-[be8dab/d1a6ee]"
     type: "vless"
     server: "199.232.78.120"
@@ -78,23 +325,6 @@ proxies:
     grpc-opts:
       grpc-service-name: "download"
 
-  - name: "🇺🇸US-276M-[2094dd/f18e70]"
-    type: "vless"
-    server: "79.98.38.24"
-    port: 443
-    uuid: "7d718630-7a1a-4af8-9332-aa0610634e8a"
-    udp: true
-    encryption: "none"
-    servername: "api.alder.lalibobi.online"
-    client-fingerprint: "firefox"
-    tls: true
-    reality-opts:
-      public-key: "tKzo0qk-NJCNnmxmSgP7uGmd9VHKiTG2L-YqXYGj4Dc"
-      short-id: "203242200f9d16be"
-    network: "grpc"
-    grpc-opts:
-      grpc-service-name: "shop.v1.Catalog"
-
   - name: "🌐XX-82M-[2ba8c8/7a2a27]"
     type: "vless"
     server: "orange.asynchronous.site"
@@ -108,71 +338,6 @@ proxies:
       - "http/1.1"
       - "h2"
     tls: true
-    network: "tcp"
-
-  - name: "🇺🇸US-276M-[f3f80e/da3416]"
-    type: "vless"
-    server: "api.alder.lalibobi.online"
-    port: 443
-    uuid: "7d718630-7a1a-4af8-9332-aa0610634e8a"
-    udp: true
-    encryption: "none"
-    servername: "api.alder.lalibobi.online"
-    client-fingerprint: "firefox"
-    tls: true
-    reality-opts:
-      public-key: "tKzo0qk-NJCNnmxmSgP7uGmd9VHKiTG2L-YqXYGj4Dc"
-      short-id: "203242200f9d16be"
-    network: "grpc"
-    grpc-opts:
-      grpc-service-name: "shop.v1.Catalog"
-
-  - name: "🇪🇪EE-241M-[5f6614/b64637]"
-    type: "vless"
-    server: "95.85.243.40"
-    port: 443
-    uuid: "7d718630-7a1a-4af8-9332-aa0610634e8a"
-    udp: true
-    encryption: "none"
-    flow: "xtls-rprx-vision"
-    servername: "saar-est3.lalibobi.online"
-    client-fingerprint: "firefox"
-    tls: true
-    reality-opts:
-      public-key: "Oc8iFCgfl2hRU3yCf2aaZOxiuK5GLwxct3lYy6sw7nk"
-      short-id: ""
-    network: "tcp"
-
-  - name: "🇪🇪EE-190M-[6a21ef/5ba534]"
-    type: "vless"
-    server: "saar-est3.lalibobi.online"
-    port: 443
-    uuid: "7d718630-7a1a-4af8-9332-aa0610634e8a"
-    udp: true
-    encryption: "none"
-    flow: "xtls-rprx-vision"
-    servername: "saar-est3.lalibobi.online"
-    client-fingerprint: "firefox"
-    tls: true
-    reality-opts:
-      public-key: "Oc8iFCgfl2hRU3yCf2aaZOxiuK5GLwxct3lYy6sw7nk"
-      short-id: ""
-    network: "tcp"
-
-  - name: "🇳🇱NL-276M-[107018/f45397]"
-    type: "vless"
-    server: "31.77.217.124"
-    port: 28004
-    uuid: "142559e8-6c3a-42fc-acbe-d5bc33f420b8"
-    udp: true
-    encryption: "none"
-    flow: "xtls-rprx-vision"
-    servername: "connect.i-love-russia.online"
-    client-fingerprint: "firefox"
-    tls: true
-    reality-opts:
-      public-key: "X55pAuXu8jxuXS03vzSdf9T7QSiEilXngKvXi4_AShU"
-      short-id: "bc6e2fcfa32fe6fa"
     network: "tcp"
 
   - name: "🇩🇪DE-251M-[be8dab/e16ea1]"
@@ -191,22 +356,6 @@ proxies:
       path: "/"
       headers:
         Host: "finalnsdger.global.ssl.fastly.net."
-
-  - name: "🇫🇮FI-277M-[95684d/c8a7be]"
-    type: "vless"
-    server: "177.3.220.53"
-    port: 443
-    uuid: "f8d52ece-fad4-478d-875d-df6eed3befa7"
-    udp: true
-    encryption: "none"
-    flow: "xtls-rprx-vision"
-    servername: "fi-b2.golangwikito.cfd"
-    client-fingerprint: "firefox"
-    tls: true
-    reality-opts:
-      public-key: "ZqVz1kWNxh_5zQ5PPkoPHoaXQOvppM0ZyIo8uKp2dCg"
-      short-id: "bdf5852d1423e694"
-    network: "tcp"
 
   - name: "🇩🇪DE-248M-[3efcc5/0d2157]"
     type: "vless"
@@ -385,21 +534,6 @@ proxies:
       short-id: "d06c37930f65c360"
     network: "tcp"
 
-  - name: "🇳🇱NL-274M-[c8d825/8943ff]"
-    type: "vless"
-    server: "radar.cloudflare.com"
-    port: 8080
-    uuid: "cfa71937-73d5-4eb8-9b25-eadecd944803"
-    udp: true
-    encryption: "none"
-    packet-encoding: "xudp"
-    tls: false
-    network: "ws"
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "sh-harand.shcharand00.workers.dev"
-
   - name: "🇩🇪DE-309M-[030fbd/4bebef]"
     type: "vless"
     server: "83.141.69.220"
@@ -434,24 +568,6 @@ proxies:
       path: "/t.me-SubGift"
       headers:
         Host: "googoosh.subgift.cyou"
-
-  - name: "🇧🇬BG-370M-[26cfc3/425054]"
-    type: "vless"
-    server: "46.243.234.17"
-    port: 8443
-    uuid: "37af0181-5598-4aad-a040-d926bcb65757"
-    udp: true
-    encryption: "none"
-    servername: "windytrout.net"
-    alpn:
-      - "h2"
-      - "http/1.1"
-    tls: true
-    network: "xhttp"
-    xhttp-opts:
-      path: "/api/v1/upload"
-      host: "windytrout.net"
-      mode: "auto"
 
   - name: "🇳🇱NL-64M-[367788/48d9b1]"
     type: "vless"
@@ -550,15 +666,6 @@ proxies:
       short-id: "8d0d0679f42ffd98"
     network: "tcp"
 
-  - name: "🇸🇬SG-77M-[027b66/761e7c]"
-    type: "hysteria2"
-    server: "sg1.xiaoliyu.cyou"
-    port: 2056
-    password: "8b64b840-a48d-4ac0-b10f-8f7d7081a0f1"
-    udp: true
-    sni: "sg1.xiaoliyu.cyou"
-    skip-cert-verify: true
-
   - name: "🇩🇪DE-250M-[e02d63/fe3c56]"
     type: "vless"
     server: "silk.filnex.baby"
@@ -643,19 +750,29 @@ proxy-groups:
   - name: "AUTO"
     type: select
     proxies:
+      - "🇫🇮FI-397M-[95684d/c8a7be]"
+      - "🇳🇱NL-301M-[c8d825/8943ff]"
+      - "🇳🇱NL-381M-[107018/f45397]"
+      - "🇺🇸US-69M-[f3f80e/da3416]"
+      - "🇪🇪EE-98M-[4e72bb/2ae9de]"
+      - "🇧🇬BG-293M-[26cfc3/425054]"
+      - "🇺🇸US-148M-[2094dd/f18e70]"
+      - "🇧🇬BG-85M-[777e9e/6c3de4]"
+      - "🇺🇸US-234M-[c00bc3/1f79cb]"
+      - "🇪🇪EE-130M-[5f6614/b64637]"
+      - "🇪🇪EE-157M-[6a21ef/5ba534]"
+      - "🇳🇱NL-32M-[2ca5c7/5dd143]"
+      - "🇫🇮FI-35M-[d10cb3/5b3a36]"
+      - "🇸🇬SG-28M-[027b66/761e7c]"
+      - "🇯🇵JP-21M-[52cf99/299a7c]"
+      - "🌐XX-28M-[e98022/be11c1]"
       - "🇫🇷FR-129M-[be8dab/d1a6ee]"
       - "🇵🇱PL-275M-[800c4e/462025]"
       - "🇷🇴RO-224M-[233394/a70a7a]"
       - "🇨🇿CZ-276M-[e4ae28/201fe6]"
       - "🇩🇪DE-276M-[e78c1b/9ef747]"
-      - "🇺🇸US-276M-[2094dd/f18e70]"
       - "🌐XX-82M-[2ba8c8/7a2a27]"
-      - "🇺🇸US-276M-[f3f80e/da3416]"
-      - "🇪🇪EE-241M-[5f6614/b64637]"
-      - "🇪🇪EE-190M-[6a21ef/5ba534]"
-      - "🇳🇱NL-276M-[107018/f45397]"
       - "🇩🇪DE-251M-[be8dab/e16ea1]"
-      - "🇫🇮FI-277M-[95684d/c8a7be]"
       - "🇩🇪DE-248M-[3efcc5/0d2157]"
       - "🇪🇪EE-420M-[4e72bb/56bc3f]"
       - "🇵🇱PL-184M-[7c3e70/b5f605]"
@@ -667,17 +784,14 @@ proxy-groups:
       - "🇫🇷FR-252M-[b06487/75392e]"
       - "🇷🇺RU-250M-[cdd32e/a39ed3]"
       - "🇷🇺RU-181M-[e24631/cad2c2]"
-      - "🇳🇱NL-274M-[c8d825/8943ff]"
       - "🇩🇪DE-309M-[030fbd/4bebef]"
       - "🇸🇪SE-279M-[c18415/8e2cc5]"
-      - "🇧🇬BG-370M-[26cfc3/425054]"
       - "🇳🇱NL-64M-[367788/48d9b1]"
       - "🇸🇬SG-75M-[e98022/f81d7a]"
       - "🇩🇪DE-177M-[87fe44/6508f7]"
       - "🇩🇪DE-262M-[bb2fb8/cf83bf]"
       - "🇸🇪SE-358M-[c18415/4edef4]"
       - "🇳🇱NL-147M-[1fa1e4/08cdbb]"
-      - "🇸🇬SG-77M-[027b66/761e7c]"
       - "🇩🇪DE-250M-[e02d63/fe3c56]"
       - "🇩🇪DE-63M-[67572a/ad3cc7]"
       - "🇳🇱NL-20M-[52cc79/5500b9]"
