@@ -6,7 +6,55 @@ log-level: warning
 ipv6: false
 
 proxies:
-  - name: "🇫🇮FI-397M-[95684d/c8a7be]"
+  - name: "🇺🇸US-21M-[be8dab/f557c4]"
+    type: "vless"
+    server: "199.232.78.120"
+    port: 443
+    uuid: "8d2cbffd-43d0-458d-906b-7c54b7b51f38"
+    udp: true
+    encryption: "none"
+    servername: "cdn.akamai.steamstatic.com"
+    skip-cert-verify: true
+    tls: true
+    network: "ws"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "ushetzijji.global.ssl.fastly.net."
+
+  - name: "🇩🇪DE-78M-[d18a1e/24a732]"
+    type: "vless"
+    server: "a566d1g.de7.h1clayd.click"
+    port: 443
+    uuid: "95c2ba1e-a330-4e6b-bd81-bf9c0f647b2f"
+    udp: true
+    encryption: "none"
+    servername: "a566d1g.de7.h1clayd.click"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "C_DlyXDDS4fWcAlxb-6O7LBKtq28fg2slCrH5tPaTQ4"
+      short-id: "16cea10606a4e401"
+    network: "grpc"
+    grpc-opts:
+      grpc-service-name: "98b9c56e8ebb"
+
+  - name: "🇩🇪DE-69M-[dfc8cb/ab5f66]"
+    type: "vless"
+    server: "f3b21at.de7.h1clayd.click"
+    port: 443
+    uuid: "95c2ba1e-a330-4e6b-bd81-bf9c0f647b2f"
+    udp: true
+    encryption: "none"
+    servername: "f3b21at.de7.h1clayd.click"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "lneTk9CP66okHF_VgXVaSj_QNpRzEmvrAmRxmux5JVU"
+      short-id: "08485ad122fafbd5"
+    network: "tcp"
+
+  - name: "🇫🇮FI-411M-[95684d/c8a7be]"
     type: "vless"
     server: "177.3.220.53"
     port: 443
@@ -20,6 +68,32 @@ proxies:
     reality-opts:
       public-key: "ZqVz1kWNxh_5zQ5PPkoPHoaXQOvppM0ZyIo8uKp2dCg"
       short-id: "bdf5852d1423e694"
+    network: "tcp"
+
+  - name: "🇺🇸US-315M-[3ebd42/46ab93]"
+    type: "trojan"
+    server: "96.44.133.37"
+    port: 2087
+    password: "2e7sEZERnvGOlt35hf6rNg"
+    udp: true
+    sni: "www.bing.com"
+    skip-cert-verify: true
+    network: "tcp"
+
+  - name: "🇩🇪DE-328M-[030fbd/55f996]"
+    type: "vless"
+    server: "83.141.69.220"
+    port: 443
+    uuid: "64432174-b71d-4cda-8b08-2459d2407be5"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "13.143.195.113.sslip.io"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "p0M6RumtfcATPNPUIFnFcgWy2rzk2gGVWx21sql1hV0"
+      short-id: "8238d76df92c2560"
     network: "tcp"
 
   - name: "🇫🇮FI-276M-[95684d/870bca]"
@@ -70,16 +144,6 @@ proxies:
       headers:
         Host: "dklietestyui-production.up.railway.app"
 
-  - name: "🇺🇸US-217M-[3ebd42/46ab93]"
-    type: "trojan"
-    server: "96.44.133.37"
-    port: 2087
-    password: "2e7sEZERnvGOlt35hf6rNg"
-    udp: true
-    sni: "www.bing.com"
-    skip-cert-verify: true
-    network: "tcp"
-
   - name: "🇺🇸US-130M-[bdcd75/a1e791]"
     type: "vless"
     server: "204.152.198.135"
@@ -95,22 +159,6 @@ proxies:
       public-key: "W_VahGtN28jS59zNCnex-Bfpz2eNVY5VveQwkHoUZgQ"
       short-id: "acb05d85369b"
     network: "tcp"
-
-  - name: "🇺🇸US-21M-[be8dab/f557c4]"
-    type: "vless"
-    server: "199.232.78.120"
-    port: 443
-    uuid: "8d2cbffd-43d0-458d-906b-7c54b7b51f38"
-    udp: true
-    encryption: "none"
-    servername: "cdn.akamai.steamstatic.com"
-    skip-cert-verify: true
-    tls: true
-    network: "ws"
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "ushetzijji.global.ssl.fastly.net."
 
   - name: "🇫🇷FR-28M-[be8dab/d1a6ee]"
     type: "vless"
@@ -856,13 +904,16 @@ proxy-groups:
   - name: "AUTO"
     type: select
     proxies:
-      - "🇫🇮FI-397M-[95684d/c8a7be]"
+      - "🇺🇸US-21M-[be8dab/f557c4]"
+      - "🇩🇪DE-78M-[d18a1e/24a732]"
+      - "🇩🇪DE-69M-[dfc8cb/ab5f66]"
+      - "🇫🇮FI-411M-[95684d/c8a7be]"
+      - "🇺🇸US-315M-[3ebd42/46ab93]"
+      - "🇩🇪DE-328M-[030fbd/55f996]"
       - "🇫🇮FI-276M-[95684d/870bca]"
       - "🌐XX-76M-[513a0c/ac7432]"
       - "🇳🇱NL-276M-[a7b84c/08ac40]"
-      - "🇺🇸US-217M-[3ebd42/46ab93]"
       - "🇺🇸US-130M-[bdcd75/a1e791]"
-      - "🇺🇸US-21M-[be8dab/f557c4]"
       - "🇫🇷FR-28M-[be8dab/d1a6ee]"
       - "🇷🇺RU-315M-[e2dd12/94efde]"
       - "🇳🇱NL-301M-[c8d825/8943ff]"
