@@ -6,6 +6,22 @@ log-level: warning
 ipv6: false
 
 proxies:
+  - name: "🇩🇪DE-276M-[0a9565/d58071]"
+    type: "vless"
+    server: "178.18.158.12"
+    port: 43000
+    uuid: "a741d82e-6087-466d-b590-f24e2245d12c"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "178.18.158.12"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "KeFxVlEEuDN8alZBsrXiX9yrcY2-H7lcdzXWjtrIWy0"
+      short-id: "a9c3bda4"
+    network: "tcp"
+
   - name: "🇺🇸US-407M-[12b592/f39d3b]"
     type: "vless"
     server: "coughed-gongs.freevideochats.org"
@@ -64,6 +80,32 @@ proxies:
       sc-min-posts-interval-ms: 30
       x-padding-bytes: "100-1000"
 
+  - name: "🇧🇬BG-276M-[1f11fd/d54fc3]"
+    type: "vless"
+    server: "earlytrain.net"
+    port: 8443
+    uuid: "37af0181-5598-4aad-a040-d926bcb65757"
+    udp: true
+    encryption: "none"
+    servername: "earlytrain.net"
+    client-fingerprint: "chrome"
+    alpn:
+      - "h2"
+      - "http/1.1"
+    tls: true
+    network: "xhttp"
+    xhttp-opts:
+      path: "/api/v1/upload"
+      host: "earlytrain.net"
+      mode: "auto"
+      reuse-settings:
+        c-max-reuse-times: "64-128"
+        max-concurrency: "16-32"
+        max-connections: 0
+      sc-max-each-post-bytes: 1000000
+      sc-min-posts-interval-ms: 30
+      x-padding-bytes: "100-1000"
+
   - name: "🇳🇱NL-21M-[1fa1e4/dc0a1a]"
     type: "vless"
     server: "8a2e72t.nl11.h1clayd.click"
@@ -80,6 +122,41 @@ proxies:
       short-id: "8d0d0679f42ffd98"
     network: "tcp"
 
+  - name: "🇩🇪DE-106M-[339b5b/7ed4a3]"
+    type: "vless"
+    server: "music.3apes.online"
+    port: 443
+    uuid: "12776e55-6230-48b9-b069-1bb8a04b4237"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    packet-encoding: "xudp"
+    servername: "music.3apes.online"
+    client-fingerprint: "qq"
+    tls: true
+    reality-opts:
+      public-key: "q4_o7NvD6vQg4hYsyO29Q6PVufjTJHDUbQTqstre9EQ"
+      short-id: ""
+    network: "tcp"
+
+  - name: "🇳🇱NL-227M-[367788/48d9b1]"
+    type: "vless"
+    server: "fc82dfx.nl8.h1clayd.click"
+    port: 443
+    uuid: "cda0862a-0f87-4be9-8ed8-1d0c9e382839"
+    udp: true
+    encryption: "none"
+    servername: "fc82dfx.nl8.h1clayd.click"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "dtO7khFLUkpFDQOtNzo4Th4hJKLoPSY2VtD_9k4Hgiw"
+      short-id: "7b2b1a14a6e0630d"
+    network: "xhttp"
+    xhttp-opts:
+      path: "/0616f2d729aa"
+      mode: "auto"
+
   - name: "🇪🇸ES-94M-[381536/0c087a]"
     type: "vless"
     server: "b6d267t.es10.h1clayd.shop"
@@ -94,6 +171,87 @@ proxies:
       public-key: "cxyrz3HGwHEptrO2fvz6EiikFoEDgTl0SQkrNyj5yRc"
       short-id: "74f848c51d8139d1"
     network: "tcp"
+
+  - name: "🇫🇮FI-277M-[430265/cb1bed]"
+    type: "vless"
+    server: "fi4.h1cloud.net"
+    port: 25749
+    uuid: "e460e79d-5dd9-451d-8d1a-a84c8b70c9a7"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "80aa2br.fi4.h1clayd.click"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "nmjOhfpVZtk9W-3GZk5JY0B-OvCFkjP2RvTVBNZO7lE"
+      short-id: "f6b3841eabafff9a"
+    network: "tcp"
+
+  - name: "🇫🇮FI-250M-[51f62e/28c2d1]"
+    type: "vless"
+    server: "79.182.70.237"
+    port: 25749
+    uuid: "e460e79d-5dd9-451d-8d1a-a84c8b70c9a7"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "80aa2br.fi4.h1clayd.click"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "nmjOhfpVZtk9W-3GZk5JY0B-OvCFkjP2RvTVBNZO7lE"
+      short-id: "f6b3841eabafff9a"
+    network: "tcp"
+
+  - name: "🇹🇷TR-188M-[5e3778/bf1e32]"
+    type: "vless"
+    server: "146.75.59.186"
+    port: 443
+    uuid: "8d2cbffd-43d0-458d-906b-7c54b7b51f38"
+    udp: true
+    encryption: "none"
+    servername: "cdn.akamai.steamstatic.com"
+    client-fingerprint: "chrome"
+    skip-cert-verify: true
+    tls: true
+    network: "ws"
+    ws-opts:
+      path: "/?Telegram---@pirozi_ArGaP---@pirozi_ArGaP---@pirozi_ArGaP---@pirozi_ArGaP"
+      headers:
+        Host: "looabomrhesamijji.global.ssl.fastly.net."
+
+  - name: "🇧🇬BG-74M-[6e0815/0ef12b]"
+    type: "vless"
+    server: "50.7.87.251"
+    port: 443
+    uuid: "97fd7807-7e2b-49da-8a0e-e40197088f97"
+    udp: true
+    encryption: "none"
+    servername: "97fd7807.ferrin.uk"
+    client-fingerprint: "firefox"
+    tls: true
+    network: "xhttp"
+    xhttp-opts:
+      path: "/tr"
+      host: "api.ferrin.uk"
+
+  - name: "🇳🇱NL-111M-[769e11/603437]"
+    type: "vless"
+    server: "717252g.nl8.h1clayd.click"
+    port: 443
+    uuid: "cda0862a-0f87-4be9-8ed8-1d0c9e382839"
+    udp: true
+    encryption: "none"
+    servername: "717252g.nl8.h1clayd.click"
+    client-fingerprint: "chrome"
+    tls: true
+    reality-opts:
+      public-key: "PD8Jdlg3xB9QY--jwQjp8PFPzCS8-Oryw6-HWBcHMFU"
+      short-id: "d3bd772514c87d28"
+    network: "grpc"
+    grpc-opts:
+      grpc-service-name: "204adda7e3da"
 
   - name: "🇩🇪DE-46M-[78860a/1d6115]"
     type: "vless"
@@ -111,6 +269,54 @@ proxies:
       short-id: "1a2b3c4d"
     network: "tcp"
 
+  - name: "🇩🇪DE-276M-[78860a/b67708]"
+    type: "vless"
+    server: "5.175.171.30"
+    port: 8444
+    uuid: "555b35c4-30f9-40c6-a61a-7f53ab1bea45"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "www.volkswagen.de"
+    client-fingerprint: "chrome"
+    tls: true
+    reality-opts:
+      public-key: "kBTMVLCNE0jjwuJF6H5-65l5Pe0QToS0Hg-9Tmaa7Sk"
+      short-id: "1a2b3c4d"
+    network: "tcp"
+
+  - name: "🇳🇱NL-276M-[90cce3/bb2b0e]"
+    type: "vmess"
+    server: "loldgesswrt-production.up.railway.app"
+    port: 443
+    uuid: "532556f2-f35a-42d0-84ed-bf2fded3fa7f"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    tls: true
+    servername: "loldgesswrt-production.up.railway.app"
+    network: "ws"
+    ws-opts:
+      path: "/api/R40qXq"
+      headers:
+        Host: "loldgesswrt-production.up.railway.app"
+
+  - name: "🇩🇪DE-276M-[a3d233/4e96e9]"
+    type: "vless"
+    server: "5.175.171.30"
+    port: 443
+    uuid: "555b35c4-30f9-40c6-a61a-7f53ab1bea45"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "assets-v2.porsche.com"
+    client-fingerprint: "chrome"
+    tls: true
+    reality-opts:
+      public-key: "kBTMVLCNE0jjwuJF6H5-65l5Pe0QToS0Hg-9Tmaa7Sk"
+      short-id: "1a2b3c4d"
+    network: "tcp"
+
   - name: "🇩🇪DE-36M-[a3d233/b63d5c]"
     type: "vless"
     server: "5.175.171.30"
@@ -120,6 +326,38 @@ proxies:
     encryption: "none"
     flow: "xtls-rprx-vision"
     servername: "assets-v2.porsche.com"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "kBTMVLCNE0jjwuJF6H5-65l5Pe0QToS0Hg-9Tmaa7Sk"
+      short-id: "1a2b3c4d"
+    network: "tcp"
+
+  - name: "🇳🇱NL-241M-[a93e48/c7bb57]"
+    type: "vless"
+    server: "37.49.226.222"
+    port: 443
+    uuid: "be37bdfb-68d5-4ea1-8c6d-b45634eee502"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "cdn.jsdelivr.net"
+    client-fingerprint: "chrome"
+    tls: true
+    reality-opts:
+      public-key: "_CbLQm3wopCKcM82NEeVJmQXJtJvikZHF3Hn89ZMBEc"
+      short-id: "1c9ac5"
+    network: "tcp"
+
+  - name: "🇩🇪DE-276M-[b82c4f/8d748f]"
+    type: "vless"
+    server: "5.231.28.177"
+    port: 443
+    uuid: "555b35c4-30f9-40c6-a61a-7f53ab1bea45"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "images.porsche.com"
     client-fingerprint: "firefox"
     tls: true
     reality-opts:
@@ -143,6 +381,23 @@ proxies:
       short-id: "1a2b3c4d"
     network: "tcp"
 
+  - name: "🇩🇪DE-54M-[be8dab/e16ea1]"
+    type: "vless"
+    server: "199.232.78.120"
+    port: 443
+    uuid: "8d2cbffd-43d0-458d-906b-7c54b7b51f38"
+    udp: true
+    encryption: "none"
+    servername: "cdn.akamai.steamstatic.com"
+    client-fingerprint: "chrome"
+    skip-cert-verify: true
+    tls: true
+    network: "ws"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "finalnsdger.global.ssl.fastly.net."
+
   - name: "🇺🇸US-63M-[be8dab/f557c4]"
     type: "vless"
     server: "199.232.78.120"
@@ -159,7 +414,7 @@ proxies:
       headers:
         Host: "ushetzijji.global.ssl.fastly.net."
 
-  - name: "🇳🇱NL-328M-[bfb0bc/5ed70c]"
+  - name: "🇳🇱NL-276M-[bfb0bc/5ed70c]"
     type: "vless"
     server: "89.248.65.152"
     port: 443
@@ -174,6 +429,35 @@ proxies:
       public-key: "kBTMVLCNE0jjwuJF6H5-65l5Pe0QToS0Hg-9Tmaa7Sk"
       short-id: "1a2b3c4d"
     network: "tcp"
+
+  - name: "🇺🇸US-76M-[c00bc3/1f79cb]"
+    type: "trojan"
+    server: "fastly2.dunnexa.ir"
+    port: 443
+    password: "jcTG9WSWMJAmR4rv10xpww"
+    udp: true
+    sni: "cdn.akamai.steamstatic.com"
+    skip-cert-verify: true
+    network: "ws"
+    ws-opts:
+      path: "/TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER"
+      headers:
+        Host: "copy_az_channel_nufilter_17i.global.ssl.fastly.net."
+
+  - name: "🇫🇮FI-140M-[c4186b/7188b8]"
+    type: "vless"
+    server: "107.150.93.18"
+    port: 443
+    uuid: "97fd7807-7e2b-49da-8a0e-e40197088f97"
+    udp: true
+    encryption: "none"
+    servername: "97fd7807.ferrin.uk"
+    client-fingerprint: "firefox"
+    tls: true
+    network: "xhttp"
+    xhttp-opts:
+      path: "/"
+      host: "fi.alpheratzz.org"
 
   - name: "🇷🇺RU-66M-[d1735b/3265fa]"
     type: "vless"
@@ -192,7 +476,54 @@ proxies:
     grpc-opts:
       grpc-service-name: "93013a569b78"
 
-  - name: "🇪🇪EE-114M-[dce4c4/d547fb]"
+  - name: "🇩🇪DE-32M-[d18a1e/24a732]"
+    type: "vless"
+    server: "a566d1g.de7.h1clayd.click"
+    port: 443
+    uuid: "95c2ba1e-a330-4e6b-bd81-bf9c0f647b2f"
+    udp: true
+    encryption: "none"
+    servername: "a566d1g.de7.h1clayd.click"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "C_DlyXDDS4fWcAlxb-6O7LBKtq28fg2slCrH5tPaTQ4"
+      short-id: "16cea10606a4e401"
+    network: "grpc"
+    grpc-opts:
+      grpc-service-name: "98b9c56e8ebb"
+
+  - name: "🇵🇱PL-425M-[d36c43/193e46]"
+    type: "vless"
+    server: "83.141.92.190"
+    port: 443
+    uuid: "555b35c4-30f9-40c6-a61a-7f53ab1bea45"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "files.porsche.com"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "kBTMVLCNE0jjwuJF6H5-65l5Pe0QToS0Hg-9Tmaa7Sk"
+      short-id: "1a2b3c4d"
+    network: "tcp"
+
+  - name: "🇵🇱PL-276M-[d94311/3878e6]"
+    type: "vless"
+    server: "185.86.145.55"
+    port: 10470
+    uuid: "3ecbd833-40d8-4ddb-b80b-a7c4628ec7e5"
+    udp: true
+    encryption: "none"
+    servername: "wn-pl4.static-s3.org"
+    client-fingerprint: "firefox"
+    tls: true
+    network: "grpc"
+    grpc-opts:
+      grpc-service-name: "wn-adaptcloud"
+
+  - name: "🇪🇪EE-320M-[dce4c4/d547fb]"
     type: "vless"
     server: "13.143.176.250"
     port: 443
@@ -208,6 +539,41 @@ proxies:
       short-id: "1a2b3c4d"
     network: "tcp"
 
+  - name: "🇨🇦CA-204M-[f08264/c6e668]"
+    type: "hysteria2"
+    server: "ca.xiaoliyu.cyou"
+    port: 1888
+    password: "8b64b840-a48d-4ac0-b10f-8f7d7081a0f1"
+    udp: true
+    sni: "ca.xiaoliyu.cyou"
+    skip-cert-verify: true
+
+  - name: "🇳🇱NL-276M-[f14ac1/831dc9]"
+    type: "vless"
+    server: "195.110.15.17"
+    port: 43000
+    uuid: "0809eed6-5204-49b8-8312-b82a10024022"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "195.110.15.17"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "U_dxFnbfesmgSwL-SlpvGYFbpY5vlJ1kb52knlCXkkI"
+      short-id: "8cfe1563"
+    network: "tcp"
+
+  - name: "🇳🇱NL-187M-[f9af65/8a0a0c]"
+    type: "hysteria2"
+    server: "77.90.15.183"
+    port: 8964
+    password: "HATATEAYA"
+    udp: true
+    sni: "ganlanc.at"
+    obfs: "salamander"
+    obfs-password: "HATATEAYA"
+
 proxy-groups:
   - name: "GLOBAL"
     type: select
@@ -217,18 +583,41 @@ proxy-groups:
   - name: "AUTO"
     type: select
     proxies:
+      - "🇩🇪DE-276M-[0a9565/d58071]"
       - "🇺🇸US-407M-[12b592/f39d3b]"
       - "🇸🇪SE-400M-[198cbd/077353]"
       - "🇧🇬BG-205M-[1f11fd/bba9e3]"
+      - "🇧🇬BG-276M-[1f11fd/d54fc3]"
       - "🇳🇱NL-21M-[1fa1e4/dc0a1a]"
+      - "🇩🇪DE-106M-[339b5b/7ed4a3]"
+      - "🇳🇱NL-227M-[367788/48d9b1]"
       - "🇪🇸ES-94M-[381536/0c087a]"
+      - "🇫🇮FI-277M-[430265/cb1bed]"
+      - "🇫🇮FI-250M-[51f62e/28c2d1]"
+      - "🇹🇷TR-188M-[5e3778/bf1e32]"
+      - "🇧🇬BG-74M-[6e0815/0ef12b]"
+      - "🇳🇱NL-111M-[769e11/603437]"
       - "🇩🇪DE-46M-[78860a/1d6115]"
+      - "🇩🇪DE-276M-[78860a/b67708]"
+      - "🇳🇱NL-276M-[90cce3/bb2b0e]"
+      - "🇩🇪DE-276M-[a3d233/4e96e9]"
       - "🇩🇪DE-36M-[a3d233/b63d5c]"
+      - "🇳🇱NL-241M-[a93e48/c7bb57]"
+      - "🇩🇪DE-276M-[b82c4f/8d748f]"
       - "🇩🇪DE-477M-[b95e0a/a0e708]"
+      - "🇩🇪DE-54M-[be8dab/e16ea1]"
       - "🇺🇸US-63M-[be8dab/f557c4]"
-      - "🇳🇱NL-328M-[bfb0bc/5ed70c]"
+      - "🇳🇱NL-276M-[bfb0bc/5ed70c]"
+      - "🇺🇸US-76M-[c00bc3/1f79cb]"
+      - "🇫🇮FI-140M-[c4186b/7188b8]"
       - "🇷🇺RU-66M-[d1735b/3265fa]"
-      - "🇪🇪EE-114M-[dce4c4/d547fb]"
+      - "🇩🇪DE-32M-[d18a1e/24a732]"
+      - "🇵🇱PL-425M-[d36c43/193e46]"
+      - "🇵🇱PL-276M-[d94311/3878e6]"
+      - "🇪🇪EE-320M-[dce4c4/d547fb]"
+      - "🇨🇦CA-204M-[f08264/c6e668]"
+      - "🇳🇱NL-276M-[f14ac1/831dc9]"
+      - "🇳🇱NL-187M-[f9af65/8a0a0c]"
 
 rules:
   - "DOMAIN,smtp.gmail.com,DIRECT"
