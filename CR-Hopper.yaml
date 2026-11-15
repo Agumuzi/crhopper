@@ -293,6 +293,22 @@ proxies:
         max-connections: "16"
       x-padding-bytes: "100-1000"
 
+  - name: "🇩🇪DE-138M-[234402/b60f1d]"
+    type: "vless"
+    server: "31.77.12.3"
+    port: 443
+    uuid: "f8d52ece-fad4-478d-875d-df6eed3befa7"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "de-b1.pythonmakemigreat.wiki"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "5fkwwCKZzMsE6Eb_b3iqluu-1AWIfnYl-p0N3EL9Al8"
+      short-id: "713e9e2cca714dfa"
+    network: "tcp"
+
   - name: "🇩🇪DE-287M-[24204e/9b61fc]"
     type: "vless"
     server: "217.60.27.117"
@@ -1483,6 +1499,7 @@ proxy-groups:
       - "🇧🇬BG-43M-[1f11fd/ffc328]"
       - "🇳🇱NL-21M-[1fa1e4/dc0a1a]"
       - "🇵🇱PL-263M-[20532f/75365e]"
+      - "🇩🇪DE-138M-[234402/b60f1d]"
       - "🇩🇪DE-287M-[24204e/9b61fc]"
       - "🇸🇪SE-98M-[252066/e3c134]"
       - "🇺🇸US-174M-[2c03f3/add8e2]"
