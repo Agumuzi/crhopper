@@ -226,6 +226,33 @@ proxies:
       sc-min-posts-interval-ms: 30
       x-padding-bytes: "100-1000"
 
+  - name: "🇧🇬BG-43M-[1f11fd/ffc328]"
+    type: "vless"
+    server: "earlytrain.net"
+    port: 8443
+    uuid: "37af0181-5598-4aad-a040-d926bcb65757"
+    udp: true
+    encryption: "none"
+    packet-encoding: "xudp"
+    servername: "earlytrain.net"
+    client-fingerprint: "chrome"
+    alpn:
+      - "h2"
+      - "http/1.1"
+    tls: true
+    network: "xhttp"
+    xhttp-opts:
+      path: "/api/v1/upload"
+      host: "earlytrain.net"
+      mode: "auto"
+      reuse-settings:
+        c-max-reuse-times: "64-128"
+        max-concurrency: "16-32"
+        max-connections: "0"
+      sc-max-each-post-bytes: 1000000
+      sc-min-posts-interval-ms: 30
+      x-padding-bytes: "100-1000"
+
   - name: "🇳🇱NL-21M-[1fa1e4/dc0a1a]"
     type: "vless"
     server: "8a2e72t.nl11.h1clayd.click"
@@ -1434,6 +1461,7 @@ proxy-groups:
       - "🇧🇬BG-205M-[1f11fd/bba9e3]"
       - "🇧🇬BG-59M-[1f11fd/c24926]"
       - "🇧🇬BG-276M-[1f11fd/d54fc3]"
+      - "🇧🇬BG-43M-[1f11fd/ffc328]"
       - "🇳🇱NL-21M-[1fa1e4/dc0a1a]"
       - "🇵🇱PL-263M-[20532f/75365e]"
       - "🇩🇪DE-287M-[24204e/9b61fc]"
