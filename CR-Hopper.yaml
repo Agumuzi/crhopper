@@ -177,6 +177,29 @@ proxies:
       sc-min-posts-interval-ms: 30
       x-padding-bytes: "100-1000"
 
+  - name: "🇧🇬BG-59M-[1f11fd/c24926]"
+    type: "vless"
+    server: "earlytrain.net"
+    port: 8443
+    uuid: "37af0181-5598-4aad-a040-d926bcb65757"
+    udp: true
+    encryption: "none"
+    servername: "earlytrain.net"
+    client-fingerprint: "firefox"
+    tls: true
+    network: "xhttp"
+    xhttp-opts:
+      path: "/api/v1/upload"
+      host: "earlytrain.net"
+      mode: "auto"
+      reuse-settings:
+        c-max-reuse-times: "64-128"
+        max-concurrency: "16-32"
+        max-connections: 0
+      sc-max-each-post-bytes: 1000000
+      sc-min-posts-interval-ms: 30
+      x-padding-bytes: "100-1000"
+
   - name: "🇧🇬BG-276M-[1f11fd/d54fc3]"
     type: "vless"
     server: "earlytrain.net"
@@ -933,7 +956,7 @@ proxies:
       headers:
         Host: "finalnsdger.global.ssl.fastly.net."
 
-  - name: "🇺🇸US-63M-[be8dab/f557c4]"
+  - name: "🇺🇸US-95M-[be8dab/f557c4]"
     type: "vless"
     server: "199.232.78.120"
     port: 443
@@ -1150,7 +1173,20 @@ proxies:
     grpc-opts:
       grpc-service-name: "wn-adaptcloud"
 
-  - name: "🇪🇪EE-320M-[dce4c4/d547fb]"
+  - name: "🌐XX-248M-[d94311/3c70c6]"
+    type: "vless"
+    server: "185.86.145.55"
+    port: 10470
+    uuid: "3ecbd833-40d8-4ddb-b80b-a7c4628ec7e5"
+    udp: true
+    encryption: "none"
+    servername: "wn-pl4.static-s3.org"
+    tls: true
+    network: "grpc"
+    grpc-opts:
+      grpc-service-name: "wn-adaptcloud"
+
+  - name: "🇪🇪EE-82M-[dce4c4/d547fb]"
     type: "vless"
     server: "13.143.176.250"
     port: 443
@@ -1302,7 +1338,7 @@ proxies:
       short-id: "1a2b3c4d"
     network: "tcp"
 
-  - name: "🇨🇦CA-202M-[f08264/c6e668]"
+  - name: "🇨🇦CA-193M-[f08264/c6e668]"
     type: "hysteria2"
     server: "ca.xiaoliyu.cyou"
     port: 1888
@@ -1396,6 +1432,7 @@ proxy-groups:
       - "🇸🇪SE-400M-[198cbd/077353]"
       - "🇧🇬BG-127M-[1f11fd/bb4df5]"
       - "🇧🇬BG-205M-[1f11fd/bba9e3]"
+      - "🇧🇬BG-59M-[1f11fd/c24926]"
       - "🇧🇬BG-276M-[1f11fd/d54fc3]"
       - "🇳🇱NL-21M-[1fa1e4/dc0a1a]"
       - "🇵🇱PL-263M-[20532f/75365e]"
@@ -1441,7 +1478,7 @@ proxy-groups:
       - "🇸🇪SE-24M-[be4dfa/6c92c0]"
       - "🇫🇷FR-46M-[be8dab/d1a6ee]"
       - "🇩🇪DE-232M-[be8dab/e16ea1]"
-      - "🇺🇸US-63M-[be8dab/f557c4]"
+      - "🇺🇸US-95M-[be8dab/f557c4]"
       - "🇳🇱NL-244M-[bfb0bc/5ed70c]"
       - "🇺🇸US-76M-[c00bc3/1f79cb]"
       - "🇺🇸US-278M-[c00bc3/cd732c]"
@@ -1455,7 +1492,8 @@ proxy-groups:
       - "🌐XX-37M-[d73e78/c4cc2e]"
       - "🇩🇪DE-21M-[d83cb0/6d8e35]"
       - "🇵🇱PL-319M-[d94311/3878e6]"
-      - "🇪🇪EE-320M-[dce4c4/d547fb]"
+      - "🌐XX-248M-[d94311/3c70c6]"
+      - "🇪🇪EE-82M-[dce4c4/d547fb]"
       - "🇳🇱NL-233M-[ddd01a/f1bd45]"
       - "🇩🇪DE-26M-[dfc8cb/ab5f66]"
       - "🇩🇪DE-438M-[e65be8/a254ce]"
@@ -1464,7 +1502,7 @@ proxy-groups:
       - "🇵🇱PL-114M-[e83e97/959d47]"
       - "🇺🇸US-140M-[ea9195/98700d]"
       - "🇩🇪DE-432M-[ec210b/f88e11]"
-      - "🇨🇦CA-202M-[f08264/c6e668]"
+      - "🇨🇦CA-193M-[f08264/c6e668]"
       - "🇳🇱NL-436M-[f14ac1/831dc9]"
       - "🇩🇪DE-383M-[f36909/53dc4f]"
       - "🇳🇱NL-176M-[f9af65/8a0a0c]"
