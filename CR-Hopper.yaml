@@ -1044,6 +1044,25 @@ proxies:
       headers:
         Host: "copy_az_channel_nufilter_17i.global.ssl.fastly.net."
 
+  - name: "🇸🇪SE-256M-[c18415/07bd0f]"
+    type: "vless"
+    server: "perplexity.ai"
+    port: 443
+    uuid: "628347a0-6582-4202-9aa8-2eaa8140dc25"
+    udp: true
+    encryption: "mlkem768x25519plus.native.0rtt.vRXNL_XhxPdlqRnLXcf5tKBaB5t33oqSXWOtaK1mAAY"
+    flow: "xtls-rprx-vision"
+    servername: "subgift.googoosh.bond"
+    client-fingerprint: "unsafe"
+    alpn:
+      - "http/1.1"
+    tls: true
+    network: "ws"
+    ws-opts:
+      path: "/t.me-SubGift"
+      headers:
+        Host: "subgift.googoosh.bond"
+
   - name: "🇫🇮FI-135M-[c4186b/5dc5df]"
     type: "vless"
     server: "107.150.93.18"
@@ -1510,6 +1529,7 @@ proxy-groups:
       - "🇳🇱NL-244M-[bfb0bc/5ed70c]"
       - "🇺🇸US-76M-[c00bc3/1f79cb]"
       - "🇺🇸US-278M-[c00bc3/cd732c]"
+      - "🇸🇪SE-256M-[c18415/07bd0f]"
       - "🇫🇮FI-135M-[c4186b/5dc5df]"
       - "🇫🇮FI-140M-[c4186b/7188b8]"
       - "🇳🇱NL-343M-[c8d825/8943ff]"
