@@ -6,7 +6,7 @@ log-level: warning
 ipv6: false
 
 proxies:
-  - name: "🇩🇪DE-86M-[030fbd/064f0e]"
+  - name: "🇩🇪DE-22M-[030fbd/064f0e]"
     type: "vless"
     server: "83.141.69.220"
     port: 443
@@ -48,7 +48,7 @@ proxies:
     tls: true
     network: "tcp"
 
-  - name: "🇮🇱IL-305M-[1631fa/87b1ee]"
+  - name: "🇮🇱IL-272M-[1631fa/87b1ee]"
     type: "vless"
     server: "45.150.108.180"
     port: 443
@@ -155,7 +155,7 @@ proxies:
       short-id: ""
     network: "tcp"
 
-  - name: "🇸🇪SE-276M-[27bb08/62fd4e]"
+  - name: "🇸🇪SE-348M-[27bb08/62fd4e]"
     type: "vless"
     server: "185.153.55.12"
     port: 443
@@ -187,7 +187,7 @@ proxies:
       short-id: ""
     network: "tcp"
 
-  - name: "🇳🇱NL-253M-[2d56ed/ec2dc0]"
+  - name: "🇳🇱NL-32M-[2d56ed/ec2dc0]"
     type: "vless"
     server: "serv1.fishtohome.ru"
     port: 443
@@ -399,7 +399,7 @@ proxies:
       headers:
         Host: "decdn-28.nome-rkp.net"
 
-  - name: "🇺🇸US-44M-[424688/a61809]"
+  - name: "🇺🇸US-31M-[424688/a61809]"
     type: "vless"
     server: "da696cx.us14.h1clayd.click"
     port: 443
@@ -415,6 +415,23 @@ proxies:
     network: "xhttp"
     xhttp-opts:
       path: "/"
+
+  - name: "🇺🇸US-127M-[427304/843947]"
+    type: "vless"
+    server: "103.175.79.6"
+    port: 8443
+    uuid: "97ab2e86-83c5-0a32-4914-5dbe1af97839"
+    udp: true
+    encryption: "none"
+    servername: "download.autodesk.com"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "92KJ-ibs1qTy8nODGrHTW8T0b_trG7McLYv8My9o2EE"
+      short-id: ""
+    network: "grpc"
+    grpc-opts:
+      grpc-service-name: "TunService"
 
   - name: "🇺🇸US-147M-[427304/877a0e]"
     type: "vless"
@@ -495,7 +512,7 @@ proxies:
     grpc-opts:
       grpc-service-name: "grpc"
 
-  - name: "🇺🇸US-38M-[499011/0ec02f]"
+  - name: "🇺🇸US-22M-[499011/0ec02f]"
     type: "vless"
     server: "ce5afbt.us14.h1clayd.click"
     port: 443
@@ -592,7 +609,7 @@ proxies:
     grpc-opts:
       grpc-service-name: "grpc"
 
-  - name: "🇩🇰DK-276M-[5a44a7/a65762]"
+  - name: "🇩🇰DK-262M-[5a44a7/a65762]"
     type: "vless"
     server: "193.181.210.205"
     port: 443
@@ -659,7 +676,7 @@ proxies:
     xhttp-opts:
       path: "/assets/f9c8d7e6a5b4c3d2e1f02468"
 
-  - name: "🇸🇪SE-254M-[635b76/f6351b]"
+  - name: "🇸🇪SE-215M-[635b76/f6351b]"
     type: "vless"
     server: "88.216.189.20"
     port: 8443
@@ -806,6 +823,23 @@ proxies:
     grpc-opts:
       grpc-service-name: "204adda7e3da"
 
+  - name: "🇺🇸US-413M-[808668/16eccf]"
+    type: "vless"
+    server: "122.8.47.7"
+    port: 8443
+    uuid: "97ab2e86-83c5-0a32-4914-5dbe1af97839"
+    udp: true
+    encryption: "none"
+    servername: "download.nvidia.com"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "WtLZK1KyhSpI3K-R4M3sLAHWPOgGPMgkL6RneL0OfCY"
+      short-id: ""
+    network: "grpc"
+    grpc-opts:
+      grpc-service-name: "TunService"
+
   - name: "🇩🇪DE-378M-[808668/8fe132]"
     type: "vless"
     server: "122.8.47.7"
@@ -823,7 +857,7 @@ proxies:
     grpc-opts:
       grpc-service-name: "TunService"
 
-  - name: "🇫🇮FI-207M-[8108c8/5b541a]"
+  - name: "🇫🇮FI-308M-[8108c8/5b541a]"
     type: "vless"
     server: "122.8.92.3"
     port: 8443
@@ -905,7 +939,7 @@ proxies:
       short-id: "1ed136481e0ede74"
     network: "tcp"
 
-  - name: "🇸🇪SE-218M-[8d588c/cfe39a]"
+  - name: "🇸🇪SE-215M-[8d588c/cfe39a]"
     type: "vless"
     server: "sweden.dance-tonic.rutube.info"
     port: 8443
@@ -1019,7 +1053,7 @@ proxies:
     ws-opts:
       path: "/vless-ws"
 
-  - name: "🇫🇮FI-276M-[940254/9b8c78]"
+  - name: "🇫🇮FI-180M-[940254/9b8c78]"
     type: "vless"
     server: "122.8.47.9"
     port: 8443
@@ -1267,7 +1301,7 @@ proxies:
     grpc-opts:
       grpc-service-name: "grpc-tro"
 
-  - name: "🇺🇸US-226M-[b00f13/d3b6ad]"
+  - name: "🇺🇸US-203M-[b00f13/d3b6ad]"
     type: "vless"
     server: "122.8.92.2"
     port: 8443
@@ -1284,7 +1318,7 @@ proxies:
     grpc-opts:
       grpc-service-name: "TunService"
 
-  - name: "🇩🇪DE-276M-[b7b596/86702b]"
+  - name: "🇩🇪DE-158M-[b7b596/86702b]"
     type: "vless"
     server: "178.20.28.4"
     port: 8443
@@ -1364,7 +1398,7 @@ proxies:
       headers:
         Host: "finalnsdger.global.ssl.fastly.net."
 
-  - name: "🇺🇸US-144M-[be8dab/f557c4]"
+  - name: "🇺🇸US-156M-[be8dab/f557c4]"
     type: "vless"
     server: "199.232.78.120"
     port: 443
@@ -1380,7 +1414,7 @@ proxies:
       headers:
         Host: "ushetzijji.global.ssl.fastly.net."
 
-  - name: "🇳🇴NO-249M-[bf3312/af4014]"
+  - name: "🇳🇴NO-44M-[bf3312/af4014]"
     type: "vless"
     server: "193.243.189.64"
     port: 443
@@ -1396,7 +1430,7 @@ proxies:
       short-id: "b12c3119d219dc"
     network: "tcp"
 
-  - name: "🇵🇱PL-276M-[c887bd/9f30e6]"
+  - name: "🇵🇱PL-398M-[c887bd/9f30e6]"
     type: "trojan"
     server: "78.17.171.140"
     port: 2053
@@ -1425,6 +1459,23 @@ proxies:
       headers:
         Host: "sh-harand.shcharand00.workers.dev"
 
+  - name: "🇵🇱PL-24M-[cc594c/70b99e]"
+    type: "vless"
+    server: "144.31.3.105"
+    port: 8443
+    uuid: "0ed9418b-e687-4c2d-8869-7e368c44887e"
+    udp: true
+    encryption: "none"
+    servername: "pl105.homelab-cdn.cloud"
+    client-fingerprint: "safari"
+    tls: true
+    reality-opts:
+      public-key: "0f9tBNd1e0FjqakxfoGM_bGfYIAdE81XzXwPQgJkVDI"
+      short-id: "1eb65c424decdb73"
+    network: "grpc"
+    grpc-opts:
+      grpc-service-name: "grpc"
+
   - name: "🇵🇱PL-60M-[cc594c/c6cb29]"
     type: "vless"
     server: "144.31.3.105"
@@ -1442,7 +1493,7 @@ proxies:
     grpc-opts:
       grpc-service-name: "grpc"
 
-  - name: "🇨🇦CA-276M-[cd8737/c5d670]"
+  - name: "🇨🇦CA-246M-[cd8737/c5d670]"
     type: "vless"
     server: "104.152.211.47"
     port: 443
@@ -1471,7 +1522,7 @@ proxies:
     tls: true
     network: "tcp"
 
-  - name: "🇺🇸US-197M-[cf72eb/cdac36]"
+  - name: "🇺🇸US-101M-[cf72eb/cdac36]"
     type: "vless"
     server: "140.235.168.8"
     port: 8443
@@ -1488,6 +1539,22 @@ proxies:
     grpc-opts:
       grpc-service-name: "TunService"
 
+  - name: "🇫🇮FI-379M-[d09f5f/39f685]"
+    type: "vless"
+    server: "31.77.151.246"
+    port: 443
+    uuid: "f8d52ece-fad4-478d-875d-df6eed3befa7"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "fi-b2.golangwikito.cfd"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "ZqVz1kWNxh_5zQ5PPkoPHoaXQOvppM0ZyIo8uKp2dCg"
+      short-id: "78f97d82e16aaad6"
+    network: "tcp"
+
   - name: "🇳🇱NL-75M-[d35992/7099d3]"
     type: "vless"
     server: "150.251.143.235"
@@ -1498,6 +1565,19 @@ proxies:
     flow: "xtls-rprx-vision"
     servername: "fsos4kac.virtual-network.lol"
     client-fingerprint: "firefox"
+    tls: true
+    network: "tcp"
+
+  - name: "🇳🇱NL-33M-[d35992/c5db0d]"
+    type: "vless"
+    server: "150.251.143.235"
+    port: 443
+    uuid: "352a250d-080b-47b5-b7db-f9f8fa31c551"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "fsos4kac.virtual-network.lol"
+    client-fingerprint: "edge"
     tls: true
     network: "tcp"
 
@@ -1582,7 +1662,7 @@ proxies:
       headers:
         Host: "v1n3.11676767.xyz"
 
-  - name: "🇵🇱PL-276M-[dc70c2/2c86e4]"
+  - name: "🇵🇱PL-282M-[dc70c2/2c86e4]"
     type: "trojan"
     server: "78.17.171.139"
     port: 2053
@@ -1812,7 +1892,7 @@ proxies:
       max-early-data: 2560
       early-data-header-name: "Sec-WebSocket-Protocol"
 
-  - name: "🇳🇱NL-413M-[fa38a7/9c699f]"
+  - name: "🇳🇱NL-367M-[fa38a7/9c699f]"
     type: "vless"
     server: "5.253.86.3"
     port: 443
@@ -1828,7 +1908,7 @@ proxies:
       short-id: "fa1754221e4c5f9e"
     network: "tcp"
 
-  - name: "🇸🇪SE-276M-[fa6e89/5a39ee]"
+  - name: "🇸🇪SE-324M-[fa6e89/5a39ee]"
     type: "vless"
     server: "185.231.101.94"
     port: 443
@@ -1859,7 +1939,7 @@ proxies:
       short-id: "1a5d9b3be394fdc7"
     network: "tcp"
 
-  - name: "🇫🇮FI-181M-[fe6c13/dc1849]"
+  - name: "🇫🇮FI-64M-[fe6c13/dc1849]"
     type: "vless"
     server: "45.88.13.9"
     port: 8443
@@ -1892,7 +1972,7 @@ proxies:
       short-id: "07d1d1bf4769be"
     network: "tcp"
 
-  - name: "🇫🇮FI-276M-[ffc7f8/acf068]"
+  - name: "🇫🇮FI-331M-[ffc7f8/acf068]"
     type: "vless"
     server: "122.8.47.8"
     port: 8443
@@ -1918,18 +1998,18 @@ proxy-groups:
   - name: "AUTO"
     type: select
     proxies:
-      - "🇩🇪DE-86M-[030fbd/064f0e]"
+      - "🇩🇪DE-22M-[030fbd/064f0e]"
       - "🇩🇪DE-470M-[081880/4c2131]"
       - "🇩🇪DE-460M-[081880/cd43bc]"
-      - "🇮🇱IL-305M-[1631fa/87b1ee]"
+      - "🇮🇱IL-272M-[1631fa/87b1ee]"
       - "🇪🇪EE-387M-[1b7fad/12f0ed]"
       - "🇳🇱NL-23M-[1c9055/f699f5]"
       - "🇵🇱PL-133M-[20532f/75365e]"
       - "🇳🇱NL-383M-[2247b2/4712e4]"
       - "🇩🇪DE-23M-[24204e/9b61fc]"
-      - "🇸🇪SE-276M-[27bb08/62fd4e]"
+      - "🇸🇪SE-348M-[27bb08/62fd4e]"
       - "🇺🇸US-174M-[2c03f3/d5cf5f]"
-      - "🇳🇱NL-253M-[2d56ed/ec2dc0]"
+      - "🇳🇱NL-32M-[2d56ed/ec2dc0]"
       - "🇳🇱NL-104M-[2df4f8/3426e1]"
       - "🇬🇧GB-384M-[31c0be/a68d99]"
       - "🇳🇱NL-152M-[3332d4/139370]"
@@ -1942,23 +2022,24 @@ proxy-groups:
       - "🇩🇪DE-401M-[3c2804/7e475e]"
       - "🇳🇱NL-276M-[3e0f89/801d36]"
       - "🇮🇳IN-174M-[406a43/7e0b7e]"
-      - "🇺🇸US-44M-[424688/a61809]"
+      - "🇺🇸US-31M-[424688/a61809]"
+      - "🇺🇸US-127M-[427304/843947]"
       - "🇺🇸US-147M-[427304/877a0e]"
       - "🇪🇪EE-382M-[440ca9/c7d9db]"
       - "🇺🇸US-489M-[4790ae/1c2650]"
       - "🇺🇸US-243M-[4790ae/20e43e]"
       - "🇪🇪EE-175M-[4873c7/8466f4]"
-      - "🇺🇸US-38M-[499011/0ec02f]"
+      - "🇺🇸US-22M-[499011/0ec02f]"
       - "🇪🇪EE-278M-[52aaba/3cff5f]"
       - "🇪🇪EE-387M-[52eff8/66ee81]"
       - "🇩🇪DE-352M-[54a0fa/c47d2b]"
       - "🇳🇱NL-251M-[552911/7e0b41]"
       - "🇳🇱NL-366M-[562510/d23eff]"
-      - "🇩🇰DK-276M-[5a44a7/a65762]"
+      - "🇩🇰DK-262M-[5a44a7/a65762]"
       - "🇹🇷TR-318M-[5aae54/c7fcf6]"
       - "🇩🇪DE-415M-[5df3a1/6fb180]"
       - "🇫🇮FI-138M-[60ea4d/d33c7f]"
-      - "🇸🇪SE-254M-[635b76/f6351b]"
+      - "🇸🇪SE-215M-[635b76/f6351b]"
       - "🇩🇪DE-276M-[66667d/d5e9aa]"
       - "🇦🇪AE-182M-[69904e/815d49]"
       - "🇩🇪DE-495M-[6a496d/f5f664]"
@@ -1967,20 +2048,21 @@ proxy-groups:
       - "🇵🇱PL-39M-[74991c/6167f1]"
       - "🇳🇱NL-37M-[769e11/603437]"
       - "🇳🇱NL-32M-[769e11/8defba]"
+      - "🇺🇸US-413M-[808668/16eccf]"
       - "🇩🇪DE-378M-[808668/8fe132]"
-      - "🇫🇮FI-207M-[8108c8/5b541a]"
+      - "🇫🇮FI-308M-[8108c8/5b541a]"
       - "🇬🇧GB-46M-[84e286/808a17]"
       - "🇬🇧GB-199M-[84e286/ab8615]"
       - "🇪🇸ES-59M-[8b55c2/06ecaf]"
       - "🇬🇧GB-479M-[8cda53/a496d8]"
-      - "🇸🇪SE-218M-[8d588c/cfe39a]"
+      - "🇸🇪SE-215M-[8d588c/cfe39a]"
       - "🇩🇪DE-25M-[8dbba6/1651f3]"
       - "🇺🇸US-225M-[8ddc3a/9199a4]"
       - "🇪🇸ES-43M-[8dfaf9/63427c]"
       - "🇳🇱NL-387M-[8e014d/6b3e1e]"
       - "🇩🇪DE-137M-[93060b/dea01e]"
       - "🇳🇱NL-155M-[93f13d/9989bf]"
-      - "🇫🇮FI-276M-[940254/9b8c78]"
+      - "🇫🇮FI-180M-[940254/9b8c78]"
       - "🇺🇸US-146M-[9b89f4/4c889d]"
       - "🇪🇪EE-483M-[9bebd6/639367]"
       - "🇵🇱PL-40M-[9f6731/cfef58]"
@@ -1995,27 +2077,30 @@ proxy-groups:
       - "🇪🇪EE-379M-[aa6e1e/f16b4e]"
       - "🇪🇸ES-41M-[aababe/0cb9d2]"
       - "🇹🇷TR-206M-[ae4ac5/a4c11e]"
-      - "🇺🇸US-226M-[b00f13/d3b6ad]"
-      - "🇩🇪DE-276M-[b7b596/86702b]"
+      - "🇺🇸US-203M-[b00f13/d3b6ad]"
+      - "🇩🇪DE-158M-[b7b596/86702b]"
       - "🇳🇱NL-276M-[bae8f4/b65ad0]"
       - "🇩🇪DE-414M-[bb8124/53d3e1]"
       - "🇫🇷FR-62M-[be8dab/d1a6ee]"
       - "🇩🇪DE-291M-[be8dab/e16ea1]"
-      - "🇺🇸US-144M-[be8dab/f557c4]"
-      - "🇳🇴NO-249M-[bf3312/af4014]"
-      - "🇵🇱PL-276M-[c887bd/9f30e6]"
+      - "🇺🇸US-156M-[be8dab/f557c4]"
+      - "🇳🇴NO-44M-[bf3312/af4014]"
+      - "🇵🇱PL-398M-[c887bd/9f30e6]"
       - "🇳🇱NL-436M-[c8d825/2de87d]"
+      - "🇵🇱PL-24M-[cc594c/70b99e]"
       - "🇵🇱PL-60M-[cc594c/c6cb29]"
-      - "🇨🇦CA-276M-[cd8737/c5d670]"
+      - "🇨🇦CA-246M-[cd8737/c5d670]"
       - "🇳🇱NL-56M-[cf4ea7/6c51ee]"
-      - "🇺🇸US-197M-[cf72eb/cdac36]"
+      - "🇺🇸US-101M-[cf72eb/cdac36]"
+      - "🇫🇮FI-379M-[d09f5f/39f685]"
       - "🇳🇱NL-75M-[d35992/7099d3]"
+      - "🇳🇱NL-33M-[d35992/c5db0d]"
       - "🇺🇸US-60M-[d3c651/a79951]"
       - "🇮🇳IN-163M-[d3e96a/adad11]"
       - "🇳🇱NL-447M-[d60425/574173]"
       - "🇺🇸US-26M-[d91b7c/ade192]"
       - "🌐XX-38M-[dad8fc/061b18]"
-      - "🇵🇱PL-276M-[dc70c2/2c86e4]"
+      - "🇵🇱PL-282M-[dc70c2/2c86e4]"
       - "🇳🇱NL-385M-[dcd7c5/af83ae]"
       - "🇩🇪DE-449M-[ddd01a/f1bd45]"
       - "🇩🇪DE-413M-[e78c1b/9ef747]"
@@ -2030,12 +2115,12 @@ proxy-groups:
       - "🇩🇪DE-475M-[f654f8/23d519]"
       - "🇩🇪DE-450M-[f654f8/8b82c9]"
       - "🇺🇸US-298M-[fa088f/6e01d5]"
-      - "🇳🇱NL-413M-[fa38a7/9c699f]"
-      - "🇸🇪SE-276M-[fa6e89/5a39ee]"
+      - "🇳🇱NL-367M-[fa38a7/9c699f]"
+      - "🇸🇪SE-324M-[fa6e89/5a39ee]"
       - "🇩🇪DE-57M-[fcac98/1e3984]"
-      - "🇫🇮FI-181M-[fe6c13/dc1849]"
+      - "🇫🇮FI-64M-[fe6c13/dc1849]"
       - "🇧🇷BR-158M-[ff1b9e/924cc3]"
-      - "🇫🇮FI-276M-[ffc7f8/acf068]"
+      - "🇫🇮FI-331M-[ffc7f8/acf068]"
 
 rules:
   - "DOMAIN,smtp.gmail.com,DIRECT"
