@@ -891,6 +891,15 @@ proxies:
     grpc-opts:
       grpc-service-name: "204adda7e3da"
 
+  - name: "🇺🇸US-126M-[7d8455/efbdee]"
+    type: "hysteria2"
+    server: "47.89.232.46"
+    port: 8443
+    password: "4afd4e1b1b0edd429b10d800a1cf64a7"
+    udp: true
+    sni: "hysteria2.local"
+    skip-cert-verify: true
+
   - name: "🇺🇸US-413M-[808668/16eccf]"
     type: "vless"
     server: "122.8.47.7"
@@ -1238,6 +1247,23 @@ proxies:
     grpc-opts:
       grpc-service-name: "grpc"
 
+  - name: "🇸🇬SG-72M-[a09bed/2d1728]"
+    type: "vless"
+    server: "50.7.21.87"
+    port: 443
+    uuid: "49db4ce7-ad48-41a3-9b6f-4c6dabd94504"
+    udp: true
+    encryption: "none"
+    servername: "fell.glenmarsh.top"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "ZW0yTM5nfPIQ68ihbjYoIGxvypA6fAU8xjDk2PMVwwY"
+      short-id: "7be77fcdd335"
+    network: "grpc"
+    grpc-opts:
+      grpc-service-name: "grpc"
+
   - name: "🇩🇪DE-408M-[a1295e/ef5b41]"
     type: "vless"
     server: "76.164.202.165"
@@ -1517,7 +1543,7 @@ proxies:
       headers:
         Host: "finalnsdger.global.ssl.fastly.net."
 
-  - name: "🇺🇸US-32M-[be8dab/f557c4]"
+  - name: "🇺🇸US-55M-[be8dab/f557c4]"
     type: "vless"
     server: "199.232.78.120"
     port: 443
@@ -1549,7 +1575,24 @@ proxies:
       short-id: "b12c3119d219dc"
     network: "tcp"
 
-  - name: "🇹🇷TR-266M-[c420ab/de9f39]"
+  - name: "🇸🇬SG-63M-[c06fc6/8bddec]"
+    type: "vless"
+    server: "50.7.21.44"
+    port: 443
+    uuid: "49db4ce7-ad48-41a3-9b6f-4c6dabd94504"
+    udp: true
+    encryption: "none"
+    servername: "holt.glenmarsh.top"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "ZW0yTM5nfPIQ68ihbjYoIGxvypA6fAU8xjDk2PMVwwY"
+      short-id: "e7cea6ccd340d2d7"
+    network: "grpc"
+    grpc-opts:
+      grpc-service-name: "grpc"
+
+  - name: "🇹🇷TR-233M-[c420ab/de9f39]"
     type: "vless"
     server: "77.83.245.22"
     port: 443
@@ -1565,6 +1608,21 @@ proxies:
     network: "grpc"
     grpc-opts:
       grpc-service-name: "grpc"
+
+  - name: "🇷🇺RU-111M-[c62512/36b85c]"
+    type: "vless"
+    server: "45.139.27.15"
+    port: 443
+    uuid: "a30903dc-1bf0-0001-8b1b-603a3a56211c"
+    udp: true
+    encryption: "none"
+    servername: "svc-api-io.galioncc.com"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ"
+      short-id: "6d2f8a41c9e705b3"
+    network: "tcp"
 
   - name: "🇺🇸US-123M-[c7ef00/530849]"
     type: "vless"
@@ -1797,6 +1855,21 @@ proxies:
       public-key: "51UVgXX5T1AUqqVqhoIJ6YFwbe5Bv8OSqkieGm_Ys0c"
       short-id: "ad02ce86"
     network: "tcp"
+
+  - name: "🇸🇪SE-538M-[d7d530/cb08d8]"
+    type: "vless"
+    server: "ksodpa.nicenetworld.ir"
+    port: 2052
+    uuid: "8918e563-f587-4d10-a8c5-4317b0a50271"
+    udp: true
+    encryption: "mlkem768x25519plus.native.0rtt.WrOazBgrZZnqdwwx8Gz53xPpU8TgqsJPPx8mT98yaRc"
+    tls: false
+    network: "ws"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "ns1.nicenetworld.ir"
+      v2ray-http-upgrade: true
 
   - name: "🇺🇸US-26M-[d91b7c/ade192]"
     type: "vless"
@@ -2079,6 +2152,23 @@ proxies:
     tls: true
     network: "tcp"
 
+  - name: "🇩🇪DE-400M-[f9b52b/69b8f5]"
+    type: "vless"
+    server: "50.7.90.26"
+    port: 443
+    uuid: "49db4ce7-ad48-41a3-9b6f-4c6dabd94504"
+    udp: true
+    encryption: "none"
+    servername: "creek.oakhollow.top"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "afJl8rD_HbWjSxuktnRgL5m1yLGHr4Zgw0oLGCARbQ8"
+      short-id: "9e5860a711d95972"
+    network: "grpc"
+    grpc-opts:
+      grpc-service-name: "grpc"
+
   - name: "🇺🇸US-298M-[fa088f/6e01d5]"
     type: "vless"
     server: "hackernoon.com"
@@ -2255,6 +2345,7 @@ proxy-groups:
       - "🇵🇱PL-39M-[74991c/6167f1]"
       - "🇳🇱NL-37M-[769e11/603437]"
       - "🇳🇱NL-32M-[769e11/8defba]"
+      - "🇺🇸US-126M-[7d8455/efbdee]"
       - "🇺🇸US-413M-[808668/16eccf]"
       - "🇩🇪DE-378M-[808668/8fe132]"
       - "🇫🇮FI-308M-[8108c8/5b541a]"
@@ -2276,6 +2367,7 @@ proxy-groups:
       - "🇪🇪EE-483M-[9bebd6/639367]"
       - "🇵🇱PL-40M-[9f6731/cfef58]"
       - "🇪🇪EE-206M-[a0208f/83aa44]"
+      - "🇸🇬SG-72M-[a09bed/2d1728]"
       - "🇩🇪DE-408M-[a1295e/ef5b41]"
       - "🇪🇪EE-378M-[a30af8/f7698d]"
       - "🇪🇸ES-53M-[a45e55/3cdcd5]"
@@ -2293,9 +2385,11 @@ proxy-groups:
       - "🇺🇸US-157M-[bd78ea/7e9fcf]"
       - "🇫🇷FR-62M-[be8dab/d1a6ee]"
       - "🇩🇪DE-291M-[be8dab/e16ea1]"
-      - "🇺🇸US-32M-[be8dab/f557c4]"
+      - "🇺🇸US-55M-[be8dab/f557c4]"
       - "🇳🇴NO-44M-[bf3312/af4014]"
-      - "🇹🇷TR-266M-[c420ab/de9f39]"
+      - "🇸🇬SG-63M-[c06fc6/8bddec]"
+      - "🇹🇷TR-233M-[c420ab/de9f39]"
+      - "🇷🇺RU-111M-[c62512/36b85c]"
       - "🇺🇸US-123M-[c7ef00/530849]"
       - "🇵🇱PL-398M-[c887bd/9f30e6]"
       - "🇳🇱NL-436M-[c8d825/2de87d]"
@@ -2311,6 +2405,7 @@ proxy-groups:
       - "🇺🇸US-60M-[d3c651/a79951]"
       - "🇮🇳IN-163M-[d3e96a/adad11]"
       - "🇳🇱NL-447M-[d60425/574173]"
+      - "🇸🇪SE-538M-[d7d530/cb08d8]"
       - "🇺🇸US-26M-[d91b7c/ade192]"
       - "🌐XX-38M-[dad8fc/061b18]"
       - "🇵🇱PL-282M-[dc70c2/2c86e4]"
@@ -2329,6 +2424,7 @@ proxy-groups:
       - "🇩🇪DE-148M-[f55aee/d9e8af]"
       - "🇩🇪DE-475M-[f654f8/23d519]"
       - "🇩🇪DE-450M-[f654f8/8b82c9]"
+      - "🇩🇪DE-400M-[f9b52b/69b8f5]"
       - "🇺🇸US-298M-[fa088f/6e01d5]"
       - "🇳🇱NL-367M-[fa38a7/9c699f]"
       - "🇸🇪SE-324M-[fa6e89/5a39ee]"
