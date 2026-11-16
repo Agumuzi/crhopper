@@ -6,6 +6,110 @@ log-level: warning
 ipv6: false
 
 proxies:
+  - name: "🇩🇪DE-331M-[081880/4c2131]"
+    type: "vless"
+    server: "84.32.100.247"
+    port: 443
+    uuid: "2232d904-8e6a-4202-8240-6efd8aec02e9"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "app.streamru4.net"
+    client-fingerprint: "firefox"
+    tls: true
+    network: "tcp"
+
+  - name: "🇵🇱PL-133M-[20532f/75365e]"
+    type: "vless"
+    server: "151.101.36.128"
+    port: 443
+    uuid: "ad9a885d-93bb-48e3-9937-57f1116b64e3"
+    udp: true
+    encryption: "none"
+    servername: "accounts.fastly.com"
+    client-fingerprint: "chrome"
+    tls: true
+    network: "xhttp"
+    xhttp-opts:
+      path: "/"
+      host: "ovd7.global.ssl.fastly.net"
+      mode: "auto"
+      no-grpc-header: true
+      reuse-settings:
+        c-max-reuse-times: "0"
+        h-keep-alive-period: 0
+        h-max-request-times: "600-900"
+        h-max-reusable-secs: "1800-3000"
+        max-connections: "16"
+      x-padding-bytes: "100-1000"
+
+  - name: "🇩🇪DE-23M-[24204e/9b61fc]"
+    type: "vless"
+    server: "217.60.27.117"
+    port: 443
+    uuid: "12776e55-6230-48b9-b069-1bb8a04b4237"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "music.3apes.online"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "q4_o7NvD6vQg4hYsyO29Q6PVufjTJHDUbQTqstre9EQ"
+      short-id: ""
+    network: "tcp"
+
+  - name: "🇳🇱NL-104M-[2df4f8/3426e1]"
+    type: "vless"
+    server: "e60833x.nl7.h1clayd.click"
+    port: 443
+    uuid: "cda0862a-0f87-4be9-8ed8-1d0c9e382839"
+    udp: true
+    encryption: "none"
+    servername: "e60833x.nl7.h1clayd.click"
+    client-fingerprint: "qq"
+    tls: true
+    reality-opts:
+      public-key: "jIRVNEf9SpuWP2nJrAbHGGIUnfzOmwZZlrNGw-Y-O2Q"
+      short-id: "2d2598d60447a967"
+    network: "xhttp"
+    xhttp-opts:
+      path: "/d20896a4ce30"
+      mode: "auto"
+
+  - name: "🇳🇱NL-152M-[3332d4/139370]"
+    type: "vless"
+    server: "5d0319t.nl7.h1clayd.click"
+    port: 443
+    uuid: "cda0862a-0f87-4be9-8ed8-1d0c9e382839"
+    udp: true
+    encryption: "none"
+    packet-encoding: "xudp"
+    servername: "5d0319t.nl7.h1clayd.click"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "l-GzBDuNuhnjxoRlZqKvT7jAt_sbVAxhGFsAttO5kXs"
+      short-id: "361d0dd59c70516f"
+    network: "tcp"
+
+  - name: "🇩🇪DE-257M-[339b5b/7ed4a3]"
+    type: "vless"
+    server: "music.3apes.online"
+    port: 443
+    uuid: "12776e55-6230-48b9-b069-1bb8a04b4237"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    packet-encoding: "xudp"
+    servername: "music.3apes.online"
+    client-fingerprint: "qq"
+    tls: true
+    reality-opts:
+      public-key: "q4_o7NvD6vQg4hYsyO29Q6PVufjTJHDUbQTqstre9EQ"
+      short-id: ""
+    network: "tcp"
+
   - name: "🇩🇪DE-22M-[35a5ac/b3dbaa]"
     type: "vless"
     server: "151.101.3.6"
@@ -24,7 +128,7 @@ proxies:
       host: "Mastero.global.ssl.fastly.net"
       mode: "packet-up"
 
-  - name: "🇳🇱NL-77M-[367788/48d9b1]"
+  - name: "🇳🇱NL-97M-[367788/48d9b1]"
     type: "vless"
     server: "fc82dfx.nl8.h1clayd.click"
     port: 443
@@ -42,7 +146,7 @@ proxies:
       path: "/0616f2d729aa"
       mode: "auto"
 
-  - name: "🇪🇸ES-28M-[381536/0c087a]"
+  - name: "🇪🇸ES-71M-[381536/0c087a]"
     type: "vless"
     server: "b6d267t.es10.h1clayd.shop"
     port: 443
@@ -56,6 +160,38 @@ proxies:
       public-key: "cxyrz3HGwHEptrO2fvz6EiikFoEDgTl0SQkrNyj5yRc"
       short-id: "74f848c51d8139d1"
     network: "tcp"
+
+  - name: "🇩🇪DE-100M-[6cf7cb/f95be5]"
+    type: "vless"
+    server: "b1eb8et.de14.h1clayd.click"
+    port: 443
+    uuid: "2208b003-78b1-453c-b5ca-ce847ff0efd6"
+    udp: true
+    encryption: "none"
+    servername: "b1eb8et.de14.h1clayd.click"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "l3fn2CzC6-oVy6Mf5jafL-kVs8aX_jUfMUjhupBkPz0"
+      short-id: "1a5d9b3be394fdc7"
+    network: "tcp"
+
+  - name: "🇳🇱NL-37M-[769e11/603437]"
+    type: "vless"
+    server: "717252g.nl8.h1clayd.click"
+    port: 443
+    uuid: "cda0862a-0f87-4be9-8ed8-1d0c9e382839"
+    udp: true
+    encryption: "none"
+    servername: "717252g.nl8.h1clayd.click"
+    client-fingerprint: "chrome"
+    tls: true
+    reality-opts:
+      public-key: "PD8Jdlg3xB9QY--jwQjp8PFPzCS8-Oryw6-HWBcHMFU"
+      short-id: "d3bd772514c87d28"
+    network: "grpc"
+    grpc-opts:
+      grpc-service-name: "204adda7e3da"
 
   - name: "🇳🇱NL-32M-[769e11/8defba]"
     type: "vless"
@@ -74,6 +210,55 @@ proxies:
     grpc-opts:
       grpc-service-name: "204adda7e3da"
 
+  - name: "🇬🇧GB-46M-[84e286/808a17]"
+    type: "vless"
+    server: "144.126.226.76"
+    port: 2087
+    uuid: "7c03538c-c6dd-4dc1-b35c-5fc0e2a43271"
+    udp: true
+    encryption: "none"
+    servername: "666-7sf.pages.dev"
+    client-fingerprint: "firefox"
+    tls: true
+    network: "ws"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "666-7sf.pages.dev"
+
+  - name: "🇩🇪DE-137M-[93060b/dea01e]"
+    type: "vless"
+    server: "72.61.179.194"
+    port: 8443
+    uuid: "5d7b401c-78fa-4254-872e-6d42bf7e75ec"
+    udp: true
+    encryption: "none"
+    servername: "v1n3.11676767.xyz"
+    client-fingerprint: "chrome"
+    tls: true
+    network: "ws"
+    ws-opts:
+      path: "/go.php/products"
+      headers:
+        Host: "v1n3.11676767.xyz"
+
+  - name: "🇩🇪DE-198M-[be8dab/e16ea1]"
+    type: "vless"
+    server: "199.232.78.120"
+    port: 443
+    uuid: "8d2cbffd-43d0-458d-906b-7c54b7b51f38"
+    udp: true
+    encryption: "none"
+    servername: "cdn.akamai.steamstatic.com"
+    client-fingerprint: "chrome"
+    skip-cert-verify: true
+    tls: true
+    network: "ws"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "finalnsdger.global.ssl.fastly.net."
+
   - name: "🇺🇸US-144M-[be8dab/f557c4]"
     type: "vless"
     server: "199.232.78.120"
@@ -89,6 +274,92 @@ proxies:
       path: "/"
       headers:
         Host: "ushetzijji.global.ssl.fastly.net."
+
+  - name: "🇳🇱NL-234M-[c8d825/2de87d]"
+    type: "vless"
+    server: "radar.cloudflare.com"
+    port: 8080
+    uuid: "cfa71937-73d5-4eb8-9b25-eadecd944803"
+    udp: true
+    encryption: "none"
+    tls: false
+    network: "ws"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "sh-harand.shcharand00.workers.dev"
+
+  - name: "🌐XX-38M-[dad8fc/061b18]"
+    type: "vless"
+    server: "89.147.108.16"
+    port: 8443
+    uuid: "5d7b401c-78fa-4254-872e-6d42bf7e75ec"
+    udp: true
+    encryption: "none"
+    servername: "v1n3.11676767.xyz"
+    client-fingerprint: "chrome"
+    tls: true
+    network: "ws"
+    ws-opts:
+      path: "/go.php/products"
+      headers:
+        Host: "v1n3.11676767.xyz"
+
+  - name: "🇩🇪DE-264M-[ddd01a/f1bd45]"
+    type: "vless"
+    server: "tally.so"
+    port: 2082
+    uuid: "975955b1-0521-49d9-97ad-eed2e626a30f"
+    udp: true
+    encryption: "none"
+    tls: false
+    network: "ws"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "roOz-ryo1kZgj-v1.rOoz-67c.woRKers.deV"
+      max-early-data: 2560
+      early-data-header-name: "Sec-WebSocket-Protocol"
+
+  - name: "🇵🇱PL-103M-[e83e97/959d47]"
+    type: "vless"
+    server: "151.101.36.227"
+    port: 443
+    uuid: "ad9a885d-93bb-48e3-9937-57f1116b64e3"
+    udp: true
+    encryption: "none"
+    servername: "accounts.fastly.com"
+    client-fingerprint: "chrome"
+    tls: true
+    network: "xhttp"
+    xhttp-opts:
+      path: "/"
+      host: "oh1.global.ssl.fastly.net"
+      mode: "auto"
+      no-grpc-header: true
+      reuse-settings:
+        c-max-reuse-times: "0"
+        h-keep-alive-period: 0
+        h-max-request-times: "600-900"
+        h-max-reusable-secs: "1800-3000"
+        max-connections: "16"
+      x-padding-bytes: "100-1000"
+
+  - name: "🇺🇸US-298M-[fa088f/6e01d5]"
+    type: "vless"
+    server: "hackernoon.com"
+    port: 2052
+    uuid: "1658394c-bc07-4db2-ac14-c6e22ee3ad46"
+    udp: true
+    encryption: "none"
+    tls: false
+    network: "ws"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "rayAn69-P9fr6z6w-v3.raYan-69.worKers.deV"
+      max-early-data: 2560
+      early-data-header-name: "Sec-WebSocket-Protocol"
 
   - name: "🇩🇪DE-57M-[fcac98/1e3984]"
     type: "vless"
@@ -114,11 +385,27 @@ proxy-groups:
   - name: "AUTO"
     type: select
     proxies:
+      - "🇩🇪DE-331M-[081880/4c2131]"
+      - "🇵🇱PL-133M-[20532f/75365e]"
+      - "🇩🇪DE-23M-[24204e/9b61fc]"
+      - "🇳🇱NL-104M-[2df4f8/3426e1]"
+      - "🇳🇱NL-152M-[3332d4/139370]"
+      - "🇩🇪DE-257M-[339b5b/7ed4a3]"
       - "🇩🇪DE-22M-[35a5ac/b3dbaa]"
-      - "🇳🇱NL-77M-[367788/48d9b1]"
-      - "🇪🇸ES-28M-[381536/0c087a]"
+      - "🇳🇱NL-97M-[367788/48d9b1]"
+      - "🇪🇸ES-71M-[381536/0c087a]"
+      - "🇩🇪DE-100M-[6cf7cb/f95be5]"
+      - "🇳🇱NL-37M-[769e11/603437]"
       - "🇳🇱NL-32M-[769e11/8defba]"
+      - "🇬🇧GB-46M-[84e286/808a17]"
+      - "🇩🇪DE-137M-[93060b/dea01e]"
+      - "🇩🇪DE-198M-[be8dab/e16ea1]"
       - "🇺🇸US-144M-[be8dab/f557c4]"
+      - "🇳🇱NL-234M-[c8d825/2de87d]"
+      - "🌐XX-38M-[dad8fc/061b18]"
+      - "🇩🇪DE-264M-[ddd01a/f1bd45]"
+      - "🇵🇱PL-103M-[e83e97/959d47]"
+      - "🇺🇸US-298M-[fa088f/6e01d5]"
       - "🇩🇪DE-57M-[fcac98/1e3984]"
 
 rules:
