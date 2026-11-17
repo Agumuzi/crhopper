@@ -6,7 +6,98 @@ log-level: warning
 ipv6: false
 
 proxies:
-  - name: "🇦🇹AT-273M-[814587/b0658a]"
+  - name: "🇸🇪SE-234M-[242621/56b430]"
+    type: "vless"
+    server: "84.32.154.74"
+    port: 443
+    uuid: "2232d904-8e6a-4202-8240-6efd8aec02e9"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "app.streamru10.net"
+    client-fingerprint: "firefox"
+    tls: true
+    network: "tcp"
+
+  - name: "🇩🇪DE-368M-[2e1656/7b8d7b]"
+    type: "vless"
+    server: "48.103.120.4"
+    port: 443
+    uuid: "a30903dc-1bf0-4be5-8b1b-603a3a56211c"
+    udp: true
+    encryption: "none"
+    servername: "net-svc-io.galioncc.com"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ"
+      short-id: "868419504747f6de"
+    network: "tcp"
+
+  - name: "🇺🇸US-195M-[310340/05c762]"
+    type: "vless"
+    server: "23.237.59.227"
+    port: 443
+    uuid: "49db4ce7-ad48-41a3-9b6f-4c6dabd94504"
+    udp: true
+    encryption: "none"
+    servername: "brook.quietgrove.forum"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "gY8Ar_jONItcoTqUPez1k5RjK77PgtS8cYwgM_Qs_wY"
+      short-id: "eee81998bc378318"
+    network: "grpc"
+    grpc-opts:
+      grpc-service-name: "grpc"
+
+  - name: "🇺🇸US-110M-[4790ae/20e43e]"
+    type: "trojan"
+    server: "ipfast.kingmna.com"
+    port: 443
+    password: "SiFvGI5bX01GGtGOJ2_nxA"
+    udp: true
+    sni: "cdn.akamai.steamstatic.com"
+    skip-cert-verify: true
+    network: "ws"
+    ws-opts:
+      path: "/TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER"
+      headers:
+        Host: "copy_az_channel_nufilter_6i.global.ssl.fastly.net."
+
+  - name: "🇳🇱NL-247M-[4aa1f0/aaa22e]"
+    type: "vless"
+    server: "37.49.225.92"
+    port: 443
+    uuid: "a30903dc-1bf0-4be5-8b1b-603a3a56211c"
+    udp: true
+    encryption: "none"
+    servername: "ns-gw-mgr.galioncc.com"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ"
+      short-id: "868419504747f6de"
+    network: "tcp"
+
+  - name: "🇳🇱NL-92M-[5a8f0b/a6ea33]"
+    type: "vless"
+    server: "92.255.58.59"
+    port: 443
+    uuid: "a30903dc-1bf0-0001-8b1b-603a3a56211c"
+    udp: true
+    encryption: "none"
+    servername: "api-gw-cfg.galioncc.com"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ"
+      short-id: "344f83372596eea2"
+    network: "grpc"
+    grpc-opts:
+      grpc-service-name: "grpc"
+
+  - name: "🇦🇹AT-344M-[814587/b0658a]"
     type: "vless"
     server: "50.7.115.243"
     port: 443
@@ -23,7 +114,41 @@ proxies:
     grpc-opts:
       grpc-service-name: "grpc"
 
-  - name: "🇺🇸US-118M-[be8dab/f557c4]"
+  - name: "🇸🇬SG-62M-[854140/b0c762]"
+    type: "vless"
+    server: "50.7.21.92"
+    port: 443
+    uuid: "49db4ce7-ad48-41a3-9b6f-4c6dabd94504"
+    udp: true
+    encryption: "none"
+    servername: "gorse.heathcombe.top"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "xU_Pw9119W3uGKLCBU4lTBCwcazzsAsuoUVxLWSJ-BE"
+      short-id: "807fa7754d"
+    network: "grpc"
+    grpc-opts:
+      grpc-service-name: "grpc"
+
+  - name: "🇺🇸US-215M-[8daa58/defb6b]"
+    type: "vless"
+    server: "23.237.59.228"
+    port: 443
+    uuid: "49db4ce7-ad48-41a3-9b6f-4c6dabd94504"
+    udp: true
+    encryption: "none"
+    servername: "glen.quietgrove.forum"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "XI4UUmMnY3R3Wintseg5Kl354f8DBT38p_klhZq1dnk"
+      short-id: "acb03e8bef86cd48"
+    network: "grpc"
+    grpc-opts:
+      grpc-service-name: "grpc"
+
+  - name: "🇺🇸US-165M-[be8dab/f557c4]"
     type: "vless"
     server: "199.232.78.120"
     port: 443
@@ -39,7 +164,7 @@ proxies:
       headers:
         Host: "ushetzijji.global.ssl.fastly.net."
 
-  - name: "🇸🇬SG-51M-[c06fc6/8bddec]"
+  - name: "🇸🇬SG-68M-[c06fc6/8bddec]"
     type: "vless"
     server: "50.7.21.44"
     port: 443
@@ -56,7 +181,49 @@ proxies:
     grpc-opts:
       grpc-service-name: "grpc"
 
-  - name: "🇦🇹AT-372M-[deb75f/1c6a83]"
+  - name: "🇩🇪DE-429M-[c093fe/cfbe8d]"
+    type: "vless"
+    server: "app.streamru2.net"
+    port: 443
+    uuid: "2232d904-8e6a-4202-8240-6efd8aec02e9"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "app.streamru2.net"
+    client-fingerprint: "firefox"
+    tls: true
+    network: "tcp"
+
+  - name: "🇺🇸US-220M-[c7ef00/530849]"
+    type: "vless"
+    server: "23.237.59.226"
+    port: 443
+    uuid: "49db4ce7-ad48-41a3-9b6f-4c6dabd94504"
+    udp: true
+    encryption: "none"
+    servername: "ridge.quietgrove.forum"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "7ubUnSDMuzBIFRNuKxOy5VDgJQ5q3FYZcrnLBMrLYEw"
+      short-id: "8d8489aa57d310bb"
+    network: "grpc"
+    grpc-opts:
+      grpc-service-name: "grpc"
+
+  - name: "🇩🇪DE-262M-[d75ecf/227b03]"
+    type: "vless"
+    server: "31.58.213.31"
+    port: 443
+    uuid: "2232d904-8e6a-4202-8240-6efd8aec02e9"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "app.streamru2.net"
+    tls: true
+    network: "tcp"
+
+  - name: "🇦🇹AT-352M-[deb75f/1c6a83]"
     type: "vless"
     server: "50.7.115.244"
     port: 443
@@ -73,6 +240,55 @@ proxies:
     grpc-opts:
       grpc-service-name: "grpc"
 
+  - name: "🇩🇪DE-385M-[f86f63/0a1772]"
+    type: "vless"
+    server: "18.202.245.83"
+    port: 443
+    uuid: "fad6c240-14d0-47ce-9264-21c5f18689c1"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "www.amazon.com"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "ZODw0ijKEfbSpHjvQqTyYzsbLpnlnA3j9Io5PfmZ-Ts"
+      short-id: ""
+    network: "tcp"
+
+  - name: "🇩🇪DE-359M-[f9b52b/69b8f5]"
+    type: "vless"
+    server: "50.7.90.26"
+    port: 443
+    uuid: "49db4ce7-ad48-41a3-9b6f-4c6dabd94504"
+    udp: true
+    encryption: "none"
+    servername: "creek.oakhollow.top"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "afJl8rD_HbWjSxuktnRgL5m1yLGHr4Zgw0oLGCARbQ8"
+      short-id: "9e5860a711d95972"
+    network: "grpc"
+    grpc-opts:
+      grpc-service-name: "grpc"
+
+  - name: "🇺🇸US-28M-[fa088f/9bb300]"
+    type: "vless"
+    server: "hackernoon.com"
+    port: 2052
+    uuid: "1658394c-bc07-4db2-ac14-c6e22ee3ad46"
+    udp: true
+    encryption: "none"
+    tls: false
+    network: "ws"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "rayAn69-P9fr6z6w-v3.raYan-69.worKers.deV"
+      max-early-data: 2560
+      early-data-header-name: "Sec-WebSocket-Protocol"
+
 proxy-groups:
   - name: "GLOBAL"
     type: select
@@ -82,10 +298,24 @@ proxy-groups:
   - name: "AUTO"
     type: select
     proxies:
-      - "🇦🇹AT-273M-[814587/b0658a]"
-      - "🇺🇸US-118M-[be8dab/f557c4]"
-      - "🇸🇬SG-51M-[c06fc6/8bddec]"
-      - "🇦🇹AT-372M-[deb75f/1c6a83]"
+      - "🇸🇪SE-234M-[242621/56b430]"
+      - "🇩🇪DE-368M-[2e1656/7b8d7b]"
+      - "🇺🇸US-195M-[310340/05c762]"
+      - "🇺🇸US-110M-[4790ae/20e43e]"
+      - "🇳🇱NL-247M-[4aa1f0/aaa22e]"
+      - "🇳🇱NL-92M-[5a8f0b/a6ea33]"
+      - "🇦🇹AT-344M-[814587/b0658a]"
+      - "🇸🇬SG-62M-[854140/b0c762]"
+      - "🇺🇸US-215M-[8daa58/defb6b]"
+      - "🇺🇸US-165M-[be8dab/f557c4]"
+      - "🇸🇬SG-68M-[c06fc6/8bddec]"
+      - "🇩🇪DE-429M-[c093fe/cfbe8d]"
+      - "🇺🇸US-220M-[c7ef00/530849]"
+      - "🇩🇪DE-262M-[d75ecf/227b03]"
+      - "🇦🇹AT-352M-[deb75f/1c6a83]"
+      - "🇩🇪DE-385M-[f86f63/0a1772]"
+      - "🇩🇪DE-359M-[f9b52b/69b8f5]"
+      - "🇺🇸US-28M-[fa088f/9bb300]"
 
 rules:
   - "DOMAIN,smtp.gmail.com,DIRECT"
