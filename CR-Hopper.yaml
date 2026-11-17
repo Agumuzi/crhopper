@@ -359,6 +359,22 @@ proxies:
     grpc-opts:
       grpc-service-name: "grpc"
 
+  - name: "🌐XX-65M-[d32d57/3122c1]"
+    type: "vless"
+    server: "cloud-de01.dynv6.net"
+    port: 443
+    uuid: "1d1eda2e-0bd7-4478-877b-1c5425c6c4dd"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "tradingview.com"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "yr_opKG6DGTppNDXkk-DhGSYJZXbb9o-caexk2FZO38"
+      short-id: "8f3c6e2a1b5d4f09"
+    network: "tcp"
+
   - name: "🇩🇪DE-430M-[d75ecf/227b03]"
     type: "vless"
     server: "31.58.213.31"
@@ -485,6 +501,7 @@ proxy-groups:
       - "🇸🇬SG-68M-[c06fc6/8bddec]"
       - "🇩🇪DE-62M-[c093fe/cfbe8d]"
       - "🇺🇸US-220M-[c7ef00/530849]"
+      - "🌐XX-65M-[d32d57/3122c1]"
       - "🇩🇪DE-430M-[d75ecf/227b03]"
       - "🇩🇪DE-205M-[ddd01a/f1bd45]"
       - "🇦🇹AT-352M-[deb75f/1c6a83]"
