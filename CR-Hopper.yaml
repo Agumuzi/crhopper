@@ -6,7 +6,38 @@ log-level: warning
 ipv6: false
 
 proxies:
-  - name: "🇸🇪SE-234M-[242621/56b430]"
+  - name: "🇺🇸US-43M-[0a60d3/413939]"
+    type: "vless"
+    server: "46.224.158.20"
+    port: 8443
+    uuid: "88d18cf3-ac0e-46ef-b073-47bd07145983"
+    udp: true
+    encryption: "none"
+    servername: "apex-2jj.pages.dev"
+    client-fingerprint: "firefox"
+    tls: true
+    network: "ws"
+    ws-opts:
+      path: "/rp/DE?ed=2048"
+      headers:
+        Host: "apex-2jj.pages.dev"
+
+  - name: "🇰🇿KZ-157M-[0c8d5e/f7cc0e]"
+    type: "vless"
+    server: "91.217.10.60"
+    port: 443
+    uuid: "a30903dc-1bf0-4be5-8b1b-603a3a56211c"
+    udp: true
+    encryption: "none"
+    servername: "api-rt-cfg.galioncc.com"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ"
+      short-id: "868419504747f6de"
+    network: "tcp"
+
+  - name: "🇸🇪SE-305M-[242621/56b430]"
     type: "vless"
     server: "84.32.154.74"
     port: 443
@@ -65,6 +96,21 @@ proxies:
       headers:
         Host: "copy_az_channel_nufilter_6i.global.ssl.fastly.net."
 
+  - name: "🇺🇸US-280M-[4790ae/511b32]"
+    type: "trojan"
+    server: "ipfast.kingmna.com"
+    port: 443
+    password: "SiFvGI5bX01GGtGOJ2_nxA"
+    udp: true
+    sni: "cdn.akamai.steamstatic.com"
+    client-fingerprint: "chrome"
+    skip-cert-verify: true
+    network: "ws"
+    ws-opts:
+      path: "/TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER"
+      headers:
+        Host: "copy_az_channel_nufilter_8i.global.ssl.fastly.net."
+
   - name: "🇳🇱NL-247M-[4aa1f0/aaa22e]"
     type: "vless"
     server: "37.49.225.92"
@@ -80,7 +126,7 @@ proxies:
       short-id: "868419504747f6de"
     network: "tcp"
 
-  - name: "🇳🇱NL-92M-[5a8f0b/a6ea33]"
+  - name: "🇳🇱NL-262M-[5a8f0b/a6ea33]"
     type: "vless"
     server: "92.255.58.59"
     port: 443
@@ -148,7 +194,52 @@ proxies:
     grpc-opts:
       grpc-service-name: "grpc"
 
-  - name: "🇺🇸US-165M-[be8dab/f557c4]"
+  - name: "🇬🇧GB-438M-[93455a/99fd86]"
+    type: "vless"
+    server: "203.57.82.107"
+    port: 443
+    uuid: "a30903dc-1bf0-4be5-8b1b-603a3a56211c"
+    udp: true
+    encryption: "none"
+    servername: "api-io-mgr.galioncc.com"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ"
+      short-id: "9a3f6c21d8e047b5"
+    network: "tcp"
+
+  - name: "🇮🇹IT-458M-[a1cd59/e2d24c]"
+    type: "vless"
+    server: "48.103.120.21"
+    port: 443
+    uuid: "a30903dc-1bf0-0002-8b1b-603a3a56211c"
+    udp: true
+    encryption: "none"
+    servername: "net-svc-io.galioncc.com"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ"
+      short-id: "868419504747f6de"
+    network: "tcp"
+
+  - name: "🇳🇱NL-415M-[a93c8f/da1427]"
+    type: "vless"
+    server: "37.18.14.177"
+    port: 443
+    uuid: "2232d904-8e6a-4202-8240-6efd8aec02e9"
+    udp: true
+    encryption: "none"
+    servername: "exl6vz64yc.deshevayashaurma.icu"
+    tls: true
+    network: "ws"
+    ws-opts:
+      path: "/player/events/8be4cef5ec05/"
+      headers:
+        Host: "l2hbelfbzv.flowersgood.top"
+
+  - name: "🇺🇸US-139M-[be8dab/f557c4]"
     type: "vless"
     server: "199.232.78.120"
     port: 443
@@ -181,7 +272,7 @@ proxies:
     grpc-opts:
       grpc-service-name: "grpc"
 
-  - name: "🇩🇪DE-429M-[c093fe/cfbe8d]"
+  - name: "🇩🇪DE-432M-[c093fe/cfbe8d]"
     type: "vless"
     server: "app.streamru2.net"
     port: 443
@@ -211,7 +302,7 @@ proxies:
     grpc-opts:
       grpc-service-name: "grpc"
 
-  - name: "🇩🇪DE-262M-[d75ecf/227b03]"
+  - name: "🇩🇪DE-430M-[d75ecf/227b03]"
     type: "vless"
     server: "31.58.213.31"
     port: 443
@@ -222,6 +313,22 @@ proxies:
     servername: "app.streamru2.net"
     tls: true
     network: "tcp"
+
+  - name: "🇩🇪DE-205M-[ddd01a/f1bd45]"
+    type: "vless"
+    server: "tally.so"
+    port: 2082
+    uuid: "975955b1-0521-49d9-97ad-eed2e626a30f"
+    udp: true
+    encryption: "none"
+    tls: false
+    network: "ws"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "roOz-ryo1kZgj-v1.rOoz-67c.woRKers.deV"
+      max-early-data: 2560
+      early-data-header-name: "Sec-WebSocket-Protocol"
 
   - name: "🇦🇹AT-352M-[deb75f/1c6a83]"
     type: "vless"
@@ -240,7 +347,7 @@ proxies:
     grpc-opts:
       grpc-service-name: "grpc"
 
-  - name: "🇩🇪DE-385M-[f86f63/0a1772]"
+  - name: "🇩🇪DE-489M-[f86f63/0a1772]"
     type: "vless"
     server: "18.202.245.83"
     port: 443
@@ -298,22 +405,29 @@ proxy-groups:
   - name: "AUTO"
     type: select
     proxies:
-      - "🇸🇪SE-234M-[242621/56b430]"
+      - "🇺🇸US-43M-[0a60d3/413939]"
+      - "🇰🇿KZ-157M-[0c8d5e/f7cc0e]"
+      - "🇸🇪SE-305M-[242621/56b430]"
       - "🇩🇪DE-368M-[2e1656/7b8d7b]"
       - "🇺🇸US-195M-[310340/05c762]"
       - "🇺🇸US-110M-[4790ae/20e43e]"
+      - "🇺🇸US-280M-[4790ae/511b32]"
       - "🇳🇱NL-247M-[4aa1f0/aaa22e]"
-      - "🇳🇱NL-92M-[5a8f0b/a6ea33]"
+      - "🇳🇱NL-262M-[5a8f0b/a6ea33]"
       - "🇦🇹AT-344M-[814587/b0658a]"
       - "🇸🇬SG-62M-[854140/b0c762]"
       - "🇺🇸US-215M-[8daa58/defb6b]"
-      - "🇺🇸US-165M-[be8dab/f557c4]"
+      - "🇬🇧GB-438M-[93455a/99fd86]"
+      - "🇮🇹IT-458M-[a1cd59/e2d24c]"
+      - "🇳🇱NL-415M-[a93c8f/da1427]"
+      - "🇺🇸US-139M-[be8dab/f557c4]"
       - "🇸🇬SG-68M-[c06fc6/8bddec]"
-      - "🇩🇪DE-429M-[c093fe/cfbe8d]"
+      - "🇩🇪DE-432M-[c093fe/cfbe8d]"
       - "🇺🇸US-220M-[c7ef00/530849]"
-      - "🇩🇪DE-262M-[d75ecf/227b03]"
+      - "🇩🇪DE-430M-[d75ecf/227b03]"
+      - "🇩🇪DE-205M-[ddd01a/f1bd45]"
       - "🇦🇹AT-352M-[deb75f/1c6a83]"
-      - "🇩🇪DE-385M-[f86f63/0a1772]"
+      - "🇩🇪DE-489M-[f86f63/0a1772]"
       - "🇩🇪DE-359M-[f9b52b/69b8f5]"
       - "🇺🇸US-28M-[fa088f/9bb300]"
 
