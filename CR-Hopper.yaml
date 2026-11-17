@@ -142,6 +142,22 @@ proxies:
       short-id: "868419504747f6de"
     network: "tcp"
 
+  - name: "🇸🇪SE-192M-[5216b0/b831d0]"
+    type: "vless"
+    server: "104.17.169.7"
+    port: 2096
+    uuid: "51a0af77-a60c-4d9b-81a4-f50e1b38d90b"
+    udp: true
+    encryption: "none"
+    servername: "alphefedo7865.pages.dev"
+    client-fingerprint: "chrome"
+    tls: true
+    network: "ws"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "alphefedo7865.pages.dev"
+
   - name: "🇳🇱NL-39M-[5342cc/2c6c28]"
     type: "vless"
     server: "146.19.254.171"
@@ -171,6 +187,22 @@ proxies:
     network: "grpc"
     grpc-opts:
       grpc-service-name: "grpc"
+
+  - name: "🇪🇸ES-48M-[661efe/d7d81a]"
+    type: "vless"
+    server: "89.60.208.74"
+    port: 443
+    uuid: "7060231d-b9ba-495f-a218-bf427940cf3e"
+    udp: true
+    encryption: "none"
+    tls: false
+    network: "http"
+    http-opts:
+      path:
+        - "/"
+      headers:
+        Host:
+          - "play.googleapis.com"
 
   - name: "🇩🇪DE-276M-[78ab8d/c6dec3]"
     type: "vless"
@@ -221,6 +253,20 @@ proxies:
     grpc-opts:
       grpc-service-name: "grpc"
 
+  - name: "🇵🇱PL-168M-[890adf/08bd11]"
+    type: "vless"
+    server: "45.135.235.90"
+    port: 443
+    uuid: "003ec416-45f0-462a-8030-016fe0a71703"
+    udp: true
+    encryption: "none"
+    servername: "51.baklajann.ru"
+    tls: true
+    network: "xhttp"
+    xhttp-opts:
+      path: "/"
+      host: "51.baklajann.ru"
+
   - name: "🇺🇸US-215M-[8daa58/defb6b]"
     type: "vless"
     server: "23.237.59.228"
@@ -252,6 +298,22 @@ proxies:
       public-key: "drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ"
       short-id: "9a3f6c21d8e047b5"
     network: "tcp"
+
+  - name: "🇸🇪SE-285M-[9cd4f7/b14bcd]"
+    type: "vless"
+    server: "104.16.243.122"
+    port: 2053
+    uuid: "51a0af77-a60c-4d9b-81a4-f50e1b38d90b"
+    udp: true
+    encryption: "none"
+    servername: "j4mr-d9oj1at9i-8kuayba9kocwx7uzn.pages.dev"
+    client-fingerprint: "chrome"
+    tls: true
+    network: "ws"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "j4mr-d9oj1at9i-8kuayba9kocwx7uzn.pages.dev"
 
   - name: "🇮🇹IT-458M-[a1cd59/e2d24c]"
     type: "vless"
@@ -296,7 +358,7 @@ proxies:
     tls: true
     network: "tcp"
 
-  - name: "🇺🇸US-78M-[be8dab/f557c4]"
+  - name: "🇺🇸US-103M-[be8dab/f557c4]"
     type: "vless"
     server: "199.232.78.120"
     port: 443
@@ -358,6 +420,22 @@ proxies:
     network: "grpc"
     grpc-opts:
       grpc-service-name: "grpc"
+
+  - name: "🇸🇪SE-391M-[ca280a/545f4c]"
+    type: "vless"
+    server: "104.17.132.173"
+    port: 2083
+    uuid: "51a0af77-a60c-4d9b-81a4-f50e1b38d90b"
+    udp: true
+    encryption: "none"
+    servername: "mohammad38526.pages.dev"
+    client-fingerprint: "chrome"
+    tls: true
+    network: "ws"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "mohammad38526.pages.dev"
 
   - name: "🌐XX-65M-[d32d57/3122c1]"
     type: "vless"
@@ -487,20 +565,25 @@ proxy-groups:
       - "🇺🇸US-110M-[4790ae/20e43e]"
       - "🇺🇸US-280M-[4790ae/511b32]"
       - "🇳🇱NL-247M-[4aa1f0/aaa22e]"
+      - "🇸🇪SE-192M-[5216b0/b831d0]"
       - "🇳🇱NL-39M-[5342cc/2c6c28]"
       - "🇳🇱NL-262M-[5a8f0b/a6ea33]"
+      - "🇪🇸ES-48M-[661efe/d7d81a]"
       - "🇩🇪DE-276M-[78ab8d/c6dec3]"
       - "🇦🇹AT-344M-[814587/b0658a]"
       - "🇸🇬SG-62M-[854140/b0c762]"
+      - "🇵🇱PL-168M-[890adf/08bd11]"
       - "🇺🇸US-215M-[8daa58/defb6b]"
       - "🇬🇧GB-438M-[93455a/99fd86]"
+      - "🇸🇪SE-285M-[9cd4f7/b14bcd]"
       - "🇮🇹IT-458M-[a1cd59/e2d24c]"
       - "🇳🇱NL-415M-[a93c8f/da1427]"
       - "🇳🇱NL-182M-[b83074/fe7a56]"
-      - "🇺🇸US-78M-[be8dab/f557c4]"
+      - "🇺🇸US-103M-[be8dab/f557c4]"
       - "🇸🇬SG-68M-[c06fc6/8bddec]"
       - "🇩🇪DE-62M-[c093fe/cfbe8d]"
       - "🇺🇸US-220M-[c7ef00/530849]"
+      - "🇸🇪SE-391M-[ca280a/545f4c]"
       - "🌐XX-65M-[d32d57/3122c1]"
       - "🇩🇪DE-430M-[d75ecf/227b03]"
       - "🇩🇪DE-205M-[ddd01a/f1bd45]"
