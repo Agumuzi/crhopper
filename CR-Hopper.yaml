@@ -52,7 +52,7 @@ proxies:
       short-id: ""
     network: "tcp"
 
-  - name: "🇸🇪SE-276M-[12b04a/d7c5b3]"
+  - name: "🇸🇪SE-117M-[12b04a/d7c5b3]"
     type: "vless"
     server: "8.6.112.0"
     port: 443
@@ -258,6 +258,22 @@ proxies:
       grpc-service-name: "glush.de2.v1"
       grpc-authority: "pebble.gerqix.online"
 
+  - name: "🇳🇱NL-400M-[95269a/f426f9]"
+    type: "vless"
+    server: "172.93.122.11"
+    port: 8443
+    uuid: "f18c5f6d-2bac-4a99-8c92-a6e6e7aea9b4"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "nl2.reddotcorp.org"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "VDZdbh_RzDDZsHpYF58yUuuvXh93XnmkvpSqb50qG2U"
+      short-id: "1be482b8e08aa0ef"
+    network: "tcp"
+
   - name: "🇷🇺RU-250M-[9cd4f7/b14bcd]"
     type: "vless"
     server: "104.16.243.122"
@@ -460,6 +476,23 @@ proxies:
       max-early-data: 2560
       early-data-header-name: "Sec-WebSocket-Protocol"
 
+  - name: "🇳🇱NL-23M-[e225de/bdb440]"
+    type: "trojan"
+    server: "199.232.78.160"
+    port: 443
+    password: "MiTiVPN"
+    udp: true
+    sni: "steamstatic.com"
+    client-fingerprint: "chrome"
+    skip-cert-verify: true
+    alpn:
+      - "http/1.1"
+    network: "ws"
+    ws-opts:
+      path: "/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN=26"
+      headers:
+        Host: "mitivpn.si"
+
 proxy-groups:
   - name: "GLOBAL"
     type: select
@@ -472,7 +505,7 @@ proxy-groups:
       - "🇱🇹LT-112M-[0320eb/c84f18]"
       - "🇩🇪DE-276M-[06e111/9501d4]"
       - "🇩🇪DE-413M-[08ad4f/8284d8]"
-      - "🇸🇪SE-276M-[12b04a/d7c5b3]"
+      - "🇸🇪SE-117M-[12b04a/d7c5b3]"
       - "🇧🇬BG-28M-[41d18e/eab657]"
       - "🇷🇺RU-253M-[5216b0/b831d0]"
       - "🇩🇪DE-276M-[645426/01a4c8]"
@@ -485,6 +518,7 @@ proxy-groups:
       - "🇵🇱PL-271M-[890adf/08bd11]"
       - "🇵🇱PL-203M-[890adf/263fb9]"
       - "🇩🇪DE-226M-[91d3bc/ec22e9]"
+      - "🇳🇱NL-400M-[95269a/f426f9]"
       - "🇷🇺RU-250M-[9cd4f7/b14bcd]"
       - "🇩🇪DE-55M-[a7ea08/5282c1]"
       - "🇩🇪DE-276M-[bcec4a/bc3464]"
@@ -498,6 +532,7 @@ proxy-groups:
       - "🇫🇮FI-289M-[dc81f2/a42c02]"
       - "🇷🇺RU-264M-[dd6ad7/b66583]"
       - "🇳🇱NL-197M-[ddd01a/f1bd45]"
+      - "🇳🇱NL-23M-[e225de/bdb440]"
 
 rules:
   - "DOMAIN,smtp.gmail.com,DIRECT"
