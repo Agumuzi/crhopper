@@ -6,7 +6,22 @@ log-level: warning
 ipv6: false
 
 proxies:
-  - name: "🇸🇪SE-281M-[12b04a/d7c5b3]"
+  - name: "🇱🇹LT-112M-[0320eb/c84f18]"
+    type: "vless"
+    server: "84.32.51.135"
+    port: 443
+    uuid: "a30903dc-1bf0-4be5-8b1b-603a3a56211c"
+    udp: true
+    encryption: "none"
+    servername: "svc-io-mgr.galioncc.com"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ"
+      short-id: "a7d309e4c16b825f"
+    network: "tcp"
+
+  - name: "🇸🇪SE-356M-[12b04a/d7c5b3]"
     type: "vless"
     server: "8.6.112.0"
     port: 443
@@ -27,7 +42,7 @@ proxies:
       headers:
         Host: "se1.v2less.site"
 
-  - name: "🇸🇪SE-306M-[5216b0/b831d0]"
+  - name: "🇷🇺RU-211M-[5216b0/b831d0]"
     type: "vless"
     server: "104.17.169.7"
     port: 2096
@@ -43,7 +58,7 @@ proxies:
       headers:
         Host: "alphefedo7865.pages.dev"
 
-  - name: "🇪🇸ES-37M-[661efe/d7d81a]"
+  - name: "🇪🇸ES-157M-[661efe/d7d81a]"
     type: "vless"
     server: "89.60.208.74"
     port: 443
@@ -59,7 +74,37 @@ proxies:
         Host:
           - "play.googleapis.com"
 
-  - name: "🇺🇸US-47M-[be8dab/f557c4]"
+  - name: "🇵🇱PL-271M-[890adf/08bd11]"
+    type: "vless"
+    server: "45.135.235.90"
+    port: 443
+    uuid: "003ec416-45f0-462a-8030-016fe0a71703"
+    udp: true
+    encryption: "none"
+    servername: "51.baklajann.ru"
+    tls: true
+    network: "xhttp"
+    xhttp-opts:
+      path: "/"
+      host: "51.baklajann.ru"
+
+  - name: "🇷🇺RU-206M-[9cd4f7/b14bcd]"
+    type: "vless"
+    server: "104.16.243.122"
+    port: 2053
+    uuid: "51a0af77-a60c-4d9b-81a4-f50e1b38d90b"
+    udp: true
+    encryption: "none"
+    servername: "j4mr-d9oj1at9i-8kuayba9kocwx7uzn.pages.dev"
+    client-fingerprint: "chrome"
+    tls: true
+    network: "ws"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "j4mr-d9oj1at9i-8kuayba9kocwx7uzn.pages.dev"
+
+  - name: "🇺🇸US-83M-[be8dab/f557c4]"
     type: "vless"
     server: "199.232.78.120"
     port: 443
@@ -75,6 +120,70 @@ proxies:
       headers:
         Host: "ushetzijji.global.ssl.fastly.net."
 
+  - name: "🇵🇱PL-298M-[c7b93b/58e49b]"
+    type: "vless"
+    server: "141.11.203.165"
+    port: 443
+    uuid: "003ec416-45f0-462a-8030-016fe0a71703"
+    udp: true
+    encryption: "none"
+    servername: "186.baklajann.ru"
+    client-fingerprint: "chrome"
+    alpn:
+      - "h2"
+      - "http/1.1"
+    tls: true
+    network: "xhttp"
+    xhttp-opts:
+      path: "/"
+      host: "186.baklajann.ru"
+      mode: "auto"
+
+  - name: "🇩🇪DE-269M-[c836e4/d837d9]"
+    type: "vless"
+    server: "31.58.213.201"
+    port: 443
+    uuid: "fd90e601-a56c-42b8-aab7-aa02d26fcb04"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "app.streamru1.com"
+    client-fingerprint: "firefox"
+    tls: true
+    network: "tcp"
+
+  - name: "🇷🇺RU-251M-[ca280a/545f4c]"
+    type: "vless"
+    server: "104.17.132.173"
+    port: 2083
+    uuid: "51a0af77-a60c-4d9b-81a4-f50e1b38d90b"
+    udp: true
+    encryption: "none"
+    servername: "mohammad38526.pages.dev"
+    client-fingerprint: "chrome"
+    tls: true
+    network: "ws"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "mohammad38526.pages.dev"
+
+  - name: "🇳🇱NL-197M-[ddd01a/f1bd45]"
+    type: "vless"
+    server: "tally.so"
+    port: 2082
+    uuid: "975955b1-0521-49d9-97ad-eed2e626a30f"
+    udp: true
+    encryption: "none"
+    tls: false
+    network: "ws"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "roOz-ryo1kZgj-v1.rOoz-67c.woRKers.deV"
+      max-early-data: 2560
+      early-data-header-name: "Sec-WebSocket-Protocol"
+
 proxy-groups:
   - name: "GLOBAL"
     type: select
@@ -84,10 +193,17 @@ proxy-groups:
   - name: "AUTO"
     type: select
     proxies:
-      - "🇸🇪SE-281M-[12b04a/d7c5b3]"
-      - "🇸🇪SE-306M-[5216b0/b831d0]"
-      - "🇪🇸ES-37M-[661efe/d7d81a]"
-      - "🇺🇸US-47M-[be8dab/f557c4]"
+      - "🇱🇹LT-112M-[0320eb/c84f18]"
+      - "🇸🇪SE-356M-[12b04a/d7c5b3]"
+      - "🇷🇺RU-211M-[5216b0/b831d0]"
+      - "🇪🇸ES-157M-[661efe/d7d81a]"
+      - "🇵🇱PL-271M-[890adf/08bd11]"
+      - "🇷🇺RU-206M-[9cd4f7/b14bcd]"
+      - "🇺🇸US-83M-[be8dab/f557c4]"
+      - "🇵🇱PL-298M-[c7b93b/58e49b]"
+      - "🇩🇪DE-269M-[c836e4/d837d9]"
+      - "🇷🇺RU-251M-[ca280a/545f4c]"
+      - "🇳🇱NL-197M-[ddd01a/f1bd45]"
 
 rules:
   - "DOMAIN,smtp.gmail.com,DIRECT"
