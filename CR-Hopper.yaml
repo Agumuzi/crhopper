@@ -274,6 +274,23 @@ proxies:
       headers:
         Host: "j4mr-d9oj1at9i-8kuayba9kocwx7uzn.pages.dev"
 
+  - name: "🇩🇪DE-55M-[a7ea08/5282c1]"
+    type: "vless"
+    server: "37.114.37.192"
+    port: 443
+    uuid: "955d8dc7-5e3b-40ac-b2bb-bd8aa20fc7e6"
+    udp: true
+    encryption: "none"
+    servername: "api-mod.storagedirectguide.com"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "eyEGQfdxyhZG0bCKlwp8hSihdc5WHTGmw4umrW4_bxY"
+      short-id: ""
+    network: "grpc"
+    grpc-opts:
+      grpc-service-name: "api-mod"
+
   - name: "🇩🇪DE-276M-[bcec4a/bc3464]"
     type: "hysteria2"
     server: "31.76.106.92"
@@ -335,6 +352,19 @@ proxies:
       path: "/"
       host: "186.baklajann.ru"
       mode: "auto"
+
+  - name: "🇩🇪DE-272M-[c836e4/86cc04]"
+    type: "vless"
+    server: "31.58.213.201"
+    port: 443
+    uuid: "fd90e601-a56c-42b8-aab7-aa02d26fcb04"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "app.streamru1.com"
+    client-fingerprint: "firefox"
+    tls: true
+    network: "tcp"
 
   - name: "🇩🇪DE-273M-[c836e4/d837d9]"
     type: "vless"
@@ -456,10 +486,12 @@ proxy-groups:
       - "🇵🇱PL-203M-[890adf/263fb9]"
       - "🇩🇪DE-226M-[91d3bc/ec22e9]"
       - "🇷🇺RU-250M-[9cd4f7/b14bcd]"
+      - "🇩🇪DE-55M-[a7ea08/5282c1]"
       - "🇩🇪DE-276M-[bcec4a/bc3464]"
       - "🇺🇸US-161M-[be8dab/f557c4]"
       - "🇵🇱PL-298M-[c7b93b/58e49b]"
       - "🇵🇱PL-213M-[c7b93b/dd3388]"
+      - "🇩🇪DE-272M-[c836e4/86cc04]"
       - "🇩🇪DE-273M-[c836e4/d837d9]"
       - "🇷🇺RU-261M-[ca280a/545f4c]"
       - "🇳🇱NL-38M-[d1251f/83ac26]"
