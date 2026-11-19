@@ -6,7 +6,7 @@ log-level: warning
 ipv6: false
 
 proxies:
-  - name: "🇸🇪SE-32M-[12b04a/d7c5b3]"
+  - name: "🇸🇪SE-28M-[12b04a/d7c5b3]"
     type: "vless"
     server: "8.6.112.0"
     port: 443
@@ -27,162 +27,6 @@ proxies:
       headers:
         Host: "se1.v2less.site"
 
-  - name: "🇺🇸US-345M-[4790ae/bedab6]"
-    type: "trojan"
-    server: "ipfast.kingmna.com"
-    port: 443
-    password: "auRVImItMy7CqRAY7FC8Wg"
-    udp: true
-    sni: "cdn.akamai.steamstatic.com"
-    skip-cert-verify: true
-    network: "ws"
-    ws-opts:
-      path: "/TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER"
-      headers:
-        Host: "copy_az_channel_nufilter_6i.global.ssl.fastly.net."
-
-  - name: "🇷🇺RU-38M-[5216b0/b831d0]"
-    type: "vless"
-    server: "104.17.169.7"
-    port: 2096
-    uuid: "51a0af77-a60c-4d9b-81a4-f50e1b38d90b"
-    udp: true
-    encryption: "none"
-    servername: "alphefedo7865.pages.dev"
-    client-fingerprint: "chrome"
-    tls: true
-    network: "ws"
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "alphefedo7865.pages.dev"
-
-  - name: "🇩🇪DE-24M-[69b4ab/121ed3]"
-    type: "vless"
-    server: "31.76.69.76"
-    port: 8443
-    uuid: "12910384-1ef8-40a3-818a-57277063ea66"
-    udp: true
-    encryption: "none"
-    servername: "kk-97e6ec.testkknegr.online"
-    client-fingerprint: "firefox"
-    tls: true
-    network: "grpc"
-    grpc-opts:
-      grpc-service-name: "vlgrpc"
-
-  - name: "🇩🇪DE-34M-[792153/5dcd25]"
-    type: "vless"
-    server: "13.143.183.129"
-    port: 8443
-    uuid: "12910384-1ef8-40a3-818a-57277063ea66"
-    udp: true
-    encryption: "none"
-    servername: "kk-58418b.testkknegr.online"
-    client-fingerprint: "firefox"
-    tls: true
-    network: "grpc"
-    grpc-opts:
-      grpc-service-name: "vlgrpc"
-
-  - name: "🇩🇪DE-110M-[80427c/30ffb5]"
-    type: "vless"
-    server: "orchard.elvano.website"
-    port: 443
-    uuid: "25ac78e7-6d1d-4c9a-a450-c01a4871769f"
-    udp: true
-    encryption: "none"
-    servername: "orchard.elvano.website"
-    client-fingerprint: "firefox"
-    alpn:
-      - "h2"
-      - "http/1.1"
-    tls: true
-    network: "xhttp"
-    xhttp-opts:
-      path: "/api/de1/sync"
-      host: "orchard.elvano.website"
-      mode: "auto"
-
-  - name: "🇺🇸US-101M-[be8dab/f557c4]"
-    type: "vless"
-    server: "199.232.78.120"
-    port: 443
-    uuid: "8d2cbffd-43d0-458d-906b-7c54b7b51f38"
-    udp: true
-    encryption: "none"
-    servername: "cdn.akamai.steamstatic.com"
-    skip-cert-verify: true
-    tls: true
-    network: "ws"
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "ushetzijji.global.ssl.fastly.net."
-
-  - name: "🇩🇪DE-131M-[d7f61e/57cb29]"
-    type: "vless"
-    server: "vellum.merlano.monster"
-    port: 443
-    uuid: "5ef70d03-e0fc-462c-9a04-1441f604fbfb"
-    udp: true
-    encryption: "none"
-    servername: "vellum.merlano.monster"
-    client-fingerprint: "firefox"
-    alpn:
-      - "http/1.1"
-    tls: true
-    network: "ws"
-    ws-opts:
-      path: "/api/de1/stream"
-
-  - name: "🇫🇮FI-393M-[dc81f2/a42c02]"
-    type: "vless"
-    server: "77.232.140.7"
-    port: 443
-    uuid: "50414e45-4c5f-5a45-5553-5a447647929f"
-    udp: true
-    encryption: "none"
-    servername: "bbz1x6eau6gs.88bahpu62r.workers.dev"
-    tls: true
-    network: "ws"
-    ws-opts:
-      path: "/stream/PANEL_ZEUS/5a447647929f"
-      headers:
-        Host: "bbz1x6eau6gs.88bahpu62r.workers.dev"
-
-  - name: "🇷🇺RU-279M-[dd6ad7/b66583]"
-    type: "vless"
-    server: "103.116.7.10"
-    port: 2053
-    uuid: "50414e45-4c5f-5a45-5553-9c45f3fee7fb"
-    udp: true
-    encryption: "none"
-    servername: "dzzxiyeku44s.mahdihonarvar5.workers.dev"
-    client-fingerprint: "unsafe"
-    tls: true
-    network: "ws"
-    ws-opts:
-      path: "/stream/PANEL_ZEUS/9c45f3fee7fb"
-      headers:
-        Host: "dzzxiyeku44s.mahdihonarvar5.workers.dev"
-
-  - name: "🇩🇪DE-233M-[ddd01a/f1bd45]"
-    type: "vless"
-    server: "tally.so"
-    port: 2082
-    uuid: "975955b1-0521-49d9-97ad-eed2e626a30f"
-    udp: true
-    encryption: "none"
-    tls: false
-    network: "ws"
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "roOz-ryo1kZgj-v1.rOoz-67c.woRKers.deV"
-      max-early-data: 2560
-      early-data-header-name: "Sec-WebSocket-Protocol"
-
 proxy-groups:
   - name: "GLOBAL"
     type: select
@@ -192,17 +36,7 @@ proxy-groups:
   - name: "AUTO"
     type: select
     proxies:
-      - "🇸🇪SE-32M-[12b04a/d7c5b3]"
-      - "🇺🇸US-345M-[4790ae/bedab6]"
-      - "🇷🇺RU-38M-[5216b0/b831d0]"
-      - "🇩🇪DE-24M-[69b4ab/121ed3]"
-      - "🇩🇪DE-34M-[792153/5dcd25]"
-      - "🇩🇪DE-110M-[80427c/30ffb5]"
-      - "🇺🇸US-101M-[be8dab/f557c4]"
-      - "🇩🇪DE-131M-[d7f61e/57cb29]"
-      - "🇫🇮FI-393M-[dc81f2/a42c02]"
-      - "🇷🇺RU-279M-[dd6ad7/b66583]"
-      - "🇩🇪DE-233M-[ddd01a/f1bd45]"
+      - "🇸🇪SE-28M-[12b04a/d7c5b3]"
 
 rules:
   - "DOMAIN,smtp.gmail.com,DIRECT"
