@@ -6,7 +6,7 @@ log-level: warning
 ipv6: false
 
 proxies:
-  - name: "🇸🇪SE-37M-[12b04a/d7c5b3]"
+  - name: "🇸🇪SE-451M-[12b04a/d7c5b3]"
     type: "vless"
     server: "8.6.112.0"
     port: 443
@@ -27,6 +27,38 @@ proxies:
       headers:
         Host: "se1.v2less.site"
 
+  - name: "🇷🇺RU-311M-[5216b0/b831d0]"
+    type: "vless"
+    server: "104.17.169.7"
+    port: 2096
+    uuid: "51a0af77-a60c-4d9b-81a4-f50e1b38d90b"
+    udp: true
+    encryption: "none"
+    servername: "alphefedo7865.pages.dev"
+    client-fingerprint: "chrome"
+    tls: true
+    network: "ws"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "alphefedo7865.pages.dev"
+
+  - name: "🇺🇸US-238M-[be8dab/f557c4]"
+    type: "vless"
+    server: "199.232.78.120"
+    port: 443
+    uuid: "8d2cbffd-43d0-458d-906b-7c54b7b51f38"
+    udp: true
+    encryption: "none"
+    servername: "cdn.akamai.steamstatic.com"
+    skip-cert-verify: true
+    tls: true
+    network: "ws"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "ushetzijji.global.ssl.fastly.net."
+
   - name: "🇩🇪DE-131M-[d7f61e/57cb29]"
     type: "vless"
     server: "vellum.merlano.monster"
@@ -43,6 +75,37 @@ proxies:
     ws-opts:
       path: "/api/de1/stream"
 
+  - name: "🇫🇮FI-35M-[dc81f2/a42c02]"
+    type: "vless"
+    server: "77.232.140.7"
+    port: 443
+    uuid: "50414e45-4c5f-5a45-5553-5a447647929f"
+    udp: true
+    encryption: "none"
+    servername: "bbz1x6eau6gs.88bahpu62r.workers.dev"
+    tls: true
+    network: "ws"
+    ws-opts:
+      path: "/stream/PANEL_ZEUS/5a447647929f"
+      headers:
+        Host: "bbz1x6eau6gs.88bahpu62r.workers.dev"
+
+  - name: "🇷🇺RU-122M-[dd6ad7/b66583]"
+    type: "vless"
+    server: "103.116.7.10"
+    port: 2053
+    uuid: "50414e45-4c5f-5a45-5553-9c45f3fee7fb"
+    udp: true
+    encryption: "none"
+    servername: "dzzxiyeku44s.mahdihonarvar5.workers.dev"
+    client-fingerprint: "unsafe"
+    tls: true
+    network: "ws"
+    ws-opts:
+      path: "/stream/PANEL_ZEUS/9c45f3fee7fb"
+      headers:
+        Host: "dzzxiyeku44s.mahdihonarvar5.workers.dev"
+
 proxy-groups:
   - name: "GLOBAL"
     type: select
@@ -52,8 +115,12 @@ proxy-groups:
   - name: "AUTO"
     type: select
     proxies:
-      - "🇸🇪SE-37M-[12b04a/d7c5b3]"
+      - "🇸🇪SE-451M-[12b04a/d7c5b3]"
+      - "🇷🇺RU-311M-[5216b0/b831d0]"
+      - "🇺🇸US-238M-[be8dab/f557c4]"
       - "🇩🇪DE-131M-[d7f61e/57cb29]"
+      - "🇫🇮FI-35M-[dc81f2/a42c02]"
+      - "🇷🇺RU-122M-[dd6ad7/b66583]"
 
 rules:
   - "DOMAIN,smtp.gmail.com,DIRECT"
