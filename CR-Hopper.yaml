@@ -6,7 +6,7 @@ log-level: warning
 ipv6: false
 
 proxies:
-  - name: "🇸🇪SE-28M-[12b04a/d7c5b3]"
+  - name: "🇸🇪SE-23M-[12b04a/d7c5b3]"
     type: "vless"
     server: "8.6.112.0"
     port: 443
@@ -27,323 +27,67 @@ proxies:
       headers:
         Host: "se1.v2less.site"
 
-  - name: "🇫🇷FR-314M-[179e6b/453f55]"
+  - name: "🇩🇪DE-156M-[46405a/a6e38b]"
     type: "vless"
-    server: "45.95.98.139"
+    server: "188.225.78.178"
     port: 443
-    uuid: "a6142d9d-3f9f-47b7-b7e9-1245dd6a15d6"
+    uuid: "25ac78e7-6d1d-4c9a-a450-c01a4871769f"
     udp: true
     encryption: "none"
-    flow: "xtls-rprx-vision"
-    servername: "45.95.98.130"
-    client-fingerprint: "firefox"
-    tls: true
-    network: "tcp"
-
-  - name: "🇩🇪DE-192M-[23b14f/a00251]"
-    type: "vless"
-    server: "144.31.215.244"
-    port: 2096
-    uuid: "fbe22815-0718-4eae-816f-e91c67d15b54"
-    udp: true
-    encryption: "none"
-    servername: "stc4ef0.rumedia-cdn.com"
-    client-fingerprint: "firefox"
-    tls: true
-    network: "ws"
-    ws-opts:
-      path: "/cdn/v3/live"
-      headers:
-        Host: "stc4ef0.rumedia-cdn.com"
-
-  - name: "🇷🇺RU-260M-[2498ef/a8d0cc]"
-    type: "vless"
-    server: "104.17.138.140"
-    port: 8443
-    uuid: "51a0af77-a60c-4d9b-81a4-f50e1b38d90b"
-    udp: true
-    encryption: "none"
+    servername: "hemlock.elvano.website"
     client-fingerprint: "chrome"
     tls: true
-    network: "ws"
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "sfsmzggh4hyy2i-0oy5s5dtmkjv2nam6.pages.dev"
-
-  - name: "🇩🇪DE-363M-[2f0501/e548fb]"
-    type: "vless"
-    server: "144.31.215.233"
-    port: 2096
-    uuid: "fbe22815-0718-4eae-816f-e91c67d15b54"
-    udp: true
-    encryption: "none"
-    servername: "st46d76.rumedia-cdn.com"
-    client-fingerprint: "firefox"
-    tls: true
-    network: "ws"
-    ws-opts:
-      path: "/cdn/v3/live"
-      headers:
-        Host: "st46d76.rumedia-cdn.com"
-
-  - name: "🇫🇮FI-50M-[3d9f35/d2bb84]"
-    type: "vless"
-    server: "5.183.253.25"
-    port: 443
-    uuid: "f2341274-8dd8-4b80-95fd-780641f6f2da"
-    udp: true
-    encryption: "none"
-    servername: "web.poezdkafun.ru"
-    client-fingerprint: "firefox"
-    tls: true
-    reality-opts:
-      public-key: "aFsY-EZjSNTomlAFShKwQIQMJ5pHiZQXXJpWvcz8WkQ"
-      short-id: "0858af97f4e7324d"
     network: "grpc"
     grpc-opts:
-      grpc-service-name: "poezdkafun-grpc"
+      grpc-service-name: "cache.sync.v1"
 
-  - name: "🇺🇸US-263M-[4790ae/7227b2]"
-    type: "trojan"
-    server: "ipfast.kingmna.com"
-    port: 443
-    password: "auRVImItMy7CqRAY7FC8Wg"
-    udp: true
-    sni: "cdn.akamai.steamstatic.com"
-    skip-cert-verify: true
-    network: "ws"
-    ws-opts:
-      path: "/TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER"
-      headers:
-        Host: "copy_az_channel_nufilter_17i.global.ssl.fastly.net."
-
-  - name: "🇺🇸US-295M-[4790ae/bedab6]"
-    type: "trojan"
-    server: "ipfast.kingmna.com"
-    port: 443
-    password: "auRVImItMy7CqRAY7FC8Wg"
-    udp: true
-    sni: "cdn.akamai.steamstatic.com"
-    skip-cert-verify: true
-    network: "ws"
-    ws-opts:
-      path: "/TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER"
-      headers:
-        Host: "copy_az_channel_nufilter_6i.global.ssl.fastly.net."
-
-  - name: "🇷🇺RU-52M-[578d1f/88bad0]"
+  - name: "🇺🇸US-332M-[885bdc/b9984c]"
     type: "vless"
-    server: "104.19.46.190"
-    port: 2096
-    uuid: "51a0af77-a60c-4d9b-81a4-f50e1b38d90b"
+    server: "95.129.236.70"
+    port: 443
+    uuid: "1547ed3d-3bb7-4153-afdc-8eb3e9373c84"
     udp: true
     encryption: "none"
-    client-fingerprint: "chrome"
+    servername: "static.lk.pc-club.app"
+    client-fingerprint: "firefox"
     tls: true
     network: "ws"
     ws-opts:
-      path: "/"
+      path: "/gateway/v1/ws/de963c1a03a37c66383da198813099b1"
       headers:
-        Host: "rezanoori4295.pages.dev"
+        Host: "static.lk.pc-club.app"
 
-  - name: "🇪🇪EE-321M-[72bfca/01a95f]"
+  - name: "🇷🇺RU-397M-[8c917d/7019bb]"
     type: "vless"
-    server: "217.60.100.222"
+    server: "tochkacdn.top"
     port: 443
-    uuid: "a6142d9d-3f9f-47b7-b7e9-1245dd6a15d6"
+    uuid: "ffb2c504-2c6c-49f3-b4bd-9fd3ff6ce454"
     udp: true
     encryption: "none"
-    flow: "xtls-rprx-vision"
-    servername: "217.60.100.222"
+    servername: "unlik.club"
     client-fingerprint: "firefox"
-    tls: true
-    network: "tcp"
-
-  - name: "🇷🇺RU-186M-[804cd8/48b2e4]"
-    type: "vless"
-    server: "78.159.245.147"
-    port: 445
-    uuid: "37af0181-5598-4aad-a040-d926bcb65757"
-    udp: true
-    encryption: "none"
-    servername: "passport.yandex.ru"
-    client-fingerprint: "firefox"
-    tls: true
-    reality-opts:
-      public-key: "VHWmCkZwC5XE-ctv0p8BinjoIx4SWgJUIsZPrhNf6TA"
-      short-id: ""
-    network: "grpc"
-    grpc-opts:
-      grpc-service-name: "grpc"
-
-  - name: "🇬🇧GB-26M-[836e58/def3aa]"
-    type: "vless"
-    server: "eu90.cdn77.icu"
-    port: 20029
-    uuid: "8da0029e-6ff3-49cc-8b4d-120432cc6414"
-    udp: true
-    encryption: "none"
-    servername: "eu64.cdn77.icu"
-    client-fingerprint: "firefox"
-    tls: true
-    reality-opts:
-      public-key: "EltWI8AOqkN8lMjRycweRRoFRah5hu6xiKtgBmQOdE8"
-      short-id: "1ed136481e0ede74"
-    network: "tcp"
-
-  - name: "🇰🇷KR-64M-[96a446/815660]"
-    type: "hysteria2"
-    server: "34.64.134.170"
-    port: 443
-    password: "gG1JyjbJgDmEMvdTgcD9wVOS"
-    udp: true
-    sni: "www.microsoft.com"
-    skip-cert-verify: true
-
-  - name: "🇳🇱NL-282M-[9a5fda/736a94]"
-    type: "vless"
-    server: "31.77.114.86"
-    port: 8443
-    uuid: "100e5be4-f765-45ff-85a0-652e4221fa71"
-    udp: true
-    encryption: "none"
-    flow: "xtls-rprx-vision"
-    servername: "77.88.8.8"
-    client-fingerprint: "firefox"
-    tls: true
-    reality-opts:
-      public-key: "tm1f7W3RTgSx1F6NsoE32TborUxVe1udZQr4LhDAIio"
-      short-id: "37ca4a65fde9245c"
-    network: "tcp"
-
-  - name: "🇷🇺RU-370M-[9be8ad/a4b359]"
-    type: "vless"
-    server: "104.19.33.42"
-    port: 2083
-    uuid: "51a0af77-a60c-4d9b-81a4-f50e1b38d90b"
-    udp: true
-    encryption: "none"
-    client-fingerprint: "chrome"
-    tls: true
-    network: "ws"
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "rezanoori4295.pages.dev"
-
-  - name: "🇷🇺RU-369M-[a2810c/5f2fdf]"
-    type: "vless"
-    server: "104.17.138.111"
-    port: 8443
-    uuid: "51a0af77-a60c-4d9b-81a4-f50e1b38d90b"
-    udp: true
-    encryption: "none"
-    client-fingerprint: "chrome"
-    tls: true
-    network: "ws"
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "rezanoori4295.pages.dev"
-
-  - name: "🇬🇧GB-173M-[adb913/2969c8]"
-    type: "vless"
-    server: "178.107.58.76"
-    port: 443
-    uuid: "a6142d9d-3f9f-47b7-b7e9-1245dd6a15d6"
-    udp: true
-    encryption: "none"
-    flow: "xtls-rprx-vision"
-    servername: "178.107.58.76"
-    client-fingerprint: "firefox"
-    tls: true
-    network: "tcp"
-
-  - name: "🇩🇪DE-196M-[d1f039/1e4cfa]"
-    type: "vless"
-    server: "de.nyanners.ir"
-    port: 666
-    uuid: "c4bc7991-1d11-4fbe-ad9c-4de525060249"
-    udp: true
-    encryption: "none"
-    servername: "de.nyanners.ir"
-    client-fingerprint: "edge"
     alpn:
       - "http/1.1"
     tls: true
     network: "ws"
     ws-opts:
-      path: "/"
+      path: "/static/telemetry/3c9aaef00005/"
       headers:
-        Host: "de.nyanners.ir"
+        Host: "tochkacdn.top"
 
-  - name: "🇫🇮FI-404M-[dc81f2/a42c02]"
+  - name: "🇩🇪DE-179M-[e3b66d/c18b2e]"
     type: "vless"
-    server: "77.232.140.7"
+    server: "188.225.36.219"
     port: 443
-    uuid: "50414e45-4c5f-5a45-5553-5a447647929f"
+    uuid: "25ac78e7-6d1d-4c9a-a450-c01a4871769f"
     udp: true
     encryption: "none"
-    servername: "bbz1x6eau6gs.88bahpu62r.workers.dev"
-    tls: true
-    network: "ws"
-    ws-opts:
-      path: "/stream/PANEL_ZEUS/5a447647929f"
-      headers:
-        Host: "bbz1x6eau6gs.88bahpu62r.workers.dev"
-
-  - name: "🇷🇺RU-369M-[dd6ad7/b66583]"
-    type: "vless"
-    server: "103.116.7.10"
-    port: 2053
-    uuid: "50414e45-4c5f-5a45-5553-9c45f3fee7fb"
-    udp: true
-    encryption: "none"
-    servername: "dzzxiyeku44s.mahdihonarvar5.workers.dev"
-    client-fingerprint: "unsafe"
-    tls: true
-    network: "ws"
-    ws-opts:
-      path: "/stream/PANEL_ZEUS/9c45f3fee7fb"
-      headers:
-        Host: "dzzxiyeku44s.mahdihonarvar5.workers.dev"
-
-  - name: "🇳🇱NL-362M-[ddd01a/917a64]"
-    type: "vless"
-    server: "tally.so"
-    port: 2082
-    uuid: "975955b1-0521-49d9-97ad-eed2e626a30f"
-    udp: true
-    encryption: "none"
-    tls: false
-    network: "ws"
-    ws-opts:
-      path: "/?ed=2560"
-      headers:
-        Host: "roOz-ryo1kZgj-v1.rOoz-67c.woRKers.deV"
-
-  - name: "🇯🇵JP-34M-[df45f5/0e20eb]"
-    type: "hysteria2"
-    server: "35.221.91.82"
-    port: 443
-    password: "gG1JyjbJgDmEMvdTgcD9wVOS"
-    udp: true
-    sni: "www.microsoft.com"
-    skip-cert-verify: true
-
-  - name: "🇩🇪DE-473M-[f07e19/204117]"
-    type: "vless"
-    server: "217.60.12.99"
-    port: 443
-    uuid: "a6142d9d-3f9f-47b7-b7e9-1245dd6a15d6"
-    udp: true
-    encryption: "none"
-    flow: "xtls-rprx-vision"
-    servername: "217.60.12.99"
+    servername: "olvento.space"
     client-fingerprint: "firefox"
     tls: true
-    network: "tcp"
+    network: "grpc"
+    grpc-opts:
+      grpc-service-name: "olvento.sync.v1"
 
 proxy-groups:
   - name: "GLOBAL"
@@ -354,29 +98,11 @@ proxy-groups:
   - name: "AUTO"
     type: select
     proxies:
-      - "🇸🇪SE-28M-[12b04a/d7c5b3]"
-      - "🇫🇷FR-314M-[179e6b/453f55]"
-      - "🇩🇪DE-192M-[23b14f/a00251]"
-      - "🇷🇺RU-260M-[2498ef/a8d0cc]"
-      - "🇩🇪DE-363M-[2f0501/e548fb]"
-      - "🇫🇮FI-50M-[3d9f35/d2bb84]"
-      - "🇺🇸US-263M-[4790ae/7227b2]"
-      - "🇺🇸US-295M-[4790ae/bedab6]"
-      - "🇷🇺RU-52M-[578d1f/88bad0]"
-      - "🇪🇪EE-321M-[72bfca/01a95f]"
-      - "🇷🇺RU-186M-[804cd8/48b2e4]"
-      - "🇬🇧GB-26M-[836e58/def3aa]"
-      - "🇰🇷KR-64M-[96a446/815660]"
-      - "🇳🇱NL-282M-[9a5fda/736a94]"
-      - "🇷🇺RU-370M-[9be8ad/a4b359]"
-      - "🇷🇺RU-369M-[a2810c/5f2fdf]"
-      - "🇬🇧GB-173M-[adb913/2969c8]"
-      - "🇩🇪DE-196M-[d1f039/1e4cfa]"
-      - "🇫🇮FI-404M-[dc81f2/a42c02]"
-      - "🇷🇺RU-369M-[dd6ad7/b66583]"
-      - "🇳🇱NL-362M-[ddd01a/917a64]"
-      - "🇯🇵JP-34M-[df45f5/0e20eb]"
-      - "🇩🇪DE-473M-[f07e19/204117]"
+      - "🇸🇪SE-23M-[12b04a/d7c5b3]"
+      - "🇩🇪DE-156M-[46405a/a6e38b]"
+      - "🇺🇸US-332M-[885bdc/b9984c]"
+      - "🇷🇺RU-397M-[8c917d/7019bb]"
+      - "🇩🇪DE-179M-[e3b66d/c18b2e]"
 
 rules:
   - "DOMAIN,smtp.gmail.com,DIRECT"
