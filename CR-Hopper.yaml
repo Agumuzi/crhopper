@@ -87,6 +87,23 @@ proxies:
       headers:
         Host: "st46d76.rumedia-cdn.com"
 
+  - name: "🇫🇮FI-50M-[3d9f35/d2bb84]"
+    type: "vless"
+    server: "5.183.253.25"
+    port: 443
+    uuid: "f2341274-8dd8-4b80-95fd-780641f6f2da"
+    udp: true
+    encryption: "none"
+    servername: "web.poezdkafun.ru"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "aFsY-EZjSNTomlAFShKwQIQMJ5pHiZQXXJpWvcz8WkQ"
+      short-id: "0858af97f4e7324d"
+    network: "grpc"
+    grpc-opts:
+      grpc-service-name: "poezdkafun-grpc"
+
   - name: "🇺🇸US-263M-[4790ae/7227b2]"
     type: "trojan"
     server: "ipfast.kingmna.com"
@@ -159,6 +176,21 @@ proxies:
     network: "grpc"
     grpc-opts:
       grpc-service-name: "grpc"
+
+  - name: "🇬🇧GB-26M-[836e58/def3aa]"
+    type: "vless"
+    server: "eu90.cdn77.icu"
+    port: 20029
+    uuid: "8da0029e-6ff3-49cc-8b4d-120432cc6414"
+    udp: true
+    encryption: "none"
+    servername: "eu64.cdn77.icu"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "EltWI8AOqkN8lMjRycweRRoFRah5hu6xiKtgBmQOdE8"
+      short-id: "1ed136481e0ede74"
+    network: "tcp"
 
   - name: "🇰🇷KR-64M-[96a446/815660]"
     type: "hysteria2"
@@ -327,11 +359,13 @@ proxy-groups:
       - "🇩🇪DE-192M-[23b14f/a00251]"
       - "🇷🇺RU-260M-[2498ef/a8d0cc]"
       - "🇩🇪DE-363M-[2f0501/e548fb]"
+      - "🇫🇮FI-50M-[3d9f35/d2bb84]"
       - "🇺🇸US-263M-[4790ae/7227b2]"
       - "🇺🇸US-295M-[4790ae/bedab6]"
       - "🇷🇺RU-52M-[578d1f/88bad0]"
       - "🇪🇪EE-321M-[72bfca/01a95f]"
       - "🇷🇺RU-186M-[804cd8/48b2e4]"
+      - "🇬🇧GB-26M-[836e58/def3aa]"
       - "🇰🇷KR-64M-[96a446/815660]"
       - "🇳🇱NL-282M-[9a5fda/736a94]"
       - "🇷🇺RU-370M-[9be8ad/a4b359]"
