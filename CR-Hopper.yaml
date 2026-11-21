@@ -6,7 +6,7 @@ log-level: warning
 ipv6: false
 
 proxies:
-  - name: "🇸🇪SE-23M-[12b04a/d7c5b3]"
+  - name: "🇸🇪SE-28M-[12b04a/d7c5b3]"
     type: "vless"
     server: "8.6.112.0"
     port: 443
@@ -27,7 +27,30 @@ proxies:
       headers:
         Host: "se1.v2less.site"
 
-  - name: "🇩🇪DE-156M-[46405a/a6e38b]"
+  - name: "🇷🇺RU-227M-[2498ef/a8d0cc]"
+    type: "vless"
+    server: "104.17.138.140"
+    port: 8443
+    uuid: "51a0af77-a60c-4d9b-81a4-f50e1b38d90b"
+    udp: true
+    encryption: "none"
+    client-fingerprint: "chrome"
+    tls: true
+    network: "ws"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "sfsmzggh4hyy2i-0oy5s5dtmkjv2nam6.pages.dev"
+
+  - name: "🇷🇺RU-292M-[296aa6/61e239]"
+    type: "ss"
+    server: "195.133.5.196"
+    port: 18443
+    cipher: "aes-256-gcm"
+    password: "NTiHBg64fsY8u8DbGrtypD9gPGSL386p"
+    udp: true
+
+  - name: "🇩🇪DE-111M-[46405a/a6e38b]"
     type: "vless"
     server: "188.225.78.178"
     port: 443
@@ -41,7 +64,22 @@ proxies:
     grpc-opts:
       grpc-service-name: "cache.sync.v1"
 
-  - name: "🇺🇸US-332M-[885bdc/b9984c]"
+  - name: "🇷🇺RU-214M-[578d1f/88bad0]"
+    type: "vless"
+    server: "104.19.46.190"
+    port: 2096
+    uuid: "51a0af77-a60c-4d9b-81a4-f50e1b38d90b"
+    udp: true
+    encryption: "none"
+    client-fingerprint: "chrome"
+    tls: true
+    network: "ws"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "rezanoori4295.pages.dev"
+
+  - name: "🇺🇸US-373M-[885bdc/b9984c]"
     type: "vless"
     server: "95.129.236.70"
     port: 443
@@ -75,7 +113,103 @@ proxies:
       headers:
         Host: "tochkacdn.top"
 
-  - name: "🇩🇪DE-179M-[e3b66d/c18b2e]"
+  - name: "🇷🇺RU-172M-[9be8ad/a4b359]"
+    type: "vless"
+    server: "104.19.33.42"
+    port: 2083
+    uuid: "51a0af77-a60c-4d9b-81a4-f50e1b38d90b"
+    udp: true
+    encryption: "none"
+    client-fingerprint: "chrome"
+    tls: true
+    network: "ws"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "rezanoori4295.pages.dev"
+
+  - name: "🇷🇺RU-313M-[a2810c/5f2fdf]"
+    type: "vless"
+    server: "104.17.138.111"
+    port: 8443
+    uuid: "51a0af77-a60c-4d9b-81a4-f50e1b38d90b"
+    udp: true
+    encryption: "none"
+    client-fingerprint: "chrome"
+    tls: true
+    network: "ws"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "rezanoori4295.pages.dev"
+
+  - name: "🇷🇺RU-24M-[abbff1/398b46]"
+    type: "vless"
+    server: "93.88.203.43"
+    port: 2087
+    uuid: "d2584d9d-f08f-438a-8353-76182ad4fa44"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "webstaurantstore.com"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "nXg_mNAscewD6CVR75kDyC0VhpxLr4wHyNzCj36W1UI"
+      short-id: "313348acff18e4ef"
+    network: "tcp"
+
+  - name: "🇩🇪DE-99M-[c93515/c8a874]"
+    type: "vless"
+    server: "driftwood.elvano.website"
+    port: 443
+    uuid: "25ac78e7-6d1d-4c9a-a450-c01a4871769f"
+    udp: true
+    encryption: "none"
+    servername: "sunstone.elvano.website"
+    client-fingerprint: "firefox"
+    alpn:
+      - "h2"
+      - "http/1.1"
+    tls: true
+    network: "xhttp"
+    xhttp-opts:
+      path: "/api/de2/sync"
+      host: "driftwood.elvano.website"
+      mode: "auto"
+
+  - name: "🇫🇮FI-415M-[dc81f2/a42c02]"
+    type: "vless"
+    server: "77.232.140.7"
+    port: 443
+    uuid: "50414e45-4c5f-5a45-5553-5a447647929f"
+    udp: true
+    encryption: "none"
+    servername: "bbz1x6eau6gs.88bahpu62r.workers.dev"
+    tls: true
+    network: "ws"
+    ws-opts:
+      path: "/stream/PANEL_ZEUS/5a447647929f"
+      headers:
+        Host: "bbz1x6eau6gs.88bahpu62r.workers.dev"
+
+  - name: "🇷🇺RU-159M-[dd6ad7/b66583]"
+    type: "vless"
+    server: "103.116.7.10"
+    port: 2053
+    uuid: "50414e45-4c5f-5a45-5553-9c45f3fee7fb"
+    udp: true
+    encryption: "none"
+    servername: "dzzxiyeku44s.mahdihonarvar5.workers.dev"
+    client-fingerprint: "unsafe"
+    tls: true
+    network: "ws"
+    ws-opts:
+      path: "/stream/PANEL_ZEUS/9c45f3fee7fb"
+      headers:
+        Host: "dzzxiyeku44s.mahdihonarvar5.workers.dev"
+
+  - name: "🇩🇪DE-243M-[e3b66d/c18b2e]"
     type: "vless"
     server: "188.225.36.219"
     port: 443
@@ -98,11 +232,20 @@ proxy-groups:
   - name: "AUTO"
     type: select
     proxies:
-      - "🇸🇪SE-23M-[12b04a/d7c5b3]"
-      - "🇩🇪DE-156M-[46405a/a6e38b]"
-      - "🇺🇸US-332M-[885bdc/b9984c]"
+      - "🇸🇪SE-28M-[12b04a/d7c5b3]"
+      - "🇷🇺RU-227M-[2498ef/a8d0cc]"
+      - "🇷🇺RU-292M-[296aa6/61e239]"
+      - "🇩🇪DE-111M-[46405a/a6e38b]"
+      - "🇷🇺RU-214M-[578d1f/88bad0]"
+      - "🇺🇸US-373M-[885bdc/b9984c]"
       - "🇷🇺RU-397M-[8c917d/7019bb]"
-      - "🇩🇪DE-179M-[e3b66d/c18b2e]"
+      - "🇷🇺RU-172M-[9be8ad/a4b359]"
+      - "🇷🇺RU-313M-[a2810c/5f2fdf]"
+      - "🇷🇺RU-24M-[abbff1/398b46]"
+      - "🇩🇪DE-99M-[c93515/c8a874]"
+      - "🇫🇮FI-415M-[dc81f2/a42c02]"
+      - "🇷🇺RU-159M-[dd6ad7/b66583]"
+      - "🇩🇪DE-243M-[e3b66d/c18b2e]"
 
 rules:
   - "DOMAIN,smtp.gmail.com,DIRECT"
