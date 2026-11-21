@@ -6,7 +6,7 @@ log-level: warning
 ipv6: false
 
 proxies:
-  - name: "🇸🇪SE-28M-[12b04a/d7c5b3]"
+  - name: "🇸🇪SE-50M-[12b04a/d7c5b3]"
     type: "vless"
     server: "8.6.112.0"
     port: 443
@@ -27,7 +27,7 @@ proxies:
       headers:
         Host: "se1.v2less.site"
 
-  - name: "🇷🇺RU-227M-[2498ef/a8d0cc]"
+  - name: "🇷🇺RU-320M-[2498ef/a8d0cc]"
     type: "vless"
     server: "104.17.138.140"
     port: 8443
@@ -42,7 +42,7 @@ proxies:
       headers:
         Host: "sfsmzggh4hyy2i-0oy5s5dtmkjv2nam6.pages.dev"
 
-  - name: "🇷🇺RU-292M-[296aa6/61e239]"
+  - name: "🇷🇺RU-138M-[296aa6/61e239]"
     type: "ss"
     server: "195.133.5.196"
     port: 18443
@@ -50,7 +50,23 @@ proxies:
     password: "NTiHBg64fsY8u8DbGrtypD9gPGSL386p"
     udp: true
 
-  - name: "🇩🇪DE-111M-[46405a/a6e38b]"
+  - name: "🇷🇺RU-438M-[452f9f/bcd384]"
+    type: "vless"
+    server: "185.178.208.167"
+    port: 443
+    uuid: "ffb2c504-2c6c-49f3-b4bd-9fd3ff6ce454"
+    udp: true
+    encryption: "none"
+    servername: "unlik.club"
+    client-fingerprint: "firefox"
+    tls: true
+    network: "ws"
+    ws-opts:
+      path: "/static/telemetry/3c9aaef00005/"
+      headers:
+        Host: "tochkacdn.top"
+
+  - name: "🇩🇪DE-202M-[46405a/a6e38b]"
     type: "vless"
     server: "188.225.78.178"
     port: 443
@@ -64,7 +80,7 @@ proxies:
     grpc-opts:
       grpc-service-name: "cache.sync.v1"
 
-  - name: "🇷🇺RU-214M-[578d1f/88bad0]"
+  - name: "🇷🇺RU-289M-[578d1f/88bad0]"
     type: "vless"
     server: "104.19.46.190"
     port: 2096
@@ -95,7 +111,7 @@ proxies:
       headers:
         Host: "static.lk.pc-club.app"
 
-  - name: "🇷🇺RU-397M-[8c917d/7019bb]"
+  - name: "🇷🇺RU-333M-[8c917d/7019bb]"
     type: "vless"
     server: "tochkacdn.top"
     port: 443
@@ -193,7 +209,7 @@ proxies:
       headers:
         Host: "bbz1x6eau6gs.88bahpu62r.workers.dev"
 
-  - name: "🇷🇺RU-159M-[dd6ad7/b66583]"
+  - name: "🇷🇺RU-345M-[dd6ad7/b66583]"
     type: "vless"
     server: "103.116.7.10"
     port: 2053
@@ -209,7 +225,7 @@ proxies:
       headers:
         Host: "dzzxiyeku44s.mahdihonarvar5.workers.dev"
 
-  - name: "🇩🇪DE-243M-[e3b66d/c18b2e]"
+  - name: "🇩🇪DE-153M-[e3b66d/c18b2e]"
     type: "vless"
     server: "188.225.36.219"
     port: 443
@@ -232,20 +248,21 @@ proxy-groups:
   - name: "AUTO"
     type: select
     proxies:
-      - "🇸🇪SE-28M-[12b04a/d7c5b3]"
-      - "🇷🇺RU-227M-[2498ef/a8d0cc]"
-      - "🇷🇺RU-292M-[296aa6/61e239]"
-      - "🇩🇪DE-111M-[46405a/a6e38b]"
-      - "🇷🇺RU-214M-[578d1f/88bad0]"
+      - "🇸🇪SE-50M-[12b04a/d7c5b3]"
+      - "🇷🇺RU-320M-[2498ef/a8d0cc]"
+      - "🇷🇺RU-138M-[296aa6/61e239]"
+      - "🇷🇺RU-438M-[452f9f/bcd384]"
+      - "🇩🇪DE-202M-[46405a/a6e38b]"
+      - "🇷🇺RU-289M-[578d1f/88bad0]"
       - "🇺🇸US-373M-[885bdc/b9984c]"
-      - "🇷🇺RU-397M-[8c917d/7019bb]"
+      - "🇷🇺RU-333M-[8c917d/7019bb]"
       - "🇷🇺RU-172M-[9be8ad/a4b359]"
       - "🇷🇺RU-313M-[a2810c/5f2fdf]"
       - "🇷🇺RU-24M-[abbff1/398b46]"
       - "🇩🇪DE-99M-[c93515/c8a874]"
       - "🇫🇮FI-415M-[dc81f2/a42c02]"
-      - "🇷🇺RU-159M-[dd6ad7/b66583]"
-      - "🇩🇪DE-243M-[e3b66d/c18b2e]"
+      - "🇷🇺RU-345M-[dd6ad7/b66583]"
+      - "🇩🇪DE-153M-[e3b66d/c18b2e]"
 
 rules:
   - "DOMAIN,smtp.gmail.com,DIRECT"
