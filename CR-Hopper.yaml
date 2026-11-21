@@ -246,6 +246,20 @@ proxies:
       headers:
         Host: "rezanoori4295.pages.dev"
 
+  - name: "🇸🇬SG-197M-[64733d/487c42]"
+    type: "vless"
+    server: "support.zoom.us"
+    port: 80
+    uuid: "67766b72-87da-493d-bece-f4542f7e5df1"
+    udp: true
+    encryption: "none"
+    tls: false
+    network: "ws"
+    ws-opts:
+      path: "/sg-hzr"
+      headers:
+        Host: "support.zoom.us.wez7k.eu.cc"
+
   - name: "🇵🇱PL-179M-[75d56a/f49c7a]"
     type: "vless"
     server: "189.74.116.28"
@@ -261,6 +275,23 @@ proxies:
       public-key: "r5WB5FnSCt4eeBC1FJMfkWHbzsMuabo0Rc6wuAhlZUs"
       short-id: "a8"
     network: "tcp"
+
+  - name: "🇳🇱NL-32M-[769e11/8defba]"
+    type: "vless"
+    server: "717252g.nl8.h1clayd.click"
+    port: 443
+    uuid: "cda0862a-0f87-4be9-8ed8-1d0c9e382839"
+    udp: true
+    encryption: "none"
+    servername: "717252g.nl8.h1clayd.click"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "PD8Jdlg3xB9QY--jwQjp8PFPzCS8-Oryw6-HWBcHMFU"
+      short-id: "d3bd772514c87d28"
+    network: "grpc"
+    grpc-opts:
+      grpc-service-name: "204adda7e3da"
 
   - name: "🇦🇱AL-69M-[81bd6d/de428f]"
     type: "vless"
@@ -407,6 +438,23 @@ proxies:
       short-id: "313348acff18e4ef"
     network: "tcp"
 
+  - name: "🇮🇱IL-125M-[b51ee8/423591]"
+    type: "vmess"
+    server: "cf.877774.xyz"
+    port: 443
+    uuid: "60518fc8-889b-4ef0-8b09-63004f8b2964"
+    alterId: 0
+    cipher: "none"
+    udp: true
+    tls: true
+    servername: "sap-il.086571.xyz"
+    client-fingerprint: "chrome"
+    network: "ws"
+    ws-opts:
+      path: "/vmess-argo?ed=2560"
+      headers:
+        Host: "sap-il.086571.xyz"
+
   - name: "🇩🇪DE-99M-[c93515/c8a874]"
     type: "vless"
     server: "driftwood.elvano.website"
@@ -528,7 +576,9 @@ proxy-groups:
       - "🇩🇪DE-35M-[49a14f/443f8a]"
       - "🇳🇱NL-91M-[4c65d9/cb7b28]"
       - "🇷🇺RU-289M-[578d1f/88bad0]"
+      - "🇸🇬SG-197M-[64733d/487c42]"
       - "🇵🇱PL-179M-[75d56a/f49c7a]"
+      - "🇳🇱NL-32M-[769e11/8defba]"
       - "🇦🇱AL-69M-[81bd6d/de428f]"
       - "🇦🇹AT-276M-[829787/5e6381]"
       - "🇺🇸US-254M-[885bdc/b9984c]"
@@ -538,6 +588,7 @@ proxy-groups:
       - "🇫🇮FI-152M-[a635ba/7f2285]"
       - "🇫🇷FR-215M-[aa6a0f/699588]"
       - "🇷🇺RU-24M-[abbff1/398b46]"
+      - "🇮🇱IL-125M-[b51ee8/423591]"
       - "🇩🇪DE-99M-[c93515/c8a874]"
       - "🇫🇮FI-415M-[dc81f2/a42c02]"
       - "🇷🇺RU-345M-[dd6ad7/b66583]"
