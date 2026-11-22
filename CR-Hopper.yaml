@@ -6,6 +6,36 @@ log-level: warning
 ipv6: false
 
 proxies:
+  - name: "🇷🇺RU-129M-[0da008/f2bf6d]"
+    type: "vless"
+    server: "104.17.136.102"
+    port: 2087
+    uuid: "51a0af77-a60c-4d9b-81a4-f50e1b38d90b"
+    udp: true
+    encryption: "none"
+    client-fingerprint: "chrome"
+    tls: true
+    network: "ws"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "rezanoori4295.pages.dev"
+
+  - name: "🇷🇺RU-226M-[2498ef/a8d0cc]"
+    type: "vless"
+    server: "104.17.138.140"
+    port: 8443
+    uuid: "51a0af77-a60c-4d9b-81a4-f50e1b38d90b"
+    udp: true
+    encryption: "none"
+    client-fingerprint: "chrome"
+    tls: true
+    network: "ws"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "sfsmzggh4hyy2i-0oy5s5dtmkjv2nam6.pages.dev"
+
   - name: "🇷🇺RU-359M-[452f9f/abefda]"
     type: "vless"
     server: "185.178.208.167"
@@ -21,6 +51,40 @@ proxies:
       path: "/static/telemetry/3c9aaef00005/"
       headers:
         Host: "tochkacdn.top"
+
+  - name: "🇺🇸US-200M-[4790ae/f0dd57]"
+    type: "trojan"
+    server: "ipfast.kingmna.com"
+    port: 443
+    password: "6-FrR5YsfjfyNp6AIFZgcQ"
+    udp: true
+    sni: "cdn.akamai.steamstatic.com"
+    skip-cert-verify: true
+    network: "ws"
+    ws-opts:
+      path: "/TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER"
+      headers:
+        Host: "copy_az_channel_nufilter_17i.global.ssl.fastly.net."
+
+  - name: "🇬🇧GB-50M-[4a9135/0736ae]"
+    type: "vless"
+    server: "chatgpt.com"
+    port: 8443
+    uuid: "e88c423d-9f23-4d25-aef0-940571858d58"
+    udp: true
+    encryption: "none"
+    servername: "sinavm2.soft10.ir"
+    client-fingerprint: "chrome"
+    alpn:
+      - "http/1.1"
+      - "h2"
+      - "h3"
+    tls: true
+    network: "xhttp"
+    xhttp-opts:
+      path: "/"
+      mode: "auto"
+      x-padding-bytes: "100-1000"
 
   - name: "🇬🇧GB-57M-[4a9135/59ce93]"
     type: "vless"
@@ -42,7 +106,50 @@ proxies:
       mode: "auto"
       x-padding-bytes: "100-1000"
 
-  - name: "🇸🇬SG-247M-[64733d/487c42]"
+  - name: "🇩🇪DE-36M-[56081f/b05505]"
+    type: "vless"
+    server: "95.129.236.239"
+    port: 443
+    uuid: "a71d6c6d-c95e-4ec1-a892-22e21733bf09"
+    udp: true
+    encryption: "none"
+    servername: "files-qzgs.login.opendns.stream"
+    client-fingerprint: "firefox"
+    tls: true
+    network: "ws"
+    ws-opts:
+      path: "/origin/246825491/fetch"
+      headers:
+        Host: "files-qzgs.login.opendns.stream"
+
+  - name: "🇸🇪SE-43M-[56ffd4/d3750d]"
+    type: "vless"
+    server: "sonau.yaremonta.loc.cc"
+    port: 8080
+    uuid: "c5468915-f60c-4134-b4d3-eb24501d7c65"
+    udp: true
+    encryption: "none"
+    tls: false
+    network: "ws"
+    ws-opts:
+      path: "/vless"
+
+  - name: "🇷🇺RU-380M-[578d1f/88bad0]"
+    type: "vless"
+    server: "104.19.46.190"
+    port: 2096
+    uuid: "51a0af77-a60c-4d9b-81a4-f50e1b38d90b"
+    udp: true
+    encryption: "none"
+    client-fingerprint: "chrome"
+    tls: true
+    network: "ws"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "rezanoori4295.pages.dev"
+
+  - name: "🇸🇬SG-351M-[64733d/487c42]"
     type: "vless"
     server: "support.zoom.us"
     port: 80
@@ -56,7 +163,71 @@ proxies:
       headers:
         Host: "support.zoom.us.wez7k.eu.cc"
 
-  - name: "🇩🇪DE-115M-[ac3d85/fcf6af]"
+  - name: "🇩🇪DE-165M-[777e9e/19b6c7]"
+    type: "vless"
+    server: "185.178.208.140"
+    port: 443
+    uuid: "ef5a57c7-84d5-4f86-b99c-875a16da485f"
+    udp: true
+    encryption: "none"
+    servername: "drive.dev.fosonmine.site"
+    client-fingerprint: "firefox"
+    tls: true
+    network: "ws"
+    ws-opts:
+      path: "/collector/runtime/channel/open"
+      headers:
+        Host: "drive.dev.fosonmine.site"
+
+  - name: "🇷🇺RU-490M-[8c917d/7019bb]"
+    type: "vless"
+    server: "tochkacdn.top"
+    port: 443
+    uuid: "ffb2c504-2c6c-49f3-b4bd-9fd3ff6ce454"
+    udp: true
+    encryption: "none"
+    servername: "unlik.club"
+    client-fingerprint: "firefox"
+    alpn:
+      - "http/1.1"
+    tls: true
+    network: "ws"
+    ws-opts:
+      path: "/static/telemetry/3c9aaef00005/"
+      headers:
+        Host: "tochkacdn.top"
+
+  - name: "🇷🇺RU-264M-[9be8ad/a4b359]"
+    type: "vless"
+    server: "104.19.33.42"
+    port: 2083
+    uuid: "51a0af77-a60c-4d9b-81a4-f50e1b38d90b"
+    udp: true
+    encryption: "none"
+    client-fingerprint: "chrome"
+    tls: true
+    network: "ws"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "rezanoori4295.pages.dev"
+
+  - name: "🇷🇺RU-309M-[a2810c/5f2fdf]"
+    type: "vless"
+    server: "104.17.138.111"
+    port: 8443
+    uuid: "51a0af77-a60c-4d9b-81a4-f50e1b38d90b"
+    udp: true
+    encryption: "none"
+    client-fingerprint: "chrome"
+    tls: true
+    network: "ws"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "rezanoori4295.pages.dev"
+
+  - name: "🇩🇪DE-36M-[ac3d85/fcf6af]"
     type: "vless"
     server: "files-qzgs.login.opendns.stream"
     port: 443
@@ -72,6 +243,19 @@ proxies:
     ws-opts:
       path: "/origin/246825491/fetch"
 
+  - name: "🇳🇱NL-485M-[cc2a86/0a1a86]"
+    type: "vless"
+    server: "147.45.221.225"
+    port: 443
+    uuid: "58e22afd-bf74-4736-984d-63a8ca03d7f0"
+    udp: true
+    encryption: "none"
+    servername: "nl.lucheeebezlimitnoekino.stream"
+    tls: true
+    network: "ws"
+    ws-opts:
+      path: "/media/ws/"
+
   - name: "🇳🇱NL-281M-[cc2a86/10737e]"
     type: "vless"
     server: "147.45.221.225"
@@ -86,6 +270,37 @@ proxies:
     ws-opts:
       path: "/media/ws/"
 
+  - name: "🇫🇮FI-483M-[dc81f2/a42c02]"
+    type: "vless"
+    server: "77.232.140.7"
+    port: 443
+    uuid: "50414e45-4c5f-5a45-5553-5a447647929f"
+    udp: true
+    encryption: "none"
+    servername: "bbz1x6eau6gs.88bahpu62r.workers.dev"
+    tls: true
+    network: "ws"
+    ws-opts:
+      path: "/stream/PANEL_ZEUS/5a447647929f"
+      headers:
+        Host: "bbz1x6eau6gs.88bahpu62r.workers.dev"
+
+  - name: "🇷🇺RU-355M-[dd6ad7/b66583]"
+    type: "vless"
+    server: "103.116.7.10"
+    port: 2053
+    uuid: "50414e45-4c5f-5a45-5553-9c45f3fee7fb"
+    udp: true
+    encryption: "none"
+    servername: "dzzxiyeku44s.mahdihonarvar5.workers.dev"
+    client-fingerprint: "unsafe"
+    tls: true
+    network: "ws"
+    ws-opts:
+      path: "/stream/PANEL_ZEUS/9c45f3fee7fb"
+      headers:
+        Host: "dzzxiyeku44s.mahdihonarvar5.workers.dev"
+
 proxy-groups:
   - name: "GLOBAL"
     type: select
@@ -95,11 +310,25 @@ proxy-groups:
   - name: "AUTO"
     type: select
     proxies:
+      - "🇷🇺RU-129M-[0da008/f2bf6d]"
+      - "🇷🇺RU-226M-[2498ef/a8d0cc]"
       - "🇷🇺RU-359M-[452f9f/abefda]"
+      - "🇺🇸US-200M-[4790ae/f0dd57]"
+      - "🇬🇧GB-50M-[4a9135/0736ae]"
       - "🇬🇧GB-57M-[4a9135/59ce93]"
-      - "🇸🇬SG-247M-[64733d/487c42]"
-      - "🇩🇪DE-115M-[ac3d85/fcf6af]"
+      - "🇩🇪DE-36M-[56081f/b05505]"
+      - "🇸🇪SE-43M-[56ffd4/d3750d]"
+      - "🇷🇺RU-380M-[578d1f/88bad0]"
+      - "🇸🇬SG-351M-[64733d/487c42]"
+      - "🇩🇪DE-165M-[777e9e/19b6c7]"
+      - "🇷🇺RU-490M-[8c917d/7019bb]"
+      - "🇷🇺RU-264M-[9be8ad/a4b359]"
+      - "🇷🇺RU-309M-[a2810c/5f2fdf]"
+      - "🇩🇪DE-36M-[ac3d85/fcf6af]"
+      - "🇳🇱NL-485M-[cc2a86/0a1a86]"
       - "🇳🇱NL-281M-[cc2a86/10737e]"
+      - "🇫🇮FI-483M-[dc81f2/a42c02]"
+      - "🇷🇺RU-355M-[dd6ad7/b66583]"
 
 rules:
   - "DOMAIN,smtp.gmail.com,DIRECT"
