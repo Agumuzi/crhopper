@@ -36,6 +36,14 @@ proxies:
       headers:
         Host: "sfsmzggh4hyy2i-0oy5s5dtmkjv2nam6.pages.dev"
 
+  - name: "🇫🇮FI-177M-[3dfacc/7c1414]"
+    type: "hysteria2"
+    server: "94.141.102.196"
+    port: 12242
+    password: "GIFCjtpiGVOsrCy2kgBmgndXX5lUP7Eb"
+    udp: true
+    sni: "fin4.cft-razor.online"
+
   - name: "🇷🇺RU-479M-[452f9f/abefda]"
     type: "vless"
     server: "185.178.208.167"
@@ -226,7 +234,7 @@ proxies:
       headers:
         Host: "drive.dev.fosonmine.site"
 
-  - name: "🇫🇮FI-124M-[7cc03b/63f6f5]"
+  - name: "🇫🇮FI-272M-[7cc03b/63f6f5]"
     type: "hysteria2"
     server: "94.141.102.196"
     port: 888
@@ -388,7 +396,7 @@ proxies:
       short-id: "041a595c72d82db0"
     network: "tcp"
 
-  - name: "🇫🇮FI-24M-[a65497/1285a7]"
+  - name: "🇫🇮FI-139M-[a65497/1285a7]"
     type: "hysteria2"
     server: "94.141.102.196"
     port: 21
@@ -413,7 +421,7 @@ proxies:
     grpc-opts:
       grpc-service-name: "nexusGrpc"
 
-  - name: "🇩🇪DE-196M-[ac3d85/fcf6af]"
+  - name: "🇩🇪DE-84M-[ac3d85/fcf6af]"
     type: "vless"
     server: "files-qzgs.login.opendns.stream"
     port: 443
@@ -542,7 +550,7 @@ proxies:
       headers:
         Host: "dzzxiyeku44s.mahdihonarvar5.workers.dev"
 
-  - name: "🇺🇸US-376M-[e3d978/06ad42]"
+  - name: "🇺🇸US-103M-[e3d978/06ad42]"
     type: "hysteria2"
     server: "germanyafterpool.fun"
     port: 443
@@ -562,6 +570,7 @@ proxy-groups:
     proxies:
       - "🇷🇺RU-263M-[0da008/f2bf6d]"
       - "🇷🇺RU-297M-[2498ef/a8d0cc]"
+      - "🇫🇮FI-177M-[3dfacc/7c1414]"
       - "🇷🇺RU-479M-[452f9f/abefda]"
       - "🇺🇸US-283M-[4790ae/92606e]"
       - "🇺🇸US-200M-[4790ae/f0dd57]"
@@ -574,7 +583,7 @@ proxy-groups:
       - "🇷🇺RU-326M-[578d1f/88bad0]"
       - "🌐XX-401M-[64733d/487c42]"
       - "🇩🇪DE-30M-[777e9e/19b6c7]"
-      - "🇫🇮FI-124M-[7cc03b/63f6f5]"
+      - "🇫🇮FI-272M-[7cc03b/63f6f5]"
       - "🇷🇺RU-490M-[8c917d/7019bb]"
       - "🇷🇺RU-504M-[8c917d/b2ed50]"
       - "🇺🇸US-60M-[8ea6e5/416957]"
@@ -584,9 +593,9 @@ proxy-groups:
       - "🇹🇷TR-28M-[9f1069/95b139]"
       - "🇷🇺RU-277M-[a2810c/5f2fdf]"
       - "🇸🇪SE-262M-[a2d9c5/867a78]"
-      - "🇫🇮FI-24M-[a65497/1285a7]"
+      - "🇫🇮FI-139M-[a65497/1285a7]"
       - "🇫🇮FI-276M-[ac1aba/d734cf]"
-      - "🇩🇪DE-196M-[ac3d85/fcf6af]"
+      - "🇩🇪DE-84M-[ac3d85/fcf6af]"
       - "🇸🇬SG-110M-[b4007e/e8625d]"
       - "🇳🇱NL-21M-[bb80f0/44ff65]"
       - "🇳🇱NL-485M-[cc2a86/0a1a86]"
@@ -594,7 +603,7 @@ proxy-groups:
       - "🇩🇪DE-25M-[d1d0c5/e2f2b1]"
       - "🇫🇮FI-491M-[dc81f2/a42c02]"
       - "🇷🇺RU-355M-[dd6ad7/b66583]"
-      - "🇺🇸US-376M-[e3d978/06ad42]"
+      - "🇺🇸US-103M-[e3d978/06ad42]"
 
 rules:
   - "DOMAIN,smtp.gmail.com,DIRECT"
