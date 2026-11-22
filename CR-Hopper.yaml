@@ -6,7 +6,7 @@ log-level: warning
 ipv6: false
 
 proxies:
-  - name: "🇷🇺RU-129M-[0da008/f2bf6d]"
+  - name: "🇷🇺RU-263M-[0da008/f2bf6d]"
     type: "vless"
     server: "104.17.136.102"
     port: 2087
@@ -21,7 +21,7 @@ proxies:
       headers:
         Host: "rezanoori4295.pages.dev"
 
-  - name: "🇷🇺RU-226M-[2498ef/a8d0cc]"
+  - name: "🇷🇺RU-297M-[2498ef/a8d0cc]"
     type: "vless"
     server: "104.17.138.140"
     port: 8443
@@ -36,7 +36,7 @@ proxies:
       headers:
         Host: "sfsmzggh4hyy2i-0oy5s5dtmkjv2nam6.pages.dev"
 
-  - name: "🇷🇺RU-359M-[452f9f/abefda]"
+  - name: "🇷🇺RU-479M-[452f9f/abefda]"
     type: "vless"
     server: "185.178.208.167"
     port: 443
@@ -52,6 +52,20 @@ proxies:
       headers:
         Host: "tochkacdn.top"
 
+  - name: "🇺🇸US-389M-[4790ae/92606e]"
+    type: "trojan"
+    server: "ipfast.kingmna.com"
+    port: 443
+    password: "6-FrR5YsfjfyNp6AIFZgcQ"
+    udp: true
+    sni: "cdn.akamai.steamstatic.com"
+    skip-cert-verify: true
+    network: "ws"
+    ws-opts:
+      path: "/TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER"
+      headers:
+        Host: "copy_az_channel_nufilter_10i.global.ssl.fastly.net."
+
   - name: "🇺🇸US-200M-[4790ae/f0dd57]"
     type: "trojan"
     server: "ipfast.kingmna.com"
@@ -66,7 +80,7 @@ proxies:
       headers:
         Host: "copy_az_channel_nufilter_17i.global.ssl.fastly.net."
 
-  - name: "🇬🇧GB-50M-[4a9135/0736ae]"
+  - name: "🇬🇧GB-59M-[4a9135/0736ae]"
     type: "vless"
     server: "chatgpt.com"
     port: 8443
@@ -106,7 +120,7 @@ proxies:
       mode: "auto"
       x-padding-bytes: "100-1000"
 
-  - name: "🇩🇪DE-36M-[56081f/b05505]"
+  - name: "🇩🇪DE-148M-[56081f/b05505]"
     type: "vless"
     server: "95.129.236.239"
     port: 443
@@ -134,7 +148,7 @@ proxies:
     ws-opts:
       path: "/vless"
 
-  - name: "🇷🇺RU-380M-[578d1f/88bad0]"
+  - name: "🇷🇺RU-326M-[578d1f/88bad0]"
     type: "vless"
     server: "104.19.46.190"
     port: 2096
@@ -149,7 +163,7 @@ proxies:
       headers:
         Host: "rezanoori4295.pages.dev"
 
-  - name: "🇸🇬SG-351M-[64733d/487c42]"
+  - name: "🇸🇬SG-347M-[64733d/487c42]"
     type: "vless"
     server: "support.zoom.us"
     port: 80
@@ -163,7 +177,7 @@ proxies:
       headers:
         Host: "support.zoom.us.wez7k.eu.cc"
 
-  - name: "🇩🇪DE-165M-[777e9e/19b6c7]"
+  - name: "🇩🇪DE-30M-[777e9e/19b6c7]"
     type: "vless"
     server: "185.178.208.140"
     port: 443
@@ -197,7 +211,24 @@ proxies:
       headers:
         Host: "tochkacdn.top"
 
-  - name: "🇷🇺RU-264M-[9be8ad/a4b359]"
+  - name: "🇫🇮FI-517M-[96e5cd/187379]"
+    type: "vless"
+    server: "122.8.93.4"
+    port: 443
+    uuid: "3dcf80c9-4e6d-0fc7-1112-126507d3ee3f"
+    udp: true
+    encryption: "none"
+    servername: "cdn.steamstatic.com"
+    client-fingerprint: "chrome"
+    tls: true
+    reality-opts:
+      public-key: "R8Mogel1wypEIpcUXnGmG1cuzT9POghNhqJcw4-CLx0"
+      short-id: ""
+    network: "xhttp"
+    xhttp-opts:
+      path: "/"
+
+  - name: "🇷🇺RU-370M-[9be8ad/a4b359]"
     type: "vless"
     server: "104.19.33.42"
     port: 2083
@@ -212,7 +243,7 @@ proxies:
       headers:
         Host: "rezanoori4295.pages.dev"
 
-  - name: "🇷🇺RU-309M-[a2810c/5f2fdf]"
+  - name: "🇷🇺RU-277M-[a2810c/5f2fdf]"
     type: "vless"
     server: "104.17.138.111"
     port: 8443
@@ -227,7 +258,7 @@ proxies:
       headers:
         Host: "rezanoori4295.pages.dev"
 
-  - name: "🇩🇪DE-36M-[ac3d85/fcf6af]"
+  - name: "🇩🇪DE-97M-[ac3d85/fcf6af]"
     type: "vless"
     server: "files-qzgs.login.opendns.stream"
     port: 443
@@ -243,6 +274,28 @@ proxies:
     ws-opts:
       path: "/origin/246825491/fetch"
 
+  - name: "🇳🇱NL-343M-[bb80f0/44ff65]"
+    type: "vless"
+    server: "91.186.197.50"
+    port: 8443
+    uuid: "dcf42340-4143-4a52-980d-171afd3efa5c"
+    udp: true
+    encryption: "mlkem768x25519plus.native.0rtt.B8kapwAcAo7moBioRHJ5wg-TFFKbjlXCL3FFCHfOjEA"
+    flow: "xtls-rprx-vision"
+    servername: "origin.media.cdn.videoclothing.xyz"
+    client-fingerprint: "chrome"
+    tls: true
+    reality-opts:
+      public-key: "T4N8v2chhy4ZJrt2ENLMmwnQU7h7omZEFRhZhKWR9SA"
+      short-id: "7ac0b7f44ed17b33"
+    network: "xhttp"
+    xhttp-opts:
+      path: "/codex-xhttp8443-20261027-s1265796/NL199/xhttp"
+      mode: "auto"
+      reuse-settings:
+        h-keep-alive-period: 15
+        h-max-reusable-secs: 0
+
   - name: "🇳🇱NL-485M-[cc2a86/0a1a86]"
     type: "vless"
     server: "147.45.221.225"
@@ -256,7 +309,7 @@ proxies:
     ws-opts:
       path: "/media/ws/"
 
-  - name: "🇳🇱NL-281M-[cc2a86/10737e]"
+  - name: "🇳🇱NL-344M-[cc2a86/10737e]"
     type: "vless"
     server: "147.45.221.225"
     port: 443
@@ -270,7 +323,23 @@ proxies:
     ws-opts:
       path: "/media/ws/"
 
-  - name: "🇫🇮FI-483M-[dc81f2/a42c02]"
+  - name: "🇩🇪DE-25M-[d1d0c5/e2f2b1]"
+    type: "vless"
+    server: "sw-api.telemetryapi.org"
+    port: 443
+    uuid: "6bd1d88f-0a26-4d21-b325-15d85120b883"
+    udp: true
+    encryption: "none"
+    servername: "sw-api.telemetryapi.org"
+    client-fingerprint: "firefox"
+    alpn:
+      - "http/1.1"
+    tls: true
+    network: "ws"
+    ws-opts:
+      path: "/api/v2/client/session/connect"
+
+  - name: "🇫🇮FI-491M-[dc81f2/a42c02]"
     type: "vless"
     server: "77.232.140.7"
     port: 443
@@ -301,6 +370,15 @@ proxies:
       headers:
         Host: "dzzxiyeku44s.mahdihonarvar5.workers.dev"
 
+  - name: "🇺🇸US-376M-[e3d978/06ad42]"
+    type: "hysteria2"
+    server: "germanyafterpool.fun"
+    port: 443
+    password: "9a9f167d-b461-466f-be50-f0ffd598a6f8"
+    udp: true
+    sni: "germanyafterpool.fun"
+    skip-cert-verify: true
+
 proxy-groups:
   - name: "GLOBAL"
     type: select
@@ -310,25 +388,30 @@ proxy-groups:
   - name: "AUTO"
     type: select
     proxies:
-      - "🇷🇺RU-129M-[0da008/f2bf6d]"
-      - "🇷🇺RU-226M-[2498ef/a8d0cc]"
-      - "🇷🇺RU-359M-[452f9f/abefda]"
+      - "🇷🇺RU-263M-[0da008/f2bf6d]"
+      - "🇷🇺RU-297M-[2498ef/a8d0cc]"
+      - "🇷🇺RU-479M-[452f9f/abefda]"
+      - "🇺🇸US-389M-[4790ae/92606e]"
       - "🇺🇸US-200M-[4790ae/f0dd57]"
-      - "🇬🇧GB-50M-[4a9135/0736ae]"
+      - "🇬🇧GB-59M-[4a9135/0736ae]"
       - "🇬🇧GB-57M-[4a9135/59ce93]"
-      - "🇩🇪DE-36M-[56081f/b05505]"
+      - "🇩🇪DE-148M-[56081f/b05505]"
       - "🇸🇪SE-43M-[56ffd4/d3750d]"
-      - "🇷🇺RU-380M-[578d1f/88bad0]"
-      - "🇸🇬SG-351M-[64733d/487c42]"
-      - "🇩🇪DE-165M-[777e9e/19b6c7]"
+      - "🇷🇺RU-326M-[578d1f/88bad0]"
+      - "🇸🇬SG-347M-[64733d/487c42]"
+      - "🇩🇪DE-30M-[777e9e/19b6c7]"
       - "🇷🇺RU-490M-[8c917d/7019bb]"
-      - "🇷🇺RU-264M-[9be8ad/a4b359]"
-      - "🇷🇺RU-309M-[a2810c/5f2fdf]"
-      - "🇩🇪DE-36M-[ac3d85/fcf6af]"
+      - "🇫🇮FI-517M-[96e5cd/187379]"
+      - "🇷🇺RU-370M-[9be8ad/a4b359]"
+      - "🇷🇺RU-277M-[a2810c/5f2fdf]"
+      - "🇩🇪DE-97M-[ac3d85/fcf6af]"
+      - "🇳🇱NL-343M-[bb80f0/44ff65]"
       - "🇳🇱NL-485M-[cc2a86/0a1a86]"
-      - "🇳🇱NL-281M-[cc2a86/10737e]"
-      - "🇫🇮FI-483M-[dc81f2/a42c02]"
+      - "🇳🇱NL-344M-[cc2a86/10737e]"
+      - "🇩🇪DE-25M-[d1d0c5/e2f2b1]"
+      - "🇫🇮FI-491M-[dc81f2/a42c02]"
       - "🇷🇺RU-355M-[dd6ad7/b66583]"
+      - "🇺🇸US-376M-[e3d978/06ad42]"
 
 rules:
   - "DOMAIN,smtp.gmail.com,DIRECT"
