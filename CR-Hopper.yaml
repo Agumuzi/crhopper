@@ -120,6 +120,23 @@ proxies:
       mode: "auto"
       x-padding-bytes: "100-1000"
 
+  - name: "🇫🇮FI-276M-[4ab9de/a4a6ee]"
+    type: "vless"
+    server: "200.96.109.194"
+    port: 14443
+    uuid: "936ef8c6-fd6c-4b6c-bc74-7c88ded9aa50"
+    udp: true
+    encryption: "none"
+    servername: "kiwi-logistic.ru"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "DFBCTsJbKYbaZGWGi_bKgIjrkoUmDaAha7iEe9fKWgo"
+      short-id: "d9662905"
+    network: "grpc"
+    grpc-opts:
+      grpc-service-name: "AlGrpC.Name"
+
   - name: "🇰🇿KZ-407M-[4d2202/504690]"
     type: "vless"
     server: "blog-asia.livemusic.ac"
@@ -208,6 +225,14 @@ proxies:
       path: "/collector/runtime/channel/open"
       headers:
         Host: "drive.dev.fosonmine.site"
+
+  - name: "🇫🇮FI-124M-[7cc03b/63f6f5]"
+    type: "hysteria2"
+    server: "94.141.102.196"
+    port: 888
+    password: "GIFCjtpiGVOsrCy2kgBmgndXX5lUP7Eb"
+    udp: true
+    sni: "fin1.cft-razor.online"
 
   - name: "🇷🇺RU-490M-[8c917d/7019bb]"
     type: "vless"
@@ -311,6 +336,27 @@ proxies:
       headers:
         Host: "rezanoori4295.pages.dev"
 
+  - name: "🇹🇷TR-28M-[9f1069/95b139]"
+    type: "vless"
+    server: "iran.crackerbinam.org"
+    port: 54005
+    uuid: "b87e0fe3-2eaa-4714-b717-ae3204fc1846"
+    udp: true
+    encryption: "none"
+    servername: "www.cloudflare.com"
+    client-fingerprint: "chrome"
+    tls: true
+    reality-opts:
+      public-key: "k62XkGNgUzt6z6NjQrM-zjpuUei3G62_AAIzlgxHaEA"
+      short-id: "ed69a523b5ab3e"
+    network: "http"
+    http-opts:
+      path:
+        - "/"
+      headers:
+        Host:
+          - "technolife.com"
+
   - name: "🇷🇺RU-277M-[a2810c/5f2fdf]"
     type: "vless"
     server: "104.17.138.111"
@@ -325,6 +371,47 @@ proxies:
       path: "/"
       headers:
         Host: "rezanoori4295.pages.dev"
+
+  - name: "🇸🇪SE-262M-[a2d9c5/867a78]"
+    type: "vless"
+    server: "88.216.129.84"
+    port: 443
+    uuid: "9986b4e5-58dd-4360-8c58-d6b9c86584e2"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "reeltiles.com"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "0MrhgrveImRyxFaC9Q11Mm4-oN38uFlFFt4UnmGrxRo"
+      short-id: "041a595c72d82db0"
+    network: "tcp"
+
+  - name: "🇫🇮FI-24M-[a65497/1285a7]"
+    type: "hysteria2"
+    server: "94.141.102.196"
+    port: 21
+    password: "GIFCjtpiGVOsrCy2kgBmgndXX5lUP7Eb"
+    udp: true
+    sni: "fin9.cft-razor.online"
+
+  - name: "🇫🇮FI-276M-[ac1aba/d734cf]"
+    type: "vless"
+    server: "144.31.128.220"
+    port: 14443
+    uuid: "936ef8c6-fd6c-4b6c-bc74-7c88ded9aa50"
+    udp: true
+    encryption: "none"
+    servername: "cosmo-convert.ru"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "TBvwkxwgTGYba7Jl3f2WcNBFvcKJ8uYHjYYdiyZTYCg"
+      short-id: "d9662905"
+    network: "grpc"
+    grpc-opts:
+      grpc-service-name: "nexusGrpc"
 
   - name: "🇩🇪DE-196M-[ac3d85/fcf6af]"
     type: "vless"
@@ -480,19 +567,25 @@ proxy-groups:
       - "🇺🇸US-200M-[4790ae/f0dd57]"
       - "🇬🇧GB-59M-[4a9135/0736ae]"
       - "🇬🇧GB-57M-[4a9135/59ce93]"
+      - "🇫🇮FI-276M-[4ab9de/a4a6ee]"
       - "🇰🇿KZ-407M-[4d2202/504690]"
       - "🇩🇪DE-86M-[56081f/b05505]"
       - "🇸🇪SE-43M-[56ffd4/d3750d]"
       - "🇷🇺RU-326M-[578d1f/88bad0]"
       - "🌐XX-401M-[64733d/487c42]"
       - "🇩🇪DE-30M-[777e9e/19b6c7]"
+      - "🇫🇮FI-124M-[7cc03b/63f6f5]"
       - "🇷🇺RU-490M-[8c917d/7019bb]"
       - "🇷🇺RU-504M-[8c917d/b2ed50]"
       - "🇺🇸US-60M-[8ea6e5/416957]"
       - "🇫🇮FI-517M-[96e5cd/187379]"
       - "🇬🇧GB-152M-[9baafa/5df4ed]"
       - "🇷🇺RU-370M-[9be8ad/a4b359]"
+      - "🇹🇷TR-28M-[9f1069/95b139]"
       - "🇷🇺RU-277M-[a2810c/5f2fdf]"
+      - "🇸🇪SE-262M-[a2d9c5/867a78]"
+      - "🇫🇮FI-24M-[a65497/1285a7]"
+      - "🇫🇮FI-276M-[ac1aba/d734cf]"
       - "🇩🇪DE-196M-[ac3d85/fcf6af]"
       - "🇸🇬SG-110M-[b4007e/e8625d]"
       - "🇳🇱NL-21M-[bb80f0/44ff65]"
