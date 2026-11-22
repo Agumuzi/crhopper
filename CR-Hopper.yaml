@@ -88,6 +88,18 @@ proxies:
       headers:
         Host: "copy_az_channel_nufilter_17i.global.ssl.fastly.net."
 
+  - name: "🇭🇰HK-89M-[4a614c/01c608]"
+    type: "vmess"
+    server: "hkgb707.ifastcdncache.com"
+    port: 60852
+    uuid: "f8eca8df-a1a5-4918-a194-d34112a3673f"
+    alterId: 2
+    cipher: "auto"
+    udp: true
+    network: "ws"
+    ws-opts:
+      path: "/"
+
   - name: "🇬🇧GB-59M-[4a9135/0736ae]"
     type: "vless"
     server: "chatgpt.com"
@@ -582,6 +594,7 @@ proxy-groups:
       - "🇷🇺RU-479M-[452f9f/abefda]"
       - "🇺🇸US-283M-[4790ae/92606e]"
       - "🇺🇸US-200M-[4790ae/f0dd57]"
+      - "🇭🇰HK-89M-[4a614c/01c608]"
       - "🇬🇧GB-59M-[4a9135/0736ae]"
       - "🇬🇧GB-57M-[4a9135/59ce93]"
       - "🇫🇮FI-276M-[4ab9de/a4a6ee]"
