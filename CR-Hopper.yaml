@@ -52,7 +52,7 @@ proxies:
       headers:
         Host: "tochkacdn.top"
 
-  - name: "🇺🇸US-389M-[4790ae/92606e]"
+  - name: "🇺🇸US-283M-[4790ae/92606e]"
     type: "trojan"
     server: "ipfast.kingmna.com"
     port: 443
@@ -120,7 +120,23 @@ proxies:
       mode: "auto"
       x-padding-bytes: "100-1000"
 
-  - name: "🇩🇪DE-148M-[56081f/b05505]"
+  - name: "🇰🇿KZ-407M-[4d2202/504690]"
+    type: "vless"
+    server: "blog-asia.livemusic.ac"
+    port: 8445
+    uuid: "cac10246-5b76-4809-9fd0-417c58a3ca90"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "portal.gifmems.com"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "32eua16pKE179lLHv-VNZGrX287qQFMXA3n0VgEzNTQ"
+      short-id: "b3a633bc754b648d"
+    network: "tcp"
+
+  - name: "🇩🇪DE-86M-[56081f/b05505]"
     type: "vless"
     server: "95.129.236.239"
     port: 443
@@ -163,7 +179,7 @@ proxies:
       headers:
         Host: "rezanoori4295.pages.dev"
 
-  - name: "🇸🇬SG-347M-[64733d/487c42]"
+  - name: "🌐XX-401M-[64733d/487c42]"
     type: "vless"
     server: "support.zoom.us"
     port: 80
@@ -211,6 +227,41 @@ proxies:
       headers:
         Host: "tochkacdn.top"
 
+  - name: "🇷🇺RU-504M-[8c917d/b2ed50]"
+    type: "vless"
+    server: "tochkacdn.top"
+    port: 443
+    uuid: "ffb2c504-2c6c-49f3-b4bd-9fd3ff6ce454"
+    udp: true
+    encryption: "none"
+    servername: "unlik.club"
+    client-fingerprint: "android"
+    alpn:
+      - "http/1.1"
+    tls: true
+    network: "ws"
+    ws-opts:
+      path: "/static/telemetry/3c9aaef00005/"
+      headers:
+        Host: "tochkacdn.top"
+
+  - name: "🇺🇸US-60M-[8ea6e5/416957]"
+    type: "vless"
+    server: "103.119.15.175"
+    port: 443
+    uuid: "89be587f-0e93-4c67-822e-98ad0a56c29e"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    packet-encoding: "xudp"
+    servername: "www.amazon.com"
+    client-fingerprint: "chrome"
+    tls: true
+    reality-opts:
+      public-key: "vQgrNIQTmbTIqtauDixzp2ePvd-aK_zlTctIDRPk3wQ"
+      short-id: "ce90a4459f024897"
+    network: "tcp"
+
   - name: "🇫🇮FI-517M-[96e5cd/187379]"
     type: "vless"
     server: "122.8.93.4"
@@ -227,6 +278,23 @@ proxies:
     network: "xhttp"
     xhttp-opts:
       path: "/"
+
+  - name: "🇬🇧GB-152M-[9baafa/5df4ed]"
+    type: "vless"
+    server: "8.208.101.215"
+    port: 443
+    uuid: "3112c3f2-7172-417d-bce6-d168135d1603"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    packet-encoding: "xudp"
+    servername: "www.ebay.com"
+    client-fingerprint: "chrome"
+    tls: true
+    reality-opts:
+      public-key: "U6FtussjhSb81ka0z9IDf1n80syjsczIDrRTdmzyeGM"
+      short-id: "5a6f99962a27cdbc"
+    network: "tcp"
 
   - name: "🇷🇺RU-370M-[9be8ad/a4b359]"
     type: "vless"
@@ -258,7 +326,7 @@ proxies:
       headers:
         Host: "rezanoori4295.pages.dev"
 
-  - name: "🇩🇪DE-97M-[ac3d85/fcf6af]"
+  - name: "🇩🇪DE-196M-[ac3d85/fcf6af]"
     type: "vless"
     server: "files-qzgs.login.opendns.stream"
     port: 443
@@ -274,7 +342,24 @@ proxies:
     ws-opts:
       path: "/origin/246825491/fetch"
 
-  - name: "🇳🇱NL-343M-[bb80f0/44ff65]"
+  - name: "🇸🇬SG-110M-[b4007e/e8625d]"
+    type: "vless"
+    server: "47.84.39.7"
+    port: 443
+    uuid: "a6fd460c-88bd-4425-bb56-2b73d29455cc"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    packet-encoding: "xudp"
+    servername: "www.amazon.com"
+    client-fingerprint: "chrome"
+    tls: true
+    reality-opts:
+      public-key: "EXPjsObdfDnKuRmw4-A9_G4k-WP2cUXuuvUo8It1sAo"
+      short-id: "4d1244cd42a20e6c"
+    network: "tcp"
+
+  - name: "🇳🇱NL-21M-[bb80f0/44ff65]"
     type: "vless"
     server: "91.186.197.50"
     port: 8443
@@ -391,21 +476,26 @@ proxy-groups:
       - "🇷🇺RU-263M-[0da008/f2bf6d]"
       - "🇷🇺RU-297M-[2498ef/a8d0cc]"
       - "🇷🇺RU-479M-[452f9f/abefda]"
-      - "🇺🇸US-389M-[4790ae/92606e]"
+      - "🇺🇸US-283M-[4790ae/92606e]"
       - "🇺🇸US-200M-[4790ae/f0dd57]"
       - "🇬🇧GB-59M-[4a9135/0736ae]"
       - "🇬🇧GB-57M-[4a9135/59ce93]"
-      - "🇩🇪DE-148M-[56081f/b05505]"
+      - "🇰🇿KZ-407M-[4d2202/504690]"
+      - "🇩🇪DE-86M-[56081f/b05505]"
       - "🇸🇪SE-43M-[56ffd4/d3750d]"
       - "🇷🇺RU-326M-[578d1f/88bad0]"
-      - "🇸🇬SG-347M-[64733d/487c42]"
+      - "🌐XX-401M-[64733d/487c42]"
       - "🇩🇪DE-30M-[777e9e/19b6c7]"
       - "🇷🇺RU-490M-[8c917d/7019bb]"
+      - "🇷🇺RU-504M-[8c917d/b2ed50]"
+      - "🇺🇸US-60M-[8ea6e5/416957]"
       - "🇫🇮FI-517M-[96e5cd/187379]"
+      - "🇬🇧GB-152M-[9baafa/5df4ed]"
       - "🇷🇺RU-370M-[9be8ad/a4b359]"
       - "🇷🇺RU-277M-[a2810c/5f2fdf]"
-      - "🇩🇪DE-97M-[ac3d85/fcf6af]"
-      - "🇳🇱NL-343M-[bb80f0/44ff65]"
+      - "🇩🇪DE-196M-[ac3d85/fcf6af]"
+      - "🇸🇬SG-110M-[b4007e/e8625d]"
+      - "🇳🇱NL-21M-[bb80f0/44ff65]"
       - "🇳🇱NL-485M-[cc2a86/0a1a86]"
       - "🇳🇱NL-344M-[cc2a86/10737e]"
       - "🇩🇪DE-25M-[d1d0c5/e2f2b1]"
