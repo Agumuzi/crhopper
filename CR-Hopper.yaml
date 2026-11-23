@@ -6,7 +6,37 @@ log-level: warning
 ipv6: false
 
 proxies:
-  - name: "🇭🇰HK-122M-[4a614c/01c608]"
+  - name: "🇷🇺RU-231M-[0da008/f2bf6d]"
+    type: "vless"
+    server: "104.17.136.102"
+    port: 2087
+    uuid: "51a0af77-a60c-4d9b-81a4-f50e1b38d90b"
+    udp: true
+    encryption: "none"
+    client-fingerprint: "chrome"
+    tls: true
+    network: "ws"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "rezanoori4295.pages.dev"
+
+  - name: "🇷🇺RU-237M-[2498ef/a8d0cc]"
+    type: "vless"
+    server: "104.17.138.140"
+    port: 8443
+    uuid: "51a0af77-a60c-4d9b-81a4-f50e1b38d90b"
+    udp: true
+    encryption: "none"
+    client-fingerprint: "chrome"
+    tls: true
+    network: "ws"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "sfsmzggh4hyy2i-0oy5s5dtmkjv2nam6.pages.dev"
+
+  - name: "🇭🇰HK-45M-[4a614c/01c608]"
     type: "vmess"
     server: "hkgb707.ifastcdncache.com"
     port: 60852
@@ -18,7 +48,74 @@ proxies:
     ws-opts:
       path: "/"
 
-  - name: "🇧🇬BG-27M-[7b62ee/9f4bde]"
+  - name: "🇷🇺RU-279M-[4cfc17/d0b190]"
+    type: "vless"
+    server: "104.19.35.11"
+    port: 2053
+    uuid: "51a0af77-a60c-4d9b-81a4-f50e1b38d90b"
+    udp: true
+    encryption: "none"
+    client-fingerprint: "chrome"
+    tls: true
+    network: "ws"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "sfsmzggh4hyy2i-0oy5s5dtmkjv2nam6.pages.dev"
+
+  - name: "🇩🇪DE-321M-[4fb92d/c1e6b0]"
+    type: "vless"
+    server: "64.188.98.130"
+    port: 443
+    uuid: "1f2836d7-e9ef-47d7-a9c4-1037077ae8d7"
+    udp: true
+    encryption: "none"
+    servername: "ge1.rarebooster.tech"
+    client-fingerprint: "firefox"
+    alpn:
+      - "h2"
+    tls: true
+    reality-opts:
+      public-key: "FXcmRT-NcCBLSA5NwhzbfXOsjYxXIeRiNxDAJ4KA6hk"
+      short-id: ""
+    network: "xhttp"
+    xhttp-opts:
+      path: "/api/v1/events"
+      host: "ge1.rarebooster.tech"
+      mode: "packet-up"
+
+  - name: "🇷🇺RU-259M-[578d1f/88bad0]"
+    type: "vless"
+    server: "104.19.46.190"
+    port: 2096
+    uuid: "51a0af77-a60c-4d9b-81a4-f50e1b38d90b"
+    udp: true
+    encryption: "none"
+    client-fingerprint: "chrome"
+    tls: true
+    network: "ws"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "rezanoori4295.pages.dev"
+
+  - name: "🇩🇪DE-446M-[777e9e/19b6c7]"
+    type: "vless"
+    server: "185.178.208.140"
+    port: 443
+    uuid: "ef5a57c7-84d5-4f86-b99c-875a16da485f"
+    udp: true
+    encryption: "none"
+    servername: "drive.dev.fosonmine.site"
+    client-fingerprint: "firefox"
+    tls: true
+    network: "ws"
+    ws-opts:
+      path: "/collector/runtime/channel/open"
+      headers:
+        Host: "drive.dev.fosonmine.site"
+
+  - name: "🇧🇬BG-428M-[7b62ee/9f4bde]"
     type: "vless"
     server: "plaindune.com"
     port: 8443
@@ -33,6 +130,73 @@ proxies:
       path: "/api/v1/upload"
       host: "plaindune.com"
       mode: "auto"
+
+  - name: "🇷🇺RU-91M-[950c41/95aa72]"
+    type: "ss"
+    server: "46.17.42.129"
+    port: 18443
+    cipher: "aes-256-gcm"
+    password: "NTiHBg64fsY8u8DbGrtypD9gPGSL386p"
+    udp: true
+
+  - name: "🇷🇺RU-308M-[9be8ad/a4b359]"
+    type: "vless"
+    server: "104.19.33.42"
+    port: 2083
+    uuid: "51a0af77-a60c-4d9b-81a4-f50e1b38d90b"
+    udp: true
+    encryption: "none"
+    client-fingerprint: "chrome"
+    tls: true
+    network: "ws"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "rezanoori4295.pages.dev"
+
+  - name: "🇰🇿KZ-26M-[9ff86b/d84c29]"
+    type: "vless"
+    server: "91.219.23.76"
+    port: 443
+    uuid: "8b1b59c8-8802-0002-a636-ffe786275594"
+    udp: true
+    encryption: "none"
+    servername: "cataloguebroker.comparecarprices.org"
+    client-fingerprint: "firefox"
+    tls: true
+    network: "ws"
+    ws-opts:
+      path: "/media/ws/"
+
+  - name: "🇷🇺RU-258M-[a2810c/5f2fdf]"
+    type: "vless"
+    server: "104.17.138.111"
+    port: 8443
+    uuid: "51a0af77-a60c-4d9b-81a4-f50e1b38d90b"
+    udp: true
+    encryption: "none"
+    client-fingerprint: "chrome"
+    tls: true
+    network: "ws"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "rezanoori4295.pages.dev"
+
+  - name: "🇷🇺RU-292M-[bb6899/dce762]"
+    type: "vless"
+    server: "104.16.205.122"
+    port: 2087
+    uuid: "51a0af77-a60c-4d9b-81a4-f50e1b38d90b"
+    udp: true
+    encryption: "none"
+    client-fingerprint: "chrome"
+    tls: true
+    network: "ws"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "sfsmzggh4hyy2i-0oy5s5dtmkjv2nam6.pages.dev"
 
   - name: "🇸🇪SE-168M-[c18415/f0a1b5]"
     type: "vless"
@@ -53,6 +217,66 @@ proxies:
       headers:
         Host: "test.subgift.cyou"
 
+  - name: "🇳🇱NL-305M-[cc2a86/fab189]"
+    type: "vless"
+    server: "147.45.221.225"
+    port: 443
+    uuid: "58e22afd-bf74-4736-984d-63a8ca03d7f0"
+    udp: true
+    encryption: "none"
+    servername: "nl.lucheeebezlimitnoekino.stream"
+    client-fingerprint: "edge"
+    tls: true
+    network: "ws"
+    ws-opts:
+      path: "/media/ws/"
+
+  - name: "🇫🇮FI-456M-[dc81f2/a42c02]"
+    type: "vless"
+    server: "77.232.140.7"
+    port: 443
+    uuid: "50414e45-4c5f-5a45-5553-5a447647929f"
+    udp: true
+    encryption: "none"
+    servername: "bbz1x6eau6gs.88bahpu62r.workers.dev"
+    tls: true
+    network: "ws"
+    ws-opts:
+      path: "/stream/PANEL_ZEUS/5a447647929f"
+      headers:
+        Host: "bbz1x6eau6gs.88bahpu62r.workers.dev"
+
+  - name: "🇷🇺RU-135M-[dd6ad7/b66583]"
+    type: "vless"
+    server: "103.116.7.10"
+    port: 2053
+    uuid: "50414e45-4c5f-5a45-5553-9c45f3fee7fb"
+    udp: true
+    encryption: "none"
+    servername: "dzzxiyeku44s.mahdihonarvar5.workers.dev"
+    client-fingerprint: "unsafe"
+    tls: true
+    network: "ws"
+    ws-opts:
+      path: "/stream/PANEL_ZEUS/9c45f3fee7fb"
+      headers:
+        Host: "dzzxiyeku44s.mahdihonarvar5.workers.dev"
+
+  - name: "🇯🇵JP-324M-[f0eb37/d62c2c]"
+    type: "vless"
+    server: "104.16.244.34"
+    port: 2053
+    uuid: "97514cec-cf70-42b1-9743-3f89122adc8e"
+    udp: true
+    encryption: "none"
+    servername: "cffq.pages.dev"
+    tls: true
+    network: "ws"
+    ws-opts:
+      path: "%2F%3Fed%3D2560"
+      headers:
+        Host: "cffq.pages.dev"
+
 proxy-groups:
   - name: "GLOBAL"
     type: select
@@ -62,9 +286,24 @@ proxy-groups:
   - name: "AUTO"
     type: select
     proxies:
-      - "🇭🇰HK-122M-[4a614c/01c608]"
-      - "🇧🇬BG-27M-[7b62ee/9f4bde]"
+      - "🇷🇺RU-231M-[0da008/f2bf6d]"
+      - "🇷🇺RU-237M-[2498ef/a8d0cc]"
+      - "🇭🇰HK-45M-[4a614c/01c608]"
+      - "🇷🇺RU-279M-[4cfc17/d0b190]"
+      - "🇩🇪DE-321M-[4fb92d/c1e6b0]"
+      - "🇷🇺RU-259M-[578d1f/88bad0]"
+      - "🇩🇪DE-446M-[777e9e/19b6c7]"
+      - "🇧🇬BG-428M-[7b62ee/9f4bde]"
+      - "🇷🇺RU-91M-[950c41/95aa72]"
+      - "🇷🇺RU-308M-[9be8ad/a4b359]"
+      - "🇰🇿KZ-26M-[9ff86b/d84c29]"
+      - "🇷🇺RU-258M-[a2810c/5f2fdf]"
+      - "🇷🇺RU-292M-[bb6899/dce762]"
       - "🇸🇪SE-168M-[c18415/f0a1b5]"
+      - "🇳🇱NL-305M-[cc2a86/fab189]"
+      - "🇫🇮FI-456M-[dc81f2/a42c02]"
+      - "🇷🇺RU-135M-[dd6ad7/b66583]"
+      - "🇯🇵JP-324M-[f0eb37/d62c2c]"
 
 rules:
   - "DOMAIN,smtp.gmail.com,DIRECT"
