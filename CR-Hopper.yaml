@@ -36,6 +36,55 @@ proxies:
       headers:
         Host: "sfsmzggh4hyy2i-0oy5s5dtmkjv2nam6.pages.dev"
 
+  - name: "🇩🇪DE-409M-[2f0616/2c1fcb]"
+    type: "vless"
+    server: "moonstone.gerqix.online"
+    port: 443
+    uuid: "0b6a7fe0-206b-4071-9f96-cd397d1ec01a"
+    udp: true
+    encryption: "none"
+    servername: "moonstone.gerqix.online"
+    client-fingerprint: "firefox"
+    tls: true
+    network: "xhttp"
+    xhttp-opts:
+      path: "/api/de4/sync"
+      host: "moonstone.gerqix.online"
+      mode: "auto"
+
+  - name: "🇩🇪DE-290M-[2f86b2/7a914c]"
+    type: "vless"
+    server: "riverstone.gerqix.online"
+    port: 443
+    uuid: "0b6a7fe0-206b-4071-9f96-cd397d1ec01a"
+    udp: true
+    encryption: "none"
+    servername: "riverstone.gerqix.online"
+    client-fingerprint: "edge"
+    alpn:
+      - "h2"
+      - "http/1.1"
+    tls: true
+    network: "xhttp"
+    xhttp-opts:
+      path: "/api/de7/sync"
+      host: "riverstone.gerqix.online"
+      mode: "auto"
+
+  - name: "🇺🇸US-153M-[4790ae/427aa0]"
+    type: "trojan"
+    server: "ipfast.kingmna.com"
+    port: 443
+    password: "GBEqN2BggZfFExc5pTTHUA"
+    udp: true
+    sni: "cdn.akamai.steamstatic.com"
+    skip-cert-verify: true
+    network: "ws"
+    ws-opts:
+      path: "/TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER"
+      headers:
+        Host: "copy_az_channel_nufilter_17i.global.ssl.fastly.net."
+
   - name: "🇭🇰HK-45M-[4a614c/01c608]"
     type: "vmess"
     server: "hkgb707.ifastcdncache.com"
@@ -63,7 +112,7 @@ proxies:
       headers:
         Host: "sfsmzggh4hyy2i-0oy5s5dtmkjv2nam6.pages.dev"
 
-  - name: "🇩🇪DE-321M-[4fb92d/c1e6b0]"
+  - name: "🇩🇪DE-188M-[4fb92d/c1e6b0]"
     type: "vless"
     server: "64.188.98.130"
     port: 443
@@ -99,6 +148,43 @@ proxies:
       headers:
         Host: "rezanoori4295.pages.dev"
 
+  - name: "🇩🇪DE-306M-[606a0f/fddd7f]"
+    type: "vless"
+    server: "fresco.merlano.monster"
+    port: 443
+    uuid: "0b6a7fe0-206b-4071-9f96-cd397d1ec01a"
+    udp: true
+    encryption: "none"
+    servername: "fresco.merlano.monster"
+    client-fingerprint: "firefox"
+    alpn:
+      - "h2"
+      - "http/1.1"
+    tls: true
+    network: "xhttp"
+    xhttp-opts:
+      path: "/api/de4/sync"
+      host: "fresco.merlano.monster"
+      mode: "auto"
+
+  - name: "🇩🇪DE-243M-[7024dd/a49e69]"
+    type: "vless"
+    server: "144.31.218.188"
+    port: 443
+    uuid: "1f2836d7-e9ef-47d7-a9c4-1037077ae8d7"
+    udp: true
+    encryption: "none"
+    servername: "cz1.rarebooster.tech"
+    client-fingerprint: "firefox"
+    alpn:
+      - "h2"
+    tls: true
+    network: "xhttp"
+    xhttp-opts:
+      path: "/api/v1/events"
+      host: "cz1.rarebooster.tech"
+      mode: "packet-up"
+
   - name: "🇩🇪DE-446M-[777e9e/19b6c7]"
     type: "vless"
     server: "185.178.208.140"
@@ -115,7 +201,22 @@ proxies:
       headers:
         Host: "drive.dev.fosonmine.site"
 
-  - name: "🇧🇬BG-428M-[7b62ee/9f4bde]"
+  - name: "🇫🇮FI-176M-[79d0ec/bf4224]"
+    type: "vless"
+    server: "a80b5386.fi2.h1clayd.click"
+    port: 443
+    uuid: "2ccb06b6-9eac-44eb-ade7-c1e5afb8e7df"
+    udp: true
+    encryption: "none"
+    servername: "a80b5386.fi2.h1clayd.click"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "PslSaSQWP4BZZmkL7irab4FMti8sW6BvoC7ytFjJFyc"
+      short-id: "cc678f10161992a9"
+    network: "tcp"
+
+  - name: "🇧🇬BG-355M-[7b62ee/9f4bde]"
     type: "vless"
     server: "plaindune.com"
     port: 8443
@@ -130,6 +231,22 @@ proxies:
       path: "/api/v1/upload"
       host: "plaindune.com"
       mode: "auto"
+
+  - name: "🇩🇪DE-450M-[87c664/870018]"
+    type: "vless"
+    server: "cedar.filnex.baby"
+    port: 443
+    uuid: "0b6a7fe0-206b-4071-9f96-cd397d1ec01a"
+    udp: true
+    encryption: "none"
+    servername: "fieldstone.moltex.click"
+    client-fingerprint: "firefox"
+    alpn:
+      - "http/1.1"
+    tls: true
+    network: "ws"
+    ws-opts:
+      path: "/api/de7/stream"
 
   - name: "🇷🇺RU-91M-[950c41/95aa72]"
     type: "ss"
@@ -168,6 +285,25 @@ proxies:
     ws-opts:
       path: "/media/ws/"
 
+  - name: "🇩🇪DE-373M-[a1c7dc/f6fb73]"
+    type: "vless"
+    server: "seedling.elvano.website"
+    port: 443
+    uuid: "0b6a7fe0-206b-4071-9f96-cd397d1ec01a"
+    udp: true
+    encryption: "none"
+    servername: "seedling.elvano.website"
+    client-fingerprint: "edge"
+    alpn:
+      - "h2"
+      - "http/1.1"
+    tls: true
+    network: "xhttp"
+    xhttp-opts:
+      path: "/api/de4/sync"
+      host: "seedling.elvano.website"
+      mode: "auto"
+
   - name: "🇷🇺RU-258M-[a2810c/5f2fdf]"
     type: "vless"
     server: "104.17.138.111"
@@ -198,6 +334,15 @@ proxies:
       headers:
         Host: "sfsmzggh4hyy2i-0oy5s5dtmkjv2nam6.pages.dev"
 
+  - name: "🇺🇸US-196M-[c08a18/7e795c]"
+    type: "hysteria2"
+    server: "100.62.81.246"
+    port: 443
+    password: "YourStrongPasswordHere123!"
+    udp: true
+    sni: "www.bing.com"
+    skip-cert-verify: true
+
   - name: "🇸🇪SE-168M-[c18415/f0a1b5]"
     type: "vless"
     server: "perplexity.ai"
@@ -216,6 +361,21 @@ proxies:
       path: "/t.me-SubGift"
       headers:
         Host: "test.subgift.cyou"
+
+  - name: "🇧🇬BG-394M-[c21d3a/9b63c4]"
+    type: "vless"
+    server: "78.159.240.72"
+    port: 8443
+    uuid: "37af0181-5598-4aad-a040-d926bcb65757"
+    udp: true
+    encryption: "none"
+    servername: "plaindune.com"
+    tls: true
+    network: "xhttp"
+    xhttp-opts:
+      path: "/api/v1/upload"
+      host: "plaindune.com"
+      mode: "auto"
 
   - name: "🇳🇱NL-305M-[cc2a86/fab189]"
     type: "vless"
@@ -262,6 +422,44 @@ proxies:
       headers:
         Host: "dzzxiyeku44s.mahdihonarvar5.workers.dev"
 
+  - name: "🇫🇷FR-400M-[dfeeac/bb0bd3]"
+    type: "vless"
+    server: "31.77.227.156"
+    port: 52006
+    uuid: "cde5d3ef-7d14-4fed-a74d-ac98e39bf9ec"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "fr.buyclicks.click"
+    client-fingerprint: "firefox"
+    alpn:
+      - "h2"
+      - "http/1.1"
+    tls: true
+    network: "tcp"
+
+  - name: "🇩🇪DE-47M-[e57877/732fcf]"
+    type: "vless"
+    server: "archive.filnex.baby"
+    port: 443
+    uuid: "0b6a7fe0-206b-4071-9f96-cd397d1ec01a"
+    udp: true
+    encryption: "none"
+    servername: "elmharbor.gerqix.online"
+    client-fingerprint: "firefox"
+    tls: true
+    network: "grpc"
+    grpc-opts:
+      grpc-service-name: "glush.de7.v1"
+
+  - name: "🇫🇷FR-117M-[e61eab/80881e]"
+    type: "hysteria2"
+    server: "194.55.189.69"
+    port: 443
+    password: "d283bbfe-d5cd-4576-bc1a-630a7a5ad829"
+    udp: true
+    sni: "widgetrouter.dost-self.co.uk"
+
   - name: "🇯🇵JP-324M-[f0eb37/d62c2c]"
     type: "vless"
     server: "104.16.244.34"
@@ -277,6 +475,41 @@ proxies:
       headers:
         Host: "cffq.pages.dev"
 
+  - name: "🇩🇪DE-382M-[f8c86c/f33515]"
+    type: "vless"
+    server: "clearing.moltex.click"
+    port: 443
+    uuid: "0b6a7fe0-206b-4071-9f96-cd397d1ec01a"
+    udp: true
+    encryption: "none"
+    servername: "clearing.moltex.click"
+    client-fingerprint: "firefox"
+    alpn:
+      - "h2"
+      - "http/1.1"
+    tls: true
+    network: "xhttp"
+    xhttp-opts:
+      path: "/api/de5/sync"
+      host: "clearing.moltex.click"
+      mode: "auto"
+
+  - name: "🇩🇪DE-475M-[fa7dc1/7fdf80]"
+    type: "vless"
+    server: "cabinet.filnex.baby"
+    port: 443
+    uuid: "0b6a7fe0-206b-4071-9f96-cd397d1ec01a"
+    udp: true
+    encryption: "none"
+    servername: "claywick.elvano.website"
+    client-fingerprint: "iOS"
+    alpn:
+      - "http/1.1"
+    tls: true
+    network: "ws"
+    ws-opts:
+      path: "/api/de7/stream"
+
 proxy-groups:
   - name: "GLOBAL"
     type: select
@@ -288,22 +521,37 @@ proxy-groups:
     proxies:
       - "🇷🇺RU-231M-[0da008/f2bf6d]"
       - "🇷🇺RU-237M-[2498ef/a8d0cc]"
+      - "🇩🇪DE-409M-[2f0616/2c1fcb]"
+      - "🇩🇪DE-290M-[2f86b2/7a914c]"
+      - "🇺🇸US-153M-[4790ae/427aa0]"
       - "🇭🇰HK-45M-[4a614c/01c608]"
       - "🇷🇺RU-279M-[4cfc17/d0b190]"
-      - "🇩🇪DE-321M-[4fb92d/c1e6b0]"
+      - "🇩🇪DE-188M-[4fb92d/c1e6b0]"
       - "🇷🇺RU-259M-[578d1f/88bad0]"
+      - "🇩🇪DE-306M-[606a0f/fddd7f]"
+      - "🇩🇪DE-243M-[7024dd/a49e69]"
       - "🇩🇪DE-446M-[777e9e/19b6c7]"
-      - "🇧🇬BG-428M-[7b62ee/9f4bde]"
+      - "🇫🇮FI-176M-[79d0ec/bf4224]"
+      - "🇧🇬BG-355M-[7b62ee/9f4bde]"
+      - "🇩🇪DE-450M-[87c664/870018]"
       - "🇷🇺RU-91M-[950c41/95aa72]"
       - "🇷🇺RU-308M-[9be8ad/a4b359]"
       - "🇰🇿KZ-26M-[9ff86b/d84c29]"
+      - "🇩🇪DE-373M-[a1c7dc/f6fb73]"
       - "🇷🇺RU-258M-[a2810c/5f2fdf]"
       - "🇷🇺RU-292M-[bb6899/dce762]"
+      - "🇺🇸US-196M-[c08a18/7e795c]"
       - "🇸🇪SE-168M-[c18415/f0a1b5]"
+      - "🇧🇬BG-394M-[c21d3a/9b63c4]"
       - "🇳🇱NL-305M-[cc2a86/fab189]"
       - "🇫🇮FI-456M-[dc81f2/a42c02]"
       - "🇷🇺RU-135M-[dd6ad7/b66583]"
+      - "🇫🇷FR-400M-[dfeeac/bb0bd3]"
+      - "🇩🇪DE-47M-[e57877/732fcf]"
+      - "🇫🇷FR-117M-[e61eab/80881e]"
       - "🇯🇵JP-324M-[f0eb37/d62c2c]"
+      - "🇩🇪DE-382M-[f8c86c/f33515]"
+      - "🇩🇪DE-475M-[fa7dc1/7fdf80]"
 
 rules:
   - "DOMAIN,smtp.gmail.com,DIRECT"
