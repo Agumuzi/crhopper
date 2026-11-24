@@ -6,6 +6,36 @@ log-level: warning
 ipv6: false
 
 proxies:
+  - name: "🇷🇺RU-273M-[0da008/f2bf6d]"
+    type: "vless"
+    server: "104.17.136.102"
+    port: 2087
+    uuid: "51a0af77-a60c-4d9b-81a4-f50e1b38d90b"
+    udp: true
+    encryption: "none"
+    client-fingerprint: "chrome"
+    tls: true
+    network: "ws"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "rezanoori4295.pages.dev"
+
+  - name: "🇷🇺RU-308M-[2498ef/a8d0cc]"
+    type: "vless"
+    server: "104.17.138.140"
+    port: 8443
+    uuid: "51a0af77-a60c-4d9b-81a4-f50e1b38d90b"
+    udp: true
+    encryption: "none"
+    client-fingerprint: "chrome"
+    tls: true
+    network: "ws"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "sfsmzggh4hyy2i-0oy5s5dtmkjv2nam6.pages.dev"
+
   - name: "🇵🇱PL-305M-[3b9d0a/6b2a25]"
     type: "vless"
     server: "api.mediatropa.cc"
@@ -22,7 +52,51 @@ proxies:
       short-id: "a8"
     network: "tcp"
 
-  - name: "🇫🇮FI-56M-[79d0ec/bf4224]"
+  - name: "🇺🇸US-240M-[4790ae/427aa0]"
+    type: "trojan"
+    server: "ipfast.kingmna.com"
+    port: 443
+    password: "GBEqN2BggZfFExc5pTTHUA"
+    udp: true
+    sni: "cdn.akamai.steamstatic.com"
+    skip-cert-verify: true
+    network: "ws"
+    ws-opts:
+      path: "/TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER"
+      headers:
+        Host: "copy_az_channel_nufilter_17i.global.ssl.fastly.net."
+
+  - name: "🇷🇺RU-61M-[4cfc17/d0b190]"
+    type: "vless"
+    server: "104.19.35.11"
+    port: 2053
+    uuid: "51a0af77-a60c-4d9b-81a4-f50e1b38d90b"
+    udp: true
+    encryption: "none"
+    client-fingerprint: "chrome"
+    tls: true
+    network: "ws"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "sfsmzggh4hyy2i-0oy5s5dtmkjv2nam6.pages.dev"
+
+  - name: "🇷🇺RU-184M-[578d1f/88bad0]"
+    type: "vless"
+    server: "104.19.46.190"
+    port: 2096
+    uuid: "51a0af77-a60c-4d9b-81a4-f50e1b38d90b"
+    udp: true
+    encryption: "none"
+    client-fingerprint: "chrome"
+    tls: true
+    network: "ws"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "rezanoori4295.pages.dev"
+
+  - name: "🇫🇮FI-83M-[79d0ec/bf4224]"
     type: "vless"
     server: "a80b5386.fi2.h1clayd.click"
     port: 443
@@ -37,6 +111,127 @@ proxies:
       short-id: "cc678f10161992a9"
     network: "tcp"
 
+  - name: "🇧🇬BG-317M-[7b62ee/68be0f]"
+    type: "vless"
+    server: "plaindune.com"
+    port: 8443
+    uuid: "37af0181-5598-4aad-a040-d926bcb65757"
+    udp: true
+    encryption: "none"
+    servername: "plaindune.com"
+    tls: true
+    network: "xhttp"
+    xhttp-opts:
+      path: "/api/v1/upload"
+      host: "plaindune.com"
+      mode: "auto"
+
+  - name: "🇷🇺RU-315M-[9be8ad/a4b359]"
+    type: "vless"
+    server: "104.19.33.42"
+    port: 2083
+    uuid: "51a0af77-a60c-4d9b-81a4-f50e1b38d90b"
+    udp: true
+    encryption: "none"
+    client-fingerprint: "chrome"
+    tls: true
+    network: "ws"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "rezanoori4295.pages.dev"
+
+  - name: "🇷🇺RU-246M-[a2810c/5f2fdf]"
+    type: "vless"
+    server: "104.17.138.111"
+    port: 8443
+    uuid: "51a0af77-a60c-4d9b-81a4-f50e1b38d90b"
+    udp: true
+    encryption: "none"
+    client-fingerprint: "chrome"
+    tls: true
+    network: "ws"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "rezanoori4295.pages.dev"
+
+  - name: "🇷🇺RU-195M-[bb6899/dce762]"
+    type: "vless"
+    server: "104.16.205.122"
+    port: 2087
+    uuid: "51a0af77-a60c-4d9b-81a4-f50e1b38d90b"
+    udp: true
+    encryption: "none"
+    client-fingerprint: "chrome"
+    tls: true
+    network: "ws"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "sfsmzggh4hyy2i-0oy5s5dtmkjv2nam6.pages.dev"
+
+  - name: "🇧🇬BG-298M-[c21d3a/9b63c4]"
+    type: "vless"
+    server: "78.159.240.72"
+    port: 8443
+    uuid: "37af0181-5598-4aad-a040-d926bcb65757"
+    udp: true
+    encryption: "none"
+    servername: "plaindune.com"
+    tls: true
+    network: "xhttp"
+    xhttp-opts:
+      path: "/api/v1/upload"
+      host: "plaindune.com"
+      mode: "auto"
+
+  - name: "🇫🇮FI-400M-[dc81f2/a42c02]"
+    type: "vless"
+    server: "77.232.140.7"
+    port: 443
+    uuid: "50414e45-4c5f-5a45-5553-5a447647929f"
+    udp: true
+    encryption: "none"
+    servername: "bbz1x6eau6gs.88bahpu62r.workers.dev"
+    tls: true
+    network: "ws"
+    ws-opts:
+      path: "/stream/PANEL_ZEUS/5a447647929f"
+      headers:
+        Host: "bbz1x6eau6gs.88bahpu62r.workers.dev"
+
+  - name: "🇷🇺RU-175M-[dd6ad7/b66583]"
+    type: "vless"
+    server: "103.116.7.10"
+    port: 2053
+    uuid: "50414e45-4c5f-5a45-5553-9c45f3fee7fb"
+    udp: true
+    encryption: "none"
+    servername: "dzzxiyeku44s.mahdihonarvar5.workers.dev"
+    client-fingerprint: "unsafe"
+    tls: true
+    network: "ws"
+    ws-opts:
+      path: "/stream/PANEL_ZEUS/9c45f3fee7fb"
+      headers:
+        Host: "dzzxiyeku44s.mahdihonarvar5.workers.dev"
+
+  - name: "🇯🇵JP-192M-[f0eb37/d62c2c]"
+    type: "vless"
+    server: "104.16.244.34"
+    port: 2053
+    uuid: "97514cec-cf70-42b1-9743-3f89122adc8e"
+    udp: true
+    encryption: "none"
+    servername: "cffq.pages.dev"
+    tls: true
+    network: "ws"
+    ws-opts:
+      path: "%2F%3Fed%3D2560"
+      headers:
+        Host: "cffq.pages.dev"
+
 proxy-groups:
   - name: "GLOBAL"
     type: select
@@ -46,8 +241,21 @@ proxy-groups:
   - name: "AUTO"
     type: select
     proxies:
+      - "🇷🇺RU-273M-[0da008/f2bf6d]"
+      - "🇷🇺RU-308M-[2498ef/a8d0cc]"
       - "🇵🇱PL-305M-[3b9d0a/6b2a25]"
-      - "🇫🇮FI-56M-[79d0ec/bf4224]"
+      - "🇺🇸US-240M-[4790ae/427aa0]"
+      - "🇷🇺RU-61M-[4cfc17/d0b190]"
+      - "🇷🇺RU-184M-[578d1f/88bad0]"
+      - "🇫🇮FI-83M-[79d0ec/bf4224]"
+      - "🇧🇬BG-317M-[7b62ee/68be0f]"
+      - "🇷🇺RU-315M-[9be8ad/a4b359]"
+      - "🇷🇺RU-246M-[a2810c/5f2fdf]"
+      - "🇷🇺RU-195M-[bb6899/dce762]"
+      - "🇧🇬BG-298M-[c21d3a/9b63c4]"
+      - "🇫🇮FI-400M-[dc81f2/a42c02]"
+      - "🇷🇺RU-175M-[dd6ad7/b66583]"
+      - "🇯🇵JP-192M-[f0eb37/d62c2c]"
 
 rules:
   - "DOMAIN,smtp.gmail.com,DIRECT"
