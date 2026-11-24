@@ -36,6 +36,21 @@ proxies:
       headers:
         Host: "sfsmzggh4hyy2i-0oy5s5dtmkjv2nam6.pages.dev"
 
+  - name: "🇩🇪DE-298M-[30a728/a91e98]"
+    type: "vless"
+    server: "146.75.32.177"
+    port: 443
+    uuid: "e15225fb-0998-4719-8391-eede56f4d472"
+    udp: true
+    encryption: "none"
+    servername: "zd.fastly.com"
+    client-fingerprint: "firefox"
+    tls: true
+    network: "xhttp"
+    xhttp-opts:
+      path: "/"
+      host: "huryuk.global.ssl.fastly.net"
+
   - name: "🇵🇱PL-305M-[3b9d0a/6b2a25]"
     type: "vless"
     server: "api.mediatropa.cc"
@@ -51,6 +66,21 @@ proxies:
       public-key: "r5WB5FnSCt4eeBC1FJMfkWHbzsMuabo0Rc6wuAhlZUs"
       short-id: "a8"
     network: "tcp"
+
+  - name: "🇺🇸US-65M-[4790ae/157b0e]"
+    type: "trojan"
+    server: "ipfast.kingmna.com"
+    port: 443
+    password: "GBEqN2BggZfFExc5pTTHUA"
+    udp: true
+    sni: "cdn.akamai.steamstatic.com"
+    client-fingerprint: "firefox"
+    skip-cert-verify: true
+    network: "ws"
+    ws-opts:
+      path: "/TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER"
+      headers:
+        Host: "copy_az_channel_nufilter_10i.global.ssl.fastly.net."
 
   - name: "🇺🇸US-240M-[4790ae/427aa0]"
     type: "trojan"
@@ -96,7 +126,7 @@ proxies:
       headers:
         Host: "rezanoori4295.pages.dev"
 
-  - name: "🇫🇮FI-83M-[79d0ec/bf4224]"
+  - name: "🇫🇮FI-41M-[79d0ec/bf4224]"
     type: "vless"
     server: "a80b5386.fi2.h1clayd.click"
     port: 443
@@ -201,7 +231,7 @@ proxies:
       headers:
         Host: "bbz1x6eau6gs.88bahpu62r.workers.dev"
 
-  - name: "🇷🇺RU-175M-[dd6ad7/b66583]"
+  - name: "🇷🇺RU-321M-[dd6ad7/b66583]"
     type: "vless"
     server: "103.116.7.10"
     port: 2053
@@ -216,6 +246,21 @@ proxies:
       path: "/stream/PANEL_ZEUS/9c45f3fee7fb"
       headers:
         Host: "dzzxiyeku44s.mahdihonarvar5.workers.dev"
+
+  - name: "🇫🇮FI-46M-[eba734/1bac1f]"
+    type: "vless"
+    server: "13.141.36.15"
+    port: 443
+    uuid: "2ccb06b6-9eac-44eb-ade7-c1e5afb8e7df"
+    udp: true
+    encryption: "none"
+    servername: "a80b5386.fi2.h1clayd.click"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "PslSaSQWP4BZZmkL7irab4FMti8sW6BvoC7ytFjJFyc"
+      short-id: "cc678f10161992a9"
+    network: "tcp"
 
   - name: "🇯🇵JP-192M-[f0eb37/d62c2c]"
     type: "vless"
@@ -243,18 +288,21 @@ proxy-groups:
     proxies:
       - "🇷🇺RU-273M-[0da008/f2bf6d]"
       - "🇷🇺RU-308M-[2498ef/a8d0cc]"
+      - "🇩🇪DE-298M-[30a728/a91e98]"
       - "🇵🇱PL-305M-[3b9d0a/6b2a25]"
+      - "🇺🇸US-65M-[4790ae/157b0e]"
       - "🇺🇸US-240M-[4790ae/427aa0]"
       - "🇷🇺RU-61M-[4cfc17/d0b190]"
       - "🇷🇺RU-184M-[578d1f/88bad0]"
-      - "🇫🇮FI-83M-[79d0ec/bf4224]"
+      - "🇫🇮FI-41M-[79d0ec/bf4224]"
       - "🇧🇬BG-317M-[7b62ee/68be0f]"
       - "🇷🇺RU-315M-[9be8ad/a4b359]"
       - "🇷🇺RU-246M-[a2810c/5f2fdf]"
       - "🇷🇺RU-195M-[bb6899/dce762]"
       - "🇧🇬BG-298M-[c21d3a/9b63c4]"
       - "🇫🇮FI-400M-[dc81f2/a42c02]"
-      - "🇷🇺RU-175M-[dd6ad7/b66583]"
+      - "🇷🇺RU-321M-[dd6ad7/b66583]"
+      - "🇫🇮FI-46M-[eba734/1bac1f]"
       - "🇯🇵JP-192M-[f0eb37/d62c2c]"
 
 rules:
