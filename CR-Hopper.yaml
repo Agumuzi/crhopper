@@ -111,6 +111,20 @@ proxies:
       headers:
         Host: "copy_az_channel_nufilter_6i.global.ssl.fastly.net."
 
+  - name: "🇺🇸US-162M-[4790ae/9be96f]"
+    type: "trojan"
+    server: "ipfast.kingmna.com"
+    port: 443
+    password: "lDU6Jpl4nSXA-x4sWmb1LQ"
+    udp: true
+    sni: "cdn.akamai.steamstatic.com"
+    skip-cert-verify: true
+    network: "ws"
+    ws-opts:
+      path: "/TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER"
+      headers:
+        Host: "copy_az_channel_nufilter_10i.global.ssl.fastly.net."
+
   - name: "🇷🇺RU-61M-[4cfc17/d0b190]"
     type: "vless"
     server: "104.19.35.11"
@@ -308,6 +322,7 @@ proxy-groups:
       - "🇺🇸US-65M-[4790ae/157b0e]"
       - "🇺🇸US-240M-[4790ae/427aa0]"
       - "🇺🇸US-316M-[4790ae/4938e7]"
+      - "🇺🇸US-162M-[4790ae/9be96f]"
       - "🇷🇺RU-61M-[4cfc17/d0b190]"
       - "🇷🇺RU-184M-[578d1f/88bad0]"
       - "🇫🇮FI-41M-[79d0ec/bf4224]"
