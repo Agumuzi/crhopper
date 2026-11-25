@@ -296,6 +296,23 @@ proxies:
       headers:
         Host: "rezanoori4295.pages.dev"
 
+  - name: "🇪🇪EE-39M-[680dc6/ffd0e0]"
+    type: "vless"
+    server: "168.113.252.30"
+    port: 9881
+    uuid: "e460e7b2-a146-4468-87ed-52510b2caae6"
+    udp: true
+    encryption: "none"
+    servername: "dl.google.com"
+    client-fingerprint: "qq"
+    tls: true
+    reality-opts:
+      public-key: "Dfgu8Ey0M8Hz4gXGZAwQ3H9jLt2HByVsjAOTWiuKDB0"
+      short-id: "aabb"
+    network: "grpc"
+    grpc-opts:
+      grpc-service-name: "grpc-tunnel"
+
   - name: "🇵🇱PL-35M-[748ad8/d1b803]"
     type: "vless"
     server: "92.63.189.39"
@@ -729,6 +746,7 @@ proxy-groups:
       - "🇩🇪DE-149M-[4fd9dd/4bebf6]"
       - "🇺🇸US-124M-[51bc10/5252f6]"
       - "🇷🇺RU-234M-[578d1f/88bad0]"
+      - "🇪🇪EE-39M-[680dc6/ffd0e0]"
       - "🇵🇱PL-35M-[748ad8/d1b803]"
       - "🇩🇪DE-155M-[79cd91/0ef2b0]"
       - "🇫🇮FI-38M-[79d0ec/e5f156]"
