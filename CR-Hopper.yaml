@@ -55,6 +55,22 @@ proxies:
       headers:
         Host: "rezanoori4295.pages.dev"
 
+  - name: "🇩🇪DE-24M-[113c72/e532c6]"
+    type: "vless"
+    server: "cdn-be2b66.wl10.tidalframe.net"
+    port: 443
+    uuid: "01fada34-d8d8-4922-a199-6df19cd7391e"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "cdn-3f233a.wl5.streamvale.net"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "_vuP0Wathd0PL_V39nLPB1lJWO9tLRnTcyphw1HK1kM"
+      short-id: ""
+    network: "tcp"
+
   - name: "🇷🇺RU-326M-[13d85b/37eb82]"
     type: "vless"
     server: "45.150.238.201"
@@ -166,6 +182,25 @@ proxies:
       short-id: "a8"
     network: "tcp"
 
+  - name: "🇸🇪SE-25M-[3d2723/d8b6ee]"
+    type: "vless"
+    server: "45.86.158.98"
+    port: 443
+    uuid: "57a3fb3c-5788-4777-933e-882dd22f5b82"
+    udp: true
+    encryption: "none"
+    servername: "827cdfx.se1.h1clayd.click"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "47s_74OVmoW9iXevykWVq-0zBinNClL0UYwpjZwY-EU"
+      short-id: "8b0080a3264925fc"
+    network: "xhttp"
+    xhttp-opts:
+      path: "/3da97be1aa27"
+      mode: "auto"
+      x-padding-bytes: "100-1000"
+
   - name: "🇺🇸US-358M-[4790ae/9be96f]"
     type: "trojan"
     server: "ipfast.kingmna.com"
@@ -214,7 +249,7 @@ proxies:
       max-early-data: 2560
       early-data-header-name: "Sec-WebSocket-Protocol"
 
-  - name: "🇩🇪DE-278M-[4fd9dd/4bebf6]"
+  - name: "🇩🇪DE-149M-[4fd9dd/4bebf6]"
     type: "vless"
     server: "free-server.techsonic.dev"
     port: 443
@@ -290,7 +325,7 @@ proxies:
       short-id: "abc123"
     network: "tcp"
 
-  - name: "🇫🇮FI-91M-[79d0ec/e5f156]"
+  - name: "🇫🇮FI-38M-[79d0ec/e5f156]"
     type: "vless"
     server: "a80b5386.fi2.h1clayd.click"
     port: 443
@@ -385,6 +420,20 @@ proxies:
       short-id: "b4146cf5c1af7f90"
     network: "tcp"
 
+  - name: "🇵🇱PL-274M-[a8e3dd/0ab986]"
+    type: "vless"
+    server: "45.67.215.21"
+    port: 443
+    uuid: "3493b1bc-1c65-46e6-9cb6-9dd62b99afea"
+    udp: true
+    encryption: "none"
+    servername: "51.baklajann.ru"
+    client-fingerprint: "chrome"
+    tls: true
+    network: "xhttp"
+    xhttp-opts:
+      path: "/"
+
   - name: "🇫🇷FR-180M-[a8e3dd/86afd3]"
     type: "vless"
     server: "45.67.215.21"
@@ -431,7 +480,7 @@ proxies:
       headers:
         Host: "sfsmzggh4hyy2i-0oy5s5dtmkjv2nam6.pages.dev"
 
-  - name: "🇩🇪DE-105M-[bf634d/adfd92]"
+  - name: "🇩🇪DE-172M-[bf634d/adfd92]"
     type: "vless"
     server: "144.31.214.249"
     port: 443
@@ -463,7 +512,7 @@ proxies:
       headers:
         Host: "rock.davidbowie.cyou"
 
-  - name: "🇰🇿KZ-310M-[c425e6/931e33]"
+  - name: "🇰🇿KZ-251M-[c425e6/931e33]"
     type: "vless"
     server: "176.123.162.82"
     port: 443
@@ -548,7 +597,7 @@ proxies:
       headers:
         Host: "new.wytys.ru"
 
-  - name: "🇷🇺RU-361M-[e018b8/b22434]"
+  - name: "🇷🇺RU-89M-[e018b8/b22434]"
     type: "vless"
     server: "dc.insidenet.ru"
     port: 20443
@@ -582,6 +631,22 @@ proxies:
     uuid: "2ccb06b6-9eac-44eb-ade7-c1e5afb8e7df"
     udp: true
     encryption: "none"
+    servername: "a80b5386.fi2.h1clayd.click"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "PslSaSQWP4BZZmkL7irab4FMti8sW6BvoC7ytFjJFyc"
+      short-id: "cc678f10161992a9"
+    network: "tcp"
+
+  - name: "🇫🇮FI-48M-[eba734/705e4e]"
+    type: "vless"
+    server: "13.141.36.15"
+    port: 443
+    uuid: "2ccb06b6-9eac-44eb-ade7-c1e5afb8e7df"
+    udp: true
+    encryption: "none"
+    packet-encoding: "xudp"
     servername: "a80b5386.fi2.h1clayd.click"
     client-fingerprint: "firefox"
     tls: true
@@ -632,6 +697,7 @@ proxy-groups:
       - "🇵🇱PL-173M-[047515/74f582]"
       - "🇺🇸US-216M-[0b4642/baa7c3]"
       - "🇷🇺RU-257M-[0da008/f2bf6d]"
+      - "🇩🇪DE-24M-[113c72/e532c6]"
       - "🇷🇺RU-326M-[13d85b/37eb82]"
       - "🇫🇷FR-32M-[17d308/f3bed5]"
       - "🇫🇷FR-376M-[22773b/68eea2]"
@@ -639,33 +705,36 @@ proxy-groups:
       - "🇬🇧GB-25M-[29e521/9c24e2]"
       - "🇦🇹AT-489M-[2cb363/56fb9d]"
       - "🇦🇹AT-436M-[2cb363/849c57]"
+      - "🇸🇪SE-25M-[3d2723/d8b6ee]"
       - "🇺🇸US-358M-[4790ae/9be96f]"
       - "🇷🇺RU-346M-[4cfc17/d0b190]"
       - "🇫🇷FR-391M-[4d09a2/dc8ade]"
-      - "🇩🇪DE-278M-[4fd9dd/4bebf6]"
+      - "🇩🇪DE-149M-[4fd9dd/4bebf6]"
       - "🇺🇸US-124M-[51bc10/5252f6]"
       - "🇷🇺RU-234M-[578d1f/88bad0]"
       - "🇵🇱PL-35M-[748ad8/d1b803]"
       - "🇩🇪DE-155M-[79cd91/0ef2b0]"
-      - "🇫🇮FI-91M-[79d0ec/e5f156]"
+      - "🇫🇮FI-38M-[79d0ec/e5f156]"
       - "🇵🇱PL-312M-[7da723/91a6b1]"
       - "🇦🇪AE-22M-[90bb79/d00fe4]"
       - "🇷🇺RU-319M-[9be8ad/a4b359]"
       - "🇷🇺RU-363M-[a2810c/5f2fdf]"
       - "🇫🇮FI-37M-[a4349e/baa4ef]"
+      - "🇵🇱PL-274M-[a8e3dd/0ab986]"
       - "🇫🇷FR-180M-[a8e3dd/86afd3]"
       - "🇵🇱PL-320M-[af56b2/fc62cb]"
       - "🇷🇺RU-361M-[bb6899/dce762]"
-      - "🇩🇪DE-105M-[bf634d/adfd92]"
+      - "🇩🇪DE-172M-[bf634d/adfd92]"
       - "🇸🇪SE-291M-[c18415/7ed699]"
-      - "🇰🇿KZ-310M-[c425e6/931e33]"
+      - "🇰🇿KZ-251M-[c425e6/931e33]"
       - "🇳🇱NL-508M-[c98348/b1fcf6]"
       - "🇷🇺RU-381M-[dd6ad7/81e607]"
       - "🇷🇺RU-274M-[dd6ad7/b66583]"
       - "🇳🇱NL-257M-[dfb65b/d90767]"
-      - "🇷🇺RU-361M-[e018b8/b22434]"
+      - "🇷🇺RU-89M-[e018b8/b22434]"
       - "🇸🇬SG-87M-[e98022/f81d7a]"
       - "🇫🇮FI-89M-[eba734/1bac1f]"
+      - "🇫🇮FI-48M-[eba734/705e4e]"
       - "🇯🇵JP-263M-[f0eb37/832952]"
       - "🇯🇵JP-251M-[f0eb37/d62c2c]"
 
