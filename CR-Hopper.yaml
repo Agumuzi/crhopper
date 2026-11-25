@@ -374,6 +374,23 @@ proxies:
       short-id: "ff133c583853246f"
     network: "tcp"
 
+  - name: "🇧🇬BG-25M-[955f63/eb0734]"
+    type: "vless"
+    server: "131.123.38.59"
+    port: 443
+    uuid: "f8cb3c89-32af-4255-bebc-d90aad175069"
+    udp: true
+    encryption: "none"
+    servername: "bga.899themes.pro"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "pR39Vv5qhk8r6akOicoy6mMs4-ppSWUez8MyAXG7wwQ"
+      short-id: "27350908de933e09"
+    network: "grpc"
+    grpc-opts:
+      grpc-service-name: "neurex"
+
   - name: "🇷🇺RU-319M-[9be8ad/a4b359]"
     type: "vless"
     server: "104.19.33.42"
@@ -717,6 +734,7 @@ proxy-groups:
       - "🇫🇮FI-38M-[79d0ec/e5f156]"
       - "🇵🇱PL-312M-[7da723/91a6b1]"
       - "🇦🇪AE-22M-[90bb79/d00fe4]"
+      - "🇧🇬BG-25M-[955f63/eb0734]"
       - "🇷🇺RU-319M-[9be8ad/a4b359]"
       - "🇷🇺RU-363M-[a2810c/5f2fdf]"
       - "🇫🇮FI-37M-[a4349e/baa4ef]"
