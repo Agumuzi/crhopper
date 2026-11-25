@@ -6,6 +6,52 @@ log-level: warning
 ipv6: false
 
 proxies:
+  - name: "🇺🇸US-253M-[0b4642/baa7c3]"
+    type: "vless"
+    server: "159.195.233.11"
+    port: 8443
+    uuid: "12eb241d-f650-4e7e-969b-09f00bb80123"
+    udp: true
+    encryption: "none"
+    servername: "next-1ez.pages.dev"
+    client-fingerprint: "firefox"
+    tls: true
+    network: "ws"
+    ws-opts:
+      path: "/12eb241d-f650-4e7e-969b-09f00bb80123"
+      headers:
+        Host: "next-1ez.pages.dev"
+
+  - name: "🇷🇺RU-257M-[0da008/f2bf6d]"
+    type: "vless"
+    server: "104.17.136.102"
+    port: 2087
+    uuid: "51a0af77-a60c-4d9b-81a4-f50e1b38d90b"
+    udp: true
+    encryption: "none"
+    client-fingerprint: "chrome"
+    tls: true
+    network: "ws"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "rezanoori4295.pages.dev"
+
+  - name: "🇷🇺RU-240M-[2498ef/a8d0cc]"
+    type: "vless"
+    server: "104.17.138.140"
+    port: 8443
+    uuid: "51a0af77-a60c-4d9b-81a4-f50e1b38d90b"
+    udp: true
+    encryption: "none"
+    client-fingerprint: "chrome"
+    tls: true
+    network: "ws"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "sfsmzggh4hyy2i-0oy5s5dtmkjv2nam6.pages.dev"
+
   - name: "🇦🇹AT-489M-[2cb363/56fb9d]"
     type: "vless"
     server: "189.74.115.3"
@@ -22,6 +68,36 @@ proxies:
       short-id: "a8"
     network: "tcp"
 
+  - name: "🇷🇺RU-346M-[4cfc17/d0b190]"
+    type: "vless"
+    server: "104.19.35.11"
+    port: 2053
+    uuid: "51a0af77-a60c-4d9b-81a4-f50e1b38d90b"
+    udp: true
+    encryption: "none"
+    client-fingerprint: "chrome"
+    tls: true
+    network: "ws"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "sfsmzggh4hyy2i-0oy5s5dtmkjv2nam6.pages.dev"
+
+  - name: "🇷🇺RU-234M-[578d1f/88bad0]"
+    type: "vless"
+    server: "104.19.46.190"
+    port: 2096
+    uuid: "51a0af77-a60c-4d9b-81a4-f50e1b38d90b"
+    udp: true
+    encryption: "none"
+    client-fingerprint: "chrome"
+    tls: true
+    network: "ws"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "rezanoori4295.pages.dev"
+
   - name: "🇵🇱PL-35M-[748ad8/d1b803]"
     type: "vless"
     server: "92.63.189.39"
@@ -35,7 +111,98 @@ proxies:
     tls: true
     network: "tcp"
 
-  - name: "🇩🇪DE-211M-[bf634d/adfd92]"
+  - name: "🇫🇮FI-91M-[79d0ec/e5f156]"
+    type: "vless"
+    server: "a80b5386.fi2.h1clayd.click"
+    port: 443
+    uuid: "2ccb06b6-9eac-44eb-ade7-c1e5afb8e7df"
+    udp: true
+    encryption: "none"
+    servername: "a80b5386.fi2.h1clayd.click"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "PslSaSQWP4BZZmkL7irab4FMti8sW6BvoC7ytFjJFyc"
+      short-id: "cc678f10161992a9"
+    network: "tcp"
+
+  - name: "🇷🇺RU-319M-[9be8ad/a4b359]"
+    type: "vless"
+    server: "104.19.33.42"
+    port: 2083
+    uuid: "51a0af77-a60c-4d9b-81a4-f50e1b38d90b"
+    udp: true
+    encryption: "none"
+    client-fingerprint: "chrome"
+    tls: true
+    network: "ws"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "rezanoori4295.pages.dev"
+
+  - name: "🇷🇺RU-363M-[a2810c/5f2fdf]"
+    type: "vless"
+    server: "104.17.138.111"
+    port: 8443
+    uuid: "51a0af77-a60c-4d9b-81a4-f50e1b38d90b"
+    udp: true
+    encryption: "none"
+    client-fingerprint: "chrome"
+    tls: true
+    network: "ws"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "rezanoori4295.pages.dev"
+
+  - name: "🇫🇮FI-37M-[a4349e/baa4ef]"
+    type: "vless"
+    server: "ee.prosetupvideo.shop"
+    port: 443
+    uuid: "f8d52ece-fad4-478d-875d-df6eed3befa7"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "ee.prosetupvideo.shop"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "lqtZwWjlEE8Sx1ayGSlEZETEAC33mxHWbf-Py8mgrEc"
+      short-id: "b4146cf5c1af7f90"
+    network: "tcp"
+
+  - name: "🇫🇷FR-180M-[a8e3dd/86afd3]"
+    type: "vless"
+    server: "45.67.215.21"
+    port: 443
+    uuid: "3493b1bc-1c65-46e6-9cb6-9dd62b99afea"
+    udp: true
+    encryption: "none"
+    servername: "mama147.baklajann.ru"
+    client-fingerprint: "firefox"
+    tls: true
+    network: "xhttp"
+    xhttp-opts:
+      path: "/"
+      mode: "auto"
+
+  - name: "🇷🇺RU-361M-[bb6899/dce762]"
+    type: "vless"
+    server: "104.16.205.122"
+    port: 2087
+    uuid: "51a0af77-a60c-4d9b-81a4-f50e1b38d90b"
+    udp: true
+    encryption: "none"
+    client-fingerprint: "chrome"
+    tls: true
+    network: "ws"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "sfsmzggh4hyy2i-0oy5s5dtmkjv2nam6.pages.dev"
+
+  - name: "🇩🇪DE-269M-[bf634d/adfd92]"
     type: "vless"
     server: "144.31.214.249"
     port: 443
@@ -48,7 +215,7 @@ proxies:
     tls: true
     network: "tcp"
 
-  - name: "🇰🇿KZ-374M-[c425e6/931e33]"
+  - name: "🇰🇿KZ-328M-[c425e6/931e33]"
     type: "vless"
     server: "176.123.162.82"
     port: 443
@@ -64,6 +231,23 @@ proxies:
       short-id: "a8b3db4bfe222a8c"
     network: "tcp"
 
+  - name: "🇷🇺RU-381M-[dd6ad7/81e607]"
+    type: "vless"
+    server: "103.116.7.10"
+    port: 2053
+    uuid: "50414e45-4c5f-5a45-5553-9c45f3fee7fb"
+    udp: true
+    encryption: "none"
+    packet-encoding: "xudp"
+    servername: "dzzxiyeku44s.mahdihonarvar5.workers.dev"
+    client-fingerprint: "unsafe"
+    tls: true
+    network: "ws"
+    ws-opts:
+      path: "/stream/PANEL_ZEUS/9c45f3fee7fb"
+      headers:
+        Host: "dzzxiyeku44s.mahdihonarvar5.workers.dev"
+
   - name: "🇸🇬SG-87M-[e98022/f81d7a]"
     type: "vmess"
     server: "195.133.135.238"
@@ -75,6 +259,36 @@ proxies:
     skip-cert-verify: true
     network: "tcp"
 
+  - name: "🇫🇮FI-89M-[eba734/1bac1f]"
+    type: "vless"
+    server: "13.141.36.15"
+    port: 443
+    uuid: "2ccb06b6-9eac-44eb-ade7-c1e5afb8e7df"
+    udp: true
+    encryption: "none"
+    servername: "a80b5386.fi2.h1clayd.click"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "PslSaSQWP4BZZmkL7irab4FMti8sW6BvoC7ytFjJFyc"
+      short-id: "cc678f10161992a9"
+    network: "tcp"
+
+  - name: "🇯🇵JP-251M-[f0eb37/d62c2c]"
+    type: "vless"
+    server: "104.16.244.34"
+    port: 2053
+    uuid: "97514cec-cf70-42b1-9743-3f89122adc8e"
+    udp: true
+    encryption: "none"
+    servername: "cffq.pages.dev"
+    tls: true
+    network: "ws"
+    ws-opts:
+      path: "%2F%3Fed%3D2560"
+      headers:
+        Host: "cffq.pages.dev"
+
 proxy-groups:
   - name: "GLOBAL"
     type: select
@@ -84,11 +298,25 @@ proxy-groups:
   - name: "AUTO"
     type: select
     proxies:
+      - "🇺🇸US-253M-[0b4642/baa7c3]"
+      - "🇷🇺RU-257M-[0da008/f2bf6d]"
+      - "🇷🇺RU-240M-[2498ef/a8d0cc]"
       - "🇦🇹AT-489M-[2cb363/56fb9d]"
+      - "🇷🇺RU-346M-[4cfc17/d0b190]"
+      - "🇷🇺RU-234M-[578d1f/88bad0]"
       - "🇵🇱PL-35M-[748ad8/d1b803]"
-      - "🇩🇪DE-211M-[bf634d/adfd92]"
-      - "🇰🇿KZ-374M-[c425e6/931e33]"
+      - "🇫🇮FI-91M-[79d0ec/e5f156]"
+      - "🇷🇺RU-319M-[9be8ad/a4b359]"
+      - "🇷🇺RU-363M-[a2810c/5f2fdf]"
+      - "🇫🇮FI-37M-[a4349e/baa4ef]"
+      - "🇫🇷FR-180M-[a8e3dd/86afd3]"
+      - "🇷🇺RU-361M-[bb6899/dce762]"
+      - "🇩🇪DE-269M-[bf634d/adfd92]"
+      - "🇰🇿KZ-328M-[c425e6/931e33]"
+      - "🇷🇺RU-381M-[dd6ad7/81e607]"
       - "🇸🇬SG-87M-[e98022/f81d7a]"
+      - "🇫🇮FI-89M-[eba734/1bac1f]"
+      - "🇯🇵JP-251M-[f0eb37/d62c2c]"
 
 rules:
   - "DOMAIN,smtp.gmail.com,DIRECT"
