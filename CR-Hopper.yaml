@@ -21,6 +21,20 @@ proxies:
       headers:
         Host: "sfsmzggh4hyy2i-0oy5s5dtmkjv2nam6.pages.dev"
 
+  - name: "🇺🇸US-267M-[4790ae/ec145f]"
+    type: "trojan"
+    server: "ipfast.kingmna.com"
+    port: 443
+    password: "1sUm9iYpsjLCOC9THsL9cg"
+    udp: true
+    sni: "cdn.akamai.steamstatic.com"
+    skip-cert-verify: true
+    network: "ws"
+    ws-opts:
+      path: "/TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER"
+      headers:
+        Host: "filasi554.global.ssl.fastly.net."
+
   - name: "🇷🇺RU-323M-[578d1f/88bad0]"
     type: "vless"
     server: "104.19.46.190"
@@ -36,7 +50,17 @@ proxies:
       headers:
         Host: "rezanoori4295.pages.dev"
 
-  - name: "🇷🇺RU-446M-[7f445d/07c564]"
+  - name: "🇩🇪DE-460M-[72c743/f503a2]"
+    type: "vless"
+    server: "176.114.95.251"
+    port: 443
+    uuid: "9a591702-24c7-4abf-9f14-ac59438a64e6"
+    udp: true
+    encryption: "mlkem768x25519plus.native.0rtt.deywwZA3p0j7HoIWdGDoQdbUglXI4dyKHAOujCvK-Vk"
+    tls: false
+    network: "tcp"
+
+  - name: "🇷🇺RU-35M-[7f445d/07c564]"
     type: "vless"
     server: "78.159.240.62"
     port: 2053
@@ -126,6 +150,22 @@ proxies:
       headers:
         Host: "dzzxiyeku44s.mahdihonarvar5.workers.dev"
 
+  - name: "🇺🇸US-229M-[fe30c1/79de1e]"
+    type: "vless"
+    server: "e293c7t.us11.h1clayd.click"
+    port: 443
+    uuid: "e894c08a-fecc-46f5-bf03-c95d0274c79d"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "e293c7t.us11.h1clayd.click"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "cEapNjAtrnPz_dCSziCJVvXJf2Mq_FtY5UabpQFmI0w"
+      short-id: "449f801b009f33f4"
+    network: "tcp"
+
 proxy-groups:
   - name: "GLOBAL"
     type: select
@@ -136,13 +176,16 @@ proxy-groups:
     type: select
     proxies:
       - "🇷🇺RU-305M-[2498ef/a8d0cc]"
+      - "🇺🇸US-267M-[4790ae/ec145f]"
       - "🇷🇺RU-323M-[578d1f/88bad0]"
-      - "🇷🇺RU-446M-[7f445d/07c564]"
+      - "🇩🇪DE-460M-[72c743/f503a2]"
+      - "🇷🇺RU-35M-[7f445d/07c564]"
       - "🇹🇷TR-276M-[b976f1/d22b25]"
       - "🇱🇹LT-91M-[bd2d5e/5c49a2]"
       - "🇸🇪SE-21M-[c18415/7ed699]"
       - "🇳🇱NL-377M-[cc2a86/ed545b]"
       - "🇷🇺RU-342M-[dd6ad7/b66583]"
+      - "🇺🇸US-229M-[fe30c1/79de1e]"
 
 rules:
   - "DOMAIN,smtp.gmail.com,DIRECT"
