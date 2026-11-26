@@ -36,6 +36,22 @@ proxies:
       headers:
         Host: "rezanoori4295.pages.dev"
 
+  - name: "🇷🇺RU-446M-[7f445d/07c564]"
+    type: "vless"
+    server: "78.159.240.62"
+    port: 2053
+    uuid: "37af0181-5598-4aad-a040-d926bcb65757"
+    udp: true
+    encryption: "none"
+    servername: "polarladder.com"
+    client-fingerprint: "chrome"
+    tls: true
+    network: "xhttp"
+    xhttp-opts:
+      path: "/api/v1/upload"
+      host: "polarladder.com"
+      mode: "auto"
+
   - name: "🇹🇷TR-276M-[b976f1/d22b25]"
     type: "vless"
     server: "45.131.5.225"
@@ -51,6 +67,16 @@ proxies:
       path: "/stream/PANEL_ZEUS/4c9d24b5302a/loc-0"
       headers:
         Host: "ngzonheaufys.y89460244.workers.dev"
+
+  - name: "🇱🇹LT-91M-[bd2d5e/5c49a2]"
+    type: "vless"
+    server: "176.114.95.249"
+    port: 443
+    uuid: "9a591702-24c7-4abf-9f14-ac59438a64e6"
+    udp: true
+    encryption: "mlkem768x25519plus.native.0rtt.nHoPNLMt_oBBrE9YodTzva_TCX4cF2Tz2ReH_jRwqCo"
+    tls: false
+    network: "tcp"
 
   - name: "🇸🇪SE-21M-[c18415/7ed699]"
     type: "vless"
@@ -71,7 +97,7 @@ proxies:
       headers:
         Host: "rock.davidbowie.cyou"
 
-  - name: "🇳🇱NL-414M-[cc2a86/ed545b]"
+  - name: "🇳🇱NL-377M-[cc2a86/ed545b]"
     type: "vless"
     server: "147.45.221.225"
     port: 443
@@ -84,6 +110,22 @@ proxies:
     ws-opts:
       path: "/media/ws/"
 
+  - name: "🇷🇺RU-342M-[dd6ad7/b66583]"
+    type: "vless"
+    server: "103.116.7.10"
+    port: 2053
+    uuid: "50414e45-4c5f-5a45-5553-9c45f3fee7fb"
+    udp: true
+    encryption: "none"
+    servername: "dzzxiyeku44s.mahdihonarvar5.workers.dev"
+    client-fingerprint: "unsafe"
+    tls: true
+    network: "ws"
+    ws-opts:
+      path: "/stream/PANEL_ZEUS/9c45f3fee7fb"
+      headers:
+        Host: "dzzxiyeku44s.mahdihonarvar5.workers.dev"
+
 proxy-groups:
   - name: "GLOBAL"
     type: select
@@ -95,9 +137,12 @@ proxy-groups:
     proxies:
       - "🇷🇺RU-305M-[2498ef/a8d0cc]"
       - "🇷🇺RU-323M-[578d1f/88bad0]"
+      - "🇷🇺RU-446M-[7f445d/07c564]"
       - "🇹🇷TR-276M-[b976f1/d22b25]"
+      - "🇱🇹LT-91M-[bd2d5e/5c49a2]"
       - "🇸🇪SE-21M-[c18415/7ed699]"
-      - "🇳🇱NL-414M-[cc2a86/ed545b]"
+      - "🇳🇱NL-377M-[cc2a86/ed545b]"
+      - "🇷🇺RU-342M-[dd6ad7/b66583]"
 
 rules:
   - "DOMAIN,smtp.gmail.com,DIRECT"
