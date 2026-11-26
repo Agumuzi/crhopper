@@ -6,6 +6,16 @@ log-level: warning
 ipv6: false
 
 proxies:
+  - name: "🇺🇸US-191M-[2433e3/fd0e2b]"
+    type: "vless"
+    server: "176.114.95.245"
+    port: 443
+    uuid: "9a591702-24c7-4abf-9f14-ac59438a64e6"
+    udp: true
+    encryption: "mlkem768x25519plus.native.0rtt.NPITyKcLP3ZK5ulXf_tjxU85NIRZTq1etgX54VAeI0c"
+    tls: false
+    network: "tcp"
+
   - name: "🇷🇺RU-305M-[2498ef/a8d0cc]"
     type: "vless"
     server: "104.17.138.140"
@@ -60,7 +70,39 @@ proxies:
     tls: false
     network: "tcp"
 
+  - name: "🇧🇬BG-127M-[7b62ee/9f4bde]"
+    type: "vless"
+    server: "plaindune.com"
+    port: 8443
+    uuid: "37af0181-5598-4aad-a040-d926bcb65757"
+    udp: true
+    encryption: "none"
+    servername: "plaindune.com"
+    client-fingerprint: "firefox"
+    tls: true
+    network: "xhttp"
+    xhttp-opts:
+      path: "/api/v1/upload"
+      host: "plaindune.com"
+      mode: "auto"
+
   - name: "🇷🇺RU-35M-[7f445d/07c564]"
+    type: "vless"
+    server: "78.159.240.62"
+    port: 2053
+    uuid: "37af0181-5598-4aad-a040-d926bcb65757"
+    udp: true
+    encryption: "none"
+    servername: "polarladder.com"
+    client-fingerprint: "chrome"
+    tls: true
+    network: "xhttp"
+    xhttp-opts:
+      path: "/api/v1/upload"
+      host: "polarladder.com"
+      mode: "auto"
+
+  - name: "🇷🇺RU-276M-[7f445d/84735f]"
     type: "vless"
     server: "78.159.240.62"
     port: 2053
@@ -121,7 +163,7 @@ proxies:
       headers:
         Host: "rock.davidbowie.cyou"
 
-  - name: "🇳🇱NL-377M-[cc2a86/ed545b]"
+  - name: "🇳🇱NL-276M-[cc2a86/ed545b]"
     type: "vless"
     server: "147.45.221.225"
     port: 443
@@ -175,15 +217,18 @@ proxy-groups:
   - name: "AUTO"
     type: select
     proxies:
+      - "🇺🇸US-191M-[2433e3/fd0e2b]"
       - "🇷🇺RU-305M-[2498ef/a8d0cc]"
       - "🇺🇸US-267M-[4790ae/ec145f]"
       - "🇷🇺RU-323M-[578d1f/88bad0]"
       - "🇩🇪DE-460M-[72c743/f503a2]"
+      - "🇧🇬BG-127M-[7b62ee/9f4bde]"
       - "🇷🇺RU-35M-[7f445d/07c564]"
+      - "🇷🇺RU-276M-[7f445d/84735f]"
       - "🇹🇷TR-276M-[b976f1/d22b25]"
       - "🇱🇹LT-91M-[bd2d5e/5c49a2]"
       - "🇸🇪SE-21M-[c18415/7ed699]"
-      - "🇳🇱NL-377M-[cc2a86/ed545b]"
+      - "🇳🇱NL-276M-[cc2a86/ed545b]"
       - "🇷🇺RU-342M-[dd6ad7/b66583]"
       - "🇺🇸US-229M-[fe30c1/79de1e]"
 
