@@ -6,85 +6,40 @@ log-level: warning
 ipv6: false
 
 proxies:
-  - name: "🇷🇺RU-21M-[21c8d7/de13a2]"
+  - name: "🇩🇪DE-343M-[2b7c5a/79af75]"
     type: "vless"
-    server: "polarladder.com"
-    port: 2053
-    uuid: "37af0181-5598-4aad-a040-d926bcb65757"
+    server: "52.49.207.197"
+    port: 443
+    uuid: "fad6c240-14d0-47ce-9264-21c5f18689c1"
     udp: true
     encryption: "none"
-    servername: "polarladder.com"
+    flow: "xtls-rprx-vision"
+    servername: "www.amazon.com"
     client-fingerprint: "firefox"
     tls: true
-    network: "xhttp"
-    xhttp-opts:
-      path: "/api/v1/upload"
-      host: "polarladder.com"
-      mode: "auto"
-
-  - name: "🇺🇸US-353M-[2433e3/fd0e2b]"
-    type: "vless"
-    server: "176.114.95.245"
-    port: 443
-    uuid: "9a591702-24c7-4abf-9f14-ac59438a64e6"
-    udp: true
-    encryption: "mlkem768x25519plus.native.0rtt.NPITyKcLP3ZK5ulXf_tjxU85NIRZTq1etgX54VAeI0c"
-    tls: false
+    reality-opts:
+      public-key: "ZODw0ijKEfbSpHjvQqTyYzsbLpnlnA3j9Io5PfmZ-Ts"
+      short-id: ""
     network: "tcp"
 
-  - name: "🇷🇺RU-305M-[2498ef/a8d0cc]"
+  - name: "🇪🇪EE-120M-[6d5f93/3102fe]"
     type: "vless"
-    server: "104.17.138.140"
-    port: 8443
-    uuid: "51a0af77-a60c-4d9b-81a4-f50e1b38d90b"
+    server: "136.234.173.231"
+    port: 8881
+    uuid: "e460e7b2-a146-4468-87ed-52510b2caae6"
     udp: true
     encryption: "none"
-    client-fingerprint: "chrome"
+    servername: "dl.google.com"
+    client-fingerprint: "qq"
     tls: true
-    network: "ws"
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "sfsmzggh4hyy2i-0oy5s5dtmkjv2nam6.pages.dev"
+    reality-opts:
+      public-key: "Dfgu8Ey0M8Hz4gXGZAwQ3H9jLt2HByVsjAOTWiuKDB0"
+      short-id: "aa"
+    network: "grpc"
+    grpc-opts:
+      grpc-service-name: "grpc-tunnel"
 
-  - name: "🇺🇸US-267M-[4790ae/ec145f]"
-    type: "trojan"
-    server: "ipfast.kingmna.com"
-    port: 443
-    password: "1sUm9iYpsjLCOC9THsL9cg"
-    udp: true
-    sni: "cdn.akamai.steamstatic.com"
-    skip-cert-verify: true
-    network: "ws"
-    ws-opts:
-      path: "/TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER"
-      headers:
-        Host: "filasi554.global.ssl.fastly.net."
-
-  - name: "🇩🇪DE-342M-[574a05/e21dcf]"
-    type: "hysteria2"
-    server: "uk-tube-01.stre4m.net"
-    port: 13337
-    password: "900c8c92-1979-4c7c-8f2f-63e87d53d8fe"
-    udp: true
-    sni: "mother-earth.fyi"
-
-  - name: "🇷🇺RU-323M-[578d1f/88bad0]"
-    type: "vless"
-    server: "104.19.46.190"
-    port: 2096
-    uuid: "51a0af77-a60c-4d9b-81a4-f50e1b38d90b"
-    udp: true
-    encryption: "none"
-    client-fingerprint: "chrome"
-    tls: true
-    network: "ws"
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "rezanoori4295.pages.dev"
-
-  - name: "🇩🇪DE-460M-[72c743/f503a2]"
+  - name: "🇩🇪DE-37M-[72c743/f503a2]"
     type: "vless"
     server: "176.114.95.251"
     port: 443
@@ -94,159 +49,13 @@ proxies:
     tls: false
     network: "tcp"
 
-  - name: "🇧🇬BG-127M-[7b62ee/9f4bde]"
-    type: "vless"
-    server: "plaindune.com"
-    port: 8443
-    uuid: "37af0181-5598-4aad-a040-d926bcb65757"
-    udp: true
-    encryption: "none"
-    servername: "plaindune.com"
-    client-fingerprint: "firefox"
-    tls: true
-    network: "xhttp"
-    xhttp-opts:
-      path: "/api/v1/upload"
-      host: "plaindune.com"
-      mode: "auto"
-
-  - name: "🇷🇺RU-35M-[7f445d/07c564]"
-    type: "vless"
-    server: "78.159.240.62"
-    port: 2053
-    uuid: "37af0181-5598-4aad-a040-d926bcb65757"
-    udp: true
-    encryption: "none"
-    servername: "polarladder.com"
-    client-fingerprint: "chrome"
-    tls: true
-    network: "xhttp"
-    xhttp-opts:
-      path: "/api/v1/upload"
-      host: "polarladder.com"
-      mode: "auto"
-
-  - name: "🇷🇺RU-276M-[7f445d/84735f]"
-    type: "vless"
-    server: "78.159.240.62"
-    port: 2053
-    uuid: "37af0181-5598-4aad-a040-d926bcb65757"
-    udp: true
-    encryption: "none"
-    servername: "polarladder.com"
-    client-fingerprint: "chrome"
-    tls: true
-    network: "xhttp"
-    xhttp-opts:
-      path: "/api/v1/upload"
-      host: "polarladder.com"
-      mode: "auto"
-
-  - name: "🇸🇪SE-218M-[b2fde0/c354c7]"
-    type: "vless"
-    server: "se-sto1.connect.accessboy.com"
+  - name: "🇳🇱NL-317M-[ac8a6b/4f2758]"
+    type: "hysteria2"
+    server: "194.93.61.148"
     port: 443
-    uuid: "ee0a6b97-4dc1-4a38-8b16-95a42c917158"
+    password: "162be7b9-eb38-4f74-b836-96afc49ae452"
     udp: true
-    encryption: "none"
-    flow: "xtls-rprx-vision"
-    servername: "se-sto1.connect.accessboy.com"
-    client-fingerprint: "firefox"
-    tls: true
-    reality-opts:
-      public-key: "1TtWNQhTJr_3H7-ypMw4EiLzVxy22AzUtMiE5JmQMl4"
-      short-id: "1c5869a95671bcb0"
-    network: "tcp"
-
-  - name: "🇹🇷TR-276M-[b976f1/d22b25]"
-    type: "vless"
-    server: "45.131.5.225"
-    port: 443
-    uuid: "50414e45-4c5f-5a45-5553-4c9d24b5302a"
-    udp: true
-    encryption: "none"
-    servername: "ngzonheaufys.y89460244.workers.dev"
-    client-fingerprint: "unsafe"
-    tls: true
-    network: "ws"
-    ws-opts:
-      path: "/stream/PANEL_ZEUS/4c9d24b5302a/loc-0"
-      headers:
-        Host: "ngzonheaufys.y89460244.workers.dev"
-
-  - name: "🇱🇹LT-91M-[bd2d5e/5c49a2]"
-    type: "vless"
-    server: "176.114.95.249"
-    port: 443
-    uuid: "9a591702-24c7-4abf-9f14-ac59438a64e6"
-    udp: true
-    encryption: "mlkem768x25519plus.native.0rtt.nHoPNLMt_oBBrE9YodTzva_TCX4cF2Tz2ReH_jRwqCo"
-    tls: false
-    network: "tcp"
-
-  - name: "🇸🇪SE-21M-[c18415/7ed699]"
-    type: "vless"
-    server: "perplexity.ai"
-    port: 443
-    uuid: "cce61038-6099-4c50-a149-e5263a218f12"
-    udp: true
-    encryption: "mlkem768x25519plus.native.0rtt.3aEl4THf4qftWfkycK9gYGyYtXHeJtW814YR4P7E-mE"
-    flow: "xtls-rprx-vision"
-    servername: "rock.davidbowie.cyou"
-    client-fingerprint: "unsafe"
-    alpn:
-      - "http/1.1"
-    tls: true
-    network: "ws"
-    ws-opts:
-      path: "/t.me-SubGift"
-      headers:
-        Host: "rock.davidbowie.cyou"
-
-  - name: "🇳🇱NL-380M-[cc2a86/ed545b]"
-    type: "vless"
-    server: "147.45.221.225"
-    port: 443
-    uuid: "58e22afd-bf74-4736-984d-63a8ca03d7f0"
-    udp: true
-    encryption: "none"
-    skip-cert-verify: true
-    tls: true
-    network: "ws"
-    ws-opts:
-      path: "/media/ws/"
-
-  - name: "🇷🇺RU-342M-[dd6ad7/b66583]"
-    type: "vless"
-    server: "103.116.7.10"
-    port: 2053
-    uuid: "50414e45-4c5f-5a45-5553-9c45f3fee7fb"
-    udp: true
-    encryption: "none"
-    servername: "dzzxiyeku44s.mahdihonarvar5.workers.dev"
-    client-fingerprint: "unsafe"
-    tls: true
-    network: "ws"
-    ws-opts:
-      path: "/stream/PANEL_ZEUS/9c45f3fee7fb"
-      headers:
-        Host: "dzzxiyeku44s.mahdihonarvar5.workers.dev"
-
-  - name: "🇺🇸US-229M-[fe30c1/79de1e]"
-    type: "vless"
-    server: "e293c7t.us11.h1clayd.click"
-    port: 443
-    uuid: "e894c08a-fecc-46f5-bf03-c95d0274c79d"
-    udp: true
-    encryption: "none"
-    flow: "xtls-rprx-vision"
-    servername: "e293c7t.us11.h1clayd.click"
-    client-fingerprint: "firefox"
-    tls: true
-    reality-opts:
-      public-key: "cEapNjAtrnPz_dCSziCJVvXJf2Mq_FtY5UabpQFmI0w"
-      short-id: "449f801b009f33f4"
-    network: "tcp"
+    sni: "nether.cxhub.su"
 
 proxy-groups:
   - name: "GLOBAL"
@@ -257,23 +66,10 @@ proxy-groups:
   - name: "AUTO"
     type: select
     proxies:
-      - "🇷🇺RU-21M-[21c8d7/de13a2]"
-      - "🇺🇸US-353M-[2433e3/fd0e2b]"
-      - "🇷🇺RU-305M-[2498ef/a8d0cc]"
-      - "🇺🇸US-267M-[4790ae/ec145f]"
-      - "🇩🇪DE-342M-[574a05/e21dcf]"
-      - "🇷🇺RU-323M-[578d1f/88bad0]"
-      - "🇩🇪DE-460M-[72c743/f503a2]"
-      - "🇧🇬BG-127M-[7b62ee/9f4bde]"
-      - "🇷🇺RU-35M-[7f445d/07c564]"
-      - "🇷🇺RU-276M-[7f445d/84735f]"
-      - "🇸🇪SE-218M-[b2fde0/c354c7]"
-      - "🇹🇷TR-276M-[b976f1/d22b25]"
-      - "🇱🇹LT-91M-[bd2d5e/5c49a2]"
-      - "🇸🇪SE-21M-[c18415/7ed699]"
-      - "🇳🇱NL-380M-[cc2a86/ed545b]"
-      - "🇷🇺RU-342M-[dd6ad7/b66583]"
-      - "🇺🇸US-229M-[fe30c1/79de1e]"
+      - "🇩🇪DE-343M-[2b7c5a/79af75]"
+      - "🇪🇪EE-120M-[6d5f93/3102fe]"
+      - "🇩🇪DE-37M-[72c743/f503a2]"
+      - "🇳🇱NL-317M-[ac8a6b/4f2758]"
 
 rules:
   - "DOMAIN,smtp.gmail.com,DIRECT"
