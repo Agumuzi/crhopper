@@ -6,6 +6,52 @@ log-level: warning
 ipv6: false
 
 proxies:
+  - name: "🇷🇺RU-305M-[2498ef/a8d0cc]"
+    type: "vless"
+    server: "104.17.138.140"
+    port: 8443
+    uuid: "51a0af77-a60c-4d9b-81a4-f50e1b38d90b"
+    udp: true
+    encryption: "none"
+    client-fingerprint: "chrome"
+    tls: true
+    network: "ws"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "sfsmzggh4hyy2i-0oy5s5dtmkjv2nam6.pages.dev"
+
+  - name: "🇷🇺RU-323M-[578d1f/88bad0]"
+    type: "vless"
+    server: "104.19.46.190"
+    port: 2096
+    uuid: "51a0af77-a60c-4d9b-81a4-f50e1b38d90b"
+    udp: true
+    encryption: "none"
+    client-fingerprint: "chrome"
+    tls: true
+    network: "ws"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "rezanoori4295.pages.dev"
+
+  - name: "🇹🇷TR-276M-[b976f1/d22b25]"
+    type: "vless"
+    server: "45.131.5.225"
+    port: 443
+    uuid: "50414e45-4c5f-5a45-5553-4c9d24b5302a"
+    udp: true
+    encryption: "none"
+    servername: "ngzonheaufys.y89460244.workers.dev"
+    client-fingerprint: "unsafe"
+    tls: true
+    network: "ws"
+    ws-opts:
+      path: "/stream/PANEL_ZEUS/4c9d24b5302a/loc-0"
+      headers:
+        Host: "ngzonheaufys.y89460244.workers.dev"
+
   - name: "🇸🇪SE-21M-[c18415/7ed699]"
     type: "vless"
     server: "perplexity.ai"
@@ -25,6 +71,19 @@ proxies:
       headers:
         Host: "rock.davidbowie.cyou"
 
+  - name: "🇳🇱NL-414M-[cc2a86/ed545b]"
+    type: "vless"
+    server: "147.45.221.225"
+    port: 443
+    uuid: "58e22afd-bf74-4736-984d-63a8ca03d7f0"
+    udp: true
+    encryption: "none"
+    skip-cert-verify: true
+    tls: true
+    network: "ws"
+    ws-opts:
+      path: "/media/ws/"
+
 proxy-groups:
   - name: "GLOBAL"
     type: select
@@ -34,7 +93,11 @@ proxy-groups:
   - name: "AUTO"
     type: select
     proxies:
+      - "🇷🇺RU-305M-[2498ef/a8d0cc]"
+      - "🇷🇺RU-323M-[578d1f/88bad0]"
+      - "🇹🇷TR-276M-[b976f1/d22b25]"
       - "🇸🇪SE-21M-[c18415/7ed699]"
+      - "🇳🇱NL-414M-[cc2a86/ed545b]"
 
 rules:
   - "DOMAIN,smtp.gmail.com,DIRECT"
