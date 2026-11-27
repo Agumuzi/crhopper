@@ -36,6 +36,25 @@ proxies:
       headers:
         Host: "sfsmzggh4hyy2i-0oy5s5dtmkjv2nam6.pages.dev"
 
+  - name: "🇫🇮FI-67M-[286d99/d05a23]"
+    type: "vless"
+    server: "200.96.109.239"
+    port: 443
+    uuid: "7af8c5d0-ede6-40ab-9b9e-d7924f79d109"
+    udp: true
+    encryption: "none"
+    servername: "vimnalismkin.ru"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "LF3XXc2ZlnR8HRE3GpdFpqLSMPE5uMCmMOECDWlN4WI"
+      short-id: "467b0be3b600850b"
+    network: "xhttp"
+    xhttp-opts:
+      path: "/api/convert/stream/"
+      host: "vimnalismkin.ru"
+      mode: "auto"
+
   - name: "🇩🇪DE-343M-[2b7c5a/79af75]"
     type: "vless"
     server: "52.49.207.197"
@@ -86,6 +105,14 @@ proxies:
       max-early-data: 2560
       early-data-header-name: "Sec-WebSocket-Protocol"
 
+  - name: "🇩🇪DE-355M-[574a05/e21dcf]"
+    type: "hysteria2"
+    server: "uk-tube-01.stre4m.net"
+    port: 13337
+    password: "900c8c92-1979-4c7c-8f2f-63e87d53d8fe"
+    udp: true
+    sni: "mother-earth.fyi"
+
   - name: "🇷🇺RU-302M-[578d1f/88bad0]"
     type: "vless"
     server: "104.19.46.190"
@@ -100,6 +127,19 @@ proxies:
       path: "/"
       headers:
         Host: "rezanoori4295.pages.dev"
+
+  - name: "🇵🇱PL-341M-[654626/b5d51d]"
+    type: "trojan"
+    server: "78.159.250.189"
+    port: 443
+    password: "F9uC3FnWeXPZ9KqEd7oZrcJxfNvvkegq"
+    udp: true
+    sni: "node228.overgroup.cloud"
+    client-fingerprint: "firefox"
+    alpn:
+      - "h2"
+      - "http/1.1"
+    network: "tcp"
 
   - name: "🇪🇪EE-120M-[6d5f93/3102fe]"
     type: "vless"
@@ -118,7 +158,7 @@ proxies:
     grpc-opts:
       grpc-service-name: "grpc-tunnel"
 
-  - name: "🇩🇪DE-410M-[72c743/f503a2]"
+  - name: "🇩🇪DE-281M-[72c743/f503a2]"
     type: "vless"
     server: "176.114.95.251"
     port: 443
@@ -127,6 +167,22 @@ proxies:
     encryption: "mlkem768x25519plus.native.0rtt.deywwZA3p0j7HoIWdGDoQdbUglXI4dyKHAOujCvK-Vk"
     tls: false
     network: "tcp"
+
+  - name: "🇩🇪DE-347M-[73c4ef/f570bf]"
+    type: "vless"
+    server: "mos02.electrowizard.ir"
+    port: 5002
+    uuid: "41bcd5ea-f90c-4227-ab6f-23de50b0a226"
+    udp: true
+    encryption: "none"
+    tls: false
+    network: "http"
+    http-opts:
+      path:
+        - "/"
+      headers:
+        Host:
+          - "iranserver.com"
 
   - name: "🇷🇺RU-179M-[9be8ad/a4b359]"
     type: "vless"
@@ -158,7 +214,7 @@ proxies:
       headers:
         Host: "rezanoori4295.pages.dev"
 
-  - name: "🇳🇱NL-296M-[ac8a6b/4f2758]"
+  - name: "🇳🇱NL-325M-[ac8a6b/4f2758]"
     type: "hysteria2"
     server: "194.93.61.148"
     port: 443
@@ -166,7 +222,7 @@ proxies:
     udp: true
     sni: "nether.cxhub.su"
 
-  - name: "🇹🇷TR-352M-[b976f1/d22b25]"
+  - name: "🇹🇷TR-288M-[b976f1/d22b25]"
     type: "vless"
     server: "45.131.5.225"
     port: 443
@@ -197,7 +253,7 @@ proxies:
       headers:
         Host: "sfsmzggh4hyy2i-0oy5s5dtmkjv2nam6.pages.dev"
 
-  - name: "🇷🇺RU-164M-[dd6ad7/b66583]"
+  - name: "🇷🇺RU-342M-[dd6ad7/b66583]"
     type: "vless"
     server: "103.116.7.10"
     port: 2053
@@ -212,6 +268,22 @@ proxies:
       path: "/stream/PANEL_ZEUS/9c45f3fee7fb"
       headers:
         Host: "dzzxiyeku44s.mahdihonarvar5.workers.dev"
+
+  - name: "🇺🇸US-200M-[f84e4c/79324c]"
+    type: "vless"
+    server: "198.202.211.1"
+    port: 443
+    uuid: "22649b54-4b92-496d-a3cd-4412f44672c8"
+    udp: true
+    encryption: "none"
+    servername: "RAyan07-DIhd4iyi-v3.raYAn-07.WorkeRs.DeV"
+    client-fingerprint: "chrome"
+    tls: true
+    network: "ws"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "RAyan07-DIhd4iyi-v3.raYAn-07.WorkeRs.DeV"
 
   - name: "🇦🇹AT-262M-[fd4e07/bd1a2e]"
     type: "vless"
@@ -239,18 +311,23 @@ proxy-groups:
     proxies:
       - "🇷🇺RU-291M-[0da008/f2bf6d]"
       - "🇷🇺RU-20M-[2498ef/a8d0cc]"
+      - "🇫🇮FI-67M-[286d99/d05a23]"
       - "🇩🇪DE-343M-[2b7c5a/79af75]"
       - "🇷🇺RU-333M-[4cfc17/d0b190]"
       - "🇫🇷FR-331M-[4d09a2/dc8ade]"
+      - "🇩🇪DE-355M-[574a05/e21dcf]"
       - "🇷🇺RU-302M-[578d1f/88bad0]"
+      - "🇵🇱PL-341M-[654626/b5d51d]"
       - "🇪🇪EE-120M-[6d5f93/3102fe]"
-      - "🇩🇪DE-410M-[72c743/f503a2]"
+      - "🇩🇪DE-281M-[72c743/f503a2]"
+      - "🇩🇪DE-347M-[73c4ef/f570bf]"
       - "🇷🇺RU-179M-[9be8ad/a4b359]"
       - "🇷🇺RU-236M-[a2810c/5f2fdf]"
-      - "🇳🇱NL-296M-[ac8a6b/4f2758]"
-      - "🇹🇷TR-352M-[b976f1/d22b25]"
+      - "🇳🇱NL-325M-[ac8a6b/4f2758]"
+      - "🇹🇷TR-288M-[b976f1/d22b25]"
       - "🇷🇺RU-298M-[bb6899/dce762]"
-      - "🇷🇺RU-164M-[dd6ad7/b66583]"
+      - "🇷🇺RU-342M-[dd6ad7/b66583]"
+      - "🇺🇸US-200M-[f84e4c/79324c]"
       - "🇦🇹AT-262M-[fd4e07/bd1a2e]"
 
 rules:
