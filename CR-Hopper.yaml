@@ -157,7 +157,24 @@ proxies:
       headers:
         Host: "rezanoori4295.pages.dev"
 
-  - name: "🇵🇱PL-257M-[654626/b5d51d]"
+  - name: "🇩🇪DE-24M-[5dd60d/1af008]"
+    type: "vless"
+    server: "213.178.141.247"
+    port: 443
+    uuid: "379b1f28-8109-43bc-9317-8f1f24cdc85b"
+    udp: true
+    encryption: "none"
+    servername: "edge-de2.lindenpixel.com"
+    client-fingerprint: "edge"
+    alpn:
+      - "h2"
+      - "http/1.1"
+    tls: true
+    network: "grpc"
+    grpc-opts:
+      grpc-service-name: "grpc"
+
+  - name: "🇵🇱PL-22M-[654626/b5d51d]"
     type: "trojan"
     server: "78.159.250.189"
     port: 443
@@ -205,6 +222,14 @@ proxies:
     network: "grpc"
     grpc-opts:
       grpc-service-name: "grpc-tunnel"
+
+  - name: "🇳🇱NL-125M-[7027cb/c0b8a5]"
+    type: "hysteria2"
+    server: "62.212.79.76"
+    port: 443
+    password: "d3895603-3164-4003-b85c-70f171ab30b5"
+    udp: true
+    sni: "62-212-79-76.sslip.io"
 
   - name: "🇩🇪DE-281M-[72c743/f503a2]"
     type: "vless"
@@ -269,6 +294,23 @@ proxies:
     password: "162be7b9-eb38-4f74-b836-96afc49ae452"
     udp: true
     sni: "nether.cxhub.su"
+
+  - name: "🇳🇱NL-265M-[b75521/59d59a]"
+    type: "vless"
+    server: "185.236.8.42"
+    port: 443
+    uuid: "379b1f28-8109-43bc-9317-8f1f24cdc85b"
+    udp: true
+    encryption: "none"
+    servername: "edge-tr.lindenpixel.com"
+    client-fingerprint: "edge"
+    alpn:
+      - "h2"
+      - "http/1.1"
+    tls: true
+    network: "grpc"
+    grpc-opts:
+      grpc-service-name: "grpc"
 
   - name: "🇹🇷TR-288M-[b976f1/d22b25]"
     type: "vless"
@@ -367,14 +409,17 @@ proxy-groups:
       - "🇫🇷FR-331M-[4d09a2/dc8ade]"
       - "🇩🇪DE-355M-[574a05/e21dcf]"
       - "🇷🇺RU-302M-[578d1f/88bad0]"
-      - "🇵🇱PL-257M-[654626/b5d51d]"
+      - "🇩🇪DE-24M-[5dd60d/1af008]"
+      - "🇵🇱PL-22M-[654626/b5d51d]"
       - "🇩🇪DE-378M-[6612a4/7a7ebc]"
       - "🇪🇪EE-120M-[6d5f93/3102fe]"
+      - "🇳🇱NL-125M-[7027cb/c0b8a5]"
       - "🇩🇪DE-281M-[72c743/f503a2]"
       - "🇩🇪DE-347M-[73c4ef/f570bf]"
       - "🇷🇺RU-179M-[9be8ad/a4b359]"
       - "🇷🇺RU-236M-[a2810c/5f2fdf]"
       - "🇳🇱NL-325M-[ac8a6b/4f2758]"
+      - "🇳🇱NL-265M-[b75521/59d59a]"
       - "🇹🇷TR-288M-[b976f1/d22b25]"
       - "🇷🇺RU-298M-[bb6899/dce762]"
       - "🇷🇺RU-342M-[dd6ad7/b66583]"
