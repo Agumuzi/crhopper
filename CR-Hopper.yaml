@@ -71,6 +71,35 @@ proxies:
       short-id: ""
     network: "tcp"
 
+  - name: "🇫🇮FI-410M-[43322b/a41da4]"
+    type: "vless"
+    server: "144.31.75.168"
+    port: 443
+    uuid: "b0fd9db4-24b8-45d0-88e1-c709c97646e6"
+    udp: true
+    encryption: "none"
+    servername: "www.fortum.com"
+    client-fingerprint: "edge"
+    tls: true
+    reality-opts:
+      public-key: "_OxeyvQDpHcak4ou_pmWb5GmhWcG1j7A8LOIqYXghxg"
+      short-id: "2177a83232995047"
+    network: "tcp"
+
+  - name: "🇺🇸US-262M-[4790ae/6d707d]"
+    type: "trojan"
+    server: "ipfast.kingmna.com"
+    port: 443
+    password: "Z-jckziI1rW4yrUMorrv0Q"
+    udp: true
+    sni: "cdn.akamai.steamstatic.com"
+    skip-cert-verify: true
+    network: "ws"
+    ws-opts:
+      path: "/TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER"
+      headers:
+        Host: "loosnsj5aboijji.global.ssl.fastly.net"
+
   - name: "🇷🇺RU-333M-[4cfc17/d0b190]"
     type: "vless"
     server: "104.19.35.11"
@@ -128,7 +157,7 @@ proxies:
       headers:
         Host: "rezanoori4295.pages.dev"
 
-  - name: "🇵🇱PL-341M-[654626/b5d51d]"
+  - name: "🇵🇱PL-257M-[654626/b5d51d]"
     type: "trojan"
     server: "78.159.250.189"
     port: 443
@@ -140,6 +169,25 @@ proxies:
       - "h2"
       - "http/1.1"
     network: "tcp"
+
+  - name: "🇩🇪DE-378M-[6612a4/7a7ebc]"
+    type: "vless"
+    server: "test03.electrowizard.ir"
+    port: 5556
+    uuid: "41bcd5ea-f90c-4227-ab6f-23de50b0a226"
+    udp: true
+    encryption: "none"
+    servername: "aparat.com"
+    client-fingerprint: "chrome"
+    tls: true
+    reality-opts:
+      public-key: "JgGE6qaoYh6lQY-pZa7OD9HS3xHCTgfnnwJYpiiRHks"
+      short-id: "a1788b9d2bef8630"
+    network: "xhttp"
+    xhttp-opts:
+      path: "/"
+      host: "aparat.com"
+      mode: "auto"
 
   - name: "🇪🇪EE-120M-[6d5f93/3102fe]"
     type: "vless"
@@ -313,11 +361,14 @@ proxy-groups:
       - "🇷🇺RU-20M-[2498ef/a8d0cc]"
       - "🇫🇮FI-67M-[286d99/d05a23]"
       - "🇩🇪DE-343M-[2b7c5a/79af75]"
+      - "🇫🇮FI-410M-[43322b/a41da4]"
+      - "🇺🇸US-262M-[4790ae/6d707d]"
       - "🇷🇺RU-333M-[4cfc17/d0b190]"
       - "🇫🇷FR-331M-[4d09a2/dc8ade]"
       - "🇩🇪DE-355M-[574a05/e21dcf]"
       - "🇷🇺RU-302M-[578d1f/88bad0]"
-      - "🇵🇱PL-341M-[654626/b5d51d]"
+      - "🇵🇱PL-257M-[654626/b5d51d]"
+      - "🇩🇪DE-378M-[6612a4/7a7ebc]"
       - "🇪🇪EE-120M-[6d5f93/3102fe]"
       - "🇩🇪DE-281M-[72c743/f503a2]"
       - "🇩🇪DE-347M-[73c4ef/f570bf]"
