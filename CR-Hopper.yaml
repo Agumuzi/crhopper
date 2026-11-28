@@ -197,6 +197,38 @@ proxies:
     ws-opts:
       path: "/platform128"
 
+  - name: "🇵🇱PL-26M-[3b9d0a/0ef540]"
+    type: "vless"
+    server: "api.mediatropa.cc"
+    port: 443
+    uuid: "99604a18-30df-473f-9aad-58ac518f904b"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "api.mediatropa.cc"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "r5WB5FnSCt4eeBC1FJMfkWHbzsMuabo0Rc6wuAhlZUs"
+      short-id: "a8"
+    network: "tcp"
+
+  - name: "🇫🇷FR-22M-[3d908b/08d53d]"
+    type: "vless"
+    server: "api.videodolina.cc"
+    port: 443
+    uuid: "99604a18-30df-473f-9aad-58ac518f904b"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "api.videodolina.cc"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "r5WB5FnSCt4eeBC1FJMfkWHbzsMuabo0Rc6wuAhlZUs"
+      short-id: "a8"
+    network: "tcp"
+
   - name: "🇪🇪EE-92M-[431e12/14e749]"
     type: "vless"
     server: "185.174.135.219"
@@ -228,6 +260,22 @@ proxies:
     reality-opts:
       public-key: "p35RUaaaItuoyNiCrLpGeStBUpEJMSiZ2AajdfhhmiM"
       short-id: "92aee92130b46fe2"
+    network: "tcp"
+
+  - name: "🇺🇸US-57M-[47592b/1051c2]"
+    type: "vless"
+    server: "83.141.73.90"
+    port: 443
+    uuid: "e894c08a-fecc-46f5-bf03-c95d0274c79d"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "e293c7t.us6.h1clayd.click"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "cEapNjAtrnPz_dCSziCJVvXJf2Mq_FtY5UabpQFmI0w"
+      short-id: "449f801b009f33f4"
     network: "tcp"
 
   - name: "🇺🇸US-187M-[4790ae/6d707d]"
@@ -460,6 +508,27 @@ proxies:
       path: "/"
       headers:
         Host: "rezanoori4295.pages.dev"
+
+  - name: "🇩🇪DE-22M-[aaf95c/764cf3]"
+    type: "vless"
+    server: "armi.pesfifa.monster"
+    port: 16791
+    uuid: "222fe674-5ab5-47a1-a971-713ed9d12026"
+    udp: true
+    encryption: "none"
+    servername: "armi.pesfifa.monster"
+    client-fingerprint: "chrome"
+    alpn:
+      - "h2"
+      - "http/1.1"
+    tls: true
+    network: "http"
+    http-opts:
+      path:
+        - "/"
+      headers:
+        Host:
+          - "cloud.ir"
 
   - name: "🇦🇲AM-52M-[acf6da/7bcc33]"
     type: "vless"
@@ -709,8 +778,11 @@ proxy-groups:
       - "🇷🇺RU-241M-[2498ef/a8d0cc]"
       - "🇨🇭CH-392M-[26febb/8a9500]"
       - "🇸🇦SA-65M-[2caf2d/ce019c]"
+      - "🇵🇱PL-26M-[3b9d0a/0ef540]"
+      - "🇫🇷FR-22M-[3d908b/08d53d]"
       - "🇪🇪EE-92M-[431e12/14e749]"
       - "🇳🇱NL-81M-[434b8e/623401]"
+      - "🇺🇸US-57M-[47592b/1051c2]"
       - "🇺🇸US-187M-[4790ae/6d707d]"
       - "🇩🇪DE-21M-[4bde2e/371934]"
       - "🇷🇺RU-153M-[4cfc17/d0b190]"
@@ -727,6 +799,7 @@ proxy-groups:
       - "🇺🇸US-123M-[9b89f4/eea2c7]"
       - "🇷🇺RU-305M-[9be8ad/a4b359]"
       - "🇷🇺RU-329M-[a2810c/5f2fdf]"
+      - "🇩🇪DE-22M-[aaf95c/764cf3]"
       - "🇦🇲AM-52M-[acf6da/7bcc33]"
       - "🇷🇺RU-25M-[bb6899/dce762]"
       - "🇳🇱NL-119M-[bdb046/37dd4c]"
