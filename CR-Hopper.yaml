@@ -185,6 +185,18 @@ proxies:
       x-padding-obfs-mode: true
       x-padding-placement: "queryInHeader"
 
+  - name: "🇸🇦SA-65M-[2caf2d/ce019c]"
+    type: "vless"
+    server: "platform128.golnamakcert.top"
+    port: 80
+    uuid: "e13cf851-b4fd-413b-8d49-146e6eb8e5d4"
+    udp: true
+    encryption: "none"
+    tls: false
+    network: "ws"
+    ws-opts:
+      path: "/platform128"
+
   - name: "🇪🇪EE-92M-[431e12/14e749]"
     type: "vless"
     server: "185.174.135.219"
@@ -377,6 +389,14 @@ proxies:
       public-key: "c-H0VVzHFRX0ni_uoja11AJF3M5TPf8ZIIgz4hIqBQk"
       short-id: "2c9d9705d9392007"
     network: "tcp"
+
+  - name: "🇱🇹LT-233M-[8d823c/e453a9]"
+    type: "hysteria2"
+    server: "88.119.176.54"
+    port: 443
+    password: "f88bc31a-c30a-4a7f-bca6-5bc95d5bb593"
+    udp: true
+    sni: "tuv10.harcho.shop"
 
   - name: "🇸🇪SE-21M-[971aba/bf3b48]"
     type: "vless"
@@ -688,6 +708,7 @@ proxy-groups:
       - "🇫🇷FR-151M-[22cb71/342f0e]"
       - "🇷🇺RU-241M-[2498ef/a8d0cc]"
       - "🇨🇭CH-392M-[26febb/8a9500]"
+      - "🇸🇦SA-65M-[2caf2d/ce019c]"
       - "🇪🇪EE-92M-[431e12/14e749]"
       - "🇳🇱NL-81M-[434b8e/623401]"
       - "🇺🇸US-187M-[4790ae/6d707d]"
@@ -701,6 +722,7 @@ proxy-groups:
       - "🇵🇱PL-447M-[7b5836/1784f7]"
       - "🇳🇱NL-218M-[7ed823/b649fd]"
       - "🇵🇱PL-412M-[8a6c77/4de5d5]"
+      - "🇱🇹LT-233M-[8d823c/e453a9]"
       - "🇸🇪SE-21M-[971aba/bf3b48]"
       - "🇺🇸US-123M-[9b89f4/eea2c7]"
       - "🇷🇺RU-305M-[9be8ad/a4b359]"
