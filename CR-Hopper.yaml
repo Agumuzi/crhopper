@@ -6,6 +6,38 @@ log-level: warning
 ipv6: false
 
 proxies:
+  - name: "🇧🇪BE-411M-[04d8a0/74f791]"
+    type: "vless"
+    server: "164.38.155.31"
+    port: 443
+    uuid: "50414e45-4c5f-5a45-5553-b847589c7a71"
+    udp: true
+    encryption: "none"
+    servername: "7bzw6gequdqs.hidbkfj7j9bofb.workers.dev"
+    client-fingerprint: "unsafe"
+    tls: true
+    network: "ws"
+    ws-opts:
+      path: "/stream/PANEL_ZEUS/b847589c7a71/loc-0"
+      headers:
+        Host: "7bzw6gequdqs.hidbkfj7j9bofb.workers.dev"
+
+  - name: "🌐XX-420M-[05a916/6178d9]"
+    type: "vless"
+    server: "136.234.179.168"
+    port: 443
+    uuid: "ba373a70-295f-482d-a471-8bc17b54e23b"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "glenharbor.xyz"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "pR39Vv5qhk8r6akOicoy6mMs4-ppSWUez8MyAXG7wwQ"
+      short-id: "27350908de933e09"
+    network: "tcp"
+
   - name: "🇺🇸US-69M-[09e381/afedc4]"
     type: "vless"
     server: "193.233.87.133"
@@ -69,7 +101,7 @@ proxies:
       short-id: "190004e1840538bf"
     network: "tcp"
 
-  - name: "🇮🇹IT-401M-[12bd64/ca28c3]"
+  - name: "🇮🇹IT-156M-[12bd64/ca28c3]"
     type: "vless"
     server: "194.180.207.155"
     port: 443
@@ -102,7 +134,7 @@ proxies:
       short-id: "27350908de933e09"
     network: "tcp"
 
-  - name: "🇷🇺RU-227M-[2498ef/a8d0cc]"
+  - name: "🇷🇺RU-241M-[2498ef/a8d0cc]"
     type: "vless"
     server: "104.17.138.140"
     port: 8443
@@ -116,6 +148,42 @@ proxies:
       path: "/"
       headers:
         Host: "sfsmzggh4hyy2i-0oy5s5dtmkjv2nam6.pages.dev"
+
+  - name: "🇨🇭CH-392M-[26febb/8a9500]"
+    type: "vless"
+    server: "188.72.112.1"
+    port: 443
+    uuid: "d32e1a92-dd3b-4ac0-a78d-5d6a6032c425"
+    udp: true
+    encryption: "none"
+    servername: "ch3-cdn.insidenet.ru"
+    client-fingerprint: "firefox"
+    tls: true
+    network: "xhttp"
+    xhttp-opts:
+      path: "/api/v2/telemetry/"
+      host: "ch3-cdn.insidenet.ru"
+      mode: "packet-up"
+      reuse-settings:
+        c-max-reuse-times: 0
+        max-concurrency: "16-32"
+        max-connections: 0
+      sc-max-each-post-bytes: "40000-44000"
+      sc-min-posts-interval-ms: "10-20"
+      seq-key: "tele_seq"
+      seq-placement: "cookie"
+      session-key: "tele_sid"
+      session-placement: "cookie"
+      uplink-chunk-size: "16000-20000"
+      uplink-data-key: "X-Tele-Part"
+      uplink-data-placement: "header"
+      uplink-http-method: "GET"
+      x-padding-bytes: "100-1000"
+      x-padding-header: "X-Tele-Token"
+      x-padding-key: "_tt"
+      x-padding-method: "tokenish"
+      x-padding-obfs-mode: true
+      x-padding-placement: "queryInHeader"
 
   - name: "🇪🇪EE-92M-[431e12/14e749]"
     type: "vless"
@@ -134,7 +202,23 @@ proxies:
     grpc-opts:
       grpc-service-name: "neurex"
 
-  - name: "🇺🇸US-305M-[4790ae/6d707d]"
+  - name: "🇳🇱NL-81M-[434b8e/623401]"
+    type: "vless"
+    server: "13.141.36.43"
+    port: 443
+    uuid: "e894c08a-fecc-46f5-bf03-c95d0274c79d"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "6bf329t.nl18.h1clayd.click"
+    client-fingerprint: "chrome"
+    tls: true
+    reality-opts:
+      public-key: "p35RUaaaItuoyNiCrLpGeStBUpEJMSiZ2AajdfhhmiM"
+      short-id: "92aee92130b46fe2"
+    network: "tcp"
+
+  - name: "🇺🇸US-230M-[4790ae/6d707d]"
     type: "trojan"
     server: "ipfast.kingmna.com"
     port: 443
@@ -148,7 +232,7 @@ proxies:
       headers:
         Host: "loosnsj5aboijji.global.ssl.fastly.net"
 
-  - name: "🇩🇪DE-352M-[4bde2e/371934]"
+  - name: "🇩🇪DE-346M-[4bde2e/371934]"
     type: "vless"
     server: "95.85.230.31"
     port: 443
@@ -165,7 +249,7 @@ proxies:
     grpc-opts:
       grpc-service-name: "neurex"
 
-  - name: "🇷🇺RU-28M-[4cfc17/d0b190]"
+  - name: "🇷🇺RU-153M-[4cfc17/d0b190]"
     type: "vless"
     server: "104.19.35.11"
     port: 2053
@@ -207,7 +291,7 @@ proxies:
     udp: true
     skip-cert-verify: true
 
-  - name: "🇷🇺RU-33M-[578d1f/88bad0]"
+  - name: "🇷🇺RU-30M-[578d1f/88bad0]"
     type: "vless"
     server: "104.19.46.190"
     port: 2096
@@ -221,6 +305,22 @@ proxies:
       path: "/"
       headers:
         Host: "rezanoori4295.pages.dev"
+
+  - name: "🇩🇪DE-389M-[734633/63bc6b]"
+    type: "vless"
+    server: "bridge.funky-monkey.app"
+    port: 443
+    uuid: "ea759639-a58c-4c46-8e0b-4cc834bf6658"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "steam-videos.cc"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc"
+      short-id: ""
+    network: "tcp"
 
   - name: "🇵🇱PL-447M-[7b5836/1784f7]"
     type: "vless"
@@ -254,7 +354,7 @@ proxies:
       short-id: "27350908de933e09"
     network: "tcp"
 
-  - name: "🇵🇱PL-403M-[8a6c77/4de5d5]"
+  - name: "🇵🇱PL-412M-[8a6c77/4de5d5]"
     type: "vless"
     server: "documentnest.website"
     port: 443
@@ -270,7 +370,24 @@ proxies:
       short-id: "2c9d9705d9392007"
     network: "tcp"
 
-  - name: "🇷🇺RU-348M-[9be8ad/a4b359]"
+  - name: "🇸🇪SE-21M-[971aba/bf3b48]"
+    type: "vless"
+    server: "79.141.174.144"
+    port: 443
+    uuid: "ba373a70-295f-482d-a471-8bc17b54e23b"
+    udp: true
+    encryption: "none"
+    servername: "seb.899themes.pro"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "pR39Vv5qhk8r6akOicoy6mMs4-ppSWUez8MyAXG7wwQ"
+      short-id: "27350908de933e09"
+    network: "grpc"
+    grpc-opts:
+      grpc-service-name: "neurex"
+
+  - name: "🇷🇺RU-305M-[9be8ad/a4b359]"
     type: "vless"
     server: "104.19.33.42"
     port: 2083
@@ -285,7 +402,7 @@ proxies:
       headers:
         Host: "rezanoori4295.pages.dev"
 
-  - name: "🇷🇺RU-372M-[a2810c/5f2fdf]"
+  - name: "🇷🇺RU-329M-[a2810c/5f2fdf]"
     type: "vless"
     server: "104.17.138.111"
     port: 8443
@@ -316,7 +433,7 @@ proxies:
       short-id: "27350908de933e09"
     network: "tcp"
 
-  - name: "🇷🇺RU-268M-[bb6899/dce762]"
+  - name: "🇷🇺RU-25M-[bb6899/dce762]"
     type: "vless"
     server: "104.16.205.122"
     port: 2087
@@ -347,7 +464,40 @@ proxies:
       short-id: "92aee92130b46fe2"
     network: "tcp"
 
-  - name: "🇧🇬BG-102M-[c8007d/d97cce]"
+  - name: "🇳🇱NL-72M-[bdb046/b49b39]"
+    type: "vless"
+    server: "6bf329t.nl18.h1clayd.click"
+    port: 443
+    uuid: "e894c08a-fecc-46f5-bf03-c95d0274c79d"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    packet-encoding: "xudp"
+    servername: "6bf329t.nl18.h1clayd.click"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "p35RUaaaItuoyNiCrLpGeStBUpEJMSiZ2AajdfhhmiM"
+      short-id: "92aee92130b46fe2"
+    network: "tcp"
+
+  - name: "🇵🇱PL-422M-[c76876/68f140]"
+    type: "vless"
+    server: "2.56.174.104"
+    port: 443
+    uuid: "17c068a5-97cb-40a2-bf60-215b749c0508"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "vaultsummit.space"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "gYMI1EzRbc63foG_bH35KSAh3wbnT3MT5k6EA29bEHQ"
+      short-id: "ec1f940f9bb03fec"
+    network: "tcp"
+
+  - name: "🇧🇬BG-84M-[c8007d/d97cce]"
     type: "vless"
     server: "131.123.38.29"
     port: 443
@@ -363,6 +513,22 @@ proxies:
     network: "grpc"
     grpc-opts:
       grpc-service-name: "neurex"
+
+  - name: "🇳🇱NL-385M-[d53e57/75399a]"
+    type: "vless"
+    server: "185.131.64.125"
+    port: 443
+    uuid: "fc45503f-8403-4f7e-b510-92fe2ede8ffa"
+    udp: true
+    encryption: "mlkem768x25519plus.native.0rtt._Iw_26TmwEm4IqWRegt0H8MUykosG7DGizsl0o4Jcxg"
+    servername: "Liber1.b-cdn.net"
+    client-fingerprint: "firefox"
+    tls: true
+    network: "ws"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "Liber1.b-cdn.net"
 
   - name: "🇷🇴RO-316M-[d64b18/211d46]"
     type: "vless"
@@ -381,7 +547,7 @@ proxies:
     grpc-opts:
       grpc-service-name: "neurex"
 
-  - name: "🇲🇩MD-182M-[daa69d/ee8bc1]"
+  - name: "🇲🇩MD-103M-[daa69d/ee8bc1]"
     type: "vless"
     server: "217.156.123.25"
     port: 443
@@ -397,6 +563,23 @@ proxies:
     network: "grpc"
     grpc-opts:
       grpc-service-name: "neurex"
+
+  - name: "🇷🇺RU-405M-[dd6ad7/81e607]"
+    type: "vless"
+    server: "103.116.7.10"
+    port: 2053
+    uuid: "50414e45-4c5f-5a45-5553-9c45f3fee7fb"
+    udp: true
+    encryption: "none"
+    packet-encoding: "xudp"
+    servername: "dzzxiyeku44s.mahdihonarvar5.workers.dev"
+    client-fingerprint: "unsafe"
+    tls: true
+    network: "ws"
+    ws-opts:
+      path: "/stream/PANEL_ZEUS/9c45f3fee7fb"
+      headers:
+        Host: "dzzxiyeku44s.mahdihonarvar5.workers.dev"
 
   - name: "🇷🇺RU-157M-[dd6ad7/b66583]"
     type: "vless"
@@ -430,6 +613,22 @@ proxies:
       short-id: "a8"
     network: "tcp"
 
+  - name: "🇵🇱PL-360M-[e548de/48afd9]"
+    type: "vless"
+    server: "2.56.172.138"
+    port: 443
+    uuid: "17c068a5-97cb-40a2-bf60-215b749c0508"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "documentnest.website"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "c-H0VVzHFRX0ni_uoja11AJF3M5TPf8ZIIgz4hIqBQk"
+      short-id: "2c9d9705d9392007"
+    network: "tcp"
+
 proxy-groups:
   - name: "GLOBAL"
     type: select
@@ -439,33 +638,44 @@ proxy-groups:
   - name: "AUTO"
     type: select
     proxies:
+      - "🇧🇪BE-411M-[04d8a0/74f791]"
+      - "🌐XX-420M-[05a916/6178d9]"
       - "🇺🇸US-69M-[09e381/afedc4]"
       - "🇫🇮FI-192M-[0abc4d/970b0c]"
       - "🇷🇺RU-277M-[0da008/f2bf6d]"
       - "🇫🇮FI-176M-[0ec4c5/95a081]"
-      - "🇮🇹IT-401M-[12bd64/ca28c3]"
+      - "🇮🇹IT-156M-[12bd64/ca28c3]"
       - "🇫🇷FR-151M-[22cb71/342f0e]"
-      - "🇷🇺RU-227M-[2498ef/a8d0cc]"
+      - "🇷🇺RU-241M-[2498ef/a8d0cc]"
+      - "🇨🇭CH-392M-[26febb/8a9500]"
       - "🇪🇪EE-92M-[431e12/14e749]"
-      - "🇺🇸US-305M-[4790ae/6d707d]"
-      - "🇩🇪DE-352M-[4bde2e/371934]"
-      - "🇷🇺RU-28M-[4cfc17/d0b190]"
+      - "🇳🇱NL-81M-[434b8e/623401]"
+      - "🇺🇸US-230M-[4790ae/6d707d]"
+      - "🇩🇪DE-346M-[4bde2e/371934]"
+      - "🇷🇺RU-153M-[4cfc17/d0b190]"
       - "🇫🇷FR-359M-[4d09a2/dc8ade]"
       - "🇩🇪DE-178M-[574a05/85c736]"
-      - "🇷🇺RU-33M-[578d1f/88bad0]"
+      - "🇷🇺RU-30M-[578d1f/88bad0]"
+      - "🇩🇪DE-389M-[734633/63bc6b]"
       - "🇵🇱PL-447M-[7b5836/1784f7]"
       - "🇳🇱NL-218M-[7ed823/b649fd]"
-      - "🇵🇱PL-403M-[8a6c77/4de5d5]"
-      - "🇷🇺RU-348M-[9be8ad/a4b359]"
-      - "🇷🇺RU-372M-[a2810c/5f2fdf]"
+      - "🇵🇱PL-412M-[8a6c77/4de5d5]"
+      - "🇸🇪SE-21M-[971aba/bf3b48]"
+      - "🇷🇺RU-305M-[9be8ad/a4b359]"
+      - "🇷🇺RU-329M-[a2810c/5f2fdf]"
       - "🇦🇲AM-52M-[acf6da/7bcc33]"
-      - "🇷🇺RU-268M-[bb6899/dce762]"
+      - "🇷🇺RU-25M-[bb6899/dce762]"
       - "🇳🇱NL-119M-[bdb046/37dd4c]"
-      - "🇧🇬BG-102M-[c8007d/d97cce]"
+      - "🇳🇱NL-72M-[bdb046/b49b39]"
+      - "🇵🇱PL-422M-[c76876/68f140]"
+      - "🇧🇬BG-84M-[c8007d/d97cce]"
+      - "🇳🇱NL-385M-[d53e57/75399a]"
       - "🇷🇴RO-316M-[d64b18/211d46]"
-      - "🇲🇩MD-182M-[daa69d/ee8bc1]"
+      - "🇲🇩MD-103M-[daa69d/ee8bc1]"
+      - "🇷🇺RU-405M-[dd6ad7/81e607]"
       - "🇷🇺RU-157M-[dd6ad7/b66583]"
       - "🇺🇸US-173M-[de07ad/25af3d]"
+      - "🇵🇱PL-360M-[e548de/48afd9]"
 
 rules:
   - "DOMAIN,smtp.gmail.com,DIRECT"
