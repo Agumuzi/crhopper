@@ -22,7 +22,7 @@ proxies:
       headers:
         Host: "7bzw6gequdqs.hidbkfj7j9bofb.workers.dev"
 
-  - name: "🌐XX-420M-[05a916/6178d9]"
+  - name: "🌐XX-262M-[05a916/6178d9]"
     type: "vless"
     server: "136.234.179.168"
     port: 443
@@ -232,7 +232,7 @@ proxies:
       headers:
         Host: "loosnsj5aboijji.global.ssl.fastly.net"
 
-  - name: "🇩🇪DE-346M-[4bde2e/371934]"
+  - name: "🇩🇪DE-21M-[4bde2e/371934]"
     type: "vless"
     server: "95.85.230.31"
     port: 443
@@ -290,6 +290,14 @@ proxies:
     password: "900c8c92-1979-4c7c-8f2f-63e87d53d8fe"
     udp: true
     skip-cert-verify: true
+
+  - name: "🇩🇪DE-229M-[574a05/e21dcf]"
+    type: "hysteria2"
+    server: "uk-tube-01.stre4m.net"
+    port: 13337
+    password: "900c8c92-1979-4c7c-8f2f-63e87d53d8fe"
+    udp: true
+    sni: "mother-earth.fyi"
 
   - name: "🇷🇺RU-30M-[578d1f/88bad0]"
     type: "vless"
@@ -386,6 +394,22 @@ proxies:
     network: "grpc"
     grpc-opts:
       grpc-service-name: "neurex"
+
+  - name: "🇺🇸US-123M-[9b89f4/eea2c7]"
+    type: "vless"
+    server: "176.126.122.236"
+    port: 443
+    uuid: "8df59ae7-bf0b-42a4-90f1-824eb747a794"
+    udp: true
+    encryption: "none"
+    flow: "xtls-rprx-vision"
+    servername: "worldoftanks.eu"
+    client-fingerprint: "firefox"
+    tls: true
+    reality-opts:
+      public-key: "6dc3iKXilOQpA_JFrKlk5-CsFjSmOm_5p0kSQcO9qi4"
+      short-id: ""
+    network: "tcp"
 
   - name: "🇷🇺RU-305M-[9be8ad/a4b359]"
     type: "vless"
@@ -613,6 +637,22 @@ proxies:
       short-id: "a8"
     network: "tcp"
 
+  - name: "🇺🇸US-267M-[df26fe/a299e4]"
+    type: "vless"
+    server: "151.101.1.242"
+    port: 443
+    uuid: "484d6ef7-e018-4ca3-bb9d-ce05f47f4c7a"
+    udp: true
+    encryption: "none"
+    servername: "barbered-mattocks.video-streams.org"
+    client-fingerprint: "firefox"
+    tls: true
+    network: "ws"
+    ws-opts:
+      path: "/ws"
+      headers:
+        Host: "barbered-mattocks.video-streams.org"
+
   - name: "🇵🇱PL-360M-[e548de/48afd9]"
     type: "vless"
     server: "2.56.172.138"
@@ -639,7 +679,7 @@ proxy-groups:
     type: select
     proxies:
       - "🇧🇪BE-411M-[04d8a0/74f791]"
-      - "🌐XX-420M-[05a916/6178d9]"
+      - "🌐XX-262M-[05a916/6178d9]"
       - "🇺🇸US-69M-[09e381/afedc4]"
       - "🇫🇮FI-192M-[0abc4d/970b0c]"
       - "🇷🇺RU-277M-[0da008/f2bf6d]"
@@ -651,16 +691,18 @@ proxy-groups:
       - "🇪🇪EE-92M-[431e12/14e749]"
       - "🇳🇱NL-81M-[434b8e/623401]"
       - "🇺🇸US-230M-[4790ae/6d707d]"
-      - "🇩🇪DE-346M-[4bde2e/371934]"
+      - "🇩🇪DE-21M-[4bde2e/371934]"
       - "🇷🇺RU-153M-[4cfc17/d0b190]"
       - "🇫🇷FR-359M-[4d09a2/dc8ade]"
       - "🇩🇪DE-178M-[574a05/85c736]"
+      - "🇩🇪DE-229M-[574a05/e21dcf]"
       - "🇷🇺RU-30M-[578d1f/88bad0]"
       - "🇩🇪DE-389M-[734633/63bc6b]"
       - "🇵🇱PL-447M-[7b5836/1784f7]"
       - "🇳🇱NL-218M-[7ed823/b649fd]"
       - "🇵🇱PL-412M-[8a6c77/4de5d5]"
       - "🇸🇪SE-21M-[971aba/bf3b48]"
+      - "🇺🇸US-123M-[9b89f4/eea2c7]"
       - "🇷🇺RU-305M-[9be8ad/a4b359]"
       - "🇷🇺RU-329M-[a2810c/5f2fdf]"
       - "🇦🇲AM-52M-[acf6da/7bcc33]"
@@ -675,6 +717,7 @@ proxy-groups:
       - "🇷🇺RU-405M-[dd6ad7/81e607]"
       - "🇷🇺RU-157M-[dd6ad7/b66583]"
       - "🇺🇸US-173M-[de07ad/25af3d]"
+      - "🇺🇸US-267M-[df26fe/a299e4]"
       - "🇵🇱PL-360M-[e548de/48afd9]"
 
 rules:
